@@ -78,6 +78,26 @@ const RECIPES = [
     dish: "Beef and Broccoli (西兰花炒牛肉)",
     desc: "tender sliced beef and bright green broccoli florets coated in glossy savory oyster sauce, white ceramic plate, steam rising",
   },
+  {
+    slug: "cucumber-scrambled-eggs",
+    dish: "Cucumber Scrambled Eggs (黄瓜炒蛋)",
+    desc: "bright green cucumber chunks stir-fried with soft golden egg curds in a light glossy sauce, served in a rustic white ceramic bowl, steamed rice blurred in background, fresh summer home-style presentation",
+  },
+  {
+    slug: "garlic-chives-scrambled-eggs",
+    dish: "Garlic Chives Scrambled Eggs (韭菜炒蛋)",
+    desc: "vibrant green garlic chive segments folded into fluffy golden egg, simple white ceramic plate, steamed rice in background, Shandong home-style rustic aesthetic",
+  },
+  {
+    slug: "pineapple-fried-rice",
+    dish: "Pineapple Fried Rice (菠萝炒饭)",
+    desc: "golden curry-tinted fried rice studded with bright yellow pineapple chunks, roasted cashews and raisins, served on a white ceramic plate with lime wedge, Thai-Chinese street food style",
+  },
+  {
+    slug: "yangzhou-fried-rice",
+    dish: "Yangzhou Fried Rice (扬州炒饭)",
+    desc: "glossy long-grain rice with colorful diced ham, shrimp, peas, carrots and egg ribbons, served in a traditional white ceramic bowl with chopsticks, elegant Cantonese banquet style",
+  },
 ];
 
 function getApiKey() {
