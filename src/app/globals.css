@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   设计 Token（Spec §4）：组件全程走 CSS 变量
+   默认 light（SEO 内容站阅读场景），dark 可选切换
+   ============================================ */
+:root {
+  --hw-bg: #faf7f2;            /* rice 米白 */
+  --hw-bg-soft: #f3ede3;       /* 浅米（卡片/分区） */
+  --hw-fg: #2b2118;            /* 近黑暖褐（正文） */
+  --hw-fg-muted: #6b5d4f;      /* 次级文本 */
+  --hw-border: #e2d8c9;        /* 描边 */
+  --hw-soy: #3e2723;           /* 品牌主色 */
+  --hw-ginger: #c77b2e;        /* CTA 强调 */
+  --hw-scallion: #4a7c59;      /* 健康/素食辅助 */
+  --hw-card: #ffffff;
+  --hw-shadow: 0 1px 3px rgba(62, 39, 35, 0.08), 0 4px 12px rgba(62, 39, 35, 0.06);
+}
+
+.dark {
+  --hw-bg: #1a1512;
+  --hw-bg-soft: #241d17;
+  --hw-fg: #f0e8dc;
+  --hw-fg-muted: #a89888;
+  --hw-border: #3a3128;
+  --hw-soy: #d8b08c;
+  --hw-ginger: #e09a4a;
+  --hw-scallion: #7fae8d;
+  --hw-card: #221b15;
+  --hw-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--hw-bg);
+  color: var(--hw-fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 语义化排版：标题衬线，正文无衬线 */
+h1, h2, h3, h4 {
+  font-family: Georgia, Cambria, "Songti SC", SimSun, serif;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(199, 123, 46, 0.25);
+}
