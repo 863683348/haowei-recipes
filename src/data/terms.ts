@@ -366,6 +366,59 @@ export const terms: Term[] = [
     definitionZh:
       "臭名昭著的模糊计量。在 HǎoWèi 我们一律用具体用量替代。",
   },
+
+  /* ========== 新增 Day 2 术语 ========== */
+  {
+    id: "shrimp",
+    zh: "虾仁",
+    pinyin: "xiā rén",
+    en: "Shrimp",
+    category: "ingredient",
+    definition:
+      "Peeled, deveined prawns. Sweet and quick-cooking; add at the last moment to avoid toughness.",
+    definitionZh: "去壳去肠线的鲜虾仁。甜鲜快熟；最后下锅避免变韧。",
+  },
+  {
+    id: "char-siu",
+    zh: "叉烧",
+    pinyin: "chā shāo",
+    en: "Char siu (Chinese BBQ pork)",
+    category: "ingredient",
+    definition:
+      "Sweet-savory roasted pork, cubed for fried rice. Found in the meat section of Asian supermarkets.",
+    definitionZh: "甜咸烤肉，切丁用于炒饭。亚超冷鲜区有售。",
+    substituteHint: "Substitute: diced ham, cooked pork shoulder, or chicken thigh.",
+    substituteHintZh: "替代：切丁火腿、熟猪肩肉或鸡腿肉。",
+  },
+  {
+    id: "curry-powder",
+    zh: "咖喱粉",
+    pinyin: "gā lí fěn",
+    en: "Curry powder (yellow)",
+    category: "spice",
+    definition:
+      "Ground blend of turmeric, coriander, cumin, fenugreek. Gives golden color and warm spice. Different from Thai curry paste.",
+    definitionZh: "姜黄、芫荽、孜然、葫芦巴研磨的混合粉。赋予金黄色与暖香。不同于泰式咖喱酱。",
+    substituteHint:
+      "No curry powder? Use 1/2 tsp turmeric + pinch each cumin + coriander. Color only, less complexity.",
+    substituteHintZh:
+      "没有咖喱粉？用 1/2 茶匙姜黄+各一小撮孜然+芫荽。只有颜色，层次略少。",
+  },
+  {
+    id: "fish-sauce",
+    zh: "鱼露",
+    pinyin: "yú lù",
+    en: "Fish sauce",
+    category: "sauce",
+    definition:
+      "Fermented anchovy liquid, the umami backbone of Southeast Asian and Southern Chinese cooking. Salty, savory, funky.",
+    definitionZh: "发酵鳀鱼汁，东南亚和中国南方烹饪的鲜味基石。咸、鲜、有发酵香气。",
+    quantEquivalent: "1 tbsp ≈ 15 ml",
+    substituteHint:
+      "Vegetarian: 1 tbsp soy + 1/2 tsp miso or 1/4 tsp mushroom powder. GF: tamari + pinch sugar.",
+    substituteHintZh:
+      "素食版：1 汤匙酱油+1/2 茶匙味噌或1/4 茶匙菌菇粉。无麸质：味醂+一小撮糖。",
+  },
 ];
 
 /** 术语查询工具 */

@@ -48,7 +48,7 @@
 | Day | 主题 | 三道菜 | 关键词 |
 |---|---|---|---|
 | 1 | 蛋入门 | 番茄炒蛋✓ / 黄瓜炒蛋 / 韭菜炒蛋 | tomato egg, chinese scrambled eggs |
-| 2 | 炒饭家族 | 蛋炒饭✓ / 扬州炒饭 / 菠萝炒饭 | egg fried rice, yangzhou fried rice |
+| 2 | 炒饭家族 | 蛋炒饭✓ / 扬州炒饭✓ / 菠萝炒饭✓ | egg fried rice, yangzhou fried rice |
 | 3 | 饼类 | 葱油饼✓ / 手抓饼 / 韭菜盒子 | scallion pancakes, hand-pulled flatbread |
 | 4 | 豆腐入门 | 麻婆豆腐✓ / 家常豆腐 / 红烧豆腐 | mapo tofu, braised tofu |
 | 5 | 鸡丁三式 | 宫保鸡丁✓ / 辣子鸡丁 / 腰果鸡丁 | kung pao chicken, cashew chicken |
