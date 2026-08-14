@@ -1,6 +1,7 @@
 import type { Recipe } from "@/lib/types";
 
-/** 麻婆豆腐 Mapo Tofu — 川菜灵魂，家常版降低宽油门槛 */
+/** 麻婆豆腐 Mapo Tofu — 川菜灵魂，家常版降低宽油门槛
+ *  v1.1 多语言：英文为主，中文增量字段。 */
 export const mapoTofu: Recipe = {
   id: "mapo-tofu",
   slug: "mapo-tofu",
@@ -8,17 +9,23 @@ export const mapoTofu: Recipe = {
   titleZh: "麻婆豆腐",
   pinyin: "má pó dòu fu",
   cuisine: "川菜",
+  cuisineEn: "Sichuan",
   region: "Chengdu, Sichuan",
+  regionZh: "四川成都",
   difficulty: "medium",
   timeMin: 30,
   servings: 3,
   version: "family",
   versionNote:
     "Restaurant version uses a wide-oil velveted beef + Sichuan peppercorn oil finish. Family version is leaner but keeps the má là (numbing-spicy) soul.",
+  versionNoteZh:
+    "餐厅版用宽油滑牛肉+花椒油收尾。家常版更清爽，但保留了麻与辣的川味灵魂。",
   tags: ["spicy", "sichuan", "vegetarian-ok", "comfort"],
   dietary: ["vegetarian"],
   story:
     "Named after 'Pockmarked Grandma Chen' of Chengdu in the 1800s. The home version is a weeknight staple across China — silken tofu in a spicy, numbing, bean-paste sauce that exists to be poured over rice.",
+  storyZh:
+    "得名于 19 世纪成都的“陈麻婆”。家常版是全国家常餐桌上的工作日经典——嫩豆腐浸在麻辣的豆瓣酱汁里，这道菜的存在就是为了浇在米饭上。",
   ingredients: [
     {
       id: "mt-tofu",
@@ -30,6 +37,7 @@ export const mapoTofu: Recipe = {
       pantry: "asian",
       termKey: "tofu",
       note: "Medium-firm works too — handle gently.",
+      noteZh: "老豆腐也可以，但要轻拿轻放。",
     },
     {
       id: "mt-pork",
@@ -40,6 +48,7 @@ export const mapoTofu: Recipe = {
       category: "protein",
       pantry: "local",
       note: "Skip for vegetarian version.",
+      noteZh: "素食版不放。",
     },
     {
       id: "mt-douban",
@@ -150,70 +159,98 @@ export const mapoTofu: Recipe = {
   steps: [
     {
       text: "Cut tofu into 2 cm cubes. Blanch in gently simmering salted water for 2 minutes, then drain (keeps it from breaking and warms it up).",
+      textZh: "豆腐切成 2 厘米见方的小块，放入微沸的淡盐水里焯 2 分钟，捞出沥干（这样豆腐不易碎，也提前温热）。",
       zhHint: "豆腐切块焯水",
       stateNote: {
         visual: "Water barely simmering, tofu cubes floating without sticking together",
+        visualZh: "水微微冒泡，豆腐块浮起且不粘连",
         heat: "medium",
         timeRef: "2 minutes",
+        timeRefZh: "2 分钟",
         signal: "Tofu looks slightly puffy and is hot through",
+        signalZh: "豆腐微微膨胀，内部已热透",
       },
       tip: "Skip blanching if using medium-firm tofu and you're in a rush — just be extra gentle later.",
+      tipZh: "用老豆腐又赶时间时可以跳过焯水——后面操作更轻一点就行。",
     },
     {
       text: "Heat oil in a wok over medium. Add ground pork and fry until it changes color and starts to render.",
+      textZh: "锅中放油，中火加热。下猪肉末炒至变色出油。",
       zhHint: "炒肉末",
       stateNote: {
         visual: "Pork turns from pink to pale brown, releasing fat",
+        visualZh: "肉末从粉色变成浅棕色并开始出油",
         heat: "medium",
         timeRef: "2-3 minutes",
+        timeRefZh: "2-3 分钟",
         signal: "No pink remains; edges begin to crisp slightly",
+        signalZh: "看不到粉色，边缘开始微微焦脆",
       },
     },
     {
       text: "Push pork aside. Add doubanjiang and fry 1 minute until the oil turns red. Add douchi, garlic, ginger, and chili flakes; stir 30 seconds until fragrant.",
+      textZh: "把肉末拨到一边。下豆瓣酱炒 1 分钟至油变红。加入豆豉、蒜末、姜末和辣椒面，翻炒 30 秒炒出香味。",
       zhHint: "炒豆瓣酱出红油",
       stateNote: {
         visual: "Oil turns deep red-orange (the classic 红油 moment)",
+        visualZh: "油变成深橙红色（经典的红油时刻）",
         heat: "medium",
         timeRef: "1-1.5 minutes",
+        timeRefZh: "1-1.5 分钟",
         signal: "Fragrant and sharp — don't let it burn dark",
+        signalZh: "香气锐利扑鼻——别炒到发黑",
       },
     },
     {
       text: "Add soy sauce, then pour in the stock. Bring to a simmer.",
+      textZh: "加入生抽，再倒入高汤。煮至微沸。",
       zhHint: "加高汤",
       stateNote: {
         visual: "Sauce is bubbling gently, deep red",
+        visualZh: "汤汁微微冒泡，呈深红色",
         heat: "medium",
         timeRef: "1 minute to reach simmer",
+        timeRefZh: "约 1 分钟煮至微沸",
         signal: "Steady small bubbles, not a rolling boil",
+        signalZh: "持续小气泡，而不是翻滚大沸",
       },
     },
     {
       text: "Gently slide in the tofu. Shake the pan (don't stir — it breaks) and simmer 5 minutes so it absorbs the sauce.",
+      textZh: "轻轻滑入豆腐。晃动锅身（不要翻炒——会碎），小火煨 5 分钟让豆腐入味。",
       zhHint: "轻推豆腐，不搅动",
       stateNote: {
         visual: "Tofu bathed in sauce, edges slightly darkened from soaking",
+        visualZh: "豆腐浸在汤汁中，边缘因吸汁微微变深",
         heat: "medium-low",
         timeRef: "5 minutes",
+        timeRefZh: "5 分钟",
         signal: "Sauce has reduced by about a third",
+        signalZh: "汤汁收掉了约三分之一",
       },
     },
     {
       text: "Add half the cornstarch slurry, stir gently by pushing the sauce, and watch it thicken. Repeat with the rest if you want a thicker coat.",
+      textZh: "倒入一半水淀粉，用推汁的方式轻轻搅动，观察汤汁变稠。想要更浓稠就再倒入剩下的。",
       zhHint: "分次勾芡",
       stateNote: {
         visual: "Sauce turns glossy and clings to the back of a spoon",
+        visualZh: "汤汁变得有光泽，能挂在勺背",
         timeRef: "30-60 seconds",
+        timeRefZh: "30-60 秒",
         signal: "Spoon leaves a clear trail through the sauce",
+        signalZh: "勺子划过汤汁留下清晰痕迹",
       },
     },
     {
       text: "Off heat: stir in the white scallion parts. Plate, dust generously with ground Sichuan pepper, and top with green scallions.",
+      textZh: "关火：拌入葱白部分。装盘，慷慨地撒上花椒粉，再放上葱花。",
       zhHint: "起锅撒花椒面",
       stateNote: {
         visual: "Steam carries the Sichuan pepper aroma — that's the má là signature",
+        visualZh: "热气带着花椒香——这就是麻辣的招牌",
         signal: "Serve immediately over rice",
+        signalZh: "趁热浇在米饭上立刻吃",
       },
     },
   ],
@@ -223,5 +260,12 @@ export const mapoTofu: Recipe = {
     "Vegetarian version: skip pork, add 1 tsp more doubanjiang + a few dried shiitake, rehydrated and sliced.",
     "Doubanjiang is salty — taste before adding extra salt.",
   ],
-  relatedSlugs: ["tomato-and-egg", "kung-pao-chicken"],
+  tipsZh: [
+    "绝不用锅铲翻豆腐——晃动锅身，或只搅动周围的汤汁。",
+    "最后的花椒粉不能省：它才是“麻婆”的灵魂。",
+    "素食版：不放猪肉，多加 1 茶匙豆瓣酱 + 几朵泡发切片的干香菇。",
+    "豆瓣酱本身很咸——加盐前先尝味。",
+  ],
+  relatedSlugs: ["tomato-and-egg", "kung-pao-chicken", "beef-and-broccoli"],
+  image: "/images/recipes/mapo-tofu.png",
 };

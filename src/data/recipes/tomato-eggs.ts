@@ -3,6 +3,7 @@ import type { Recipe } from "@/lib/types";
 /**
  * 番茄炒蛋 Tomato & Egg — 每个中国家庭的第一道菜
  * 双版本：家庭快手版（默认）/ 餐厅正宗版
+ * v1.1 多语言：英文为主，中文增量字段（storyZh/textZh/visualZh 等）。
  */
 export const tomatoEggs: Recipe = {
   id: "tomato-eggs",
@@ -11,17 +12,23 @@ export const tomatoEggs: Recipe = {
   titleZh: "番茄炒蛋",
   pinyin: "fān qié chǎo dàn",
   cuisine: "家常菜",
+  cuisineEn: "Home-style",
   region: "Everywhere in China",
+  regionZh: "全国家常",
   difficulty: "easy",
   timeMin: 20,
   servings: 2,
   version: "family",
   versionNote:
     "Family version: soft, saucy, slightly sweet — the way it's made at home. Restaurant version adds a wok-seared egg texture.",
+  versionNoteZh:
+    "家庭版：鸡蛋软嫩、汤汁浓郁、微甜——家里最常做的做法。餐厅版会多一道过油炒蛋的焦香口感。",
   tags: ["30-min", "beginner", "comfort", "weeknight"],
   dietary: ["none"],
   story:
     "The first dish most Chinese kids learn. Every family has its own ratio of eggs to tomato, its own pinch of sugar. This is the home-style version from a Cantonese household — lots of sauce, soft eggs, ladled over rice.",
+  storyZh:
+    "大多数中国孩子学会的第一道菜。每个家庭都有自己的蛋液番茄比例，都有自己的那撮糖。这是一份来自广东家庭的快手做法——汤汁多、鸡蛋嫩，浇在米饭上就是一顿。",
   ingredients: [
     {
       id: "te-egg",
@@ -77,6 +84,7 @@ export const tomatoEggs: Recipe = {
       category: "western-pantry",
       pantry: "local",
       note: "Balances tomato acidity — this is the 'secret' home touch.",
+      noteZh: "中和番茄的酸味——这是家常版的“秘诀”。",
     },
     {
       id: "te-soy",
@@ -92,58 +100,82 @@ export const tomatoEggs: Recipe = {
   steps: [
     {
       text: "Beat the eggs with 1/4 tsp salt until the yolks are fully broken. Cut tomatoes into bite-size wedges.",
+      textZh: "鸡蛋加 1/4 茶匙盐打散，直到蛋黄完全打匀。番茄切成一口大小的块。",
       zhHint: "打散鸡蛋，番茄切块",
       stateNote: {
         visual: "Egg liquid is uniform pale yellow with no visible yolk streaks",
+        visualZh: "蛋液呈均匀的淡黄色，无明显蛋黄纹路",
         timeRef: "about 30 seconds of beating",
+        timeRefZh: "打约 30 秒",
         signal: "Fork leaves a smooth ribbon when lifted",
+        signalZh: "提起叉子时蛋液呈顺滑带状流下",
       },
     },
     {
       text: "Heat 2 tbsp oil in a wok or large skillet over medium-high until shimmering. Pour in the eggs.",
+      textZh: "锅中放 2 汤匙油，中大火加热至油面微微波动。倒入蛋液。",
       zhHint: "热油下蛋液",
       stateNote: {
         visual: "Oil shimmers; eggs puff and set at the edges within seconds",
+        visualZh: "油面泛光；蛋液边缘几秒内鼓起凝固",
         heat: "medium-high",
         timeRef: "30-40 seconds",
+        timeRefZh: "30-40 秒",
         signal: "Edges turn light golden and release easily from the pan",
+        signalZh: "边缘变浅金色，且能轻松从锅底脱离",
       },
     },
     {
       text: "Scramble the eggs just until softly set (still a little glossy), then scoop them out onto a plate. Don't overcook — they finish in the sauce.",
+      textZh: "把鸡蛋炒到刚刚凝固（还带一点光泽）就盛出装盘。不要炒过头——之后还要回锅裹汁。",
       zhHint: "嫩炒后盛出",
       stateNote: {
         visual: "Curds are soft and glossy, not dry or browned",
+        visualZh: "蛋块软嫩有光泽，不干不焦",
         timeRef: "45-60 seconds total",
+        timeRefZh: "共 45-60 秒",
         signal: "No raw liquid left, but curds still look moist",
+        signalZh: "没有生蛋液残留，但蛋块依然湿润",
       },
     },
     {
       text: "Add the remaining 1 tbsp oil and the tomatoes with 1/4 tsp salt. Sauté over medium-high.",
+      textZh: "加入剩余 1 汤匙油和番茄，放 1/4 茶匙盐，中大火翻炒。",
       zhHint: "下番茄翻炒",
       stateNote: {
         visual: "Tomatoes release juice and start to soften",
+        visualZh: "番茄出汁并开始变软",
         heat: "medium-high",
         timeRef: "2-3 minutes",
+        timeRefZh: "2-3 分钟",
         signal: "Edges go translucent and the pan fills with pink juice",
+        signalZh: "边缘变半透明，锅里出现粉红色汤汁",
       },
     },
     {
       text: "Press a few wedges with your spatula to release more juice. Add the sugar (and soy, if using).",
+      textZh: "用锅铲按压几块番茄挤出更多汤汁。加入白糖（以及生抽，如果用的话）。",
       zhHint: "压出汤汁，加糖",
       stateNote: {
         visual: "Sauce turns glossy deep-orange",
+        visualZh: "汤汁变成有光泽的深橙色",
         timeRef: "1 minute",
+        timeRefZh: "1 分钟",
         signal: "Juice is actively bubbling, not evaporating to dryness",
+        signalZh: "汤汁在冒泡，而不是被烧干",
       },
     },
     {
       text: "Return the eggs to the pan and toss gently for 20 seconds so they soak up the sauce. Finish with scallions.",
+      textZh: "把鸡蛋倒回锅中，轻轻翻炒 20 秒让蛋块裹上汤汁。最后撒上葱花。",
       zhHint: "回锅裹汁，撒葱",
       stateNote: {
         visual: "Eggs are coated in glossy orange sauce",
+        visualZh: "蛋块裹满光泽的橙色汤汁",
         timeRef: "20-30 seconds",
+        timeRefZh: "20-30 秒",
         signal: "Sauce clings to the egg curds",
+        signalZh: "汤汁挂在蛋块上",
       },
     },
   ],
@@ -152,5 +184,11 @@ export const tomatoEggs: Recipe = {
     "Ripe, soft tomatoes make the best sauce. If tomatoes are hard, add 2 tbsp water while cooking.",
     "The sugar is not optional in the home version: it's what makes it taste like 家常, not sour.",
   ],
-  relatedSlugs: ["egg-fried-rice", "mapo-tofu"],
+  tipsZh: [
+    "趁热浇在白米饭上——汤汁才是灵魂。",
+    "熟透的软番茄才能炒出好汤汁。番茄偏硬时，烹制中加 2 汤匙水。",
+    "家常版里糖不能省：正是它让这道菜尝起来是“家常味”而不是酸味。",
+  ],
+  relatedSlugs: ["egg-fried-rice", "mapo-tofu", "scallion-pancakes"],
+  image: "/images/recipes/tomato-and-egg.png",
 };

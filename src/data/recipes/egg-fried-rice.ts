@@ -1,6 +1,7 @@
 import type { Recipe } from "@/lib/types";
 
-/** 蛋炒饭 Egg Fried Rice — 剩饭改造场景，唯一真理是隔夜饭 */
+/** 蛋炒饭 Egg Fried Rice — 剩饭改造场景，唯一真理是隔夜饭
+ *  v1.1 多语言：英文为主，中文增量字段。 */
 export const eggFriedRice: Recipe = {
   id: "egg-fried-rice",
   slug: "egg-fried-rice",
@@ -8,17 +9,23 @@ export const eggFriedRice: Recipe = {
   titleZh: "蛋炒饭",
   pinyin: "dàn chǎo fàn",
   cuisine: "家常菜",
+  cuisineEn: "Home-style",
   region: "Everywhere (leftover-rice classic)",
+  regionZh: "全国各地（剩饭经典）",
   difficulty: "easy",
   timeMin: 15,
   servings: 2,
   version: "family",
   versionNote:
     "Restaurant version flings rice in a screaming-hot wok with separate scrambled egg ribbons. Home version is more forgiving — same flavor, easier technique.",
+  versionNoteZh:
+    "餐厅版用猛火炒饭、蛋液单独滑成蛋丝。家常版容错更高——同样的味道，更简单的技法。",
   tags: ["15-min", "leftover", "beginner", "weeknight", "budget"],
   dietary: ["none"],
   story:
     "The ultimate leftover dish: day-old rice + egg + whatever's in the fridge. Every Chinese household has a version. The two rules: cold rice, and don't stir too much.",
+  storyZh:
+    "终极剩饭料理：隔夜饭 + 鸡蛋 + 冰箱里随便什么。每个中国家庭都有自己的版本。两条铁律：用冷饭，别炒太狠。",
   ingredients: [
     {
       id: "efr-rice",
@@ -29,6 +36,7 @@ export const eggFriedRice: Recipe = {
       category: "staple",
       pantry: "local",
       note: "Fresh rice is too sticky — spread it out and fridge it 1 hour if needed.",
+      noteZh: "新鲜米饭太黏——需要的话摊开冷藏 1 小时。",
     },
     {
       id: "efr-egg",
@@ -89,59 +97,82 @@ export const eggFriedRice: Recipe = {
   steps: [
     {
       text: "Break up the cold rice with your hands so there are no clumps. This is the single most important step.",
+      textZh: "用手把冷饭搓散，确保没有结块。这是最重要的一步。",
       zhHint: "把冷饭搓散",
       stateNote: {
         visual: "Every grain is separate; no big lumps",
+        visualZh: "米粒颗颗分明，没有大块结团",
         timeRef: "1 minute",
+        timeRefZh: "1 分钟",
         signal: "Rice feels dry and loose",
+        signalZh: "米饭手感干爽松散",
       },
     },
     {
       text: "Beat the eggs with the salt. Heat 1 tbsp oil in a wok over medium-high. Add eggs and scramble until just set, then push to one side.",
+      textZh: "鸡蛋加盐打散。锅中放 1 汤匙油，中大火加热。倒入蛋液炒至刚刚凝固，推到一边。",
       zhHint: "滑炒鸡蛋",
       stateNote: {
         visual: "Eggs softly set, still glossy",
+        visualZh: "鸡蛋刚刚凝固，依然有光泽",
         heat: "medium-high",
         timeRef: "40-60 seconds",
+        timeRefZh: "40-60 秒",
         signal: "No raw liquid; curds still moist",
+        signalZh: "没有生蛋液；蛋块依然湿润",
       },
     },
     {
       text: "Add the white scallion parts and any optional add-ins (ham, peas). Stir-fry 30 seconds.",
+      textZh: "下葱白部分和可选配料（火腿、豌豆）。翻炒 30 秒。",
       zhHint: "下配料爆香",
       stateNote: {
         visual: "Scallion whites soften and release aroma",
+        visualZh: "葱白变软并释放香气",
         heat: "medium-high",
         timeRef: "30 seconds",
+        timeRefZh: "30 秒",
         signal: "Fragrant, edges barely browning",
+        signalZh: "香气四溢，边缘微微上色",
       },
     },
     {
       text: "Add the rice and the remaining 1 tbsp oil. Toss and press gently with the spatula to coat every grain — don't mash.",
+      textZh: "下米饭和剩余 1 汤匙油。用锅铲轻轻翻拌按压，让每粒米都裹上油——不要压碎。",
       zhHint: "下米饭翻炒",
       stateNote: {
         visual: "Rice turns from white to glossy and evenly oiled",
+        visualZh: "米饭从白色变得油亮，裹油均匀",
         heat: "high",
         timeRef: "2-3 minutes",
+        timeRefZh: "2-3 分钟",
         signal: "Grains start to 'dance' and jump slightly in the pan",
+        signalZh: "米粒开始“跳舞”，在锅里微微跳动",
       },
     },
     {
       text: "Push rice to one side, pour soy sauce into the empty side, let it sizzle 5 seconds, then fold through. (This 'wok-ting' the soy removes raw sauce taste.)",
+      textZh: "把米饭推到一边，在空处倒入生抽，让其滋啦 5 秒再翻拌均匀。（这种“炝酱油”能去掉生酱味。）",
       zhHint: "沿锅边烹酱油",
       stateNote: {
         visual: "Soy sizzles immediately and smells toasty",
+        visualZh: "酱油立刻滋啦作响，散发焦香",
         heat: "high",
         timeRef: "5-10 seconds",
+        timeRefZh: "5-10 秒",
         signal: "Steam smells roasted, not raw-soy",
+        signalZh: "蒸汽闻起来是焦香，而不是生酱油味",
       },
     },
     {
       text: "Fold in the green scallions. Serve immediately.",
+      textZh: "拌入葱花。立即出锅。",
       zhHint: "撒葱花出锅",
       stateNote: {
         visual: "Rice is hot, glossy, and every grain separate",
+        visualZh: "米饭热透油亮，粒粒分明",
         signal: "Each grain separate, steam rising",
+        signalZh: "米粒颗颗分离，热气升腾",
       },
     },
   ],
@@ -150,5 +181,11 @@ export const eggFriedRice: Recipe = {
     "Don't over-stir; let the rice hit the pan and toss instead of mashing.",
     "Lap cheong (Chinese sausage) + a few drops of sesame oil at the end = instant upgrade.",
   ],
-  relatedSlugs: ["tomato-and-egg", "scallion-pancakes"],
+  tipsZh: [
+    "冷饭是硬性要求——新鲜米饭会炒成糊。",
+    "别过度翻炒；让米饭落锅后颠勺翻动，而不是压捣。",
+    "加腊肠 + 出锅前几滴香油 = 立刻升级。",
+  ],
+  relatedSlugs: ["tomato-and-egg", "scallion-pancakes", "kung-pao-chicken"],
+  image: "/images/recipes/egg-fried-rice.png",
 };

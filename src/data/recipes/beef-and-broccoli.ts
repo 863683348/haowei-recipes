@@ -1,6 +1,7 @@
 import type { Recipe } from "@/lib/types";
 
-/** 西兰花炒牛肉 Beef & Broccoli — 美式餐馆招牌，但正宗中式做法更嫩更香 */
+/** 西兰花炒牛肉 Beef & Broccoli — 美式餐馆招牌，但正宗中式做法更嫩更香
+ *  v1.1 多语言：英文为主，中文增量字段。 */
 export const beefBroccoli: Recipe = {
   id: "beef-and-broccoli",
   slug: "beef-and-broccoli",
@@ -8,17 +9,23 @@ export const beefBroccoli: Recipe = {
   titleZh: "西兰花炒牛肉",
   pinyin: "xī lán huā chǎo niú ròu",
   cuisine: "粤菜 / 家常",
+  cuisineEn: "Cantonese / Home-style",
   region: "Guangdong / home cooking",
+  regionZh: "广东 / 家常",
   difficulty: "medium",
   timeMin: 30,
   servings: 3,
   version: "family",
   versionNote:
     "The American take is a sweet brown glaze. The home-style version is lighter, with velvety beef and a savory oyster-soy sauce.",
+  versionNoteZh:
+    "美式做法是甜口的深色酱汁。家常版更清爽：牛肉上浆滑嫩，蚝油酱油汁咸鲜。",
   tags: ["weeknight", "high-protein", "30-min", "classic"],
   dietary: ["none"],
   story:
     "A favorite in Cantonese home kitchens and takeout menus alike. The difference between 'good' and 'soggy' comes down to two things: velveted beef, and broccoli that's blanched then flash-fried, never stewed.",
+  storyZh:
+    "广东家常厨房和外卖菜单上的常客。“好吃”和“软塌”的区别在于两件事：牛肉上浆，以及西兰花先焯后快炒、绝不炖煮。",
   ingredients: [
     {
       id: "bb-beef",
@@ -29,6 +36,7 @@ export const beefBroccoli: Recipe = {
       category: "protein",
       pantry: "local",
       note: "Slicing against the grain is 80% of tender beef.",
+      noteZh: "逆纹切片占嫩牛肉的 80%。",
     },
     {
       id: "bb-broccoli",
@@ -147,61 +155,87 @@ export const beefBroccoli: Recipe = {
   steps: [
     {
       text: "Slice beef thinly against the grain. Marinate with soy, Shaoxing, and cornstarch; finish with 1 tsp oil to seal. Rest 10 minutes.",
+      textZh: "牛肉逆纹切薄片。用生抽、料酒、淀粉腌制，最后加 1 茶匙油封住。静置 10 分钟。",
       zhHint: "牛肉逆纹切片，上浆腌10分钟",
       stateNote: {
         visual: "Beef coated in a glossy starchy glaze",
+        visualZh: "牛肉裹上一层有光泽的淀粉浆",
         timeRef: "10 minutes",
+        timeRefZh: "10 分钟",
         signal: "Glaze clings evenly, no dry patches",
+        signalZh: "浆液均匀附着，无干斑",
       },
       tip: "Freeze the beef 20 minutes first for easier thin slicing.",
+      tipZh: "先把牛肉冷冻 20 分钟，更容易切薄片。",
     },
     {
       text: "Blanch broccoli in boiling salted water 60-90 seconds, then shock in cold water. Drain well.",
+      textZh: "西兰花放入沸盐水焯 60-90 秒，再过冷水。充分沥干。",
       zhHint: "焯西兰花后过冷水",
       stateNote: {
         visual: "Broccoli turns bright green and is crisp-tender",
+        visualZh: "西兰花变翠绿，口感脆嫩",
         timeRef: "60-90 seconds",
+        timeRefZh: "60-90 秒",
         signal: "Stem pierces easily with a fork but florets still hold shape",
+        signalZh: "叉子能轻易扎透梗部，花朵仍保持形状",
       },
       tip: "Shocking stops the cooking — this is what keeps it green and snappy.",
+      tipZh: "过冷水能停止加热——这是保持翠绿爽脆的关键。",
     },
     {
       text: "Mix sauce: oyster sauce + soy + cornstarch slurry in a small bowl.",
+      textZh: "小碗中调好碗汁：蚝油 + 生抽 + 水淀粉。",
       zhHint: "调碗汁",
       stateNote: {
         visual: "Slurry fully dissolved, sauce uniform",
+        visualZh: "淀粉完全溶解，碗汁均匀",
         timeRef: "1 minute",
+        timeRefZh: "1 分钟",
         signal: "No starch lumps at the bottom of the bowl",
+        signalZh: "碗底无淀粉结块",
       },
     },
     {
       text: "Heat 1.5 tbsp oil in a wok over high until smoking lightly. Add beef in one layer; sear 1 minute, then stir-fry until 80% cooked. Remove.",
+      textZh: "锅中放 1.5 汤匙油，大火烧至微微冒烟。牛肉平铺入锅，煎 1 分钟，再翻炒至八成熟。盛出。",
       zhHint: "大火滑炒牛肉",
       stateNote: {
         visual: "Beef sears brown on edges, still slightly pink inside",
+        visualZh: "牛肉边缘煎至棕褐，内部依然微粉",
         heat: "high",
         timeRef: "2 minutes",
+        timeRefZh: "2 分钟",
         signal: "Beef releases from the pan easily (don't stir too early)",
+        signalZh: "牛肉能轻松从锅底脱离（别过早翻动）",
       },
     },
     {
       text: "Add remaining oil + garlic + ginger; stir 15 seconds until fragrant. Return beef with any juices.",
+      textZh: "加入剩余油和蒜片姜片，爆香 15 秒。牛肉连汁回锅。",
       zhHint: "爆香蒜姜，回锅牛肉",
       stateNote: {
         visual: "Garlic edges just begin to color",
+        visualZh: "蒜片边缘刚开始变色",
         heat: "high",
         timeRef: "15 seconds",
+        timeRefZh: "15 秒",
         signal: "Fragrant immediately",
+        signalZh: "香气立刻迸发",
       },
     },
     {
       text: "Add broccoli, pour in the sauce. Toss rapidly 30-45 seconds until glossy and everything is coated.",
+      textZh: "下西兰花，倒入碗汁。快速翻炒 30-45 秒，直到汤汁光亮、裹住所有食材。",
       zhHint: "下西兰花，烹汁翻匀",
       stateNote: {
         visual: "Sauce thickens to a glossy coat over beef and broccoli",
+        visualZh: "碗汁变浓，在牛肉和西兰花上形成光泽挂汁",
         heat: "high",
         timeRef: "30-45 seconds",
+        timeRefZh: "30-45 秒",
         signal: "Sauce clings, no puddle left in the pan",
+        signalZh: "汤汁挂住食材，锅底无积水",
       },
     },
   ],
@@ -210,5 +244,11 @@ export const beefBroccoli: Recipe = {
     "Blanching the broccoli means the stir-fry is only 1 minute — nothing gets soggy.",
     "Vegetarian? Swap beef for firm tofu (1:1) and use mushroom oyster sauce.",
   ],
-  relatedSlugs: ["kung-pao-chicken", "mapo-tofu"],
+  tipsZh: [
+    "逆纹切片 + 上浆 = 在家做出餐厅级嫩牛肉。",
+    "西兰花先焯水，炒制只需 1 分钟——什么都不会软塌。",
+    "素食？牛肉换成老豆腐（1:1），用菌菇蚝油。",
+  ],
+  relatedSlugs: ["kung-pao-chicken", "mapo-tofu", "egg-fried-rice"],
+  image: "/images/recipes/beef-and-broccoli.png",
 };

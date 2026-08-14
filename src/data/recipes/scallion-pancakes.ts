@@ -1,6 +1,7 @@
 import type { Recipe } from "@/lib/types";
 
-/** 葱油饼 Scallion Pancakes — 面粉+葱就能做的高性价比小吃 */
+/** 葱油饼 Scallion Pancakes — 面粉+葱就能做的高性价比小吃
+ *  v1.1 多语言：英文为主，中文增量字段。 */
 export const scallionPancakes: Recipe = {
   id: "scallion-pancakes",
   slug: "scallion-pancakes",
@@ -8,17 +9,23 @@ export const scallionPancakes: Recipe = {
   titleZh: "葱油饼",
   pinyin: "cōng yóu bǐng",
   cuisine: "北方小吃",
+  cuisineEn: "Northern snack",
   region: "Northern China / street food",
+  regionZh: "中国北方 / 街头小吃",
   difficulty: "easy",
   timeMin: 45,
   servings: 4,
   version: "family",
   versionNote:
     "Street version is laminated with lots of oil; home version uses a thinner oil paste — same flaky layers, less mess.",
+  versionNoteZh:
+    "街边版用大量油起酥；家常版用更薄的油酥——同样的层次分明，却更干净省油。",
   tags: ["beginner", "snack", "vegetarian", "dough"],
   dietary: ["vegetarian"],
   story:
     "A northern-China street food: unleavened dough rolled thin with scallions and oil, coiled and flattened so it flakes into crispy layers. Perfect weekend project — and the first 'wow' recipe for new cooks.",
+  storyZh:
+    "北方街头小吃：不发面的面团擀薄，卷入葱和油，盘成螺旋再压扁，烙出层层酥脆。是完美的周末项目，也是新手厨师的第一个“哇”时刻。",
   ingredients: [
     {
       id: "sp-flour",
@@ -78,63 +85,88 @@ export const scallionPancakes: Recipe = {
   steps: [
     {
       text: "Mix flour and salt. Slowly pour in hot water, stirring with chopsticks, until it forms shaggy clumps. Knead into a smooth ball. Cover, rest 20 minutes.",
+      textZh: "混合面粉和盐。用筷子边搅边缓缓倒入热水，直到成絮状。揉成光滑的面团，盖上醒 20 分钟。",
       zhHint: "烫面，醒20分钟",
       stateNote: {
         visual: "Dough comes together into a smooth, elastic ball",
+        visualZh: "面团揉成光滑有弹性的圆球",
         timeRef: "20 minutes rest",
+        timeRefZh: "醒发 20 分钟",
         signal: "Dough springs back when poked",
+        signalZh: "手指轻按能回弹",
       },
     },
     {
       text: "Meanwhile make the oil paste: whisk oil + flour until smooth. Dry the chopped scallions on a paper towel (wet scallions make soggy layers).",
+      textZh: "同时制作油酥：油+面粉搅拌至顺滑。把葱花放在纸巾上吸干水分（湿葱花会让层次发黏）。",
       zhHint: "调油酥，擦干葱",
       stateNote: {
         visual: "Paste is smooth, pale, and spreadable",
+        visualZh: "油酥顺滑、色泽浅、易涂抹",
         signal: "No flour lumps",
+        signalZh: "没有面粉结块",
       },
     },
     {
       text: "Divide dough into 4 balls. Roll each into a thin rectangle (about 2-3 mm).",
+      textZh: "面团分成 4 份。每份擀成薄薄的长方形（约 2-3 毫米厚）。",
       zhHint: "擀薄片",
       stateNote: {
         visual: "Rectangle is thin enough to be slightly translucent",
+        visualZh: "面片薄到微微透光",
         signal: "Can see your hand faintly through it",
+        signalZh: "透过面片能隐约看到手",
       },
     },
     {
       text: "Spread oil paste thinly over the dough, sprinkle with scallions. Roll it up tightly into a long log, then coil the log into a spiral. Rest 5 minutes.",
+      textZh: "面片薄薄抹上油酥，撒上葱花。紧紧卷成长条，再把长条盘成螺旋。静置 5 分钟。",
       zhHint: "抹油酥卷起，盘成螺旋",
       stateNote: {
         visual: "Coil holds its shape; layers are visible at the cut edge",
+        visualZh: "螺旋保持形状；切面可见层次",
         timeRef: "5 minutes rest",
+        timeRefZh: "静置 5 分钟",
         signal: "Coil doesn't unroll on its own",
+        signalZh: "螺旋不会自己散开",
       },
     },
     {
       text: "Roll each coil gently into a flat pancake, about 5-6 mm thick. Don't press hard — you want to preserve the layers.",
+      textZh: "把每个螺旋轻轻擀成约 5-6 毫米厚的饼。不要用力压——要保留层次。",
       zhHint: "轻擀成饼",
       stateNote: {
         visual: "Pancake is even thickness, spiral pattern visible",
+        visualZh: "饼厚度均匀，螺旋纹路清晰可见",
         signal: "Layers still distinct at the edge",
+        signalZh: "边缘层次依然分明",
       },
     },
     {
       text: "Heat 1 tbsp oil in a skillet over medium. Fry the pancake 2-3 minutes per side until golden and crisp.",
+      textZh: "平底锅放 1 汤匙油，中火加热。每面煎 2-3 分钟，直到金黄酥脆。",
       zhHint: "中小火煎至两面金黄",
       stateNote: {
         visual: "Golden-brown patches; pancake puffs slightly and layers separate",
+        visualZh: "出现金棕色斑点；饼微微鼓起，层次分离",
         heat: "medium",
         timeRef: "2-3 minutes per side",
+        timeRefZh: "每面 2-3 分钟",
         signal: "Edges look flaky and sound crisp when tapped",
+        signalZh: "边缘呈层状，轻敲有脆响",
       },
     },
     {
       text: "Move to a cutting board, rest 1 minute (traps steam = flaky). Cut into wedges. Repeat for remaining pancakes.",
+      textZh: "移到砧板上静置 1 分钟（锁住蒸汽=酥脆）。切块。其余饼重复操作。",
       zhHint: "出锅切块",
       stateNote: {
         visual: "Pancake steams slightly as it rests; layers lift when cut",
+        visualZh: "饼静置时微微冒热气；切开时层次挑起",
         timeRef: "1 minute rest",
+        timeRefZh: "静置 1 分钟",
         signal: "Layers visibly peel apart when cut",
+        signalZh: "切开时能明显看到层次剥开",
       },
     },
   ],
@@ -143,5 +175,11 @@ export const scallionPancakes: Recipe = {
     "Drying the scallions is the #1 secret to crispy layers.",
     "Freeze rolled, uncooked pancakes between parchment; fry straight from frozen, add 1 min per side.",
   ],
-  relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
+  tipsZh: [
+    "热水（非沸水）是关键——略微烫熟面筋，让面团柔软易擀。",
+    "吸干葱花水分，是酥脆层次的第一秘诀。",
+    "擀好的生饼用烘焙纸隔开冷冻；直接冷冻下锅煎，每面多加 1 分钟。",
+  ],
+  relatedSlugs: ["tomato-and-egg", "egg-fried-rice", "kung-pao-chicken"],
+  image: "/images/recipes/scallion-pancakes.png",
 };

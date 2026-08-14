@@ -1,6 +1,7 @@
 import type { Recipe } from "@/lib/types";
 
-/** 宫保鸡丁 Kung Pao Chicken — 全球最知名川菜，家常版不追求宽油 */
+/** 宫保鸡丁 Kung Pao Chicken — 全球最知名川菜，家常版不追求宽油
+ *  v1.1 多语言：英文为主，中文增量字段。 */
 export const kungPaoChicken: Recipe = {
   id: "kung-pao-chicken",
   slug: "kung-pao-chicken",
@@ -8,17 +9,23 @@ export const kungPaoChicken: Recipe = {
   titleZh: "宫保鸡丁",
   pinyin: "gōng bǎo jī dīng",
   cuisine: "川菜",
+  cuisineEn: "Sichuan",
   region: "Sichuan",
+  regionZh: "四川",
   difficulty: "medium",
   timeMin: 35,
   servings: 3,
   version: "family",
   versionNote:
     "Authentic home version uses dried chilies + Sichuan pepper (not the sweet American take). We keep the numbing-spicy-sour balance that made it famous.",
+  versionNoteZh:
+    "正宗家常版用干辣椒+花椒（不是美式的甜口）。我们保留了让它闻名天下的麻辣酸香平衡。",
   tags: ["spicy", "sichuan", "weeknight", "high-protein"],
   dietary: ["none"],
   story:
     "Named after Ding Baozhen, a Qing-dynasty governor (宫保 = his title). The real dish is not sweet-glazed — it's a salty-sour-spicy-numbing stir-fry with a vinegar-forward sauce. This home version stays true to that.",
+  storyZh:
+    "得名于清代官员丁宝桢（宫保是他的官衔）。真正的宫保鸡丁不是甜口的——它是一道咸酸麻辣的炒菜，酱汁以醋香为主。这份家常版忠于原味。",
   ingredients: [
     {
       id: "kp-chicken",
@@ -29,6 +36,7 @@ export const kungPaoChicken: Recipe = {
       category: "protein",
       pantry: "local",
       note: "Thigh stays juicier; breast works if velvetted well.",
+      noteZh: "鸡腿肉更嫩；鸡胸上浆到位也可以。",
     },
     {
       id: "kp-cornstarch",
@@ -70,6 +78,7 @@ export const kungPaoChicken: Recipe = {
       pantry: "local",
       termKey: "chili-flakes",
       note: "Remove seeds for milder heat.",
+      noteZh: "去籽可减辣。",
     },
     {
       id: "kp-sichuan",
@@ -117,6 +126,7 @@ export const kungPaoChicken: Recipe = {
       category: "western-pantry",
       pantry: "local",
       note: "Add at the end for crunch — a classic.",
+      noteZh: "最后放入保持酥脆——经典做法。",
     },
     {
       id: "kp-sauce-vinegar",
@@ -169,69 +179,97 @@ export const kungPaoChicken: Recipe = {
   steps: [
     {
       text: "Marinate chicken: mix with soy, Shaoxing wine, and cornstarch. Rest 10 minutes (velveting — keeps it silky).",
+      textZh: "腌制鸡肉：与生抽、料酒、淀粉混合。静置 10 分钟（上浆——保持滑嫩）。",
       zhHint: "鸡丁上浆腌10分钟",
       stateNote: {
         visual: "Chicken pieces are evenly coated in a thin starchy glaze",
+        visualZh: "鸡块均匀裹上一层薄薄的淀粉浆",
         timeRef: "10 minutes",
+        timeRefZh: "10 分钟",
         signal: "Glaze looks wet but not dripping",
+        signalZh: "表面湿润但不滴落",
       },
       tip: "The cornstarch layer is what keeps the chicken juicy at high heat.",
+      tipZh: "淀粉层是鸡肉高温下保持多汁的关键。",
     },
     {
       text: "Mix the sauce in a small bowl: vinegar, sugar, soy, and cornstarch slurry. Set aside.",
+      textZh: "小碗中调好碗汁：香醋、糖、生抽、水淀粉。备用。",
       zhHint: "提前调好碗汁",
       stateNote: {
         visual: "Sugar and starch fully dissolved, no lumps",
+        visualZh: "糖和淀粉完全溶解，无结块",
         timeRef: "1 minute",
+        timeRefZh: "1 分钟",
         signal: "Sauce is uniform, slightly cloudy",
+        signalZh: "碗汁均匀，微带乳白色",
       },
     },
     {
       text: "Heat oil in a wok over medium. Add Sichuan peppercorns and dried chilies; fry 30 seconds until fragrant but NOT burned.",
+      textZh: "锅中放油，中火加热。下花椒和干辣椒，炸 30 秒至出香，注意别炸糊。",
       zhHint: "小火炸花椒辣椒",
       stateNote: {
         visual: "Oil lightly ripples; chilies turn deep red and glossy",
+        visualZh: "油面轻泛涟漪；辣椒变深红有光泽",
         heat: "medium",
         timeRef: "30 seconds",
+        timeRefZh: "30 秒",
         signal: "Fragrant (prickly + spicy) — pull them before they go black",
+        signalZh: "香气扑鼻（麻+辣）——变黑前捞出",
       },
     },
     {
       text: "Turn heat to high. Add chicken in a single layer and sear 1 minute without stirring, then stir-fry until mostly cooked.",
+      textZh: "转大火。鸡块平铺入锅，先静置 1 分钟不翻动，再翻炒至基本熟透。",
       zhHint: "大火快炒鸡丁",
       stateNote: {
         visual: "Chicken edges sear golden, pieces separate easily",
+        visualZh: "鸡块边缘煎至金黄，彼此轻松分开",
         heat: "high",
         timeRef: "2-3 minutes",
+        timeRefZh: "2-3 分钟",
         signal: "No raw pink on most surfaces; still slightly pink in thickest pieces",
+        signalZh: "大部分表面无生粉红色；最厚处仍微带粉红",
       },
     },
     {
       text: "Add garlic, ginger, and scallion sections. Stir-fry 30 seconds until fragrant.",
+      textZh: "下蒜片、姜片和大葱段。爆炒 30 秒至出香。",
       zhHint: "下葱姜蒜爆香",
       stateNote: {
         visual: "Aromatics glisten and release scent",
+        visualZh: "葱姜蒜油光发亮，香气四溢",
         heat: "high",
         timeRef: "30 seconds",
+        timeRefZh: "30 秒",
         signal: "Garlic edges just start to color",
+        signalZh: "蒜片边缘刚开始变色",
       },
     },
     {
       text: "Pour in the sauce. Stir rapidly 20-30 seconds until it thickens and coats everything.",
+      textZh: "倒入碗汁。快速翻炒 20-30 秒，直到汤汁变稠裹住所有食材。",
       zhHint: "烹入碗汁",
       stateNote: {
         visual: "Sauce turns glossy and clings to chicken",
+        visualZh: "碗汁变得有光泽并挂在鸡块上",
         heat: "high",
         timeRef: "20-30 seconds",
+        timeRefZh: "20-30 秒",
         signal: "Clear trail left when spatula swipes the pan",
+        signalZh: "锅铲划过锅底留下清晰痕迹",
       },
     },
     {
       text: "Off heat: fold in the peanuts. Serve immediately.",
+      textZh: "关火：拌入花生米。立即上桌。",
       zhHint: "最后拌入花生",
       stateNote: {
         visual: "Peanuts coated in glossy sauce, still whole",
+        visualZh: "花生裹着光泽的酱汁，依然完整",
         signal: "Peanuts still crunchy",
+        signalZh: "花生依然酥脆",
       },
     },
   ],
@@ -241,5 +279,12 @@ export const kungPaoChicken: Recipe = {
     "Too spicy? Remove chili seeds and use 6 chilies instead of 10.",
     "Cashews make a luxurious swap for peanuts.",
   ],
-  relatedSlugs: ["mapo-tofu", "beef-and-broccoli"],
+  tipsZh: [
+    "以醋为主的碗汁，是正宗宫保鸡丁与美式甜口的根本区别。",
+    "花椒不能省——麻感与辣椒的辣形成对比，这才是这道菜。",
+    "太辣？去籽，并用 6 个干辣椒代替 10 个。",
+    "用腰果代替花生，口感更高级。",
+  ],
+  relatedSlugs: ["mapo-tofu", "beef-and-broccoli", "tomato-and-egg"],
+  image: "/images/recipes/kung-pao-chicken.png",
 };

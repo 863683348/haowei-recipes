@@ -1,0 +1,137 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { RecipeCard } from "@/components/recipe-card";
+import { getRecipeBySlug } from "@/data/recipes";
+import { isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { notFound } from "next/navigation";
+
+interface Props {
+  params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const loc = locale as Locale;
+  const t = getDictionary(loc);
+  return {
+    title: t.metadata.homeTitle,
+    description: t.metadata.homeDesc,
+    alternates: pageAlternates("/", loc),
+  };
+}
+
+const featuredSlugs = ["tomato-and-egg", "mapo-tofu", "kung-pao-chicken", "egg-fried-rice"];
+
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+  const loc = locale as Locale;
+  const t = getDictionary(loc);
+
+  const featured = featuredSlugs
+    .map((s) => getRecipeBySlug(s))
+    .filter((r): r is NonNullable<typeof r> => Boolean(r));
+
+  // WebSite + Organization JSON-LD（首页 SEO 站点级结构化数据）
+  const siteJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "HǎoWèi 好味",
+      alternateName: ["HaoWei", "好味", "HǎoWèi Recipes"],
+      url: absoluteUrl("/"),
+      inLanguage: ["en-US", "zh-CN"],
+      description: t.metadata.siteDesc,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "HǎoWèi 好味",
+      url: absoluteUrl("/"),
+      logo: absoluteUrl("/images/og-default.png"),
+    },
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+      />
+      <main>
+      {/* Hero */}
+      <section className="border-b border-[var(--hw-border)] bg-[var(--hw-bg-soft)]">
+        <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:py-20">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--hw-ginger)]">
+            {t.home.eyebrow}
+          </p>
+          <h1 className="mx-auto mt-3 max-w-2xl font-serif text-3xl font-bold leading-tight text-[var(--hw-fg)] sm:text-5xl">
+            {t.home.heroTitle}
+          </h1>
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-[var(--hw-fg-muted)] sm:text-lg">
+            {t.home.heroDesc}
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href={localizePath("/recipes", loc)}
+              className="rounded-lg bg-[var(--hw-soy)] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 dark:bg-[var(--hw-ginger)]"
+            >
+              {t.home.browseAll}
+            </Link>
+            <Link
+              href={localizePath("/ai-assistant", loc)}
+              className="rounded-lg border border-[var(--hw-border)] bg-[var(--hw-card)] px-6 py-3 text-sm font-semibold text-[var(--hw-fg)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
+            >
+              {t.home.askAI}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 场景入口 */}
+      <section className="mx-auto max-w-5xl px-4 py-12">
+        <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+          {t.home.situationsTitle}
+        </h2>
+        <div className="mt-5 grid gap-4 sm:grid-cols-3">
+          {t.home.scenarios.map((c) => (
+            <Link
+              key={c.title}
+              href={localizePath(c.href, loc)}
+              className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              <span className="text-2xl">{c.icon}</span>
+              <h3 className="mt-3 font-serif text-lg font-semibold text-[var(--hw-fg)]">
+                {c.title}
+              </h3>
+              <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">{c.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* 精选菜谱 */}
+      <section className="mx-auto max-w-5xl px-4 pb-16">
+        <div className="flex items-center justify-between">
+          <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+            {t.home.startHere}
+          </h2>
+          <Link
+            href={localizePath("/recipes", loc)}
+            className="text-sm font-medium text-[var(--hw-ginger)] hover:underline"
+          >
+            {t.home.viewAll}
+          </Link>
+        </div>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {featured.map((r) => (
+            <RecipeCard key={r.slug} recipe={r} />
+          ))}
+        </div>
+      </section>
+    </main>
+    </>
+  );
+}

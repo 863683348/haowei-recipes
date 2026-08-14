@@ -1,8 +1,8 @@
 import { recipes } from "@/data/recipes";
+import { locales, SITE_URL } from "@/i18n/config";
 
-/** sitemap.xml — route handler 手动缓存头（skill 铁律：route.ts 不自动走 headers 规则） */
+/** sitemap.xml — 双语言 URL + hreflang alternates（route handler 手动缓存头） */
 export async function GET() {
-  const base = "https://haoweirecipes.com";
   const staticPaths = [
     "",
     "/recipes",
@@ -13,24 +13,38 @@ export async function GET() {
     "/faq",
     "/privacy",
     "/contact",
-    "/shopping-list",
+    // 注意：/shopping-list 不收录（robots.txt 已 Disallow，避免浪费抓取预算）
   ];
-  const urls = [
-    ...staticPaths.map((p) => ({ path: p, lastmod: "2026-08-15" })),
-    ...recipes.map((r) => ({ path: `/recipes/${r.slug}`, lastmod: "2026-08-15" })),
+  const paths = [
+    ...staticPaths.map((p) => ({ path: p, lastmod: "2026-08-15", freq: "monthly" })),
+    ...recipes.map((r) => ({
+      path: `/recipes/${r.slug}`,
+      lastmod: "2026-08-15",
+      freq: "weekly",
+    })),
   ];
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
-  .map(
-    (u) => `  <url>
-    <loc>${base}${u.path}</loc>
+  const urlset = paths
+    .map((u) => {
+      const alternates = locales
+        .map(
+          (loc) =>
+            `      <xhtml:link rel="alternate" hreflang="${loc}" href="${SITE_URL}/${loc}${u.path}" />`
+        )
+        .join("\n");
+      return `  <url>
+    <loc>${SITE_URL}/${locales[0]}${u.path}</loc>
     <lastmod>${u.lastmod}</lastmod>
-    <changefreq>${u.path.includes("/recipes/") ? "weekly" : "monthly"}</changefreq>
-  </url>`
-  )
-  .join("\n")}
+    <changefreq>${u.freq}</changefreq>
+${alternates}
+  </url>`;
+    })
+    .join("\n");
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urlset}
 </urlset>`;
 
   return new Response(xml, {
