@@ -190,5 +190,5 @@ export const tomatoEggs: Recipe = {
     "家常版里糖不能省：正是它让这道菜尝起来是“家常味”而不是酸味。",
   ],
   relatedSlugs: ["egg-fried-rice", "mapo-tofu", "scallion-pancakes"],
-  image: "/images/recipes/tomato-and-egg.png",
+  image: "/images/recipes/tomato-and-egg.webp",
 };

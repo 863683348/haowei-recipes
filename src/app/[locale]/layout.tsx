@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!isLocale(locale)) return {};
   const t = getDictionary(locale);
   const siteTitle = t.metadata.siteTitle;
-  const siteImage = absoluteUrl("/images/og-default.png");
+  const siteImage = absoluteUrl("/images/og-default.webp");
 
   return {
     title: {

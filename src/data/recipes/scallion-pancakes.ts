@@ -181,5 +181,5 @@ export const scallionPancakes: Recipe = {
     "擀好的生饼用烘焙纸隔开冷冻；直接冷冻下锅煎，每面多加 1 分钟。",
   ],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice", "kung-pao-chicken"],
-  image: "/images/recipes/scallion-pancakes.png",
+  image: "/images/recipes/scallion-pancakes.webp",
 };

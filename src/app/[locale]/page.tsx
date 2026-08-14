@@ -66,7 +66,7 @@ export default async function HomePage({ params }: Props) {
       "@type": "Organization",
       name: "HǎoWèi 好味",
       url: absoluteUrl("/"),
-      logo: absoluteUrl("/images/og-default.png"),
+      logo: absoluteUrl("/images/og-default.webp"),
     },
   ];
 
