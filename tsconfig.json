@@ -17,5 +17,5 @@
     "paths": { "@/*": ["./src/*"] }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "node_modules-old", ".next-old-2", ".next-broken"]
+  "exclude": ["node_modules", "node_modules-old", ".next-old-2", ".next-broken", "_archive-single-lang", "_archive-images"]
 }

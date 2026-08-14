@@ -1,4 +1,4 @@
-import type { Recipe } from "@/lib/types";
+import type { DietLabel, Recipe } from "@/lib/types";
 import { tomatoEggs } from "./tomato-eggs";
 import { mapoTofu } from "./mapo-tofu";
 import { kungPaoChicken } from "./kung-pao-chicken";
@@ -38,7 +38,8 @@ export interface RecipeFilter {
   cuisine?: string;
   difficulty?: string;
   maxTime?: number;
-  diet?: string;
+  diet?: DietLabel;
+  tag?: string;
   query?: string;
 }
 
@@ -47,8 +48,9 @@ export function filterRecipes(filter: RecipeFilter): Recipe[] {
     if (filter.cuisine && r.cuisine !== filter.cuisine) return false;
     if (filter.difficulty && r.difficulty !== filter.difficulty) return false;
     if (filter.maxTime && r.timeMin > filter.maxTime) return false;
-    if (filter.diet && filter.diet !== "none" && !r.dietary.includes(filter.diet as never))
+    if (filter.diet && filter.diet !== "none" && !r.dietary.includes(filter.diet))
       return false;
+    if (filter.tag && !r.tags.includes(filter.tag)) return false;
     if (filter.query) {
       const q = filter.query.toLowerCase();
       const haystack = [

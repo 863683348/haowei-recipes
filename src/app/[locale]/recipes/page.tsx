@@ -5,6 +5,7 @@ import { filterRecipes, cuisineOptions } from "@/data/recipes";
 import { isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { notFound } from "next/navigation";
+import type { DietLabel } from "@/lib/types";
 
 export const dynamic = "force-static";
 
@@ -44,7 +45,8 @@ export default async function RecipesPage({ params, searchParams }: Props) {
     cuisine: sp.cuisine,
     difficulty: sp.difficulty,
     maxTime: sp.time ? Number(sp.time) : undefined,
-    diet: sp.diet,
+    diet: (sp.diet ?? "") === "" ? undefined : (sp.diet as DietLabel),
+    tag: sp.tag,
     query: sp.q,
   };
   const list = filterRecipes(filter);
