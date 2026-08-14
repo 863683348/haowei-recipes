@@ -8,6 +8,11 @@ import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
 import type { ShoppingItem } from "@/hooks/use-shopping-list";
 
+// 购物清单页依赖客户端 localStorage，避免 SSR 预渲染（useI18n 在 SSR 静态化时
+// 会拿到错误的 intermediate value，导致 build 失败）。Next.js 仍然允许在 client
+// component 顶层声明 server-side directive 来跳过预渲染。
+export const dynamic = "force-dynamic";
+
 /** R-04 购物清单页：双列（本地超市/亚超）+ 勾选 + 复制导出 */
 export default function ShoppingListPage() {
   const { items, toggleItem, removeItem, clearAll, grouped, toText } =
