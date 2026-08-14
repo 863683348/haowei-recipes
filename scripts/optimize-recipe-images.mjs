@@ -42,9 +42,9 @@ function parseArgs(argv) {
 }
 
 async function collectInputs(args) {
-  // 显式传入文件 > --src 目录 > 默认归档目录
+  // 显式传入文件 > --src 目录 > 默认归档目录（--og 默认读 _archive-images/ 根，即 og-default.png）
   if (args.files.length > 0) return args.files;
-  const dir = args.src ?? DEFAULT_SRC;
+  const dir = args.src ?? (args.og ? path.join(ROOT, "_archive-images") : DEFAULT_SRC);
   const entries = await fs.readdir(dir).catch(() => []);
   return entries
     .filter((f) => /\.(png|jpe?g|webp)$/i.test(f))

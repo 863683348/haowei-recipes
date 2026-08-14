@@ -2,6 +2,11 @@
 /**
  * 百炼（阿里云通义万相）菜谱生图脚本 — 替换 WorkBuddy ImageGen（成本低 ~10 倍）
  *
+ * ⚠️ 关键：wanx2.1-t2i-turbo 只支持【异步任务模式】：
+ *   1. POST /services/aigc/text2image/image-synthesis (X-DashScope-Async: enable) → task_id
+ *   2. GET  /api/v1/tasks/{task_id} 轮询 → SUCCEEDED → output.results[0].url 下载
+ *   （multimodal-generation 同步端点仅适配 wan2.6，不适用本模型）
+ *
  * 前置：BAILIAN_API_KEY（二选一）：
  *   1. 环境变量：export BAILIAN_API_KEY=sk-xxx
  *   2. 本地文件：~/.workbuddy/secrets/bailian-api-key.txt（推荐，key 不进对话/仓库）
@@ -13,9 +18,8 @@
  *   node scripts/bailian-recipe-images.mjs --og                     # 生成 OG 默认图
  *   node scripts/bailian-recipe-images.mjs --no-optimize            # 只下载 PNG，不转 WebP
  *
- * 流程：调 wanx2.1-t2i-turbo 生成 → 下载 PNG 到 _archive-images/ → 调
+ * 流程：调 wanx2.1-t2i-turbo（异步）生成 → 下载 PNG 到 _archive-images/ → 调
  *       optimize-recipe-images.mjs 转 WebP → public/images + 更新数据引用。
- * 模型/端点由 BAILIAN_IMAGE_MODEL / BAILIAN_BASE_URL 覆盖（默认内置）。
  */
 import { promises as fs } from "node:fs";
 import os from "node:os";
@@ -29,10 +33,16 @@ const ARCHIVE = path.join(ROOT, "_archive-images", "recipes");
 const OG_ARCHIVE = path.join(ROOT, "_archive-images");
 
 const MODEL = process.env.BAILIAN_IMAGE_MODEL || "wanx2.1-t2i-turbo";
-const BASE_URL =
+/** 提交任务端点（异步）；multimodal-generation 同步端点仅 wan2.6 可用 */
+const SUBMIT_URL =
   process.env.BAILIAN_BASE_URL ||
-  "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation";
-const SIZE = "1536*1024";
+  "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis";
+/** 任务查询端点（固定） */
+const TASK_URL =
+  process.env.BAILIAN_TASK_URL || "https://dashscope.aliyuncs.com/api/v1/tasks";
+const SIZE = process.env.BAILIAN_IMAGE_SIZE || "1440*960"; // 注意是星号；wanx2.1 宽高限 512-1440
+const POLL_INTERVAL_MS = 4000;
+const POLL_TIMEOUT_MS = 120000;
 
 const STYLE =
   "professional food photography, natural window light, shallow depth of field, rustic wooden table, white ceramic bowls, warm inviting tones, appetizing steam, high resolution, no text, no watermark";
@@ -79,45 +89,63 @@ function getApiKey() {
     .catch(() => null);
 }
 
-async function generateImage(prompt) {
-  const key = await getApiKey();
-  if (!key) {
-    console.error(
-      "❌ 未找到 BAILIAN_API_KEY。请任选其一：\n" +
-        "  1. export BAILIAN_API_KEY=sk-xxx\n" +
-        "  2. 把 key 写入 ~/.workbuddy/secrets/bailian-api-key.txt（推荐）"
-    );
-    process.exit(1);
-  }
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  const res = await fetch(BASE_URL, {
+/** 提交异步任务，返回 task_id */
+async function submitTask(key, prompt) {
+  const res = await fetch(SUBMIT_URL, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${key}`,
       "Content-Type": "application/json",
-      "X-DashScope-Async": "disable",
+      "X-DashScope-Async": "enable",
     },
     body: JSON.stringify({
       model: MODEL,
-      input: {
-        messages: [{ role: "user", content: [{ text: prompt }] }],
-      },
-      parameters: { size: SIZE, n: 1 },
+      input: { prompt },
+      parameters: { size: SIZE, n: 1, watermark: false },
     }),
   });
-
-  const json = await res.json();
+  const json = await res.json().catch(() => ({}));
   if (!res.ok) {
-    console.error("❌ API 错误", res.status, JSON.stringify(json).slice(0, 300));
+    console.error("❌ 提交任务失败", res.status, JSON.stringify(json).slice(0, 400));
     process.exit(1);
   }
+  const taskId = json?.output?.task_id;
+  if (!taskId) {
+    console.error("❌ 未返回 task_id，响应：", JSON.stringify(json).slice(0, 400));
+    process.exit(1);
+  }
+  return taskId;
+}
 
-  // wanx2.1-t2i 新版同步返回：output.choices[0].message.content[].image
-  const choice = json?.output?.choices?.[0];
-  const item = choice?.message?.content?.find((c) => c.image);
-  if (item?.image) return item.image;
-  console.error("❌ 未解析到图片 URL，原始响应：", JSON.stringify(json).slice(0, 500));
-  process.exit(1);
+/** 轮询任务直到 SUCCEEDED/FAILED，返回图片 URL */
+async function pollTask(key, taskId) {
+  const started = Date.now();
+  for (;;) {
+    const res = await fetch(`${TASK_URL}/${taskId}`, {
+      headers: { Authorization: `Bearer ${key}` },
+    });
+    const json = await res.json().catch(() => ({}));
+    const status = json?.output?.task_status;
+    if (status === "SUCCEEDED") {
+      const url = json?.output?.results?.[0]?.url;
+      if (!url) {
+        console.error("❌ 任务成功但无图片 URL", JSON.stringify(json).slice(0, 300));
+        process.exit(1);
+      }
+      return url;
+    }
+    if (status === "FAILED" || status === "CANCELED") {
+      console.error("❌ 任务失败:", status, JSON.stringify(json).slice(0, 300));
+      process.exit(1);
+    }
+    if (Date.now() - started > POLL_TIMEOUT_MS) {
+      console.error("❌ 轮询超时", POLL_TIMEOUT_MS / 1000, "s");
+      process.exit(1);
+    }
+    await sleep(POLL_INTERVAL_MS);
+  }
 }
 
 async function download(url, outPath) {
@@ -161,14 +189,27 @@ async function main() {
     jobs = RECIPES.map((r) => ({ name: r.slug, prompt: `${r.dish}: ${r.desc}, ${STYLE}` }));
   }
 
-  console.log(`使用模型 ${MODEL}，生成 ${jobs.length} 张图…`);
+  const key = await getApiKey();
+  if (!key) {
+    console.error(
+      "❌ 未找到 BAILIAN_API_KEY。请任选其一：\n" +
+        "  1. export BAILIAN_API_KEY=sk-xxx\n" +
+        "  2. 把 key 写入 ~/.workbuddy/secrets/bailian-api-key.txt（推荐）"
+    );
+    process.exit(1);
+  }
+
+  console.log(`使用模型 ${MODEL}（异步任务），生成 ${jobs.length} 张图…`);
   for (const job of jobs) {
     const pngPath = isOg
       ? path.join(OG_ARCHIVE, `${job.name}.png`)
       : path.join(ARCHIVE, `${job.name}.png`);
-    const url = await generateImage(job.prompt);
+    process.stdout.write(`⏳ ${job.name}: 提交任务…`);
+    const taskId = await submitTask(key, job.prompt);
+    process.stdout.write(` task=${taskId.slice(-6)} 轮询中…`);
+    const url = await pollTask(key, taskId);
     const size = await download(url, pngPath);
-    console.log(`✓ ${job.name}: 已下载 PNG ${(size / 1024).toFixed(0)}KB → ${pngPath}`);
+    console.log(` ✓ PNG ${(size / 1024).toFixed(0)}KB`);
   }
 
   if (noOptimize) {
