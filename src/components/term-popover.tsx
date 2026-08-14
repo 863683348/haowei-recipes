@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { getTermByKey } from "@/data/terms";
+import type { Locale } from "@/i18n/config";
 
 /**
  * R-01 英中术语对照：悬浮/点击显示术语卡片
@@ -10,14 +11,22 @@ import { getTermByKey } from "@/data/terms";
 export function TermPopover({
   termKey,
   children,
+  locale,
 }: {
   termKey: string;
   children: React.ReactNode;
+  locale?: Locale;
 }) {
   const [open, setOpen] = useState(false);
   const term = getTermByKey(termKey);
+  const isZh = locale === "zh";
 
   if (!term) return <>{children}</>;
+
+  const definition = isZh ? term.definitionZh ?? term.definition : term.definition;
+  const substituteHint = isZh
+    ? term.substituteHintZh ?? term.substituteHint
+    : term.substituteHint;
 
   return (
     <span
@@ -28,7 +37,7 @@ export function TermPopover({
       onBlur={() => setOpen(false)}
       tabIndex={0}
       role="button"
-      aria-label={`${term.en} — ${term.definition}`}
+      aria-label={`${term.en} — ${definition}`}
     >
       <span className="border-b border-dashed border-[var(--hw-ginger)] text-[var(--hw-soy)] dark:text-[var(--hw-soy)] hover:bg-[rgba(199,123,46,0.12)]">
         {children}
@@ -42,16 +51,16 @@ export function TermPopover({
             {term.zh} · {term.pinyin}
           </span>
           <span className="mt-1.5 block text-sm leading-snug text-[var(--hw-fg)]">
-            {term.definition}
+            {definition}
           </span>
           {term.quantEquivalent && (
             <span className="mt-1.5 block text-xs font-medium text-[var(--hw-scallion)]">
               ⚖ {term.quantEquivalent}
             </span>
           )}
-          {term.substituteHint && (
+          {substituteHint && (
             <span className="mt-1 block text-xs text-[var(--hw-fg-muted)]">
-              🔁 {term.substituteHint}
+              🔁 {substituteHint}
             </span>
           )}
         </span>

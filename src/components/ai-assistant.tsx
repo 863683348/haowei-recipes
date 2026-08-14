@@ -2,38 +2,41 @@
 
 import { useState } from "react";
 import { matchFAQ } from "@/data/faqs";
-
-const confidenceLabel = {
-  high: { text: "Verified", cls: "text-[var(--hw-scallion)] bg-[rgba(74,124,89,0.12)]" },
-  medium: { text: "Advisory", cls: "text-[var(--hw-ginger)] bg-[rgba(199,123,46,0.15)]" },
-  low: { text: "Try with care", cls: "text-[var(--hw-fg-muted)] bg-[var(--hw-bg-soft)]" },
-};
-
-const suggestions = [
-  "Why low heat for garlic?",
-  "What's the difference between light and dark soy?",
-  "No Shaoxing wine — substitute?",
-  "Too salty, how to fix?",
-  "Is this gluten-free?",
-  "Make it vegetarian?",
-];
+import { useI18n } from "@/i18n/provider";
 
 /**
  * R-05 AI 交互式追问（规则版）：FAQ 关键词匹配 + 边界诚实
  */
 export function AIAssistant() {
+  const { locale, t } = useI18n();
+  const isZh = locale === "zh";
   const [input, setInput] = useState("");
   const [history, setHistory] = useState<
     { q: string; answer: string; source?: string; confidence: string }[]
   >([]);
+
+  const confidenceLabel = {
+    high: {
+      text: t.aiAssistant.confidence.high,
+      cls: "text-[var(--hw-scallion)] bg-[rgba(74,124,89,0.12)]",
+    },
+    medium: {
+      text: t.aiAssistant.confidence.medium,
+      cls: "text-[var(--hw-ginger)] bg-[rgba(199,123,46,0.15)]",
+    },
+    low: {
+      text: t.aiAssistant.confidence.low,
+      cls: "text-[var(--hw-fg-muted)] bg-[var(--hw-bg-soft)]",
+    },
+  };
 
   const ask = (raw?: string) => {
     const q = (raw ?? input).trim();
     if (!q) return;
     const hit = matchFAQ(q);
     const answer = hit
-      ? hit.faq.answer
-      : `I'm not sure about "${q}" yet — I'm currently a rule-based helper covering technique, ingredients, flavor, equipment, and diet questions (18 topics so far). Try rephrasing, or check the ${"faq"} page. I'll learn LLM-powered answers in a future update.`;
+      ? (isZh ? hit.faq.answerZh ?? hit.faq.answer : hit.faq.answer)
+      : t.aiAssistant.fallback.replace("{q}", q);
     setHistory((prev) => [
       ...prev,
       {
@@ -50,12 +53,9 @@ export function AIAssistant() {
     <div className="mx-auto w-full max-w-2xl">
       <div className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-5 shadow-sm">
         <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
-          🥢 Ask HǎoWèi
+          {t.aiAssistant.title}
         </h2>
-        <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
-          Questions about technique, ingredients, substitutions, and flavor — answered from our
-          verified cooking knowledge base.
-        </p>
+        <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">{t.aiAssistant.subtitle}</p>
 
         <form
           onSubmit={(e) => {
@@ -67,20 +67,20 @@ export function AIAssistant() {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder='e.g. "Why do you cook garlic first on low heat?"'
+            placeholder={t.aiAssistant.placeholder}
             className="min-w-0 flex-1 rounded-lg border border-[var(--hw-border)] bg-[var(--hw-bg)] px-3 py-2 text-sm text-[var(--hw-fg)] outline-none focus:border-[var(--hw-ginger)]"
-            aria-label="Ask a cooking question"
+            aria-label={t.aiAssistant.placeholder}
           />
           <button
             type="submit"
             className="shrink-0 rounded-lg bg-[var(--hw-soy)] px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90 dark:bg-[var(--hw-ginger)]"
           >
-            Ask
+            {t.aiAssistant.ask}
           </button>
         </form>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {suggestions.map((s) => (
+          {t.aiAssistant.suggestions.map((s) => (
             <button
               key={s}
               type="button"
@@ -111,7 +111,9 @@ export function AIAssistant() {
                     {conf.text}
                   </span>
                   {h.source && (
-                    <span className="text-[var(--hw-fg-muted)]">Source: {h.source}</span>
+                    <span className="text-[var(--hw-fg-muted)]">
+                      {t.aiAssistant.source}: {h.source}
+                    </span>
                   )}
                 </div>
               </li>

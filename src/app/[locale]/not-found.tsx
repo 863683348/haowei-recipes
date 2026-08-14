@@ -1,15 +1,17 @@
-import { isLocale, localizePath, type Locale } from "@/i18n/config";
-import { getDictionary } from "@/i18n/get-dictionary";
-import Link from "next/link";
+"use client";
 
-/** [locale] 级 404（包在 [locale]/layout 内，带 Header/Footer） */
-export default async function LocaleNotFound({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  const loc: Locale = isLocale(locale) ? locale : "en";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { getLocaleFromPath, localizePath, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/get-dictionary";
+
+/**
+ * [locale] 级 404（包在 [locale]/layout 内，带 Header/Footer）。
+ * 注意：Next.js 15 的 not-found.tsx 不接收 params，语言从当前 URL 路径提取。
+ */
+export default function LocaleNotFound() {
+  const pathname = usePathname();
+  const loc: Locale = getLocaleFromPath(pathname) ?? "en";
   const t = getDictionary(loc);
 
   return (

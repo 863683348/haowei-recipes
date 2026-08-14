@@ -5,6 +5,7 @@ import type { Substitution } from "@/lib/types";
  * type=asian2local：亚超食材 → 本地超市替代（风味还原度星级）
  * type=pair：常见配对/口味近似建议
  * fidelity: 1-5 星（Spec §4：星级可视化）
+ * v1.1 多语言：英文为主，中文增量字段（toZh/noteZh）。
  */
 export const substitutions: Substitution[] = [
   /* ========== 酱料 ========== */
@@ -13,9 +14,11 @@ export const substitutions: Substitution[] = [
     from: "Shaoxing cooking wine",
     fromZh: "绍兴酒",
     to: "Dry sherry (fino/amontillado)",
+    toZh: "干雪利酒（fino/amontillado）",
     ratio: "1:1",
     fidelity: 4,
     note: "Closest match for flavor depth. Alcohol cooks off; a splash of water + rice vinegar also works.",
+    noteZh: "风味层次最接近。酒精会挥发；也可用水+米醋少许替代。",
     type: "asian2local",
   },
   {
@@ -23,9 +26,11 @@ export const substitutions: Substitution[] = [
     from: "Dark soy sauce",
     fromZh: "老抽",
     to: "Light soy + pinch of sugar + few drops molasses",
+    toZh: "生抽 + 一小撮糖 + 几滴糖蜜",
     ratio: "1 tbsp dark ≈ 1 tbsp light soy + 1/4 tsp sugar",
     fidelity: 4,
     note: "Adds color and slight sweetness without buying a new bottle.",
+    noteZh: "不用买新瓶也能补上颜色和微甜。",
     type: "asian2local",
   },
   {
@@ -33,9 +38,11 @@ export const substitutions: Substitution[] = [
     from: "Oyster sauce",
     fromZh: "蚝油",
     to: "Mushroom stir-fry sauce (vegetarian 'oyster' sauce)",
+    toZh: "菌菇炒酱（素食“蚝油”）",
     ratio: "1:1",
     fidelity: 4,
     note: "Most supermarket 'mushroom oyster sauce' is nearly identical in use; also GF-friendly.",
+    noteZh: "超市常见的“菌菇蚝油”用法几乎一致，且多无麸质。",
     type: "asian2local",
   },
   {
@@ -43,9 +50,11 @@ export const substitutions: Substitution[] = [
     from: "Doubanjiang (fermented chili bean paste)",
     fromZh: "郫县豆瓣酱",
     to: "Gochujang + 1/2 tsp chili flakes + pinch of salt",
+    toZh: "韩式辣酱 + 1/2 茶匙辣椒面 + 一小撮盐",
     ratio: "1 tbsp doubanjiang ≈ 2 tsp gochujang + chili flakes",
     fidelity: 3,
     note: "Sweeter and less fermented; add a little salt and vinegar to balance.",
+    noteZh: "更甜、发酵味更淡；加一点盐和醋平衡。",
     type: "asian2local",
   },
   {
@@ -53,9 +62,11 @@ export const substitutions: Substitution[] = [
     from: "Chinkiang (black) vinegar",
     fromZh: "镇江香醋",
     to: "Balsamic vinegar + splash of water",
+    toZh: "意大利黑醋 + 少许水",
     ratio: "1:1 (thinned balsamic)",
     fidelity: 4,
     note: "Malty sweetness is close; thin balsamic slightly so it isn't too syrupy.",
+    noteZh: "麦芽甜味接近；黑醋稍兑水避免过稠。",
     type: "asian2local",
   },
   {
@@ -63,9 +74,11 @@ export const substitutions: Substitution[] = [
     from: "Hoisin sauce",
     fromZh: "海鲜酱",
     to: "BBQ sauce + 1 tsp soy sauce + pinch five-spice",
+    toZh: "烧烤酱 + 1 茶匙酱油 + 一小撮五香粉",
     ratio: "1:1",
     fidelity: 3,
     note: "BBQ base gives the sweet-savory body; five-spice brings it closer.",
+    noteZh: "烧烤酱提供甜咸主体；五香粉让味道更接近。",
     type: "asian2local",
   },
   {
@@ -73,9 +86,11 @@ export const substitutions: Substitution[] = [
     from: "Toasted sesame oil",
     fromZh: "香油",
     to: "Neutral oil + few drops of toasted sesame seeds (pounded)",
+    toZh: "食用油 + 几滴捣碎的熟芝麻",
     ratio: "finishing only",
     fidelity: 2,
     note: "Aroma is irreplaceable — this only adds a hint. Best to buy sesame oil; it lasts.",
+    noteZh: "香气不可替代——此法只能加一丝。建议直接买香油，耐放。",
     type: "asian2local",
   },
   {
@@ -83,9 +98,11 @@ export const substitutions: Substitution[] = [
     from: "Chili oil (red oil)",
     fromZh: "辣椒油",
     to: "Warm neutral oil poured over chili flakes + 5-spice",
+    toZh: "热食用油浇在辣椒面 + 五香粉上",
     ratio: "DIY 5 min",
     fidelity: 4,
     note: "Easy homemade version; store in fridge.",
+    noteZh: "简单自制版；冷藏保存。",
     type: "asian2local",
   },
 
@@ -95,9 +112,11 @@ export const substitutions: Substitution[] = [
     from: "Sichuan peppercorn",
     fromZh: "花椒",
     to: "Black pepper + citrus zest (lemon/orange)",
+    toZh: "黑胡椒 + 柑橘皮屑（柠檬/橙）",
     ratio: "1 tsp Sichuan ≈ 1/2 tsp black pepper + zest",
     fidelity: 2,
     note: "Gives warmth and a hint of citrus but no numbing (má). Order online if you want the real effect.",
+    noteZh: "有暖辣和一丝柑橘香，但没有麻感。想要正宗麻味请网购。",
     type: "asian2local",
   },
   {
@@ -105,9 +124,11 @@ export const substitutions: Substitution[] = [
     from: "Star anise",
     fromZh: "八角",
     to: "Pinch of five-spice powder",
+    toZh: "一小撮五香粉",
     ratio: "1 star ≈ 1/4 tsp five-spice",
     fidelity: 3,
     note: "Five-spice is star-anise forward; close enough for braises.",
+    noteZh: "五香粉以八角为主导；用于红烧足够接近。",
     type: "asian2local",
   },
   {
@@ -115,9 +136,11 @@ export const substitutions: Substitution[] = [
     from: "White pepper",
     fromZh: "白胡椒",
     to: "Black pepper (use slightly less)",
+    toZh: "黑胡椒（用量略减）",
     ratio: "3/4 tsp black ≈ 1 tsp white",
     fidelity: 4,
     note: "Slightly more floral; fine for most dishes.",
+    noteZh: "稍带花香；多数菜肴适用。",
     type: "asian2local",
   },
 
@@ -127,9 +150,11 @@ export const substitutions: Substitution[] = [
     from: "Rice wine / mirin",
     fromZh: "米酒/味醂",
     to: "Dry white wine + 1/4 tsp sugar",
+    toZh: "干白葡萄酒 + 1/4 茶匙糖",
     ratio: "1:1",
     fidelity: 3,
     note: "White wine brings acidity; sugar rounds it into the rice-wine direction.",
+    noteZh: "白葡萄酒提供酸度；糖使其偏向米酒风味。",
     type: "asian2local",
   },
   {
@@ -137,9 +162,11 @@ export const substitutions: Substitution[] = [
     from: "Silken tofu (for mapo tofu)",
     fromZh: "嫩豆腐",
     to: "Medium-firm tofu, gently simmered",
+    toZh: "中硬度豆腐，小火慢煨",
     ratio: "1:1 (handle gently)",
     fidelity: 4,
     note: "Less delicate texture but holds sauce well and is easier to find.",
+    noteZh: "口感略粗，但挂汁好且更容易买到。",
     type: "asian2local",
   },
   {
@@ -147,9 +174,11 @@ export const substitutions: Substitution[] = [
     from: "Baby bok choy",
     fromZh: "小白菜",
     to: "Swiss chard / spinach / broccoli florets",
+    toZh: "甜菜叶 / 菠菜 / 西兰花小朵",
     ratio: "1:1",
     fidelity: 4,
     note: "Any quick-cooking green works; adjust cooking time for thickness.",
+    noteZh: "任意快熟绿叶菜均可；按厚薄调整烹制时间。",
     type: "asian2local",
   },
   {
@@ -157,9 +186,11 @@ export const substitutions: Substitution[] = [
     from: "Napa cabbage",
     fromZh: "大白菜",
     to: "Savoy cabbage",
+    toZh: "皱叶甘蓝",
     ratio: "1:1",
     fidelity: 4,
     note: "Closest texture and sweetness in Western supermarkets.",
+    noteZh: "西方超市中质地与甜度最接近的选择。",
     type: "asian2local",
   },
   {
@@ -167,9 +198,11 @@ export const substitutions: Substitution[] = [
     from: "Gai lan (Chinese broccoli)",
     fromZh: "芥兰",
     to: "Broccolini",
+    toZh: "西兰花苗",
     ratio: "1:1",
     fidelity: 4,
     note: "Broccolini is the hybrid closest to gai lan's tender stems and mild bitterness.",
+    noteZh: "西兰花苗是最接近芥兰嫩茎与微苦风味的杂交品种。",
     type: "asian2local",
   },
   {
@@ -177,9 +210,11 @@ export const substitutions: Substitution[] = [
     from: "Dried shiitake",
     fromZh: "干香菇",
     to: "Fresh shiitake (more water, less umami)",
+    toZh: "新鲜香菇（水多、鲜味淡）",
     ratio: "1 dried ≈ 2 fresh",
     fidelity: 3,
     note: "Fresh lacks the intense umami; add a splash of soy or mushroom stock to compensate.",
+    noteZh: "新鲜香菇鲜味不足；加一点酱油或菌菇高汤弥补。",
     type: "asian2local",
   },
   {
@@ -187,9 +222,11 @@ export const substitutions: Substitution[] = [
     from: "Five-spice powder",
     fromZh: "五香粉",
     to: "DIY: cinnamon + cloves + star anise + fennel + Sichuan pepper",
+    toZh: "自制：肉桂 + 丁香 + 八角 + 小茴香 + 花椒",
     ratio: "equal parts, ground",
     fidelity: 4,
     note: "All components are easy to find; grind or crush fine.",
+    noteZh: "各成分都好买；磨碎或碾细即可。",
     type: "asian2local",
   },
   {
@@ -197,9 +234,11 @@ export const substitutions: Substitution[] = [
     from: "Chinese sausage (lap cheong)",
     fromZh: "腊肠",
     to: "Chorizo (cooked) or smoked sausage + 1/4 tsp five-spice",
+    toZh: "熟西班牙辣肠或烟熏香肠 + 1/4 茶匙五香粉",
     ratio: "1:1",
     fidelity: 3,
     note: "Chorizo mimics the sweet-savory, slightly fatty bite.",
+    noteZh: "西班牙辣肠近似腊肠的甜咸油润口感。",
     type: "asian2local",
   },
   {
@@ -207,9 +246,11 @@ export const substitutions: Substitution[] = [
     from: "Pork belly (for 红烧肉)",
     fromZh: "五花肉",
     to: "Pork shoulder / collar, fattier cuts",
+    toZh: "猪肩肉/梅花肉等偏肥部位",
     ratio: "1:1 (braise 15-20 min longer)",
     fidelity: 4,
     note: "Shoulder braises beautifully; just a touch less rich.",
+    noteZh: "肩肉红烧效果很好，只是略少油润。",
     type: "asian2local",
   },
   {
@@ -217,9 +258,11 @@ export const substitutions: Substitution[] = [
     from: "Shaoxing + oyster sauce combo",
     fromZh: "料酒+蚝油",
     to: "Dry sherry + Worcestershire sauce (half amount)",
+    toZh: "干雪利酒 + 伍斯特酱（减半）",
     ratio: "1 tbsp sherry + 1/2 tsp Worcestershire",
     fidelity: 3,
     note: "Worcestershire adds the fermented umami depth oyster sauce normally provides.",
+    noteZh: "伍斯特酱提供蚝油通常带来的发酵鲜味层次。",
     type: "pair",
   },
   {
@@ -227,9 +270,11 @@ export const substitutions: Substitution[] = [
     from: "Sweet & sour sauce base",
     fromZh: "糖醋汁",
     to: "Ketchup + rice vinegar + sugar (2:1:1)",
+    toZh: "番茄酱 + 米醋 + 糖（2:1:1）",
     ratio: "2 tbsp ketchup + 1 tbsp vinegar + 1 tbsp sugar",
     fidelity: 4,
     note: "Classic home hack; ketchup gives color and body.",
+    noteZh: "经典家常配方；番茄酱提供色泽与浓稠度。",
     type: "pair",
   },
 ];
@@ -242,7 +287,8 @@ export function findSubstitution(query: string): Substitution[] {
     (s) =>
       s.from.toLowerCase().includes(q) ||
       (s.fromZh && s.fromZh.includes(query.trim())) ||
-      s.to.toLowerCase().includes(q)
+      s.to.toLowerCase().includes(q) ||
+      (s.toZh && s.toZh.includes(query.trim()))
   );
 }
 

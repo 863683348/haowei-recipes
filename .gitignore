@@ -4,6 +4,13 @@
 /.pnp
 .pnp.*
 
+# 单语版旧页面归档（迁移到 [locale] 后保留备份，不提交）
+/_archive-single-lang/
+
+# 构建缓存备份（safe-delete 钩子无法删除时的临时归档，不提交）
+/.next-old-*/
+/.next*/
+
 # testing
 /coverage
 

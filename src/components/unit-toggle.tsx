@@ -1,10 +1,12 @@
 "use client";
 
 import { useUnitPreference } from "@/hooks/use-unit-preference";
+import { useI18n } from "@/i18n/provider";
 
 /** 计量双轨切换（公制 g/ml ↔ 美制 cup/tbsp/oz，localStorage 记忆） */
 export function UnitToggle() {
   const { unit, toggle } = useUnitPreference();
+  const { t } = useI18n();
   return (
     <button
       type="button"
@@ -13,7 +15,7 @@ export function UnitToggle() {
       aria-label="Toggle metric/US measurement units"
       title="Toggle g/ml ↔ cup/tbsp"
     >
-      ⚖ {unit === "metric" ? "g/ml" : "cup/tbsp"}
+      ⚖ {unit === "metric" ? t.common.unitMetric : t.common.unitUS}
     </button>
   );
 }

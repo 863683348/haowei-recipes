@@ -23,17 +23,17 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       { source: "/(.*)", headers: securityHeaders },
-      // 公开内容页全部强制边缘缓存（语言首页单段单独覆盖）
+      // 公开内容页全部强制边缘缓存（双语言前缀）
       { source: "/:locale(en|zh)", headers: cacheHeaders },
-      { source: "/recipes", headers: cacheHeaders },
-      { source: "/recipes/:slug", headers: cacheHeaders },
-      { source: "/terms", headers: cacheHeaders },
-      { source: "/substitutions", headers: cacheHeaders },
-      { source: "/about", headers: cacheHeaders },
-      { source: "/faq", headers: cacheHeaders },
-      { source: "/privacy", headers: cacheHeaders },
-      { source: "/contact", headers: cacheHeaders },
-      { source: "/ai-assistant", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/recipes", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/recipes/:slug", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/terms", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/substitutions", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/about", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/faq", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/privacy", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/contact", headers: cacheHeaders },
+      { source: "/:locale(en|zh)/ai-assistant", headers: cacheHeaders },
     ];
   },
 };
