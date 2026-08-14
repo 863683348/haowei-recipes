@@ -4,6 +4,8 @@ import { mapoTofu } from "./mapo-tofu";
 import { kungPaoChicken } from "./kung-pao-chicken";
 import { scallionPancakes } from "./scallion-pancakes";
 import { eggFriedRice } from "./egg-fried-rice";
+import { cucumber_scrambled_eggs } from "./cucumber-scrambled-eggs";
+import { garlic_chives_scrambled_eggs } from "./garlic-chives-scrambled-eggs";
 import { beefBroccoli } from "./beef-and-broccoli";
 
 /** 全部菜谱（P0 首批 6 篇，后续扩展） */
@@ -14,6 +16,8 @@ export const recipes: Recipe[] = [
   scallionPancakes,
   eggFriedRice,
   beefBroccoli,
+  cucumber_scrambled_eggs,
+  garlic_chives_scrambled_eggs,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

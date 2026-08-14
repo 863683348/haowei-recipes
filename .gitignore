@@ -44,3 +44,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 每日菜谱生成临时批 JSON
+/scripts/.recipe-batch-*.json
