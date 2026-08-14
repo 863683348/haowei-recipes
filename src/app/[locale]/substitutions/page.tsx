@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SubstitutionPanel } from "@/components/substitution-panel";
+import { StarIcon } from "@/components/icons";
 import { substitutions } from "@/data/substitutions";
 import { isLocale, pageAlternates, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -63,12 +64,14 @@ export default async function SubstitutionsPage({ params }: Props) {
                 </span>
                 <span className="text-sm" title={t.recipeDetail.fidelity.replace("{f}", String(s.fidelity))}>
                   {[1, 2, 3, 4, 5].map((n) => (
-                    <span
+                    <StarIcon
                       key={n}
-                      className={n <= s.fidelity ? "text-[var(--hw-ginger)]" : "text-[var(--hw-border)]"}
-                    >
-                      ★
-                    </span>
+                      className={
+                        n <= s.fidelity
+                          ? "inline-block h-3.5 w-3.5 fill-[var(--hw-ginger)] text-[var(--hw-ginger)]"
+                          : "inline-block h-3.5 w-3.5 text-[var(--hw-border)]"
+                      }
+                    />
                   ))}
                 </span>
               </div>

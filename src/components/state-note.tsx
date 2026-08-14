@@ -2,6 +2,7 @@
 
 import type { StateNote } from "@/lib/types";
 import { useI18n } from "@/i18n/provider";
+import { FireIcon, ClockIcon } from "@/components/icons";
 
 /**
  * R-03 火候状态可视化：每个"看状态"步骤的状态描述 + 时间参考 + 判断信号
@@ -21,13 +22,13 @@ export function StateNote({ state }: { state: StateNote }) {
           {t.recipeDetail.lookFor}
         </span>
         {state.heat && (
-          <span className="rounded-full bg-[var(--hw-soy)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--hw-fg-muted)]">
-            🔥 {heatLabels[state.heat]}
+          <span className="inline-flex items-center gap-1 rounded-full bg-[var(--hw-soy)]/10 px-2.5 py-0.5 text-xs font-medium text-[var(--hw-fg-muted)]">
+            <FireIcon className="h-3 w-3" /> {heatLabels[state.heat]}
           </span>
         )}
         {timeRef && (
-          <span className="rounded-full bg-[var(--hw-scallion)]/12 px-2.5 py-0.5 text-xs font-medium text-[var(--hw-scallion)]">
-            ⏱ {timeRef}
+          <span className="inline-flex items-center gap-1 rounded-full bg-[var(--hw-scallion)]/12 px-2.5 py-0.5 text-xs font-medium text-[var(--hw-scallion)]">
+            <ClockIcon className="h-3 w-3" /> {timeRef}
           </span>
         )}
       </div>

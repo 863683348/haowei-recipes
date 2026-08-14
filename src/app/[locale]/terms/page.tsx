@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { terms } from "@/data/terms";
+import { ScaleIcon } from "@/components/icons";
 import { isLocale, pageAlternates, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { notFound } from "next/navigation";
@@ -74,8 +75,8 @@ export default async function TermsPage({ params }: Props) {
                       <td className="hidden px-4 py-3 text-[var(--hw-fg-muted)] sm:table-cell">
                         {isZh ? term.definitionZh ?? term.definition : term.definition}
                         {term.quantEquivalent && (
-                          <span className="mt-1 block text-xs font-medium text-[var(--hw-scallion)]">
-                            ⚖ {term.quantEquivalent}
+                          <span className="mt-1 flex items-center gap-1 text-xs font-medium text-[var(--hw-scallion)]">
+                            <ScaleIcon className="h-3 w-3 shrink-0" /> {term.quantEquivalent}
                           </span>
                         )}
                       </td>

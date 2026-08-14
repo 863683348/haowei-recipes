@@ -5,6 +5,7 @@ import { findSubstitution } from "@/data/substitutions";
 import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
 import Link from "next/link";
+import { StarIcon } from "./icons";
 
 const fidelityLabelMap = (t: ReturnType<typeof useI18n>["t"], f: number) =>
   f >= 5
@@ -124,16 +125,14 @@ export function SubstitutionPanel() {
                     aria-label={`Fidelity ${s.fidelity} out of 5`}
                   >
                     {[1, 2, 3, 4, 5].map((n) => (
-                      <span
+                      <StarIcon
                         key={n}
                         className={
                           n <= s.fidelity
-                            ? "text-[var(--hw-ginger)]"
-                            : "text-[var(--hw-border)]"
+                            ? "inline-block h-3.5 w-3.5 fill-[var(--hw-ginger)] text-[var(--hw-ginger)]"
+                            : "inline-block h-3.5 w-3.5 text-[var(--hw-border)]"
                         }
-                      >
-                        ★
-                      </span>
+                      />
                     ))}
                   </span>
                 </div>

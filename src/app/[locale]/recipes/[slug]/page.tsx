@@ -8,6 +8,7 @@ import { FlavorAdjuster } from "@/components/flavor-adjuster";
 import { AIAssistant } from "@/components/ai-assistant";
 import { ShoppingListButton } from "@/components/shopping-list-button";
 import { RecipeCard } from "@/components/recipe-card";
+import { BowlIcon, LeafIcon, BulbIcon, ClockIcon } from "@/components/icons";
 import { getRecipeBySlug, recipes, getRelatedRecipes } from "@/data/recipes";
 import { locales, isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -205,18 +206,18 @@ export default async function RecipePage({ params }: Props) {
           <span className="rounded-full bg-[var(--hw-bg-soft)] px-2.5 py-1 text-[var(--hw-fg-muted)]">
             {t.common.difficulty[recipe.difficulty]}
           </span>
-          <span className="rounded-full bg-[var(--hw-bg-soft)] px-2.5 py-1 text-[var(--hw-fg-muted)]">
-            ⏱ {recipe.timeMin} {t.common.minutes}
+          <span className="inline-flex items-center gap-1 rounded-full bg-[var(--hw-bg-soft)] px-2.5 py-1 text-[var(--hw-fg-muted)]">
+            <ClockIcon className="h-3.5 w-3.5" /> {recipe.timeMin} {t.common.minutes}
           </span>
-          <span className="rounded-full bg-[var(--hw-bg-soft)] px-2.5 py-1 text-[var(--hw-fg-muted)]">
-            🍽 {t.common.serves} {recipe.servings}
+          <span className="inline-flex items-center gap-1 rounded-full bg-[var(--hw-bg-soft)] px-2.5 py-1 text-[var(--hw-fg-muted)]">
+            <BowlIcon className="h-3.5 w-3.5" /> {t.common.serves} {recipe.servings}
           </span>
           {recipe.dietary.filter((d) => d !== "none").map((d) => (
             <span
               key={d}
-              className="rounded-full bg-[rgba(74,124,89,0.15)] px-2.5 py-1 font-medium text-[var(--hw-scallion)]"
+              className="inline-flex items-center gap-1 rounded-full bg-[rgba(74,124,89,0.15)] px-2.5 py-1 font-medium text-[var(--hw-scallion)]"
             >
-              🌱 {t.common.dietary[d]}
+              <LeafIcon className="h-3.5 w-3.5" /> {t.common.dietary[d]}
             </span>
           ))}
         </div>
@@ -277,7 +278,9 @@ export default async function RecipePage({ params }: Props) {
                     )}
                     {step.stateNote && <StateNote state={step.stateNote} />}
                     {tip && (
-                      <p className="mt-2 pl-8 text-xs text-[var(--hw-ginger)]">💡 {tip}</p>
+                      <p className="mt-2 flex items-start gap-1 pl-8 text-xs text-[var(--hw-ginger)]">
+                        <BulbIcon className="mt-0.5 h-3.5 w-3.5 shrink-0" /> {tip}
+                      </p>
                     )}
                   </li>
                 );

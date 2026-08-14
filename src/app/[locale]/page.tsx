@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { RecipeCard } from "@/components/recipe-card";
+import { BoltIcon, RiceIcon, LeafIcon } from "@/components/icons";
 import { getRecipeBySlug } from "@/data/recipes";
 import { isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -23,6 +24,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const featuredSlugs = ["tomato-and-egg", "mapo-tofu", "kung-pao-chicken", "egg-fried-rice"];
+
+/** 场景卡片图标（icon 字段为语义 key，映射到统一 SVG 图标集） */
+function ScenarioIcon({ name }: { name: string }) {
+  const cls = "h-6 w-6 text-[var(--hw-ginger)]";
+  switch (name) {
+    case "bolt":
+      return <BoltIcon className={cls} />;
+    case "rice":
+      return <RiceIcon className={cls} />;
+    case "leaf":
+      return <LeafIcon className={cls} />;
+    default:
+      return null;
+  }
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
@@ -102,7 +118,7 @@ export default async function HomePage({ params }: Props) {
               href={localizePath(c.href, loc)}
               className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
-              <span className="text-2xl">{c.icon}</span>
+              <ScenarioIcon name={c.icon} />
               <h3 className="mt-3 font-serif text-lg font-semibold text-[var(--hw-fg)]">
                 {c.title}
               </h3>

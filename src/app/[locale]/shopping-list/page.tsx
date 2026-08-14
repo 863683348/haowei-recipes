@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { useShoppingList } from "@/hooks/use-shopping-list";
 import { useUnitPreference } from "@/hooks/use-unit-preference";
 import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
+import { CartIcon, StoreIcon, BoxIcon, CloseIcon } from "@/components/icons";
 import type { ShoppingItem } from "@/hooks/use-shopping-list";
 
 // 购物清单页依赖客户端 localStorage，避免 SSR 预渲染（useI18n 在 SSR 静态化时
@@ -60,15 +61,15 @@ export default function ShoppingListPage() {
         className="text-xs text-[var(--hw-fg-muted)] hover:text-red-500"
         aria-label={`${t.shoppingList.remove} ${i.nameEn}`}
       >
-        ✕
+        <CloseIcon className="h-4 w-4" />
       </button>
     </li>
   );
 
-  const renderColumn = (title: string, emoji: string, list: ShoppingItem[]) => (
+  const renderColumn = (title: string, icon: ReactNode, list: ShoppingItem[]) => (
     <div className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-4 shadow-sm">
-      <h2 className="font-serif text-base font-semibold text-[var(--hw-fg)]">
-        {emoji} {title}{" "}
+      <h2 className="flex items-center gap-1.5 font-serif text-base font-semibold text-[var(--hw-fg)]">
+        {icon} {title}{" "}
         <span className="text-xs font-normal text-[var(--hw-fg-muted)]">({list.length})</span>
       </h2>
       {list.length === 0 ? (
@@ -122,9 +123,9 @@ export default function ShoppingListPage() {
         </div>
       ) : (
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {renderColumn(t.shoppingList.localSupermarket, "🛒", local)}
-          {renderColumn(t.shoppingList.asianGrocery, "🏮", asian)}
-          {unknown.length > 0 && renderColumn(t.shoppingList.other, "📦", unknown)}
+          {renderColumn(t.shoppingList.localSupermarket, <CartIcon className="h-4 w-4 text-[var(--hw-ginger)]" />, local)}
+          {renderColumn(t.shoppingList.asianGrocery, <StoreIcon className="h-4 w-4 text-[var(--hw-ginger)]" />, asian)}
+          {unknown.length > 0 && renderColumn(t.shoppingList.other, <BoxIcon className="h-4 w-4 text-[var(--hw-ginger)]" />, unknown)}
         </div>
       )}
     </main>

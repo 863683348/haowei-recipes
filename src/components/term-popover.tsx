@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { getTermByKey } from "@/data/terms";
+import { ScaleIcon, SwapIcon } from "./icons";
 import type { Locale } from "@/i18n/config";
 
 /**
@@ -54,13 +55,13 @@ export function TermPopover({
             {definition}
           </span>
           {term.quantEquivalent && (
-            <span className="mt-1.5 block text-xs font-medium text-[var(--hw-scallion)]">
-              ⚖ {term.quantEquivalent}
+            <span className="mt-1.5 flex items-center gap-1 text-xs font-medium text-[var(--hw-scallion)]">
+              <ScaleIcon className="h-3 w-3 shrink-0" /> {term.quantEquivalent}
             </span>
           )}
           {substituteHint && (
-            <span className="mt-1 block text-xs text-[var(--hw-fg-muted)]">
-              🔁 {substituteHint}
+            <span className="mt-1 flex items-start gap-1 text-xs text-[var(--hw-fg-muted)]">
+              <SwapIcon className="mt-0.5 h-3 w-3 shrink-0" /> {substituteHint}
             </span>
           )}
         </span>

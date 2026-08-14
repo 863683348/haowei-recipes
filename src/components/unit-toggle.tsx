@@ -2,6 +2,7 @@
 
 import { useUnitPreference } from "@/hooks/use-unit-preference";
 import { useI18n } from "@/i18n/provider";
+import { ScaleIcon } from "@/components/icons";
 
 /** 计量双轨切换（公制 g/ml ↔ 美制 cup/tbsp/oz，localStorage 记忆） */
 export function UnitToggle() {
@@ -15,7 +16,7 @@ export function UnitToggle() {
       aria-label="Toggle metric/US measurement units"
       title="Toggle g/ml ↔ cup/tbsp"
     >
-      ⚖ {unit === "metric" ? t.common.unitMetric : t.common.unitUS}
+      <ScaleIcon className="h-3.5 w-3.5" /> {unit === "metric" ? t.common.unitMetric : t.common.unitUS}
     </button>
   );
 }

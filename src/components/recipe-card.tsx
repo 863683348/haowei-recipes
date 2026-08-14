@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Recipe } from "@/lib/types";
 import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
+import { ClockIcon } from "./icons";
 
 const difficultyCls = {
   easy: "bg-[rgba(74,124,89,0.15)] text-[var(--hw-scallion)]",
@@ -41,8 +42,8 @@ export function RecipeCard({ recipe }: { recipe: Recipe }) {
           <span className="text-xs font-medium text-[var(--hw-ginger)]">
             {isZh ? recipe.cuisine : recipe.cuisineEn ?? recipe.cuisine}
           </span>
-          <span className="text-xs text-[var(--hw-fg-muted)]">
-            ⏱ {recipe.timeMin} {t.common.minutes}
+          <span className="inline-flex items-center gap-1 text-xs text-[var(--hw-fg-muted)]">
+            <ClockIcon className="h-3 w-3" /> {recipe.timeMin} {t.common.minutes}
           </span>
         </div>
         <h3 className="mt-2 font-serif text-lg font-semibold leading-snug text-[var(--hw-fg)] group-hover:text-[var(--hw-ginger)]">

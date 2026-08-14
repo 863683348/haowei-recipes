@@ -4,6 +4,7 @@ import { useState } from "react";
 import { flavorRules } from "@/data/flavor-adjust";
 import type { FlavorRule } from "@/lib/types";
 import { useI18n } from "@/i18n/provider";
+import { CheckIcon } from "./icons";
 
 /**
  * R-06 个性化口味调整：选择辣/咸/油/素食等级 → 显示量化调整（前端规则，无 API）
@@ -62,7 +63,7 @@ export function FlavorAdjuster() {
                         const note = isZh ? adj.noteZh ?? adj.note : adj.note;
                         return (
                           <li key={i} className="flex items-start gap-2 text-sm">
-                            <span className="mt-0.5 text-[var(--hw-scallion)]">✓</span>
+                            <CheckIcon className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--hw-scallion)]" />
                             <span className="text-[var(--hw-fg)]">
                               <span className="font-medium">{adjLabel}:</span>{" "}
                               <span className="text-[var(--hw-ginger)]">{adj.from}</span>{" "}

@@ -103,8 +103,8 @@ export function useShoppingList() {
       const lines: string[] = ["HǎoWèi shopping list", "--------------------"];
       const fmt = (i: ShoppingItem) =>
         `${i.checked ? "[x]" : "[ ]"} ${unit === "metric" ? i.amountMetric : i.amountUS} — ${i.nameEn}${i.nameZh ? ` (${i.nameZh})` : ""}`;
-      if (local.length) lines.push("\n🛒 Local supermarket:", ...local.map(fmt));
-      if (asian.length) lines.push("\n🏮 Asian grocery / online:", ...asian.map(fmt));
+      if (local.length) lines.push("\nLocal supermarket:", ...local.map(fmt));
+      if (asian.length) lines.push("\nAsian grocery / online:", ...asian.map(fmt));
       if (unknown.length) lines.push("\nOther:", ...unknown.map(fmt));
       return lines.join("\n");
     },

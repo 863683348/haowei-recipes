@@ -3,6 +3,7 @@
 import { useUnitPreference } from "@/hooks/use-unit-preference";
 import { useShoppingList } from "@/hooks/use-shopping-list";
 import { TermPopover } from "./term-popover";
+import { ScaleIcon } from "./icons";
 import type { Ingredient } from "@/lib/types";
 import { useI18n } from "@/i18n/provider";
 
@@ -48,7 +49,7 @@ export function IngredientList({
           onClick={toggle}
           className="rounded-full border border-[var(--hw-border)] px-3 py-1 text-xs font-semibold text-[var(--hw-fg-muted)] hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
         >
-          ⚖ {unit === "metric" ? t.common.unitMetric : t.common.unitUS}
+          <ScaleIcon className="h-3.5 w-3.5" /> {unit === "metric" ? t.common.unitMetric : t.common.unitUS}
         </button>
       </div>
       <ul className="space-y-2">

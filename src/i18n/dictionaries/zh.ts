@@ -32,7 +32,7 @@ export const dictZh: Dict = {
     substitutions: "替换",
     glossary: "术语表",
     aiAssistant: "AI 助手",
-    shoppingList: "🛒 清单",
+    shoppingList: "清单",
   },
   footer: {
     tagline:
@@ -55,23 +55,23 @@ export const dictZh: Dict = {
     heroDesc:
       "来自中国家庭厨房的真实菜谱——提供西方超市食材替换、中英对照术语和火候状态图，让你知道每一步该看什么。告别“适量”。",
     browseAll: "浏览全部菜谱",
-    askAI: "🥢 问 AI 助手",
+    askAI: "问 AI 助手",
     situationsTitle: "无论什么场景都能做",
     scenarios: [
       {
-        icon: "⚡",
+        icon: "bolt",
         title: "30 分钟快手菜",
         desc: "工作日经典菜，从冰箱到餐桌快速搞定。",
         href: "/recipes?time=30",
       },
       {
-        icon: "🍚",
+        icon: "rice",
         title: "剩饭大变身",
         desc: "隔夜饭和零碎食材也能变成一顿晚餐。",
         href: "/recipes?tag=leftover",
       },
       {
-        icon: "🌱",
+        icon: "leaf",
         title: "素食友好",
         desc: "麻婆豆腐、葱油饼等无需肉类的美味。",
         href: "/recipes?diet=vegetarian",
@@ -104,17 +104,17 @@ export const dictZh: Dict = {
     tips: "小贴士",
     cookNext: "接着做",
     ingredients: "食材",
-    addAllToList: "🛒 全部加入购物清单",
-    addToShoppingList: "🛒 食材加入购物清单",
-    addedToShoppingList: "✓ 已加入清单",
-    lookFor: "🔍 看状态",
+    addAllToList: "全部加入购物清单",
+    addToShoppingList: "食材加入购物清单",
+    addedToShoppingList: "已加入清单",
+    lookFor: "看状态",
     visual: "状态：",
     youKnow: "判断标准：",
     use: "使用：",
     fidelity: "还原度：{f}/5",
-    pantryLocal: "🛒 本地超市",
-    pantryAsian: "🏮 亚超",
-    stateNoteHeat: "🔥 {heat}",
+    pantryLocal: "本地超市",
+    pantryAsian: "亚超",
+    stateNoteHeat: "{heat}",
     recipeJsonLd: "",
   },
   stateNote: {
@@ -127,7 +127,7 @@ export const dictZh: Dict = {
     },
   },
   substitutionPanel: {
-    title: "🔁 食材替换查询",
+    title: "食材替换查询",
     hint: "“没有 X，用什么代替？”输入食材名称",
     placeholder: "例如：老抽",
     find: "查询",
@@ -141,11 +141,11 @@ export const dictZh: Dict = {
     ingredientLabel: "要替换的食材",
   },
   flavor: {
-    title: "🌶️ 按你的口味调整",
+    title: "按你的口味调整",
     subtitle: "选一个等级，我们告诉你具体改多少——告别“适量”。",
   },
   aiAssistant: {
-    title: "🥢 问 HǎoWèi",
+    title: "问 HǎoWèi",
     subtitle: "关于技法、食材、替换和口味的问题——基于我们验证过的烹饪知识库回答。",
     placeholder: "例如：“为什么要用小火先炒蒜？”",
     ask: "提问",
@@ -167,9 +167,9 @@ export const dictZh: Dict = {
       '我暂时不确定“{q}”的答案——目前我是基于规则库回答，覆盖技法、食材、口味、厨具和饮食问题。换个问法试试，或查看常见问题页。未来我会支持更智能的 LLM 回答。',
   },
   shoppingList: {
-    title: "🛒 购物清单",
-    copy: "📋 复制为文本",
-    copied: "✓ 已复制",
+    title: "购物清单",
+    copy: "复制为文本",
+    copied: "已复制",
     clearAll: "清空",
     empty: "清单还是空的。打开一篇菜谱，点击",
     addHint: "“食材加入购物清单”。",
@@ -180,8 +180,8 @@ export const dictZh: Dict = {
     nothingHere: "这里还没有内容。",
     remove: "移除",
     header: "HǎoWèi 购物清单",
-    listHeader: "🛒 本地超市",
-    listAsian: "🏮 亚超 / 线上",
+    listHeader: "本地超市",
+    listAsian: "亚超 / 线上",
     listOther: "其他",
   },
   termsPage: {
@@ -223,15 +223,15 @@ export const dictZh: Dict = {
         bullets: [
           {
             strong: "术语之墙。",
-            text: " 生抽、老抽、料酒、蚝油——每个术语都中英对照、定量换算（1 汤匙 ≈ 15 毫升），绝不写“适量”。",
+            text: "生抽、老抽、料酒、蚝油——每个术语都中英对照、定量换算（1 汤匙 ≈ 15 毫升），绝不写“适量”。",
           },
           {
             strong: "食材难题。",
-            text: " 每道菜的食材都标注“本地超市”或“亚超”，替换引擎会告诉你具体怎么换、还原度几星。",
+            text: "每道菜的食材都标注“本地超市”或“亚超”，替换引擎会告诉你具体怎么换、还原度几星。",
           },
           {
             strong: "“看状态”难题。",
-            text: " 中餐讲究看食物而不是看计时器。每个视觉信号（“炒出香味”“边缘金黄”）都配状态说明，告诉你该看什么。",
+            text: "中餐讲究看食物而不是看计时器。每个视觉信号（“炒出香味”“边缘金黄”）都配状态说明，告诉你该看什么。",
           },
         ],
       },
@@ -255,27 +255,27 @@ export const dictZh: Dict = {
     paragraphs: [
       {
         strong: "简而言之：",
-        text: " HǎoWèi 好味几乎不存储你的任何信息。本站没有账号系统，除运行所需外不做任何追踪。",
+        text: "HǎoWèi 好味几乎不存储你的任何信息。本站没有账号系统，除运行所需外不做任何追踪。",
       },
       {
         strong: "本地存储。",
-        text: " 你的购物清单、计量偏好（g/ml 与 cup/tbsp）、主题选择只保存在你自己浏览器的本地存储中，我们看不到。",
+        text: "你的购物清单、计量偏好（g/ml 与 cup/tbsp）、主题选择只保存在你自己浏览器的本地存储中，我们看不到。",
       },
       {
         strong: "无账号。",
-        text: " 本站无需注册、登录，也没有用户档案。AI 助手是基于规则库的问答引擎——你的问题在浏览器本地得到回答，不会传给任何第三方。",
+        text: "本站无需注册、登录，也没有用户档案。AI 助手是基于规则库的问答引擎——你的问题在浏览器本地得到回答，不会传给任何第三方。",
       },
       {
         strong: "统计。",
-        text: " 我们可能使用尊重隐私、无 cookie 的统计工具来了解哪些菜谱受欢迎。不收集任何个人数据。",
+        text: "我们可能使用尊重隐私、无 cookie 的统计工具来了解哪些菜谱受欢迎。不收集任何个人数据。",
       },
       {
         strong: "第三方链接。",
-        text: " 购物清单中的链接可能指向联盟商家；在相关页面我们会注明联盟关系。",
+        text: "购物清单中的链接可能指向联盟商家；在相关页面我们会注明联盟关系。",
       },
       {
         strong: "联系。",
-        text: " 有问题？",
+        text: "有问题？",
       },
     ],
     contactLink: "联系我们",
