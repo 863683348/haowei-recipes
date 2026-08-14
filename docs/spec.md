@@ -44,10 +44,13 @@
 - 品牌色：中餐暖色系（酱油深褐/姜黄/青葱绿点缀）；内容字体优先系统栈，标题可衬线
 - 组件全程 Token，不写死颜色；emoji 仅限风味/状态图标化场景，不用于导航
 
-## 5. i18n 策略
-- **英文为主**（面向欧美市场），中文拼音+汉字作为辅助标注（如 "Shaoxing wine 绍兴酒"）
-- 实现：内容数据双语字段 + UI 文案 en 默认；不引入完整 i18n 框架，用类型化常量 + 内容字段
-- 计量双轨：公制(g/ml) + 美制(cup/tbsp/oz)，全局切换记忆 localStorage
+## 5. i18n 策略（v1.1 更新：双前缀全双语，2026-08-15）
+- **URL 结构**：双前缀 `/:locale(en|zh)`——`/en/...` 英文、`/zh/...` 中文；根路径 `/` 由 middleware 重定向到 `/en`（默认语言）；顶栏语言切换器保持当前路径互切（`/zh/recipes/x` ↔ `/en/recipes/x`），选择记忆 localStorage（hw-lang）
+- **UI 文案**：自建轻量字典 `src/i18n/dictionaries/{en,zh}.ts`（类型化、零新依赖，延续"不引入完整 i18n 框架"铁律）；客户端组件经 `useI18n()` Context 取文案；服务端组件 `getDictionary(locale)`
+- **内容数据**：英文为主字段（story/steps/tips/definition/answer 等）+ 中文增量字段（storyZh/textZh/tipsZh/definitionZh/answerZh 等，可选 `?`），页面按 locale 取 `zh ?? en` 兜底；FAQ 匹配引擎同时支持中英关键词
+- **SEO**：每页 `alternates` canonical + hreflang（en/zh/x-default）；sitemap.xml 输出双套 URL + xhtml:link alternates；metadata/OG/Twitter 按语言输出；`<html lang>` 由客户端 LangSync 同步
+- **静态生成**：`[locale]` 段 generateStaticParams 返回 en/zh，37 个页面全部 SSG；next.config 缓存规则全部改为 `/:locale(en|zh)/...` 前缀
+- 计量双轨：公制(g/ml) + 美制(cup/tbsp/oz)，全局切换记忆 localStorage（与语言独立）
 
 ## 6. 技术约束（铁律）
 - 不接任何 LLM API（规则问答）；无用户账号；无支付；无 UGC；无美式中餐内容
