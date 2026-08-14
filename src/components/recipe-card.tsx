@@ -7,57 +7,70 @@ import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
 import { ClockIcon } from "./icons";
 
-const difficultyCls = {
-  easy: "bg-[rgba(74,124,89,0.15)] text-[var(--hw-scallion)]",
-  medium: "bg-[rgba(199,123,46,0.15)] text-[var(--hw-ginger)]",
-  hard: "bg-[rgba(62,39,35,0.12)] text-[var(--hw-fg-muted)]",
-} as const;
-
-/** 菜谱卡片（列表/首页用） */
+/** 菜谱卡片（列表/首页用）
+ * 设计参考：截图风格——白底卡片、4:3 图片顶置、分类+时长一行、
+ * 主标题加粗 serif、英文+拼音副标、底部边框 chip 标签。
+ */
 export function RecipeCard({ recipe }: { recipe: Recipe }) {
   const { locale, t } = useI18n();
   const isZh = locale === "zh";
   const title = isZh ? recipe.titleZh : recipe.titleEn;
   const subtitle = isZh
-    ? `${recipe.titleEn} · ${recipe.pinyin}`
-    : `${recipe.titleZh} · ${recipe.pinyin}`;
+    ? `${recipe.titleEn} (${recipe.titleZh}) · ${recipe.pinyin}`
+    : `${recipe.titleZh} (${recipe.titleEn}) · ${recipe.pinyin}`;
+  const cuisineLabel = isZh
+    ? recipe.cuisine
+    : recipe.cuisineEn ?? recipe.cuisine;
 
   return (
     <Link
       href={localizePath(`/recipes/${recipe.slug}`, locale)}
-      className="group flex flex-col overflow-hidden rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden">
+      {/* 图片区 4:3 */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-[var(--hw-bg-soft)]">
         <Image
           src={recipe.image}
-          alt={`${title} — ${isZh ? recipe.cuisine : recipe.cuisineEn ?? recipe.cuisine} recipe`}
+          alt={`${title} — ${cuisineLabel} recipe`}
           fill
-          sizes="(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
+          sizes="(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
         />
       </div>
-      <div className="p-5">
+
+      {/* 内容区 */}
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        {/* 分类 + 时长 */}
         <div className="flex items-center justify-between gap-2">
-          <span className="text-xs font-medium text-[var(--hw-ginger)]">
-            {isZh ? recipe.cuisine : recipe.cuisineEn ?? recipe.cuisine}
+          <span className="inline-flex items-center rounded-md bg-[rgba(199,123,46,0.10)] px-2 py-0.5 text-xs font-medium text-[var(--hw-ginger)]">
+            {cuisineLabel}
           </span>
-          <span className="inline-flex items-center gap-1 text-xs text-[var(--hw-fg-muted)]">
-            <ClockIcon className="h-3 w-3" /> {recipe.timeMin} {t.common.minutes}
+          <span className="inline-flex items-center gap-1 rounded-md border border-[var(--hw-border)] bg-[var(--hw-bg-soft)] px-2 py-0.5 text-xs text-[var(--hw-fg-muted)]">
+            <ClockIcon className="h-3 w-3" />
+            {recipe.timeMin} {t.common.minutes}
           </span>
         </div>
-        <h3 className="mt-2 font-serif text-lg font-semibold leading-snug text-[var(--hw-fg)] group-hover:text-[var(--hw-ginger)]">
+
+        {/* 主标题 */}
+        <h3 className="font-serif text-2xl font-bold leading-tight tracking-tight text-[var(--hw-fg)] group-hover:text-[var(--hw-ginger)]">
           {title}
         </h3>
-        <p className="text-sm text-[var(--hw-fg-muted)]">{subtitle}</p>
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${difficultyCls[recipe.difficulty]}`}>
+
+        {/* 副标题：英文（中文）· 拼音 */}
+        <p className="text-sm leading-snug text-[var(--hw-fg-muted)]">
+          {subtitle}
+        </p>
+
+        {/* 标签 chips（描边样式，参考截图） */}
+        <div className="mt-auto flex flex-wrap gap-1.5 pt-1">
+          <span className="rounded-full border border-[var(--hw-border)] px-2.5 py-0.5 text-xs text-[var(--hw-fg)]">
             {t.common.difficulty[recipe.difficulty]}
           </span>
-          {recipe.tags.slice(0, 2).map((tag) => (
+          {recipe.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="rounded-full bg-[var(--hw-bg-soft)] px-2 py-0.5 text-xs text-[var(--hw-fg-muted)]"
+              className="rounded-full border border-[var(--hw-border)] px-2.5 py-0.5 text-xs text-[var(--hw-fg-muted)]"
             >
               {tag}
             </span>
