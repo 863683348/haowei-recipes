@@ -51,7 +51,7 @@ const RECIPES = [
   {
     slug: "tomato-and-egg",
     dish: "Tomato Scrambled Eggs (番茄炒蛋)",
-    desc: "glossy red tomato wedges in rich orange sauce with soft golden egg curds, garnished with chopped scallions, served in a rustic white ceramic bowl, steamed white rice blurred in background",
+    desc: "glossy red tomato wedges cut into bite-sized pieces in rich orange sauce with soft golden egg curds, garnished with chopped scallions, served in a rustic white ceramic bowl, NO whole tomatoes, NO rice in the dish",
   },
   {
     slug: "mapo-tofu",
@@ -86,7 +86,7 @@ const RECIPES = [
   {
     slug: "garlic-chives-scrambled-eggs",
     dish: "Garlic Chives Scrambled Eggs (韭菜炒蛋)",
-    desc: "vibrant green garlic chive segments folded into fluffy golden egg, simple white ceramic plate, steamed rice in background, Shandong home-style rustic aesthetic",
+    desc: "vibrant green garlic chive segments folded into fluffy golden egg, served on a simple white ceramic plate, NO rice visible, Shandong home-style rustic aesthetic, close-up food photography",
   },
   {
     slug: "pineapple-fried-rice",
