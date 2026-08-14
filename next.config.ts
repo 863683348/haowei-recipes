@@ -20,6 +20,9 @@ const cacheHeaders = [{ key: "Cache-Control", value: publicCache }];
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // public/images/ 下的 PNG 由 sharp 预生成并压缩到位；禁止 next/image 在 build 时
+  // 重新编码（会从 ~370KB 膨胀到 ~1.5MB，拖慢首屏 + 爆 Vercel FOT 带宽）。
+  images: { unoptimized: true },
   async headers() {
     return [
       { source: "/(.*)", headers: securityHeaders },
