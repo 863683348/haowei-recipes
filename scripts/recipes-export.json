@@ -1,0 +1,2255 @@
+[
+  {
+    "id": "tomato-eggs",
+    "slug": "tomato-and-egg",
+    "titleEn": "Tomato & Egg (番茄炒蛋)",
+    "titleZh": "番茄炒蛋",
+    "pinyin": "fān qié chǎo dàn",
+    "cuisine": "家常菜",
+    "cuisineEn": "Home-style",
+    "region": "Everywhere in China",
+    "regionZh": "全国家常",
+    "difficulty": "easy",
+    "timeMin": 20,
+    "servings": 2,
+    "version": "family",
+    "versionNote": "Family version: soft, saucy, slightly sweet — the way it's made at home. Restaurant version adds a wok-seared egg texture.",
+    "versionNoteZh": "家庭版：鸡蛋软嫩、汤汁浓郁、微甜——家里最常做的做法。餐厅版会多一道过油炒蛋的焦香口感。",
+    "tags": [
+      "30-min",
+      "beginner",
+      "comfort",
+      "weeknight"
+    ],
+    "dietary": [
+      "none"
+    ],
+    "story": "The first dish most Chinese kids learn. Every family has its own ratio of eggs to tomato, its own pinch of sugar. This is the home-style version from a Cantonese household — lots of sauce, soft eggs, ladled over rice.",
+    "storyZh": "大多数中国孩子学会的第一道菜。每个家庭都有自己的蛋液番茄比例，都有自己的那撮糖。这是一份来自广东家庭的快手做法——汤汁多、鸡蛋嫩，浇在米饭上就是一顿。",
+    "ingredients": [
+      {
+        "id": "te-egg",
+        "nameEn": "eggs",
+        "nameZh": "鸡蛋",
+        "amountMetric": "4 large",
+        "amountUS": "4 large",
+        "category": "protein",
+        "pantry": "local"
+      },
+      {
+        "id": "te-tomato",
+        "nameEn": "ripe tomatoes",
+        "nameZh": "番茄",
+        "amountMetric": "3 medium (~450 g)",
+        "amountUS": "3 medium",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "te-oil",
+        "nameEn": "neutral oil (vegetable/peanut)",
+        "nameZh": "食用油",
+        "amountMetric": "3 tbsp (45 ml)",
+        "amountUS": "3 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "te-scallion",
+        "nameEn": "scallions, finely sliced",
+        "nameZh": "小葱",
+        "amountMetric": "2 stalks",
+        "amountUS": "2 stalks",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "te-salt",
+        "nameEn": "salt",
+        "nameZh": "盐",
+        "amountMetric": "1/2 tsp",
+        "amountUS": "1/2 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "te-sugar",
+        "nameEn": "sugar",
+        "nameZh": "白糖",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "western-pantry",
+        "pantry": "local",
+        "note": "Balances tomato acidity — this is the 'secret' home touch.",
+        "noteZh": "中和番茄的酸味——这是家常版的“秘诀”。"
+      },
+      {
+        "id": "te-soy",
+        "nameEn": "light soy sauce (optional)",
+        "nameZh": "生抽（可选）",
+        "amountMetric": "1/2 tsp",
+        "amountUS": "1/2 tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Beat the eggs with 1/4 tsp salt until the yolks are fully broken. Cut tomatoes into bite-size wedges.",
+        "textZh": "鸡蛋加 1/4 茶匙盐打散，直到蛋黄完全打匀。番茄切成一口大小的块。",
+        "zhHint": "打散鸡蛋，番茄切块",
+        "stateNote": {
+          "visual": "Egg liquid is uniform pale yellow with no visible yolk streaks",
+          "visualZh": "蛋液呈均匀的淡黄色，无明显蛋黄纹路",
+          "timeRef": "about 30 seconds of beating",
+          "timeRefZh": "打约 30 秒",
+          "signal": "Fork leaves a smooth ribbon when lifted",
+          "signalZh": "提起叉子时蛋液呈顺滑带状流下"
+        }
+      },
+      {
+        "text": "Heat 2 tbsp oil in a wok or large skillet over medium-high until shimmering. Pour in the eggs.",
+        "textZh": "锅中放 2 汤匙油，中大火加热至油面微微波动。倒入蛋液。",
+        "zhHint": "热油下蛋液",
+        "stateNote": {
+          "visual": "Oil shimmers; eggs puff and set at the edges within seconds",
+          "visualZh": "油面泛光；蛋液边缘几秒内鼓起凝固",
+          "heat": "medium-high",
+          "timeRef": "30-40 seconds",
+          "timeRefZh": "30-40 秒",
+          "signal": "Edges turn light golden and release easily from the pan",
+          "signalZh": "边缘变浅金色，且能轻松从锅底脱离"
+        }
+      },
+      {
+        "text": "Scramble the eggs just until softly set (still a little glossy), then scoop them out onto a plate. Don't overcook — they finish in the sauce.",
+        "textZh": "把鸡蛋炒到刚刚凝固（还带一点光泽）就盛出装盘。不要炒过头——之后还要回锅裹汁。",
+        "zhHint": "嫩炒后盛出",
+        "stateNote": {
+          "visual": "Curds are soft and glossy, not dry or browned",
+          "visualZh": "蛋块软嫩有光泽，不干不焦",
+          "timeRef": "45-60 seconds total",
+          "timeRefZh": "共 45-60 秒",
+          "signal": "No raw liquid left, but curds still look moist",
+          "signalZh": "没有生蛋液残留，但蛋块依然湿润"
+        }
+      },
+      {
+        "text": "Add the remaining 1 tbsp oil and the tomatoes with 1/4 tsp salt. Sauté over medium-high.",
+        "textZh": "加入剩余 1 汤匙油和番茄，放 1/4 茶匙盐，中大火翻炒。",
+        "zhHint": "下番茄翻炒",
+        "stateNote": {
+          "visual": "Tomatoes release juice and start to soften",
+          "visualZh": "番茄出汁并开始变软",
+          "heat": "medium-high",
+          "timeRef": "2-3 minutes",
+          "timeRefZh": "2-3 分钟",
+          "signal": "Edges go translucent and the pan fills with pink juice",
+          "signalZh": "边缘变半透明，锅里出现粉红色汤汁"
+        }
+      },
+      {
+        "text": "Press a few wedges with your spatula to release more juice. Add the sugar (and soy, if using).",
+        "textZh": "用锅铲按压几块番茄挤出更多汤汁。加入白糖（以及生抽，如果用的话）。",
+        "zhHint": "压出汤汁，加糖",
+        "stateNote": {
+          "visual": "Sauce turns glossy deep-orange",
+          "visualZh": "汤汁变成有光泽的深橙色",
+          "timeRef": "1 minute",
+          "timeRefZh": "1 分钟",
+          "signal": "Juice is actively bubbling, not evaporating to dryness",
+          "signalZh": "汤汁在冒泡，而不是被烧干"
+        }
+      },
+      {
+        "text": "Return the eggs to the pan and toss gently for 20 seconds so they soak up the sauce. Finish with scallions.",
+        "textZh": "把鸡蛋倒回锅中，轻轻翻炒 20 秒让蛋块裹上汤汁。最后撒上葱花。",
+        "zhHint": "回锅裹汁，撒葱",
+        "stateNote": {
+          "visual": "Eggs are coated in glossy orange sauce",
+          "visualZh": "蛋块裹满光泽的橙色汤汁",
+          "timeRef": "20-30 seconds",
+          "timeRefZh": "20-30 秒",
+          "signal": "Sauce clings to the egg curds",
+          "signalZh": "汤汁挂在蛋块上"
+        }
+      }
+    ],
+    "tips": [
+      "Serve immediately over steamed rice — the sauce is the point.",
+      "Ripe, soft tomatoes make the best sauce. If tomatoes are hard, add 2 tbsp water while cooking.",
+      "The sugar is not optional in the home version: it's what makes it taste like 家常, not sour."
+    ],
+    "tipsZh": [
+      "趁热浇在白米饭上——汤汁才是灵魂。",
+      "熟透的软番茄才能炒出好汤汁。番茄偏硬时，烹制中加 2 汤匙水。",
+      "家常版里糖不能省：正是它让这道菜尝起来是“家常味”而不是酸味。"
+    ],
+    "relatedSlugs": [
+      "egg-fried-rice",
+      "mapo-tofu",
+      "scallion-pancakes"
+    ],
+    "image": "/images/recipes/tomato-and-egg.webp"
+  },
+  {
+    "id": "mapo-tofu",
+    "slug": "mapo-tofu",
+    "titleEn": "Mapo Tofu (麻婆豆腐)",
+    "titleZh": "麻婆豆腐",
+    "pinyin": "má pó dòu fu",
+    "cuisine": "川菜",
+    "cuisineEn": "Sichuan",
+    "region": "Chengdu, Sichuan",
+    "regionZh": "四川成都",
+    "difficulty": "medium",
+    "timeMin": 30,
+    "servings": 3,
+    "version": "family",
+    "versionNote": "Restaurant version uses a wide-oil velveted beef + Sichuan peppercorn oil finish. Family version is leaner but keeps the má là (numbing-spicy) soul.",
+    "versionNoteZh": "餐厅版用宽油滑牛肉+花椒油收尾。家常版更清爽，但保留了麻与辣的川味灵魂。",
+    "tags": [
+      "spicy",
+      "sichuan",
+      "vegetarian-ok",
+      "comfort"
+    ],
+    "dietary": [
+      "vegetarian"
+    ],
+    "story": "Named after 'Pockmarked Grandma Chen' of Chengdu in the 1800s. The home version is a weeknight staple across China — silken tofu in a spicy, numbing, bean-paste sauce that exists to be poured over rice.",
+    "storyZh": "得名于 19 世纪成都的“陈麻婆”。家常版是全国家常餐桌上的工作日经典——嫩豆腐浸在麻辣的豆瓣酱汁里，这道菜的存在就是为了浇在米饭上。",
+    "ingredients": [
+      {
+        "id": "mt-tofu",
+        "nameEn": "silken or soft tofu",
+        "nameZh": "嫩豆腐",
+        "amountMetric": "400 g",
+        "amountUS": "1 block (about 14 oz)",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "tofu",
+        "note": "Medium-firm works too — handle gently.",
+        "noteZh": "老豆腐也可以，但要轻拿轻放。"
+      },
+      {
+        "id": "mt-pork",
+        "nameEn": "ground pork (or beef)",
+        "nameZh": "猪肉末",
+        "amountMetric": "150 g",
+        "amountUS": "about 5 oz",
+        "category": "protein",
+        "pantry": "local",
+        "note": "Skip for vegetarian version.",
+        "noteZh": "素食版不放。"
+      },
+      {
+        "id": "mt-douban",
+        "nameEn": "doubanjiang (fermented chili bean paste)",
+        "nameZh": "郫县豆瓣酱",
+        "amountMetric": "1.5 tbsp",
+        "amountUS": "1.5 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "doubanjiang"
+      },
+      {
+        "id": "mt-douchi",
+        "nameEn": "fermented black beans (douchi), rinsed & minced (optional)",
+        "nameZh": "豆豉",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "asian-pantry",
+        "pantry": "asian"
+      },
+      {
+        "id": "mt-garlic",
+        "nameEn": "garlic, minced",
+        "nameZh": "蒜末",
+        "amountMetric": "2 cloves",
+        "amountUS": "2 cloves",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "mt-ginger",
+        "nameEn": "ginger, minced",
+        "nameZh": "姜末",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "produce",
+        "pantry": "local",
+        "termKey": "ginger"
+      },
+      {
+        "id": "mt-scallion",
+        "nameEn": "scallions, white part + green part separated",
+        "nameZh": "小葱",
+        "amountMetric": "3 stalks",
+        "amountUS": "3 stalks",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "mt-chili-flakes",
+        "nameEn": "chili flakes (or 2 dried chilies)",
+        "nameZh": "辣椒面/干辣椒",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "spice",
+        "pantry": "local",
+        "termKey": "chili-flakes"
+      },
+      {
+        "id": "mt-sichuan-pepper",
+        "nameEn": "Sichuan peppercorn, ground",
+        "nameZh": "花椒粉",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "sichuan-peppercorn"
+      },
+      {
+        "id": "mt-soy",
+        "nameEn": "light soy sauce",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "mt-stock",
+        "nameEn": "chicken stock (or water + 1/2 tsp mushroom powder)",
+        "nameZh": "高汤/水",
+        "amountMetric": "250 ml",
+        "amountUS": "1 cup",
+        "category": "other",
+        "pantry": "local"
+      },
+      {
+        "id": "mt-cornstarch",
+        "nameEn": "cornstarch slurry (1 tbsp cornstarch + 2 tbsp water)",
+        "nameZh": "水淀粉",
+        "amountMetric": "3 tbsp total",
+        "amountUS": "3 tbsp total",
+        "category": "western-pantry",
+        "pantry": "local",
+        "termKey": "cornstarch"
+      },
+      {
+        "id": "mt-oil",
+        "nameEn": "neutral oil",
+        "nameZh": "食用油",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Cut tofu into 2 cm cubes. Blanch in gently simmering salted water for 2 minutes, then drain (keeps it from breaking and warms it up).",
+        "textZh": "豆腐切成 2 厘米见方的小块，放入微沸的淡盐水里焯 2 分钟，捞出沥干（这样豆腐不易碎，也提前温热）。",
+        "zhHint": "豆腐切块焯水",
+        "stateNote": {
+          "visual": "Water barely simmering, tofu cubes floating without sticking together",
+          "visualZh": "水微微冒泡，豆腐块浮起且不粘连",
+          "heat": "medium",
+          "timeRef": "2 minutes",
+          "timeRefZh": "2 分钟",
+          "signal": "Tofu looks slightly puffy and is hot through",
+          "signalZh": "豆腐微微膨胀，内部已热透"
+        },
+        "tip": "Skip blanching if using medium-firm tofu and you're in a rush — just be extra gentle later.",
+        "tipZh": "用老豆腐又赶时间时可以跳过焯水——后面操作更轻一点就行。"
+      },
+      {
+        "text": "Heat oil in a wok over medium. Add ground pork and fry until it changes color and starts to render.",
+        "textZh": "锅中放油，中火加热。下猪肉末炒至变色出油。",
+        "zhHint": "炒肉末",
+        "stateNote": {
+          "visual": "Pork turns from pink to pale brown, releasing fat",
+          "visualZh": "肉末从粉色变成浅棕色并开始出油",
+          "heat": "medium",
+          "timeRef": "2-3 minutes",
+          "timeRefZh": "2-3 分钟",
+          "signal": "No pink remains; edges begin to crisp slightly",
+          "signalZh": "看不到粉色，边缘开始微微焦脆"
+        }
+      },
+      {
+        "text": "Push pork aside. Add doubanjiang and fry 1 minute until the oil turns red. Add douchi, garlic, ginger, and chili flakes; stir 30 seconds until fragrant.",
+        "textZh": "把肉末拨到一边。下豆瓣酱炒 1 分钟至油变红。加入豆豉、蒜末、姜末和辣椒面，翻炒 30 秒炒出香味。",
+        "zhHint": "炒豆瓣酱出红油",
+        "stateNote": {
+          "visual": "Oil turns deep red-orange (the classic 红油 moment)",
+          "visualZh": "油变成深橙红色（经典的红油时刻）",
+          "heat": "medium",
+          "timeRef": "1-1.5 minutes",
+          "timeRefZh": "1-1.5 分钟",
+          "signal": "Fragrant and sharp — don't let it burn dark",
+          "signalZh": "香气锐利扑鼻——别炒到发黑"
+        }
+      },
+      {
+        "text": "Add soy sauce, then pour in the stock. Bring to a simmer.",
+        "textZh": "加入生抽，再倒入高汤。煮至微沸。",
+        "zhHint": "加高汤",
+        "stateNote": {
+          "visual": "Sauce is bubbling gently, deep red",
+          "visualZh": "汤汁微微冒泡，呈深红色",
+          "heat": "medium",
+          "timeRef": "1 minute to reach simmer",
+          "timeRefZh": "约 1 分钟煮至微沸",
+          "signal": "Steady small bubbles, not a rolling boil",
+          "signalZh": "持续小气泡，而不是翻滚大沸"
+        }
+      },
+      {
+        "text": "Gently slide in the tofu. Shake the pan (don't stir — it breaks) and simmer 5 minutes so it absorbs the sauce.",
+        "textZh": "轻轻滑入豆腐。晃动锅身（不要翻炒——会碎），小火煨 5 分钟让豆腐入味。",
+        "zhHint": "轻推豆腐，不搅动",
+        "stateNote": {
+          "visual": "Tofu bathed in sauce, edges slightly darkened from soaking",
+          "visualZh": "豆腐浸在汤汁中，边缘因吸汁微微变深",
+          "heat": "medium-low",
+          "timeRef": "5 minutes",
+          "timeRefZh": "5 分钟",
+          "signal": "Sauce has reduced by about a third",
+          "signalZh": "汤汁收掉了约三分之一"
+        }
+      },
+      {
+        "text": "Add half the cornstarch slurry, stir gently by pushing the sauce, and watch it thicken. Repeat with the rest if you want a thicker coat.",
+        "textZh": "倒入一半水淀粉，用推汁的方式轻轻搅动，观察汤汁变稠。想要更浓稠就再倒入剩下的。",
+        "zhHint": "分次勾芡",
+        "stateNote": {
+          "visual": "Sauce turns glossy and clings to the back of a spoon",
+          "visualZh": "汤汁变得有光泽，能挂在勺背",
+          "timeRef": "30-60 seconds",
+          "timeRefZh": "30-60 秒",
+          "signal": "Spoon leaves a clear trail through the sauce",
+          "signalZh": "勺子划过汤汁留下清晰痕迹"
+        }
+      },
+      {
+        "text": "Off heat: stir in the white scallion parts. Plate, dust generously with ground Sichuan pepper, and top with green scallions.",
+        "textZh": "关火：拌入葱白部分。装盘，慷慨地撒上花椒粉，再放上葱花。",
+        "zhHint": "起锅撒花椒面",
+        "stateNote": {
+          "visual": "Steam carries the Sichuan pepper aroma — that's the má là signature",
+          "visualZh": "热气带着花椒香——这就是麻辣的招牌",
+          "signal": "Serve immediately over rice",
+          "signalZh": "趁热浇在米饭上立刻吃"
+        }
+      }
+    ],
+    "tips": [
+      "Never stir the tofu with a spatula — push the pan or stir the sauce around it.",
+      "The ground Sichuan peppercorn at the end is non-negotiable: it's what makes it má pó.",
+      "Vegetarian version: skip pork, add 1 tsp more doubanjiang + a few dried shiitake, rehydrated and sliced.",
+      "Doubanjiang is salty — taste before adding extra salt."
+    ],
+    "tipsZh": [
+      "绝不用锅铲翻豆腐——晃动锅身，或只搅动周围的汤汁。",
+      "最后的花椒粉不能省：它才是“麻婆”的灵魂。",
+      "素食版：不放猪肉，多加 1 茶匙豆瓣酱 + 几朵泡发切片的干香菇。",
+      "豆瓣酱本身很咸——加盐前先尝味。"
+    ],
+    "relatedSlugs": [
+      "tomato-and-egg",
+      "kung-pao-chicken",
+      "beef-and-broccoli"
+    ],
+    "image": "/images/recipes/mapo-tofu.webp"
+  },
+  {
+    "id": "kung-pao-chicken",
+    "slug": "kung-pao-chicken",
+    "titleEn": "Kung Pao Chicken (宫保鸡丁)",
+    "titleZh": "宫保鸡丁",
+    "pinyin": "gōng bǎo jī dīng",
+    "cuisine": "川菜",
+    "cuisineEn": "Sichuan",
+    "region": "Sichuan",
+    "regionZh": "四川",
+    "difficulty": "medium",
+    "timeMin": 35,
+    "servings": 3,
+    "version": "family",
+    "versionNote": "Authentic home version uses dried chilies + Sichuan pepper (not the sweet American take). We keep the numbing-spicy-sour balance that made it famous.",
+    "versionNoteZh": "正宗家常版用干辣椒+花椒（不是美式的甜口）。我们保留了让它闻名天下的麻辣酸香平衡。",
+    "tags": [
+      "spicy",
+      "sichuan",
+      "weeknight",
+      "high-protein"
+    ],
+    "dietary": [
+      "none"
+    ],
+    "story": "Named after Ding Baozhen, a Qing-dynasty governor (宫保 = his title). The real dish is not sweet-glazed — it's a salty-sour-spicy-numbing stir-fry with a vinegar-forward sauce. This home version stays true to that.",
+    "storyZh": "得名于清代官员丁宝桢（宫保是他的官衔）。真正的宫保鸡丁不是甜口的——它是一道咸酸麻辣的炒菜，酱汁以醋香为主。这份家常版忠于原味。",
+    "ingredients": [
+      {
+        "id": "kp-chicken",
+        "nameEn": "boneless chicken thigh (or breast), diced 2 cm",
+        "nameZh": "鸡腿肉/鸡胸",
+        "amountMetric": "400 g",
+        "amountUS": "about 14 oz",
+        "category": "protein",
+        "pantry": "local",
+        "note": "Thigh stays juicier; breast works if velvetted well.",
+        "noteZh": "鸡腿肉更嫩；鸡胸上浆到位也可以。"
+      },
+      {
+        "id": "kp-cornstarch",
+        "nameEn": "cornstarch",
+        "nameZh": "玉米淀粉",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "western-pantry",
+        "pantry": "local",
+        "termKey": "cornstarch"
+      },
+      {
+        "id": "kp-soy-marinade",
+        "nameEn": "light soy sauce (for marinade)",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "kp-shaoxing",
+        "nameEn": "Shaoxing wine",
+        "nameZh": "料酒",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "shaoxing-wine"
+      },
+      {
+        "id": "kp-dried-chili",
+        "nameEn": "dried chilies, halved",
+        "nameZh": "干辣椒",
+        "amountMetric": "8-10",
+        "amountUS": "8-10",
+        "category": "spice",
+        "pantry": "local",
+        "termKey": "chili-flakes",
+        "note": "Remove seeds for milder heat.",
+        "noteZh": "去籽可减辣。"
+      },
+      {
+        "id": "kp-sichuan",
+        "nameEn": "Sichuan peppercorn",
+        "nameZh": "花椒",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "sichuan-peppercorn"
+      },
+      {
+        "id": "kp-scallion",
+        "nameEn": "scallions, cut into 2 cm sections",
+        "nameZh": "大葱段",
+        "amountMetric": "3 stalks",
+        "amountUS": "3 stalks",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "kp-garlic",
+        "nameEn": "garlic, sliced",
+        "nameZh": "蒜片",
+        "amountMetric": "3 cloves",
+        "amountUS": "3 cloves",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "kp-ginger",
+        "nameEn": "ginger, sliced",
+        "nameZh": "姜片",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "kp-peanuts",
+        "nameEn": "roasted peanuts (or cashews)",
+        "nameZh": "花生米",
+        "amountMetric": "60 g",
+        "amountUS": "1/2 cup",
+        "category": "western-pantry",
+        "pantry": "local",
+        "note": "Add at the end for crunch — a classic.",
+        "noteZh": "最后放入保持酥脆——经典做法。"
+      },
+      {
+        "id": "kp-sauce-vinegar",
+        "nameEn": "Chinkiang vinegar (or rice vinegar)",
+        "nameZh": "香醋",
+        "amountMetric": "1.5 tbsp",
+        "amountUS": "1.5 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "chinkiang-vinegar"
+      },
+      {
+        "id": "kp-sauce-sugar",
+        "nameEn": "sugar",
+        "nameZh": "白糖",
+        "amountMetric": "1.5 tsp",
+        "amountUS": "1.5 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "kp-sauce-soy",
+        "nameEn": "light soy sauce (for sauce)",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "kp-sauce-starch",
+        "nameEn": "cornstarch slurry (1 tsp starch + 1 tbsp water)",
+        "nameZh": "水淀粉",
+        "amountMetric": "2 tbsp total",
+        "amountUS": "2 tbsp total",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "kp-oil",
+        "nameEn": "neutral oil",
+        "nameZh": "食用油",
+        "amountMetric": "3 tbsp",
+        "amountUS": "3 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Marinate chicken: mix with soy, Shaoxing wine, and cornstarch. Rest 10 minutes (velveting — keeps it silky).",
+        "textZh": "腌制鸡肉：与生抽、料酒、淀粉混合。静置 10 分钟（上浆——保持滑嫩）。",
+        "zhHint": "鸡丁上浆腌10分钟",
+        "stateNote": {
+          "visual": "Chicken pieces are evenly coated in a thin starchy glaze",
+          "visualZh": "鸡块均匀裹上一层薄薄的淀粉浆",
+          "timeRef": "10 minutes",
+          "timeRefZh": "10 分钟",
+          "signal": "Glaze looks wet but not dripping",
+          "signalZh": "表面湿润但不滴落"
+        },
+        "tip": "The cornstarch layer is what keeps the chicken juicy at high heat.",
+        "tipZh": "淀粉层是鸡肉高温下保持多汁的关键。"
+      },
+      {
+        "text": "Mix the sauce in a small bowl: vinegar, sugar, soy, and cornstarch slurry. Set aside.",
+        "textZh": "小碗中调好碗汁：香醋、糖、生抽、水淀粉。备用。",
+        "zhHint": "提前调好碗汁",
+        "stateNote": {
+          "visual": "Sugar and starch fully dissolved, no lumps",
+          "visualZh": "糖和淀粉完全溶解，无结块",
+          "timeRef": "1 minute",
+          "timeRefZh": "1 分钟",
+          "signal": "Sauce is uniform, slightly cloudy",
+          "signalZh": "碗汁均匀，微带乳白色"
+        }
+      },
+      {
+        "text": "Heat oil in a wok over medium. Add Sichuan peppercorns and dried chilies; fry 30 seconds until fragrant but NOT burned.",
+        "textZh": "锅中放油，中火加热。下花椒和干辣椒，炸 30 秒至出香，注意别炸糊。",
+        "zhHint": "小火炸花椒辣椒",
+        "stateNote": {
+          "visual": "Oil lightly ripples; chilies turn deep red and glossy",
+          "visualZh": "油面轻泛涟漪；辣椒变深红有光泽",
+          "heat": "medium",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "Fragrant (prickly + spicy) — pull them before they go black",
+          "signalZh": "香气扑鼻（麻+辣）——变黑前捞出"
+        }
+      },
+      {
+        "text": "Turn heat to high. Add chicken in a single layer and sear 1 minute without stirring, then stir-fry until mostly cooked.",
+        "textZh": "转大火。鸡块平铺入锅，先静置 1 分钟不翻动，再翻炒至基本熟透。",
+        "zhHint": "大火快炒鸡丁",
+        "stateNote": {
+          "visual": "Chicken edges sear golden, pieces separate easily",
+          "visualZh": "鸡块边缘煎至金黄，彼此轻松分开",
+          "heat": "high",
+          "timeRef": "2-3 minutes",
+          "timeRefZh": "2-3 分钟",
+          "signal": "No raw pink on most surfaces; still slightly pink in thickest pieces",
+          "signalZh": "大部分表面无生粉红色；最厚处仍微带粉红"
+        }
+      },
+      {
+        "text": "Add garlic, ginger, and scallion sections. Stir-fry 30 seconds until fragrant.",
+        "textZh": "下蒜片、姜片和大葱段。爆炒 30 秒至出香。",
+        "zhHint": "下葱姜蒜爆香",
+        "stateNote": {
+          "visual": "Aromatics glisten and release scent",
+          "visualZh": "葱姜蒜油光发亮，香气四溢",
+          "heat": "high",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "Garlic edges just start to color",
+          "signalZh": "蒜片边缘刚开始变色"
+        }
+      },
+      {
+        "text": "Pour in the sauce. Stir rapidly 20-30 seconds until it thickens and coats everything.",
+        "textZh": "倒入碗汁。快速翻炒 20-30 秒，直到汤汁变稠裹住所有食材。",
+        "zhHint": "烹入碗汁",
+        "stateNote": {
+          "visual": "Sauce turns glossy and clings to chicken",
+          "visualZh": "碗汁变得有光泽并挂在鸡块上",
+          "heat": "high",
+          "timeRef": "20-30 seconds",
+          "timeRefZh": "20-30 秒",
+          "signal": "Clear trail left when spatula swipes the pan",
+          "signalZh": "锅铲划过锅底留下清晰痕迹"
+        }
+      },
+      {
+        "text": "Off heat: fold in the peanuts. Serve immediately.",
+        "textZh": "关火：拌入花生米。立即上桌。",
+        "zhHint": "最后拌入花生",
+        "stateNote": {
+          "visual": "Peanuts coated in glossy sauce, still whole",
+          "visualZh": "花生裹着光泽的酱汁，依然完整",
+          "signal": "Peanuts still crunchy",
+          "signalZh": "花生依然酥脆"
+        }
+      }
+    ],
+    "tips": [
+      "The vinegar-forward sauce is what separates authentic kung pao from the sweet American version.",
+      "Don't skip the Sichuan peppercorn — the numbing (má) contrast with the chili heat is the dish.",
+      "Too spicy? Remove chili seeds and use 6 chilies instead of 10.",
+      "Cashews make a luxurious swap for peanuts."
+    ],
+    "tipsZh": [
+      "以醋为主的碗汁，是正宗宫保鸡丁与美式甜口的根本区别。",
+      "花椒不能省——麻感与辣椒的辣形成对比，这才是这道菜。",
+      "太辣？去籽，并用 6 个干辣椒代替 10 个。",
+      "用腰果代替花生，口感更高级。"
+    ],
+    "relatedSlugs": [
+      "mapo-tofu",
+      "beef-and-broccoli",
+      "tomato-and-egg"
+    ],
+    "image": "/images/recipes/kung-pao-chicken.webp"
+  },
+  {
+    "id": "scallion-pancakes",
+    "slug": "scallion-pancakes",
+    "titleEn": "Scallion Pancakes (葱油饼)",
+    "titleZh": "葱油饼",
+    "pinyin": "cōng yóu bǐng",
+    "cuisine": "北方小吃",
+    "cuisineEn": "Northern snack",
+    "region": "Northern China / street food",
+    "regionZh": "中国北方 / 街头小吃",
+    "difficulty": "easy",
+    "timeMin": 45,
+    "servings": 4,
+    "version": "family",
+    "versionNote": "Street version is laminated with lots of oil; home version uses a thinner oil paste — same flaky layers, less mess.",
+    "versionNoteZh": "街边版用大量油起酥；家常版用更薄的油酥——同样的层次分明，却更干净省油。",
+    "tags": [
+      "beginner",
+      "snack",
+      "vegetarian",
+      "dough"
+    ],
+    "dietary": [
+      "vegetarian"
+    ],
+    "story": "A northern-China street food: unleavened dough rolled thin with scallions and oil, coiled and flattened so it flakes into crispy layers. Perfect weekend project — and the first 'wow' recipe for new cooks.",
+    "storyZh": "北方街头小吃：不发面的面团擀薄，卷入葱和油，盘成螺旋再压扁，烙出层层酥脆。是完美的周末项目，也是新手厨师的第一个“哇”时刻。",
+    "ingredients": [
+      {
+        "id": "sp-flour",
+        "nameEn": "all-purpose flour",
+        "nameZh": "中筋面粉",
+        "amountMetric": "300 g",
+        "amountUS": "2 1/2 cups",
+        "category": "staple",
+        "pantry": "local"
+      },
+      {
+        "id": "sp-water",
+        "nameEn": "hot water (not boiling)",
+        "nameZh": "热水",
+        "amountMetric": "180 ml",
+        "amountUS": "3/4 cup",
+        "category": "other",
+        "pantry": "local"
+      },
+      {
+        "id": "sp-oil-paste",
+        "nameEn": "neutral oil + 1 tbsp flour (for paste)",
+        "nameZh": "油酥",
+        "amountMetric": "3 tbsp oil + 1 tbsp flour",
+        "amountUS": "3 tbsp + 1 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "sp-scallion",
+        "nameEn": "scallions, finely chopped (dry them on a towel)",
+        "nameZh": "小葱",
+        "amountMetric": "4 stalks",
+        "amountUS": "4 stalks",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "sp-salt",
+        "nameEn": "salt",
+        "nameZh": "盐",
+        "amountMetric": "1/2 tsp",
+        "amountUS": "1/2 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "sp-frying-oil",
+        "nameEn": "oil for frying",
+        "nameZh": "煎饼油",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Mix flour and salt. Slowly pour in hot water, stirring with chopsticks, until it forms shaggy clumps. Knead into a smooth ball. Cover, rest 20 minutes.",
+        "textZh": "混合面粉和盐。用筷子边搅边缓缓倒入热水，直到成絮状。揉成光滑的面团，盖上醒 20 分钟。",
+        "zhHint": "烫面，醒20分钟",
+        "stateNote": {
+          "visual": "Dough comes together into a smooth, elastic ball",
+          "visualZh": "面团揉成光滑有弹性的圆球",
+          "timeRef": "20 minutes rest",
+          "timeRefZh": "醒发 20 分钟",
+          "signal": "Dough springs back when poked",
+          "signalZh": "手指轻按能回弹"
+        }
+      },
+      {
+        "text": "Meanwhile make the oil paste: whisk oil + flour until smooth. Dry the chopped scallions on a paper towel (wet scallions make soggy layers).",
+        "textZh": "同时制作油酥：油+面粉搅拌至顺滑。把葱花放在纸巾上吸干水分（湿葱花会让层次发黏）。",
+        "zhHint": "调油酥，擦干葱",
+        "stateNote": {
+          "visual": "Paste is smooth, pale, and spreadable",
+          "visualZh": "油酥顺滑、色泽浅、易涂抹",
+          "signal": "No flour lumps",
+          "signalZh": "没有面粉结块"
+        }
+      },
+      {
+        "text": "Divide dough into 4 balls. Roll each into a thin rectangle (about 2-3 mm).",
+        "textZh": "面团分成 4 份。每份擀成薄薄的长方形（约 2-3 毫米厚）。",
+        "zhHint": "擀薄片",
+        "stateNote": {
+          "visual": "Rectangle is thin enough to be slightly translucent",
+          "visualZh": "面片薄到微微透光",
+          "signal": "Can see your hand faintly through it",
+          "signalZh": "透过面片能隐约看到手"
+        }
+      },
+      {
+        "text": "Spread oil paste thinly over the dough, sprinkle with scallions. Roll it up tightly into a long log, then coil the log into a spiral. Rest 5 minutes.",
+        "textZh": "面片薄薄抹上油酥，撒上葱花。紧紧卷成长条，再把长条盘成螺旋。静置 5 分钟。",
+        "zhHint": "抹油酥卷起，盘成螺旋",
+        "stateNote": {
+          "visual": "Coil holds its shape; layers are visible at the cut edge",
+          "visualZh": "螺旋保持形状；切面可见层次",
+          "timeRef": "5 minutes rest",
+          "timeRefZh": "静置 5 分钟",
+          "signal": "Coil doesn't unroll on its own",
+          "signalZh": "螺旋不会自己散开"
+        }
+      },
+      {
+        "text": "Roll each coil gently into a flat pancake, about 5-6 mm thick. Don't press hard — you want to preserve the layers.",
+        "textZh": "把每个螺旋轻轻擀成约 5-6 毫米厚的饼。不要用力压——要保留层次。",
+        "zhHint": "轻擀成饼",
+        "stateNote": {
+          "visual": "Pancake is even thickness, spiral pattern visible",
+          "visualZh": "饼厚度均匀，螺旋纹路清晰可见",
+          "signal": "Layers still distinct at the edge",
+          "signalZh": "边缘层次依然分明"
+        }
+      },
+      {
+        "text": "Heat 1 tbsp oil in a skillet over medium. Fry the pancake 2-3 minutes per side until golden and crisp.",
+        "textZh": "平底锅放 1 汤匙油，中火加热。每面煎 2-3 分钟，直到金黄酥脆。",
+        "zhHint": "中小火煎至两面金黄",
+        "stateNote": {
+          "visual": "Golden-brown patches; pancake puffs slightly and layers separate",
+          "visualZh": "出现金棕色斑点；饼微微鼓起，层次分离",
+          "heat": "medium",
+          "timeRef": "2-3 minutes per side",
+          "timeRefZh": "每面 2-3 分钟",
+          "signal": "Edges look flaky and sound crisp when tapped",
+          "signalZh": "边缘呈层状，轻敲有脆响"
+        }
+      },
+      {
+        "text": "Move to a cutting board, rest 1 minute (traps steam = flaky). Cut into wedges. Repeat for remaining pancakes.",
+        "textZh": "移到砧板上静置 1 分钟（锁住蒸汽=酥脆）。切块。其余饼重复操作。",
+        "zhHint": "出锅切块",
+        "stateNote": {
+          "visual": "Pancake steams slightly as it rests; layers lift when cut",
+          "visualZh": "饼静置时微微冒热气；切开时层次挑起",
+          "timeRef": "1 minute rest",
+          "timeRefZh": "静置 1 分钟",
+          "signal": "Layers visibly peel apart when cut",
+          "signalZh": "切开时能明显看到层次剥开"
+        }
+      }
+    ],
+    "tips": [
+      "Hot water (not boiling) is key — it cooks the gluten slightly, making the dough tender and rollable.",
+      "Drying the scallions is the #1 secret to crispy layers.",
+      "Freeze rolled, uncooked pancakes between parchment; fry straight from frozen, add 1 min per side."
+    ],
+    "tipsZh": [
+      "热水（非沸水）是关键——略微烫熟面筋，让面团柔软易擀。",
+      "吸干葱花水分，是酥脆层次的第一秘诀。",
+      "擀好的生饼用烘焙纸隔开冷冻；直接冷冻下锅煎，每面多加 1 分钟。"
+    ],
+    "relatedSlugs": [
+      "tomato-and-egg",
+      "egg-fried-rice",
+      "kung-pao-chicken"
+    ],
+    "image": "/images/recipes/scallion-pancakes.webp"
+  },
+  {
+    "id": "egg-fried-rice",
+    "slug": "egg-fried-rice",
+    "titleEn": "Egg Fried Rice (蛋炒饭)",
+    "titleZh": "蛋炒饭",
+    "pinyin": "dàn chǎo fàn",
+    "cuisine": "家常菜",
+    "cuisineEn": "Home-style",
+    "region": "Everywhere (leftover-rice classic)",
+    "regionZh": "全国各地（剩饭经典）",
+    "difficulty": "easy",
+    "timeMin": 15,
+    "servings": 2,
+    "version": "family",
+    "versionNote": "Restaurant version flings rice in a screaming-hot wok with separate scrambled egg ribbons. Home version is more forgiving — same flavor, easier technique.",
+    "versionNoteZh": "餐厅版用猛火炒饭、蛋液单独滑成蛋丝。家常版容错更高——同样的味道，更简单的技法。",
+    "tags": [
+      "15-min",
+      "leftover",
+      "beginner",
+      "weeknight",
+      "budget"
+    ],
+    "dietary": [
+      "none"
+    ],
+    "story": "The ultimate leftover dish: day-old rice + egg + whatever's in the fridge. Every Chinese household has a version. The two rules: cold rice, and don't stir too much.",
+    "storyZh": "终极剩饭料理：隔夜饭 + 鸡蛋 + 冰箱里随便什么。每个中国家庭都有自己的版本。两条铁律：用冷饭，别炒太狠。",
+    "ingredients": [
+      {
+        "id": "efr-rice",
+        "nameEn": "day-old cold cooked rice (ideally overnight)",
+        "nameZh": "隔夜米饭",
+        "amountMetric": "300 g (about 2 cups)",
+        "amountUS": "2 cups",
+        "category": "staple",
+        "pantry": "local",
+        "note": "Fresh rice is too sticky — spread it out and fridge it 1 hour if needed.",
+        "noteZh": "新鲜米饭太黏——需要的话摊开冷藏 1 小时。"
+      },
+      {
+        "id": "efr-egg",
+        "nameEn": "eggs",
+        "nameZh": "鸡蛋",
+        "amountMetric": "2 large",
+        "amountUS": "2 large",
+        "category": "protein",
+        "pantry": "local"
+      },
+      {
+        "id": "efr-scallion",
+        "nameEn": "scallions, chopped, white & green separated",
+        "nameZh": "小葱",
+        "amountMetric": "3 stalks",
+        "amountUS": "3 stalks",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "efr-soy",
+        "nameEn": "light soy sauce",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "efr-oil",
+        "nameEn": "neutral oil",
+        "nameZh": "食用油",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "efr-salt",
+        "nameEn": "salt",
+        "nameZh": "盐",
+        "amountMetric": "1/4 tsp",
+        "amountUS": "1/4 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "efr-optional",
+        "nameEn": "optional: peas, ham, char siu, or lap cheong",
+        "nameZh": "配料（豌豆/腊肠等）",
+        "amountMetric": "1/2 cup",
+        "amountUS": "1/2 cup",
+        "category": "other",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Break up the cold rice with your hands so there are no clumps. This is the single most important step.",
+        "textZh": "用手把冷饭搓散，确保没有结块。这是最重要的一步。",
+        "zhHint": "把冷饭搓散",
+        "stateNote": {
+          "visual": "Every grain is separate; no big lumps",
+          "visualZh": "米粒颗颗分明，没有大块结团",
+          "timeRef": "1 minute",
+          "timeRefZh": "1 分钟",
+          "signal": "Rice feels dry and loose",
+          "signalZh": "米饭手感干爽松散"
+        }
+      },
+      {
+        "text": "Beat the eggs with the salt. Heat 1 tbsp oil in a wok over medium-high. Add eggs and scramble until just set, then push to one side.",
+        "textZh": "鸡蛋加盐打散。锅中放 1 汤匙油，中大火加热。倒入蛋液炒至刚刚凝固，推到一边。",
+        "zhHint": "滑炒鸡蛋",
+        "stateNote": {
+          "visual": "Eggs softly set, still glossy",
+          "visualZh": "鸡蛋刚刚凝固，依然有光泽",
+          "heat": "medium-high",
+          "timeRef": "40-60 seconds",
+          "timeRefZh": "40-60 秒",
+          "signal": "No raw liquid; curds still moist",
+          "signalZh": "没有生蛋液；蛋块依然湿润"
+        }
+      },
+      {
+        "text": "Add the white scallion parts and any optional add-ins (ham, peas). Stir-fry 30 seconds.",
+        "textZh": "下葱白部分和可选配料（火腿、豌豆）。翻炒 30 秒。",
+        "zhHint": "下配料爆香",
+        "stateNote": {
+          "visual": "Scallion whites soften and release aroma",
+          "visualZh": "葱白变软并释放香气",
+          "heat": "medium-high",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "Fragrant, edges barely browning",
+          "signalZh": "香气四溢，边缘微微上色"
+        }
+      },
+      {
+        "text": "Add the rice and the remaining 1 tbsp oil. Toss and press gently with the spatula to coat every grain — don't mash.",
+        "textZh": "下米饭和剩余 1 汤匙油。用锅铲轻轻翻拌按压，让每粒米都裹上油——不要压碎。",
+        "zhHint": "下米饭翻炒",
+        "stateNote": {
+          "visual": "Rice turns from white to glossy and evenly oiled",
+          "visualZh": "米饭从白色变得油亮，裹油均匀",
+          "heat": "high",
+          "timeRef": "2-3 minutes",
+          "timeRefZh": "2-3 分钟",
+          "signal": "Grains start to 'dance' and jump slightly in the pan",
+          "signalZh": "米粒开始“跳舞”，在锅里微微跳动"
+        }
+      },
+      {
+        "text": "Push rice to one side, pour soy sauce into the empty side, let it sizzle 5 seconds, then fold through. (This 'wok-ting' the soy removes raw sauce taste.)",
+        "textZh": "把米饭推到一边，在空处倒入生抽，让其滋啦 5 秒再翻拌均匀。（这种“炝酱油”能去掉生酱味。）",
+        "zhHint": "沿锅边烹酱油",
+        "stateNote": {
+          "visual": "Soy sizzles immediately and smells toasty",
+          "visualZh": "酱油立刻滋啦作响，散发焦香",
+          "heat": "high",
+          "timeRef": "5-10 seconds",
+          "timeRefZh": "5-10 秒",
+          "signal": "Steam smells roasted, not raw-soy",
+          "signalZh": "蒸汽闻起来是焦香，而不是生酱油味"
+        }
+      },
+      {
+        "text": "Fold in the green scallions. Serve immediately.",
+        "textZh": "拌入葱花。立即出锅。",
+        "zhHint": "撒葱花出锅",
+        "stateNote": {
+          "visual": "Rice is hot, glossy, and every grain separate",
+          "visualZh": "米饭热透油亮，粒粒分明",
+          "signal": "Each grain separate, steam rising",
+          "signalZh": "米粒颗颗分离，热气升腾"
+        }
+      }
+    ],
+    "tips": [
+      "Cold rice is non-negotiable — fresh rice turns to paste.",
+      "Don't over-stir; let the rice hit the pan and toss instead of mashing.",
+      "Lap cheong (Chinese sausage) + a few drops of sesame oil at the end = instant upgrade."
+    ],
+    "tipsZh": [
+      "冷饭是硬性要求——新鲜米饭会炒成糊。",
+      "别过度翻炒；让米饭落锅后颠勺翻动，而不是压捣。",
+      "加腊肠 + 出锅前几滴香油 = 立刻升级。"
+    ],
+    "relatedSlugs": [
+      "tomato-and-egg",
+      "scallion-pancakes",
+      "kung-pao-chicken"
+    ],
+    "image": "/images/recipes/egg-fried-rice.webp"
+  },
+  {
+    "id": "beef-and-broccoli",
+    "slug": "beef-and-broccoli",
+    "titleEn": "Beef & Broccoli (西兰花炒牛肉)",
+    "titleZh": "西兰花炒牛肉",
+    "pinyin": "xī lán huā chǎo niú ròu",
+    "cuisine": "粤菜 / 家常",
+    "cuisineEn": "Cantonese / Home-style",
+    "region": "Guangdong / home cooking",
+    "regionZh": "广东 / 家常",
+    "difficulty": "medium",
+    "timeMin": 30,
+    "servings": 3,
+    "version": "family",
+    "versionNote": "The American take is a sweet brown glaze. The home-style version is lighter, with velvety beef and a savory oyster-soy sauce.",
+    "versionNoteZh": "美式做法是甜口的深色酱汁。家常版更清爽：牛肉上浆滑嫩，蚝油酱油汁咸鲜。",
+    "tags": [
+      "weeknight",
+      "high-protein",
+      "30-min",
+      "classic"
+    ],
+    "dietary": [
+      "none"
+    ],
+    "story": "A favorite in Cantonese home kitchens and takeout menus alike. The difference between 'good' and 'soggy' comes down to two things: velveted beef, and broccoli that's blanched then flash-fried, never stewed.",
+    "storyZh": "广东家常厨房和外卖菜单上的常客。“好吃”和“软塌”的区别在于两件事：牛肉上浆，以及西兰花先焯后快炒、绝不炖煮。",
+    "ingredients": [
+      {
+        "id": "bb-beef",
+        "nameEn": "flank steak (or sirloin), sliced thin against the grain",
+        "nameZh": "牛肉片",
+        "amountMetric": "350 g",
+        "amountUS": "about 12 oz",
+        "category": "protein",
+        "pantry": "local",
+        "note": "Slicing against the grain is 80% of tender beef.",
+        "noteZh": "逆纹切片占嫩牛肉的 80%。"
+      },
+      {
+        "id": "bb-broccoli",
+        "nameEn": "broccoli, cut into small florets",
+        "nameZh": "西兰花",
+        "amountMetric": "1 head (~400 g)",
+        "amountUS": "1 head",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "bb-marinade-soy",
+        "nameEn": "light soy sauce (marinade)",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "bb-marinade-shaoxing",
+        "nameEn": "Shaoxing wine (marinade)",
+        "nameZh": "料酒",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "shaoxing-wine"
+      },
+      {
+        "id": "bb-marinade-starch",
+        "nameEn": "cornstarch (marinade)",
+        "nameZh": "玉米淀粉",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "western-pantry",
+        "pantry": "local",
+        "termKey": "cornstarch"
+      },
+      {
+        "id": "bb-marinade-oil",
+        "nameEn": "neutral oil (marinade, to seal)",
+        "nameZh": "食用油",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "bb-oyster",
+        "nameEn": "oyster sauce",
+        "nameZh": "蚝油",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "oyster-sauce"
+      },
+      {
+        "id": "bb-sauce-soy",
+        "nameEn": "light soy sauce (sauce)",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "bb-sauce-starch",
+        "nameEn": "cornstarch slurry (1 tsp starch + 2 tbsp water)",
+        "nameZh": "水淀粉",
+        "amountMetric": "3 tbsp total",
+        "amountUS": "3 tbsp total",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "bb-garlic",
+        "nameEn": "garlic, sliced",
+        "nameZh": "蒜片",
+        "amountMetric": "3 cloves",
+        "amountUS": "3 cloves",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "bb-ginger",
+        "nameEn": "ginger, sliced",
+        "nameZh": "姜片",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "bb-oil",
+        "nameEn": "neutral oil for cooking",
+        "nameZh": "食用油",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "bb-salt",
+        "nameEn": "salt (for blanching)",
+        "nameZh": "盐",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Slice beef thinly against the grain. Marinate with soy, Shaoxing, and cornstarch; finish with 1 tsp oil to seal. Rest 10 minutes.",
+        "textZh": "牛肉逆纹切薄片。用生抽、料酒、淀粉腌制，最后加 1 茶匙油封住。静置 10 分钟。",
+        "zhHint": "牛肉逆纹切片，上浆腌10分钟",
+        "stateNote": {
+          "visual": "Beef coated in a glossy starchy glaze",
+          "visualZh": "牛肉裹上一层有光泽的淀粉浆",
+          "timeRef": "10 minutes",
+          "timeRefZh": "10 分钟",
+          "signal": "Glaze clings evenly, no dry patches",
+          "signalZh": "浆液均匀附着，无干斑"
+        },
+        "tip": "Freeze the beef 20 minutes first for easier thin slicing.",
+        "tipZh": "先把牛肉冷冻 20 分钟，更容易切薄片。"
+      },
+      {
+        "text": "Blanch broccoli in boiling salted water 60-90 seconds, then shock in cold water. Drain well.",
+        "textZh": "西兰花放入沸盐水焯 60-90 秒，再过冷水。充分沥干。",
+        "zhHint": "焯西兰花后过冷水",
+        "stateNote": {
+          "visual": "Broccoli turns bright green and is crisp-tender",
+          "visualZh": "西兰花变翠绿，口感脆嫩",
+          "timeRef": "60-90 seconds",
+          "timeRefZh": "60-90 秒",
+          "signal": "Stem pierces easily with a fork but florets still hold shape",
+          "signalZh": "叉子能轻易扎透梗部，花朵仍保持形状"
+        },
+        "tip": "Shocking stops the cooking — this is what keeps it green and snappy.",
+        "tipZh": "过冷水能停止加热——这是保持翠绿爽脆的关键。"
+      },
+      {
+        "text": "Mix sauce: oyster sauce + soy + cornstarch slurry in a small bowl.",
+        "textZh": "小碗中调好碗汁：蚝油 + 生抽 + 水淀粉。",
+        "zhHint": "调碗汁",
+        "stateNote": {
+          "visual": "Slurry fully dissolved, sauce uniform",
+          "visualZh": "淀粉完全溶解，碗汁均匀",
+          "timeRef": "1 minute",
+          "timeRefZh": "1 分钟",
+          "signal": "No starch lumps at the bottom of the bowl",
+          "signalZh": "碗底无淀粉结块"
+        }
+      },
+      {
+        "text": "Heat 1.5 tbsp oil in a wok over high until smoking lightly. Add beef in one layer; sear 1 minute, then stir-fry until 80% cooked. Remove.",
+        "textZh": "锅中放 1.5 汤匙油，大火烧至微微冒烟。牛肉平铺入锅，煎 1 分钟，再翻炒至八成熟。盛出。",
+        "zhHint": "大火滑炒牛肉",
+        "stateNote": {
+          "visual": "Beef sears brown on edges, still slightly pink inside",
+          "visualZh": "牛肉边缘煎至棕褐，内部依然微粉",
+          "heat": "high",
+          "timeRef": "2 minutes",
+          "timeRefZh": "2 分钟",
+          "signal": "Beef releases from the pan easily (don't stir too early)",
+          "signalZh": "牛肉能轻松从锅底脱离（别过早翻动）"
+        }
+      },
+      {
+        "text": "Add remaining oil + garlic + ginger; stir 15 seconds until fragrant. Return beef with any juices.",
+        "textZh": "加入剩余油和蒜片姜片，爆香 15 秒。牛肉连汁回锅。",
+        "zhHint": "爆香蒜姜，回锅牛肉",
+        "stateNote": {
+          "visual": "Garlic edges just begin to color",
+          "visualZh": "蒜片边缘刚开始变色",
+          "heat": "high",
+          "timeRef": "15 seconds",
+          "timeRefZh": "15 秒",
+          "signal": "Fragrant immediately",
+          "signalZh": "香气立刻迸发"
+        }
+      },
+      {
+        "text": "Add broccoli, pour in the sauce. Toss rapidly 30-45 seconds until glossy and everything is coated.",
+        "textZh": "下西兰花，倒入碗汁。快速翻炒 30-45 秒，直到汤汁光亮、裹住所有食材。",
+        "zhHint": "下西兰花，烹汁翻匀",
+        "stateNote": {
+          "visual": "Sauce thickens to a glossy coat over beef and broccoli",
+          "visualZh": "碗汁变浓，在牛肉和西兰花上形成光泽挂汁",
+          "heat": "high",
+          "timeRef": "30-45 seconds",
+          "timeRefZh": "30-45 秒",
+          "signal": "Sauce clings, no puddle left in the pan",
+          "signalZh": "汤汁挂住食材，锅底无积水"
+        }
+      }
+    ],
+    "tips": [
+      "Slicing against the grain + velveting = restaurant-tender beef at home.",
+      "Blanching the broccoli means the stir-fry is only 1 minute — nothing gets soggy.",
+      "Vegetarian? Swap beef for firm tofu (1:1) and use mushroom oyster sauce."
+    ],
+    "tipsZh": [
+      "逆纹切片 + 上浆 = 在家做出餐厅级嫩牛肉。",
+      "西兰花先焯水，炒制只需 1 分钟——什么都不会软塌。",
+      "素食？牛肉换成老豆腐（1:1），用菌菇蚝油。"
+    ],
+    "relatedSlugs": [
+      "kung-pao-chicken",
+      "mapo-tofu",
+      "egg-fried-rice"
+    ],
+    "image": "/images/recipes/beef-and-broccoli.webp"
+  },
+  {
+    "id": "huang-gua-chao-dan",
+    "slug": "cucumber-scrambled-eggs",
+    "titleEn": "Cucumber Scrambled Eggs",
+    "titleZh": "黄瓜炒蛋",
+    "pinyin": "huáng guā chǎo dàn",
+    "cuisine": "家常",
+    "cuisineEn": "Home-style",
+    "region": "Northern China",
+    "regionZh": "华北",
+    "difficulty": "easy",
+    "timeMin": 18,
+    "servings": 2,
+    "version": "family",
+    "versionNote": "Family version uses gentle heat and minimal seasoning to highlight the fresh, cool crunch of cucumber and tender eggs — no cornstarch, no stock, no MSG.",
+    "versionNoteZh": "家常版用小火慢炒，少盐少酱，突出黄瓜的清脆与鸡蛋的嫩滑，不加淀粉、高汤或味精。",
+    "tags": [
+      "30-min",
+      "weeknight",
+      "vegetarian"
+    ],
+    "dietary": [
+      "vegetarian"
+    ],
+    "story": "A humble summer staple in Beijing hutongs, this dish appears on dinner tables when cucumbers are crisp and abundant. Grandmothers teach children to salt cucumbers first — not to squeeze out water, but to draw out their natural sweetness and stabilize texture during stir-frying.",
+    "storyZh": "这是北京胡同人家夏日餐桌上的朴素常客。黄瓜应季脆嫩时，家家户户都做这道菜。老辈人教孩子先用盐轻拌黄瓜——不是为了挤水，而是激发其天然甘甜，并稳定炒制时的口感。",
+    "ingredients": [
+      {
+        "id": "hg-01",
+        "nameEn": "cucumber",
+        "nameZh": "黄瓜",
+        "pinyin": "huáng guā",
+        "amountMetric": "250 g",
+        "amountUS": "1½ cups, thinly sliced (¼ cm)",
+        "category": "produce",
+        "pantry": "local",
+        "note": "Use English or Persian cucumber for low-seed, firm flesh; avoid hothouse varieties with watery centers.",
+        "noteZh": "推荐用英国黄瓜或波斯黄瓜，籽少肉紧；避免温室大棚黄瓜（水分过多）。",
+        "termKey": ""
+      },
+      {
+        "id": "hg-02",
+        "nameEn": "eggs",
+        "nameZh": "鸡蛋",
+        "pinyin": "jī dàn",
+        "amountMetric": "4 large (200 g)",
+        "amountUS": "4 large",
+        "category": "protein",
+        "pantry": "local",
+        "note": "",
+        "noteZh": "",
+        "termKey": ""
+      },
+      {
+        "id": "hg-03",
+        "nameEn": "light soy sauce",
+        "nameZh": "生抽",
+        "pinyin": "shēng chōu",
+        "amountMetric": "5 ml",
+        "amountUS": "1 tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "note": "Use a balanced, mild light soy sauce (e.g., Pearl River Bridge or Lee Kum Kee Premium).",
+        "noteZh": "选用咸鲜均衡的生抽（如李锦记精选生抽或珠江桥牌）。",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "hg-04",
+        "nameEn": "sesame oil",
+        "nameZh": "香油",
+        "pinyin": "xiāng yóu",
+        "amountMetric": "3 ml",
+        "amountUS": "½ tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "note": "Toasted sesame oil only — added at the end for aroma.",
+        "noteZh": "仅限焙炒芝麻油，出锅前淋入增香。",
+        "termKey": "sesame-oil"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Thinly slice cucumber (¼ cm thick) on diagonal. Toss with 2 g (¼ tsp) fine sea salt and let sit 5 minutes. Gently pat dry with paper towel — do not rinse or squeeze.",
+        "textZh": "黄瓜斜刀切薄片（约¼厘米厚），加2克（¼茶匙）细海盐拌匀，静置5分钟。用厨房纸轻轻拍干表面水分——不可冲洗，不可用力挤。",
+        "zhHint": "盐腌后轻拍，不挤不洗",
+        "stateNote": {
+          "visual": "Cucumber slices look slightly translucent and lightly damp, not dripping wet.",
+          "visualZh": "黄瓜片略显半透明，表面微潮但不滴水。",
+          "timeRef": "5 minutes",
+          "timeRefZh": "5 分钟",
+          "signal": "Surface moisture beads but no pooling liquid remains.",
+          "signalZh": "表面有水珠凝结，但无积水。"
+        },
+        "tip": "Salting draws out excess water *and* enhances natural sweetness — skipping this step leads to soggy eggs.",
+        "tipZh": "盐腌既去多余水分，又激发甜味；省略此步会导致鸡蛋湿软。"
+      },
+      {
+        "text": "Whisk eggs with 10 ml (2 tsp) water until just combined — no froth. Season lightly with white pepper (optional).",
+        "textZh": "鸡蛋加10毫升（2茶匙）清水搅打至刚融合即可，勿起泡；可酌加少许白胡椒粉提味。",
+        "zhHint": "蛋液加水，勿打发",
+        "stateNote": {
+          "visual": "Egg mixture is pale yellow and homogenous, with no streaks or foam.",
+          "visualZh": "蛋液呈浅黄色，均匀无条纹、无泡沫。",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "No visible air bubbles or separated whites.",
+          "signalZh": "无明显气泡或蛋白分离。"
+        }
+      },
+      {
+        "text": "Heat wok over medium-high heat until a drop of water sizzles and evaporates instantly. Add 10 g (2 tsp) neutral oil (e.g., canola or peanut). Swirl to coat.",
+        "textZh": "旺火烧热炒锅，滴一滴水能‘滋啦’爆开即达温度。倒入10克（2茶匙）无味油（如菜籽油或花生油），旋转润锅。",
+        "zhHint": "锅热油烫，滴水即爆",
+        "stateNote": {
+          "visual": "Oil shimmers faintly with thin, even ripples.",
+          "visualZh": "油面泛起细微均匀涟漪，略有光泽。",
+          "timeRef": "45–60 seconds",
+          "timeRefZh": "45–60 秒",
+          "heat": "medium-high",
+          "signal": "Water droplet dances and vanishes in <1 second.",
+          "signalZh": "水滴入锅即弹跳并1秒内汽化。"
+        }
+      },
+      {
+        "text": "Pour in egg mixture. Let sit undisturbed 5 seconds, then gently push from edges toward center with spatula as curds form. Stop cooking when eggs are ~90% set — still slightly glossy and soft.",
+        "textZh": "倒入蛋液，静置5秒，待边缘初凝后，用锅铲从四周向中心轻推成块；蛋液约九分熟时即停火——仍带微光、质地柔嫩。",
+        "zhHint": "蛋液初凝即推，九分熟即出锅",
+        "stateNote": {
+          "visual": "Eggs form large, soft curds with visible sheen; no browning or dry edges.",
+          "visualZh": "蛋块大而柔软，表面有光泽；无焦边、无褐斑。",
+          "timeRef": "60–75 seconds",
+          "timeRefZh": "60–75 秒",
+          "heat": "medium-high",
+          "signal": "Edges lift cleanly from wok; center remains slightly runny.",
+          "signalZh": "边缘自然离锅；中心仍略带湿润。"
+        }
+      },
+      {
+        "text": "Transfer eggs to a plate. Wipe wok clean. Reheat over medium heat, add remaining 5 g (1 tsp) oil, then add cucumber. Stir-fry 60 seconds until just warmed through and bright green. Return eggs, drizzle with light soy sauce and sesame oil. Toss gently 10 seconds and serve immediately.",
+        "textZh": "将蛋盛出备用。擦净炒锅，中火加热，加余下5克（1茶匙）油，下黄瓜片快炒60秒至断生、翠绿明亮。倒回鸡蛋，淋入生抽和香油，轻翻10秒即出锅。",
+        "zhHint": "黄瓜快炒断生，回锅轻拌即上",
+        "stateNote": {
+          "visual": "Cucumber retains vibrant green color and crisp-tender bite; eggs remain moist and separate.",
+          "visualZh": "黄瓜翠绿鲜亮、脆嫩爽口；蛋块湿润分明，不粘连。",
+          "timeRef": "60 seconds + 10 seconds",
+          "timeRefZh": "60 秒 + 10 秒",
+          "heat": "medium",
+          "signal": "Cucumber emits fresh, grassy aroma; no steam plume or darkening.",
+          "signalZh": "散发清新青草香；无大量蒸汽或颜色变暗。"
+        }
+      }
+    ],
+    "tips": [
+      "Use cold eggs straight from the fridge — they set more evenly and resist overcooking.",
+      "Never add salt directly to raw egg mixture; it breaks down proteins and makes eggs rubbery.",
+      "Resist the urge to over-stir eggs — gentle folding preserves tenderness."
+    ],
+    "tipsZh": [
+      "鸡蛋用冷藏状态直接打散——受热更均匀，不易老硬。",
+      "生蛋液中切勿直接加盐，会破坏蛋白质结构，导致蛋质变韧。",
+      "炒蛋时切忌反复翻搅，轻柔推叠才能保持嫩滑。"
+    ],
+    "relatedSlugs": [
+      "tomato-and-egg",
+      "garlic-chives-scrambled-eggs"
+    ],
+    "image": "/images/recipes/cucumber-scrambled-eggs.webp"
+  },
+  {
+    "id": "jiu-cai-chao-dan",
+    "slug": "garlic-chives-scrambled-eggs",
+    "titleEn": "Garlic Chives Scrambled Eggs",
+    "titleZh": "韭菜炒蛋",
+    "pinyin": "jiǔ cài chǎo dàn",
+    "cuisine": "家常",
+    "cuisineEn": "Home-style",
+    "region": "Shandong",
+    "regionZh": "山东",
+    "difficulty": "easy",
+    "timeMin": 15,
+    "servings": 2,
+    "version": "family",
+    "versionNote": "True Shandong style: no garlic or ginger — just chives, eggs, and a whisper of light soy. The chives must be freshly cut, never pre-chopped, to preserve their pungent-sweet aroma.",
+    "versionNoteZh": "地道山东做法：不放蒜姜，仅用韭菜、鸡蛋与微量生抽。韭菜须现割现切，不可提前切好，以锁住辛香甘甜之气。",
+    "tags": [
+      "30-min",
+      "weeknight",
+      "vegetarian"
+    ],
+    "dietary": [
+      "vegetarian"
+    ],
+    "story": "In Shandong’s farming villages, this dish marks the first warm days of spring — when young garlic chives emerge from thawing soil. Families harvest them at dawn, stir-fry within hours, and serve with steamed millet rice. It’s believed the sharp aroma ‘opens the liver’ and wakes the body after winter.",
+    "storyZh": "在山东乡村，这道菜是春日初暖的信使——当嫩韭破土而出，家家清晨采割，数小时内快炒上桌，配小米饭同食。民间认为其辛香之气可‘疏肝醒神’，助人驱散冬寒。",
+    "ingredients": [
+      {
+        "id": "jc-01",
+        "nameEn": "garlic chives",
+        "nameZh": "韭菜",
+        "pinyin": "jiǔ cài",
+        "amountMetric": "180 g",
+        "amountUS": "2 loosely packed cups, cut into 4-cm lengths",
+        "category": "produce",
+        "pantry": "asian",
+        "note": "Look for deep green, stiff stalks with tight buds — avoid yellowing or limp leaves. Substitution: 120 g leek greens (top ⅔ only) + 1 tsp minced scallion root.",
+        "noteZh": "选深绿挺直、花苞紧实者；避黄叶萎蔫。替代：120克韭葱青叶（仅上三分之二）+ 1茶匙葱根末。",
+        "termKey": ""
+      },
+      {
+        "id": "jc-02",
+        "nameEn": "eggs",
+        "nameZh": "鸡蛋",
+        "pinyin": "jī dàn",
+        "amountMetric": "4 large (200 g)",
+        "amountUS": "4 large",
+        "category": "protein",
+        "pantry": "local",
+        "note": "",
+        "noteZh": "",
+        "termKey": ""
+      },
+      {
+        "id": "jc-03",
+        "nameEn": "light soy sauce",
+        "nameZh": "生抽",
+        "pinyin": "shēng chōu",
+        "amountMetric": "3 ml",
+        "amountUS": "½ tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "note": "Use a light, aromatic soy sauce — not dark or thick.",
+        "noteZh": "选清香型生抽，非浓色或浓稠款。",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "jc-04",
+        "nameEn": "neutral oil",
+        "nameZh": "无味油",
+        "pinyin": "wú wèi yóu",
+        "amountMetric": "15 ml",
+        "amountUS": "1 tbsp",
+        "category": "western-pantry",
+        "pantry": "local",
+        "note": "Canola, grapeseed, or refined peanut oil — high smoke point essential.",
+        "noteZh": "菜籽油、葡萄籽油或精炼花生油——必须高烟点。",
+        "termKey": ""
+      }
+    ],
+    "steps": [
+      {
+        "text": "Rinse chives under cold water, shake off excess, and pat dry thoroughly. Cut into 4-cm lengths on diagonal — keep white and green parts together.",
+        "textZh": "韭菜冷水冲洗，甩干后用厨房纸彻底拍干。斜刀切成4厘米段，白绿部分保持相连。",
+        "zhHint": "洗净拍干，斜切保香",
+        "stateNote": {
+          "visual": "Chives lie flat and dry, with no clinging water droplets.",
+          "visualZh": "韭菜平铺干燥，无附着水珠。",
+          "timeRef": "1 minute",
+          "timeRefZh": "1 分钟",
+          "signal": "Leaves feel crisp and snap when bent gently.",
+          "signalZh": "叶片脆嫩，轻弯即断。"
+        }
+      },
+      {
+        "text": "Whisk eggs with 15 ml (1 tbsp) water and 1 g (⅛ tsp) fine sea salt until just blended — no bubbles. Set aside.",
+        "textZh": "鸡蛋加15毫升（1汤匙）清水与1克（⅛茶匙）细盐，搅打至刚融合（无泡沫），静置备用。",
+        "zhHint": "蛋液加水盐，勿起泡",
+        "stateNote": {
+          "visual": "Mixture is uniform pale yellow with no streaks or air pockets.",
+          "visualZh": "蛋液均匀浅黄，无条纹、无气泡。",
+          "timeRef": "20 seconds",
+          "timeRefZh": "20 秒",
+          "signal": "Lifts smoothly off whisk without dripping or stringing.",
+          "signalZh": "离筷顺滑，无滴落或拉丝。"
+        }
+      },
+      {
+        "text": "Heat wok over high heat until smoking lightly. Add oil and swirl — it should shimmer immediately.",
+        "textZh": "大火烧锅至微冒青烟，下油并快速旋锅——油面即刻泛光。",
+        "zhHint": "锅热油烫，见烟即下",
+        "stateNote": {
+          "visual": "Thin blue-gray smoke rises from wok surface; oil flows like liquid glass.",
+          "visualZh": "锅面升起淡青灰色薄烟；油如流质玻璃般顺滑流动。",
+          "timeRef": "60–90 seconds",
+          "timeRefZh": "60–90 秒",
+          "heat": "high",
+          "signal": "A chopstick tip held 2 cm above oil sizzles steadily.",
+          "signalZh": "筷子尖距油面2厘米处持续发出嘶嘶声。"
+        }
+      },
+      {
+        "text": "Pour in egg mixture. Let sit 3 seconds, then stir vigorously with spatula in figure-8 motion until eggs form small, fluffy curds — about 45 seconds. Transfer to plate while still slightly moist.",
+        "textZh": "倒入蛋液，静置3秒，随即用锅铲以‘8’字形猛力划炒，至蛋成细嫩蓬松小块（约45秒）。趁尚湿润盛出。",
+        "zhHint": "蛋液静置3秒，‘8’字猛炒",
+        "stateNote": {
+          "visual": "Curds are golden-yellow, airy, and separate — no browning or greasy pooling.",
+          "visualZh": "蛋块金黄蓬松、粒粒分明，无褐斑、无浮油。",
+          "timeRef": "45 seconds",
+          "timeRefZh": "45 秒",
+          "heat": "high",
+          "signal": "Eggs release easily from wok with audible ‘shush’ sound.",
+          "signalZh": "蛋块离锅时发出清晰‘唰’声。"
+        }
+      },
+      {
+        "text": "Return wok to high heat. Add chives and stir-fry 30 seconds until fragrant and edges turn vivid green. Immediately return eggs, add light soy sauce, and toss 10 seconds — chives should remain crisp and bright. Serve hot.",
+        "textZh": "锅重烧至旺火，下韭菜大火快炒30秒至辛香扑鼻、叶缘转鲜绿。立刻倒入鸡蛋，淋入生抽，轻翻10秒即出锅——韭菜须脆嫩翠亮。",
+        "zhHint": "韭菜快炒断生，回蛋轻拌即盛",
+        "stateNote": {
+          "visual": "Chives glow emerald-green; eggs stay fluffy and cling lightly to stems.",
+          "visualZh": "韭菜翠如翡翠；蛋块蓬松，轻裹韭茎。",
+          "timeRef": "30 seconds + 10 seconds",
+          "timeRefZh": "30 秒 + 10 秒",
+          "heat": "high",
+          "signal": "Sharp, garlicky aroma fills the kitchen — no bitterness or burnt smell.",
+          "signalZh": "满屋辛香蒜气——无苦涩或焦糊味。"
+        }
+      }
+    ],
+    "tips": [
+      "Cut chives right before cooking — their volatile oils oxidize fast and lose potency.",
+      "Add soy sauce *after* returning eggs — adding it earlier makes chives wilt and dulls color.",
+      "Use a well-seasoned carbon-steel wok or heavy nonstick pan — aluminum reacts with chive sulfur compounds and causes gray discoloration."
+    ],
+    "tipsZh": [
+      "韭菜务必临炒前切，其挥发性精油氧化极快，香气易散失。",
+      "生抽要在回锅后淋入——过早加入会使韭菜萎软、色泽黯淡。",
+      "务必用熟铁锅或厚重不粘锅；铝锅遇韭菜硫化物易发灰变色。"
+    ],
+    "relatedSlugs": [
+      "tomato-and-egg",
+      "cucumber-scrambled-eggs"
+    ],
+    "image": "/images/recipes/garlic-chives-scrambled-eggs.webp"
+  },
+  {
+    "id": "yangzhou-fried-rice",
+    "slug": "yangzhou-fried-rice",
+    "titleEn": "Yangzhou Fried Rice (扬州炒饭)",
+    "titleZh": "扬州炒饭",
+    "pinyin": "yáng zhōu chǎo fàn",
+    "cuisine": "粤菜",
+    "cuisineEn": "Cantonese",
+    "region": "Yangzhou, Jiangsu Province",
+    "regionZh": "江苏省扬州市",
+    "difficulty": "easy",
+    "timeMin": 25,
+    "servings": 2,
+    "version": "family",
+    "versionNote": "Restaurant versions load the wok with colorful bits — shrimp, char siu, ham, peas, egg ribbons. Home version trims to what's practical; same elegance, less work.",
+    "versionNoteZh": "餐厅版会堆满五颜六色的配料——虾仁、叉烧、火腿、豌豆、蛋丝。家常版按需精简，同样的精致，更少的麻烦。",
+    "tags": [
+      "25-min",
+      "cantonese",
+      "family",
+      "protein",
+      "classic"
+    ],
+    "dietary": [
+      "none"
+    ],
+    "story": "Yangzhou fried rice is the gold standard of Chinese banquet fried rice. Every Chinese restaurant worldwide has a version; this is the home-cooked truth: generous protein, bright color from pea and carrot, and that signature grain-by-grain gloss.",
+    "storyZh": "扬州炒饭是中式宴席炒饭的标杆。全球每家中餐馆都有版本；这是家常的真实做法：配料丰富、豌豆胡萝卜点缀出鲜亮色彩、每粒米都油光锃亮。",
+    "ingredients": [
+      {
+        "id": "yfr-rice",
+        "nameEn": "day-old cold cooked jasmine rice",
+        "nameZh": "隔夜粳米或香米",
+        "amountMetric": "300 g (about 2 cups)",
+        "amountUS": "2 cups",
+        "category": "staple",
+        "pantry": "local",
+        "note": "Cold rice = separate grains. Spread fresh rice on a tray and fridge 1 hour if needed."
+      },
+      {
+        "id": "yfr-shrimp",
+        "nameEn": "raw shrimp, peeled & deveined, chopped coarse",
+        "nameZh": "鲜虾仁，去壳去肠线，粗切",
+        "amountMetric": "100 g (about 3/4 cup)",
+        "amountUS": "3/4 cup",
+        "category": "protein",
+        "pantry": "asian",
+        "termKey": "shrimp"
+      },
+      {
+        "id": "yfr-charsiu",
+        "nameEn": "char siu (Chinese BBQ pork), diced 1 cm",
+        "nameZh": "叉烧肉，切成 1 厘米丁",
+        "amountMetric": "80 g (about 2/3 cup)",
+        "amountUS": "2/3 cup",
+        "category": "protein",
+        "pantry": "asian",
+        "termKey": "char-siu"
+      },
+      {
+        "id": "yfr-egg",
+        "nameEn": "eggs, beaten",
+        "nameZh": "鸡蛋，打散",
+        "amountMetric": "2 large",
+        "amountUS": "2 large",
+        "category": "protein",
+        "pantry": "local"
+      },
+      {
+        "id": "yfr-peas",
+        "nameEn": "frozen peas",
+        "nameZh": "冷冻青豆",
+        "amountMetric": "60 g (1/2 cup)",
+        "amountUS": "1/2 cup",
+        "category": "produce",
+        "pantry": "local",
+        "note": "Thaw under warm water before using."
+      },
+      {
+        "id": "yfr-carrot",
+        "nameEn": "carrot, finely diced",
+        "nameZh": "胡萝卜，切细丁",
+        "amountMetric": "50 g (1/3 cup)",
+        "amountUS": "1/3 cup",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "yfr-scallion",
+        "nameEn": "scallions, chopped white & green separated",
+        "nameZh": "小葱，白绿分开切",
+        "amountMetric": "3 stalks",
+        "amountUS": "3 stalks",
+        "category": "produce",
+        "pantry": "local",
+        "termKey": "scallion"
+      },
+      {
+        "id": "yfr-soy",
+        "nameEn": "light soy sauce",
+        "nameZh": "生抽",
+        "amountMetric": "1½ tbsp",
+        "amountUS": "1½ tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "yfr-sesame",
+        "nameEn": "toasted sesame oil",
+        "nameZh": "香油",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "sesame-oil"
+      },
+      {
+        "id": "yfr-oil",
+        "nameEn": "neutral oil (vegetable or canola)",
+        "nameZh": "食用油（玉米/葵花籽油）",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "yfr-pepper",
+        "nameEn": "white pepper",
+        "nameZh": "白胡椒粉",
+        "amountMetric": "1/4 tsp",
+        "amountUS": "1/4 tsp",
+        "category": "spice",
+        "pantry": "asian",
+        "termKey": "white-pepper"
+      },
+      {
+        "id": "yfr-salt",
+        "nameEn": "salt",
+        "nameZh": "盐",
+        "amountMetric": "1/4 tsp",
+        "amountUS": "1/4 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Prep everything first: dice char siu, chop shrimp coarse, dice carrot small, separate scallion whites from greens, beat eggs with salt, thaw peas under warm water. Mise en place is everything for fried rice.",
+        "textZh": "先把所有配料备好：叉烧切丁，虾仁粗切，胡萝卜切小丁，小葱白绿分开，鸡蛋加盐打散，豌豆温水解冻。炒饭的精髓在准备阶段。",
+        "zhHint": "备料：米、肉、蛋、菜分别备好"
+      },
+      {
+        "text": "Heat 1 tbsp oil over medium-high. Pour in beaten eggs, let them set 10 seconds at the bottom, then gently push with spatula so uncooked egg flows to the pan surface. Cook until just set in soft curds, about 30 seconds. Remove to a plate.",
+        "textZh": "中大火热锅，放 1 汤匙油。倒入蛋液，等底部定型约 10 秒后用锅铲轻轻推动，让未凝固的蛋液流到锅面。炒至柔软凝固，约 30 秒，盛出备用。",
+        "zhHint": "滑炒鸡蛋",
+        "stateNote": {
+          "visual": "Eggs are soft curds, still glossy and moist inside",
+          "visualZh": "鸡蛋呈柔软蛋花，表面有光泽、内部湿润",
+          "heat": "medium-high",
+          "timeRef": "30-40 seconds",
+          "timeRefZh": "30-40 秒",
+          "signal": "No runny liquid; curds still wet and soft",
+          "signalZh": "没有流动蛋液；蛋块依然湿润柔软"
+        }
+      },
+      {
+        "text": "Add remaining 1 tbsp oil. Toss in shrimp and char siu. Stir-fry 1 minute until shrimp turn opaque on the outside.",
+        "textZh": "再加 1 汤匙油。下虾仁和叉烧。翻炒 1 分钟，虾的表面变不透明。",
+        "zhHint": "炒虾仁与叉烧",
+        "stateNote": {
+          "visual": "Shrimp edges turn pink; char siu edges slightly crisp",
+          "visualZh": "虾仁边缘变粉红；叉烧边缘略焦脆",
+          "heat": "high",
+          "timeRef": "1 minute",
+          "timeRefZh": "1 分钟",
+          "signal": "Shrimp no longer translucent at edges",
+          "signalZh": "虾仁边缘不再透明"
+        }
+      },
+      {
+        "text": "Push protein to one side. Add carrot and peas to the empty side; stir-fry 30 seconds. Then fold everything together.",
+        "textZh": "把蛋白推到一边。空处下胡萝卜和豌豆，翻炒 30 秒。再翻拌均匀。",
+        "zhHint": "下蔬菜爆香",
+        "stateNote": {
+          "visual": "Carrot brightens to orange; peas turn vibrant green",
+          "visualZh": "胡萝卜变亮橙色；豌豆变鲜绿色",
+          "heat": "high",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "Carrot edges softened but still crisp",
+          "signalZh": "胡萝卜边缘变软但仍保持脆度"
+        }
+      },
+      {
+        "text": "Add the cold rice. Break up any clumps with spatula. Press rice against the wok side for 10 seconds to toast, then toss. Repeat until every grain is separate and glossy — about 2 minutes.",
+        "textZh": "下隔夜冷饭。用锅铲搓散结块。把米饭压到锅边烙 10 秒再翻动。重复直到每粒米都分开且油亮——约 2 分钟。",
+        "zhHint": "下米饭翻炒",
+        "stateNote": {
+          "visual": "Rice goes from matte white to glossy and slightly golden at edges",
+          "visualZh": "米饭从哑光白色变成油亮，边缘略金黄",
+          "heat": "high",
+          "timeRef": "2 minutes",
+          "timeRefZh": "2 分钟",
+          "signal": "Grains 'dance' and separate; no wet clumps",
+          "signalZh": "米粒在锅里'跳舞'分离；没有湿团"
+        }
+      },
+      {
+        "text": "Return the scrambled eggs. Add soy sauce along the hot wok side (let it sizzle 5 seconds), then fold everything through. Add white scallion parts, toss 15 seconds.",
+        "textZh": "把炒蛋倒回。生抽沿锅边淋入（让它滋啦 5 秒），再翻拌均匀。下葱白，翻炒 15 秒。",
+        "zhHint": "烹酱油，回蛋",
+        "stateNote": {
+          "visual": "Soy sizzles and steams with a toasty aroma; rice takes a light golden tint",
+          "visualZh": "酱油滋啦作响，散发焦香；米饭染上浅金色",
+          "heat": "high",
+          "timeRef": "5-10 seconds",
+          "timeRefZh": "5-10 秒",
+          "signal": "Steam smells roasted not raw-soy",
+          "signalZh": "蒸汽是焦香而不是生酱油味"
+        }
+      },
+      {
+        "text": "Remove from heat. Stir in sesame oil and green scallion parts. Taste and adjust salt or white pepper if needed. Serve immediately.",
+        "textZh": "关火。拌入香油和葱花。尝味，按需补盐或白胡椒。立即出锅。",
+        "zhHint": "撒葱花，淋香油出锅",
+        "stateNote": {
+          "visual": "Green scallions just wilted; rice glossy, all ingredients evenly distributed",
+          "visualZh": "葱花微微塌软；米饭油亮，所有配料分布均匀",
+          "signal": "Each grain separate, protein and veg in every spoonful",
+          "signalZh": "粒粒分明，每勺都有蛋白和蔬菜"
+        }
+      }
+    ],
+    "tips": [
+      "Cold jasmine rice is ideal — short-grain is stickier and harder to keep separate.",
+      "Char siu can be swapped for any pre-cooked pork or ham; the sweetness balances the salt.",
+      "For the restaurant look: fry the eggs separately, pull them into ribbons, and fold in at the end."
+    ],
+    "tipsZh": [
+      "隔夜粳米最佳——短粒米更黏，不容易粒粒分明。",
+      "叉烧可用任何预熟猪肉或火腿代替；甜味能平衡咸味。",
+      "追求餐厅效果：鸡蛋单独炒成蛋丝，最后折入。"
+    ],
+    "relatedSlugs": [
+      "egg-fried-rice",
+      "kung-pao-chicken",
+      "beef-and-broccoli"
+    ],
+    "image": "/images/recipes/yangzhou-fried-rice.webp"
+  },
+  {
+    "id": "pineapple-fried-rice",
+    "slug": "pineapple-fried-rice",
+    "titleEn": "Pineapple Fried Rice (菠萝炒饭)",
+    "titleZh": "菠萝炒饭",
+    "pinyin": "bō luó chǎo fàn",
+    "cuisine": "粤菜",
+    "cuisineEn": "Cantonese",
+    "region": "Southern China (Thailand-influenced)",
+    "regionZh": "中国南方（受泰国影响）",
+    "difficulty": "easy",
+    "timeMin": 20,
+    "servings": 2,
+    "version": "family",
+    "versionNote": "Thai-style pineapple fried rice is a street-food classic: sweet pineapple, curry spice, cashews, raisins. Home version simplifies the curry paste to powder.",
+    "versionNoteZh": "泰式菠萝炒饭是街头经典：甜菠萝、咖喱香、腰果、葡萄干。家常版用咖喱粉简化。",
+    "tags": [
+      "20-min",
+      "sweet-sour",
+      "kid-friendly",
+      "one-pot",
+      "thai-inspired"
+    ],
+    "dietary": [
+      "none"
+    ],
+    "story": "Born from Thai-Chinese street food in southern China, pineapple fried rice is the ultimate sweet-savory comfort bowl. The curry powder gives it golden color and warmth; pineapple adds bright acidity that cuts through the richness. Kids and adults both love it.",
+    "storyZh": "源于中国南方的泰式中餐街头小吃，菠萝炒饭是甜咸交织的终极 comfort food。咖喱粉赋予金黄色泽与暖意；菠萝提供清爽酸度，化解油腻。大人小孩都爱。",
+    "ingredients": [
+      {
+        "id": "pfr-rice",
+        "nameEn": "day-old cold cooked rice",
+        "nameZh": "隔夜米饭",
+        "amountMetric": "300 g (about 2 cups)",
+        "amountUS": "2 cups",
+        "category": "staple",
+        "pantry": "local",
+        "note": "Jasmine rice preferred for its floral aroma."
+      },
+      {
+        "id": "pfr-pineapple",
+        "nameEn": "fresh pineapple, cut into 1 cm chunks (or canned, well drained)",
+        "nameZh": "新鲜菠萝，切 1 厘米块（或用罐头菠萝，充分沥干）",
+        "amountMetric": "200 g (about 1⅔ cups)",
+        "amountUS": "1⅔ cups",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "pfr-shrimp",
+        "nameEn": "raw shrimp, peeled & deveined",
+        "nameZh": "鲜虾仁，去壳去肠线",
+        "amountMetric": "100 g",
+        "amountUS": "3/4 cup",
+        "category": "protein",
+        "pantry": "asian"
+      },
+      {
+        "id": "pfr-egg",
+        "nameEn": "eggs, beaten",
+        "nameZh": "鸡蛋",
+        "amountMetric": "2 large",
+        "amountUS": "2 large",
+        "category": "protein",
+        "pantry": "local"
+      },
+      {
+        "id": "pfr-cashew",
+        "nameEn": "raw cashew halves",
+        "nameZh": "生腰果",
+        "amountMetric": "30 g (about 1/4 cup)",
+        "amountUS": "1/4 cup",
+        "category": "other",
+        "pantry": "local",
+        "note": "Toast in dry pan first for extra crunch."
+      },
+      {
+        "id": "pfr-raisin",
+        "nameEn": "golden raisins",
+        "nameZh": "金葡萄干",
+        "amountMetric": "30 g (about 1/4 cup)",
+        "amountUS": "1/4 cup",
+        "category": "other",
+        "pantry": "local"
+      },
+      {
+        "id": "pfr-onion",
+        "nameEn": "red onion, finely diced",
+        "nameZh": "红洋葱，切细丁",
+        "amountMetric": "80 g (2/3 cup)",
+        "amountUS": "2/3 cup",
+        "category": "produce",
+        "pantry": "local"
+      },
+      {
+        "id": "pfr-garlic",
+        "nameEn": "garlic, minced",
+        "nameZh": "大蒜，切末",
+        "amountMetric": "2 cloves",
+        "amountUS": "2 cloves",
+        "category": "produce",
+        "pantry": "local",
+        "termKey": "garlic"
+      },
+      {
+        "id": "pfr-curry",
+        "nameEn": "yellow curry powder",
+        "nameZh": "黄咖喱粉",
+        "amountMetric": "1½ tbsp",
+        "amountUS": "1½ tbsp",
+        "category": "spice",
+        "pantry": "asian",
+        "termKey": "curry-powder"
+      },
+      {
+        "id": "pfr-fishsauce",
+        "nameEn": "fish sauce",
+        "nameZh": "鱼露",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "fish-sauce"
+      },
+      {
+        "id": "pfr-soy",
+        "nameEn": "light soy sauce",
+        "nameZh": "生抽",
+        "amountMetric": "1 tbsp",
+        "amountUS": "1 tbsp",
+        "category": "asian-pantry",
+        "pantry": "asian",
+        "termKey": "light-soy-sauce"
+      },
+      {
+        "id": "pfr-oil",
+        "nameEn": "neutral oil",
+        "nameZh": "食用油",
+        "amountMetric": "2 tbsp",
+        "amountUS": "2 tbsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      },
+      {
+        "id": "pfr-sugar",
+        "nameEn": "white sugar",
+        "nameZh": "白砂糖",
+        "amountMetric": "1 tsp",
+        "amountUS": "1 tsp",
+        "category": "western-pantry",
+        "pantry": "local"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Dry-toast the cashews in a dry pan over medium heat, shaking occasionally, until golden and fragrant — about 3 minutes. Remove and set aside. This step is non-negotiable for crunch.",
+        "textZh": "干锅中小火炒香腰果，期间不断摇晃，至金黄微香——约 3 分钟。盛出备用。这步是酥脆口感的关键。",
+        "zhHint": "干焙腰果",
+        "stateNote": {
+          "visual": "Cashews turn light golden and release a nutty aroma",
+          "visualZh": "腰果变浅金色，散发坚果香气",
+          "heat": "medium",
+          "timeRef": "3 minutes",
+          "timeRefZh": "3 分钟",
+          "signal": "Golden color and nutty smell; no smoke",
+          "signalZh": "呈金黄色，散发坚果香；无烟"
+        }
+      },
+      {
+        "text": "Heat 1 tbsp oil over medium-high. Add beaten eggs, scramble until just set (soft curds), about 30 seconds. Remove to plate.",
+        "textZh": "热锅中放 1 汤匙油，倒入蛋液，炒至刚刚凝固（柔软蛋花），约 30 秒。盛出。",
+        "zhHint": "滑炒鸡蛋",
+        "stateNote": {
+          "visual": "Eggs are soft curds, still glossy",
+          "visualZh": "鸡蛋柔软有光泽",
+          "heat": "medium-high",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "No runny liquid; curds still moist",
+          "signalZh": "无流动蛋液；蛋块湿润"
+        }
+      },
+      {
+        "text": "Add remaining 1 tbsp oil. Toss in onion and garlic. Stir-fry 30 seconds until onion softens and becomes fragrant.",
+        "textZh": "加剩余 1 汤匙油。下洋葱和大蒜。翻炒 30 秒，洋葱变软出香。",
+        "zhHint": "爆香洋葱大蒜",
+        "stateNote": {
+          "visual": "Onion turns translucent at edges; garlic sizzles",
+          "visualZh": "洋葱边缘变透明；大蒜滋啦作响",
+          "heat": "high",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "Aromatic, no browning",
+          "signalZh": "香气四溢，未上色"
+        }
+      },
+      {
+        "text": "Add curry powder to the empty side of the wok, let it sizzle 10 seconds to bloom the spices, then fold into the onion. (Blooming releases the essential oils in the curry.)",
+        "textZh": "把咖喱粉撒到锅空的一侧，让它滋啦 10 秒激发香气，再翻拌进洋葱。（加热能释放咖喱中的精油。）",
+        "zhHint": "煸香咖喱粉",
+        "stateNote": {
+          "visual": "Curry powder darkens slightly and releases intense golden aroma",
+          "visualZh": "咖喱粉颜色变深，散发浓郁金黄色香气",
+          "heat": "high",
+          "timeRef": "10 seconds",
+          "timeRefZh": "10 秒",
+          "signal": "Aroma is warm and nutty, not raw-powdery",
+          "signalZh": "香气温暖坚果感，不是生粉味"
+        }
+      },
+      {
+        "text": "Add cold rice, breaking up clumps. Press and toss until rice is evenly golden from the curry — about 2 minutes.",
+        "textZh": "下隔夜冷饭，搓散结块。按压翻拌至米饭均匀裹上咖喱金色——约 2 分钟。",
+        "zhHint": "下米饭炒至金黄",
+        "stateNote": {
+          "visual": "Rice transforms from white to a uniform golden-yellow",
+          "visualZh": "米饭从白色变成均匀的金黄色",
+          "heat": "high",
+          "timeRef": "2 minutes",
+          "timeRefZh": "2 分钟",
+          "signal": "Every grain coated; no white patches",
+          "signalZh": "每粒米都裹上颜色；没有白色斑块"
+        }
+      },
+      {
+        "text": "Add fish sauce, soy sauce, and sugar. Toss to combine. Add the pineapple chunks and raisins — toss gently so pineapple doesn't break apart.",
+        "textZh": "下鱼露、生抽和糖。翻匀。下菠萝块和葡萄干——轻轻翻，别让菠萝散碎。",
+        "zhHint": "调味，下菠萝葡萄干",
+        "stateNote": {
+          "visual": "Sauce coats rice glossy; pineapple warm but holding shape",
+          "visualZh": "酱汁裹上米饭呈光泽；菠萝温热但保持块状",
+          "heat": "high",
+          "timeRef": "30 seconds",
+          "timeRefZh": "30 秒",
+          "signal": "Pineapple just warmed through, still firm",
+          "signalZh": "菠萝刚热透，依然紧实"
+        }
+      },
+      {
+        "text": "Fold in the scrambled eggs and half the cashews. Toss once more. Serve topped with remaining cashews and a pineapple wedge if you have one.",
+        "textZh": "把炒蛋和一半腰果折入。再翻一次。装盘，余下腰果撒在上面，有菠萝的话放一片装饰。",
+        "zhHint": "回蛋，撒腰果出锅",
+        "stateNote": {
+          "visual": "Rice golden, pineapple bright, cashews scattered on top",
+          "visualZh": "米饭金黄，菠萝鲜亮，腰果点缀其上",
+          "signal": "Each spoonful has rice, pineapple, cashew, and protein",
+          "signalZh": "每勺都有米饭、菠萝、腰果和蛋白"
+        }
+      }
+    ],
+    "tips": [
+      "Canned pineapple works but must be thoroughly drained — excess water makes rice soggy.",
+      "Fish sauce is non-negotiable for authentic flavor; for vegetarian version use soy sauce + 1/2 tsp miso.",
+      "The curry powder must be bloomed in oil first — raw curry powder tastes bitter."
+    ],
+    "tipsZh": [
+      "罐头菠萝可用，但必须充分沥干——多余水分会让米饭变糊。",
+      "鱼露是正宗风味的关键；素食版用酱油+1/2 茶匙味噌替代。",
+      "咖喱粉必须先煸香——生咖喱粉有苦味。"
+    ],
+    "relatedSlugs": [
+      "egg-fried-rice",
+      "yangzhou-fried-rice",
+      "kung-pao-chicken"
+    ],
+    "image": "/images/recipes/pineapple-fried-rice.webp"
+  }
+]
