@@ -1,0 +1,139 @@
+name: Daily Recipes (3-Layer Auto Pipeline)
+
+# 北京时间 08:10 = UTC 00:10 触发（参考 getcreditworth 模式）
+# cron 语法：分 时 日 月 周，UTC 时区
+# 详细：https://crontab.guru/#10_0_*_*_*
+
+on:
+  schedule:
+    - cron: "10 0 * * *"
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "Calendar day number (1-100). Empty = auto next."
+        required: false
+      no_image:
+        description: "Skip image generation to save API credits"
+        required: false
+        type: boolean
+        default: false
+      dry_run:
+        description: "Generate JSON only, no disk write"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write  # 允许 push 提交
+  pages: none
+
+concurrency:
+  group: daily-recipes
+  cancel-in-progress: false
+
+jobs:
+  data-layer:
+    name: "Layer 1 · 数据层 (LLM + 生图 + 落盘)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NODE_OPTIONS: ""  # 避免 safe-delete shim 干扰（CI 无此问题，但保持一致）
+      DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+      BAILIAN_API_KEY: ${{ secrets.BAILIAN_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.22.2"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Run Layer 1 (data fetch + image + validate)
+        id: layer1
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.day }}" ]; then ARGS="$ARGS --day ${{ inputs.day }}"; fi
+          if [ "${{ inputs.no_image }}" = "true" ]; then ARGS="$ARGS --no-image"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          node scripts/fetch-recipes-daily.mjs $ARGS
+
+      - name: Show diff stats
+        if: always()
+        run: |
+          echo "### Diff stats" >> $GITHUB_STEP_SUMMARY
+          git diff --stat >> $GITHUB_STEP_SUMMARY || echo "No changes"
+
+      - name: Upload artifacts (debug JSON)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autopipe-debug-${{ github.run_id }}
+          path: |
+            scripts/.recipe-batch-*.json
+            scripts/.bailian-batch-*.json
+          if-no-files-found: ignore
+
+  publish-layer:
+    name: "Layer 3 · 发布层 (sync-github + indexnow)"
+    needs: data-layer
+    if: needs.data-layer.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_OWNER: ${{ github.repository_owner }}
+      GH_REPO: haoweirecipes
+      GH_BRANCH: main
+      SITE_HOST: haoweirecipes.com
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+    steps:
+      - name: Re-checkout (with full history)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.22.2"
+          cache: "npm"
+
+      - name: Show what changed (in case layer1 ran elsewhere)
+        run: |
+          echo "Changed files:"
+          git status --short
+          git diff --stat
+
+      - name: Run sync-github.mjs (push via Git Database API)
+        id: sync
+        run: |
+          node scripts/sync-github.mjs \
+            --owner "$GH_OWNER" \
+            --repo "$GH_REPO" \
+            --branch "$GH_BRANCH" \
+            --token "$GH_TOKEN" \
+            --message "auto: daily recipes batch $(date -u +%Y-%m-%d)"
+
+      - name: Run indexnow-submit.mjs
+        if: steps.sync.outputs.new_urls != ''
+        run: |
+          node scripts/indexnow-submit.mjs \
+            --host "$SITE_HOST" \
+            --key "$INDEXNOW_KEY" \
+            --urls ${{ steps.sync.outputs.new_urls }}
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Publish layer result" >> $GITHUB_STEP_SUMMARY
+          echo "- sync: ${{ steps.sync.outputs.result || 'skipped' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- new_urls: ${{ steps.sync.outputs.new_urls || '0' }}" >> $GITHUB_STEP_SUMMARY
