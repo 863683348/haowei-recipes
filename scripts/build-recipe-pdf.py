@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Build a bilingual (Chinese-primary) recipe collection PDF from recipes-export.json."""
+"""Build a bilingual (Chinese-primary) recipe collection PDF from recipes-export.json.
+
+内容标准（与 docs/spec.md R-03 一致）：stateNote 火候备注必须中英双语——
+中文行（火候 / 参考 / 判断）+ 英文行（Heat / Time / Check）对照输出，禁止只出单语；
+数据缺失一侧时降级另一侧，不抛空白。"""
 import json, os, tempfile
 from PIL import Image as PILImage
 from reportlab.lib.pagesizes import A4
@@ -226,15 +230,21 @@ for i, r in enumerate(recipes, 1):
             block.append(Paragraph(f"　　{en}", st_step_en))
         sn = step.get("stateNote")
         if sn:
-            bits = []
+            # R-03 标准：备注必须中英双语两行（中文行 + 英文行），缺一侧降级
+            bits_zh, bits_en = [], []
             if sn.get("heat"):
-                bits.append(f"火候：{sn['heat']}")
+                bits_zh.append(f"火候：{sn['heat']}")
+                bits_en.append(f"Heat: {sn['heat']}")
             if sn.get("timeRefZh") or sn.get("timeRef"):
-                bits.append(f"参考：{sn.get('timeRefZh') or sn.get('timeRef')}")
+                bits_zh.append(f"参考：{sn.get('timeRefZh') or sn.get('timeRef')}")
+                bits_en.append(f"Time: {sn.get('timeRef') or sn.get('timeRefZh')}")
             if sn.get("signalZh") or sn.get("signal"):
-                bits.append(f"判断：{sn.get('signalZh') or sn.get('signal')}")
-            if bits:
-                block.append(Paragraph("　　" + "　".join(bits), st_stepnote))
+                bits_zh.append(f"判断：{sn.get('signalZh') or sn.get('signal')}")
+                bits_en.append(f"Check: {sn.get('signal') or sn.get('signalZh')}")
+            if bits_zh:
+                block.append(Paragraph("　　" + "　".join(bits_zh), st_stepnote))
+            if bits_en:
+                block.append(Paragraph("　　" + "　".join(bits_en), st_stepnote_en))
         tip_zh = step.get("tipZh") or step.get("tip")
         tip_en = step.get("tip")
         if tip_zh:
