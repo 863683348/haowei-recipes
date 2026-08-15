@@ -84,7 +84,7 @@ export function membershipText(locale: Locale) {
     statusPaid: zh ? "已支付" : "Paid",
     statusPending: zh ? "待支付" : "Pending",
     statusFailed: zh ? "失败" : "Failed",
-    paidBanner: zh ? "🎉 支付成功，权益已到账" : "🎉 Payment successful — your benefits are live",
+    paidBanner: zh ? "支付成功，权益已到账" : "Payment successful — your benefits are live",
     welcomeBack: zh ? "欢迎回来" : "Welcome back",
     goPricing: zh ? "去开通会员" : "Browse plans",
 
@@ -96,7 +96,7 @@ export function membershipText(locale: Locale) {
     volumeFreeDownload: zh ? "免费下载" : "Free download",
     emailForDownload: zh ? "输入邮箱即可下载（用于发送更新与新品通知）" : "Enter your email to download (used for updates & new-volume alerts)",
     downloadBtn: zh ? "下载 V1 合集 PDF" : "Download V1 PDF",
-    emailSuccess: zh ? "✅ 已记录，开始下载…" : "✅ Got it — starting your download…",
+    emailSuccess: zh ? "已记录，开始下载…" : "Got it — starting your download…",
     volumePreviewNote: zh
       ? "免费预览 3 道菜，完整 10 道请购买单册或开通 PDF 会员"
       : "Preview 3 recipes free — unlock all 10 with a single purchase or PDF Pass",

@@ -81,6 +81,12 @@ export const dictZh: Dict = {
     ],
     startHere: "从这里开始",
     viewAll: "查看全部 →",
+    pdfCta: {
+      title: "首发合集 PDF",
+      desc: "10 道首发菜谱合集成一册精美 PDF——中英对照、含水印、买断永久拥有。",
+      preview: "预览 PDF",
+      download: "免费下载",
+    },
   },
   recipes: {
     title: "全部菜谱",

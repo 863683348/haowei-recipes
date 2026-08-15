@@ -9,6 +9,7 @@ import {
 import { membershipText } from "@/lib/membership-i18n";
 import { PLANS } from "@/lib/membership";
 import { CheckoutButton } from "@/components/membership/checkout-button";
+import { CheckIcon } from "@/components/icons";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -161,7 +162,7 @@ export default async function PricingPage({ params }: Props) {
                     key={f}
                     className="flex items-start gap-2 text-sm text-[var(--hw-fg)]"
                   >
-                    <span className="mt-0.5 text-[var(--hw-ginger)]">✓</span>
+                    <span className="mt-0.5 text-[var(--hw-ginger)]"><CheckIcon className="h-4 w-4" /></span>
                     {f}
                   </li>
                 ))}
@@ -214,7 +215,7 @@ export default async function PricingPage({ params }: Props) {
                 key={f}
                 className="flex items-start gap-2 text-sm text-[var(--hw-fg)]"
               >
-                <span className="mt-0.5 text-[var(--hw-ginger)]">✓</span>
+                <span className="mt-0.5 text-[var(--hw-ginger)]"><CheckIcon className="h-4 w-4" /></span>
                 {f}
               </li>
             )

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { RecipeCard } from "@/components/recipe-card";
-import { BoltIcon, RiceIcon, LeafIcon } from "@/components/icons";
+import { BoltIcon, RiceIcon, LeafIcon, EyeIcon, DownloadIcon } from "@/components/icons";
 import { getRecipeBySlug } from "@/data/recipes";
 import { isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -125,6 +125,40 @@ export default async function HomePage({ params }: Props) {
               <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">{c.desc}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* 首发合集 PDF：预览 + 下载入口 */}
+      <section className="border-t border-[var(--hw-border)] bg-[var(--hw-bg-soft)]">
+        <div className="mx-auto max-w-5xl px-4 py-12">
+          <div className="flex flex-col items-start justify-between gap-5 rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6 sm:flex-row sm:items-center sm:p-8">
+            <div>
+              <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+                {t.home.pdfCta.title}
+              </h2>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-[var(--hw-fg-muted)]">
+                {t.home.pdfCta.desc}
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="/pdf/haowei-v1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-[var(--hw-border)] bg-[var(--hw-card)] px-5 py-3 text-sm font-semibold text-[var(--hw-fg)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
+              >
+                <EyeIcon className="h-5 w-5" />
+                {t.home.pdfCta.preview}
+              </a>
+              <Link
+                href={localizePath("/pdf/v1", loc)}
+                className="inline-flex items-center gap-2 rounded-lg bg-[var(--hw-soy)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 dark:bg-[var(--hw-ginger)]"
+              >
+                <DownloadIcon className="h-5 w-5" />
+                {t.home.pdfCta.download}
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

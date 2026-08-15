@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
 
   const raw = await request.text();
 
-  // ★ 先验签（P0 红线）：未配置公钥或签名不符 → 直接拒绝，不解析、不结算
+  // 先验签（P0 红线）：未配置公钥或签名不符 → 直接拒绝，不解析、不结算
   const signature = request.headers.get("X-SIGNATURE");
   if (!verifyWaffoSignature(raw, signature)) {
     return NextResponse.json({ message: "failed" }, { status: 401 });

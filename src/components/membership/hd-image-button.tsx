@@ -3,6 +3,7 @@
 import { membershipText } from "@/lib/membership-i18n";
 import { hasRecipeAccess } from "@/lib/membership";
 import { useEntitlements } from "@/hooks/use-entitlements";
+import { LockIcon } from "@/components/icons";
 import { openUpgrade } from "./upgrade-modal";
 
 interface Props {
@@ -41,7 +42,14 @@ export function HdImageButton({ image, locale }: Props) {
       className="rounded-lg border border-[var(--hw-border)] px-3 py-1.5 text-xs font-medium text-[var(--hw-fg-muted)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
       title={unlocked ? t.hdImage : t.hdImageMember}
     >
-      {unlocked ? t.hdImage : `🔒 ${t.hdImage}`}
+      {unlocked ? (
+        t.hdImage
+      ) : (
+        <span className="inline-flex items-center gap-1">
+          <LockIcon className="h-3.5 w-3.5" />
+          {t.hdImage}
+        </span>
+      )}
     </button>
   );
 }

@@ -51,7 +51,6 @@ next-env.d.ts
 # 本地 dev server 日志
 /dev.log
 
-# 生图/PDF 导出产物（临时，不提交）
+# 生图/PDF 导出预览（临时，不提交）
 /.pdf_preview/
 /.recipe-export/
-/public/pdf/

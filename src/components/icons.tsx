@@ -213,3 +213,32 @@ export function ClockIcon(props: IconProps) {
     </svg>
   );
 }
+
+/** 眼睛（预览 PDF / 查看） */
+export function EyeIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" />
+      <circle cx="12" cy="12" r="2.8" />
+    </svg>
+  );
+}
+
+/** 下载 */
+export function DownloadIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <path d="M12 3.5V15M7 10.5l5 5 5-5M4 19.5h16" />
+    </svg>
+  );
+}
+
+/** 锁（锁定 / 付费内容） */
+export function LockIcon(props: IconProps) {
+  return (
+    <svg {...base(props)}>
+      <rect x="5" y="10.5" width="14" height="9.5" rx="2" />
+      <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5M12 14.5v2" />
+    </svg>
+  );
+}

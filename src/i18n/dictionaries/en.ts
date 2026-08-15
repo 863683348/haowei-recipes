@@ -79,6 +79,12 @@ export const dict = {
     ],
     startHere: "Start here",
     viewAll: "View all →",
+    pdfCta: {
+      title: "The Launch Collection PDF",
+      desc: "All 10 launch recipes in one beautifully laid-out PDF — bilingual, watermarked, yours forever.",
+      preview: "Preview PDF",
+      download: "Free download",
+    },
   },
   recipes: {
     title: "All recipes",

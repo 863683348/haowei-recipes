@@ -10,6 +10,7 @@ import { membershipText } from "@/lib/membership-i18n";
 import { VOLUMES, PLANS, getVolume } from "@/lib/membership";
 import { getRecipeBySlug } from "@/data/recipes";
 import { RecipeCard } from "@/components/recipe-card";
+import { LockIcon } from "@/components/icons";
 import { V1DownloadForm } from "@/components/membership/v1-download-form";
 import { CheckoutButton } from "@/components/membership/checkout-button";
 
@@ -117,8 +118,8 @@ export default async function VolumePage({ params }: Props) {
             key={r.slug}
             className="relative flex flex-col overflow-hidden rounded-2xl border border-dashed border-[var(--hw-border)] bg-[var(--hw-bg-soft)]"
           >
-            <div className="flex aspect-[4/3] items-center justify-center bg-[var(--hw-bg-soft)] text-3xl">
-              🔒
+            <div className="flex aspect-[4/3] items-center justify-center bg-[var(--hw-bg-soft)] text-[var(--hw-fg-muted)]">
+              <LockIcon className="h-8 w-8" />
             </div>
             <div className="p-4">
               <p className="font-serif text-sm font-semibold text-[var(--hw-fg)]">
