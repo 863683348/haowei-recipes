@@ -87,7 +87,7 @@ skill 输出：
 | ---------------------- | --------------------------------------------------- | ----------------------------- |
 | `DASHSCOPE_API_KEY`    | `sk-xxx`（阿里云百炼）                              | LLM 生成菜谱                  |
 | `BAILIAN_API_KEY`      | 同上，可复用（阿里云百炼）                          | wanx2.1-t2i-turbo 生图         |
-| `INDEXNOW_KEY`         | 32 位 hex（从 https://www.bing.com/indexnow 生成） | 提交新 URL 给 Bing            |
+| `INDEXNOW_KEY`         | 已生成 `0f3d1de947cbc476896ac5db4863f64a`（验证文件见 public/） | 提交新 URL 给 Bing            |
 | `GH_TOKEN`             | PAT（自动生成，workflow 内置 `${{ github.token }}`） | GitHub Git Database API 推送  |
 
 > 注：Vercel 自动部署无需额外 secret，vercel.json/vercel 监听 GitHub push webhook 即可。
@@ -129,15 +129,16 @@ GitHub Actions 支持 `workflow_dispatch`，可在 Actions 页面手动点按钮
 ## 实施 Checklist
 
 - [x] 写方案文档（本文件）
-- [ ] 创建 `.github/workflows/daily-recipes.yml`
-- [ ] 创建 `.github/workflows/indexnow.yml`
-- [ ] 创建 `scripts/fetch-recipes-daily.mjs`
-- [ ] 创建 `scripts/sync-github.mjs`
-- [ ] 创建 `scripts/indexnow-submit.mjs`
-- [ ] 创建 skill `~/.workbuddy/skills/seo-100day-autopipeline/SKILL.md`
-- [ ] 提交 + 推送到 haoweirecipes
-- [ ] 用户在 https://github.com/863683348/haoweirecipes/settings/secrets/actions 配置 secrets
-- [ ] 用户在 https://www.bing.com/indexnow 生成 key
+- [x] 创建 `.github/workflows/daily-recipes.yml`
+- [x] 创建 `.github/workflows/indexnow-resubmit.yml`
+- [x] 创建 `scripts/fetch-recipes-daily.mjs`
+- [x] 创建 `scripts/sync-github.mjs`
+- [x] 创建 `scripts/indexnow-submit.mjs`
+- [x] 创建 skill `~/.workbuddy/skills/seo-100day-autopipeline/SKILL.md`
+- [x] 提交 + 推送到 haoweirecipes（commit 16049c5 + 后续 IndexNow key）
+- [x] 生成 IndexNow 验证文件 `public/0f3d1de947cbc476896ac5db4863f64a.txt`
+- [ ] 用户在 https://github.com/863683348/haoweirecipes/settings/secrets/actions 添加 `INDEXNOW_KEY=0f3d1de947cbc476896ac5db4863f64a`
+- [ ] 用户在 https://www.bing.com/indexnow 用【同一个 key】注册 haoweirecipes.com
 - [ ] 首次手动触发 workflow 验证全链路
 - [ ] 第二天 00:10 验证自动 cron 触发
 
