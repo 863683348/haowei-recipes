@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 /**
  * 根布局铁律（skill 安全/性能）：
@@ -29,7 +30,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        {children}
+        <GoogleAnalytics />
+      </body>
     </html>
   );
 }
