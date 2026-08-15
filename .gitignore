@@ -47,3 +47,11 @@ next-env.d.ts
 
 # 每日菜谱生成临时批 JSON
 /scripts/.recipe-batch-*.json
+
+# 本地 dev server 日志
+/dev.log
+
+# 生图/PDF 导出产物（临时，不提交）
+/.pdf_preview/
+/.recipe-export/
+/public/pdf/
