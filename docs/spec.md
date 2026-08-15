@@ -16,7 +16,7 @@
 |---|---|---|---|
 | R-01 | 英中术语对照系统 | 术语库 JSON + 悬浮/点击释义组件 | 悬停"生抽"→ 显示 英中对照+量化(1 tbsp≈15ml)+替代提示；P0 菜谱 100% 覆盖 |
 | R-02 | 食材替换引擎 | 替换映射表 + 规则函数；双向（亚超→本地替代 / 本地食材→可做菜谱） | 输入"no Shaoxing wine"→ 返回 ≥1 替代（干雪利酒）标注还原度（如 80%）；Top20 替换 100% 覆盖 |
-| R-03 | 火候状态可视化 | 步骤结构化字段 stateNote + 状态描述/时间参考 + 图标化呈现 | 所有含状态判断步骤均有"状态描述+时间参考"呈现 |
+| R-03 | 火候状态可视化 | 步骤结构化字段 stateNote + 状态描述/时间参考 + 图标化呈现 | 所有含状态判断步骤均有"状态描述+时间参考"呈现；**stateNote 备注必须中英双语对照显示**（visual/timeRef/signal 为英文，visualZh/timeRefZh/signalZh 为中文，同屏两行；某侧缺失时降级另一侧，禁止只出单语） |
 | R-04 | 购物清单一键生成 | 客户端聚合：按菜谱生成，双语、分"本地超市/亚超"两类、人数缩放、可复制导出 | 生成后分类正确率≥90%；可一键复制 |
 | R-05 | AI 交互式追问 | FAQ 规则库 + 关键词匹配 + 菜谱上下文回答；明示边界 | 问"为什么小火"→ 返回食材层解释；未知问题→ 诚实"不确定"+引导 |
 | R-06 | 口味量化调整 | 规则函数：辣/咸/油/素食 输入→调料量化换算，同步更新清单 | 选"减咸"→ 酱油类步骤给出新量化用量并同步清单 |
@@ -32,7 +32,7 @@
 - `/about`、`/faq`、`/privacy`、`/contact`
 
 ## 3. 数据模型（src/data/ 下静态 TS/JSON）
-- `recipes/*.ts`：Recipe（id/slug/titleEn/titleZh/pinyin/cuisine/difficulty/time/servings/version 双版本/ingredients[名称双语+双制计量+类别+替换提示]/steps[步骤+状态点+时间参考+视觉提示]/tips/story/region/tags/dietary）
+- `recipes/*.ts`：Recipe（id/slug/titleEn/titleZh/pinyin/cuisine/difficulty/time/servings/version 双版本/ingredients[名称双语+双制计量+类别+替换提示]/steps[步骤+状态点+stateNote 火候备注（visual/timeRef/signal 英文 + visualZh/timeRefZh/signalZh 中文，**中英双语对照，禁止单语**）]/tips/story/region/tags/dietary）
 - `terms.ts`：Term（zh/pinyin/en/definition/quantEquivalent/substituteHint/category）≥30 条
 - `substitutions.ts`：Substitution（from/to/ratio/fidelityScore 1-5 星/note/type: asian2local|local2dish|pair）Top20 覆盖
 - `faqs.ts`：FAQ（id/category/question/answer/keywords/relatedRecipeSlugs/confidence: high|medium|low）
