@@ -32,6 +32,8 @@ export const dictZh: Dict = {
     substitutions: "替换",
     glossary: "术语表",
     aiAssistant: "AI 助手",
+    account: "账户",
+    pricing: "会员",
     shoppingList: "清单",
   },
   footer: {

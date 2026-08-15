@@ -30,6 +30,8 @@ export const dict = {
     substitutions: "Substitutions",
     glossary: "Glossary",
     aiAssistant: "AI Assistant",
+    account: "Account",
+    pricing: "Membership",
     shoppingList: "List",
   },
   footer: {

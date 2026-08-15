@@ -14,6 +14,8 @@ export function Header() {
     { href: "/substitutions", label: t.header.substitutions },
     { href: "/terms", label: t.header.glossary },
     { href: "/ai-assistant", label: t.header.aiAssistant },
+    { href: "/account", label: t.header.account },
+    { href: "/pricing", label: t.header.pricing },
   ];
 
   return (
