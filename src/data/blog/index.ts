@@ -192,8 +192,104 @@ const westernPantry: BlogPost = {
   ],
 };
 
+const marinatingMeat: BlogPost = {
+  id: "marinating-meat-chinese-way",
+  slug: "marinating-meat-chinese-way",
+  titleEn: "Marinating Meat the Chinese Way: Order, Time, and Why It Matters",
+  titleZh: "腌肉入味：顺序与时长，这才是中式腌肉的底层逻辑",
+  excerptEn:
+    "Chinese home cooks don't just dump soy sauce and call it a day. The order you add ingredients, the time you give them, and the chemistry behind each choice is what separates bland meat from restaurant-quality stir-fry.",
+  excerptZh:
+    "中式腌肉不是酱油一倒就完事。先放什么、后放什么、腌多久，每一步背后都有化学逻辑——这些细节决定了炒出来是柴还是嫩。",
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["marinade", "velveting", "stir-fry", "meat prep", "chinese cooking technique"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-08-17",
+  coverImage: "/images/blog/marinating-meat-chinese-way.png",
+  relatedRecipeSlugs: ["kung-pao-chicken", "beef-and-broccoli", "sichuan-green-beans"],
+  bodyEn: [
+    { type: "p", text: "If you've ever marinated meat at home and it came out dry or bland, the problem is rarely the recipe. It's usually the order, the timing, or the missing ingredient that most home cooks overlook." },
+    { type: "h2", text: "The four-step order (and why it matters)" },
+    { type: "p", text: "Chinese marinades follow a strict sequence. Get it wrong and the flavors sit on the surface instead of penetrating the meat." },
+    { type: "ol", items: [
+      "Salt first — it draws out moisture and begins protein breakdown",
+      "Soy sauce / seasoning second — flavor penetrates as the meat relaxes",
+      "Oil last — seals in moisture and prevents sticking during stir-fry",
+      "Starch optional — a light cornstarch coating gives restaurant-quality silkiness",
+    ] },
+    { type: "note", text: "The key insight: salt and soy sauce are water-based. Oil is fat-based. Water and fat don't mix, so oil always goes last to create a protective barrier." },
+    { type: "h2", text: "How long is enough?" },
+    { type: "p", text: "Thinly sliced meat (stir-fry cuts): 15–30 minutes. Diced or cubed: 30–60 minutes. Whole pieces (chicken thighs, pork chops): 1–4 hours, ideally overnight. Beef benefits from longer marinating; pork and chicken need less time." },
+    { type: "h2", text: "The velveting shortcut" },
+    { type: "p", text: "Restaurant-style silkiness comes from a technique called velveting — a light coat of cornstarch mixed with egg white or water, applied after the wet marinade has been absorbed. The starch gelatinizes during cooking, creating a protective layer that locks in juices." },
+    { type: "ul", items: [
+      "Ratio: 1 tsp cornstarch per 200g meat",
+      "Mix with a splash of water or egg white until slurry forms",
+      "Add to meat after the wet marinade has been absorbed",
+      "Let sit 10 minutes before cooking",
+    ] },
+    { type: "note", text: "This is the same technique behind the silky texture in Kung Pao chicken and beef dishes from Chinese takeout." },
+    { type: "h2", text: "Common mistakes" },
+    { type: "ul", items: [
+      "Adding oil before soy sauce — the fat blocks flavor penetration",
+      "Marinating too long — acid (vinegar, wine) breaks down proteins past the point of no return, making meat mushy",
+      "Using the same marinade for every meat — beef needs stronger seasoning; chicken is delicate",
+      "Skipping the rest time — the starch coating needs 10 minutes to hydrate and adhere properly",
+    ] },
+    { type: "p", text: "Master this sequence and you'll never have dry, bland stir-fried meat again. Every recipe on HǎoWèi that calls for marinated meat follows these principles — check the ingredient notes for exact ratios." },
+  ],
+  bodyZh: [
+    { type: "p", text: "如果你在家腌肉，成品却干柴或没味道，问题通常不在配方，而在下料的顺序、时间，或者遗漏了大多数家常厨师忽视的关键一步。" },
+    { type: "h2", text: "四步下料顺序（以及为什么顺序重要）" },
+    { type: "p", text: "中式腌肉有严格的先后顺序。顺序错了，味道只会浮在表面，渗不进肉里。" },
+    { type: "ol", items: [
+      "盐先下——析出水分，启动蛋白质分解",
+      "酱油/调味料第二——肉松弛后味道才能渗入",
+      "油最后封——锁住水分，炒的时候不粘锅",
+      "淀粉可选——薄薄一层玉米淀粉，是餐厅级嫩滑的关键",
+    ] },
+    { type: "note", text: "核心原理：盐和酱油都是水基，油是脂基。水和油不融合，所以油必须最后放，形成保护层。" },
+    { type: "h2", text: "腌多久合适？" },
+    { type: "p", text: "薄片（炒肉用）：15–30 分钟。丁块：30–60 分钟。整块（鸡腿、猪排）：1–4 小时，隔夜更佳。牛肉耐腌，猪肉和鸡肉时间要短。" },
+    { type: "h2", text: "上浆的捷径" },
+    { type: "p", text: "餐厅级的嫩滑来自「上浆」——薄薄一层玉米淀粉加水或蛋清，在湿腌料吸收后涂抹。烹饪时淀粉糊化，形成保护膜锁住汁水。" },
+    { type: "ul", items: [
+      "比例：每 200g 肉配 1 茶匙玉米淀粉",
+      "加水或蛋清调成糊状",
+      "湿腌料吸收后再加",
+      "静置 10 分钟让淀粉充分水合",
+    ] },
+    { type: "note", text: "这就是宫保鸡丁、中式炒牛肉为什么比家常版更嫩的原因。" },
+    { type: "h2", text: "常见误区" },
+    { type: "ul", items: [
+      "先放油再放酱油——脂肪挡住味道渗入",
+      "腌太久——酸（醋、料酒）会过度分解蛋白质，肉质变粉",
+      "所有肉用同一配方——牛肉耐腌，鸡肉娇嫩",
+      "忽略静置时间——淀粉需要 10 分钟水合才能附着",
+    ] },
+    { type: "p", text: "掌握了这个顺序，你再做炒肉就不会干柴。好味每道需要腌肉的菜谱，都在食材注释里标了精确比例——按那个做就对了。" },
+  ],
+  faq: [
+    {
+      qEn: "Can I marinate meat overnight?",
+      qZh: "隔夜腌肉可以吗？",
+      aEn: "Yes for beef and pork cuts; no for delicate poultry. Acidic marinades (soy + wine + vinegar) break down proteins over many hours, turning meat mushy. For chicken, 1–2 hours is plenty.",
+      aZh: "牛肉和猪肉大块可以，但鸡肉别隔夜。酸性腌料（酱油+料酒+醋）长时间作用会把蛋白质过度分解，肉变粉。鸡肉 1–2 小时就够了。",
+    },
+    {
+      qEn: "Why do Chinese recipes call for cornstarch in marinades?",
+      qZh: "中式菜谱为什么常说要加淀粉？",
+      aEn: "Cornstarch creates a protective gel layer during stir-frying. It seals in moisture and gives meat a silky, restaurant-quality texture that home cooking rarely achieves without it.",
+      aZh: "淀粉在爆炒时形成凝胶保护膜，锁住水分，带来顺滑口感。这是家常菜做不出餐厅嫩滑感的关键原因。",
+    },
+  ],
+};
+
 /** 全部 blog 文章（按发布日期倒序） */
-export const blogPosts: BlogPost[] = [tenSichuan, westernPantry, lightVsDarkSoy];
+export const blogPosts: BlogPost[] = [marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
 
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
