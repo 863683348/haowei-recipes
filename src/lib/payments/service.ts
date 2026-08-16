@@ -61,7 +61,10 @@ export async function createCheckoutSession(
 }
 
 /** 结算订单 → 写入权益（幂等：已 paid 直接跳过） */
-export async function finalizeOrder(orderId: string): Promise<void> {
+export async function finalizeOrder(
+  orderId: string,
+  provider: "waffo" | "mock" = "mock"
+): Promise<void> {
   const order = await store.getOrderById(orderId);
   if (!order || order.status !== "pending") return;
 
@@ -87,7 +90,9 @@ export async function finalizeOrder(orderId: string): Promise<void> {
   await store.saveEntitlements(order.userId, e);
   await store.markOrderPaid(
     order.id,
-    order.provider !== "pending" ? order.provider : "mock",
-    order.providerOrderId || `mock_${order.id}`
+    provider,
+    provider === "waffo"
+      ? order.providerOrderId || `waffo_${order.id}`
+      : `mock_${order.id}`
   );
 }
