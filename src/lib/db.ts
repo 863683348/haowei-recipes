@@ -172,8 +172,11 @@ class MemoryStore implements DataStore {
 
 class NeonStore implements DataStore {
   private async sql() {
-    // 动态导入：未安装 @neondatabase/serverless 或未配置 DATABASE_URL 时不会执行
-    const mod = await import("@neondatabase/serverless");
+    // 动态导入：未安装 @neondatabase/serverless 或未配置 DATABASE_URL 时不会执行。
+    // 用非字面量 specifier，使 TS 在编译期不解析该模块（避免与已安装包的声明冲突，
+    // 也无需本地类型桩），运行时由真实包解析。
+    const specifier = "@neondatabase/serverless";
+    const mod = await import(specifier);
     return mod.neon(process.env.DATABASE_URL as string);
   }
 

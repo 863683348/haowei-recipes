@@ -78,6 +78,12 @@ export const dict = {
     ],
     startHere: "Start here",
     viewAll: "View all →",
+    pdfCta: {
+      title: "Get the HǎoWèi Recipe Collection (PDF)",
+      desc: "Our first 30 recipes, formatted for print and offline cooking.",
+      preview: "Preview",
+      download: "Download free PDF",
+    },
   },
   recipes: {
     title: "All recipes",

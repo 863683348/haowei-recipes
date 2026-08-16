@@ -80,6 +80,12 @@ export const dictZh: Dict = {
     ],
     startHere: "从这里开始",
     viewAll: "查看全部 →",
+    pdfCta: {
+      title: "好味首发菜谱合集（PDF）",
+      desc: "精选前 30 道菜谱，排版适合打印与离线下厨。",
+      preview: "预览",
+      download: "免费下载 PDF",
+    },
   },
   recipes: {
     title: "全部菜谱",
