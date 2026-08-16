@@ -1,10 +1,12 @@
 import { recipes } from "@/data/recipes";
+import { blogPosts } from "@/data/blog";
 import { locales, SITE_URL } from "@/i18n/config";
 
 /** sitemap.xml — 双语言 URL + hreflang alternates（route handler 手动缓存头） */
 export async function GET() {
   const staticPaths = [
     "",
+    "/blog",
     "/recipes",
     "/substitutions",
     "/terms",
@@ -20,6 +22,11 @@ export async function GET() {
     ...recipes.map((r) => ({
       path: `/recipes/${r.slug}`,
       lastmod: "2026-08-15",
+      freq: "weekly",
+    })),
+    ...blogPosts.map((p) => ({
+      path: `/blog/${p.slug}`,
+      lastmod: p.publishDate,
       freq: "weekly",
     })),
   ];

@@ -29,10 +29,9 @@ export const dict = {
     recipes: "Recipes",
     substitutions: "Substitutions",
     glossary: "Glossary",
+    blog: "Blog",
     aiAssistant: "AI Assistant",
-    account: "Account",
-    pricing: "Membership",
-    shoppingList: "List",
+    shoppingList: "🛒 List",
   },
   footer: {
     tagline:
@@ -55,23 +54,23 @@ export const dict = {
     heroDesc:
       "Real recipes from Chinese family kitchens — in English, with substitutions for Western supermarkets, bilingual terms, and state photos so you know exactly what to look for. No more “适量”.",
     browseAll: "Browse all recipes",
-    askAI: "Ask the AI assistant",
+    askAI: "🥢 Ask the AI assistant",
     situationsTitle: "Cooking for every situation",
     scenarios: [
       {
-        icon: "bolt",
+        icon: "⚡",
         title: "30-minute dinners",
         desc: "Weeknight classics that go from fridge to table fast.",
         href: "/recipes?time=30",
       },
       {
-        icon: "rice",
+        icon: "🍚",
         title: "Leftover magic",
         desc: "Day-old rice and odds & ends become dinner.",
         href: "/recipes?tag=leftover",
       },
       {
-        icon: "leaf",
+        icon: "🌱",
         title: "Vegetarian-friendly",
         desc: "Mapo tofu, scallion pancakes, and more without meat.",
         href: "/recipes?diet=vegetarian",
@@ -79,12 +78,6 @@ export const dict = {
     ],
     startHere: "Start here",
     viewAll: "View all →",
-    pdfCta: {
-      title: "The Launch Collection PDF",
-      desc: "All 10 launch recipes in one beautifully laid-out PDF — bilingual, watermarked, yours forever.",
-      preview: "Preview PDF",
-      download: "Free download",
-    },
   },
   recipes: {
     title: "All recipes",
@@ -110,17 +103,17 @@ export const dict = {
     tips: "Tips",
     cookNext: "Cook next",
     ingredients: "Ingredients",
-    addAllToList: "Add all to shopping list",
-    addToShoppingList: "Add ingredients to shopping list",
-    addedToShoppingList: "Added to list",
-    lookFor: "Look for",
+    addAllToList: "🛒 Add all to shopping list",
+    addToShoppingList: "🛒 Add ingredients to shopping list",
+    addedToShoppingList: "✓ Added to list",
+    lookFor: "🔍 Look for",
     visual: "Visual: ",
     youKnow: "You know it's right when: ",
     use: "Use: ",
     fidelity: "Fidelity: {f}/5",
-    pantryLocal: "local",
-    pantryAsian: "asian",
-    stateNoteHeat: "{heat}",
+    pantryLocal: "🛒 local",
+    pantryAsian: "🏮 asian",
+    stateNoteHeat: "🔥 {heat}",
     recipeJsonLd: "",
   },
   stateNote: {
@@ -133,7 +126,7 @@ export const dict = {
     },
   },
   substitutionPanel: {
-    title: "Ingredient substitution finder",
+    title: "🔁 Ingredient substitution finder",
     hint: "“I don't have X — what do I use?” Type the ingredient",
     placeholder: "e.g. dark soy sauce",
     find: "Find",
@@ -147,11 +140,11 @@ export const dict = {
     ingredientLabel: "Ingredient to substitute",
   },
   flavor: {
-    title: "Adjust to your taste",
+    title: "🌶️ Adjust to your taste",
     subtitle: 'Pick a level and we\'ll show exactly how much to change — no more "适量".',
   },
   aiAssistant: {
-    title: "Ask HǎoWèi",
+    title: "🥢 Ask HǎoWèi",
     subtitle:
       "Questions about technique, ingredients, substitutions, and flavor — answered from our verified cooking knowledge base.",
     placeholder: 'e.g. "Why do you cook garlic first on low heat?"',
@@ -174,9 +167,9 @@ export const dict = {
       'I\'m not sure about "{q}" yet — I\'m currently a rule-based helper covering technique, ingredients, flavor, equipment, and diet questions. Try rephrasing, or check the FAQ page. I\'ll learn LLM-powered answers in a future update.',
   },
   shoppingList: {
-    title: "Shopping list",
-    copy: "Copy as text",
-    copied: "Copied",
+    title: "🛒 Shopping list",
+    copy: "📋 Copy as text",
+    copied: "✓ Copied",
     clearAll: "Clear all",
     empty: "Your list is empty. Open a recipe and hit",
     addHint: "“Add ingredients to shopping list”.",
@@ -187,8 +180,8 @@ export const dict = {
     nothingHere: "Nothing here yet.",
     remove: "Remove",
     header: "HǎoWèi shopping list",
-    listHeader: "Local supermarket",
-    listAsian: "Asian grocery / online",
+    listHeader: "🛒 Local supermarket",
+    listAsian: "🏮 Asian grocery / online",
     listOther: "Other",
   },
   termsPage: {
@@ -231,15 +224,15 @@ export const dict = {
         bullets: [
           {
             strong: "The terminology wall.",
-            text: "生抽, 老抽, 料酒, 蚝油 — every term is bilingual and quantified (1 tbsp ≈ 15 ml), never “适量”.",
+            text: " 生抽, 老抽, 料酒, 蚝油 — every term is bilingual and quantified (1 tbsp ≈ 15 ml), never “适量”.",
           },
           {
             strong: "The ingredient problem.",
-            text: "Every recipe's ingredients are tagged as “local supermarket” or “Asian grocery”, and the substitution engine tells you exactly how to swap, with a fidelity rating.",
+            text: " Every recipe's ingredients are tagged as “local supermarket” or “Asian grocery”, and the substitution engine tells you exactly how to swap, with a fidelity rating.",
           },
           {
             strong: "The “look” problem.",
-            text: "Chinese cooking is about watching the food, not reading a timer. Every visual cue (“cooked until fragrant”, “edges turn golden”) gets a state note describing what to look for.",
+            text: " Chinese cooking is about watching the food, not reading a timer. Every visual cue (“cooked until fragrant”, “edges turn golden”) gets a state note describing what to look for.",
           },
         ],
       },
@@ -263,27 +256,27 @@ export const dict = {
     paragraphs: [
       {
         strong: "In short:",
-        text: "HǎoWèi 好味 stores almost nothing about you. There is no account system and no tracking beyond what's needed to run the site.",
+        text: " HǎoWèi 好味 stores almost nothing about you. There is no account system and no tracking beyond what's needed to run the site.",
       },
       {
         strong: "Local storage.",
-        text: "Your shopping list, unit preference (g/ml vs cup/tbsp), and theme choice are stored only in your own browser's local storage. We never see them.",
+        text: " Your shopping list, unit preference (g/ml vs cup/tbsp), and theme choice are stored only in your own browser's local storage. We never see them.",
       },
       {
         strong: "No accounts.",
-        text: "The site has no sign-up, no login, and no user profiles. The AI assistant is a rule-based FAQ engine — your questions are answered locally in your browser and are not transmitted to any third party.",
+        text: " The site has no sign-up, no login, and no user profiles. The AI assistant is a rule-based FAQ engine — your questions are answered locally in your browser and are not transmitted to any third party.",
       },
       {
         strong: "Analytics.",
-        text: "We may use privacy-respecting, cookieless analytics to understand which recipes are popular. No personal data is collected.",
+        text: " We may use privacy-respecting, cookieless analytics to understand which recipes are popular. No personal data is collected.",
       },
       {
         strong: "Third-party links.",
-        text: "Shopping-list links may point to affiliate stores; we disclose affiliate relationships on pages where they appear.",
+        text: " Shopping-list links may point to affiliate stores; we disclose affiliate relationships on pages where they appear.",
       },
       {
         strong: "Contact.",
-        text: "Questions?",
+        text: " Questions?",
       },
     ],
     contactLink: "Contact us",
@@ -331,6 +324,18 @@ export const dict = {
     contactTitle: "Contact",
     contactDesc: "Get in touch with HǎoWèi 好味.",
     recipeTitle: "{title} Recipe",
+    blogTitle: "Blog",
+    blogDesc:
+      "Tips, techniques, and home-cooking notes for authentic Chinese food abroad — pantry building, sauce swaps, and the stories behind the dishes.",
+  },
+  blog: {
+    title: "Blog",
+    subtitle:
+      "Techniques, pantry notes, and the stories behind Chinese home cooking.",
+    publishedOn: "Published",
+    by: "By",
+    relatedRecipes: "Related recipes",
+    backToBlog: "Back to blog",
   },
 };
 
