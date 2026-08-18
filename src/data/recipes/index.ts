@@ -11,6 +11,9 @@ import { pineapple_fried_rice } from "./pineapple-fried-rice";
 import { home_style_tofu } from "./home-style-tofu";
 import { braised_tofu } from "./braised-tofu";
 import { lazi_diced_chicken } from "./lazi-diced-chicken";
+import { cashew_chicken } from "./cashew-chicken";
+import { green_pepper_beef } from "./green-pepper-beef";
+import { onion_beef_stir_fry } from "./onion-beef-stir-fry";
 import { beefBroccoli } from "./beef-and-broccoli";
 
 /** 全部菜谱（P0 首批 6 篇，后续扩展） */
@@ -28,6 +31,9 @@ export const recipes: Recipe[] = [
   home_style_tofu,
   braised_tofu,
   lazi_diced_chicken,
+  cashew_chicken,
+  green_pepper_beef,
+  onion_beef_stir_fry,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
