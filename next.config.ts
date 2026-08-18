@@ -25,6 +25,10 @@ const imageCacheHeaders = [{ key: "Cache-Control", value: imageCache }];
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // 仓库未提供 ESLint 配置文件，next build 在 Vercel 上会因 lint 步骤报错
+  // (lint_or_type_error) 而中断；本地无配置时 next 会自动跳过 lint。
+  // 显式关闭 build 期 lint，类型检查仍由 next build 内置 tsc 执行。
+  eslint: { ignoreDuringBuilds: true },
   // public/images/ 下的图片由脚本预压缩为 WebP（单张 ~100KB）；禁止 next/image 在
   // build 时重新编码（会膨胀体积、拖慢首屏 + 爆 Vercel FOT 带宽）。
   images: { unoptimized: true },

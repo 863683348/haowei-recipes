@@ -162,3 +162,42 @@ export interface CatalogEntry {
   category: IngredientCategory;
   pantry: Pantry;
 }
+
+/* ---------- Blog 文章（双语，对齐 Recipe 风格） ---------- */
+export type BlogBlockType = "p" | "h2" | "ul" | "ol" | "note";
+
+/** 正文块：p=段落 / h2=小标题 / ul|ol=列表 / note=提示框 */
+export interface BlogBlock {
+  type: BlogBlockType;
+  text?: string; // p / h2 / note 用
+  items?: string[]; // ul / ol 用
+}
+
+export interface BlogFaq {
+  qEn: string;
+  qZh: string;
+  aEn: string;
+  aZh: string;
+}
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  titleEn: string;
+  titleZh: string;
+  excerptEn: string;
+  excerptZh: string;
+  bodyEn: BlogBlock[]; // 英文正文（段落数组）
+  bodyZh: BlogBlock[]; // 中文正文（段落数组）
+  categoryKey: string; // 内部分组 key（technique / ingredients / recipes / culture）
+  categoryEn: string; // 分类显示名（英文）
+  categoryZh: string; // 分类显示名（中文）
+  tags: string[];
+  authorEn: string;
+  authorZh: string;
+  publishDate: string; // ISO "2026-08-16"
+  updatedDate?: string;
+  coverImage: string; // /images/blog/{slug}.webp
+  relatedRecipeSlugs?: string[]; // 内链到菜谱（SEO 权重传递）
+  faq?: BlogFaq[]; // 可选 FAQ（FAQPage JSON-LD）
+}
