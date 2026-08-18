@@ -288,8 +288,107 @@ const marinatingMeat: BlogPost = {
   ],
 };
 
+const doubanjiang101: BlogPost = {
+  id: "doubanjiang-101",
+  slug: "doubanjiang-101",
+  titleEn: "Doubanjiang 101: The Soul of Sichuan",
+  titleZh: "豆瓣酱用法与挑选：一篇讲透川菜灵魂",
+  excerptEn:
+    "Doubanjiang is the fermented chili bean paste that does the heavy lifting in Sichuan cooking. Here's what it is, the two kinds you'll meet, how to pick a good jar, and how to actually cook with it.",
+  excerptZh:
+    "豆瓣酱（发酵辣椒豆瓣酱）是川菜里挑大梁的那一味。这篇讲清它到底是什么、你会遇到哪两种、怎么挑一瓶好的，以及下锅到底怎么用。",
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["doubanjiang", "sichuan", "fermented bean paste", "chinese pantry", "seasoning"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-08-19",
+  coverImage: "/images/blog/doubanjiang-101.webp",
+  relatedRecipeSlugs: ["mapo-tofu", "kung-pao-chicken", "scallion-pancakes"],
+  bodyEn: [
+    { type: "p", text: "If you cook one Sichuan dish and it tastes flat, the missing piece is almost always doubanjiang. This fermented chili bean paste is the backbone of the region's flavor, the thing that gives mapo tofu its deep red character and kung pao its savory edge. Get to know this one ingredient and a whole shelf of Chinese cooking opens up." },
+    { type: "h2", text: "What doubanjiang actually is" },
+    { type: "p", text: "Doubanjiang (豆瓣酱) starts with fava beans, chili, salt, and time. The beans and chilies are left to ferment, often for months, until the sharp raw edges soften into something round, funky, and a little sweet. The result is salty, deeply savory, and gently spicy, with an aroma you won't get from any powder or sauce." },
+    { type: "p", text: "It's not a finishing sauce you drizzle on at the end. It's a cooking base, fried in oil at the start so its flavor blooms into the whole dish. That's why so many Sichuan recipes open with the same move: heat oil, add doubanjiang, stir until the oil turns red." },
+    { type: "h2", text: "The two kinds you'll meet" },
+    { type: "ul", items: [
+      "Sichuan chili bean paste (郫县豆瓣酱, pixian doubanjiang): the real deal. Aged, chunky, brick-red, salty and funky. This is the one for mapo tofu, twice-cooked pork, and fish-fragrant anything.",
+      "Sweet bean paste / tianmianjiang (甜面酱): a different product entirely, made from flour, not chili. Thick, dark, sweet-savory. Used in Peking duck sauces and some stir-fries. Don't confuse the two.",
+    ] },
+    { type: "note", text: "When a recipe just says doubanjiang, it means the chili bean paste, not the sweet one. If you grab the wrong jar, the dish comes out sweet instead of savory and red." },
+    { type: "h2", text: "How to pick a good jar" },
+    { type: "p", text: "Most supermarkets stock a few brands, and they are not equal. A few things I look for:" },
+    { type: "ul", items: [
+      "Origin: a jar from Pixian (郫县) is the safe bet. The region has protected status for a reason.",
+      "Texture: you want visible bean chunks, not a smooth puree. Chunks mean it was fermented, not just blended.",
+      "Color: a mature paste is a deep, uneven reddish-brown, not bright orange.",
+      "Salt: taste before you season. A good doubanjiang is salty enough that you often skip extra salt later.",
+    ] },
+    { type: "p", text: "Avoid the super-cheap bright-red squeeze bottles if you can. They tend to be sugar and coloring with little fermentation behind them. Spend a little more on a glass jar from an Asian store and the difference is obvious the first time you fry it." },
+    { type: "h2", text: "How to cook with it (a little goes far)" },
+    { type: "p", text: "The basic technique never changes. Warm your oil over medium heat, add a spoonful of doubanjiang, and stir it around for thirty seconds to a minute. You're looking for the oil to pick up a red hue and the kitchen to smell toasty. Then add garlic, ginger, and the rest of your ingredients." },
+    { type: "ol", items: [
+      "Start with oil, not a dry pan, so the paste fries instead of burns.",
+      "Use about one tablespoon per two servings as a baseline, then adjust.",
+      "Fry it before adding liquid, so the raw ferment cooks off.",
+      "Taste at the end; you may need less salt than the recipe implies.",
+    ] },
+    { type: "note", text: "Burnt doubanjiang turns bitter fast. If the oil smokes or the paste darkens too quickly, pull the pan off the heat and start that step over with fresh oil." },
+    { type: "h2", text: "Storing it" },
+    { type: "p", text: "Once open, keep the jar in the fridge with the lid on tight. A thin layer of oil on top helps. It won't spoil quickly, but the aroma fades after a few months, so buy a size you'll actually finish. If you only cook Sichuan now and then, a small jar beats a giant one you forget in the back." },
+    { type: "p", text: "That's really the whole intro. Nail this one paste and mapo tofu, kung pao, and twice-cooked pork stop being mysterious. Every HǎoWèi recipe that calls for doubanjiang lists the exact amount, so you can follow along without guessing." },
+  ],
+  bodyZh: [
+    { type: "p", text: "如果你做过一道川菜，却总觉得寡淡，缺的那一味八成是豆瓣酱。这种发酵辣椒豆瓣酱是川菜风味的脊梁，麻婆豆腐那股红亮厚味、宫保鸡丁那点咸鲜，全靠它。把这一味弄懂，中餐货架上的一大片就通了。" },
+    { type: "h2", text: "豆瓣酱到底是什么" },
+    { type: "p", text: "豆瓣酱（doubanjiang）以蚕豆、辣椒、盐和时间为原料。蚕豆和辣椒一起发酵，往往要好几个月，生辣的棱角慢慢磨平，变成圆润、带点臭香、又微甜的东西。成品咸、极鲜、微辣，有一种任何粉状或酱汁都调不出的香气。" },
+    { type: "p", text: "它不是最后淋上去的收尾酱，而是下锅的底味——先用油把它炒香，味道才能铺满整道菜。所以很多川菜的开头都是同一招：热油、下豆瓣酱、炒到油变红。" },
+    { type: "h2", text: "你会遇到的两种" },
+    { type: "ul", items: [
+      "郫县豆瓣酱（pixian doubanjiang）：正宗的那种。陈酿、带粒、砖红、咸而臭香。麻婆豆腐、回锅肉、鱼香系列都靠它。",
+      "甜面酱（tianmianjiang）：完全是另一种东西，用面粉不做辣。稠、深、甜咸。用在烤鸭酱和一些炒菜里。两者别搞混。",
+    ] },
+    { type: "note", text: "菜谱里只写「豆瓣酱」三字，指的是辣椒豆瓣酱，不是甜面酱。拿错罐子，菜会发甜而不是咸红。" },
+    { type: "h2", text: "怎么挑一瓶好的" },
+    { type: "p", text: "普通超市能买到几个牌子，但差别不小。我挑的时候看这几样：" },
+    { type: "ul", items: [
+      "产地：郫县出的基本不会错。这地方有保护标志不是没原因。",
+      "质地：要看到豆瓣颗粒，不是顺滑泥状。有颗粒说明真发酵过，不是只打成浆。",
+      "颜色：陈酿的酱是深而不匀的红棕，不是亮橙。",
+      "咸度：下锅前先尝。好豆瓣酱够咸，后面常能少放盐。",
+    ] },
+    { type: "p", text: "能避就避开那种超便宜的亮红挤压瓶。它们多半是糖加色素，背后没多少发酵。去亚超花多一点买瓶玻璃罐装的，第一次下锅你就知道差别。" },
+    { type: "h2", text: "下锅怎么用（少即是多）" },
+    { type: "ol", items: [
+      "先下油再下酱，用油炒而不是干焙，免得糊。",
+      "两人份打底约一汤匙，之后再调。",
+      "加液体前先把它炒香，生发酵味才散得掉。",
+      "最后尝味，盐可能比菜谱写的少放。",
+    ] },
+    { type: "note", text: "豆瓣酱炒糊会迅速发苦。油冒烟或酱一下子变太深，就把锅离火，重新倒油再来这一步。" },
+    { type: "h2", text: "怎么存" },
+    { type: "p", text: "开罐后盖紧放冰箱。表面留一层油更好。它不会很快坏，但香气几个月后就淡了，所以买个吃得完的规格。如果你只是偶尔做川菜，小罐比忘在角落的大罐强。" },
+    { type: "p", text: "入门其实就这些。把这一味豆瓣酱练熟，麻婆豆腐、宫保鸡丁、回锅肉就不再神秘。好味每篇用到豆瓣酱的菜谱都标了 exact 用量，跟着做不用猜。" },
+  ],
+  faq: [
+    {
+      qEn: "Is doubanjiang very spicy?",
+      qZh: "豆瓣酱很辣吗？",
+      aEn: "Mildly. It brings warmth and depth more than heat. If you want it hotter, add fresh chili or chili oil alongside it; the paste alone is usually gentle enough for most palates.",
+      aZh: "不算。它给的是温感和厚味，多于辣。想更辣就另加鲜辣椒或辣椒油；单靠这酱，大多数人口感都扛得住。",
+    },
+    {
+      qEn: "Can I substitute gochujang or miso?",
+      qZh: "能用味噌或韩式辣酱代替吗？",
+      aEn: "Not really. Gochujang is sweet and sticky, miso is mild and barley-based. Both miss the fermented bean-and-chili funk that defines the dish. In a pinch, a mix of soy sauce plus a little chili paste gets you closer, but it's still not the same.",
+      aZh: "不太行。韩式辣酱甜而黏，味噌淡、走麦味，都缺了那股蚕豆辣椒发酵的臭香，而那正是这道菜的灵魂。实在没辙，酱油加一点辣椒酱能凑近点，但终究不是一回事。",
+    },
+  ],
+};
+
 /** 全部 blog 文章（按发布日期倒序） */
-export const blogPosts: BlogPost[] = [marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
+export const blogPosts: BlogPost[] = [doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
 
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
