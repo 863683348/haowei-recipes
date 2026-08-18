@@ -8,6 +8,9 @@ import { cucumber_scrambled_eggs } from "./cucumber-scrambled-eggs";
 import { garlic_chives_scrambled_eggs } from "./garlic-chives-scrambled-eggs";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
 import { pineapple_fried_rice } from "./pineapple-fried-rice";
+import { home_style_tofu } from "./home-style-tofu";
+import { braised_tofu } from "./braised-tofu";
+import { lazi_diced_chicken } from "./lazi-diced-chicken";
 import { beefBroccoli } from "./beef-and-broccoli";
 
 /** 全部菜谱（P0 首批 6 篇，后续扩展） */
@@ -22,6 +25,9 @@ export const recipes: Recipe[] = [
   garlic_chives_scrambled_eggs,
   yangzhou_fried_rice,
   pineapple_fried_rice,
+  home_style_tofu,
+  braised_tofu,
+  lazi_diced_chicken,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
