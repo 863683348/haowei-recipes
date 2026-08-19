@@ -5,15 +5,19 @@ import { braised_tofu } from "./braised-tofu";
 import { cashew_chicken } from "./cashew-chicken";
 import { cucumber_scrambled_eggs } from "./cucumber-scrambled-eggs";
 import { eggFriedRice } from "./egg-fried-rice";
+import { garlicRomaine } from "./garlic-romaine";
 import { garlic_chives_scrambled_eggs } from "./garlic-chives-scrambled-eggs";
 import { green_pepper_beef } from "./green-pepper-beef";
 import { home_style_tofu } from "./home-style-tofu";
 import { kungPaoChicken } from "./kung-pao-chicken";
 import { lazi_diced_chicken } from "./lazi-diced-chicken";
 import { mapoTofu } from "./mapo-tofu";
+import { oysterSauceLettuce } from "./oyster-sauce-lettuce";
 import { onion_beef_stir_fry } from "./onion-beef-stir-fry";
 import { pineapple_fried_rice } from "./pineapple-fried-rice";
 import { scallionPancakes } from "./scallion-pancakes";
+import { stirFriedBokChoy } from "./stir-fried-bok-choy";
+import { sweetSourPork } from "./sweet-sour-pork";
 import { tomatoEggs } from "./tomato-eggs";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
 
@@ -24,15 +28,19 @@ export const recipes: Recipe[] = [
   cashew_chicken,
   cucumber_scrambled_eggs,
   eggFriedRice,
+  garlicRomaine,
   garlic_chives_scrambled_eggs,
   green_pepper_beef,
   home_style_tofu,
   kungPaoChicken,
   lazi_diced_chicken,
   mapoTofu,
+  oysterSauceLettuce,
   onion_beef_stir_fry,
   pineapple_fried_rice,
   scallionPancakes,
+  stirFriedBokChoy,
+  sweetSourPork,
   tomatoEggs,
   yangzhou_fried_rice,
 ];
