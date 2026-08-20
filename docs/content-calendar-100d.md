@@ -53,7 +53,7 @@
 | 4 | 豆腐入门 | 麻婆豆腐✓ / 家常豆腐✓ / 红烧豆腐✓ | mapo tofu, braised tofu ✅ |
 | 5 | 鸡丁三式 | 宫保鸡丁✓ / 辣子鸡丁✓ / 腰果鸡丁✓ | kung pao chicken, cashew chicken ✅ |
 | 6 | 牛肉快手 | 牛肉西兰花✓ / 青椒牛柳✓ / 洋葱炒牛肉✓ | beef and broccoli, pepper steak ✅ |
-| 7 | 青菜素炒 | 蚝油生菜✓ / 蒜蓉油麦菜✓ / 清炒小白菜✓ | stir fried greens, oyster sauce ✅ |
+| 7 | 青菜素炒 | 蚝油生菜✅ / 蒜蓉油麦菜✅ / 清炒小白菜✅ | stir fried greens, oyster sauce ✅ |
 | 8 | 汤面入门 | 番茄鸡蛋面 / 葱油拌面 / 阳春面 | tomato egg noodles, scallion noodles |
 | 9 | 家常炒素 | 酸辣土豆丝 / 醋溜白菜 / 干煸四季豆 | spicy potato shreds, dry fried green beans |
 
