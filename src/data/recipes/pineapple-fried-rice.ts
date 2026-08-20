@@ -4,8 +4,8 @@ import type { Recipe } from "@/lib/types";
 export const pineapple_fried_rice: Recipe = {
   "id": "pineapple-fried-rice",
   "slug": "pineapple-fried-rice",
-  "titleEn": "Pineapple Fried Rice (菠萝炒饭)",
-  "titleZh": "菠萝炒饭",
+  "titleEn": "Thai-Style Pineapple Fried Rice Recipe | 20-Min Chinese Street Food",
+  "titleZh": "泰式菠萝炒饭（菠萝炒饭）—— 20分钟中式街头美食",
   "pinyin": "bō luó chǎo fàn",
   "cuisine": "粤菜",
   "cuisineEn": "Cantonese",

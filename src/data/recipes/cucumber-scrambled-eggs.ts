@@ -4,8 +4,8 @@ import type { Recipe } from "@/lib/types";
 export const cucumber_scrambled_eggs: Recipe = {
   "id": "huang-gua-chao-dan",
   "slug": "cucumber-scrambled-eggs",
-  "titleEn": "Cucumber Scrambled Eggs",
-  "titleZh": "黄瓜炒蛋",
+  "titleEn": "Cucumber Scrambled Eggs Recipe | Quick 15-Min Chinese Home Cooking",
+  "titleZh": "黄瓜炒蛋（黄瓜炒蛋）—— 15分钟快手家常菜",
   "pinyin": "huáng guā chǎo dàn",
   "cuisine": "家常",
   "cuisineEn": "Home-style",
