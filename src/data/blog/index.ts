@@ -388,6 +388,82 @@ const doubanjiang101: BlogPost = {
 };
 
 /** 全部 blog 文章（按发布日期倒序） */
+const vinegarInChineseCooking: BlogPost = {
+  id: "vinegar-in-chinese-cooking",
+  slug: "vinegar-in-chinese-cooking",
+  titleEn: "Vinegar in Chinese Cooking: Not Just Sour",
+  titleZh: "醋在中华烹饪中的妙用：酸香提鲜",
+  excerptEn:
+    "Vinegar is not just sour. In Chinese kitchens, it is a multi-functional tool for seasoning, removing fishiness, enhancing umami, and preserving color. Here is how to use it properly.",
+  excerptZh:
+    "醋不仅仅是酸的。在中华厨房里，醋是调味、去腥、提鲜、保色的多功能工具。本文教你正确使用醋的技巧。",
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["vinegar", "seasoning", "chinese cooking", "technique"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-08-21",
+  coverImage: "/images/blog/vinegar-in-chinese-cooking.png",
+  relatedRecipeSlugs: ["mapo-tofu", "cold-dressed-cucumber", "dan-dan-noodles"],
+  bodyEn: [
+    { type: "p", text: "Vinegar is not just sour. In Chinese kitchens, it is a multi-functional tool for seasoning, removing fishiness, enhancing umami, and preserving color." },
+    { type: "h2", text: "Main Types of Chinese Vinegar" },
+    { type: "table", items: [
+      { type: "row", cells: ["Type", "Characteristics", "Best Use"] },
+      { type: "row", cells: ["Chen Vinegar (陈醋)", "Mellow sourness, dark color", "Red braising, dipping sauces"] },
+      { type: "row", cells: ["Rice Vinegar (米醋)", "Clean sourness, light color", "Cold dishes, pickling"] },
+      { type: "row", cells: ["Black Vinegar/Xiangcu (香醋)", "Slightly sweet, rich aroma", "Dumpling dipping sauce"] },
+      { type: "row", cells: ["White Vinegar (白醋)", "Pure sour, colorless", "Cleaning, marinating"] },
+    ] },
+    { type: "h2", text: "Four Key Uses of Vinegar" },
+    { type: "p", text: "1. Remove Fishiness and Enhance Umami: When cooking fish or meat, a little vinegar neutralizes fishy odors while boosting umami." },
+    { type: "p", text: "2. Preserve Vegetable Color: Add a few drops of vinegar when blanching to keep green vegetables vibrant." },
+    { type: "p", text: "3. Soften Ingredients: Add vinegar when boiling beans or stewing meat to accelerate softening." },
+    { type: "p", text: "4. Balance Flavors: Sweet and sour, spicy and sour — vinegar is key to balancing flavors." },
+    { type: "h2", text: "Practical Tips" },
+    { type: "ul", items: [
+      "Add vinegar at the end of stir-frying for more pronounced sourness",
+      "Add vinegar early when stewing for milder sourness",
+      "Use black vinegar for cold dishes for better taste",
+    ] },
+    { type: "h2", text: "Common Mistakes" },
+    { type: "ul", items: [
+      "Adding vinegar too early — sourness evaporates",
+      "Using too much — masks other flavors",
+      "Using the wrong type for the dish",
+    ] },
+  ],
+  bodyZh: [
+    { type: "p", text: "醋不仅仅是酸的。在中华厨房里，醋是调味、去腥、提鲜、保色的多功能工具。" },
+    { type: "h2", text: "中国醋的主要种类" },
+    { type: "table", items: [
+      { type: "row", cells: ["种类", "特点", "最佳用途"] },
+      { type: "row", cells: ["陈醋", "酸味醇厚，颜色深", "红烧、蘸料"] },
+      { type: "row", cells: ["米醋", "酸味清爽，颜色浅", "凉拌、酸菜"] },
+      { type: "row", cells: ["香醋", "微甜，香气浓", "饺子蘸料"] },
+      { type: "row", cells: ["白醋", "纯酸，无色", "清洁、腌制"] },
+    ] },
+    { type: "h2", text: "醋的四大妙用" },
+    { type: "p", text: "1. 去腥提鲜：烹饪鱼类或肉类时，少许醋可以中和腥味，同时提升鲜味。" },
+    { type: "p", text: "2. 保持蔬菜颜色：焯水时加几滴醋，绿色蔬菜能保持翠绿。" },
+    { type: "p", text: "3. 软化食材：煮豆子或炖肉时加醋，可以加速软化。" },
+    { type: "p", text: "4. 调味平衡：糖醋、酸辣——醋是平衡味道的关键。" },
+    { type: "h2", text: "实用技巧" },
+    { type: "ul", items: [
+      "炒菜起锅前加醋，酸味更明显",
+      "炖煮时早加醋，酸味更柔和",
+      "凉拌菜用香醋，口感更好",
+    ] },
+    { type: "h2", text: "常见错误" },
+    { type: "ul", items: [
+      "醋加得太早，酸味挥发",
+      "用量过多，掩盖其他味道",
+      "不分种类乱用",
+    ] },
+  ],
+};
+
 export const blogPosts: BlogPost[] = [doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
 
 export function getAllPosts(): BlogPost[] {
