@@ -31,7 +31,7 @@ const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
   // public/images/ 下的图片由脚本预压缩为 WebP（单张 ~100KB）；禁止 next/image 在
   // build 时重新编码（会膨胀体积、拖慢首屏 + 爆 Vercel FOT 带宽）。
-  images: { unoptimized: true },
+  images: { unoptimized: true, dangerouslyAllowSVG: true },
   async headers() {
     return [
       { source: "/(.*)", headers: securityHeaders },

@@ -262,5 +262,5 @@ export const green_pepper_beef: Recipe = {
     "onion-beef-stir-fry",
     "cashew-chicken"
   ],
-  "image": "/images/recipes/beef-and-broccoli.webp"
+  "image": "/images/recipes/green-pepper-beef.svg"
 };

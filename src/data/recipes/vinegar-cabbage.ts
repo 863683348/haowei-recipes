@@ -36,5 +36,5 @@ export const vinegarCabbage: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-  image: "/images/recipes/vinegar-cabbage.jpg",
+  "image": "/images/recipes/vinegar-cabbage.svg",
 };

@@ -36,5 +36,5 @@ export const cokeChickenWings: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-  image: "/images/recipes/coke-chicken-wings.jpg",
+  "image": "/images/recipes/coke-chicken-wings.svg",
 };

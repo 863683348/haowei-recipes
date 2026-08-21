@@ -28,7 +28,7 @@ export const garlic_romaine: Recipe = {
   ],
   "story": "油麦菜 is a summer staple in Chinese home kitchens — a long, narrow lettuce with a slightly bitter, artichoke-like flavor that loves a quick scorch in the wok. Paired with generous garlic, it is the weekday vegetable side that takes less time than boiling rice.",
   "storyZh": "油麦菜是中国家庭夏日的常客——细长叶片，略带苦味的洋蓟风味，大火快炒最对味。配大量蒜末，是比煮饭还快的家常蔬菜。",
-  "image": "/images/recipes/garlic-chives-scrambled-eggs.webp",
+  "image": "/images/recipes/garlic-romaine.svg",
   "ingredients": [
     {
       "id": "gr-01",

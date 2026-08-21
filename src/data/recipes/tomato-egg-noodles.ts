@@ -28,7 +28,7 @@ export const tomato_egg_noodles: Recipe = {
   ],
   "story": "This is the soup a Chinese mother makes when you are sick or tired. The tomatoes break down into a bright red broth, the eggs become silky ribbons, and the noodles soak up every drop. It is humble, fast, and deeply satisfying — the definition of Chinese comfort food.",
   "storyZh": "这是中国妈妈在你生病或疲惫时会做的汤面。番茄化入汤底，蛋液成丝，面条吸饱汤汁。朴素、快速、治愈——中国 comfort food 的定义。",
-  "image": "/images/recipes/tomato-and-egg.webp",
+  "image": "/images/recipes/tomato-egg-noodles.svg",
   "ingredients": [
     {
       "id": "ten-01",

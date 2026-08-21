@@ -36,5 +36,5 @@ export const sweetSourPork: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-  image: "/images/recipes/sweet-sour-pork.jpg",
+  "image": "/images/recipes/sweet-sour-pork.svg",
 };

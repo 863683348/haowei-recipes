@@ -28,7 +28,7 @@ export const oyster_sauce_lettuce: Recipe = {
   ],
   "story": "A Cantonese bistro staple that appears on nearly every family dinner table. The key is blanching the lettuce just long enough to stay crisp-tender, then drowning it in a glossy oyster-sauce glaze. Cantonese cooks call this 白灼 — the purest expression of Cantonese vegetable cookery.",
   "storyZh": "粤式茶餐厅和家庭餐桌的常客。秘诀是白灼时间刚好保持脆嫩，然后淋上光泽感十足的蚝油汁。这是粤菜中最纯粹的蔬菜烹饪方式。",
-  "image": "/images/recipes/garlic-chives-scrambled-eggs.webp",
+  "image": "/images/recipes/oyster-sauce-lettuce.svg",
   "ingredients": [
     {
       "id": "osl-01",

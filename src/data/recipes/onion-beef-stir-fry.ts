@@ -230,5 +230,5 @@ export const onion_beef_stir_fry: Recipe = {
     "green-pepper-beef",
     "egg-fried-rice"
   ],
-  "image": "/images/recipes/beef-and-broccoli.webp"
+  "image": "/images/recipes/onion-beef-stir-fry.svg"
 };

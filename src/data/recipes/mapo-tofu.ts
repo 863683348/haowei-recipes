@@ -267,5 +267,5 @@ export const mapoTofu: Recipe = {
     "豆瓣酱本身很咸——加盐前先尝味。",
   ],
   relatedSlugs: ["tomato-and-egg", "kung-pao-chicken", "beef-and-broccoli"],
-  image: "/images/recipes/mapo-tofu.webp",
+  "image": "/images/recipes/mapo-tofu.webp",
 };

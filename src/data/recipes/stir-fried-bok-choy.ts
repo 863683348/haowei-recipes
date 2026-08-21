@@ -29,7 +29,7 @@ export const stir_fried_bok_choy: Recipe = {
   ],
   "story": "小白菜 is the most ubiquitous green in Chinese home cooking. Whether it is baby bok choy from a supermarket or the slightly more robust Chinese cabbage variant, the principle is the same: high heat, minimal seasoning, and respect for the vegetable's natural sweetness.",
   "storyZh": "小白菜是中国家庭餐桌最常见的绿叶菜。无论超市里的小白菜还是稍粗壮的菜心，做法原则一致：大火、少调味、尊重蔬菜本身的清甜。",
-  "image": "/images/recipes/cucumber-scrambled-eggs.webp",
+  "image": "/images/recipes/stir-fried-bok-choy.svg",
   "ingredients": [
     {
       "id": "sbk-01",

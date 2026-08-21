@@ -28,7 +28,7 @@ export const scallion_noodles: Recipe = {
   ],
   "story": "Born in Shanghai's street food stalls, scallion oil noodles are the ultimate fast comfort — noodles tossed in deeply fragrant scallion-infused oil with soy sauce. The trick is low and slow: scallions fried gently until they turn dark brown and sweet, not burnt.",
   "storyZh": "源于上海街头小吃摊，葱油拌面是最极致的快手 comfort food——面条拌入香气浓郁的葱油与酱油。秘诀是低温柔炸：葱炸至深褐色且甜，而非焦苦。",
-  "image": "/images/recipes/scallion-pancakes.webp",
+  "image": "/images/recipes/scallion-noodles.svg",
   "ingredients": [
     {
       "id": "son-01",

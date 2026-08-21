@@ -286,5 +286,5 @@ export const kungPaoChicken: Recipe = {
     "用腰果代替花生，口感更高级。",
   ],
   relatedSlugs: ["mapo-tofu", "beef-and-broccoli", "tomato-and-egg"],
-  image: "/images/recipes/kung-pao-chicken.webp",
+  "image": "/images/recipes/kung-pao-chicken.webp",
 };
