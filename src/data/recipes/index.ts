@@ -21,8 +21,11 @@ import { stir_fried_bok_choy } from "./stir-fried-bok-choy";
 import { sweetSourPork } from "./sweet-sour-pork";
 import { tomatoEggs } from "./tomato-eggs";
 import { tomato_egg_noodles } from "./tomato-egg-noodles";
+import { vinegar_cabbage } from "./vinegar-cabbage";
 import { yangchun_noodles } from "./yangchun-noodles";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
+import { spicy_potato_shreds } from "./spicy-potato-shreds";
+import { dry_fried_green_beans } from "./dry-fried-green-beans";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
 export const recipes: Recipe[] = [
@@ -47,8 +50,11 @@ export const recipes: Recipe[] = [
   sweetSourPork,
   tomatoEggs,
   tomato_egg_noodles,
+  vinegar_cabbage,
   yangchun_noodles,
   yangzhou_fried_rice,
+  spicy_potato_shreds,
+  dry_fried_green_beans,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
