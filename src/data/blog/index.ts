@@ -388,7 +388,52 @@ const doubanjiang101: BlogPost = {
 };
 
 /** 全部 blog 文章（按发布日期倒序） */
-export const blogPosts: BlogPost[] = [doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
+
+const condimentSubstitutions: BlogPost = {
+  id: "chinese-condiment-substitutions",
+  slug: "chinese-condiment-substitutions",
+  titleEn: "Chinese Condiment Substitutions: What to Use When You Can't Find Doubanjiang",
+  titleZh: "中餐调料替换指南：找不到豆瓣酱怎么办？",
+  excerptEn: "No doubanjiang? No problem. Here's what to use instead for mapo tofu, kung pao, and other Sichuan classics — plus the one ingredient you can't fake.",
+  excerptZh: "没有豆瓣酱？没关系。这篇告诉你麻婆豆腐、宫保鸡丁等川菜的完美替代品——以及那一样真正无法替代的食材。",
+  categoryKey: "ingredients",
+  categoryEn: "Ingredients",
+  categoryZh: "食材",
+  tags: ["substitutions", "doubanjiang", "chu hou paste", "sichuan", "pantry", "beginner"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-08-21",
+  coverImage: "/images/blog/chinese-condiment-substitutions.png",
+  relatedRecipeSlugs: ["mapo-tofu", "kung-pao-chicken", "twice-cooked-pork", "pepper-pork"],
+  bodyEn: [
+    { type: "p", text: "The moment you open a Chinese recipe and see an ingredient you've never heard of, two things happen: you Google it, then you give up and order takeout. But most Chinese condiments have workable substitutes — if you know what to reach for." },
+    { type: "h2", text: "The big three (and their backups)" },
+    { type: "h2", text: "1. Doubanjiang (豆瓣酱) — Sichuan's soul" },
+    { type: "p", text: "Fermented broad beans and chili paste. There's no perfect substitute, but if you're missing it:" },
+    { type: "ul", items: ["Gochujang (Korean chili paste) + 1 tsp miso — closest in heat and depth", "Sriracha + 1 tsp soy sauce — quick fix for stir-fries", "Chili crisp + 1 tbsp soy sauce — for the oil and crunch"] },
+    { type: "note", text: "Pro tip: If you can find a Chinese grocer within 30 miles, make the trip. Doubanjiang transforms dishes; nothing else comes close." },
+    { type: "h2", text: "Quick reference table" },
+    { type: "ul", items: ["Doubanjiang → Gochujang + miso", "Chu Hou paste → Hoisin + soy", "Shaoxing wine → Dry sherry", "Light soy → Regular soy (use less)", "Dark soy → Light soy + pinch of sugar"] },
+    { type: "note", text: "Every HǎoWèi recipe tags ingredients as local vs Asian, so you know before you shop which swaps you'll need." },
+  ],
+  bodyZh: [
+    { type: "p", text: "当你打开一篇中餐菜谱，看到一个从没听过的调料，会发生两件事：你Google它，然后放弃去点外卖。但其实大多数中国调料都有可用的替代品——只要你清楚该拿什么来替。" },
+    { type: "h2", text: "三大调料（和它们的备用方案）" },
+    { type: "h2", text: "1. 豆瓣酱——川菜的灵魂" },
+    { type: "p", text: "发酵蚕豆加辣椒的酱。没有完美的替代品，但如果缺了它：" },
+    { type: "ul", items: ["韩式辣酱 + 1茶匙味噌——最接近的辣度和厚度", "Sriracha + 1茶匙酱油——快炒的应急方案", "辣椒脆油 + 1汤匙酱油——要油和脆感"] },
+    { type: "note", text: "诀窍：如果30英里内有亚超，值得去一趟。豆瓣酱能transform菜肴——别的都替代不了。" },
+    { type: "h2", text: "快速参考表" },
+    { type: "ul", items: ["豆瓣酱 → 韩式辣酱 + 味噌", "柱侯酱 → 海鲜酱 + 酱油", "绍兴酒 → 干雪莉酒", "生抽 → 普通酱油（少用）", "老抽 → 生抽 + 一小撮糖"] },
+    { type: "note", text: "好味每篇菜谱都标注食材是本地还是亚超，购物前就知道要替换什么。" },
+  ],
+  faq: [
+    { qEn: "Can I skip doubanjiang entirely?", qZh: "豆瓣酱可以完全省掉吗？", aEn: "Yes, but the dish loses its soul. Use gochujang + miso as a backup, but know you're getting 80% of the flavor, not 100%.", aZh: "可以，但菜会失去灵魂。用韩式辣酱+味噌应急，但要明白你得到的是80%的风味，不是100%。" },
+    { qEn: "What's the closest Western substitute for Shaoxing wine?", qZh: "绍兴酒最接近的西方替代品是什么？", aEn: "Dry sherry. It's grape-based like Shaoxing, has similar warmth, and is available at any liquor store.", aZh: "干雪莉酒。和绍兴酒一样是葡萄基底，有相似的温暖感，任何酒类商店都能买到。" },
+  ],
+};
+
+export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
 
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
