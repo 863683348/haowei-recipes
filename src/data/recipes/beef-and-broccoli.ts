@@ -250,5 +250,5 @@ export const beefBroccoli: Recipe = {
     "素食？牛肉换成老豆腐（1:1），用菌菇蚝油。",
   ],
   relatedSlugs: ["kung-pao-chicken", "mapo-tofu", "egg-fried-rice"],
-  image: "/images/recipes/beef-and-broccoli.webp",
+  "image": "/images/recipes/beef-and-broccoli.webp",
 };

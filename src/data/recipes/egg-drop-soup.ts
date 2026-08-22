@@ -36,5 +36,9 @@ export const eggDropSoup: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
+<<<<<<< HEAD
   image: "/images/recipes/egg-drop-soup.svg",
+=======
+  "image": "/images/recipes/egg-drop-soup.svg",
+>>>>>>> origin/main
 };

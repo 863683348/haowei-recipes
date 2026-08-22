@@ -36,5 +36,9 @@ export const huangmenChicken: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
+<<<<<<< HEAD
   image: "/images/recipes/huangmen-chicken.svg",
+=======
+  "image": "/images/recipes/huangmen-chicken.svg",
+>>>>>>> origin/main
 };

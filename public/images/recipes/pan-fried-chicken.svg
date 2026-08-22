@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -12,4 +13,23 @@
   <text x="600" y="385" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="50" fill="#FBE4B8">香煎鸡排 · pan fried chicken</text>
   <text x="600" y="505" text-anchor="middle" font-size="66">🍳</text>
   <text x="600" y="588" text-anchor="middle" font-family="Georgia, serif" font-size="28" letter-spacing="6" fill="#FFFFFF" opacity="0.9">HǎoWèi 好味 · 家常菜</text>
+=======
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDF6EC"/>
+      <stop offset="100%" stop-color="#F3E3C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g stroke="#C77B2E" stroke-width="6" fill="none" opacity="0.85">
+    <path d="M250 360 A150 60 0 0 0 550 360 Z" fill="#FFFFFF" fill-opacity="0.6"/>
+    <ellipse cx="400" cy="360" rx="150" ry="42" fill="#FFFFFF" fill-opacity="0.5"/>
+    <path d="M286 332 q114 -70 228 0" stroke-width="5" opacity="0.7"/>
+  </g>
+  <text x="400" y="250" font-family="'Noto Serif SC','Songti SC',serif" font-size="52" font-weight="700" fill="#2A2118" text-anchor="middle">香煎鸡排</text>
+  <text x="400" y="300" font-family="'Noto Sans SC',sans-serif" font-size="24" fill="#8A6D3B" text-anchor="middle" letter-spacing="1">pan fried chicken</text>
+  <text x="400" y="470" font-family="'Noto Sans SC',sans-serif" font-size="26" font-weight="700" fill="#C77B2E" text-anchor="middle" letter-spacing="2">HǎoWèi 好味</text>
+  <text x="400" y="505" font-family="sans-serif" font-size="16" fill="#B08C5A" text-anchor="middle">Authentic Chinese Home Cooking</text>
+>>>>>>> origin/main
 </svg>
