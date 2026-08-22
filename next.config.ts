@@ -31,7 +31,9 @@ const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
   // public/images/ 下的图片由脚本预压缩为 WebP（单张 ~100KB）；禁止 next/image 在
   // build 时重新编码（会膨胀体积、拖慢首屏 + 爆 Vercel FOT 带宽）。
-  images: { unoptimized: true },
+  // dangerouslyAllowSVG：35 道菜谱使用脚本生成的专属 SVG 占位图（菜名+拼音+配色），
+  // 需允许 SVG 渲染；unoptimized 保证不转码、直接输出。
+  images: { unoptimized: true, dangerouslyAllowSVG: true },
   async headers() {
     return [
       { source: "/(.*)", headers: securityHeaders },

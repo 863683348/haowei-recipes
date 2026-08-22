@@ -36,5 +36,5 @@ export const panFriedChicken: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-  image: "/images/recipes/pan-fried-chicken.jpg",
+  image: "/images/recipes/pan-fried-chicken.svg",
 };

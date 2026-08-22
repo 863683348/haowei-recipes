@@ -409,12 +409,11 @@ const vinegarInChineseCooking: BlogPost = {
   bodyEn: [
     { type: "p", text: "Vinegar is not just sour. In Chinese kitchens, it is a multi-functional tool for seasoning, removing fishiness, enhancing umami, and preserving color." },
     { type: "h2", text: "Main Types of Chinese Vinegar" },
-    { type: "table", items: [
-      { type: "row", cells: ["Type", "Characteristics", "Best Use"] },
-      { type: "row", cells: ["Chen Vinegar (陈醋)", "Mellow sourness, dark color", "Red braising, dipping sauces"] },
-      { type: "row", cells: ["Rice Vinegar (米醋)", "Clean sourness, light color", "Cold dishes, pickling"] },
-      { type: "row", cells: ["Black Vinegar/Xiangcu (香醋)", "Slightly sweet, rich aroma", "Dumpling dipping sauce"] },
-      { type: "row", cells: ["White Vinegar (白醋)", "Pure sour, colorless", "Cleaning, marinating"] },
+    { type: "ul", items: [
+      "Chen Vinegar (陈醋) — mellow sourness, dark color · red braising, dipping sauces",
+      "Rice Vinegar (米醋) — clean sourness, light color · cold dishes, pickling",
+      "Black Vinegar/Xiangcu (香醋) — slightly sweet, rich aroma · dumpling dipping sauce",
+      "White Vinegar (白醋) — pure sour, colorless · cleaning, marinating",
     ] },
     { type: "h2", text: "Four Key Uses of Vinegar" },
     { type: "p", text: "1. Remove Fishiness and Enhance Umami: When cooking fish or meat, a little vinegar neutralizes fishy odors while boosting umami." },
@@ -437,12 +436,11 @@ const vinegarInChineseCooking: BlogPost = {
   bodyZh: [
     { type: "p", text: "醋不仅仅是酸的。在中华厨房里，醋是调味、去腥、提鲜、保色的多功能工具。" },
     { type: "h2", text: "中国醋的主要种类" },
-    { type: "table", items: [
-      { type: "row", cells: ["种类", "特点", "最佳用途"] },
-      { type: "row", cells: ["陈醋", "酸味醇厚，颜色深", "红烧、蘸料"] },
-      { type: "row", cells: ["米醋", "酸味清爽，颜色浅", "凉拌、酸菜"] },
-      { type: "row", cells: ["香醋", "微甜，香气浓", "饺子蘸料"] },
-      { type: "row", cells: ["白醋", "纯酸，无色", "清洁、腌制"] },
+    { type: "ul", items: [
+      "陈醋：酸味醇厚，颜色深 · 红烧、蘸料",
+      "米醋：酸味清爽，颜色浅 · 凉拌、酸菜",
+      "香醋：微甜，香气浓 · 饺子蘸料",
+      "白醋：纯酸，无色 · 清洁、腌制",
     ] },
     { type: "h2", text: "醋的四大妙用" },
     { type: "p", text: "1. 去腥提鲜：烹饪鱼类或肉类时，少许醋可以中和腥味，同时提升鲜味。" },

@@ -1,11 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Recipe } from "@/lib/types";
 import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
 import { ClockIcon } from "./icons";
+
+/** 图片加载失败兜底：切到通用品牌图，避免破图/空白 */
+const FALLBACK_IMG = "/images/og-default.webp";
 
 /** 菜谱卡片（列表/首页用）
  * 设计参考：截图风格——白底卡片、4:3 图片顶置、分类+时长一行、
@@ -14,6 +18,7 @@ import { ClockIcon } from "./icons";
 export function RecipeCard({ recipe }: { recipe: Recipe }) {
   const { locale, t } = useI18n();
   const isZh = locale === "zh";
+  const [imgSrc, setImgSrc] = useState(recipe.image);
   const title = isZh ? recipe.titleZh : recipe.titleEn;
   const subtitle = isZh
     ? `${recipe.titleEn} (${recipe.titleZh}) · ${recipe.pinyin}`
@@ -30,12 +35,13 @@ export function RecipeCard({ recipe }: { recipe: Recipe }) {
       {/* 图片区 4:3 */}
       <div className="relative aspect-[4/3] w-full overflow-hidden bg-[var(--hw-bg-soft)]">
         <Image
-          src={recipe.image}
+          src={imgSrc}
           alt={`${title} — ${cuisineLabel} recipe`}
           fill
           sizes="(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
+          onError={() => imgSrc !== FALLBACK_IMG && setImgSrc(FALLBACK_IMG)}
         />
       </div>
 

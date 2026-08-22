@@ -177,5 +177,5 @@ export const stirFriedBokChoy: Recipe = {
     "配任何米饭都很棒——清脆的青菜能解腻。",
   ],
   relatedSlugs: ["oyster-sauce-lettuce", "garlic-romaine", "tomato-eggs"],
-  image: "/images/recipes/cucumber-scrambled-eggs.webp",
+  image: "/images/recipes/stir-fried-bok-choy.svg",
 };

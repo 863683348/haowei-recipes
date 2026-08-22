@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { IngredientList } from "@/components/ingredient-list";
 import { StateNote } from "@/components/state-note";
 import { FlavorAdjuster } from "@/components/flavor-adjuster";
 import { AIAssistant } from "@/components/ai-assistant";
 import { ShoppingListButton } from "@/components/shopping-list-button";
 import { RecipeCard } from "@/components/recipe-card";
+import { RecipeHeroImage } from "@/components/recipe-hero-image";
 import { BowlIcon, LeafIcon, BulbIcon, ClockIcon } from "@/components/icons";
 import { getRecipeBySlug, recipes, getRelatedRecipes } from "@/data/recipes";
 import { locales, isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
@@ -188,13 +188,9 @@ export default async function RecipePage({ params }: Props) {
 
         {/* Hero 图（og:image + 视觉封面） */}
         <div className="relative aspect-[1200/630] w-full overflow-hidden rounded-xl">
-          <Image
+          <RecipeHeroImage
             src={recipe.image}
             alt={`${title} — ${cuisine} recipe hero image`}
-            fill
-            priority
-            sizes="(min-width: 1024px) 896px, 100vw"
-            className="object-cover"
           />
         </div>
 
