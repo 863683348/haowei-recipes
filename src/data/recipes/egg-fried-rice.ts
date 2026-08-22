@@ -187,5 +187,5 @@ export const eggFriedRice: Recipe = {
     "加腊肠 + 出锅前几滴香油 = 立刻升级。",
   ],
   relatedSlugs: ["tomato-and-egg", "scallion-pancakes", "kung-pao-chicken"],
-  image: "/images/recipes/egg-fried-rice.webp",
+  "image": "/images/recipes/egg-fried-rice.webp",
 };
