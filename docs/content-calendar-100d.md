@@ -60,7 +60,7 @@
 ### 阶段 2：红烧与糖醋（Day 10-18，27 道）
 | Day | 主题 | 三道菜 | 关键词 |
 |---|---|---|---|
-| 10 | 红烧入门 | 红烧肉 / 红烧鸡腿 / 红烧豆腐 | hongshao pork, braised chicken |
+| 10 | 红烧入门 | 红烧肉 / 红烧鸡腿 / 红烧豆腐 | hongshao pork, braised chicken | ✅
 | 11 | 糖醋家族 | 糖醋里脊 / 糖醋排骨 / 糖醋鱼 | sweet and sour pork |
 | 12 | 快手汤羹 | 紫菜蛋花汤 / 番茄蛋花汤 / 冬瓜排骨汤 | egg drop soup, winter melon soup |
 | 13 | 凉菜开场 | 拍黄瓜 / 凉拌木耳 / 口水鸡 | smashed cucumber, kou shui chicken |

@@ -3,46 +3,101 @@ import type { DietLabel, Recipe } from "@/lib/types";
 import { beefBroccoli } from "./beef-and-broccoli";
 import { braised_tofu } from "./braised-tofu";
 import { cashew_chicken } from "./cashew-chicken";
+import { chiveEggDumplings } from "./chive-egg-dumplings";
+import { cokeChickenWings } from "./coke-chicken-wings";
+import { coldWoodEar } from "./cold-wood-ear";
 import { cucumber_scrambled_eggs } from "./cucumber-scrambled-eggs";
+import { dryFriedGreenBeans } from "./dry-fried-green-beans";
+import { eggDropSoup } from "./egg-drop-soup";
 import { eggFriedRice } from "./egg-fried-rice";
-import { garlicRomaine } from "./garlic-romaine";
 import { garlic_chives_scrambled_eggs } from "./garlic-chives-scrambled-eggs";
+import { garlicRomaine } from "./garlic-romaine";
 import { green_pepper_beef } from "./green-pepper-beef";
+import { homeStylePork } from "./home-style-pork";
 import { home_style_tofu } from "./home-style-tofu";
+import { hongshaoChicken } from "./hongshao-chicken";
+import { hongshaoPork } from "./hongshao-pork";
+import { huangmenChicken } from "./huangmen-chicken";
+import { jingJiangPork } from "./jing-jiang-pork";
+import { kouShuiChicken } from "./kou-shui-chicken";
 import { kungPaoChicken } from "./kung-pao-chicken";
 import { lazi_diced_chicken } from "./lazi-diced-chicken";
 import { mapoTofu } from "./mapo-tofu";
-import { oysterSauceLettuce } from "./oyster-sauce-lettuce";
+import { mooShuPork } from "./moo-shu-pork";
 import { onion_beef_stir_fry } from "./onion-beef-stir-fry";
+import { oysterSauceLettuce } from "./oyster-sauce-lettuce";
+import { panFriedChicken } from "./pan-fried-chicken";
+import { pepperPork } from "./pepper-pork";
 import { pineapple_fried_rice } from "./pineapple-fried-rice";
+import { porkCabbageDumplings } from "./pork-cabbage-dumplings";
+import { potatoBeefStew } from "./potato-beef-stew";
+import { scallionNoodles } from "./scallion-noodles";
 import { scallionPancakes } from "./scallion-pancakes";
+import { smashedCucumber } from "./smashed-cucumber";
+import { sourSoupDumplings } from "./sour-soup-dumplings";
+import { soyChickenWings } from "./soy-chicken-wings";
+import { spicyPotatoShreds } from "./spicy-potato-shreds";
 import { stirFriedBokChoy } from "./stir-fried-bok-choy";
+import { stirFriedGreens } from "./stir-fried-greens";
 import { sweetSourPork } from "./sweet-sour-pork";
+import { tomatoEggNoodles } from "./tomato-egg-noodles";
 import { tomatoEggs } from "./tomato-eggs";
+import { twiceCookedPork } from "./twice-cooked-pork";
+import { vinegarCabbage } from "./vinegar-cabbage";
+import { winterMelonSoup } from "./winter-melon-soup";
+import { yangchunNoodles } from "./yangchun-noodles";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
+import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
 export const recipes: Recipe[] = [
   beefBroccoli,
   braised_tofu,
   cashew_chicken,
+  chiveEggDumplings,
+  cokeChickenWings,
+  coldWoodEar,
   cucumber_scrambled_eggs,
+  dryFriedGreenBeans,
+  eggDropSoup,
   eggFriedRice,
-  garlicRomaine,
   garlic_chives_scrambled_eggs,
+  garlicRomaine,
   green_pepper_beef,
+  homeStylePork,
   home_style_tofu,
+  hongshaoChicken,
+  hongshaoPork,
+  huangmenChicken,
+  jingJiangPork,
+  kouShuiChicken,
   kungPaoChicken,
-  lazi_diced_chicken,
   mapoTofu,
-  oysterSauceLettuce,
+  mooShuPork,
   onion_beef_stir_fry,
+  oysterSauceLettuce,
+  panFriedChicken,
+  pepperPork,
   pineapple_fried_rice,
+  porkCabbageDumplings,
+  potatoBeefStew,
+  scallionNoodles,
   scallionPancakes,
+  smashedCucumber,
+  sourSoupDumplings,
+  soyChickenWings,
+  spicyPotatoShreds,
   stirFriedBokChoy,
+  stirFriedGreens,
   sweetSourPork,
+  tomatoEggNoodles,
   tomatoEggs,
+  twiceCookedPork,
+  vinegarCabbage,
+  winterMelonSoup,
+  yangchunNoodles,
   yangzhou_fried_rice,
+  yuXiangPork,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
