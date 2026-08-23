@@ -432,7 +432,10 @@ const condimentSubstitutions: BlogPost = {
   ],
 };
 
+<<<<<<< HEAD
 export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
+=======
+>>>>>>> origin/main
 
 const vinegarInChineseCooking: BlogPost = {
   id: "vinegar-in-chinese-cooking",
@@ -509,6 +512,8 @@ const vinegarInChineseCooking: BlogPost = {
 };
 
 
+
+export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, vinegarInChineseCooking];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()

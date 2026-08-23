@@ -1,31 +1,39 @@
 import type { Recipe } from "@/lib/types";
 
-/** Scallion Oil Noodles (葱油拌面) (葱油拌面) — Day batch */
-export const scallion_noodles: Recipe = {
-  "id": "scallion-noodles",
-  "slug": "scallion-noodles",
-  "titleEn": "Scallion Oil Noodles (葱油拌面)",
-  "titleZh": "葱油拌面",
-  "pinyin": "cōng yóu bàn miàn",
-  "cuisine": "沪菜",
-  "cuisineEn": "Shanghainese",
-  "region": "Shanghai",
-  "regionZh": "上海",
-  "difficulty": "medium",
-  "timeMin": 35,
-  "servings": 2,
-  "version": "family",
-  "versionNote": "Shanghai street food classic. The scallion oil is made by slowly frying scallions in oil until deeply caramelized — the same oil becomes the sauce. Best made in batches and stored.",
-  "versionNoteZh": "上海街头经典。用慢火将葱炸至深焦糖色，葱油就是酱汁本身。建议批量制作冷藏保存。",
-  "tags": [
-    "comfort",
-    "vegetarian",
-    "shanghai",
-    "street-food"
+/**
+ * 葱油拌面 Scallion Oil Noodles
+ */
+export const scallionNoodles: Recipe = {
+  id: "scallion-noodles",
+  slug: "scallion-noodles",
+  titleEn: "Scallion Oil Noodles (葱油拌面)",
+  titleZh: "葱油拌面",
+  pinyin: "scallion noodles",
+  cuisine: "家常菜",
+  cuisineEn: "Home-style",
+  region: "China",
+  regionZh: "中国",
+  difficulty: "medium",
+  timeMin: 30,
+  servings: 2,
+  version: "family",
+  versionNote: "家庭版做法",
+  versionNoteZh: "家庭版做法",
+  tags: ["vegetarian", "quick"],
+  dietary: ["none"],
+  story: "A classic Chinese home dish.",
+  storyZh: "经典中国家常菜。",
+  ingredients: [
+    { id: "scallion-noodles-1", nameEn: "main ingredient", nameZh: "主料", amountMetric: "200 g", amountUS: "7 oz", category: "protein", pantry: "local" },
+    { id: "scallion-noodles-2", nameEn: "seasoning", nameZh: "调味料", amountMetric: "2 tbsp", amountUS: "2 tbsp", category: "asian-pantry", pantry: "asian" },
+    { id: "scallion-noodles-3", nameEn: "oil", nameZh: "食用油", amountMetric: "3 tbsp", amountUS: "3 tbsp", category: "western-pantry", pantry: "local" }
   ],
-  "dietary": [
-    "vegetarian"
+  steps: [
+    { text: "Prepare main ingredients.", textZh: "准备主料。" },
+    { text: "Heat oil, cook ingredients.", textZh: "热油烹饪。" },
+    { text: "Add seasoning and serve.", textZh: "加调味料，上桌。" }
   ],
+<<<<<<< HEAD
   story: "A Shanghai street food classic — simple noodles tossed in fragrant scallion oil. The oil is made by slowly frying scallions until deeply caramelized.",
   storyZh: "上海街头经典——简单面条拌上香浓葱油。葱油通过慢火炸葱至深焦糖色制成。",
   ingredients: [
@@ -42,6 +50,8 @@ export const scallion_noodles: Recipe = {
     { text: "Add cooked noodles to the sauce. Toss vigorously to coat every strand.", textZh: "下煮好的面条，快速翻炒均匀。", stateNote: { visual: "Noodles are evenly coated in dark glossy sauce", visualZh: "面条均匀裹上深褐色光泽酱汁", signal: "No dry patches visible", signalZh: "无干燥斑块" } },
     { text: "Top with fried scallions. Serve immediately.", textZh: "撒上炸葱，立即上桌。", stateNote: { visual: "Glossy dark noodles topped with crispy scallions", visualZh: "光泽黑亮面条配酥脆葱段", signal: "Ready to eat", signalZh: "即可食用" } }
   ],
+=======
+>>>>>>> origin/main
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
