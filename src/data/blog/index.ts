@@ -432,9 +432,8 @@ const condimentSubstitutions: BlogPost = {
   ],
 };
 
-export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, vinegarInChineseCooking, condimentSubstitutions];
 
-onst vinegarInChineseCooking: BlogPost = {
+const vinegarInChineseCooking: BlogPost = {
   id: "vinegar-in-chinese-cooking",
   slug: "vinegar-in-chinese-cooking",
   titleEn: "Vinegar in Chinese Cooking: Not Just Sour",
@@ -508,8 +507,9 @@ onst vinegarInChineseCooking: BlogPost = {
   ],
 };
 
-export const blogPosts: BlogPost[] = [doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
 
+
+export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, vinegarInChineseCooking];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()

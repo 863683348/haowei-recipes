@@ -36,9 +36,5 @@ export const hongshaoPork: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-<<<<<<< HEAD
   image: "/images/recipes/hongshao-pork.svg",
-=======
-  "image": "/images/recipes/hongshao-pork.svg",
->>>>>>> origin/main
 };

@@ -43,9 +43,9 @@ import { sweetSourPork } from "./sweet-sour-pork";
 import { tomatoEggNoodles } from "./tomato-egg-noodles";
 import { tomatoEggs } from "./tomato-eggs";
 import { twiceCookedPork } from "./twice-cooked-pork";
-import { vinegarCabbage } from "./vinegar-cabbage";
+import { vinegar_cabbage } from "./vinegar-cabbage";
 import { winterMelonSoup } from "./winter-melon-soup";
-import { yangchunNoodles } from "./yangchun-noodles";
+import { yangchun_noodles } from "./yangchun-noodles";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
 import { yuXiangPork } from "./yu-xiang-pork";
 
@@ -93,9 +93,9 @@ export const recipes: Recipe[] = [
   tomatoEggNoodles,
   tomatoEggs,
   twiceCookedPork,
-  vinegarCabbage,
+  vinegar_cabbage,
   winterMelonSoup,
-  yangchunNoodles,
+  yangchun_noodles,
   yangzhou_fried_rice,
   yuXiangPork,
 ];

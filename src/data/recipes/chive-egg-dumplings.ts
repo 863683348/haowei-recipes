@@ -36,9 +36,5 @@ export const chiveEggDumplings: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-<<<<<<< HEAD
   image: "/images/recipes/chive-egg-dumplings.svg",
-=======
-  "image": "/images/recipes/chive-egg-dumplings.svg",
->>>>>>> origin/main
 };
