@@ -26,161 +26,24 @@ export const scallion_noodles: Recipe = {
   "dietary": [
     "vegetarian"
   ],
-<<<<<<< HEAD
+  story: "A Shanghai street food classic — simple noodles tossed in fragrant scallion oil. The oil is made by slowly frying scallions until deeply caramelized.",
+  storyZh: "上海街头经典——简单面条拌上香浓葱油。葱油通过慢火炸葱至深焦糖色制成。",
+  ingredients: [
+    { id: "scn-noodles", nameEn: "wheat noodles", nameZh: "小麦面", amountMetric: "200 g", amountUS: "7 oz", category: "staple", pantry: "local" },
+    { id: "scn-scallion", nameEn: "scallions, cut into 3-inch sections", nameZh: "大葱段，3 寸长", amountMetric: "6 stalks", amountUS: "6 stalks", category: "produce", pantry: "local" },
+    { id: "scn-oil", nameEn: "neutral oil", nameZh: "食用油", amountMetric: "4 tbsp", amountUS: "4 tbsp", category: "western-pantry", pantry: "local" },
+    { id: "scn-soy", nameEn: "light soy sauce", nameZh: "生抽", amountMetric: "2 tbsp", amountUS: "2 tbsp", category: "asian-pantry", pantry: "asian", termKey: "light-soy-sauce" },
+    { id: "scn-sugar", nameEn: "sugar", nameZh: "白糖", amountMetric: "1 tsp", amountUS: "1 tsp", category: "western-pantry", pantry: "local" }
+  ],
+  steps: [
+    { text: "Cook noodles according to package directions. Drain and rinse briefly.", textZh: "按包装说明煮面。捞出沥干。", stateNote: { visual: "Noodles are tender but still firm (al dente)", visualZh: "面条软但仍有弹性", signal: "No hard center when bitten", signalZh: "咬开无硬芯" } },
+    { text: "Heat oil in a pan over medium-low. Add scallion sections and fry slowly, turning occasionally, until deeply browned and crispy (about 8-10 minutes).", textZh: "锅中放油，中小火加热。下葱段慢炸，偶尔翻动，炸至深褐色酥脆（约 8-10 分钟）。", stateNote: { visual: "Scallions turn dark brown and crispy", visualZh: "葱段变深褐酥脆", heat: "medium-low", timeRef: "8-10 minutes", timeRefZh: "8-10 分钟", signal: "Scallions are dark brown and crisp", signalZh: "葱深褐酥脆" } },
+    { text: "Remove scallions with a slotted spoon. Add soy sauce and sugar to the oil, stir 10 seconds.", textZh: "捞出葱段。锅中油加生抽、糖，搅 10 秒。", stateNote: { visual: "Sauce bubbles and mixes with oil", visualZh: "酱汁冒泡与油融合", signal: "Sugar dissolved, aroma rises", signalZh: "糖融化，香气升起" } },
+    { text: "Add cooked noodles to the sauce. Toss vigorously to coat every strand.", textZh: "下煮好的面条，快速翻炒均匀。", stateNote: { visual: "Noodles are evenly coated in dark glossy sauce", visualZh: "面条均匀裹上深褐色光泽酱汁", signal: "No dry patches visible", signalZh: "无干燥斑块" } },
+    { text: "Top with fried scallions. Serve immediately.", textZh: "撒上炸葱，立即上桌。", stateNote: { visual: "Glossy dark noodles topped with crispy scallions", visualZh: "光泽黑亮面条配酥脆葱段", signal: "Ready to eat", signalZh: "即可食用" } }
+  ],
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
   image: "/images/recipes/scallion-noodles.svg",
-=======
-  "story": "Born in Shanghai's street food stalls, scallion oil noodles are the ultimate fast comfort — noodles tossed in deeply fragrant scallion-infused oil with soy sauce. The trick is low and slow: scallions fried gently until they turn dark brown and sweet, not burnt.",
-  "storyZh": "源于上海街头小吃摊，葱油拌面是最极致的快手 comfort food——面条拌入香气浓郁的葱油与酱油。秘诀是低温柔炸：葱炸至深褐色且甜，而非焦苦。",
-  "image": "/images/recipes/scallion-noodles.svg",
-  "ingredients": [
-    {
-      "id": "son-01",
-      "nameEn": "large scallions (white and green parts)",
-      "nameZh": "大葱（葱白葱绿）",
-      "pinyin": "dà cōng",
-      "amountMetric": "12 large stalks (about 300 g)",
-      "amountUS": "12 large stalks",
-      "category": "produce",
-      "pantry": "local",
-      "termKey": "scallion",
-      "note": "Use the whole stalk — white part for oil, green part for garnish. Welsh onion (negi) is the best substitute.",
-      "noteZh": "整根都用——葱白炸油，葱绿做 garnish。威尔士葱（negi）是最佳替代。"
-    },
-    {
-      "id": "son-02",
-      "nameEn": "neutral oil (canola or peanut)",
-      "nameZh": "无味油",
-      "amountMetric": "120 ml",
-      "amountUS": "½ cup",
-      "category": "western-pantry",
-      "pantry": "local"
-    },
-    {
-      "id": "son-03",
-      "nameEn": "light soy sauce",
-      "nameZh": "生抽",
-      "pinyin": "shēng chōu",
-      "amountMetric": "3 tbsp",
-      "amountUS": "3 tbsp",
-      "category": "asian-pantry",
-      "pantry": "asian",
-      "termKey": "light-soy-sauce"
-    },
-    {
-      "id": "son-04",
-      "nameEn": "dark soy sauce",
-      "nameZh": "老抽",
-      "pinyin": "lǎo chōu",
-      "amountMetric": "1 tbsp",
-      "amountUS": "1 tbsp",
-      "category": "asian-pantry",
-      "pantry": "asian",
-      "termKey": "dark-soy-sauce"
-    },
-    {
-      "id": "son-05",
-      "nameEn": "sugar",
-      "nameZh": "糖",
-      "amountMetric": "2 tsp",
-      "amountUS": "2 tsp",
-      "category": "western-pantry",
-      "pantry": "local"
-    },
-    {
-      "id": "son-06",
-      "nameEn": "wheat noodles (fresh)",
-      "nameZh": "鲜面条",
-      "pinyin": "xiǎn miàn tiáo",
-      "amountMetric": "250 g",
-      "amountUS": "9 oz",
-      "category": "staple",
-      "pantry": "local"
-    },
-    {
-      "id": "son-07",
-      "nameEn": "sesame seeds, toasted",
-      "nameZh": "熟芝麻",
-      "amountMetric": "1 tbsp",
-      "amountUS": "1 tbsp",
-      "category": "spice",
-      "pantry": "local"
-    }
-  ],
-  "steps": [
-    {
-      "text": "Cut scallions into 5-cm lengths. Separate white and green parts. Pat white parts completely dry — water causes oil to splatter dangerously.",
-      "textZh": "大葱切5厘米长段，葱白葱绿分开。葱白彻底擦干——生水会让热油危险飞溅。",
-      "zhHint": "切葱擦干",
-      "stateNote": {
-        "visual": "Scallion pieces are rigid, deep green, with no moisture visible",
-        "visualZh": "葱段挺硬、深绿，表面无水光",
-        "signal": "No water droplets on scallion surface",
-        "signalZh": "葱表面无水珠"
-      }
-    },
-    {
-      "text": "Combine oil, scallion white parts, and half the green parts in a wok or heavy pan. Heat over medium-low.",
-      "textZh": "锅中倒入油、葱白和一半葱绿，中低温加热。",
-      "zhHint": "冷油下葱"
-    },
-    {
-      "text": "Slowly fry scallions, stirring occasionally, for 12–15 minutes until deeply dark brown and crispy. The oil should turn amber. Do not rush — burnt scallions taste bitter.",
-      "textZh": "慢炸葱白，偶尔搅拌，12-15分钟直至深褐色酥脆。油会变成琥珀色。别急——烧焦的葱会发苦。",
-      "zhHint": "慢炸至深褐",
-      "stateNote": {
-        "visual": "Scallions shrink and turn dark brown; oil is clear amber",
-        "visualZh": "葱段收缩变深褐；油清澈琥珀色",
-        "heat": "medium-low",
-        "timeRef": "12–15 minutes",
-        "timeRefZh": "12–15 分钟",
-        "signal": "Scallions are crispy and dark, not black; oil smells sweet, not acrid",
-        "signalZh": "葱酥脆深褐而非发黑；油香甜而非刺鼻"
-      }
-    },
-    {
-      "text": "Remove scallions with a slotted spoon. Reserve the scallion oil.",
-      "textZh": "用漏勺捞出葱段，保留葱油。",
-      "zhHint": "捞出葱段"
-    },
-    {
-      "text": "To the warm scallion oil, whisk in soy sauces and sugar until dissolved.",
-      "textZh": "趁葱油温热，搅入生抽、老抽和糖，至糖融化。",
-      "zhHint": "调酱汁"
-    },
-    {
-      "text": "Boil noodles in salted water according to package directions. Drain well.",
-      "textZh": "面条沸水煮熟，充分沥干。",
-      "zhHint": "煮面沥干"
-    },
-    {
-      "text": "Toss hot noodles with the scallion oil sauce. Top with remaining scallion green parts and sesame seeds. Serve immediately.",
-      "textZh": "热面条与葱油酱拌匀。撒剩余葱绿和芝麻，立即上桌。",
-      "zhHint": "拌匀上桌",
-      "stateNote": {
-        "visual": "Noodles are glossy and evenly coated in dark amber sauce",
-        "visualZh": "面条油亮均匀裹上深琥珀色酱汁",
-        "signal": "Sweet scallion and soy aroma",
-        "signalZh": "甜葱酱香扑鼻"
-      }
-    }
-  ],
-  "tips": [
-    "The scallion oil keeps refrigerated for 2 weeks — make a big batch.",
-    "Do not brown the scallions past dark amber — black bits are bitter.",
-    "Use fresh wheat noodles if possible; dried noodles absorb sauce differently."
-  ],
-  "tipsZh": [
-    "葱油冷藏可保存2周——一次多做点。",
-    "葱不要炸过深——超过深琥珀色就会发苦。",
-    "尽量用鲜面条；干面条吸酱方式不同。"
-  ],
-  "relatedSlugs": [
-    "tomato-egg-noodles",
-    "yangchun-noodles",
-    "scallion-pancakes"
-  ]
->>>>>>> origin/main
 };

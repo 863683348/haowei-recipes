@@ -195,14 +195,5 @@ export const oyster_sauce_lettuce: Recipe = {
     "焯水时盐不要放多——蚝油本身已经够咸了。",
     "餐厅做法：淋汁前再滴几滴香油，风味更突出。"
   ],
-<<<<<<< HEAD
   relatedSlugs: ["garlic-romaine", "stir-fried-bok-choy", "tomato-eggs"],
-  image: "/images/recipes/oyster-sauce-lettuce.svg",
-=======
-  "relatedSlugs": [
-    "garlic-chives-scrambled-eggs",
-    "cucumber-scrambled-eggs",
-    "tomato-eggs"
-  ]
->>>>>>> origin/main
 };

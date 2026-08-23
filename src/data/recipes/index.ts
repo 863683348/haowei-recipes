@@ -7,11 +7,11 @@ import { chiveEggDumplings } from "./chive-egg-dumplings";
 import { cokeChickenWings } from "./coke-chicken-wings";
 import { coldWoodEar } from "./cold-wood-ear";
 import { cucumber_scrambled_eggs } from "./cucumber-scrambled-eggs";
-import { dryFriedGreenBeans } from "./dry-fried-green-beans";
+import { dry_fried_green_beans } from "./dry-fried-green-beans";
 import { eggDropSoup } from "./egg-drop-soup";
 import { eggFriedRice } from "./egg-fried-rice";
 import { garlic_chives_scrambled_eggs } from "./garlic-chives-scrambled-eggs";
-import { garlicRomaine } from "./garlic-romaine";
+import { garlic_romaine } from "./garlic-romaine";
 import { green_pepper_beef } from "./green-pepper-beef";
 import { homeStylePork } from "./home-style-pork";
 import { home_style_tofu } from "./home-style-tofu";
@@ -25,28 +25,30 @@ import { lazi_diced_chicken } from "./lazi-diced-chicken";
 import { mapoTofu } from "./mapo-tofu";
 import { mooShuPork } from "./moo-shu-pork";
 import { onion_beef_stir_fry } from "./onion-beef-stir-fry";
-import { oysterSauceLettuce } from "./oyster-sauce-lettuce";
+import { oyster_sauce_lettuce } from "./oyster-sauce-lettuce";
 import { panFriedChicken } from "./pan-fried-chicken";
 import { pepperPork } from "./pepper-pork";
 import { pineapple_fried_rice } from "./pineapple-fried-rice";
 import { porkCabbageDumplings } from "./pork-cabbage-dumplings";
 import { potatoBeefStew } from "./potato-beef-stew";
-import { scallionNoodles } from "./scallion-noodles";
+import { scallion_noodles } from "./scallion-noodles";
 import { scallionPancakes } from "./scallion-pancakes";
 import { smashedCucumber } from "./smashed-cucumber";
 import { sourSoupDumplings } from "./sour-soup-dumplings";
 import { soyChickenWings } from "./soy-chicken-wings";
-import { spicyPotatoShreds } from "./spicy-potato-shreds";
-import { stirFriedBokChoy } from "./stir-fried-bok-choy";
+import { spicy_potato_shreds } from "./spicy-potato-shreds";
+import { stir_fried_bok_choy } from "./stir-fried-bok-choy";
 import { stirFriedGreens } from "./stir-fried-greens";
-import { sweetSourPork } from "./sweet-sour-pork";
-import { tomatoEggNoodles } from "./tomato-egg-noodles";
+import { sweet_sour_pork } from "./sweet-sour-pork";
+import { tomato_egg_noodles } from "./tomato-egg-noodles";
 import { tomatoEggs } from "./tomato-eggs";
 import { twiceCookedPork } from "./twice-cooked-pork";
-import { vinegarCabbage } from "./vinegar-cabbage";
+import { vinegar_cabbage } from "./vinegar-cabbage";
 import { winterMelonSoup } from "./winter-melon-soup";
-import { yangchunNoodles } from "./yangchun-noodles";
+import { yangchun_noodles } from "./yangchun-noodles";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
+import { sweet_sour_ribs } from "./sweet-sour-ribs";
+import { sweet_sour_fish } from "./sweet-sour-fish";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -58,11 +60,11 @@ export const recipes: Recipe[] = [
   cokeChickenWings,
   coldWoodEar,
   cucumber_scrambled_eggs,
-  dryFriedGreenBeans,
+  dry_fried_green_beans,
   eggDropSoup,
   eggFriedRice,
   garlic_chives_scrambled_eggs,
-  garlicRomaine,
+  garlic_romaine,
   green_pepper_beef,
   homeStylePork,
   home_style_tofu,
@@ -75,29 +77,31 @@ export const recipes: Recipe[] = [
   mapoTofu,
   mooShuPork,
   onion_beef_stir_fry,
-  oysterSauceLettuce,
+  oyster_sauce_lettuce,
   panFriedChicken,
   pepperPork,
   pineapple_fried_rice,
   porkCabbageDumplings,
   potatoBeefStew,
-  scallionNoodles,
+  scallion_noodles,
   scallionPancakes,
   smashedCucumber,
   sourSoupDumplings,
   soyChickenWings,
-  spicyPotatoShreds,
-  stirFriedBokChoy,
+  spicy_potato_shreds,
+  stir_fried_bok_choy,
   stirFriedGreens,
-  sweetSourPork,
-  tomatoEggNoodles,
+  sweet_sour_pork,
+  tomato_egg_noodles,
   tomatoEggs,
   twiceCookedPork,
-  vinegarCabbage,
+  vinegar_cabbage,
   winterMelonSoup,
-  yangchunNoodles,
+  yangchun_noodles,
   yangzhou_fried_rice,
   yuXiangPork,
+  sweet_sour_ribs,
+  sweet_sour_fish,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

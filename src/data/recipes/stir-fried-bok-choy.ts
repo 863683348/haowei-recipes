@@ -149,24 +149,7 @@ export const stir_fried_bok_choy: Recipe = {
       "zhHint": "调味出锅"
     }
   ],
-<<<<<<< HEAD
+  tips: ["High heat is essential — this dish takes only 2 minutes total.", "Do not add water or cover the pan — you want a dry stir-fry, not steamed bok choy."],
+  tipsZh: ["大火是关键——这道菜总共只需2分钟。", "不要加水或盖锅盖——你要的是干香快炒，不是蒸煮。"],
   relatedSlugs: ["oyster-sauce-lettuce", "garlic-romaine", "tomato-eggs"],
-  image: "/images/recipes/stir-fried-bok-choy.svg",
-=======
-  "tips": [
-    "The wok must be screaming hot — this dish is over in 2 minutes total.",
-    "Do not cover — trapped moisture ruins the texture.",
-    "Salt goes on at the end, not the beginning; early salting draws out water too fast."
-  ],
-  "tipsZh": [
-    "锅必须烧到冒烟——这道菜总共只花2分钟。",
-    "不要盖锅盖——蒸汽会毁掉口感。",
-    "盐最后放，不是最先放——早放盐会逼出太多水分。"
-  ],
-  "relatedSlugs": [
-    "oyster-sauce-lettuce",
-    "garlic-romaine",
-    "garlic-chives-scrambled-eggs"
-  ]
->>>>>>> origin/main
 };

@@ -168,24 +168,7 @@ export const garlic_romaine: Recipe = {
       }
     }
   ],
-<<<<<<< HEAD
+  tips: ["The key is high heat and quick cooking — 60 seconds is all you need.", "Do not overcook or the romaine becomes mushy and loses its signature crunch."],
+  tipsZh: ["关键是大火快炒——60秒就够了。", "不要煮过头，否则油麦菜会变软烂失去脆爽口感。"],
   relatedSlugs: ["oyster-sauce-lettuce", "stir-fried-bok-choy", "tomato-eggs"],
-  image: "/images/recipes/garlic-romaine.svg",
-=======
-  "tips": [
-    "Never cover the wok — trapped steam makes romaine soggy.",
-    "Double the garlic from what the recipe says — it is the star.",
-    "Cook on the highest heat your stove can manage; this dish lives on flame."
-  ],
-  "tipsZh": [
-    "绝对不要盖锅盖——蒸汽会让油麦菜变软塌。",
-    "蒜量加倍——它是这道菜的灵魂。",
-    "火力越大越好，这道菜靠猛火立身。"
-  ],
-  "relatedSlugs": [
-    "oyster-sauce-lettuce",
-    "stir-fried-bok-choy",
-    "garlic-chives-scrambled-eggs"
-  ]
->>>>>>> origin/main
 };
