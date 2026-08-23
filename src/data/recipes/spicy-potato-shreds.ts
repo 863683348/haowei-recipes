@@ -197,24 +197,8 @@ export const spicy_potato_shreds: Recipe = {
       tipZh: "最后加醋才能保留明亮的酸味——早加酸味会挥发。",
     },
   ],
-<<<<<<< HEAD
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-=======
-  tips: [
-    "Rinsing potato starch is the single most important step — it guarantees crunch, not mush.",
-    "High heat is non-negotiable. If your wok smokes, you are ready.",
-    "Vinegar goes in last — this is what makes the dish sour-spicy rather than just spicy.",
-    "Serve immediately. Potato shreds lose crispness within 3 minutes of sitting.",
-  ],
-  tipsZh: [
-    "冲洗土豆淀粉是最关键的一步——决定了脆爽还是软塌。",
-    "大火不可妥协——锅冒烟才算到位。",
-    "醋最后加——这是酸辣口味的核心。",
-    "立即上桌——土豆丝放置 3 分钟后会失去脆度。",
-  ],
-  relatedSlugs: ["egg-fried-rice", "garlic-chives-scrambled-eggs", "cucumber-scrambled-eggs"],
->>>>>>> origin/main
   image: "/images/recipes/spicy-potato-shreds.svg",
 };

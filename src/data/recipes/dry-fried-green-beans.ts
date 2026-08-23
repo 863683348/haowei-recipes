@@ -167,24 +167,8 @@ export const dry_fried_green_beans: Recipe = {
       },
     },
   ],
-<<<<<<< HEAD
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-=======
-  tips: [
-    "Never eat green beans raw — they contain lectins that cause food poisoning. Full cooking is essential.",
-    "The wrinkled skin (虎皮) is the signature — do not skip the frying step.",
-    "Drain fried beans well before returning to wok — excess oil makes the dish greasy.",
-    "Add soy sauce to the aromatics, not directly onto the beans — this prevents steaming.",
-  ],
-  tipsZh: [
-    "四季豆绝对不能生吃——含植物凝集素，会导致食物中毒。必须彻底煮熟。",
-    "虎皮皱褶是灵魂——油炸步骤不可省。",
-    "捞出沥油要彻底——油多会让菜品发腻。",
-    "酱油淋在香料上而非直接浇在豆角上——避免产生蒸汽让豆角变软。",
-  ],
-  relatedSlugs: ["egg-fried-rice", "spicy-potato-shreds", "vinegar-cabbage"],
->>>>>>> origin/main
   image: "/images/recipes/dry-fried-green-beans.svg",
 };
