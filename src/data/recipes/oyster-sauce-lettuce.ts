@@ -208,8 +208,5 @@ export const oysterSauceLettuce: Recipe = {
     "如果用无麸质蚝油，这道菜本身就是无麸质的。",
   ],
   relatedSlugs: ["garlic-romaine", "stir-fried-bok-choy", "tomato-eggs"],
-<<<<<<< HEAD
-=======
   image: "/images/recipes/oyster-sauce-lettuce.svg",
->>>>>>> origin/main
 };

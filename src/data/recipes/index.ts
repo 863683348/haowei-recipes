@@ -7,11 +7,10 @@ import { chiveEggDumplings } from "./chive-egg-dumplings";
 import { cokeChickenWings } from "./coke-chicken-wings";
 import { coldWoodEar } from "./cold-wood-ear";
 import { cucumber_scrambled_eggs } from "./cucumber-scrambled-eggs";
-import { dry_fried_green_beans } from "./dry-fried-green-beans";
-import { eggDropSoup } from "./egg-drop-soup";
+import { dryFriedGreenBeans } from "./dry-fried-green-beans";
 import { eggFriedRice } from "./egg-fried-rice";
 import { garlic_chives_scrambled_eggs } from "./garlic-chives-scrambled-eggs";
-import { garlic_romaine } from "./garlic-romaine";
+import { garlicRomaine } from "./garlic-romaine";
 import { green_pepper_beef } from "./green-pepper-beef";
 import { homeStylePork } from "./home-style-pork";
 import { home_style_tofu } from "./home-style-tofu";
@@ -25,7 +24,7 @@ import { lazi_diced_chicken } from "./lazi-diced-chicken";
 import { mapoTofu } from "./mapo-tofu";
 import { mooShuPork } from "./moo-shu-pork";
 import { onion_beef_stir_fry } from "./onion-beef-stir-fry";
-import { oyster_sauce_lettuce } from "./oyster-sauce-lettuce";
+import { oysterSauceLettuce } from "./oyster-sauce-lettuce";
 import { panFriedChicken } from "./pan-fried-chicken";
 import { pepperPork } from "./pepper-pork";
 import { pineapple_fried_rice } from "./pineapple-fried-rice";
@@ -36,19 +35,21 @@ import { scallionPancakes } from "./scallion-pancakes";
 import { smashedCucumber } from "./smashed-cucumber";
 import { sourSoupDumplings } from "./sour-soup-dumplings";
 import { soyChickenWings } from "./soy-chicken-wings";
-import { spicy_potato_shreds } from "./spicy-potato-shreds";
-import { stir_fried_bok_choy } from "./stir-fried-bok-choy";
+import { spicyPotatoShreds } from "./spicy-potato-shreds";
+import { stirFriedBokChoy } from "./stir-fried-bok-choy";
 import { stirFriedGreens } from "./stir-fried-greens";
 import { sweet_sour_pork } from "./sweet-sour-pork";
 import { tomato_egg_noodles } from "./tomato-egg-noodles";
 import { tomatoEggs } from "./tomato-eggs";
 import { twiceCookedPork } from "./twice-cooked-pork";
 import { vinegar_cabbage } from "./vinegar-cabbage";
-import { winterMelonSoup } from "./winter-melon-soup";
 import { yangchun_noodles } from "./yangchun-noodles";
 import { yangzhou_fried_rice } from "./yangzhou-fried-rice";
 import { sweet_sour_ribs } from "./sweet-sour-ribs";
 import { sweet_sour_fish } from "./sweet-sour-fish";
+import { egg_drop_soup } from "./egg-drop-soup";
+import { tomato_egg_drop_soup } from "./tomato-egg-drop-soup";
+import { winter_melon_soup } from "./winter-melon-soup";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -60,11 +61,10 @@ export const recipes: Recipe[] = [
   cokeChickenWings,
   coldWoodEar,
   cucumber_scrambled_eggs,
-  dry_fried_green_beans,
-  eggDropSoup,
+  dryFriedGreenBeans,
   eggFriedRice,
   garlic_chives_scrambled_eggs,
-  garlic_romaine,
+  garlicRomaine,
   green_pepper_beef,
   homeStylePork,
   home_style_tofu,
@@ -77,7 +77,7 @@ export const recipes: Recipe[] = [
   mapoTofu,
   mooShuPork,
   onion_beef_stir_fry,
-  oyster_sauce_lettuce,
+  oysterSauceLettuce,
   panFriedChicken,
   pepperPork,
   pineapple_fried_rice,
@@ -88,20 +88,22 @@ export const recipes: Recipe[] = [
   smashedCucumber,
   sourSoupDumplings,
   soyChickenWings,
-  spicy_potato_shreds,
-  stir_fried_bok_choy,
+  spicyPotatoShreds,
+  stirFriedBokChoy,
   stirFriedGreens,
   sweet_sour_pork,
   tomato_egg_noodles,
   tomatoEggs,
   twiceCookedPork,
   vinegar_cabbage,
-  winterMelonSoup,
   yangchun_noodles,
   yangzhou_fried_rice,
   yuXiangPork,
   sweet_sour_ribs,
   sweet_sour_fish,
+  egg_drop_soup,
+  tomato_egg_drop_soup,
+  winter_melon_soup,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

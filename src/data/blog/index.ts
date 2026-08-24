@@ -432,11 +432,6 @@ const condimentSubstitutions: BlogPost = {
   ],
 };
 
-<<<<<<< HEAD
-export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
-=======
->>>>>>> origin/main
-
 const vinegarInChineseCooking: BlogPost = {
   id: "vinegar-in-chinese-cooking",
   slug: "vinegar-in-chinese-cooking",

@@ -178,12 +178,6 @@ export const garlicRomaine: Recipe = {
     "如果油麦菜很大棵，切掉底部 2 厘米——那是木质化、不能吃的部分。",
     "想要更鲜：出锅前加一撮鸡精（或素食菌菇粉）。",
   ],
-<<<<<<< HEAD
-  tips: ["The key is high heat and quick cooking — 60 seconds is all you need.", "Do not overcook or the romaine becomes mushy and loses its signature crunch."],
-  tipsZh: ["关键是大火快炒——60秒就够了。", "不要煮过头，否则油麦菜会变软烂失去脆爽口感。"],
-  relatedSlugs: ["oyster-sauce-lettuce", "stir-fried-bok-choy", "tomato-eggs"],
-=======
   relatedSlugs: ["oyster-sauce-lettuce", "stir-fried-bok-choy", "tomato-eggs"],
   image: "/images/recipes/garlic-romaine.svg",
->>>>>>> origin/main
 };

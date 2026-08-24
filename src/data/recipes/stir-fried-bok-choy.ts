@@ -176,12 +176,6 @@ export const stirFriedBokChoy: Recipe = {
     "这道菜天然纯素无麸质。严格控制的话跳过香油。",
     "配任何米饭都很棒——清脆的青菜能解腻。",
   ],
-<<<<<<< HEAD
-  tips: ["High heat is essential — this dish takes only 2 minutes total.", "Do not add water or cover the pan — you want a dry stir-fry, not steamed bok choy."],
-  tipsZh: ["大火是关键——这道菜总共只需2分钟。", "不要加水或盖锅盖——你要的是干香快炒，不是蒸煮。"],
-  relatedSlugs: ["oyster-sauce-lettuce", "garlic-romaine", "tomato-eggs"],
-=======
   relatedSlugs: ["oyster-sauce-lettuce", "garlic-romaine", "tomato-eggs"],
   image: "/images/recipes/stir-fried-bok-choy.svg",
->>>>>>> origin/main
 };

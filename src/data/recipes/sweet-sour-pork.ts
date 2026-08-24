@@ -1,6 +1,6 @@
 import type { Recipe } from "@/lib/types";
 
-/** 糖醋里脊 Sweet and Sour Pork (糖醋里脊) — Day 11 糖醋家族 */
+/** 糖醋里脊 Sweet and Sour Pork (糖醋里脊) */
 export const sweet_sour_pork: Recipe = {
   "id": "sweet-sour-pork",
   "slug": "sweet-sour-pork",
@@ -43,7 +43,6 @@ export const sweet_sour_pork: Recipe = {
     { "text": "In a wok, pour in the sauce. Bring to a simmer over medium heat. When it thickens (about 30 seconds), add the fried pork. Toss quickly 10 seconds to coat — do NOT over-stir or the crust will soften.", "textZh": "锅中倒入糖醋汁，中火煮至微稠（约 30 秒）。下炸好的肉条，快速翻 10 秒裹匀——不要久翻，否则脆壳变软。", "zhHint": "快翻裹汁", "stateNote": { "visual": "Sauce becomes glossy and clings to pork, no pooling", "visualZh": "汁变亮且挂在肉上，锅底无积液", "heat": "medium", "timeRef": "30 seconds", "timeRefZh": "30 秒", "signal": "Sauce coats a spoon cleanly, trail holds", "signalZh": "勺背挂汁清晰，划痕不立即消失" } },
     { "text": "Serve immediately on a warm plate. The crust stays crispy for about 2 minutes after saucing.", "textZh": "趁热上桌。裹汁后脆壳保持约 2 分钟最佳口感。", "zhHint": "上桌趁热吃", "stateNote": { "visual": "Steam rises, glaze has a satin sheen", "visualZh": "热气升腾，釉面有缎光", "signal": "Eaten within 2 minutes for best crunch", "signalZh": "2 分钟内吃完口感最佳" } }
   ],
-<<<<<<< HEAD
   "tips": [
     "The key to crispy sweet and sour pork is double-frying: first fry at 160°C to cook through, then fry again at 180°C right before saucing for maximum crunch.",
     "Do not skip the paper-towel step — wet meat equals soggy coating.",
@@ -58,10 +57,4 @@ export const sweet_sour_pork: Recipe = {
   ],
   "relatedSlugs": ["kung-pao-chicken", "twice-cooked-pork", "egg-fried-rice"],
   "image": "/images/recipes/kung-pao-chicken.webp"
-=======
-  tips: ["Use fresh ingredients."],
-  tipsZh: ["使用新鲜食材。"],
-  relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-  image: "/images/recipes/sweet-sour-pork.svg",
->>>>>>> origin/main
 };
