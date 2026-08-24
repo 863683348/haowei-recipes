@@ -44,6 +44,12 @@ export function Header() {
           </Link>
           <LanguageToggle />
           <ThemeToggle />
+          <Link
+            href={localizePath("/account", locale)}
+            className="whitespace-nowrap rounded-lg border border-[var(--hw-border)] px-3 py-1.5 text-sm font-semibold text-[var(--hw-fg-muted)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
+          >
+            {t.header.signIn}
+          </Link>
         </nav>
       </div>
     </header>
