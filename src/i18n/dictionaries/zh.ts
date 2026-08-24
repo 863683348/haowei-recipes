@@ -34,6 +34,7 @@ export const dictZh: Dict = {
     blog: "博客",
     aiAssistant: "AI 助手",
     shoppingList: "🛒 清单",
+    signIn: "登录",
   },
   footer: {
     tagline:

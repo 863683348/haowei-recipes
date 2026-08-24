@@ -32,6 +32,7 @@ export const dict = {
     blog: "Blog",
     aiAssistant: "AI Assistant",
     shoppingList: "🛒 List",
+    signIn: "Sign In",
   },
   footer: {
     tagline:
