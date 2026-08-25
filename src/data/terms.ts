@@ -419,6 +419,22 @@ export const terms: Term[] = [
     substituteHintZh:
       "素食版：1 汤匙酱油+1/2 茶匙味噌或1/4 茶匙菌菇粉。无麸质：味醂+一小撮糖。",
   },
+  {
+    id: "wood-ear",
+    zh: "木耳",
+    pinyin: "mù ěr",
+    en: "Wood ear mushroom (cloud ear fungus)",
+    category: "ingredient",
+    definition:
+      "A crispy, jelly-like edible fungus dried in sheets. Rehydrates in warm water in 10 minutes. Nearly neutral in flavor — prized for its extraordinary crunch in cold dishes.",
+    definitionZh:
+      "脆爽胶质的食用真菌，干制呈片状。温水泡发 10 分钟。味道近乎中性——凉拌菜中以其绝妙脆感著称。",
+    quantEquivalent: "15 g dry ≈ 150 g rehydrated",
+    substituteHint:
+      "No wood ear? Shredded daikon radish or jicama provide similar crunch (fidelity ~60%).",
+    substituteHintZh:
+      "没有木耳？切丝的白萝卜或菊苣可提供类似脆感（还原度约 60%）。",
+  },
 ];
 
 /** 术语查询工具 */
