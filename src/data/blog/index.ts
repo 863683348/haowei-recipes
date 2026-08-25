@@ -432,10 +432,728 @@ const condimentSubstitutions: BlogPost = {
   ],
 };
 
-<<<<<<< HEAD
-export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy];
-=======
->>>>>>> origin/main
+const makingCaramelSugarColor: BlogPost = {
+  "id": "making-caramel-sugar-color",
+  "slug": "making-caramel-sugar-color",
+  "titleEn": "Making Caramel (Sugar Color) for Red Dishes",
+  "titleZh": "炒糖色不苦不焦：红烧上色秘诀",
+  "excerptEn": "Sugar color (糖色) is the secret to glossy, amber-red braises. Get the timing right and your dishes shine; get it wrong and they turn bitter. Here‘s how to nail it every time.",
+  "excerptZh": "糖色是红烧菜色泽红亮的秘诀。掌握时机，菜肴油亮诱人；掌握不好，味道发苦。这里教你每次都成功的炒糖色方法。",
+  "categoryKey": "technique",
+  "categoryEn": "Technique",
+  "categoryZh": "技法",
+  "tags": [
+    "sugar color",
+    "tang se",
+    "red braising",
+    "caramel"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-28",
+  "coverImage": "/images/blog/making-caramel-sugar-color.png",
+  "relatedRecipeSlugs": [
+    "hong-shao-pork-belly",
+    "red-braised-carp",
+    "braised-beef-brisket"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Sugar color — tang se (糖色) — is what gives Chinese red-braised dishes their signature glossy, amber-red hue. Unlike Western caramel, which is just melted sugar, Chinese sugar color is a cooking technique that transforms rock sugar or white sugar into a rich coloring agent."
+    },
+    {
+      "type": "h2",
+      "text": "The Three Stages of Sugar Color"
+    },
+    {
+      "type": "p",
+      "text": "Watch sugar melt and change color in three stages: first it becomes a clear, bubbling syrup; then it turns golden amber; finally it deepens to a reddish-brown. The window between amber and bitter is narrow — maybe 10-15 seconds."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Stage 1: Clear bubbles, like boiling water",
+        "Stage 2: Golden amber, the sweet spot",
+        "Stage 3: Dark amber to reddish-brown, add meat immediately",
+        "Too dark: bitter, ruined batch"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Oil Method vs. Water Method"
+    },
+    {
+      "type": "p",
+      "text": "There are two approaches. The oil method (chao tang) uses a small amount of oil and gives faster, more control — but splatters hot oil if you‘re not careful. The water method (shui chao) uses water first, then oil, and is more forgiving for beginners but takes longer."
+    },
+    {
+      "type": "h2",
+      "text": "The Golden Rule"
+    },
+    {
+      "type": "p",
+      "text": "When the sugar reaches deep amber with a slight reddish tint, add your par-cooked meat immediately and stir to coat. The residual heat will finish the caramelization without burning. If it looks too dark already, you‘ve missed the window — start over with fresh sugar."
+    },
+    {
+      "type": "note",
+      "text": "Pro tip: add a splash of hot water if you need to deglaze the pan after caramelizing. This becomes the base for your braising liquid."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "糖色是中式红烧菜的灵魂，赋予菜肴标志性的红亮光泽。与西方焦糖不同，中式糖色是一种烹饪技法，将冰糖或白糖转化为上色剂。"
+    },
+    {
+      "type": "h2",
+      "text": "糖色的三个阶段"
+    },
+    {
+      "type": "p",
+      "text": "观察糖融化变色：先是清澈冒泡的糖浆；然后变成金黄琥珀色；最后加深到红棕色。琥珀色到发苦的窗口很窄——大概 10-15 秒。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "阶段 1：清澈气泡，像 boiling water",
+        "阶段 2：金黄琥珀色，最佳时机",
+        "阶段 3：深琥珀带红，立即下肉",
+        "过深：发苦，整锅报废"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "油炒法 vs. 水炒法"
+    },
+    {
+      "type": "p",
+      "text": "两种方法。油炒法用少量油，速度快、易控制——但不小心会溅热油。水炒法先加水再加油，对新手更友好但时间更长。"
+    },
+    {
+      "type": "h2",
+      "text": "黄金法则"
+    },
+    {
+      "type": "p",
+      "text": "糖达到深琥珀色带微红时，立即加入焯过水的肉，翻炒裹色。余热完成焦糖化不会焦。如果看起来已经太深，说明错过了窗口——重新来过。"
+    },
+    {
+      "type": "note",
+      "text": "秘诀：焦糖化后如果需要 deglaze，加一勺热水。这成为炖煮液体的基底。"
+    }
+  ]
+};
+
+const driedChilies: BlogPost = {
+  "id": "dried-chilies",
+  "slug": "dried-chilies",
+  "titleEn": "Dried Chilies: Aromatics, Not Just Heat",
+  "titleZh": "干辣椒炝锅不出苦",
+  "excerptEn": "Dried chilies add depth and aroma to Chinese cooking, not just heat. The trick is tempering them correctly in oil. Get it wrong and your dish turns bitter; get it right and you unlock complex spiciness.",
+  "excerptZh": "干辣椒给中餐增添深度和香气，不只是辣度。诀窍是在油里正确 temper。搞砸了，菜会发苦；搞对了，解锁复杂辣味。",
+  "categoryKey": "technique",
+  "categoryEn": "Technique",
+  "categoryZh": "技法",
+  "tags": [
+    "dried chili",
+    "chili oil",
+    "aromatics",
+    "sichuan cooking"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-01",
+  "coverImage": "/images/blog/dried-chilies.png",
+  "relatedRecipeSlugs": [
+    "mapo-tofu",
+    "water-boiled-beef",
+    "dry-fried-green-beans"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Dried chilies (干辣椒, gān là jiāo) are a cornerstone of Sichuan and Hunan cooking. But they‘re not just about heat — properly prepared, they add smoky, fruity, almost chocolatey depth to dishes. The difference between a bitter, harsh chili and a fragrant, complex one comes down to technique."
+    },
+    {
+      "type": "h2",
+      "text": "The Tempering Technique"
+    },
+    {
+      "type": "p",
+      "text": "Tempering (炝锅, qiang guo) means briefly frying aromatics in hot oil to release their flavors before adding other ingredients. For dried chilies: use medium-low heat, add whole or halved chilies, and remove them as soon as they puff and darken — about 15-20 seconds. Overcooking makes them bitter."
+    },
+    {
+      "type": "h2",
+      "text": "Choosing the Right Chili"
+    },
+    {
+      "type": "p",
+      "text": "Different dried chilies serve different purposes. Erjingtiao (二荆条) is mild and fragrant — perfect for coloring oil. Thai bird‘s eye is fierce but thin-skinned — good for quick heat. Sichuan dried chilies offer balanced heat with floral notes. Mix types for complexity."
+    },
+    {
+      "type": "h2",
+      "text": "Removing Seeds vs. Keeping Them"
+    },
+    {
+      "type": "p",
+      "text": "Seeds contain most of the capsaicin. For milder dishes, shake seeds out before using. For maximum heat, use whole chilies with seeds. A middle ground: halve and tap out half the seeds."
+    },
+    {
+      "type": "note",
+      "text": "Pro tip: toast chilies in a dry pan before frying in oil. This rehydrates them slightly and intensifies aroma before they hit the hot fat."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "干辣椒是川菜和湘菜的基石。但它们不只是辣——正确处理后，它们为菜肴增添烟熏、果香、几乎巧克力的深度。苦辣与香辣的差别在于技法。"
+    },
+    {
+      "type": "h2",
+      "text": "炝锅技法"
+    },
+    {
+      "type": "p",
+      "text": "炝锅（qiang guo）是在热油中短暂炸香料释放风味，再加其他食材。干辣椒：中小火，整粒或对半切开，膨胀变深后立即取出——约 15-20 秒。炒过头会苦。"
+    },
+    {
+      "type": "h2",
+      "text": "选对辣椒"
+    },
+    {
+      "type": "p",
+      "text": "不同干辣椒用途不同。二荆条温和芳香——适合给油上色。泰国产鸟眼椒猛烈但皮薄——适合快速辣。四川干辣椒平衡辣度带花香。混用多种增加层次。"
+    },
+    {
+      "type": "h2",
+      "text": "去籽 vs. 保留"
+    },
+    {
+      "type": "p",
+      "text": "籽含大部分辣椒素。清淡菜去籽再用。最大辣度用整粒带籽。中间路线：对半切、倒出一半籽。"
+    },
+    {
+      "type": "note",
+      "text": "秘诀：炸油前先干焙辣椒。这微微复水、强化香气，再入热油效果更好。"
+    }
+  ]
+};
+
+const tofuTypes: BlogPost = {
+  "id": "tofu-types",
+  "slug": "tofu-types",
+  "titleEn": "Tofu Types and How to Handle Each",
+  "titleZh": "豆腐种类与处理",
+  "excerptEn": "Tofu comes in many textures — from silken to extra firm — and each behaves differently in cooking. Knowing which type to use prevents mushy stir-fries and crumbly soups.",
+  "excerptZh": "豆腐有多种质地——从嫩到极硬——每种烹饪表现不同。知道用哪种能避免炒菜变糊、汤品散碎。",
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "tofu",
+    "bean curd",
+    "silken tofu",
+    "firm tofu"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-02",
+  "coverImage": "/images/blog/tofu-types.png",
+  "relatedRecipeSlugs": [
+    "mapo-tofu",
+    "century-egg-tofu",
+    "tofu-vegetable-stir-fry"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Tofu (豆腐, dòu fu) is one of China‘s most versatile ingredients, but the word covers a wide range of textures. Using the wrong type in a recipe guarantees disappointment — silken tofu falls apart in stir-fries, while extra firm tofu dominates delicate soups."
+    },
+    {
+      "type": "h2",
+      "text": "The Texture Spectrum"
+    },
+    {
+      "type": "p",
+      "text": "Chinese tofu is graded by water content, not just firmness. Silken (嫩豆腐, nèn dòu fu) is custard-like and breaks easily — perfect for soups and steamed dishes. Soft (软豆腐, ruǎn dòu fu) holds shape better but still crumbles. Firm (老豆腐, lǎo dòu fu) is dense and sturdy. Extra firm (黄干/北豆腐, huáng gān) is nearly solid."
+    },
+    {
+      "type": "h2",
+      "text": "Which Type for Which Dish"
+    },
+    {
+      "type": "p",
+      "text": "Silken: cold appetizers, steamed with toppings, blended soups, tofu pudding. Soft: gentle braises, hot pot, congee. Firm: stir-fries, mapo tofu (cut large), pan-frying. Extra firm: deep-frying, skewers, hearty stews."
+    },
+    {
+      "type": "h2",
+      "text": "Prep Tips"
+    },
+    {
+      "type": "p",
+      "text": "For firm and extra firm tofu, press between paper towels for 10 minutes to remove excess water — this improves browning and texture. For silken tofu, handle with two spatulas or invert the container directly into the dish."
+    },
+    {
+      "type": "note",
+      "text": "Frozen tofu (冻豆腐, dòng dòu fu) has a spongy, chewy texture that soaks up sauces like a sponge. Perfect for hot pot and stews."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "豆腐是中国最百搭的食材之一，但这个词涵盖广泛的质地。用错类型注定失望——嫩豆腐在快炒中散开，极硬豆腐压倒精致的汤品。"
+    },
+    {
+      "type": "h2",
+      "text": "质地光谱"
+    },
+    {
+      "type": "p",
+      "text": "中式豆腐按含水量分级，不只看硬度。嫩豆腐（nèn dòu fu）如布丁，易碎——适合汤和蒸菜。软豆腐（ruǎn dòu fu）形状更稳定但仍会散。老豆腐（lǎo dòu fu）紧实坚硬。黄干/北豆腐（huáng gān）近乎固体。"
+    },
+    {
+      "type": "h2",
+      "text": "哪种类型配哪种菜"
+    },
+    {
+      "type": "p",
+      "text": "嫩豆腐：冷盘、蒸菜加配料、 blended 汤、豆腐花。软豆腐：温柔红烧、火锅、粥。老豆腐：快炒、麻婆豆腐（切大块）、煎。极硬：油炸、串串、炖菜。"
+    },
+    {
+      "type": "h2",
+      "text": "处理技巧"
+    },
+    {
+      "type": "p",
+      "text": "老豆腐和极硬豆腐，用厨房纸压 10 分钟去水——改善煎着色和口感。嫩豆腐，用两个锅铲操作或直接倒扣入菜。"
+    },
+    {
+      "type": "note",
+      "text": "冻豆腐（dòng dòu fu）有海绵状嚼劲，像海绵一样吸酱汁。适合火锅和炖菜。"
+    }
+  ]
+};
+
+const chineseNoodlesBuyersGuide: BlogPost = {
+  "id": "chinese-noodles-buyers-guide",
+  "slug": "chinese-noodles-buyers-guide",
+  "titleEn": "Chinese Noodles: A Buyer‘s Guide",
+  "titleZh": "面条种类怎么选",
+  "excerptEn": "Chinese noodles vary wildly in shape, texture, and cooking method. This guide helps you pick the right noodle for your dish — from hand-pulled lamian to delicate wonton noodles.",
+  "excerptZh": "中国面条在形状、质地、烹饪方法上差异很大。本指南帮你为菜品选对面条——从手工拉面到精致云吞面。",
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "chinese noodles",
+    "noodle types",
+    "lamian",
+    "wonton noodles"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-03",
+  "coverImage": "/images/blog/chinese-noodles-buyers-guide.png",
+  "relatedRecipeSlugs": [
+    "scallion-oil-noodles",
+    "dan-dan-noodles",
+    "wonton-noodle-soup"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Chinese noodles (面条, miàn tiáo) are as varied as rice varieties — each shape and texture suited to specific cooking methods. Using thin egg noodles in a hearty stew or thick hand-pulled noodles in a delicate soup guarantees a disappointing meal."
+    },
+    {
+      "type": "h2",
+      "text": "The Four Main Categories"
+    },
+    {
+      "type": "p",
+      "text": "Egg noodles (鸡蛋面, jī dàn miàn): yellow, firm, hold up to stir-frying and soups. Wheat noodles (小麦面, xiǎo mò miàn): plain, white, common in northern China. Rice noodles (米粉, mǐ fěn): delicate, used in southern China and Southeast Asia. Starch noodles (粉丝, fěn sī): transparent, from mung bean or sweet potato starch."
+    },
+    {
+      "type": "h2",
+      "text": "Shape Matters"
+    },
+    {
+      "type": "p",
+      "text": "Thick noodles (宽面, kuān miàn) like lamian hold sauce well and need hearty broths. Thin noodles (细面, xì miàn) like Cantonese egg noodles absorb broth quickly and suit light soups. Flat noodles (扁面, biǎn miàn) like zhajiangmian noodles carry thick sauces. Curly noodles (卷曲面, juǎn qū miàn) trap sauce in their ridges."
+    },
+    {
+      "type": "h2",
+      "text": "Fresh vs. Dried"
+    },
+    {
+      "type": "p",
+      "text": "Fresh noodles have superior texture but spoil quickly. Dried noodles last months and rehydrate well. For the best results, buy fresh from Asian markets when available; otherwise, good quality dried noodles are a reliable backup."
+    },
+    {
+      "type": "note",
+      "text": "Pro tip: always salt your noodle cooking water generously. This seasons the noodle itself, not just the sauce."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "中国面条与米种一样多样——每种形状和质地适合特定烹饪方法。用细蛋面做炖菜或用粗拉面做精致汤品，注定失望。"
+    },
+    {
+      "type": "h2",
+      "text": "四大类"
+    },
+    {
+      "type": "p",
+      "text": "鸡蛋面（jī dàn miàn）：黄色、有嚼劲，适合快炒和汤。小麦面（xiǎo mò miàn）： plain、白色，北方常见。米粉（mǐ fěn）：细腻，南方和东南亚使用。淀粉粉丝（fěn sī）：透明，绿豆或红薯淀粉制。"
+    },
+    {
+      "type": "h2",
+      "text": "形状关键"
+    },
+    {
+      "type": "p",
+      "text": "宽面（kuān miàn）如拉面挂酱好、需浓汤。细面（xì miàn）如粤式蛋面吸汤快、适合清汤。扁面（biǎn miàn）如炸酱面挂浓酱。卷曲面（juǎn qū miàn）凹槽藏酱。"
+    },
+    {
+      "type": "h2",
+      "text": "鲜 vs. 干"
+    },
+    {
+      "type": "p",
+      "text": "鲜面条口感 superior 但易变质。干面条保质期长、复水好。最佳：亚洲市场买鲜；否则，优质干面是可靠备选。"
+    },
+    {
+      "type": "note",
+      "text": "秘诀：煮面水一定要多放盐。这给面条本身调味，不只靠酱汁。"
+    }
+  ]
+};
+
+const chineseRiceTypes: BlogPost = {
+  "id": "chinese-rice-types",
+  "slug": "chinese-rice-types",
+  "titleEn": "Rice Varieties for Chinese Cooking",
+  "titleZh": "米种：长粒/圆粒/糯米",
+  "excerptEn": "Not all rice is created equal in Chinese cooking. Short-grain for porridge, long-grain for stir-fry, glutinous for dim sum — using the wrong rice type changes the entire dish.",
+  "excerptZh": "中餐里不是所有米都一样。圆粒做粥，长粒做炒饭，糯米做点心——用错米种会改变整道菜。",
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "rice",
+    "chinese rice",
+    "short grain",
+    "glutinous rice",
+    "jasmine rice"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-04",
+  "coverImage": "/images/blog/chinese-rice-types.png",
+  "relatedRecipeSlugs": [
+    "yangzhou-fried-rice",
+    "congee-basic",
+    "sticky-rice-dumplings"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Rice (米饭, mǐ fàn) is the backbone of Chinese cuisine, but the type matters enormously. A sticky glutinous rice meant for dumplings will fail in a stir-fry, while long-grain rice meant for fried rice will be too dry for congee."
+    },
+    {
+      "type": "h2",
+      "text": "The Three Main Types"
+    },
+    {
+      "type": "p",
+      "text": "Short-grain white rice (粳米, jīng mǐ): sticky, round, the everyday table rice. Used for congee, steamed rice, and rice bowls. Long-grain rice (籼米, xiān mǐ): separate grains, less sticky. Essential for fried rice — the drier texture prevents mushiness. Glutinous rice (糯米, nuò mǐ): completely sticky when cooked. Used for dim sum, zongzi, and sweet dishes."
+    },
+    {
+      "type": "h2",
+      "text": "Specialty Rices"
+    },
+    {
+      "type": "p",
+      "text": "Sushi rice is essentially short-grain japonica — fine for Chinese cooking. Brown rice adds nuttiness but requires longer cooking. Black rice (黑米, hēi mǐ) is nutritious but chewy — best mixed with white rice. Red rice (红米, hóng mǐ) has a similar profile."
+    },
+    {
+      "type": "h2",
+      "text": "Washing and Soaking"
+    },
+    {
+      "type": "p",
+      "text": "Short-grain rice: wash 2-3 times until water runs clear. Glutinous rice: soak 2-4 hours before cooking for even texture. Long-grain rice: quick rinse is sufficient — don‘t overwash or you‘ll lose flavor."
+    },
+    {
+      "type": "note",
+      "text": "The rice-to-water ratio varies: short-grain 1:1.1, long-grain 1:1.3, glutinous 1:1.2. Adjust based on your pot and preference."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "米饭是中餐的基石，但米种至关重要。做点心的糯米用在炒饭里会失败，做炒饭的长粒米做粥会太干。"
+    },
+    {
+      "type": "h2",
+      "text": "三大类"
+    },
+    {
+      "type": "p",
+      "text": "短粒白米（粳米 jīng mǐ）：黏、圆、日常饭。做粥、蒸饭、饭 bowl。长粒米（籼米 xiān mǐ）：粒粒分明、不太黏。炒饭必备——干爽质地防黏。糯米（nuò mǐ）：煮熟后完全黏。做点心、粽子、甜品。"
+    },
+    {
+      "type": "h2",
+      "text": "特色米"
+    },
+    {
+      "type": "p",
+      "text": "寿司米本质是短粒粳米——中餐可用。糙米加坚果香但需更长烹饪。黑米（hēi mǐ）营养但嚼劲——最好混白米。红米（hóng mǐ）类似。"
+    },
+    {
+      "type": "h2",
+      "text": "洗和泡"
+    },
+    {
+      "type": "p",
+      "text": "短粒米：洗 2-3 次至水清。糯米：煮前泡 2-4 小时确保均匀。长粒米：快冲即可——别过度洗，会流失风味。"
+    },
+    {
+      "type": "note",
+      "text": "米水比例：短粒 1:1.1，长粒 1:1.3，糯米 1:1.2。根据锅具和偏好调整。"
+    }
+  ]
+};
+
+const sesameOilUses: BlogPost = {
+  "id": "sesame-oil-uses",
+  "slug": "sesame-oil-uses",
+  "titleEn": "Sesame Oil: Finish, Never Fry",
+  "titleZh": "香油：只淋不炒",
+  "excerptEn": "Sesame oil (香油, xiāng yóu) is a flavor bomb — but only if you add it at the end. Cooking it destroys its delicate aroma. Here‘s how to use this essential Chinese ingredient correctly.",
+  "excerptZh": "香油是风味炸弹——但前提是最后加。炒它会毁掉精致香气。这里教你正确使用这种中餐必备调料。",
+  "categoryKey": "technique",
+  "categoryEn": "Technique",
+  "categoryZh": "技法",
+  "tags": [
+    "sesame oil",
+    "xiang you",
+    "finishing oil",
+    "chinese seasoning"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-05",
+  "coverImage": "/images/blog/sesame-oil-uses.png",
+  "relatedRecipeSlugs": [
+    "scallion-oil-noodles",
+    "cold-noodle-salad",
+    "egg-drop-soup"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Sesame oil (香油 or 芝麻油, zhī ma yóu) is the most recognizable Chinese finishing oil. Its nutty, toasted aroma transforms simple dishes into something special — but only when added correctly. The biggest mistake? Using it as a cooking oil."
+    },
+    {
+      "type": "h2",
+      "text": "Why You Shouldn‘t Fry With It"
+    },
+    {
+      "type": "p",
+      "text": "Sesame oil has a low smoke point (around 350°F/175°C for toasted varieties) and its delicate flavor compounds break down under high heat. Frying with it produces a bitter, acrid taste and wastes expensive oil. Always use neutral oils (vegetable, canola, peanut) for cooking."
+    },
+    {
+      "type": "h2",
+      "text": "The Right Way to Use"
+    },
+    {
+      "type": "p",
+      "text": "Add sesame oil in the last 30 seconds of cooking, or drizzle directly onto finished dishes. Common uses: a few drops in soups and congee, a teaspoon in noodle dishes, a dash in marinades and dipping sauces."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Soups: ½-1 tsp per bowl",
+        "Noodles: 1 tsp tossed at the end",
+        "Marinades: 1 tbsp per cup of sauce",
+        "Dipping sauces: a few drops to finish"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Toasted vs. Refined"
+    },
+    {
+      "type": "p",
+      "text": "Toasted sesame oil (炒香 sesame oil) is dark, potent, and aromatic — this is what you want for finishing. Refined sesame oil is pale and mild — more like a cooking oil. Don‘t confuse the two. Chinese labels: 香油 (toasted), 芝麻油/淡香油 (refined)."
+    },
+    {
+      "type": "note",
+      "text": "Pro tip: keep toasted sesame oil in the fridge after opening. It stays fresh for 6 months vs. 3 months at room temperature."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "香油是识别度最高的中式 finishing oil。它的坚果烤香能把简单菜肴变得特别——但前提是加对时机。最大错误：用它炒菜。"
+    },
+    {
+      "type": "h2",
+      "text": "为什么不该用它炒"
+    },
+    {
+      "type": "p",
+      "text": "香油烟点低（焙香种约 350°F/175°C），精致风味化合物在高温下分解。炒它会产生苦涩辛辣味，浪费昂贵的油。炒菜永远用中性油（植物油、菜籽油、花生油）。"
+    },
+    {
+      "type": "h2",
+      "text": "正确用法"
+    },
+    {
+      "type": "p",
+      "text": "烹饪最后 30 秒加香油，或直接淋在成品菜上。常见用法：汤和粥加几滴，面条加一茶匙，腌料和蘸酱加一点。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "汤：每碗 ½-1 茶匙",
+        "面条：最后拌入 1 茶匙",
+        "腌料：每杯酱汁 1 汤匙",
+        "蘸酱：几滴收尾"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "焙香 vs. 精炼"
+    },
+    {
+      "type": "p",
+      "text": "焙香香油（炒香）深色、浓郁、芳香——这是你要的 finishing oil。精炼香油浅色、温和——更像炒菜油。别搞混。中文标签：香油（焙香），芝麻油/淡香油（精炼）。"
+    },
+    {
+      "type": "note",
+      "text": "秘诀：开封后焙香香油放冰箱。保鲜 6 个月 vs. 室温 3 个月。"
+    }
+  ]
+};
+
+const coldNoodleSauceRecipe: BlogPost = {
+  "id": "cold-noodle-sauce-recipe",
+  "slug": "cold-noodle-sauce-recipe",
+  "titleEn": "Building a Balanced Liang Ban Sauce",
+  "titleZh": "凉拌汁万能比例",
+  "excerptEn": "Liang ban (凉拌) sauces are the soul of Chinese cold dishes. Master the sour-salty-sweet-spicy balance and you can dress any vegetable, noodle, or protein with confidence.",
+  "excerptZh": "凉拌汁是中餐冷菜的灵魂。掌握酸-咸-甜-辣的平衡，你就能自信地拌任何蔬菜、面条或蛋白质。",
+  "categoryKey": "technique",
+  "categoryEn": "Technique",
+  "categoryZh": "技法",
+  "tags": [
+    "liang ban",
+    "cold sauce",
+    "dressing",
+    "chinese salad"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-06",
+  "coverImage": "/images/blog/cold-noodle-sauce-recipe.png",
+  "relatedRecipeSlugs": [
+    "cucumber-salad",
+    "cold-noodle-salad",
+    "tofu-cold-appetizer"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Liang ban (凉拌) is one of Chinese cooking‘s most accessible techniques. The sauce balances four flavors — sour, salty, sweet, and spicy — in proportions that work for almost any ingredient. Once you memorize the ratio, you can create endless variations."
+    },
+    {
+      "type": "h2",
+      "text": "The Golden Ratio"
+    },
+    {
+      "type": "p",
+      "text": "Start with this base ratio and adjust to taste: 2 parts soy sauce (salty), 1 part Chinkiang vinegar (sour), ½ part sugar (sweet), ½ part sesame oil (aromatic), plus garlic and chili to taste. This is your template — tweak each component based on the ingredient."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Soy sauce: 2 parts (light soy for salt, dark for color)",
+        "Vinegar: 1 part (Chinkiang/black vinegar ideal)",
+        "Sugar: ½ part (white or rock sugar)",
+        "Sesame oil: ½ part (toasted)",
+        "Aromatics: minced garlic, chili oil, scallion"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Adjusting for Ingredients"
+    },
+    {
+      "type": "p",
+      "text": "Leafy greens need more vinegar to cut bitterness. Root vegetables benefit from more sugar to balance earthiness. Protein (tofu, chicken) needs more soy sauce for umami. Noodles require a thinner sauce — add a splash of cooking water or broth."
+    },
+    {
+      "type": "h2",
+      "text": "Pro Tips"
+    },
+    {
+      "type": "p",
+      "text": "Always taste the sauce before adding to ingredients. Adjust while warm for dressings that will be served hot. For cold dishes, let the sauce sit 10 minutes so flavors meld. Remember: you can always add more, but you can‘t take it away."
+    },
+    {
+      "type": "note",
+      "text": "The best liang ban sauces are made to order — never pre-mixed in advance. Fresh aromatics make the difference between good and great."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "凉拌是中餐最容易上手的技法之一。酱汁平衡四种味道——酸、咸、甜、辣——比例适用于几乎所有食材。记住这个比例，就能创造无限变化。"
+    },
+    {
+      "type": "h2",
+      "text": "黄金比例"
+    },
+    {
+      "type": "p",
+      "text": "从基础比例开始，按口味调整：2 份酱油（咸）、1 份镇江香醋（酸）、½ 份糖（甜）、½ 份香油（香），加蒜和辣椒调味。这是你的模板——根据食材调整各成分。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "酱油：2 份（生抽提咸，老抽上色）",
+        "醋：1 份（镇江/黑醋最佳）",
+        "糖：½ 份（白糖或冰糖）",
+        "香油：½ 份（焙香）",
+        "香料：蒜末、辣椒油、葱"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "根据食材调整"
+    },
+    {
+      "type": "p",
+      "text": "叶菜需要更多醋去苦。根茎类需要更多糖平衡土腥。蛋白质（豆腐、鸡肉）需要更多酱油提鲜。面条需要薄酱汁——加一勺 cooking water 或高汤。"
+    },
+    {
+      "type": "h2",
+      "text": "秘诀"
+    },
+    {
+      "type": "p",
+      "text": "加食材前务必尝酱汁。热拌酱汁趁热调。冷菜让酱汁静置 10 分钟让风味融合。记住：只能加更多，不能撤回来。"
+    },
+    {
+      "type": "note",
+      "text": "最好的凉拌汁现做现用——别提前混好。新鲜香料是好与伟大的差别。"
+    }
+  ]
+};
+
 
 const vinegarInChineseCooking: BlogPost = {
   id: "vinegar-in-chinese-cooking",
@@ -513,7 +1231,8 @@ const vinegarInChineseCooking: BlogPost = {
 
 
 
-export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, vinegarInChineseCooking];
+
+export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
