@@ -56,5 +56,5 @@ export const sweet_sour_pork: Recipe = {
     "搭配蛋炒饭和清炒时蔬，经典一餐。"
   ],
   "relatedSlugs": ["kung-pao-chicken", "twice-cooked-pork", "egg-fried-rice"],
-  "image": "/images/recipes/sweet-sour-pork.svg"
+  "image": "/images/recipes/sweet-sour-pork.webp"
 };

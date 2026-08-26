@@ -56,5 +56,5 @@ export const sweet_sour_ribs: Recipe = {
     "隔夜加热用蒸笼，釉面会重新恢复光泽。"
   ],
   "relatedSlugs": ["sweet-sour-pork", "hongshao-pork", "potato-beef-stew"],
-  "image": "/images/recipes/sweet-sour-ribs.svg"
+  "image": "/images/recipes/sweet-sour-ribs.webp"
 };

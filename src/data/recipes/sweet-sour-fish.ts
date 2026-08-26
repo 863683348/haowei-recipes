@@ -56,5 +56,5 @@ export const sweet_sour_fish: Recipe = {
     "整鱼寓意年年有余，是节庆必备菜。"
   ],
   "relatedSlugs": ["sweet-sour-pork", "sweet-sour-ribs", "winter-melon-soup"],
-  "image": "/images/recipes/sweet-sour-fish.svg"
+  "image": "/images/recipes/sweet-sour-fish.webp"
 };

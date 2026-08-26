@@ -52,5 +52,5 @@ export const tomato_egg_noodles: Recipe = {
     "如果用无麸质面条，这道菜天生无麸质。"
   ],
   "relatedSlugs": ["tomato-and-egg", "egg-fried-rice", "scallion-noodles"],
-  "image": "/images/recipes/tomato-egg-noodles.svg"
+  "image": "/images/recipes/tomato-egg-noodles.webp"
 };

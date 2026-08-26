@@ -186,5 +186,5 @@ export const egg_drop_soup: Recipe = {
     "winter-melon-soup",
     "egg-fried-rice"
   ],
-  "image": "/images/recipes/egg-drop-soup.svg"
+  "image": "/images/recipes/egg-drop-soup.webp"
 };
