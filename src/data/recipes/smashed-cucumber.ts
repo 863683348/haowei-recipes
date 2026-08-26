@@ -203,5 +203,5 @@ export const smashedCucumber: Recipe = {
     "egg-fried-rice",
     "tomato-and-egg",
   ],
-  image: "/images/recipes/garlic-chives-scrambled-eggs.webp",
+  image: "/images/recipes/smashed-cucumber.svg",
 };
