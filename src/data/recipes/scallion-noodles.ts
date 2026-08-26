@@ -51,5 +51,5 @@ export const scallion_noodles: Recipe = {
     "炸葱可以提前做多批，冷藏保存一周。"
   ],
   relatedSlugs: ["tomato-egg-noodles", "egg-fried-rice", "yangchun-noodles"],
-  image: "/images/recipes/scallion-noodles.svg"
+  image: "/images/recipes/scallion-noodles.webp"
 };
