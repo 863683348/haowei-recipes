@@ -85,5 +85,5 @@ export const yuXiangPork: Recipe = {
     "鱼香味的「四味和谐」：甜酸咸辣——四种味道都要感知得到，但不能有任何一种盖过其他。",
   ],
   relatedSlugs: ["twice-cooked-pork", "mapo-tofu", "lazi-diced-chicken", "egg-fried-rice"],
-  image: "/images/recipes/yu-xiang-pork.svg",
+  image: "/images/recipes/yu-xiang-pork.webp",
 };

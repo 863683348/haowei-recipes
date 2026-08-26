@@ -1,35 +1,13 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8A3A2A"/>
-      <stop offset="1" stop-color="#C45E3A"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1080" cy="90" r="180" fill="#FBE0D0" opacity="0.18"/>
-  <circle cx="80" cy="560" r="140" fill="#FFFFFF" opacity="0.10"/>
-  <text x="600" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" fill="#FFFFFF">Sour Soup Dumplings</text>
-  <text x="600" y="385" text-anchor="middle" font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="50" fill="#FBE0D0">酸汤水饺 · sour soup dumplings</text>
-  <text x="600" y="505" text-anchor="middle" font-size="66">🥟</text>
-  <text x="600" y="588" text-anchor="middle" font-family="Georgia, serif" font-size="28" letter-spacing="6" fill="#FFFFFF" opacity="0.9">HǎoWèi 好味 · 家常菜</text>
-=======
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FDF6EC"/>
-      <stop offset="100%" stop-color="#F3E3C8"/>
+      <stop offset="0%" stop-color="#E8EEF8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.45"/>
     </linearGradient>
   </defs>
   <rect width="800" height="600" fill="url(#bg)"/>
-  <g stroke="#C77B2E" stroke-width="6" fill="none" opacity="0.85">
-    <path d="M250 360 A150 60 0 0 0 550 360 Z" fill="#FFFFFF" fill-opacity="0.6"/>
-    <ellipse cx="400" cy="360" rx="150" ry="42" fill="#FFFFFF" fill-opacity="0.5"/>
-    <path d="M286 332 q114 -70 228 0" stroke-width="5" opacity="0.7"/>
-  </g>
-  <text x="400" y="250" font-family="'Noto Serif SC','Songti SC',serif" font-size="52" font-weight="700" fill="#2A2118" text-anchor="middle">酸汤水饺</text>
-  <text x="400" y="300" font-family="'Noto Sans SC',sans-serif" font-size="24" fill="#8A6D3B" text-anchor="middle" letter-spacing="1">sour soup dumplings</text>
-  <text x="400" y="470" font-family="'Noto Sans SC',sans-serif" font-size="26" font-weight="700" fill="#C77B2E" text-anchor="middle" letter-spacing="2">HǎoWèi 好味</text>
-  <text x="400" y="505" font-family="sans-serif" font-size="16" fill="#B08C5A" text-anchor="middle">Authentic Chinese Home Cooking</text>
->>>>>>> origin/main
+  <text x="400" y="270" font-family="'Noto Serif SC','Songti SC',serif" font-size="52" font-weight="700" fill="#14233A" text-anchor="middle">酸汤水饺</text>
+  <text x="400" y="320" font-family="'Noto Sans SC',sans-serif" font-size="24" fill="#3A6DB5" text-anchor="middle" letter-spacing="1">Sour Soup Dumplings</text>
+  <text x="400" y="470" font-family="'Noto Sans SC',sans-serif" font-size="26" font-weight="700" fill="#3A6DB5" text-anchor="middle" letter-spacing="2">HǎoWèi 好味</text>
+  <text x="400" y="505" font-family="sans-serif" font-size="16" fill="#14233A" opacity="0.6" text-anchor="middle">Authentic Chinese Home Cooking</text>
 </svg>

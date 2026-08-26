@@ -105,6 +105,30 @@ export const substitutions: Substitution[] = [
     noteZh: "简单自制版；冷藏保存。",
     type: "asian2local",
   },
+  {
+    id: "sub-chu-hou",
+    from: "Chu hou paste (zhuhou sauce)",
+    fromZh: "柱侯酱",
+    to: "Hoisin sauce + black bean paste (1:1) + pinch of five-spice",
+    toZh: "海鲜酱 + 豆酱（1:1）+ 一小撮五香粉",
+    ratio: "1:1",
+    fidelity: 3,
+    note: "Chu hou is a braising base — sweet-savory and bean-forward. Hoisin gives the sweet body, black bean paste adds the fermented depth, five-spice closes the gap.",
+    noteZh: "柱侯酱是红烧底味，甜咸、豆香。海鲜酱提供甜体，豆酱补发酵鲜味，五香粉补齐香气。",
+    type: "asian2local",
+  },
+  {
+    id: "sub-zha-cai",
+    from: "Zha cai (Sichuan preserved mustard greens)",
+    fromZh: "榨菜",
+    to: "Rinsed sauerkraut or mild kimchi + pinch of salt",
+    toZh: "冲洗过的德式酸菜或微辣韩式泡菜 + 一小撮盐",
+    ratio: "1:1 (rinse to taste)",
+    fidelity: 3,
+    note: "Zha cai is salty, crunchy, faintly sour. Rinsed sauerkraut mimics the crunch and tang; add a pinch of salt to match the saltiness. Great in noodles, fried rice, stir-fries.",
+    noteZh: "榨菜咸脆微酸。冲洗过的德式酸菜近似其脆与酸，加一小撮盐补咸度，用于面条、炒饭、小炒。",
+    type: "asian2local",
+  },
 
   /* ========== 香料 ========== */
   {
@@ -277,19 +301,46 @@ export const substitutions: Substitution[] = [
     noteZh: "经典家常配方；番茄酱提供色泽与浓稠度。",
     type: "pair",
   },
+
+  /* ========== 豆制品 / 主食（P0 补 GSC 缺口词） ========== */
+  {
+    id: "sub-dou-gan",
+    from: "Dou gan (dried tofu / pressed tofu)",
+    fromZh: "豆干",
+    to: "Fresh firm tofu, or slice dou gan directly into stir-fry",
+    toZh: "新鲜老豆腐，或豆干直接切丝入菜",
+    ratio: "1:1 by weight",
+    fidelity: 4,
+    note: "Dou gan recipe: slice thin into strips and stir-fry with pork or beef, or blanch and toss in a cold sesame-soy salad. Holds shape far better than soft tofu.",
+    noteZh: "豆干做法：切丝与肉丝同炒，或焯水后拌芝麻酱油凉菜。比嫩豆腐更耐炒、不易散。",
+    type: "asian2local",
+  },
+  {
+    id: "sub-chaobing",
+    from: "Chaobing (stir-fried flatbread), e.g. xia chaobing (shrimp)",
+    fromZh: "炒饼（如虾炒饼）",
+    to: "Day-old flatbread cut into strips, or leftover rice / noodles",
+    toZh: "剩饼切丝翻炒，或用剩饭/面条替代面饼",
+    ratio: "1:1 by volume",
+    fidelity: 4,
+    note: "Xia chaobing (shrimp stir-fried flatbread): pan-fry julienned flatbread with shrimp, egg and cabbage. A great way to use leftover bing.",
+    noteZh: "虾炒饼：饼丝与虾仁、鸡蛋、白菜同炒。是消耗剩饼的好做法。",
+    type: "asian2local",
+  },
 ];
 
-/** 按原食材名查找替代方案 */
+/** 按原食材名查找替代方案（分词匹配，整句搜索词也能命中） */
 export function findSubstitution(query: string): Substitution[] {
-  const q = query.toLowerCase().trim();
-  if (!q) return [];
-  return substitutions.filter(
-    (s) =>
-      s.from.toLowerCase().includes(q) ||
-      (s.fromZh && s.fromZh.includes(query.trim())) ||
-      s.to.toLowerCase().includes(q) ||
-      (s.toZh && s.toZh.includes(query.trim()))
-  );
+  const raw = query.toLowerCase().trim();
+  if (!raw) return [];
+  // 按空格/逗号分词，长度 > 2 的 token 才参与匹配（忽略 to/of 等短词噪音），
+  // 任一 token 命中即返回 —— 让 "doubanjiang replacement" / "chu hou paste substitute" 等整句命中对应条目。
+  const tokens = raw.split(/[\s,]+/).filter((tok) => tok.length > 2);
+  const lookFor = tokens.length ? tokens : [raw];
+  return substitutions.filter((s) => {
+    const hay = `${s.from} ${s.fromZh ?? ""} ${s.to} ${s.toZh ?? ""}`.toLowerCase();
+    return lookFor.some((tok) => hay.includes(tok));
+  });
 }
 
 /** Top 20 高频替代（Spec 验收：100% 覆盖） */

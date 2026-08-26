@@ -277,5 +277,5 @@ export const cashew_chicken: Recipe = {
     "lazi-diced-chicken",
     "home-style-tofu"
   ],
-  "image": "/images/recipes/cashew-chicken.svg"
+  "image": "/images/recipes/cashew-chicken.webp"
 };

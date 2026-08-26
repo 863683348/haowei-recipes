@@ -6,6 +6,16 @@ import { isLocale, pageAlternates, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { notFound } from "next/navigation";
 
+// P0：把 GSC 高频长尾搜索词（柱侯酱/榨菜/豆瓣酱替代）直接落到页面，强化这些词的相关性
+const faqItems = [
+  { qEn: "Chu hou paste substitute", qZh: "柱侯酱用什么代替", id: "sub-chu-hou" },
+  { qEn: "Zha cai substitute", qZh: "榨菜用什么代替", id: "sub-zha-cai" },
+  { qEn: "Doubanjiang replacement", qZh: "豆瓣酱用什么代替", id: "sub-doubanjiang" },
+  { qEn: "Dou gan recipe", qZh: "豆干怎么做", id: "sub-dou-gan" },
+  { qEn: "Xia chaobing (shrimp stir-fried flatbread)", qZh: "虾炒饼怎么做", id: "sub-chaobing" },
+];
+const faqById = new Map(substitutions.map((s) => [s.id, s]));
+
 export const dynamic = "force-static";
 
 interface Props {
@@ -42,6 +52,64 @@ export default async function SubstitutionsPage({ params }: Props) {
       <div className="mt-8">
         <SubstitutionPanel />
       </div>
+
+      {/* P0：直接覆盖 GSC 长尾搜索词，让页面文本包含这些查询词 */}
+      <section className="mt-12">
+        <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+          {isZh ? "大家常搜的替换方案" : "Substitutions people search for"}
+        </h2>
+        <div className="mt-4 space-y-3">
+          {faqItems.map((item) => {
+            const s = faqById.get(item.id);
+            if (!s) return null;
+            return (
+              <div
+                key={item.id}
+                className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-4 shadow-sm"
+              >
+                <p className="mb-2 text-sm font-semibold text-[var(--hw-ginger)]">
+                  {isZh ? item.qZh : item.qEn}
+                </p>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="font-semibold text-[var(--hw-fg)]">
+                    {isZh ? s.fromZh ?? s.from : s.from}
+                    {!isZh && s.fromZh && (
+                      <span className="ml-1.5 font-normal text-[var(--hw-fg-muted)]">
+                        {s.fromZh}
+                      </span>
+                    )}
+                  </span>
+                  <span
+                    className="text-sm"
+                    title={t.recipeDetail.fidelity.replace("{f}", String(s.fidelity))}
+                  >
+                    {[1, 2, 3, 4, 5].map((n) => (
+                      <StarIcon
+                        key={n}
+                        className={
+                          n <= s.fidelity
+                            ? "inline-block h-3.5 w-3.5 fill-[var(--hw-ginger)] text-[var(--hw-ginger)]"
+                            : "inline-block h-3.5 w-3.5 text-[var(--hw-border)]"
+                        }
+                      />
+                    ))}
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-[var(--hw-fg)]">
+                  <span className="font-medium text-[var(--hw-scallion)]">
+                    {t.recipeDetail.use}
+                  </span>
+                  {isZh ? s.toZh ?? s.to : s.to}{" "}
+                  <span className="text-[var(--hw-fg-muted)]">({s.ratio})</span>
+                </p>
+                <p className="mt-1 text-xs text-[var(--hw-fg-muted)]">
+                  {isZh ? s.noteZh ?? s.note : s.note}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
       <section className="mt-12">
         <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">

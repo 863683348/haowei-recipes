@@ -264,5 +264,5 @@ export const kouShuiChicken: Recipe = {
     "kung-pao-chicken",
     "spicy-potato-shreds",
   ],
-  image: "/images/recipes/kou-shui-chicken.svg",
+  image: "/images/recipes/kou-shui-chicken.webp",
 };

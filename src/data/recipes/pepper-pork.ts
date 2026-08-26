@@ -72,5 +72,5 @@ export const pepperPork: Recipe = {
     "甜椒最合适——清甜爽脆。不要用辣椒做这道菜。",
   ],
   relatedSlugs: ["egg-fried-rice", "yangzhou-fried-rice", "scallion-noodles", "twice-cooked-pork"],
-  image: "/images/recipes/pepper-pork.svg",
+  image: "/images/recipes/pepper-pork.webp",
 };

@@ -29,7 +29,7 @@ export const yangchun_noodles: Recipe = {
   ],
   "story": "阳春面 is the noodle equivalent of a blank canvas — deceptively simple, impossible to perfect, and deeply comforting. The name means \"spring face\" and refers to the clear, pale broth that looks like the first warm days of spring. Nanjing and Shanghai variants exist, but the principle is universal: great broth, good noodles, a pinch of scallion.",
   "storyZh": "阳春面相当于面条界的留白——看似简单，极难做好，但温暖治愈。\"阳春\"指清澈的淡色汤底，如同春日初暖。南京和上海各有版本，但原则一致：好汤、好面、一撮葱。",
-  "image": "/images/recipes/yangchun-noodles.svg",
+  "image": "/images/recipes/yangchun-noodles.webp",
   "ingredients": [
     {
       "id": "yn-01",

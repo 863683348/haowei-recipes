@@ -205,5 +205,5 @@ export const tomato_egg_drop_soup: Recipe = {
     "tomato-eggs",
     "winter-melon-soup"
   ],
-  "image": "/images/recipes/tomato-and-egg.webp"
+  "image": "/images/recipes/tomato-egg-drop-soup.webp"
 };

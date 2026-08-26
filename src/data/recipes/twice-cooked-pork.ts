@@ -73,5 +73,5 @@ export const twiceCookedPork: Recipe = {
     "蒜苗和小葱不同——蒜苗有更粗的白色茎和扁平的绿色叶子。买不到可用粗杆小葱代替。",
   ],
   relatedSlugs: ["mapo-tofu", "twice-cooked-pork", "home-style-pork", "yu-xiang-pork"],
-  image: "/images/recipes/twice-cooked-pork.svg",
+  image: "/images/recipes/twice-cooked-pork.webp",
 };

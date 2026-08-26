@@ -179,5 +179,5 @@ export const garlicRomaine: Recipe = {
     "想要更鲜：出锅前加一撮鸡精（或素食菌菇粉）。",
   ],
   relatedSlugs: ["oyster-sauce-lettuce", "stir-fried-bok-choy", "tomato-eggs"],
-  image: "/images/recipes/garlic-romaine.svg",
+  image: "/images/recipes/garlic-romaine.webp",
 };

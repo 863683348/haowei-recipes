@@ -64,7 +64,7 @@
 | 11 | 糖醋家族 | 糖醋里脊 / 糖醋排骨 / 糖醋鱼 | sweet and sour pork | ✅
 | 12 | 快手汤羹 | 紫菜蛋花汤 / 番茄蛋花汤 / 冬瓜排骨汤 | egg drop soup, winter melon soup | ✅
 | 13 | 凉菜开场 | 拍黄瓜 / 凉拌木耳 / 口水鸡 | smashed cucumber, kou shui chicken | ✅
-| 14 | 肉丝与回锅 | 蒜苗回锅肉 / 青椒肉丝 / 鱼香肉丝 | twice cooked pork, yu xiang |
+| 14 | 肉丝与回锅 | 蒜苗回锅肉 / 青椒肉丝 / 鱼香肉丝 | twice cooked pork, yu xiang | ✅
 | 15 | 饺子工坊 | 白菜猪肉饺 / 韭菜鸡蛋饺 / 酸汤水饺 | potstickers, jiaozi |
 | 16 | 鸡腿鸡翅 | 可乐鸡翅 / 酱油鸡翅 / 香煎鸡排 | coke chicken wings, soy wings |
 | 17 | 猪肉家常 | 农家小炒肉 / 木须肉 / 京酱肉丝 | home style pork, moo shu pork |

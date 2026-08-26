@@ -36,5 +36,5 @@ export const porkCabbageDumplings: Recipe = {
   tips: ["Use fresh ingredients."],
   tipsZh: ["使用新鲜食材。"],
   relatedSlugs: ["tomato-and-egg", "egg-fried-rice"],
-  image: "/images/recipes/pork-cabbage-dumplings.svg",
+  image: "/images/recipes/pork-cabbage-dumplings.webp",
 };
