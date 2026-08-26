@@ -105,6 +105,30 @@ export const substitutions: Substitution[] = [
     noteZh: "简单自制版；冷藏保存。",
     type: "asian2local",
   },
+  {
+    id: "sub-chu-hou",
+    from: "Chu hou paste (zhuhou sauce)",
+    fromZh: "柱侯酱",
+    to: "Hoisin sauce + black bean paste (1:1) + pinch of five-spice",
+    toZh: "海鲜酱 + 豆酱（1:1）+ 一小撮五香粉",
+    ratio: "1:1",
+    fidelity: 3,
+    note: "Chu hou is a braising base — sweet-savory and bean-forward. Hoisin gives the sweet body, black bean paste adds the fermented depth, five-spice closes the gap.",
+    noteZh: "柱侯酱是红烧底味，甜咸、豆香。海鲜酱提供甜体，豆酱补发酵鲜味，五香粉补齐香气。",
+    type: "asian2local",
+  },
+  {
+    id: "sub-zha-cai",
+    from: "Zha cai (Sichuan preserved mustard greens)",
+    fromZh: "榨菜",
+    to: "Rinsed sauerkraut or mild kimchi + pinch of salt",
+    toZh: "冲洗过的德式酸菜或微辣韩式泡菜 + 一小撮盐",
+    ratio: "1:1 (rinse to taste)",
+    fidelity: 3,
+    note: "Zha cai is salty, crunchy, faintly sour. Rinsed sauerkraut mimics the crunch and tang; add a pinch of salt to match the saltiness. Great in noodles, fried rice, stir-fries.",
+    noteZh: "榨菜咸脆微酸。冲洗过的德式酸菜近似其脆与酸，加一小撮盐补咸度，用于面条、炒饭、小炒。",
+    type: "asian2local",
+  },
 
   /* ========== 香料 ========== */
   {
@@ -279,17 +303,18 @@ export const substitutions: Substitution[] = [
   },
 ];
 
-/** 按原食材名查找替代方案 */
+/** 按原食材名查找替代方案（分词匹配，整句搜索词也能命中） */
 export function findSubstitution(query: string): Substitution[] {
-  const q = query.toLowerCase().trim();
-  if (!q) return [];
-  return substitutions.filter(
-    (s) =>
-      s.from.toLowerCase().includes(q) ||
-      (s.fromZh && s.fromZh.includes(query.trim())) ||
-      s.to.toLowerCase().includes(q) ||
-      (s.toZh && s.toZh.includes(query.trim()))
-  );
+  const raw = query.toLowerCase().trim();
+  if (!raw) return [];
+  // 按空格/逗号分词，长度 > 2 的 token 才参与匹配（忽略 to/of 等短词噪音），
+  // 任一 token 命中即返回 —— 让 "doubanjiang replacement" / "chu hou paste substitute" 等整句命中对应条目。
+  const tokens = raw.split(/[\s,]+/).filter((tok) => tok.length > 2);
+  const lookFor = tokens.length ? tokens : [raw];
+  return substitutions.filter((s) => {
+    const hay = `${s.from} ${s.fromZh ?? ""} ${s.to} ${s.toZh ?? ""}`.toLowerCase();
+    return lookFor.some((tok) => hay.includes(tok));
+  });
 }
 
 /** Top 20 高频替代（Spec 验收：100% 覆盖） */

@@ -111,9 +111,47 @@ export function getRecipeBySlug(slug: string): Recipe | undefined {
 }
 
 export function getRelatedRecipes(recipe: Recipe): Recipe[] {
-  return recipe.relatedSlugs
+  // 1) 手动精品互链优先（豆腐/甜酸/牛肉/面条/绿叶菜组等主题强相关）
+  const manual = recipe.relatedSlugs
     .map((slug) => getRecipeBySlug(slug))
     .filter((r): r is Recipe => Boolean(r));
+  if (manual.length >= 3) return manual.slice(0, 4);
+
+  // 2) 若手动项只是通用占位（如仅 [tomato-and-egg, egg-fried-rice]），改自动按相关性互链
+  const GENERIC = new Set(["tomato-and-egg", "egg-fried-rice"]);
+  const isGenericOnly =
+    manual.length > 0 && manual.every((r) => GENERIC.has(r.slug));
+  if (!isGenericOnly && manual.length > 0) return manual.slice(0, 4);
+
+  // 3) 自动相关性：cuisine + 共享 tags + 共享食材 + 名称关键词
+  const tags = new Set(recipe.tags);
+  const ing = new Set(recipe.ingredients.map((i) => i.nameEn.toLowerCase()));
+  const nameWords = new Set(recipe.titleEn.toLowerCase().split(/\s+/));
+  const scored = recipes
+    .filter((r) => r.slug !== recipe.slug)
+    .map((r) => {
+      let score = 0;
+      if (r.cuisine === recipe.cuisine) score += 3;
+      for (const t of r.tags) if (tags.has(t)) score += 2;
+      for (const i of r.ingredients)
+        if (ing.has(i.nameEn.toLowerCase())) score += 1;
+      for (const w of r.titleEn.toLowerCase().split(/\s+/))
+        if (nameWords.has(w) && w.length > 2) score += 1;
+      return { r, score };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map((x) => x.r);
+
+  if (scored.length > 0) return scored;
+
+  // 4) fallback：同 cuisine 前 4，再不行取前 4
+  const byCuisine = recipes.filter(
+    (r) => r.slug !== recipe.slug && r.cuisine === recipe.cuisine
+  );
+  if (byCuisine.length > 0) return byCuisine.slice(0, 4);
+  return recipes.filter((r) => r.slug !== recipe.slug).slice(0, 4);
 }
 
 export interface RecipeFilter {
