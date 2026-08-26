@@ -301,6 +301,32 @@ export const substitutions: Substitution[] = [
     noteZh: "经典家常配方；番茄酱提供色泽与浓稠度。",
     type: "pair",
   },
+
+  /* ========== 豆制品 / 主食（P0 补 GSC 缺口词） ========== */
+  {
+    id: "sub-dou-gan",
+    from: "Dou gan (dried tofu / pressed tofu)",
+    fromZh: "豆干",
+    to: "Fresh firm tofu, or slice dou gan directly into stir-fry",
+    toZh: "新鲜老豆腐，或豆干直接切丝入菜",
+    ratio: "1:1 by weight",
+    fidelity: 4,
+    note: "Dou gan recipe: slice thin into strips and stir-fry with pork or beef, or blanch and toss in a cold sesame-soy salad. Holds shape far better than soft tofu.",
+    noteZh: "豆干做法：切丝与肉丝同炒，或焯水后拌芝麻酱油凉菜。比嫩豆腐更耐炒、不易散。",
+    type: "asian2local",
+  },
+  {
+    id: "sub-chaobing",
+    from: "Chaobing (stir-fried flatbread), e.g. xia chaobing (shrimp)",
+    fromZh: "炒饼（如虾炒饼）",
+    to: "Day-old flatbread cut into strips, or leftover rice / noodles",
+    toZh: "剩饼切丝翻炒，或用剩饭/面条替代面饼",
+    ratio: "1:1 by volume",
+    fidelity: 4,
+    note: "Xia chaobing (shrimp stir-fried flatbread): pan-fry julienned flatbread with shrimp, egg and cabbage. A great way to use leftover bing.",
+    noteZh: "虾炒饼：饼丝与虾仁、鸡蛋、白菜同炒。是消耗剩饼的好做法。",
+    type: "asian2local",
+  },
 ];
 
 /** 按原食材名查找替代方案（分词匹配，整句搜索词也能命中） */

@@ -11,6 +11,8 @@ const faqItems = [
   { qEn: "Chu hou paste substitute", qZh: "柱侯酱用什么代替", id: "sub-chu-hou" },
   { qEn: "Zha cai substitute", qZh: "榨菜用什么代替", id: "sub-zha-cai" },
   { qEn: "Doubanjiang replacement", qZh: "豆瓣酱用什么代替", id: "sub-doubanjiang" },
+  { qEn: "Dou gan recipe", qZh: "豆干怎么做", id: "sub-dou-gan" },
+  { qEn: "Xia chaobing (shrimp stir-fried flatbread)", qZh: "虾炒饼怎么做", id: "sub-chaobing" },
 ];
 const faqById = new Map(substitutions.map((s) => [s.id, s]));
 
