@@ -195,5 +195,5 @@ export const vinegar_cabbage: Recipe = {
     "立即上桌——白菜出锅后还会继续出水。",
   ],
   relatedSlugs: ["tomato-and-egg", "garlic-chives-scrambled-eggs", "cucumber-scrambled-eggs"],
-  image: "/images/recipes/vinegar-cabbage.svg",
+  image: "/images/recipes/vinegar-cabbage.webp",
 };

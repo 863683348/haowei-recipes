@@ -216,5 +216,5 @@ export const coldWoodEar: Recipe = {
     "garlic-chives-scrambled-eggs",
     "egg-fried-rice",
   ],
-  image: "/images/recipes/cold-wood-ear.svg",
+  image: "/images/recipes/cold-wood-ear.webp",
 };
