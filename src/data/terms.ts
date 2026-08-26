@@ -435,6 +435,82 @@ export const terms: Term[] = [
     substituteHintZh:
       "没有木耳？切丝的白萝卜或菊苣可提供类似脆感（还原度约 60%）。",
   },
+
+  /* ========== 新增 Day 14 术语 ========== */
+  {
+    id: "pork-belly",
+    zh: "五花肉",
+    pinyin: "wǔ huā ròu",
+    en: "Pork belly",
+    category: "ingredient",
+    definition:
+      "Layered cut from the belly of the pig — fat and lean alternating. Ideal for braising and twice-cooked dishes. In Asian supermarkets you'll find it pre-boiled (卤五花肉) which saves hours.",
+    definitionZh: "猪腹部层层相间的肉——肥瘦相间。适合红烧和回锅。亚超有预先卤好的，可省数小时。",
+    substituteHint: "Pork shoulder (picnic) is a good substitute — also has fat marbling.",
+    substituteHintZh: "猪肩肉（picnic）是不错替代——同样有 fat marbling。",
+  },
+  {
+    id: "pork-loin",
+    zh: "猪里脊",
+    pinyin: "zhū lǐ jiǔ",
+    en: "Pork loin / tenderloin",
+    category: "ingredient",
+    definition:
+      "Lean, tender cut from the back of the pig. The most tender pork cut — perfect for stir-fry strips (肉丝) and velveting.",
+    definitionZh: "猪背部最嫩的瘦肉，适合切丝（肉丝）和上浆滑炒。",
+    substituteHint: "Pork shoulder works too but is less tender — slice against the grain.",
+    substituteHintZh: "猪肩肉也可，但没那么嫩——逆纹切。",
+  },
+  {
+    id: "green-pepper",
+    zh: "青椒 / 甜椒",
+    pinyin: "qīng jiāo",
+    en: "Green bell pepper",
+    category: "ingredient",
+    definition:
+      "Mild, crisp, slightly sweet pepper. The default vegetable partner for shredded pork stir-fries. Not to be confused with hot green chilies.",
+    definitionZh: "温和爽脆微甜的甜椒，是肉丝炒菜的默认搭档。不要和辣青椒搞混。",
+    substituteHint: "Red bell pepper for color contrast; poblano for mild heat.",
+    substituteHintZh: "红甜椒增色； poblanos 微辣。",
+  },
+  {
+    id: "bamboo-shoots",
+    zh: "笋丝 / 竹笋",
+    pinyin: "sǔn sī",
+    en: "Bamboo shoots (julienned)",
+    category: "ingredient",
+    definition:
+      "Tender young shoots of the bamboo plant. Canned julienned bamboo shoots are a pantry staple for yu xiang dishes — rinse well to remove the canned metallic taste.",
+    definitionZh: "竹子的嫩芽。罐头笋丝是鱼香菜的 pantry 常备——冲洗干净去金属味。",
+    quantEquivalent: "80 g canned ≈ 1/2 cup",
+    substituteHint: "Water chestnuts (sliced) for crunch; jicama strips for mild sweetness.",
+    substituteHintZh: "荸荠片增脆；菊苣丝增甜。",
+  },
+  {
+    id: "carrot",
+    zh: "胡萝卜",
+    pinyin: "hú luó bo",
+    en: "Carrot",
+    category: "ingredient",
+    definition:
+      "Sweet root vegetable, julienned for color and crunch in stir-fries. Adds beta-carotene and a touch of sweetness that balances salty sauces.",
+    definitionZh: "甜味根茎类蔬菜，切丝炒菜增色增脆。提供 β-胡萝卜素，平衡咸酱汁。",
+    substituteHint: "Blanched daikon strips or bell pepper strips.",
+    substituteHintZh: "焯水白萝卜丝或甜椒丝。",
+  },
+  {
+    id: "garlic-sprout",
+    zh: "蒜苗 / 青蒜",
+    pinyin: "suàn miáo",
+    en: "Garlic sprouts (suan miao / Chinese scallion)",
+    category: "ingredient",
+    definition:
+      "The young green stalks of the garlic plant. More pungent than scallions with a distinct garlic flavor. Essential for twice-cooked pork (回锅肉). Different from scallions — thicker white stem, flat leaves.",
+    definitionZh: "蒜的幼嫩绿茎。比小葱更辛辣，有独特蒜香。回锅肉必备。和小葱不同——更粗的白色茎，扁平叶子。",
+    quantEquivalent: "1 stalk ≈ 15 g",
+    substituteHint: "Thick-stemmed scallions (日本长葱) or leeks (white part only).",
+    substituteHintZh: "粗杆小葱（日本长葱）或韭葱（只用白色部分）。",
+  },
 ];
 
 /** 术语查询工具 */
