@@ -50,6 +50,9 @@ import { sweet_sour_fish } from "./sweet-sour-fish";
 import { egg_drop_soup } from "./egg-drop-soup";
 import { tomato_egg_drop_soup } from "./tomato-egg-drop-soup";
 import { winter_melon_soup } from "./winter-melon-soup";
+import { eggplant_green_bean_casserole } from "./eggplant-green-bean-casserole";
+import { ge_le_shan_lazi_chicken } from "./ge-le-shan-lazi-chicken";
+import { tengjiao_chicken } from "./tengjiao-chicken";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -104,6 +107,9 @@ export const recipes: Recipe[] = [
   egg_drop_soup,
   tomato_egg_drop_soup,
   winter_melon_soup,
+  eggplant_green_bean_casserole,
+  ge_le_shan_lazi_chicken,
+  tengjiao_chicken,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
