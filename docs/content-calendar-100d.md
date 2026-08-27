@@ -68,7 +68,7 @@
 | 15 | 饺子工坊 | 白菜猪肉饺 / 韭菜鸡蛋饺 / 酸汤水饺 | potstickers, jiaozi |
 | 16 | 鸡腿鸡翅 | 可乐鸡翅 / 酱油鸡翅 / 香煎鸡排 | coke chicken wings, soy wings |
 | 17 | 猪肉家常 | 农家小炒肉 / 木须肉 / 京酱肉丝 | home style pork, moo shu pork |
-| 18 | 米饭伴侣 | 黄焖鸡米饭 / 土豆炖牛肉 / 茄子豆角煲 | huangmen chicken, eggplant beans |
+| 18 | 米饭伴侣 | 黄焖鸡米饭✅ / 土豆炖牛肉✅ / 茄子豆角煲✅ | huangmen chicken, eggplant beans | ✅
 
 ### 阶段 3：川味进阶（Day 19-27，27 道）
 | Day | 主题 | 三道菜 | 关键词 |
