@@ -114,6 +114,9 @@ export const dict = {
     filter: "Filter",
     reset: "Reset",
     empty: "No recipes match those filters yet — we're adding new dishes every week.",
+    prev: "Prev",
+    next: "Next",
+    pageOf: "Page {page} of {pages} · {total} recipes",
   },
   recipeDetail: {
     homeVersion: "家庭快手版 · Home version",

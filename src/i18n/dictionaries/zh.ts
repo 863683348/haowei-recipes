@@ -116,6 +116,9 @@ export const dictZh: Dict = {
     filter: "筛选",
     reset: "重置",
     empty: "没有符合筛选条件的菜谱——我们每周都在上新。",
+    prev: "上一页",
+    next: "下一页",
+    pageOf: "第 {page} / {pages} 页 · 共 {total} 道",
   },
   recipeDetail: {
     homeVersion: "家庭快手版 · Home version",

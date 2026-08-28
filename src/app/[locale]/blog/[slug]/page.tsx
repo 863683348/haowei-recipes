@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { getAllPosts, getPostBySlug, categoryLabel } from "@/data/blog";
 import { getRecipeBySlug } from "@/data/recipes";
 import { BlogContent } from "@/components/blog-content";
@@ -41,6 +43,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pageUrl = absoluteUrl(localizePath(`/blog/${post.slug}`, loc));
   const imageUrl = absoluteUrl(post.coverImage);
 
+  // 封面图存在性（metadata 的 og:image 用同样的检查，破图不引用）
+  const coverExists =
+    !post.coverImage.startsWith("http") &&
+    existsSync(join(process.cwd(), "public", post.coverImage));
+  const ogImage = coverExists ? imageUrl : absoluteUrl("/images/og-default.webp");
+
   return {
     title,
     description: desc,
@@ -52,13 +60,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description: desc,
       url: pageUrl,
-      images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: desc,
-      images: [imageUrl],
+      images: [ogImage],
     },
   };
 }
@@ -81,13 +89,18 @@ export default async function BlogPostPage({ params }: Props) {
   const pageUrl = absoluteUrl(localizePath(`/blog/${post.slug}`, loc));
   const imageUrl = absoluteUrl(post.coverImage);
 
+  // 封面图兜底：图片文件不存在时不渲染封面（避免破图），标题直接上移
+  const coverExists =
+    !post.coverImage.startsWith("http") &&
+    existsSync(join(process.cwd(), "public", post.coverImage));
+
   // Article JSON-LD
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: title,
     description: excerpt,
-    image: [imageUrl],
+    image: [coverExists ? imageUrl : absoluteUrl("/images/og-default.webp")],
     datePublished: post.publishDate,
     dateModified: post.updatedDate ?? post.publishDate,
     author: { "@type": "Organization", name: author },
@@ -176,17 +189,19 @@ export default async function BlogPostPage({ params }: Props) {
           </ol>
         </nav>
 
-        {/* 封面 */}
-        <div className="relative aspect-[1200/630] w-full overflow-hidden rounded-xl">
-          <Image
-            src={post.coverImage}
-            alt={title}
-            fill
-            priority
-            sizes="(min-width: 1024px) 768px, 100vw"
-            className="object-cover"
-          />
-        </div>
+        {/* 封面（图片文件存在才渲染，避免破图） */}
+        {coverExists && (
+          <div className="relative aspect-[1200/630] w-full overflow-hidden rounded-xl">
+            <Image
+              src={post.coverImage}
+              alt={title}
+              fill
+              priority
+              sizes="(min-width: 1024px) 768px, 100vw"
+              className="object-cover"
+            />
+          </div>
+        )}
 
         {/* 元信息 */}
         <div className="mt-5 flex flex-wrap items-center gap-2 text-xs text-[var(--hw-fg-muted)]">
