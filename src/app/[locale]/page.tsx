@@ -45,6 +45,7 @@ export default async function HomePage({ params }: Props) {
   if (!isLocale(locale)) notFound();
   const loc = locale as Locale;
   const t = getDictionary(loc);
+  const isZh = loc === "zh";
 
   const featured = featuredSlugs
     .map((s) => getRecipeBySlug(s))
@@ -125,6 +126,30 @@ export default async function HomePage({ params }: Props) {
               <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">{c.desc}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* 菜系快捷入口：川菜枢纽（SEO 权重聚拢） */}
+      <section className="border-t border-[var(--hw-border)]">
+        <div className="mx-auto max-w-5xl px-4 py-8">
+          <div className="flex flex-col items-start justify-between gap-4 rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6 sm:flex-row sm:items-center">
+            <div>
+              <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+                {isZh ? "川菜合集" : "Sichuan Collection"}
+              </h2>
+              <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
+                {isZh
+                  ? "麻婆豆腐、宫保鸡丁、辣子鸡——川菜家常做法一站收齐"
+                  : "Mapo tofu, kung pao chicken, la zi ji — all our Sichuan home recipes in one place"}
+              </p>
+            </div>
+            <Link
+              href={localizePath("/recipes/sichuan", loc)}
+              className="inline-flex items-center gap-2 rounded-lg bg-[var(--hw-ginger)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+            >
+              {isZh ? "浏览川菜" : "Browse Sichuan"}
+            </Link>
+          </div>
         </div>
       </section>
 

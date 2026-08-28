@@ -305,7 +305,14 @@ const doubanjiang101: BlogPost = {
   authorZh: "好味厨房",
   publishDate: "2026-08-19",
   coverImage: "/images/blog/doubanjiang-101.webp",
-  relatedRecipeSlugs: ["mapo-tofu", "kung-pao-chicken", "scallion-pancakes"],
+  relatedRecipeSlugs: [
+    "mapo-tofu",
+    "kung-pao-chicken",
+    "home-style-tofu",
+    "twice-cooked-pork",
+    "yu-xiang-pork",
+    "scallion-pancakes",
+  ],
   bodyEn: [
     { type: "p", text: "If you cook one Sichuan dish and it tastes flat, the missing piece is almost always doubanjiang. This fermented chili bean paste is the backbone of the region's flavor, the thing that gives mapo tofu its deep red character and kung pao its savory edge. Get to know this one ingredient and a whole shelf of Chinese cooking opens up." },
     { type: "h2", text: "What doubanjiang actually is" },
@@ -383,6 +390,24 @@ const doubanjiang101: BlogPost = {
       qZh: "能用味噌或韩式辣酱代替吗？",
       aEn: "Not really. Gochujang is sweet and sticky, miso is mild and barley-based. Both miss the fermented bean-and-chili funk that defines the dish. In a pinch, a mix of soy sauce plus a little chili paste gets you closer, but it's still not the same.",
       aZh: "不太行。韩式辣酱甜而黏，味噌淡、走麦味，都缺了那股蚕豆辣椒发酵的臭香，而那正是这道菜的灵魂。实在没辙，酱油加一点辣椒酱能凑近点，但终究不是一回事。",
+    },
+    {
+      qEn: "What is a good chili bean paste substitute for doubanjiang?",
+      qZh: "没有豆瓣酱，用什么替代？",
+      aEn: "The closest shelf swap is a fermented chili bean paste like gochujang thinned with a little soy sauce and rice vinegar, or a spoon of chili crisp plus soy sauce for the salty-umami base. None perfectly replicate pixian doubanjiang's fermented funk, but a mix of soy sauce, a mild chili paste, and a pinch of sugar gets 80% of the way there for mapo tofu and stir-fries.",
+      aZh: "最接近的货架替代是发酵辣椒酱类：韩式辣酱加一点酱油和米醋调稀，或者一勺油泼辣子加酱油打底。没有一样能完全复刻郫县豆瓣酱的发酵臭香，但用酱油+温和辣椒酱+一点糖的组合，做麻婆豆腐和炒菜能还原八成。",
+    },
+    {
+      qEn: "How do I stir-fry doubanjiang without burning it?",
+      qZh: "炒豆瓣酱怎么才不会糊？",
+      aEn: "Always fry it in oil over medium heat — never a dry pan — and keep stirring for about 30-60 seconds until the oil turns red and smells toasty. If the oil smokes or the paste darkens too fast, pull the pan off the heat and start that step over with fresh oil.",
+      aZh: "一定用油、中小火炒——绝不能干锅——持续翻炒 30-60 秒，直到油变红、闻到焦香。如果油冒烟或酱色一下子变太深，立刻离火，重新倒油再来这一步。",
+    },
+    {
+      qEn: "How much doubanjiang should I use?",
+      qZh: "豆瓣酱放多少合适？",
+      aEn: "One tablespoon per two servings is a solid baseline, then adjust to taste. A good doubanjiang is salty enough that you often skip extra salt later, so season at the end rather than up front.",
+      aZh: "两人份一汤匙是稳妥起点，之后按口味调整。好豆瓣酱本身够咸，后面常常不用再放盐，所以最后尝味再定，不要一开始就加盐。",
     },
   ],
 };
