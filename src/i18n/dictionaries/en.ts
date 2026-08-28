@@ -79,6 +79,17 @@ export const dict = {
     ],
     startHere: "Start here",
     viewAll: "View all →",
+    hubTitle: "Explore by category",
+    hubLinks: [
+      { title: "Sichuan", desc: "Mapo tofu, kung pao & la zi ji", href: "/recipes/sichuan", icon: "🌶️" },
+      { title: "Chicken", desc: "Kung pao, wings & braised legs", href: "/recipes/chicken", icon: "🍗" },
+      { title: "Beef", desc: "Velvet stir-fries & stews", href: "/recipes/beef", icon: "🥩" },
+      { title: "Tofu", desc: "Mapo, braised & home-style", href: "/recipes/tofu", icon: "🧊" },
+      { title: "Noodles & Rice", desc: "Scallion noodles & fried rice", href: "/recipes/noodles", icon: "🍜" },
+      { title: "Dumplings", desc: "Chive egg & pork cabbage", href: "/recipes/dumplings", icon: "🥟" },
+      { title: "Soups", desc: "Egg drop & winter melon", href: "/recipes/soups", icon: "🍲" },
+      { title: "Vegetarian", desc: "17 meatless home dishes", href: "/recipes/vegetarian", icon: "🌱" },
+    ],
     pdfCta: {
       title: "Get the HǎoWèi Recipe Collection (PDF)",
       desc: "Our first 30 recipes, formatted for print and offline cooking.",

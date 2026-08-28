@@ -81,6 +81,17 @@ export const dictZh: Dict = {
     ],
     startHere: "从这里开始",
     viewAll: "查看全部 →",
+    hubTitle: "按分类探索",
+    hubLinks: [
+      { title: "川菜", desc: "麻婆豆腐、宫保鸡丁、辣子鸡", href: "/recipes/sichuan", icon: "🌶️" },
+      { title: "鸡肉", desc: "宫保、鸡翅、红烧鸡腿", href: "/recipes/chicken", icon: "🍗" },
+      { title: "牛肉", desc: "滑炒与炖煮家常做法", href: "/recipes/beef", icon: "🥩" },
+      { title: "豆腐", desc: "麻婆、红烧、家常豆腐", href: "/recipes/tofu", icon: "🧊" },
+      { title: "面食主食", desc: "葱油拌面与扬州炒饭", href: "/recipes/noodles", icon: "🍜" },
+      { title: "饺子", desc: "韭菜鸡蛋饺、白菜猪肉饺", href: "/recipes/dumplings", icon: "🥟" },
+      { title: "汤羹", desc: "蛋花汤、冬瓜排骨汤", href: "/recipes/soups", icon: "🍲" },
+      { title: "素食", desc: "17 道无肉也满足的家常菜", href: "/recipes/vegetarian", icon: "🌱" },
+    ],
     pdfCta: {
       title: "好味首发菜谱合集（PDF）",
       desc: "精选前 30 道菜谱，排版适合打印与离线下厨。",
