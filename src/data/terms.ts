@@ -681,7 +681,91 @@ export function getTermByKey(key: string): Term | undefined {
 
 export function searchTerms(query: string): Term[] {
   const q = query.toLowerCase().trim();
-  if (!q) return [];
+  if (!q) return [
+  /* ========== 新增 Day 15 术语 ========== */
+  {
+    id: "egg",
+    zh: "鸡蛋",
+    pinyin: "jī dàn",
+    en: "Eggs",
+    category: "ingredient",
+    definition:
+      "The backbone of Chinese home cooking. Large chicken eggs work for all steamed egg dishes; duck eggs are sometimes used for richer versions.",
+    definitionZh: "中式家常烹饪的基础。普通大号鸡蛋适用于所有蒸蛋菜；鸭蛋有时用于更浓郁的版本。",
+    substituteHint:
+      "Large hen eggs are standard. Duck eggs are richer but harder to find; substitute 1:1 by count.",
+    substituteHintZh: "大号土鸡蛋是标准。鸭蛋更浓郁但较难买到；数量上 1:1 替代。",
+  },
+  {
+    id: "pork-mince",
+    zh: "猪肉末",
+    pinyin: "zhū ròu mò",
+    en: "Ground pork",
+    category: "ingredient",
+    definition:
+      "Finely minced pork, typically 5-15% fat for stir-fries and steamed toppings. The fat keeps the meat moist during quick cooking.",
+    definitionZh: "细绞猪肉，炒和蒸 topping 通常选 5-15% 脂肪含量。脂肪让肉在快煮时保持湿润。",
+    quantEquivalent: "150 g ≈ 3/4 cup packed",
+    substituteHint:
+      "Ground chicken or turkey works but is leaner — add a teaspoon of oil to the pan.",
+    substituteHintZh: "鸡 ground 或火鸡肉可行但更瘦——锅中加一茶匙油。",
+  },
+  {
+    id: "sea-bass",
+    zh: "鲈鱼",
+    pinyin: "lú yú",
+    en: "Sea bass (Asian species)",
+    category: "ingredient",
+    definition:
+      "A mild, sweet-fleshed fish with delicate flakes. In Chinese cooking, a whole 400-600g sea bass is the standard size for steaming. Ask the fishmonger to scale and gut it. A similar substitute is branzino or striped bass.",
+    definitionZh: "肉质温和甜美、鱼片细嫩的鱼。中餐里整条 400-600g 的鲈鱼是蒸鱼的标配。让鱼贩去鳞去内脏。类似替代品是布伦齐诺或条纹鲈鱼。",
+    quantEquivalent: "1 fish ≈ 500 g",
+    substituteHint:
+      "Branzino, striped bass, or tilapia fillets (reduce cook time by half). For whole fish, any firm white fish with scale and gut.",
+    substituteHintZh: "布伦齐诺、条纹鲈鱼或龙利鱼片（烹饪时间减半）。整鱼的话选带鳞去内脏的紧实白肉鱼。",
+  },
+  {
+    id: "white-fish",
+    zh: "白肉鱼",
+    pinyin: "bái ròu yú",
+    en: "White fish (firm-fleshed)",
+    category: "ingredient",
+    definition:
+      "A category of fish with mild flavor and firm, flaky white meat. Ideal for steaming, braising, and soups. Examples: cod, haddock, halibut, snapper.",
+    definitionZh: "味道温和、肉质紧实白嫩的鱼类。适合蒸、炖、汤。例：鳕鱼、黑线鳕、比目鱼、鲷鱼。",
+    substituteHint:
+      "Any firm white fish works. Avoid oily fish (salmon, mackerel) for clear-steamed dishes.",
+    substituteHintZh: "任何紧实白肉鱼均可。清蒸菜避免用油腻鱼类（鲑鱼、鲭鱼）。",
+  },
+  {
+    id: "mirin",
+    zh: "味醂",
+    pinyin: "wèi lán",
+    en: "Mirin (sweet rice wine)",
+    category: "sauce",
+    definition:
+      "A sweet Japanese rice wine used in cooking to add gloss, mild sweetness, and depth. Common in Cantonese-Chinese adaptation of Japanese techniques and in some southern Chinese home cooking.",
+    definitionZh: "甜味日式米酒，烹饪中用于增亮、微甜和提味。常见于粤式家常菜改良日式技法时。",
+    quantEquivalent: "1 tbsp ≈ 15 ml",
+    substituteHint:
+      "No mirin? Mix 1 tbsp dry sherry + 1/2 tsp sugar. The sugar replaces the sweetness; sherry replaces the rice wine note.",
+    substituteHintZh: "没有味醂？1 汤匙干雪利 + 1/2 茶匙糖。糖替代甜味，雪利替代米香。",
+  },
+  {
+    id: "rice-wine",
+    zh: "米酒 / 黄酒",
+    pinyin: "mǐ jiǔ / huáng jiǔ",
+    en: "Rice wine (huangjiu)",
+    category: "sauce",
+    definition:
+      "Fermented rice wine, amber in color with a deep umami-sweet flavor. Used in marinades and braises to remove gaminess and add complexity. Different from Shaoxing wine (shaoxing is drier and more aromatic).",
+    definitionZh: "发酵米酒，琥珀色，咸鲜微甜。用于腌制和红烧去腥增香。与料酒不同——料酒更干更香。",
+    quantEquivalent: "1 tbsp ≈ 15 ml",
+    substituteHint:
+      "Shaoxing wine is the closest available everywhere; use 1:1. For non-alcoholic: skip and add extra ginger.",
+    substituteHintZh: "绍兴酒是最接近的通用替代；1:1。无酒精：跳过，多加姜片。",
+  },
+];
   return terms.filter(
     (t) =>
       t.en.toLowerCase().includes(q) ||
