@@ -8,8 +8,12 @@ import { AIAssistant } from "@/components/ai-assistant";
 import { ShoppingListButton } from "@/components/shopping-list-button";
 import { RecipeCard } from "@/components/recipe-card";
 import { RecipeHeroImage } from "@/components/recipe-hero-image";
+import { RecipeViews } from "@/components/recipe-views";
+import { RecipeComments } from "@/components/recipe-comments";
 import { BowlIcon, LeafIcon, BulbIcon, ClockIcon } from "@/components/icons";
 import { getRecipeBySlug, recipes, getRelatedRecipes } from "@/data/recipes";
+import { getMealPlan, type DishRole } from "@/data/pairings";
+import { getDepthFields } from "@/data/depth-fields";
 import { locales, isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 
@@ -216,6 +220,7 @@ export default async function RecipePage({ params }: Props) {
               <LeafIcon className="h-3.5 w-3.5" /> {t.common.dietary[d]}
             </span>
           ))}
+          <RecipeViews slug={recipe.slug} />
         </div>
 
         <h1 className="mt-4 font-serif text-3xl font-bold leading-tight text-[var(--hw-fg)] sm:text-4xl">
@@ -298,9 +303,159 @@ export default async function RecipePage({ params }: Props) {
           </div>
         </div>
 
+        {/* 深度字段（P1-1：替代指南 / 翻车点 / 变花样） */}
+        {(() => {
+          const depth = getDepthFields(recipe.slug);
+          if (!depth) return null;
+          const subs = depth.ingredientSubs ?? [];
+          const mistakes = depth.commonMistakes ?? [];
+          const vars = isZh
+            ? depth.variationsZh ?? depth.variations ?? []
+            : depth.variations ?? [];
+          const hasAny = subs.length > 0 || mistakes.length > 0 || vars.length > 0;
+          if (!hasAny) return null;
+          return (
+            <section className="mt-14 grid gap-6 md:grid-cols-2">
+              {/* 替代指南 */}
+              {subs.length > 0 && (
+                <div className="rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6">
+                  <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+                    {t.recipeDetail.depthSubs}
+                  </h2>
+                  <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
+                    {t.recipeDetail.depthSubsDesc}
+                  </p>
+                  <ul className="mt-4 space-y-3">
+                    {subs.map((s, i) => {
+                      const from = isZh ? s.fromZh ?? s.from : s.from;
+                      const to = isZh ? s.toZh ?? s.to : s.to;
+                      const note = isZh ? s.noteZh ?? s.note : s.note;
+                      return (
+                        <li key={i} className="rounded-xl bg-[var(--hw-bg-soft)] p-3">
+                          <p className="text-sm font-semibold text-[var(--hw-fg)]">
+                            {t.recipeDetail.swap}: {from}
+                          </p>
+                          <p className="mt-1 text-sm text-[var(--hw-ginger)]">
+                            → {to}
+                          </p>
+                          <p className="mt-1 text-xs text-[var(--hw-fg-muted)]">
+                            {t.recipeDetail.ratioLabel}: {s.ratio} · {note}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
+
+              {/* 翻车点 */}
+              {mistakes.length > 0 && (
+                <div className="rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6">
+                  <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+                    {t.recipeDetail.depthMistakes}
+                  </h2>
+                  <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
+                    {t.recipeDetail.depthMistakesDesc}
+                  </p>
+                  <ul className="mt-4 space-y-3">
+                    {mistakes.map((m, i) => {
+                      const mistake = isZh ? m.mistakeZh ?? m.mistake : m.mistake;
+                      const fix = isZh ? m.fixZh ?? m.fix : m.fix;
+                      return (
+                        <li key={i} className="rounded-xl bg-[var(--hw-bg-soft)] p-3">
+                          <p className="text-sm font-medium text-[var(--hw-fg)]">
+                            ✗ {mistake}
+                          </p>
+                          <p className="mt-1 text-sm text-[var(--hw-scallion)]">
+                            ✓ {t.recipeDetail.mistakeFix} {fix}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
+
+              {/* 变花样（全宽） */}
+              {vars.length > 0 && (
+                <div className="rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6 md:col-span-2">
+                  <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+                    {t.recipeDetail.depthVars}
+                  </h2>
+                  <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
+                    {t.recipeDetail.depthVarsDesc}
+                  </p>
+                  <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+                    {vars.map((v, i) => (
+                      <li
+                        key={i}
+                        className="rounded-xl border border-dashed border-[var(--hw-border)] bg-[var(--hw-bg-soft)] p-3 text-sm leading-relaxed text-[var(--hw-fg)]"
+                      >
+                        {v}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </section>
+          );
+        })()}
+
         {/* 内嵌 AI 问答（R-05） */}
         <section className="mt-14">
           <AIAssistant />
+        </section>
+
+        {/* 配什么一起吃（P1-3 内链矩阵：一顿饭 = 主+配+主食+汤） */}
+        {(() => {
+          const plan = getMealPlan(recipe.slug);
+          const entries = (
+            [
+              ["main", t.recipeDetail.pairingMain],
+              ["side", t.recipeDetail.pairingSide],
+              ["staple", t.recipeDetail.pairingStaple],
+              ["soup", t.recipeDetail.pairingSoup],
+            ] as [DishRole, string][]
+          ).filter(([role]) => plan[role]);
+          if (entries.length === 0) return null;
+          return (
+            <section className="mt-14 rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6">
+              <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+                {t.recipeDetail.pairingTitle}
+              </h2>
+              <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
+                {t.recipeDetail.pairingDesc}
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {entries.map(([role, label]) => {
+                  const r = plan[role]!;
+                  const name = isZh ? r.titleZh : r.titleEn;
+                  return (
+                    <Link
+                      key={role}
+                      href={localizePath(`/recipes/${r.slug}`, loc)}
+                      className="group rounded-xl border border-[var(--hw-border)] bg-[var(--hw-bg-soft)] p-4 transition hover:border-[var(--hw-ginger)] hover:shadow-sm"
+                    >
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--hw-ginger)]">
+                        {label}
+                      </p>
+                      <p className="mt-1.5 font-serif text-sm font-semibold leading-snug text-[var(--hw-fg)] group-hover:text-[var(--hw-ginger)]">
+                        {name}
+                      </p>
+                      <p className="mt-1 text-xs text-[var(--hw-fg-muted)]">
+                        {r.timeMin} {t.common.minutes}
+                      </p>
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })()}
+
+        {/* 评论区（P1-2 社交证明） */}
+        <section className="mt-14">
+          <RecipeComments slug={recipe.slug} />
         </section>
 
         {/* 相关菜谱 */}
@@ -310,7 +465,7 @@ export default async function RecipePage({ params }: Props) {
               {t.recipeDetail.cookNext}
             </h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((r) => (
+              {related.slice(0, 6).map((r) => (
                 <RecipeCard key={r.slug} recipe={r} />
               ))}
             </div>

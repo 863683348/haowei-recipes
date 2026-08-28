@@ -8,6 +8,10 @@ export async function resolve(specifier, context, nextResolve) {
   }
   if (specifier.startsWith("@/")) {
     const sub = specifier.slice(2);
+    // 目录导入（如 @/data/recipes → ../src/data/recipes/index.ts）
+    if (sub.endsWith("/recipes") || sub.endsWith("/data")) {
+      return nextResolve(new URL(`../src/${sub}/index.ts`, import.meta.url).href, context);
+    }
     return nextResolve(new URL(`../src/${sub}`, import.meta.url).href, context);
   }
   try {

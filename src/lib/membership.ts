@@ -85,6 +85,38 @@ export const VOLUMES: VolumeInfo[] = [
     recipeSlugs: ["mapo-tofu", "kung-pao-chicken", "beef-and-broccoli"],
     previewCount: 3, // 川菜专场（制作中）：先以 3 道预览占位，完整目录随内容补充
   },
+  {
+    id: "v3",
+    free: true,
+    recipeSlugs: [
+      "tomato-and-egg",
+      "egg-fried-rice",
+      "braised-tofu",
+      "home-style-tofu",
+      "scallion-noodles",
+      "tomato-egg-noodles",
+      "yangchun-noodles",
+      "egg-drop-soup",
+      "tomato-egg-drop-soup",
+      "winter-melon-soup",
+      "beef-and-broccoli",
+      "green-pepper-beef",
+      "onion-beef-stir-fry",
+      "potato-beef-stew",
+      "cashew-chicken",
+      "coke-chicken-wings",
+      "hongshao-chicken",
+      "soy-chicken-wings",
+      "pan-fried-chicken",
+      "hongshao-pork",
+      "sweet-sour-pork",
+      "sweet-sour-ribs",
+      "pepper-pork",
+      "vinegar-cabbage",
+      "spicy-potato-shreds",
+    ],
+    previewCount: 25, // Top 25 家常菜电子书（免费）
+  },
 ];
 
 export const getVolume = (id: string): VolumeInfo | undefined =>

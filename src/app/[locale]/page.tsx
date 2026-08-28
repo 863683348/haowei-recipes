@@ -129,26 +129,26 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
-      {/* 菜系快捷入口：川菜枢纽（SEO 权重聚拢） */}
+      {/* 枢纽页矩阵：分类探索（SEO 权重聚拢） */}
       <section className="border-t border-[var(--hw-border)]">
-        <div className="mx-auto max-w-5xl px-4 py-8">
-          <div className="flex flex-col items-start justify-between gap-4 rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6 sm:flex-row sm:items-center">
-            <div>
-              <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
-                {isZh ? "川菜合集" : "Sichuan Collection"}
-              </h2>
-              <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
-                {isZh
-                  ? "麻婆豆腐、宫保鸡丁、辣子鸡——川菜家常做法一站收齐"
-                  : "Mapo tofu, kung pao chicken, la zi ji — all our Sichuan home recipes in one place"}
-              </p>
-            </div>
-            <Link
-              href={localizePath("/recipes/sichuan", loc)}
-              className="inline-flex items-center gap-2 rounded-lg bg-[var(--hw-ginger)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
-            >
-              {isZh ? "浏览川菜" : "Browse Sichuan"}
-            </Link>
+        <div className="mx-auto max-w-5xl px-4 py-10">
+          <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+            {t.home.hubTitle}
+          </h2>
+          <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {t.home.hubLinks.map((c) => (
+              <Link
+                key={c.href}
+                href={localizePath(c.href, loc)}
+                className="group rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-[var(--hw-ginger)] hover:shadow-md"
+              >
+                <span className="text-2xl">{c.icon}</span>
+                <h3 className="mt-2 font-serif text-base font-semibold text-[var(--hw-fg)] group-hover:text-[var(--hw-ginger)]">
+                  {c.title}
+                </h3>
+                <p className="mt-1 text-xs leading-relaxed text-[var(--hw-fg-muted)]">{c.desc}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -181,6 +181,13 @@ export default async function HomePage({ params }: Props) {
               >
                 <DownloadIcon className="h-5 w-5" />
                 {t.home.pdfCta.download}
+              </Link>
+              <Link
+                href={localizePath("/pdf/v3", loc)}
+                className="inline-flex items-center gap-2 rounded-lg border border-[var(--hw-ginger)] bg-transparent px-5 py-3 text-sm font-semibold text-[var(--hw-ginger)] transition hover:bg-[var(--hw-ginger)] hover:text-white"
+              >
+                <DownloadIcon className="h-5 w-5" />
+                {isZh ? "Top 25 电子书" : "Top 25 eBook"}
               </Link>
             </div>
           </div>
