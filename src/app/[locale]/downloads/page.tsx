@@ -31,6 +31,10 @@ function volumeTitle(id: string, zh: boolean): string {
     return zh ? "V1 · 首发合集（10 道）" : "V1 · Launch Collection (10 recipes)";
   if (id === "v2")
     return zh ? "V2 · 川菜专场（制作中）" : "V2 · Sichuan Special (in production)";
+  if (id === "v3")
+    return zh
+      ? "V3 · Top 25 家常菜电子书（免费）"
+      : "V3 · Top 25 Home Recipes eBook (Free)";
   return `${id.toUpperCase()}`;
 }
 

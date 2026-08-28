@@ -1,0 +1,2474 @@
+{
+  "beef-and-broccoli": {
+    "slug": "beef-and-broccoli",
+    "titleEn": "Beef & Broccoli (西兰花炒牛肉)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce (marinade)",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine (marinade)",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [],
+    "variationsZh": []
+  },
+  "braised-tofu": {
+    "slug": "braised-tofu",
+    "titleEn": "Braised Tofu (红烧豆腐)",
+    "ingredientSubs": [
+      {
+        "from": "firm tofu",
+        "fromZh": "老豆腐",
+        "to": "halloumi (for frying) or paneer",
+        "toZh": "哈鲁米（煎）或印度奶酪",
+        "ratio": "1:1",
+        "note": "Both hold shape better in wok dishes.",
+        "noteZh": "在炒锅里更能保持形状。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use silken tofu for a softer mapo-style texture",
+      "Swap in eggplant for a vegan twist (pan-fry first)",
+      "Add a handful of leafy greens in the last minute"
+    ],
+    "variationsZh": [
+      "换成嫩豆腐，口感更滑（麻婆风）",
+      "把豆腐换成茄子，先煎再烧（纯素版）",
+      "出锅前加一把绿叶菜"
+    ]
+  },
+  "cashew-chicken": {
+    "slug": "cashew-chicken",
+    "titleEn": "Cashew Chicken (腰果鸡丁)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "chive-egg-dumplings": {
+    "slug": "chive-egg-dumplings",
+    "titleEn": "Chive and Egg Dumplings (韭菜鸡蛋饺)",
+    "ingredientSubs": [
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Filling too wet — wrappers tear while pleating.",
+        "mistakeZh": "馅太湿——包的时候皮就破了。",
+        "fix": "Squeeze out moisture; chill filling 15 min before wrapping.",
+        "fixZh": "挤干水分，包前冷藏馅料 15 分钟。"
+      },
+      {
+        "mistake": "Not sealing edges — dumplings open in the pot.",
+        "mistakeZh": "边缘没捏紧——下锅就开口。",
+        "fix": "Dab water on the edge and pinch firmly; crimp twice.",
+        "fixZh": "边缘抹水用力捏合，收口捏两遍。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "coke-chicken-wings": {
+    "slug": "coke-chicken-wings",
+    "titleEn": "Coke Chicken Wings (可乐鸡翅)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "oyster sauce (optional)",
+        "fromZh": "蚝油（可选）",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "cold-wood-ear": {
+    "slug": "cold-wood-ear",
+    "titleEn": "Cold Wood Ear Mushroom (凉拌木耳)",
+    "ingredientSubs": [
+      {
+        "from": "dried wood ear mushrooms (木耳)",
+        "fromZh": "干木耳",
+        "to": "shiitake (rehydrated), sliced thin",
+        "toZh": "泡发香菇切薄片",
+        "ratio": "1:1",
+        "note": "Loses the crunch, keeps the chew.",
+        "noteZh": "少了脆感，保留嚼劲。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Skipping the 'rest' step — dressing runs watery.",
+        "mistakeZh": "跳过静置步骤——调料汁水分离。",
+        "fix": "Let dressed vegetables sit 5-10 min so flavors marry.",
+        "fixZh": "拌好后静置 5-10 分钟让味道融合。"
+      }
+    ],
+    "variations": [],
+    "variationsZh": []
+  },
+  "cucumber-scrambled-eggs": {
+    "slug": "cucumber-scrambled-eggs",
+    "titleEn": "Cucumber Scrambled Eggs Recipe | Quick 15-Min Chinese Home Cooking",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "dry-fried-green-beans": {
+    "slug": "dry-fried-green-beans",
+    "titleEn": "Dry-Fried Green Beans (干煸四季豆)",
+    "ingredientSubs": [
+      {
+        "from": "Sichuan peppercorns",
+        "fromZh": "花椒",
+        "to": "black peppercorn + pinch of lemon zest",
+        "toZh": "黑胡椒 + 一小撮柠檬皮屑",
+        "ratio": "1:1",
+        "note": "Loses the numbing, keeps some aroma.",
+        "noteZh": "没有麻感，但保留部分香气。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "egg-fried-rice": {
+    "slug": "egg-fried-rice",
+    "titleEn": "Egg Fried Rice (蛋炒饭)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "garlic-chives-scrambled-eggs": {
+    "slug": "garlic-chives-scrambled-eggs",
+    "titleEn": "Garlic Chives Scrambled Eggs Recipe | Chinese Scrambled Eggs with Chives",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "garlic-romaine": {
+    "slug": "garlic-romaine",
+    "titleEn": "Garlic Romaine (蒜蓉油麦菜)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "green-pepper-beef": {
+    "slug": "green-pepper-beef",
+    "titleEn": "Green Pepper Beef (青椒牛柳)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Swap beef for pork loin, sliced thin",
+      "Add mushrooms (shiitake or button) for extra umami",
+      "Turn the stir-fry into a one-pot rice bowl"
+    ],
+    "variationsZh": [
+      "牛肉换成猪里脊切薄片",
+      "加香菇或口蘑提鲜",
+      "改成一人食盖饭"
+    ]
+  },
+  "home-style-pork": {
+    "slug": "home-style-pork",
+    "titleEn": "Home-Style Pork with Peppers (农家小炒肉)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "home-style-tofu": {
+    "slug": "home-style-tofu",
+    "titleEn": "Home-style Tofu (家常豆腐)",
+    "ingredientSubs": [
+      {
+        "from": "firm tofu",
+        "fromZh": "老豆腐",
+        "to": "halloumi (for frying) or paneer",
+        "toZh": "哈鲁米（煎）或印度奶酪",
+        "ratio": "1:1",
+        "note": "Both hold shape better in wok dishes.",
+        "noteZh": "在炒锅里更能保持形状。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use silken tofu for a softer mapo-style texture",
+      "Swap in eggplant for a vegan twist (pan-fry first)",
+      "Add a handful of leafy greens in the last minute"
+    ],
+    "variationsZh": [
+      "换成嫩豆腐，口感更滑（麻婆风）",
+      "把豆腐换成茄子，先煎再烧（纯素版）",
+      "出锅前加一把绿叶菜"
+    ]
+  },
+  "hongshao-chicken": {
+    "slug": "hongshao-chicken",
+    "titleEn": "Braised Chicken Legs (红烧鸡腿)",
+    "ingredientSubs": [
+      {
+        "from": "star anise",
+        "fromZh": "八角",
+        "to": "fennel seeds + pinch of cinnamon",
+        "toZh": "茴香籽 + 一小撮肉桂",
+        "ratio": "2 pieces : 1 tsp",
+        "note": "Close licorice warmth.",
+        "noteZh": "接近的甘草甜香。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "hongshao-pork": {
+    "slug": "hongshao-pork",
+    "titleEn": "Braised Pork Belly (红烧肉)",
+    "ingredientSubs": [
+      {
+        "from": "star anise",
+        "fromZh": "八角",
+        "to": "fennel seeds + pinch of cinnamon",
+        "toZh": "茴香籽 + 一小撮肉桂",
+        "ratio": "2 pieces : 1 tsp",
+        "note": "Close licorice warmth.",
+        "noteZh": "接近的甘草甜香。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Boiling hard the whole time — meat turns tough and dry.",
+        "mistakeZh": "全程大火滚——肉变柴变干。",
+        "fix": "Bring to a boil once, then drop to a gentle simmer (small bubbles).",
+        "fixZh": "大火烧开后转小火，保持微沸小泡即可。"
+      },
+      {
+        "mistake": "Adding salt at the start — sauce reduces and oversalts.",
+        "mistakeZh": "一开始就放盐——收汁后变咸。",
+        "fix": "Season in the last 10 minutes; adjust at the end.",
+        "fixZh": "最后 10 分钟再调味，出锅前调整。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "huangmen-chicken": {
+    "slug": "huangmen-chicken",
+    "titleEn": "Huangmen Chicken with Rice (黄焖鸡米饭)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      },
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "jing-jiang-pork": {
+    "slug": "jing-jiang-pork",
+    "titleEn": "Jing Jiang Pork (京酱肉丝)",
+    "ingredientSubs": [
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "kou-shui-chicken": {
+    "slug": "kou-shui-chicken",
+    "titleEn": "Kou Shui Chicken (口水鸡)",
+    "ingredientSubs": [
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [],
+    "variationsZh": []
+  },
+  "kung-pao-chicken": {
+    "slug": "kung-pao-chicken",
+    "titleEn": "Kung Pao Chicken (宫保鸡丁)",
+    "ingredientSubs": [
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "dried chilies, halved",
+        "fromZh": "干辣椒",
+        "to": "red pepper flakes + whole cayenne (rehydrated)",
+        "toZh": "辣椒碎 + 整只辣椒（泡发）",
+        "ratio": "1 tbsp : 1 tbsp",
+        "note": "Use fewer for heat — dried chilies are mild.",
+        "noteZh": "用量减少——干辣椒本身不算辣。"
+      },
+      {
+        "from": "Sichuan peppercorn",
+        "fromZh": "花椒",
+        "to": "black peppercorn + pinch of lemon zest",
+        "toZh": "黑胡椒 + 一小撮柠檬皮屑",
+        "ratio": "1:1",
+        "note": "Loses the numbing, keeps some aroma.",
+        "noteZh": "没有麻感，但保留部分香气。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [],
+    "variationsZh": []
+  },
+  "mapo-tofu": {
+    "slug": "mapo-tofu",
+    "titleEn": "Mapo Tofu (麻婆豆腐)",
+    "ingredientSubs": [
+      {
+        "from": "Sichuan peppercorn, ground",
+        "fromZh": "花椒粉",
+        "to": "black peppercorn + pinch of lemon zest",
+        "toZh": "黑胡椒 + 一小撮柠檬皮屑",
+        "ratio": "1:1",
+        "note": "Loses the numbing, keeps some aroma.",
+        "noteZh": "没有麻感，但保留部分香气。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [],
+    "variations": [
+      "Use silken tofu for a softer mapo-style texture",
+      "Swap in eggplant for a vegan twist (pan-fry first)",
+      "Add a handful of leafy greens in the last minute"
+    ],
+    "variationsZh": [
+      "换成嫩豆腐，口感更滑（麻婆风）",
+      "把豆腐换成茄子，先煎再烧（纯素版）",
+      "出锅前加一把绿叶菜"
+    ]
+  },
+  "moo-shu-pork": {
+    "slug": "moo-shu-pork",
+    "titleEn": "Moo Shu Pork (木须肉)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "onion-beef-stir-fry": {
+    "slug": "onion-beef-stir-fry",
+    "titleEn": "Onion Beef Stir-fry (洋葱炒牛肉)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Swap beef for pork loin, sliced thin",
+      "Add mushrooms (shiitake or button) for extra umami",
+      "Turn the stir-fry into a one-pot rice bowl"
+    ],
+    "variationsZh": [
+      "牛肉换成猪里脊切薄片",
+      "加香菇或口蘑提鲜",
+      "改成一人食盖饭"
+    ]
+  },
+  "oyster-sauce-lettuce": {
+    "slug": "oyster-sauce-lettuce",
+    "titleEn": "Oyster Sauce Lettuce (蚝油生菜)",
+    "ingredientSubs": [
+      {
+        "from": "oyster sauce",
+        "fromZh": "蚝油",
+        "to": "hoisin + ½ tsp fish sauce (or soy)",
+        "toZh": "海鲜酱 + 半茶匙鱼露（或生抽）",
+        "ratio": "1:1",
+        "note": "Sweeter and thicker; thin with a little water.",
+        "noteZh": "更甜更稠，加一点水调稀。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Skipping the 'rest' step — dressing runs watery.",
+        "mistakeZh": "跳过静置步骤——调料汁水分离。",
+        "fix": "Let dressed vegetables sit 5-10 min so flavors marry.",
+        "fixZh": "拌好后静置 5-10 分钟让味道融合。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "pan-fried-chicken": {
+    "slug": "pan-fried-chicken",
+    "titleEn": "Pan-Fried Chicken Cutlet (香煎鸡排)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒粉",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "pepper-pork": {
+    "slug": "pepper-pork",
+    "titleEn": "Pepper Shredded Pork (青椒肉丝)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "shaoxing wine",
+        "fromZh": "绍兴酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "pineapple-fried-rice": {
+    "slug": "pineapple-fried-rice",
+    "titleEn": "Thai-Style Pineapple Fried Rice Recipe | 20-Min Chinese Street Food",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use day-old rice for the best wok-hei",
+      "Add frozen peas and carrots for color",
+      "Finish with a drizzle of sesame oil"
+    ],
+    "variationsZh": [
+      "用隔夜饭炒最有镬气",
+      "加冷冻豌豆和胡萝卜丁配色",
+      "出锅前淋一点香油"
+    ]
+  },
+  "pork-cabbage-dumplings": {
+    "slug": "pork-cabbage-dumplings",
+    "titleEn": "Pork and Cabbage Dumplings (白菜猪肉饺)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Filling too wet — wrappers tear while pleating.",
+        "mistakeZh": "馅太湿——包的时候皮就破了。",
+        "fix": "Squeeze out moisture; chill filling 15 min before wrapping.",
+        "fixZh": "挤干水分，包前冷藏馅料 15 分钟。"
+      },
+      {
+        "mistake": "Not sealing edges — dumplings open in the pot.",
+        "mistakeZh": "边缘没捏紧——下锅就开口。",
+        "fix": "Dab water on the edge and pinch firmly; crimp twice.",
+        "fixZh": "边缘抹水用力捏合，收口捏两遍。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "potato-beef-stew": {
+    "slug": "potato-beef-stew",
+    "titleEn": "Potato Beef Stew (土豆炖牛肉)",
+    "ingredientSubs": [
+      {
+        "from": "star anise",
+        "fromZh": "八角",
+        "to": "fennel seeds + pinch of cinnamon",
+        "toZh": "茴香籽 + 一小撮肉桂",
+        "ratio": "2 pieces : 1 tsp",
+        "note": "Close licorice warmth.",
+        "noteZh": "接近的甘草甜香。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Swap beef for pork loin, sliced thin",
+      "Add mushrooms (shiitake or button) for extra umami",
+      "Turn the stir-fry into a one-pot rice bowl"
+    ],
+    "variationsZh": [
+      "牛肉换成猪里脊切薄片",
+      "加香菇或口蘑提鲜",
+      "改成一人食盖饭"
+    ]
+  },
+  "scallion-noodles": {
+    "slug": "scallion-noodles",
+    "titleEn": "Scallion Oil Noodles (葱油拌面)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Overcooking noodles — they turn mushy in the sauce.",
+        "mistakeZh": "面条煮过头——拌酱后烂糊。",
+        "fix": "Cook 30-60s less than the package says; finish in the sauce.",
+        "fixZh": "比包装时间少煮 30-60 秒，让它在酱汁里完成。"
+      }
+    ],
+    "variations": [
+      "Swap wheat noodles for rice noodles (gluten-free)",
+      "Add a soft-fried egg on top",
+      "Use cold noodles in summer with the same sauce"
+    ],
+    "variationsZh": [
+      "面条换成米粉（无麸质）",
+      "加一个溏心煎蛋",
+      "夏天换冷面，用同一碗酱"
+    ]
+  },
+  "scallion-pancakes": {
+    "slug": "scallion-pancakes",
+    "titleEn": "Scallion Pancakes (葱油饼)",
+    "ingredientSubs": [],
+    "commonMistakes": [
+      {
+        "mistake": "Filling too wet — wrappers tear while pleating.",
+        "mistakeZh": "馅太湿——包的时候皮就破了。",
+        "fix": "Squeeze out moisture; chill filling 15 min before wrapping.",
+        "fixZh": "挤干水分，包前冷藏馅料 15 分钟。"
+      },
+      {
+        "mistake": "Not sealing edges — dumplings open in the pot.",
+        "mistakeZh": "边缘没捏紧——下锅就开口。",
+        "fix": "Dab water on the edge and pinch firmly; crimp twice.",
+        "fixZh": "边缘抹水用力捏合，收口捏两遍。"
+      }
+    ],
+    "variations": [
+      "Steam instead of boil — chewier wrappers",
+      "Pan-fry for potstickers (guotie)",
+      "Swap filling to shrimp + chives"
+    ],
+    "variationsZh": [
+      "蒸代替煮——皮更筋道",
+      "煎成锅贴",
+      "馅料换成虾仁韭菜"
+    ]
+  },
+  "smashed-cucumber": {
+    "slug": "smashed-cucumber",
+    "titleEn": "Smashed Cucumber (拍黄瓜)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Skipping the 'rest' step — dressing runs watery.",
+        "mistakeZh": "跳过静置步骤——调料汁水分离。",
+        "fix": "Let dressed vegetables sit 5-10 min so flavors marry.",
+        "fixZh": "拌好后静置 5-10 分钟让味道融合。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "sour-soup-dumplings": {
+    "slug": "sour-soup-dumplings",
+    "titleEn": "Sour Soup Dumplings (酸汤水饺)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒粉",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Filling too wet — wrappers tear while pleating.",
+        "mistakeZh": "馅太湿——包的时候皮就破了。",
+        "fix": "Squeeze out moisture; chill filling 15 min before wrapping.",
+        "fixZh": "挤干水分，包前冷藏馅料 15 分钟。"
+      },
+      {
+        "mistake": "Not sealing edges — dumplings open in the pot.",
+        "mistakeZh": "边缘没捏紧——下锅就开口。",
+        "fix": "Dab water on the edge and pinch firmly; crimp twice.",
+        "fixZh": "边缘抹水用力捏合，收口捏两遍。"
+      }
+    ],
+    "variations": [
+      "Steam instead of boil — chewier wrappers",
+      "Pan-fry for potstickers (guotie)",
+      "Swap filling to shrimp + chives"
+    ],
+    "variationsZh": [
+      "蒸代替煮——皮更筋道",
+      "煎成锅贴",
+      "馅料换成虾仁韭菜"
+    ]
+  },
+  "soy-chicken-wings": {
+    "slug": "soy-chicken-wings",
+    "titleEn": "Soy-Braised Chicken Wings (酱油鸡翅)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "spicy-potato-shreds": {
+    "slug": "spicy-potato-shreds",
+    "titleEn": "Spicy Sour Potato Shreds (酸辣土豆丝)",
+    "ingredientSubs": [
+      {
+        "from": "Sichuan peppercorns",
+        "fromZh": "花椒",
+        "to": "black peppercorn + pinch of lemon zest",
+        "toZh": "黑胡椒 + 一小撮柠檬皮屑",
+        "ratio": "1:1",
+        "note": "Loses the numbing, keeps some aroma.",
+        "noteZh": "没有麻感，但保留部分香气。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "stir-fried-bok-choy": {
+    "slug": "stir-fried-bok-choy",
+    "titleEn": "Stir-fried Bok Choy (清炒小白菜)",
+    "ingredientSubs": [],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "sweet-sour-pork": {
+    "slug": "sweet-sour-pork",
+    "titleEn": "Sweet and Sour Pork (糖醋里脊)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [],
+    "variations": [],
+    "variationsZh": []
+  },
+  "tomato-egg-noodles": {
+    "slug": "tomato-egg-noodles",
+    "titleEn": "Tomato Egg Noodles (番茄鸡蛋面)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "tomato-and-egg": {
+    "slug": "tomato-and-egg",
+    "titleEn": "Tomato & Egg (番茄炒蛋)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce (optional)",
+        "fromZh": "生抽（可选）",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "twice-cooked-pork": {
+    "slug": "twice-cooked-pork",
+    "titleEn": "Twice Cooked Pork (蒜苗回锅肉)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      },
+      {
+        "from": "shaoxing wine",
+        "fromZh": "绍兴酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "vinegar-cabbage": {
+    "slug": "vinegar-cabbage",
+    "titleEn": "Vinegar Cabbage (醋溜白菜) — Northeastern Sweet-Sour Stir-Fry",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add mushrooms for a meaty texture",
+      "Finish with toasted sesame seeds for crunch",
+      "Serve with a fried egg for extra protein"
+    ],
+    "variationsZh": [
+      "加香菇增加肉感",
+      "撒烤芝麻增脆",
+      "配煎蛋补充蛋白质"
+    ]
+  },
+  "yangchun-noodles": {
+    "slug": "yangchun-noodles",
+    "titleEn": "Yangchun Noodles (阳春面)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒粉",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Skipping the 'rest' step — dressing runs watery.",
+        "mistakeZh": "跳过静置步骤——调料汁水分离。",
+        "fix": "Let dressed vegetables sit 5-10 min so flavors marry.",
+        "fixZh": "拌好后静置 5-10 分钟让味道融合。"
+      },
+      {
+        "mistake": "Overcooking noodles — they turn mushy in the sauce.",
+        "mistakeZh": "面条煮过头——拌酱后烂糊。",
+        "fix": "Cook 30-60s less than the package says; finish in the sauce.",
+        "fixZh": "比包装时间少煮 30-60 秒，让它在酱汁里完成。"
+      }
+    ],
+    "variations": [
+      "Swap wheat noodles for rice noodles (gluten-free)",
+      "Add a soft-fried egg on top",
+      "Use cold noodles in summer with the same sauce"
+    ],
+    "variationsZh": [
+      "面条换成米粉（无麸质）",
+      "加一个溏心煎蛋",
+      "夏天换冷面，用同一碗酱"
+    ]
+  },
+  "yangzhou-fried-rice": {
+    "slug": "yangzhou-fried-rice",
+    "titleEn": "Yangzhou Fried Rice (扬州炒饭)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒粉",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use day-old rice for the best wok-hei",
+      "Add frozen peas and carrots for color",
+      "Finish with a drizzle of sesame oil"
+    ],
+    "variationsZh": [
+      "用隔夜饭炒最有镬气",
+      "加冷冻豌豆和胡萝卜丁配色",
+      "出锅前淋一点香油"
+    ]
+  },
+  "yu-xiang-pork": {
+    "slug": "yu-xiang-pork",
+    "titleEn": "Yu Xiang Shredded Pork (鱼香肉丝)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "sweet-sour-ribs": {
+    "slug": "sweet-sour-ribs",
+    "titleEn": "Sweet and Sour Pork Ribs (糖醋排骨)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [],
+    "variationsZh": []
+  },
+  "sweet-sour-fish": {
+    "slug": "sweet-sour-fish",
+    "titleEn": "Sweet and Sour Fish (糖醋鱼)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Over-flipping fish — fillets fall apart.",
+        "mistakeZh": "反复翻鱼——鱼块全散。",
+        "fix": "Flip once; let the first side fully set before turning.",
+        "fixZh": "只翻一次，第一面煎定型再翻。"
+      }
+    ],
+    "variations": [],
+    "variationsZh": []
+  },
+  "egg-drop-soup": {
+    "slug": "egg-drop-soup",
+    "titleEn": "Seaweed Egg Drop Soup (紫菜蛋花汤)",
+    "ingredientSubs": [
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      },
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒粉",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Skipping the 'rest' step — dressing runs watery.",
+        "mistakeZh": "跳过静置步骤——调料汁水分离。",
+        "fix": "Let dressed vegetables sit 5-10 min so flavors marry.",
+        "fixZh": "拌好后静置 5-10 分钟让味道融合。"
+      },
+      {
+        "mistake": "Eggs scrambled over high heat for too long — dry and rubbery.",
+        "mistakeZh": "全程大火久炒——蛋又干又老。",
+        "fix": "Pull eggs off while still glossy; carry-over heat finishes them.",
+        "fixZh": "蛋还带光泽时就出锅，余温会继续加热。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "tomato-egg-drop-soup": {
+    "slug": "tomato-egg-drop-soup",
+    "titleEn": "Tomato Egg Drop Soup (番茄蛋花汤)",
+    "ingredientSubs": [
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add tomato for a saucy version",
+      "Scramble with scallion whites for extra fragrance",
+      "Serve over rice for a complete 10-minute meal"
+    ],
+    "variationsZh": [
+      "加番茄变成带汁版",
+      "加葱白一起炒更香",
+      "盖在米饭上，10 分钟一餐"
+    ]
+  },
+  "winter-melon-soup": {
+    "slug": "winter-melon-soup",
+    "titleEn": "Winter Melon Pork Rib Soup (冬瓜排骨汤)",
+    "ingredientSubs": [
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      },
+      {
+        "from": "white pepper",
+        "fromZh": "白胡椒粉",
+        "to": "black pepper (use ¾ amount)",
+        "toZh": "黑胡椒（用 ¾ 量）",
+        "ratio": "3:4",
+        "note": "Sharper, but works in a pinch.",
+        "noteZh": "更冲，但可应急。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Add silken tofu cubes for protein",
+      "Swap the stock for miso broth (faster umami)",
+      "Add a beaten egg swirl at the end for body"
+    ],
+    "variationsZh": [
+      "加嫩豆腐块增加蛋白质",
+      "高汤换味噌汤底（更快提鲜）",
+      "最后淋蛋花增稠"
+    ]
+  },
+  "eggplant-green-bean-casserole": {
+    "slug": "eggplant-green-bean-casserole",
+    "titleEn": "Eggplant & Green Bean Casserole (茄子豆角煲)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "dark soy sauce",
+        "fromZh": "老抽",
+        "to": "light soy + ½ tsp sugar + drop of molasses",
+        "toZh": "生抽 + 半茶匙糖 + 一滴糖蜜",
+        "ratio": "1:1",
+        "note": "Gets the color without the bottle.",
+        "noteZh": "同样上色，不用单买老抽。"
+      },
+      {
+        "from": "shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use ground pork for a quicker, softer texture",
+      "Add a handful of cabbage for bulk and sweetness",
+      "Skip the meat for a vegetarian version with extra tofu"
+    ],
+    "variationsZh": [
+      "用猪肉末，更快更软",
+      "加一把白菜增甜增量",
+      "纯素版：肉换豆腐"
+    ]
+  },
+  "ge-le-shan-lazi-chicken": {
+    "slug": "ge-le-shan-lazi-chicken",
+    "titleEn": "Ge Le Shan Lazi Chicken (歌乐山辣子鸡)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "Shaoxing wine",
+        "fromZh": "料酒",
+        "to": "dry sherry or mirin (less sweet)",
+        "toZh": "干雪利酒或味醂（减糖）",
+        "ratio": "1:1",
+        "note": "Both add the same warm fermented depth.",
+        "noteZh": "都能带来相同的发酵醇香。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  },
+  "tengjiao-chicken": {
+    "slug": "tengjiao-chicken",
+    "titleEn": "Tengjiao Chicken (藤椒鸡)",
+    "ingredientSubs": [
+      {
+        "from": "light soy sauce",
+        "fromZh": "生抽",
+        "to": "regular soy sauce",
+        "toZh": "普通酱油",
+        "ratio": "1:1",
+        "note": "Slightly saltier — dial salt back by a pinch.",
+        "noteZh": "稍咸，盐量减一小撮。"
+      },
+      {
+        "from": "toasted sesame oil",
+        "fromZh": "香油",
+        "to": "toasted sesame oil (same thing!)",
+        "toZh": "烤芝麻油（同物）",
+        "ratio": "1:1",
+        "note": "Check the label: use toasted (dark), not raw.",
+        "noteZh": "看标签：用深色烤芝麻油，不是生油。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "Crowding the pan — ingredients steam instead of sear.",
+        "mistakeZh": "食材堆太满——变成蒸而不是炒。",
+        "fix": "Cook in batches; give each piece room to brown.",
+        "fixZh": "分批下锅，给每块食材留出上色空间。"
+      },
+      {
+        "mistake": "Adding sauce too early — the wok cools and flavors dull.",
+        "mistakeZh": "酱汁下太早——锅温骤降，香味出不来。",
+        "fix": "Push food up the wok wall, add sauce to the hot center, toss fast.",
+        "fixZh": "把食材推到锅边，酱汁下到中间热区，快速翻匀。"
+      }
+    ],
+    "variations": [
+      "Use chicken thighs instead of breast — juicier, more forgiving",
+      "Double the sauce for a rice-bowl version",
+      "Add cashews or peanuts for crunch at the end"
+    ],
+    "variationsZh": [
+      "鸡腿代替鸡胸——更嫩更不容易柴",
+      "酱汁加倍，变成盖饭",
+      "出锅前加腰果或花生增脆"
+    ]
+  }
+}

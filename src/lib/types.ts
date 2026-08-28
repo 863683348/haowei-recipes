@@ -79,6 +79,26 @@ export interface Recipe {
   tips: string[]; // 英文
   tipsZh?: string[]; // 中文（与 tips 平行）
   relatedSlugs: string[];
+  /** 食材替代指南（P1-1：亚超食材 → 本地替代） */
+  ingredientSubs?: Array<{
+    from: string; // 原食材（英文）
+    fromZh?: string; // 原食材（中文）
+    to: string; // 替代品（英文）
+    toZh?: string; // 替代品（中文）
+    ratio: string; // 用量换算（如 "1:1"）
+    note: string; // 风味影响（英文）
+    noteZh?: string; // 风味影响（中文）
+  }>;
+  /** 常见翻车点（P1-1：新手最容易错的地方 + 怎么避免） */
+  commonMistakes?: Array<{
+    mistake: string; // 错误（英文）
+    mistakeZh?: string; // 错误（中文）
+    fix: string; // 修正（英文）
+    fixZh?: string; // 修正（中文）
+  }>;
+  /** 变花样（P1-1：换食材/换做法 3 种玩法） */
+  variations?: string[]; // 英文
+  variationsZh?: string[]; // 中文
   /** 菜谱卡片图（绝对路径，从 SITE_URL 解析为完整 URL） */
   image: string;
 }

@@ -11,6 +11,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const VOLUME_PDF_FILES: Record<string, string> = {
   v1: "haowei-v1.pdf",
   v2: "haowei-v2.pdf",
+  v3: "haowei-top25.pdf",
 };
 
 function pdfExists(volumeId: string): boolean {

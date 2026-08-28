@@ -182,6 +182,13 @@ export default async function HomePage({ params }: Props) {
                 <DownloadIcon className="h-5 w-5" />
                 {t.home.pdfCta.download}
               </Link>
+              <Link
+                href={localizePath("/pdf/v3", loc)}
+                className="inline-flex items-center gap-2 rounded-lg border border-[var(--hw-ginger)] bg-transparent px-5 py-3 text-sm font-semibold text-[var(--hw-ginger)] transition hover:bg-[var(--hw-ginger)] hover:text-white"
+              >
+                <DownloadIcon className="h-5 w-5" />
+                {isZh ? "Top 25 电子书" : "Top 25 eBook"}
+              </Link>
             </div>
           </div>
         </div>
