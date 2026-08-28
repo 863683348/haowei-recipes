@@ -37,7 +37,6 @@ import { sourSoupDumplings } from "./sour-soup-dumplings";
 import { soyChickenWings } from "./soy-chicken-wings";
 import { spicyPotatoShreds } from "./spicy-potato-shreds";
 import { stirFriedBokChoy } from "./stir-fried-bok-choy";
-import { stirFriedGreens } from "./stir-fried-greens";
 import { sweet_sour_pork } from "./sweet-sour-pork";
 import { tomato_egg_noodles } from "./tomato-egg-noodles";
 import { tomatoEggs } from "./tomato-eggs";
@@ -93,7 +92,6 @@ export const recipes: Recipe[] = [
   soyChickenWings,
   spicyPotatoShreds,
   stirFriedBokChoy,
-  stirFriedGreens,
   sweet_sour_pork,
   tomato_egg_noodles,
   tomatoEggs,

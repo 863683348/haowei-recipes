@@ -8,7 +8,7 @@ export const vinegar_cabbage: Recipe = {
   id: "vinegar-cabbage",
   slug: "vinegar-cabbage",
   titleEn: "Vinegar Cabbage (醋溜白菜) — Northeastern Sweet-Sour Stir-Fry",
-  titleZh: "醋溜白菜（东北酸甜炒）—— 15 分钟快手家常菜",
+  titleZh: "醋溜白菜",
   pinyin: "cù liū bái cài",
   cuisine: "东北菜",
   cuisineEn: "Northeastern",

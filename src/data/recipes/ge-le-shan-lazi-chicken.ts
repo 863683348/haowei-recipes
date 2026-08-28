@@ -116,7 +116,8 @@ export const ge_le_shan_lazi_chicken: Recipe = {
       "amountMetric": "1 tbsp",
       "amountUS": "1 tbsp",
       "category": "asian-pantry",
-      "pantry": "asian"
+      "pantry": "asian",
+      "termKey": "sesame-seeds"
     },
     {
       "id": "gls-10",

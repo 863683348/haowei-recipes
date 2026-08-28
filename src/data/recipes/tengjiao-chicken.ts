@@ -46,7 +46,8 @@ export const tengjiao_chicken: Recipe = {
       "amountMetric": "2 tbsp",
       "amountUS": "2 tbsp",
       "category": "asian-pantry",
-      "pantry": "asian"
+      "pantry": "asian",
+      "termKey": "sichuan-peppercorn"
     },
     {
       "id": "tj-3",

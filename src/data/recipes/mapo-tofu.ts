@@ -68,6 +68,7 @@ export const mapoTofu: Recipe = {
       amountUS: "1 tsp",
       category: "asian-pantry",
       pantry: "asian",
+      termKey: "douchi",
     },
     {
       id: "mt-garlic",

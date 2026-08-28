@@ -5,7 +5,7 @@ export const garlic_chives_scrambled_eggs: Recipe = {
   "id": "jiu-cai-chao-dan",
   "slug": "garlic-chives-scrambled-eggs",
   "titleEn": "Garlic Chives Scrambled Eggs Recipe | Chinese Scrambled Eggs with Chives",
-  "titleZh": "蒜蓉韭菜炒蛋（蒜蓉韭菜炒蛋）—— 经典中式炒蛋",
+  "titleZh": "韭菜炒蛋",
   "pinyin": "jiǔ cài chǎo dàn",
   "cuisine": "家常",
   "cuisineEn": "Home-style",

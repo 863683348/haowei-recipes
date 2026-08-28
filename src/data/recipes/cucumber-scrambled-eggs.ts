@@ -5,7 +5,7 @@ export const cucumber_scrambled_eggs: Recipe = {
   "id": "huang-gua-chao-dan",
   "slug": "cucumber-scrambled-eggs",
   "titleEn": "Cucumber Scrambled Eggs Recipe | Quick 15-Min Chinese Home Cooking",
-  "titleZh": "黄瓜炒蛋（黄瓜炒蛋）—— 15分钟快手家常菜",
+  "titleZh": "黄瓜炒蛋",
   "pinyin": "huáng guā chǎo dàn",
   "cuisine": "家常",
   "cuisineEn": "Home-style",
@@ -38,8 +38,7 @@ export const cucumber_scrambled_eggs: Recipe = {
       "category": "produce",
       "pantry": "local",
       "note": "Use English or Persian cucumber for low-seed, firm flesh; avoid hothouse varieties with watery centers.",
-      "noteZh": "推荐用英国黄瓜或波斯黄瓜，籽少肉紧；避免温室大棚黄瓜（水分过多）。",
-      "termKey": ""
+      "noteZh": "推荐用英国黄瓜或波斯黄瓜，籽少肉紧；避免温室大棚黄瓜（水分过多）。"
     },
     {
       "id": "hg-02",
@@ -51,8 +50,7 @@ export const cucumber_scrambled_eggs: Recipe = {
       "category": "protein",
       "pantry": "local",
       "note": "",
-      "noteZh": "",
-      "termKey": ""
+      "noteZh": ""
     },
     {
       "id": "hg-03",
