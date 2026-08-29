@@ -13,6 +13,8 @@ import { RecipeComments } from "@/components/recipe-comments";
 import { BowlIcon, LeafIcon, BulbIcon, ClockIcon } from "@/components/icons";
 import { getRecipeBySlug, recipes, getRelatedRecipes } from "@/data/recipes";
 import { getRecipeCuisineDefs } from "@/data/cuisines";
+import { getRecipeTagDefs, getIngredientHubLinks } from "@/data/tags";
+import { getRelatedFaqs } from "@/lib/recipe-faq-match";
 import { getMealPlan, type DishRole } from "@/data/pairings";
 import { getDepthFields } from "@/data/depth-fields";
 import { locales, isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
@@ -302,6 +304,35 @@ export default async function RecipePage({ params }: Props) {
           </p>
         </div>
 
+        {/* 主题探索链接（T2-2：tag 合集 + 食材枢纽内链） */}
+        {(() => {
+          const tagDefs = getRecipeTagDefs(recipe);
+          const hubLinks = getIngredientHubLinks(recipe);
+          if (tagDefs.length === 0 && hubLinks.length === 0) return null;
+          return (
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+              {hubLinks.map((h) => (
+                <Link
+                  key={h.href}
+                  href={localizePath(h.href, loc)}
+                  className="rounded-full border border-[var(--hw-border)] bg-[var(--hw-card)] px-3 py-1 font-medium text-[var(--hw-fg-muted)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
+                >
+                  {isZh ? h.labelZh : h.labelEn} →
+                </Link>
+              ))}
+              {tagDefs.map((tg) => (
+                <Link
+                  key={tg.slug}
+                  href={localizePath(`/tag/${tg.slug}`, loc)}
+                  className="rounded-full border border-[var(--hw-border)] bg-[var(--hw-card)] px-3 py-1 font-medium text-[var(--hw-fg-muted)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
+                >
+                  {isZh ? tg.zh : tg.en}
+                </Link>
+              ))}
+            </div>
+          );
+        })()}
+
         {/* 食材 + 步骤 双栏 */}
         <div className="mt-8 grid gap-8 md:grid-cols-[1fr_1.4fr]">
           <div>
@@ -386,6 +417,57 @@ export default async function RecipePage({ params }: Props) {
             </li>
           </ul>
         </section>
+
+        {/* 常见问题（T2-1：关键词匹配的相关 FAQ + FAQPage JSON-LD） */}
+        {(() => {
+          const relatedFaqs = getRelatedFaqs(recipe, 3);
+          if (relatedFaqs.length === 0) return null;
+          const faqJsonLd = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: relatedFaqs.map((f) => ({
+              "@type": "Question",
+              name: isZh ? f.questionZh ?? f.question : f.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: isZh ? f.answerZh ?? f.answer : f.answer,
+              },
+            })),
+          };
+          return (
+            <>
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+              />
+              <section className="mt-10 rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6">
+                <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+                  {t.recipeDetail.relatedFaqs}
+                </h2>
+                <div className="mt-4 space-y-3">
+                  {relatedFaqs.map((f) => (
+                    <details
+                      key={f.id}
+                      className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-bg-soft)] p-4"
+                    >
+                      <summary className="cursor-pointer text-sm font-medium text-[var(--hw-fg)]">
+                        {isZh ? f.questionZh ?? f.question : f.question}
+                      </summary>
+                      <p className="mt-2 text-sm leading-relaxed text-[var(--hw-fg-muted)]">
+                        {isZh ? f.answerZh ?? f.answer : f.answer}
+                      </p>
+                      {f.source && (
+                        <p className="mt-2 text-xs text-[var(--hw-fg-muted)]">
+                          {t.faqPage.source}: {f.source}
+                        </p>
+                      )}
+                    </details>
+                  ))}
+                </div>
+              </section>
+            </>
+          );
+        })()}
 
         {/* 深度字段（P1-1：替代指南 / 翻车点 / 变花样） */}
         {(() => {

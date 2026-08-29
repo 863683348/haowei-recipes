@@ -90,6 +90,7 @@ export const dict = {
       { title: "Dumplings", desc: "Chive egg & pork cabbage", href: "/recipes/dumplings", icon: "🥟" },
       { title: "Soups", desc: "Egg drop & winter melon", href: "/recipes/soups", icon: "🍲" },
       { title: "Vegetarian", desc: "17 meatless home dishes", href: "/recipes/vegetarian", icon: "🌱" },
+      { title: "Seasonal menus", desc: "CNY feast, solstice, Thanksgiving sides", href: "/occasion/chinese-new-year", icon: "🧧" },
     ],
     pdfCta: {
       title: "Get the HǎoWèi Recipe Collection (PDF)",
@@ -120,6 +121,8 @@ export const dict = {
     pageOf: "Page {page} of {pages} · {total} recipes",
     otherCuisines: "Explore other Chinese cuisines",
     cuisineEmpty: "Recipes for this cuisine are being added.",
+    moreTags: "More collections",
+    moreOccasions: "More seasonal menus",
   },
   recipeDetail: {
     homeVersion: "家庭快手版 · Home version",
@@ -145,6 +148,7 @@ export const dict = {
     pairingSide: "Side",
     pairingStaple: "Staple",
     pairingSoup: "Soup",
+    relatedFaqs: "Common questions",
     viewsLabel: "views",
     depthSubs: "Ingredient swaps",
     depthSubsDesc: "Can't find an Asian-market staple? Use these.",

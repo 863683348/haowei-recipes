@@ -1,6 +1,8 @@
 import { recipes } from "@/data/recipes";
 import { blogPosts } from "@/data/blog";
 import { CUISINE_LIST } from "@/data/cuisines";
+import { TAG_LIST } from "@/data/tags";
+import { OCCASION_LIST } from "@/data/occasions";
 import { locales, SITE_URL } from "@/i18n/config";
 
 /** sitemap.xml — 双语言 URL + hreflang alternates（route handler 手动缓存头） */
@@ -10,6 +12,8 @@ export async function GET() {
     "/blog",
     "/recipes",
     "/recipes/chicken",
+    "/recipes/pork",
+    "/recipes/egg",
     "/recipes/beef",
     "/recipes/tofu",
     "/recipes/noodles",
@@ -29,6 +33,16 @@ export async function GET() {
     ...staticPaths.map((p) => ({ path: p, lastmod: "2026-08-15", freq: "monthly" })),
     ...CUISINE_LIST.map((c) => ({
       path: `/cuisine/${c.slug}`,
+      lastmod: "2026-08-29",
+      freq: "monthly",
+    })),
+    ...TAG_LIST.map((t) => ({
+      path: `/tag/${t.slug}`,
+      lastmod: "2026-08-29",
+      freq: "monthly",
+    })),
+    ...OCCASION_LIST.map((o) => ({
+      path: `/occasion/${o.slug}`,
       lastmod: "2026-08-29",
       freq: "monthly",
     })),

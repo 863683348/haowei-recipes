@@ -16,6 +16,20 @@ const faqItems = [
 ];
 const faqById = new Map(substitutions.map((s) => [s.id, s]));
 
+/** T1-2：常用计量换算表（标准美制量杯 1 cup = 240 ml） */
+const CONVERSIONS: { en: string; zh: string; us: string; metric: string }[] = [
+  { en: "All-purpose flour", zh: "中筋面粉", us: "1 cup", metric: "≈ 120 g" },
+  { en: "Granulated sugar", zh: "白砂糖", us: "1 cup", metric: "≈ 200 g" },
+  { en: "Brown sugar (packed)", zh: "红糖（压实）", us: "1 cup", metric: "≈ 213 g" },
+  { en: "Unsalted butter", zh: "无盐黄油", us: "1 cup", metric: "≈ 227 g" },
+  { en: "Uncooked white rice", zh: "生大米", us: "1 cup", metric: "≈ 185 g" },
+  { en: "Water / stock", zh: "水 / 高汤", us: "1 cup", metric: "≈ 240 ml" },
+  { en: "Light soy sauce / Shaoxing wine", zh: "生抽 / 绍兴酒", us: "1 tbsp", metric: "≈ 15 ml" },
+  { en: "Sesame oil", zh: "芝麻油", us: "1 tsp", metric: "≈ 5 ml" },
+  { en: "Cornstarch", zh: "玉米淀粉", us: "1 tbsp", metric: "≈ 8 g" },
+  { en: "Table salt", zh: "食盐", us: "1 tsp", metric: "≈ 6 g" },
+];
+
 export const dynamic = "force-static";
 
 interface Props {
@@ -155,6 +169,38 @@ export default async function SubstitutionsPage({ params }: Props) {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* T1-2：常用计量换算，覆盖 "1 cup flour in grams" 类搜索意图 */}
+      <section className="mt-12">
+        <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+          {isZh ? "中餐常用计量换算（杯/勺 → 克）" : "Common Measurement Conversions (Cup/Spoon → Grams)"}
+        </h2>
+        <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
+          {isZh
+            ? "中餐食谱最常卡在美制计量上。下表覆盖本站菜谱最常用食材的杯/勺 → 克换算，按标准美制量杯（1 cup = 240 ml）计算。"
+            : "US cup measurements are the #1 sticking point in Chinese recipes. This table covers the most-used ingredients on this site, based on a standard US cup (1 cup = 240 ml)."}
+        </p>
+        <div className="mt-4 overflow-x-auto rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)]">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-[var(--hw-border)] text-left text-xs uppercase tracking-wide text-[var(--hw-fg-muted)]">
+                <th className="px-4 py-2.5 font-semibold">{isZh ? "食材" : "Ingredient"}</th>
+                <th className="px-4 py-2.5 font-semibold">{isZh ? "美制" : "US measure"}</th>
+                <th className="px-4 py-2.5 font-semibold">{isZh ? "公制约等于" : "Metric (approx.)"}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {CONVERSIONS.map((row) => (
+                <tr key={row.en} className="border-b border-[var(--hw-border)] last:border-0">
+                  <td className="px-4 py-2 font-medium text-[var(--hw-fg)]">{isZh ? row.zh : row.en}</td>
+                  <td className="px-4 py-2 text-[var(--hw-fg-muted)]">{row.us}</td>
+                  <td className="px-4 py-2 text-[var(--hw-fg)]">{row.metric}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
     </main>

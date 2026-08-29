@@ -92,6 +92,7 @@ export const dictZh: Dict = {
       { title: "饺子", desc: "韭菜鸡蛋饺、白菜猪肉饺", href: "/recipes/dumplings", icon: "🥟" },
       { title: "汤羹", desc: "蛋花汤、冬瓜排骨汤", href: "/recipes/soups", icon: "🍲" },
       { title: "素食", desc: "17 道无肉也满足的家常菜", href: "/recipes/vegetarian", icon: "🌱" },
+      { title: "节令菜单", desc: "年夜饭、冬至、感恩节配菜", href: "/occasion/chinese-new-year", icon: "🧧" },
     ],
     pdfCta: {
       title: "好味首发菜谱合集（PDF）",
@@ -122,6 +123,8 @@ export const dictZh: Dict = {
     pageOf: "第 {page} / {pages} 页 · 共 {total} 道",
     otherCuisines: "探索其他中式菜系",
     cuisineEmpty: "该菜系菜谱整理中。",
+    moreTags: "更多主题合集",
+    moreOccasions: "更多节令菜单",
   },
   recipeDetail: {
     homeVersion: "家庭快手版 · Home version",
@@ -147,6 +150,7 @@ export const dictZh: Dict = {
     pairingSide: "配菜",
     pairingStaple: "主食",
     pairingSoup: "汤羹",
+    relatedFaqs: "常见问题",
     viewsLabel: "次浏览",
     depthSubs: "食材替代指南",
     depthSubsDesc: "买不到亚超食材？这样替换。",
