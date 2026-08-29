@@ -151,7 +151,7 @@ const westernPantry: BlogPost = {
   authorZh: "好味厨房",
   publishDate: "2026-08-16",
   coverImage: "/images/blog/western-supermarket-chinese-pantry.png",
-  relatedRecipeSlugs: ["mapo-tofu", "egg-fried-rice", "tomato-eggs"],
+  relatedRecipeSlugs: ["mapo-tofu", "egg-fried-rice", "tomato-and-egg"],
   bodyEn: [
     { type: "p", text: "The biggest myth about cooking Chinese food abroad is that you need a wall of special ingredients. For everyday 家常菜, a normal supermarket gets you 80% of the way." },
     { type: "h2", text: "Buy at any supermarket" },
@@ -209,7 +209,7 @@ const marinatingMeat: BlogPost = {
   authorZh: "好味厨房",
   publishDate: "2026-08-17",
   coverImage: "/images/blog/marinating-meat-chinese-way.png",
-  relatedRecipeSlugs: ["kung-pao-chicken", "beef-and-broccoli", "sichuan-green-beans"],
+  relatedRecipeSlugs: ["kung-pao-chicken", "beef-and-broccoli", "dry-fried-green-beans"],
   bodyEn: [
     { type: "p", text: "If you've ever marinated meat at home and it came out dry or bland, the problem is rarely the recipe. It's usually the order, the timing, or the missing ingredient that most home cooks overlook." },
     { type: "h2", text: "The four-step order (and why it matters)" },
@@ -478,9 +478,9 @@ const makingCaramelSugarColor: BlogPost = {
   "publishDate": "2026-08-28",
   "coverImage": "/images/blog/making-caramel-sugar-color.png",
   "relatedRecipeSlugs": [
-    "hong-shao-pork-belly",
-    "red-braised-carp",
-    "braised-beef-brisket"
+    "hongshao-pork",
+    "sweet-sour-fish",
+    "potato-beef-stew"
   ],
   "bodyEn": [
     {
@@ -592,7 +592,7 @@ const driedChilies: BlogPost = {
   "coverImage": "/images/blog/dried-chilies.png",
   "relatedRecipeSlugs": [
     "mapo-tofu",
-    "water-boiled-beef",
+    "shui-zhu-beef",
     "dry-fried-green-beans"
   ],
   "bodyEn": [
@@ -687,8 +687,8 @@ const tofuTypes: BlogPost = {
   "coverImage": "/images/blog/tofu-types.png",
   "relatedRecipeSlugs": [
     "mapo-tofu",
-    "century-egg-tofu",
-    "tofu-vegetable-stir-fry"
+    "cold-dressed-dried-tofu",
+    "home-style-tofu"
   ],
   "bodyEn": [
     {
@@ -781,9 +781,9 @@ const chineseNoodlesBuyersGuide: BlogPost = {
   "publishDate": "2026-09-03",
   "coverImage": "/images/blog/chinese-noodles-buyers-guide.png",
   "relatedRecipeSlugs": [
-    "scallion-oil-noodles",
-    "dan-dan-noodles",
-    "wonton-noodle-soup"
+    "scallion-noodles",
+    "dan-dan-noodles-chengdu",
+    "chicken-broth-noodle-soup"
   ],
   "bodyEn": [
     {
@@ -878,8 +878,8 @@ const chineseRiceTypes: BlogPost = {
   "coverImage": "/images/blog/chinese-rice-types.png",
   "relatedRecipeSlugs": [
     "yangzhou-fried-rice",
-    "congee-basic",
-    "sticky-rice-dumplings"
+    "pidan-shourou-congee",
+    "pearl-meatballs-sticky-rice"
   ],
   "bodyEn": [
     {
@@ -972,8 +972,8 @@ const sesameOilUses: BlogPost = {
   "publishDate": "2026-09-05",
   "coverImage": "/images/blog/sesame-oil-uses.png",
   "relatedRecipeSlugs": [
-    "scallion-oil-noodles",
-    "cold-noodle-salad",
+    "scallion-noodles",
+    "da-la-pi-jelly-noodle-salad",
     "egg-drop-soup"
   ],
   "bodyEn": [
@@ -1085,9 +1085,9 @@ const coldNoodleSauceRecipe: BlogPost = {
   "publishDate": "2026-09-06",
   "coverImage": "/images/blog/cold-noodle-sauce-recipe.png",
   "relatedRecipeSlugs": [
-    "cucumber-salad",
-    "cold-noodle-salad",
-    "tofu-cold-appetizer"
+    "smashed-cucumber",
+    "da-la-pi-jelly-noodle-salad",
+    "cold-dressed-dried-tofu"
   ],
   "bodyEn": [
     {
@@ -1197,7 +1197,7 @@ const vinegarInChineseCooking: BlogPost = {
   authorZh: "好味厨房",
   publishDate: "2026-08-21",
   coverImage: "/images/blog/vinegar-in-chinese-cooking.png",
-  relatedRecipeSlugs: ["mapo-tofu", "cold-dressed-cucumber", "dan-dan-noodles"],
+  relatedRecipeSlugs: ["mapo-tofu", "smashed-cucumber", "dan-dan-noodles-chengdu"],
   bodyEn: [
     { type: "p", text: "Vinegar is not just sour. In Chinese kitchens, it is a multi-functional tool for seasoning, removing fishiness, enhancing umami, and preserving color." },
     { type: "h2", text: "Main Types of Chinese Vinegar" },
