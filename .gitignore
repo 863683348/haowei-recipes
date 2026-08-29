@@ -54,3 +54,7 @@ next-env.d.ts
 # 生图/PDF 导出预览（临时，不提交）
 /.pdf_preview/
 /.recipe-export/
+/.v_agnes_test/
+/.v_*.html
+/verify_out/
+/verify*.js
