@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import type { Recipe } from "@/lib/types";
+import type { RecipeSearchItem } from "@/lib/recipe-search";
 import { useI18n } from "@/i18n/provider";
 import { localizePath } from "@/i18n/config";
 import { ClockIcon } from "./icons";
@@ -15,7 +15,7 @@ const FALLBACK_IMG = "/images/og-default.webp";
  * 设计参考：截图风格——白底卡片、4:3 图片顶置、分类+时长一行、
  * 主标题加粗 serif、英文+拼音副标、底部边框 chip 标签。
  */
-export function RecipeCard({ recipe }: { recipe: Recipe }) {
+export function RecipeCard({ recipe }: { recipe: RecipeSearchItem }) {
   const { locale, t } = useI18n();
   const isZh = locale === "zh";
   const [imgSrc, setImgSrc] = useState(recipe.image);
