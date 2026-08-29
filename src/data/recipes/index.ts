@@ -77,7 +77,7 @@ import { sichuan_malatang } from "./sichuan-malatang";
 import { chongqing_mala_xiang_guo } from "./chongqing-mala-xiang-guo";
 import { shrimp_steamed_egg } from "./shrimp-steamed-egg";
 import { minced_pork_steamed_egg } from "./minced-pork-steamed-egg";
-import { steamed_seabass } from "./steamed-seabass";
+import { steamed_bass } from "./steamed-bass";
 import { char_siu_pork } from "./char-siu-pork";
 import { honey_rib_roast } from "./honey-rib-roast";
 import { rose_soy_chicken } from "./rose-soy-chicken";
@@ -344,6 +344,7 @@ export const recipes: Recipe[] = [
   eggplant_green_bean_casserole,
   ge_le_shan_lazi_chicken,
   tengjiao_chicken,
+  lazi_diced_chicken,
   shui_zhu_beef,
   shui_zhu_fish,
   shui_zhu_pork_slices,
@@ -369,7 +370,7 @@ export const recipes: Recipe[] = [
   chongqing_mala_xiang_guo,
   shrimp_steamed_egg,
   minced_pork_steamed_egg,
-  steamed_seabass,
+  steamed_bass,
   char_siu_pork,
   honey_rib_roast,
   rose_soy_chicken,

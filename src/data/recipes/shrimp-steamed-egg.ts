@@ -1,138 +1,182 @@
-import type { Recipe } from "@/lib/types";
+import type { Recipe } from '@/lib/types';
 
-/** Shrimp Steamed Egg (虾仁蒸蛋) — Seed batch */
+/\*\* Shrimp Steamed Egg (虾仁蒸蛋) (虾仁蒸蛋) — Day 15 batch \*/
 export const shrimp_steamed_egg: Recipe = {
-  "id": "xia-ren-zheng-dan",
+  "id": "shrimp-steamed-egg",
   "slug": "shrimp-steamed-egg",
-  "titleEn": "Shrimp Steamed Egg",
+  "titleEn": "Shrimp Steamed Egg (虾仁蒸蛋)",
   "titleZh": "虾仁蒸蛋",
   "pinyin": "xiā rén zhēng dàn",
-  "cuisine": "家常",
-  "cuisineEn": "Home-style",
-  "region": "Shanghai",
-  "regionZh": "上海",
+  "cuisine": "粤菜",
+  "cuisineEn": "Cantonese",
+  "region": "Guangdong (广东)",
+  "regionZh": "广东",
   "difficulty": "easy",
-  "timeMin": 28,
+  "timeMin": 25,
   "servings": 2,
   "version": "family",
-  "versionNote": "Family version uses gentle steaming and minimal seasoning — no broth or cornstarch, just eggs, shrimp, and light soy. Restaurant versions often add chicken stock or fish maw.",
-  "versionNoteZh": "家庭版用纯蛋液与鲜虾清蒸，不加高汤或鱼胶；餐馆版常加入鸡汤或鱼鳔提鲜。",
+  "versionNote": "Family version: silky custard with sweet shrimp — Cantonese home cooking at its simplest.",
+  "versionNoteZh": "家庭版：嫩滑蛋羹配鲜甜虾仁——粤式家常极简风味。",
   "tags": [
-    "30-min",
-    "weeknight",
-    "comfort"
+    "steamed",
+    "quick",
+    "protein",
+    "easy",
+    "weeknight"
   ],
   "dietary": [
-    "none"
+    "gluten-free"
   ],
-  "story": "My aunt in Yangpu District made this every Sunday morning when I was seven — she’d crack the eggs into a ceramic bowl, stir just until blended (never frothy), and tuck plump shrimp into the surface before sliding it into her bamboo steamer over simmering water. She said the secret was 'quiet steam, not boiling roar'.",
-  "storyZh": "我杨浦区的姑妈在我七岁时每个周日清晨都做这道菜——她把鸡蛋打进瓷碗，只搅匀不打发，再将饱满的虾仁轻轻嵌入蛋液表面，最后放进竹蒸笼，置于微沸水之上。她说秘诀是‘静汽不滚’。",
+  "story": "Shrimp steamed egg is a Cantonese classic — a dish that looks fancy but takes only minutes. The key is the water-to-egg ratio and gentle steaming. A single plump prawn crowns each bowl. It is the kind of dish a Cantonese grandma makes when someone is sick or just needs comfort food.",
+  "storyZh": "虾仁蒸蛋是粤菜经典——看着高档，实则只需几分钟。秘诀在于蛋水比例和温和蒸制。每碗顶一颗饱满虾仁，是广东阿婆在家人不适或需要慰藉时必做的一道菜。",
   "ingredients": [
     {
-      "id": "eg-01",
+      "id": "se-1",
       "nameEn": "large eggs",
       "nameZh": "鸡蛋",
-      "pinyin": "jī dàn",
-      "amountMetric": "200 g",
-      "amountUS": "4 large",
+      "amountMetric": "3 large",
+      "amountUS": "3 large",
       "category": "protein",
       "pantry": "local",
-      "note": "Use room-temperature eggs for smoother texture",
-      "noteZh": "使用室温鸡蛋，质地更细腻"
+      "termKey": "egg"
     },
     {
-      "id": "sh-01",
-      "nameEn": "fresh shrimp, peeled and deveined",
+      "id": "se-2",
+      "nameEn": "raw shrimp, peeled and deveined",
       "nameZh": "鲜虾仁",
-      "pinyin": "xiān xiā rén",
-      "amountMetric": "80 g",
-      "amountUS": "1/2 cup (small to medium size)",
+      "amountMetric": "150 g",
+      "amountUS": "about 5 oz",
       "category": "protein",
       "pantry": "local",
-      "note": "Substitute frozen raw shrimp if fresh unavailable; thaw & pat dry",
-      "noteZh": "如无鲜虾，可用冷冻生虾仁替代；解冻后吸干水分"
+      "termKey": "shrimp"
     },
     {
-      "id": "wa-01",
-      "nameEn": "cool boiled water or filtered water",
-      "nameZh": "凉开水或过滤水",
-      "pinyin": "liáng kāi shuǐ huò guò lǜ shuǐ",
-      "amountMetric": "160 ml",
-      "amountUS": "2/3 cup",
-      "category": "staple",
-      "pantry": "local",
-      "note": "Water temperature must be cool — warm water causes curdling",
-      "noteZh": "水温必须凉，热水会导致蛋液结块"
+      "id": "se-3",
+      "nameEn": "warm water",
+      "nameZh": "温水",
+      "amountMetric": "300 ml",
+      "amountUS": "1 1/4 cups",
+      "category": "other",
+      "pantry": "local"
     },
     {
-      "id": "ls-01",
+      "id": "se-4",
       "nameEn": "light soy sauce",
       "nameZh": "生抽",
-      "pinyin": "shēng chōu",
-      "amountMetric": "5 ml",
-      "amountUS": "1 tsp",
+      "amountMetric": "2 tsp",
+      "amountUS": "2 tsp",
       "category": "asian-pantry",
       "pantry": "asian",
       "termKey": "light-soy-sauce"
     },
     {
-      "id": "so-01",
+      "id": "se-5",
       "nameEn": "sesame oil",
       "nameZh": "香油",
-      "pinyin": "xiāng yóu",
-      "amountMetric": "2 ml",
-      "amountUS": "1/4 tsp",
+      "amountMetric": "1/2 tsp",
+      "amountUS": "1/2 tsp",
       "category": "asian-pantry",
       "pantry": "asian",
       "termKey": "sesame-oil"
+    },
+    {
+      "id": "se-6",
+      "nameEn": "scallions, finely chopped",
+      "nameZh": "小葱",
+      "amountMetric": "2 stalks",
+      "amountUS": "2 stalks",
+      "category": "produce",
+      "pantry": "local",
+      "termKey": "scallion"
+    },
+    {
+      "id": "se-7",
+      "nameEn": "salt",
+      "nameZh": "盐",
+      "amountMetric": "1/2 tsp",
+      "amountUS": "1/2 tsp",
+      "category": "asian-pantry",
+      "pantry": "local"
+    },
+    {
+      "id": "se-8",
+      "nameEn": "white pepper",
+      "nameZh": "白胡椒粉",
+      "amountMetric": "a pinch",
+      "amountUS": "a pinch",
+      "category": "spice",
+      "pantry": "asian",
+      "termKey": "white-pepper"
     }
   ],
   "steps": [
     {
-      "text": "In a mixing bowl, whisk eggs gently with chopsticks or a fork until just combined — no bubbles or foam.",
-      "textZh": "取大碗，用筷子或叉子轻柔搅打鸡蛋，至刚混合均匀即可，切勿起泡。",
-      "zhHint": "轻搅，不起泡"
-    },
-    {
-      "text": "Add cool boiled water and whisk again gently until fully incorporated. Strain through a fine-mesh sieve into a heatproof dish (e.g., shallow ceramic bowl).",
-      "textZh": "加入凉开水，再次轻柔搅匀；过细网筛滤入耐热浅碗中。",
-      "zhHint": "过筛去泡"
-    },
-    {
-      "text": "Arrange shrimp evenly on the surface of the egg mixture. Cover dish tightly with aluminum foil or a heatproof lid.",
-      "textZh": "将虾仁均匀铺在蛋液表面，盖紧铝箔纸或耐热盖。",
-      "zhHint": "虾仁朝上，封严"
-    },
-    {
-      "text": "Place dish in a wok or pot with 3 cm of simmering water. Steam over medium-low heat for 12–14 minutes.",
-      "textZh": "将碗放入已烧开微沸水（水深约3厘米）的锅中，中火转小火蒸12–14分钟。",
-      "zhHint": "水微沸，小火蒸",
+      "text": "Beat the eggs in a bowl with a pinch of salt and white pepper until just combined — do not over-whisk to avoid foam.",
+      "textZh": "碗中打入鸡蛋，加少许盐和胡椒，轻轻打散即可，不要过度搅打产生气泡。",
       "stateNote": {
-        "visual": "Surface is set but still slightly glossy, with no liquid pooling",
-        "visualZh": "表面已凝固但仍有光泽，无水析出",
-        "timeRef": "12–14 minutes",
-        "timeRefZh": "12–14 分钟",
-        "heat": "medium-low",
-        "signal": "A clean toothpick inserted near center comes out mostly clean, with slight moisture",
-        "signalZh": "牙签插入中心附近，拔出时略带湿润但无蛋液挂壁"
+        "visual": "Eggs evenly mixed, slight foam OK",
+        "visualZh": "蛋液均匀，略有泡沫亦可",
+        "signal": "No large streaks of white yolk remain",
+        "signalZh": "没有明显蛋黄条纹即可"
       }
     },
     {
-      "text": "Remove from steamer, discard foil, drizzle with light soy sauce and sesame oil. Garnish with thinly sliced scallion greens.",
-      "textZh": "取出蒸碗，揭去铝箔，淋上生抽和香油，撒葱绿丝。",
-      "zhHint": "出锅再淋酱"
+      "text": "Add warm water (about 40C, warm to touch but not hot) to the beaten eggs. Mix gently. Strain through a fine sieve into a steaming bowl to remove bubbles and achieve silkiness.",
+      "textZh": "加入温水（约40度，触手温热但不烫），轻轻拌匀。过筛入蒸碗，滤去气泡，确保蛋羹丝滑。",
+      "stateNote": {
+        "visual": "Liquid smooth and homogenous, no bubbles on surface",
+        "visualZh": "液体顺滑均匀，表面无气泡",
+        "signal": "Strained liquid pours like thin cream",
+        "signalZh": "过筛后呈稀奶油状流动性"
+      }
+    },
+    {
+      "text": "Cover the bowl tightly with heatproof plastic wrap or a plate. Bring a pot of water to a boil, then reduce to a steady simmer. Place the bowl inside, cover the pot, and steam on medium-low heat for 12 minutes.",
+      "textZh": "碗口紧封耐高温保鲜膜或盖盘。锅中水烧开，转中火，放入蒸碗，盖锅盖，中火蒸12分钟。",
+      "stateNote": {
+        "visual": "Egg set like a firm custard, jiggles slightly in center",
+        "visualZh": "蛋羹凝固，中心轻晃微微颤动",
+        "signal": "A skewer inserted in center comes out clean",
+        "signalZh": "牙签插入中心拔出干净"
+      }
+    },
+    {
+      "text": "While the egg steams, quickly blanch the shrimp in boiling salted water for 60 seconds until pink. Remove and pat dry.",
+      "textZh": "蒸蛋的同时，虾仁在沸盐水中快速焯烫60秒至变红，捞出沥干。",
+      "stateNote": {
+        "visual": "Shrimp turn opaque pink and curl into C-shape",
+        "visualZh": "虾仁变粉红 opaque 并卷成 C 形",
+        "signal": "About 1 minute — do not overcook",
+        "signalZh": "约1分钟，勿久煮"
+      }
+    },
+    {
+      "text": "Gently place 5-6 prawns on top of the set steamed egg. Drizzle with soy sauce and sesame oil. Garnish with chopped scallions. Serve immediately.",
+      "textZh": "将虾仁轻放于凝固蛋羹上，淋生抽和香油，撒葱花，立刻上桌。",
+      "stateNote": {
+        "visual": "Glossy egg surface with bright pink shrimp and green scallions",
+        "visualZh": "蛋羹表面光亮，虾仁粉红，葱花翠绿",
+        "signal": "Ready when shiny and aromatic",
+        "signalZh": "表面光亮、香气扑鼻即成"
+      }
     }
   ],
   "tips": [
-    "Always use cool water — warm or hot water creates uneven texture and holes.",
-    "Straining removes air bubbles and guarantees silkiness.",
-    "Do not oversteam: overcooked egg becomes spongy and weeps water."
+    "Use warm water (not cold) for a smoother custard. Cold water creates a watery layer.",
+    "Straining is the secret to silky texture — never skip it.",
+    "Do not steam on high heat or the eggs will become porous and bumpy.",
+    "Blanched shrimp can be swapped for raw shrimp placed on top before steaming (cook 8 more minutes)."
   ],
   "tipsZh": [
-    "务必使用凉开水，温水或热水会导致蛋羹质地不均、出现蜂窝。",
-    "过筛可去除气泡，确保口感如丝绸般顺滑。",
-    "切勿蒸过头：蒸老的蛋羹会变海绵状并析出水。"
+    "用温水（非冷水）使蛋羹更顺滑。冷水会导致出水。",
+    "过筛是丝滑口感的秘密——不可省略。",
+    "不要用大火蒸，否则蛋羹会变多孔起坑。",
+    "焯熟的虾仁可换成生虾仁直接放蛋羹上蒸（多蒸8分钟）。"
   ],
-  "relatedSlugs": [],
+  "relatedSlugs": [
+    "egg-drop-soup",
+    "tomato-eggs",
+    "garlic-chives-scrambled-eggs"
+  ],
   "image": "/images/recipes/shrimp-steamed-egg.webp"
 };
