@@ -9,6 +9,8 @@ import type { DietLabel } from "@/lib/types";
 
 export const dynamic = "force-static";
 
+const PAGE_SIZE = 24;
+
 interface Props {
   params: Promise<{ locale: string }>;
   searchParams: Promise<{
@@ -18,11 +20,8 @@ interface Props {
     diet?: string;
     tag?: string;
     q?: string;
-    page?: string;
   }>;
 }
-
-const PAGE_SIZE = 24;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -55,11 +54,8 @@ export default async function RecipesPage({ params, searchParams }: Props) {
   const list = filterRecipes(filter);
   const total = list.length;
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-  const page = Math.min(
-    Math.max(1, Number(sp.page) || 1),
-    totalPages
-  );
-  const pageItems = list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const page = 1;
+  const pageItems = list.slice(0, PAGE_SIZE);
 
   const difficultyOptions = [
     { value: "easy", label: t.common.difficulty.easy },
@@ -67,7 +63,7 @@ export default async function RecipesPage({ params, searchParams }: Props) {
     { value: "hard", label: t.common.difficulty.hard },
   ];
 
-  /** 分页链接（保留全部筛选参数） */
+  /** 分页链接（路径式 /recipes/page/N，保留筛选参数；第 1 页回 /recipes） */
   function pageHref(p: number): string {
     const sp2 = new URLSearchParams();
     if (sp.cuisine) sp2.set("cuisine", sp.cuisine);
@@ -76,9 +72,9 @@ export default async function RecipesPage({ params, searchParams }: Props) {
     if (sp.diet) sp2.set("diet", sp.diet);
     if (sp.tag) sp2.set("tag", sp.tag);
     if (sp.q) sp2.set("q", sp.q);
-    if (p > 1) sp2.set("page", String(p));
     const qs = sp2.toString();
-    return localizePath(`/recipes${qs ? `?${qs}` : ""}`, loc);
+    const base = p <= 1 ? "/recipes" : `/recipes/page/${p}`;
+    return localizePath(`${base}${qs ? `?${qs}` : ""}`, loc);
   }
 
   // 分页按钮数组（1 … cur-1 cur cur+1 … last）

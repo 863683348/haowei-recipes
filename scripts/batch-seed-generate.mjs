@@ -255,6 +255,20 @@ function cleanAndValidate(batch, validSlugs, existingTitles) {
     if (Array.isArray(r.steps)) {
       for (const s of r.steps) {
         if (s.stateNote && s.stateNote.heat && !HEAT.has(s.stateNote.heat)) delete s.stateNote.heat;
+        if (s.stateNote && s.stateNote.heat === "") delete s.stateNote.heat;
+      }
+    }
+    // category 归一（IngredientCategory 白名单）
+    const CATS = new Set(["produce", "protein", "staple", "asian-pantry", "western-pantry", "spice", "dairy", "other"]);
+    if (Array.isArray(r.ingredients)) {
+      for (const ing of r.ingredients) {
+        if (ing.category && !CATS.has(ing.category)) {
+          const c = String(ing.category);
+          if (c.includes("seafood") || c.includes("meat") || c.includes("fish")) ing.category = "protein";
+          else if (c.includes("veg") || c.includes("fruit")) ing.category = "produce";
+          else if (c.includes("grain") || c.includes("rice") || c.includes("flour")) ing.category = "staple";
+          else ing.category = "other";
+        }
       }
     }
     // ingredient id 唯一化 + pantry 归一（Pantry 类型仅 local|asian）+ termKey null 清理
