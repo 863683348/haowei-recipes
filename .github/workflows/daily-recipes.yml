@@ -93,7 +93,7 @@ jobs:
       GH_REPO: haoweirecipes
       GH_BRANCH: main
       SITE_HOST: haoweirecipes.com
-      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY || '0f3d1de947cbc476896ac5db4863f64a' }}
     steps:
       - name: Re-checkout (with full history)
         uses: actions/checkout@v4

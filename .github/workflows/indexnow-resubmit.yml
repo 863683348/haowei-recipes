@@ -1,7 +1,8 @@
 name: Manual IndexNow Resubmit
 
-# 手动触发：批量重提所有 /recipes/ URL 到 Bing
-# 适用场景：sitemap 变更后想强制 Bing 重新抓取
+# 手动触发：全量重提线上所有 URL 到 Bing
+# 适用场景：sitemap 大改后想强制 Bing 重新抓取
+# 注意：抓的是线上 sitemap（动态路由生成），不是本地文件
 
 on:
   workflow_dispatch:
@@ -10,10 +11,6 @@ on:
         description: "Site host (default: haoweirecipes.com)"
         required: false
         default: "haoweirecipes.com"
-      url_pattern:
-        description: "URL pattern to enumerate (default: /recipes/)"
-        required: false
-        default: "/recipes/"
 
 permissions:
   contents: read
@@ -24,16 +21,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY || '0f3d1de947cbc476896ac5db4863f64a' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22.22.2"
-      - name: Resubmit
+      - name: Fetch live sitemap + resubmit
         run: |
+          curl -s "https://${{ inputs.host }}/sitemap.xml" -o /tmp/sm.xml
+          echo "📊 线上 sitemap URL 总数: $(grep -c '<loc>' /tmp/sm.xml)"
           node scripts/indexnow-submit.mjs \
             --host "${{ inputs.host }}" \
             --key "$INDEXNOW_KEY" \
-            --url-pattern "${{ inputs.url_pattern }}" \
-            --from-sitemap "public/sitemap.xml"
+            --from-sitemap /tmp/sm.xml

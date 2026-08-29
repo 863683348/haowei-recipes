@@ -1,0 +1,55 @@
+name: IndexNow on Deploy
+
+# 每次 push 到 main（菜谱 / 聚合页 / 博客 / 任何改动）后，等 Vercel 部署完成，
+# 自动把线上全站 sitemap 推给 Bing（IndexNow），实现「上线即收录」。
+# 依赖：Vercel 已接入 GitHub（push main 自动部署）。
+# key 兜底：若仓库未设 secrets.INDEXNOW_KEY，则用公开验证 key（等价于 public/<key>.txt）。
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-on-deploy
+  cancel-in-progress: false
+
+jobs:
+  indexnow:
+    name: "Push live sitemap to IndexNow after deploy"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY || '0f3d1de947cbc476896ac5db4863f64a' }}
+      SITE_HOST: haoweirecipes.com
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.22.2"
+
+      - name: Wait for Vercel deploy (poll live sitemap)
+        run: |
+          echo "⏳ 等待 Vercel 部署完成（轮询线上 sitemap）..."
+          for i in $(seq 1 30); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "https://${SITE_HOST}/sitemap.xml")
+            if [ "$code" = "200" ]; then
+              echo "✅ sitemap 已上线（约 $((i*15))s）"
+              break
+            fi
+            sleep 15
+          done
+          # 额外缓冲：确保最新构建已包含本次 commit 的改动
+          echo "⏳ 缓冲 180s 确保构建稳定..."
+          sleep 180
+
+      - name: Fetch live sitemap + submit to IndexNow
+        run: |
+          curl -s "https://${SITE_HOST}/sitemap.xml" -o /tmp/sm.xml
+          echo "📊 线上 sitemap URL 总数: $(grep -c '<loc>' /tmp/sm.xml)"
+          node scripts/indexnow-submit.mjs \
+            --host "$SITE_HOST" \
+            --key "$INDEXNOW_KEY" \
+            --from-sitemap /tmp/sm.xml
