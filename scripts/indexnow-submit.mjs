@@ -22,6 +22,14 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 
+// IndexNow 参与搜索引擎端点：api 中心会自动分发至 Bing/Yandex/Seznam，
+// 同时显式直推 bing.com 与 yandex.com 以提升确定性收录（幂等、重复无害）。
+const ENDPOINTS = [
+  "https://api.indexnow.org/indexnow",
+  "https://www.bing.com/indexnow",
+  "https://yandex.com/indexnow",
+];
+
 const args = process.argv.slice(2);
 function getArg(name) {
   const i = args.indexOf(`--${name}`);
@@ -57,24 +65,31 @@ async function submit(urls) {
   for (let i = 0; i < urls.length; i += 10000) {
     chunks.push(urls.slice(i, i + 10000));
   }
-  console.log(`📤 提交 ${urls.length} 个 URL（${chunks.length} 批）...`);
+  console.log(`📤 提交 ${urls.length} 个 URL 到 ${ENDPOINTS.length} 个搜索引擎（${chunks.length} 批）...`);
 
-  for (const chunk of chunks) {
-    const res = await fetch("https://api.indexnow.org/indexnow", {
-      method: "POST",
-      headers: { "Content-Type": "application/json; charset=utf-8" },
-      body: JSON.stringify({
-        host: HOST,
-        key: KEY,
-        keyLocation: `https://${HOST}/${KEY}.txt`,
-        urlList: chunk,
-      }),
-    });
-    if (res.ok || res.status === 200 || res.status === 202) {
-      console.log(`   ✅ 提交 ${chunk.length} 个 URL: ${res.status}`);
-    } else {
-      const text = await res.text();
-      console.warn(`   ⚠️ 失败 ${res.status}: ${text.slice(0, 200)}`);
+  for (const endpoint of ENDPOINTS) {
+    const engine = new URL(endpoint).host;
+    for (const chunk of chunks) {
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json; charset=utf-8" },
+          body: JSON.stringify({
+            host: HOST,
+            key: KEY,
+            keyLocation: `https://${HOST}/${KEY}.txt`,
+            urlList: chunk,
+          }),
+        });
+        if (res.ok || res.status === 200 || res.status === 202) {
+          console.log(`   ✅ ${engine}: ${chunk.length} 个 URL -> ${res.status}`);
+        } else {
+          const text = await res.text();
+          console.warn(`   ⚠️ ${engine} 失败 ${res.status}: ${text.slice(0, 200)}`);
+        }
+      } catch (e) {
+        console.warn(`   ⚠️ ${engine} 请求异常: ${e.message}`);
+      }
     }
   }
 }
