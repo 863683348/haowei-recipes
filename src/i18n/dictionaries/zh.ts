@@ -84,7 +84,7 @@ export const dictZh: Dict = {
     viewAll: "查看全部 →",
     hubTitle: "按分类探索",
     hubLinks: [
-      { title: "川菜", desc: "麻婆豆腐、宫保鸡丁、辣子鸡", href: "/recipes/sichuan", icon: "🌶️" },
+      { title: "川菜", desc: "麻婆豆腐、宫保鸡丁、辣子鸡", href: "/cuisine/sichuan", icon: "🌶️" },
       { title: "鸡肉", desc: "宫保、鸡翅、红烧鸡腿", href: "/recipes/chicken", icon: "🍗" },
       { title: "牛肉", desc: "滑炒与炖煮家常做法", href: "/recipes/beef", icon: "🥩" },
       { title: "豆腐", desc: "麻婆、红烧、家常豆腐", href: "/recipes/tofu", icon: "🧊" },
@@ -120,6 +120,8 @@ export const dictZh: Dict = {
     prev: "上一页",
     next: "下一页",
     pageOf: "第 {page} / {pages} 页 · 共 {total} 道",
+    otherCuisines: "探索其他中式菜系",
+    cuisineEmpty: "该菜系菜谱整理中。",
   },
   recipeDetail: {
     homeVersion: "家庭快手版 · Home version",

@@ -12,6 +12,7 @@ import { RecipeViews } from "@/components/recipe-views";
 import { RecipeComments } from "@/components/recipe-comments";
 import { BowlIcon, LeafIcon, BulbIcon, ClockIcon } from "@/components/icons";
 import { getRecipeBySlug, recipes, getRelatedRecipes } from "@/data/recipes";
+import { getRecipeCuisineDefs } from "@/data/cuisines";
 import { getMealPlan, type DishRole } from "@/data/pairings";
 import { getDepthFields } from "@/data/depth-fields";
 import { locales, isLocale, localizePath, pageAlternates, absoluteUrl, type Locale } from "@/i18n/config";
@@ -231,9 +232,15 @@ export default async function RecipePage({ params }: Props) {
 
         {/* 元信息 */}
         <div className="mt-6 flex flex-wrap items-center gap-2 text-xs">
-          <span className="rounded-full bg-[var(--hw-ginger)]/15 px-2.5 py-1 font-semibold text-[var(--hw-ginger)]">
-            {cuisine}
-          </span>
+          {getRecipeCuisineDefs(recipe).map((c) => (
+            <Link
+              key={c.slug}
+              href={localizePath(`/cuisine/${c.slug}`, loc)}
+              className="rounded-full bg-[var(--hw-ginger)]/15 px-2.5 py-1 font-semibold text-[var(--hw-ginger)] transition hover:underline"
+            >
+              {isZh ? c.zh : c.en}
+            </Link>
+          ))}
           <span className="rounded-full bg-[var(--hw-bg-soft)] px-2.5 py-1 text-[var(--hw-fg-muted)]">
             {t.common.difficulty[recipe.difficulty]}
           </span>

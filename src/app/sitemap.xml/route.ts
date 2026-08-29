@@ -1,5 +1,6 @@
 import { recipes } from "@/data/recipes";
 import { blogPosts } from "@/data/blog";
+import { CUISINE_LIST } from "@/data/cuisines";
 import { locales, SITE_URL } from "@/i18n/config";
 
 /** sitemap.xml — 双语言 URL + hreflang alternates（route handler 手动缓存头） */
@@ -8,14 +9,12 @@ export async function GET() {
     "",
     "/blog",
     "/recipes",
-    // 枢纽页矩阵（P0-2）：菜系页 + 场景/食材页，聚合长尾流量
-    "/recipes/sichuan",
-    "/recipes/soups",
     "/recipes/chicken",
     "/recipes/beef",
     "/recipes/tofu",
     "/recipes/noodles",
     "/recipes/dumplings",
+    "/recipes/soups",
     "/recipes/vegetarian",
     "/substitutions",
     "/terms",
@@ -28,6 +27,11 @@ export async function GET() {
   ];
   const paths = [
     ...staticPaths.map((p) => ({ path: p, lastmod: "2026-08-15", freq: "monthly" })),
+    ...CUISINE_LIST.map((c) => ({
+      path: `/cuisine/${c.slug}`,
+      lastmod: "2026-08-29",
+      freq: "monthly",
+    })),
     ...recipes.map((r) => ({
       path: `/recipes/${r.slug}`,
       lastmod: "2026-08-15",

@@ -82,7 +82,7 @@ export const dict = {
     viewAll: "View all →",
     hubTitle: "Explore by category",
     hubLinks: [
-      { title: "Sichuan", desc: "Mapo tofu, kung pao & la zi ji", href: "/recipes/sichuan", icon: "🌶️" },
+      { title: "Sichuan", desc: "Mapo tofu, kung pao & la zi ji", href: "/cuisine/sichuan", icon: "🌶️" },
       { title: "Chicken", desc: "Kung pao, wings & braised legs", href: "/recipes/chicken", icon: "🍗" },
       { title: "Beef", desc: "Velvet stir-fries & stews", href: "/recipes/beef", icon: "🥩" },
       { title: "Tofu", desc: "Mapo, braised & home-style", href: "/recipes/tofu", icon: "🧊" },
@@ -118,6 +118,8 @@ export const dict = {
     prev: "Prev",
     next: "Next",
     pageOf: "Page {page} of {pages} · {total} recipes",
+    otherCuisines: "Explore other Chinese cuisines",
+    cuisineEmpty: "Recipes for this cuisine are being added.",
   },
   recipeDetail: {
     homeVersion: "家庭快手版 · Home version",

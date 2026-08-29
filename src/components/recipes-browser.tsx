@@ -12,11 +12,13 @@ const PAGE_SIZE = 24;
 interface Props {
   recipes: RecipeSearchItem[];
   cuisines: string[];
+  /** 菜系聚合页入口链接（/cuisine/[slug]），用于内部互链 */
+  cuisineLinks?: { slug: string; zh: string; en: string }[];
   /** SSR/SSG 首屏页码（来自 /recipes/page/[page] 路由），客户端交互不跳路由 */
   initialPage?: number;
 }
 
-export function RecipesBrowser({ recipes, cuisines, initialPage = 1 }: Props) {
+export function RecipesBrowser({ recipes, cuisines, cuisineLinks = [], initialPage = 1 }: Props) {
   const { locale, t } = useI18n();
   const isZh = locale === "zh";
 
@@ -109,6 +111,19 @@ export function RecipesBrowser({ recipes, cuisines, initialPage = 1 }: Props) {
       />
       <main className="mx-auto max-w-5xl px-4 py-10">
         <h1 className="font-serif text-3xl font-bold text-[var(--hw-fg)]">{t.recipes.title}</h1>
+        {cuisineLinks.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {cuisineLinks.map((c) => (
+              <Link
+                key={c.slug}
+                href={localizePath(`/cuisine/${c.slug}`, locale)}
+                className="rounded-full border border-[var(--hw-border)] bg-[var(--hw-card)] px-3 py-1 text-xs font-medium text-[var(--hw-fg-muted)] transition hover:border-[var(--hw-ginger)] hover:text-[var(--hw-ginger)]"
+              >
+                {isZh ? c.zh : c.en}
+              </Link>
+            ))}
+          </div>
+        )}
         <p className="mt-2 text-[var(--hw-fg-muted)]">
           {t.recipes.subtitle
             .replace("{n}", String(total))
