@@ -95,7 +95,9 @@ export default async function RecipePage({ params }: Props) {
   const pageUrl = absoluteUrl(localizePath(`/recipes/${recipe.slug}`, loc));
   const imageUrl = absoluteUrl(recipe.image);
 
-  // Recipe 结构化数据（SEO，按语言输出）
+  // Recipe 结构化数据（SEO，按语言输出；增强 E-E-A-T / citation）
+  const editorialPolicyUrl = absoluteUrl(localizePath("/editorial-policy", loc));
+  const authorUrl = absoluteUrl(localizePath("/about", loc));
   const recipeJsonLd = {
     "@context": "https://schema.org",
     "@type": "Recipe",
@@ -104,11 +106,23 @@ export default async function RecipePage({ params }: Props) {
     description: `${title} — ${cuisine}${region} home cooking.`,
     image: [imageUrl],
     author: {
+      "@type": "Person",
+      name: isZh ? "HǎoWèi 好味测试厨房" : "HǎoWèi Test Kitchen",
+      jobTitle: isZh ? "家常菜研究与测试团队" : "Home-cooking research team",
+      url: authorUrl,
+      worksFor: {
+        "@type": "Organization",
+        name: "HǎoWèi 好味",
+        url: absoluteUrl("/"),
+      },
+    },
+    reviewedBy: {
       "@type": "Organization",
-      name: "HǎoWèi 好味",
-      url: absoluteUrl("/"),
+      name: isZh ? "HǎoWèi 好味编辑团队" : "HǎoWèi editorial team",
+      url: editorialPolicyUrl,
     },
     datePublished: "2026-08-14",
+    dateModified: "2026-08-29",
     mainEntityOfPage: pageUrl,
     keywords: [...recipe.tags, cuisine, recipe.pinyin].join(", "),
     recipeCuisine: cuisine,
@@ -130,6 +144,23 @@ export default async function RecipePage({ params }: Props) {
     suitableForDiet: recipe.dietary
       .filter((d) => d !== "none")
       .map((d) => `https://schema.org/${d === "vegetarian" ? "VegetarianDiet" : "Diet"}`),
+    citation: [
+      {
+        "@type": "WebPage",
+        name: isZh ? "HǎoWèi 编辑政策" : "HǎoWèi Editorial Policy",
+        url: editorialPolicyUrl,
+      },
+      {
+        "@type": "Book",
+        name: "Land of Plenty: A Treasury of Authentic Sichuan Cooking",
+        author: "Fuchsia Dunlop",
+      },
+      {
+        "@type": "WebPage",
+        name: "USDA FoodData Central",
+        url: "https://fdc.nal.usda.gov/",
+      },
+    ],
   };
 
   // BreadcrumbList JSON-LD（谷歌面包屑 SERP 富结果）
@@ -245,6 +276,25 @@ export default async function RecipePage({ params }: Props) {
         {/* 故事（信任要素：家庭配方来源） */}
         <p className="mt-5 text-sm leading-relaxed text-[var(--hw-fg-muted)]">{story}</p>
 
+        {/* 作者署名 + 审核信息（E-E-A-T / GEO citation） */}
+        <div className="mt-5 flex flex-wrap items-center gap-3 rounded-lg border border-[var(--hw-border)] bg-[var(--hw-bg-soft)] px-4 py-3 text-sm">
+          <div className="flex items-center gap-2">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[var(--hw-ginger)]/15 text-sm font-bold text-[var(--hw-ginger)]">
+              H
+            </span>
+            <div>
+              <p className="font-medium text-[var(--hw-fg)]">
+                {t.recipeDetail.authorLabel}: {t.recipeDetail.authorName}
+              </p>
+              <p className="text-xs text-[var(--hw-fg-muted)]">{t.recipeDetail.authorRole}</p>
+            </div>
+          </div>
+          <span className="hidden text-[var(--hw-border)] sm:inline">|</span>
+          <p className="text-xs text-[var(--hw-fg-muted)]">
+            {t.recipeDetail.reviewedBy} {t.recipeDetail.reviewedByName} · {t.recipeDetail.lastUpdated} 2026-08-29
+          </p>
+        </div>
+
         {/* 食材 + 步骤 双栏 */}
         <div className="mt-8 grid gap-8 md:grid-cols-[1fr_1.4fr]">
           <div>
@@ -302,6 +352,33 @@ export default async function RecipePage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* 来源与参考（GEO citation / E-E-A-T） */}
+        <section className="mt-10 rounded-2xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-6">
+          <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+            {t.recipeDetail.referencesTitle}
+          </h2>
+          <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">{t.recipeDetail.referencesIntro}</p>
+          <ul className="mt-4 list-disc space-y-1.5 pl-5 text-sm text-[var(--hw-fg-muted)]">
+            <li>
+              <Link
+                href={localizePath("/editorial-policy", loc)}
+                className="text-[var(--hw-ginger)] hover:underline"
+              >
+                {t.recipeDetail.editorialPolicyLink}
+              </Link>
+            </li>
+            <li>
+              {isZh ? "邓扶霞（Fuchsia Dunlop）《川菜》（Land of Plenty）—— 技法与味型参考" : "Fuchsia Dunlop, Land of Plenty: A Treasury of Authentic Sichuan Cooking"}
+            </li>
+            <li>
+              {isZh ? "USDA FoodData Central —— 食材营养与分量数据" : "USDA FoodData Central — ingredient nutrition and portion data"}
+            </li>
+            <li>
+              {isZh ? "中国传统家庭厨房实践与地域口味记录" : "Traditional Chinese family-kitchen practice and regional taste records"}
+            </li>
+          </ul>
+        </section>
 
         {/* 深度字段（P1-1：替代指南 / 翻车点 / 变花样） */}
         {(() => {

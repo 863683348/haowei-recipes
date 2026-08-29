@@ -55,6 +55,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link className="hover:text-[var(--hw-ginger)]" href={localizePath("/editorial-policy", locale)}>
+                {t.footer.editorialPolicy}
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-[var(--hw-ginger)]" href={localizePath("/privacy", locale)}>
                 {t.footer.privacy}
               </Link>

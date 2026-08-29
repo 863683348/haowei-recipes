@@ -45,6 +45,7 @@ export const dict = {
     about: "About",
     ourStory: "Our story",
     faq: "FAQ",
+    editorialPolicy: "Editorial policy",
     privacy: "Privacy",
     contact: "Contact",
     copyright: "Authentic Chinese home cooking, made easy.",
@@ -152,6 +153,16 @@ export const dict = {
     swap: "Swap",
     ratioLabel: "Ratio",
     mistakeFix: "Fix:",
+    authorLabel: "Recipe author",
+    authorName: "HǎoWèi Test Kitchen",
+    authorRole: "Home-cooking research team",
+    reviewedBy: "Reviewed by",
+    reviewedByName: "HǎoWèi editorial team",
+    lastUpdated: "Last updated",
+    referencesTitle: "Sources & references",
+    referencesIntro:
+      "Quantities, technique notes, and substitution ratios are cross-checked against established Chinese cookery references and standard food-science sources.",
+    editorialPolicyLink: "Read our editorial policy",
   },
   stateNote: {
     heatLabels: {
@@ -282,6 +293,37 @@ export const dict = {
     getInTouch: "Questions?",
     contactLink: "Get in touch",
   },
+  editorialPage: {
+    title: "Editorial Policy",
+    lastUpdated: "Last updated: August 29, 2026.",
+    sections: [
+      {
+        heading: "Our recipe standards",
+        content:
+          "Every recipe on HǎoWèi is designed for home cooks outside China. We write in English first, then provide Chinese companion text, because clarity and authenticity should not conflict. Each recipe includes bilingual ingredients, metric and US measurements, substitution notes, and visual state cues so you know exactly what to look for.",
+      },
+      {
+        heading: "How we source and test",
+        content:
+          "Recipes are based on regional Chinese home-cooking techniques, cross-referenced with established Chinese cookery references, standard food-science sources, and real family-kitchen practice. Ingredient ratios and substitution recommendations are tested or verified against published culinary references and nutritional databases.",
+      },
+      {
+        heading: "Substitution ratings",
+        content:
+          "Substitutions are rated on a 1–5 fidelity scale. A 5-star swap means the dish stays recognizably authentic; lower ratings tell you the flavor profile will shift and by how much. We always explain the trade-off.",
+      },
+      {
+        heading: "Updates and corrections",
+        content:
+          "Recipes are reviewed periodically. When a reader reports an error or we improve a technique, we update the page and bump the last-updated date. You can request a correction through the contact page.",
+      },
+      {
+        heading: "Affiliates and independence",
+        content:
+          "Shopping links may be affiliate links. They do not influence which ingredients we recommend or how we rate substitutions.",
+      },
+    ],
+  },
   faqPage: {
     title: "FAQ",
     subtitle: "Answers from our cooking knowledge base. Prefer to ask in your own words? Try the",
@@ -358,6 +400,9 @@ export const dict = {
       "Frequently asked questions about Chinese home cooking — substitutions, techniques, diet adaptations, and equipment.",
     privacyTitle: "Privacy Policy",
     privacyDesc: "HǎoWèi 好味 privacy policy — what we store (almost nothing) and why.",
+    editorialPolicyTitle: "Editorial Policy",
+    editorialPolicyDesc:
+      "How HǎoWèi 好味 develops, tests, and fact-checks recipes — our standards for accuracy, substitutions, and citations.",
     contactTitle: "Contact",
     contactDesc: "Get in touch with HǎoWèi 好味.",
     recipeTitle: "{title} Recipe",

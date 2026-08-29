@@ -47,6 +47,7 @@ export const dictZh: Dict = {
     about: "关于",
     ourStory: "我们的故事",
     faq: "常见问题",
+    editorialPolicy: "编辑政策",
     privacy: "隐私政策",
     contact: "联系我们",
     copyright: "正宗中国家常菜，简单易做。",
@@ -154,6 +155,16 @@ export const dictZh: Dict = {
     swap: "替换",
     ratioLabel: "用量",
     mistakeFix: "解法：",
+    authorLabel: "菜谱作者",
+    authorName: "HǎoWèi 好味测试厨房",
+    authorRole: "家常菜研究与测试团队",
+    reviewedBy: "审核",
+    reviewedByName: "HǎoWèi 好味编辑团队",
+    lastUpdated: "最后更新",
+    referencesTitle: "来源与参考",
+    referencesIntro:
+      "用量、技法说明与替换比例均对照中餐烹饪参考书、标准食材数据库及家庭厨房实践进行交叉校验。",
+    editorialPolicyLink: "阅读编辑政策",
   },
   stateNote: {
     heatLabels: {
@@ -282,6 +293,37 @@ export const dictZh: Dict = {
     getInTouch: "有问题？",
     contactLink: "联系我们",
   },
+  editorialPage: {
+    title: "编辑政策",
+    lastUpdated: "最后更新：2026 年 8 月 29 日。",
+    sections: [
+      {
+        heading: "菜谱标准",
+        content:
+          "HǎoWèi 的每道菜谱都面向海外家庭厨房设计。我们以英文为主撰写，再提供中文对照，因为清晰与正宗不应冲突。每道菜都包含中英食材、公制与美制计量、替换说明，以及可视化火候状态提示，让你知道每一步该看什么。",
+      },
+      {
+        heading: "来源与测试",
+        content:
+          "菜谱基于中国各地区家常菜技法，对照中餐烹饪参考书、标准食材数据库以及真实家庭厨房实践进行交叉校验。食材比例与替换建议均经过发布烹饪资料或营养数据库验证。",
+      },
+      {
+        heading: "替换还原度",
+        content:
+          "替换方案按 1–5 星还原度评分。5 星表示成菜仍保持地道风味；低星级会告诉你风味将如何变化、变化多少。我们始终说明取舍。",
+      },
+      {
+        heading: "更新与勘误",
+        content:
+          "菜谱会定期复核。当读者报告错误，或我们改进了技法时，会更新页面并刷新最后更新时间。你可以通过联系页面提交勘误。",
+      },
+      {
+        heading: "联盟与独立性",
+        content:
+          "购物链接可能包含联盟链接，但这不影响我们推荐哪种食材或如何评定替换还原度。",
+      },
+    ],
+  },
   faqPage: {
     title: "常见问题",
     subtitle: "来自烹饪知识库的解答。想用自己的话说？试试",
@@ -357,6 +399,9 @@ export const dictZh: Dict = {
     faqDesc: "中国家常菜常见问题——替换、技法、饮食调整与厨具。",
     privacyTitle: "隐私政策",
     privacyDesc: "HǎoWèi 好味隐私政策——我们几乎不存储任何信息，以及原因。",
+    editorialPolicyTitle: "编辑政策",
+    editorialPolicyDesc:
+      "HǎoWèi 好味如何开发、测试与校验菜谱——我们在准确性、替换方案与引用来源上的标准。",
     contactTitle: "联系我们",
     contactDesc: "联系 HǎoWèi 好味。",
     recipeTitle: "{title} 菜谱",
