@@ -165,3 +165,20 @@
 - Dev.to / Medium / Quora / LinkedIn / Reddit 五平台分发（英文 canonical 稿）。
 - IndexNow 已覆盖 `haoweirecipes.com`（key 接入后自动推送新 URL）。
 - Google Indexing API 待本机网络放行后自动生效。
+
+---
+
+## 五、节令特别篇（Holiday Specials · 年度自动）
+
+> 时效流量最高的一类。每年节前 30 天由 autopipeline 自动出稿（occasion 聚合页 + 1 篇文化/合集博客），今年（2026）手动落地，后续年度复用。
+
+| 节令 | 日期(2026) | occasion 聚合页 | 博客 | 状态 |
+|---|---|---|---|---|
+| 中秋 Mid-Autumn | 2026-09-25 | /occasion/mid-autumn | /blog/mid-autumn-festival-dishes | ✅ 已落地 2026-08-29 |
+| 国庆 National Day | 2026-10-01 | /occasion/national-day | /blog/national-day-family-feast | ✅ 已落地 2026-08-29 |
+| 春节 CNY | 2027-02-17 | /occasion/chinese-new-year | (Day 87 博客) | 待年度自动 |
+| 冬至 Winter Solstice | 2026-12-22 | /occasion/winter-solstice | — | 待年度自动 |
+| 圣诞 Christmas | 2026-12-25 | /occasion/christmas-party | — | 待年度自动 |
+| 感恩节 Thanksgiving | 2026-11-26 | /occasion/thanksgiving | — | 待年度自动 |
+
+**自动出稿触发（明年起）**：在 `autopipeline-3layer` Layer 1（数据层）增加节令日历，节前 30 天触发 `haowei-blog-daily` 生成对应博客 + occasion 页增量（matchTags 自动扩菜），Layer 3 走 IndexNow 即时收录。

@@ -45,16 +45,44 @@ export const OCCASION_LIST: OccasionDef[] = [
     zh: "中秋家宴",
     en: "Mid-Autumn Festival",
     introEn:
-      "A Mid-Autumn family table: hairy crab, lotus root, taro and a chilled pomelo dessert — the classic pairings for the harvest moon.",
+      "A Mid-Autumn family table: steamed hairy crab, lotus-root pork-rib soup, steamed taro and a chilled pomelo sago — the classic pairings for the harvest moon, plus a bubbling reunion hot pot to gather everyone around.",
     introZh:
-      "中秋家宴经典搭配：清蒸大闸蟹、莲藕排骨汤、芋头压桌，再以杨枝甘露收尾——应季而食，团圆不腻。",
+      "中秋家宴经典搭配：清蒸大闸蟹、莲藕排骨汤、剁椒蒸芋头、白灼虾，再来一锅团圆火锅把全家人聚到桌边，最后以杨枝甘露收尾——应季而食，团圆不腻。",
+    matchTags: ["mid-autumn", "mooncake", "festive", "family-feast", "harvest", "reunion"],
     extraSlugs: [
       "steamed-hairy-crab",
       "hubei-pork-rib-and-lotus-root-soup",
       "duojiao-steamed-taro",
       "white-boiled-shrimp",
       "salt-baked-chicken",
+      "reunion-hot-pot",
+      "sweet-sour-fish",
+      "wuchang-fish-hubei-style",
       "mango-pomelo-yang-zhi-gan-lu",
+    ],
+  },
+  {
+    slug: "national-day",
+    zh: "国庆家宴",
+    en: "National Day Family Feast",
+    introEn:
+      "A seven-day holiday spread for National Day: make-ahead red-cooked braises, a whole steamed fish for luck, and crowd-pleasing finger food — feed the whole family without living at the stove.",
+    introZh:
+      "国庆七天家宴清单：可提前炖好的红烧硬菜、寓意有余的清蒸整鱼、老少都爱的手指食物——一桌硬菜喂饱全家，还不用全天守着灶台。",
+    matchTags: ["national-day", "family-feast", "holiday-feast", "guest-worthy", "celebration"],
+    extraSlugs: [
+      "hongshao-pork",
+      "sweet-sour-ribs",
+      "steamed-bass",
+      "white-boiled-shrimp",
+      "char-siu-pork",
+      "kung-pao-chicken",
+      "mapo-tofu",
+      "salt-baked-chicken",
+      "reunion-hot-pot",
+      "honey-rib-roast",
+      "wuchang-fish-hubei-style",
+      "sesame-tangyuan-glutinous-rice-balls",
     ],
   },
   {

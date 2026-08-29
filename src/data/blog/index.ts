@@ -2784,7 +2784,128 @@ const sesamePasteGuide: BlogPost = {
   ]
 };
 
-export const blogPosts: BlogPost[] = [oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking];
+const midAutumnFestivalDishes: BlogPost = {
+  id: "mid-autumn-festival-dishes",
+  slug: "mid-autumn-festival-dishes",
+  titleEn: "Mid-Autumn Festival Dishes: A Chinese Family Menu",
+  titleZh: "中秋家宴吃什么：一桌团圆菜",
+  excerptEn:
+    "What to cook for Mid-Autumn: steamed hairy crab, lotus-root pork-rib soup, steamed taro, a bubbling reunion hot pot and a chilled pomelo sago — the dishes Chinese families put on the table for the harvest moon.",
+  excerptZh:
+    "中秋家宴怎么安排：清蒸大闸蟹、莲藕排骨汤、剁椒蒸芋头、一锅团圆火锅，再以杨枝甘露收尾——应季而食、团圆不腻的一桌菜。",
+  categoryKey: "culture",
+  categoryEn: "Culture",
+  categoryZh: "文化",
+  tags: ["mid-autumn", "festival", "family dinner", "chinese holiday", "mooncake", "reunion"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-08-29",
+  coverImage: "/images/og-default.webp",
+  relatedRecipeSlugs: [
+    "steamed-hairy-crab",
+    "hubei-pork-rib-and-lotus-root-soup",
+    "duojiao-steamed-taro",
+    "reunion-hot-pot",
+    "mango-pomelo-yang-zhi-gan-lu",
+  ],
+  bodyEn: [
+    { type: "p", text: "Mid-Autumn is the night families step outside, look up at the fullest moon of the year, and share a table built around the harvest. The menu is lighter than the heavy New Year spread — it leans into what is in season right now: crab, lotus root, taro, and pomelo." },
+    { type: "h2", text: "The centerpiece: steamed hairy crab" },
+    { type: "p", text: "In late September and October, Shanghai hairy crab (大闸蟹) is at its fattiest. Steamed simply with ginger-vinegar dipping sauce, it is the dish everyone waits for all year. Serve it early while it is hot." },
+    { type: "ul", items: [
+      "Buy crabs that are lively and heavy for their size",
+      "Steam 15–18 minutes; don't overcook or the meat turns chalky",
+      "Dip in equal parts aged vinegar, sliced ginger, and a little sugar",
+    ] },
+    { type: "h2", text: "Warm the table: lotus-root soup & steamed taro" },
+    { type: "p", text: "A pork-rib and lotus-root soup is the soothing counterpoint to crab — sweet, milky, and make-ahead friendly. Duojiao (fermented chili) steamed taro brings the heat and the crunch that cuts through the richness." },
+    { type: "h2", text: "A bubbling reunion hot pot" },
+    { type: "p", text: "If the family is big, a reunion hot pot (团圆火锅) keeps everyone at the table and the cook out of the kitchen. Broth, a few plates of sliced meat, tofu, and greens — everyone cooks their own." },
+    { type: "note", text: "Pair the crab with warm ginger tea, not cold drinks — it sits easier on the stomach after a plate of shellfish." },
+    { type: "h2", text: "Finish sweet: pomelo sago" },
+    { type: "p", text: "Close with mango pomelo sago (杨枝甘露) — chilled, barely sweet, and a relief after the rich savoury courses. It is the one dessert that reads as both festival and summer's last gasp." },
+  ],
+  bodyZh: [
+    { type: "p", text: "中秋是全家抬头看一年里最圆月亮、围着应季食材吃饭的夜晚。这一桌比年夜饭清润：主打当下正当季的蟹、莲藕、芋头、柚子。" },
+    { type: "h2", text: "压轴：清蒸大闸蟹" },
+    { type: "p", text: "九十月的阳澄湖大闸蟹最肥。简单清蒸，配姜醋蘸料，是所有人等了一年的菜。趁热先上。" },
+    { type: "ul", items: [
+      "挑手感沉、活力足的蟹",
+      "蒸 15–18 分钟，过火肉发柴",
+      "蘸料用陈醋、姜丝、少许糖调匀",
+    ] },
+    { type: "h2", text: "暖桌：莲藕排骨汤 & 剁椒蒸芋头" },
+    { type: "p", text: "莲藕排骨汤是蟹的温润搭档——清甜奶白、还能提前炖好；剁椒蒸芋头给一桌添点辣和脆，解腻一流。" },
+    { type: "h2", text: "一锅团圆火锅" },
+    { type: "p", text: "人多就上团圆火锅，把全家人留在桌边、把掌勺的从厨房解放出来。一锅汤底、几盘肉片豆腐青菜，各自涮各自吃。" },
+    { type: "note", text: "蟹配温姜茶，别配冷饮——吃完一桌壳类，胃会舒服很多。" },
+    { type: "h2", text: "甜收尾：杨枝甘露" },
+    { type: "p", text: "用杨枝甘露收尾——冰镇、微甜，给浓油赤酱之后一口清爽，也是夏天最后的余韵。" },
+  ],
+};
+
+const nationalDayFamilyFeast: BlogPost = {
+  id: "national-day-family-feast",
+  slug: "national-day-family-feast",
+  titleEn: "National Day Family Feast: 12 Dishes to Feed a Crowd",
+  titleZh: "国庆家宴怎么做：12 道硬菜喂饱全家",
+  excerptEn:
+    "A make-ahead National Day menu: red-cooked pork, sweet-and-sour ribs, a whole steamed fish and crowd-pleasing finger food — feed the whole family without chaining you to the stove all week.",
+  excerptZh:
+    "国庆七天家宴这么做：红烧肉、糖醋排骨、清蒸整鱼加一桌手指食物——多数硬菜可提前炖好，喂饱全家还不累。",
+  categoryKey: "recipes",
+  categoryEn: "Recipes",
+  categoryZh: "菜谱合集",
+  tags: ["national day", "family feast", "chinese holiday", "make ahead", "banquet", "guest-worthy"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-08-29",
+  coverImage: "/images/og-default.webp",
+  relatedRecipeSlugs: [
+    "hongshao-pork",
+    "sweet-sour-ribs",
+    "steamed-bass",
+    "char-siu-pork",
+    "kung-pao-chicken",
+    "reunion-hot-pot",
+  ],
+  bodyEn: [
+    { type: "p", text: "The National Day week is the longest stretch of family time of the year, which means the kitchen becomes Grand Central. The trick is to build a menu where most of the heavy lifting happens the day before, so you are hosting instead of cooking on the day." },
+    { type: "h2", text: "Make-ahead braises (cook once, eat all week)" },
+    { type: "p", text: "Red-cooked pork (红烧肉) and sweet-and-sour ribs (糖醋排骨) are better on day two. Braise them ahead, refrigerate, and reheat gently — the fat sets, the flavor deepens, and you free up the stove." },
+    { type: "ul", items: [
+      "Hong shao pork: cube, blanch, then low braise in soy, wine and rock sugar",
+      "Sweet-and-sour ribs: double-fry for crunch, glaze at the end",
+      "Both improve after a night in the fridge",
+    ] },
+    { type: "h2", text: "The lucky centerpiece: a whole steamed fish" },
+    { type: "p", text: "A whole steamed fish (清蒸鱼) is non-negotiable for a holiday table — the word for fish (鱼) sounds like surplus (余). Steam it fresh on the day; it takes 8–10 minutes and looks impressive with a hot-oil pour-over." },
+    { type: "h2", text: "Finger food that disappears" },
+    { type: "p", text: "Char siu (叉烧) and kung pao chicken (宫保鸡丁) are the dishes that vanish first at a gathering. Make the char siu the day before and slice it cold; kung pao comes together in one wok right before eating." },
+    { type: "note", text: "A reunion hot pot (团圆火锅) turns the feast into a help-yourself buffet — perfect when relatives drop by unannounced during the holiday." },
+    { type: "h2", text: "Close the loop" },
+    { type: "p", text: "End with something cold and light: a chilled pomelo sago or a plate of white-boiled shrimp. After a week of braises, the table wants a reset." },
+  ],
+  bodyZh: [
+    { type: "p", text: "国庆这一周是全年和家人相处最长的一段时间，厨房也成了全家枢纽。诀窍是让大部分重活在前一天完成，当天你是在招待而不是在掌勺。" },
+    { type: "h2", text: "提前炖好的硬菜（做一次，吃一周）" },
+    { type: "p", text: "红烧肉和糖醋排骨都是第二天更好吃。提前炖好放冰箱，吃时小火回热——油脂凝住、味道更沉，灶台也空出来。" },
+    { type: "ul", items: [
+      "红烧肉：切块焯水，再用酱油料酒冰糖小火慢炖",
+      "糖醋排骨：复炸取脆，最后挂汁",
+      "两道放过夜都更入味",
+    ] },
+    { type: "h2", text: "吉祥压轴：一条清蒸整鱼" },
+    { type: "p", text: "清蒸整鱼是节桌标配——「鱼」谐音「余」。当天现蒸，8–10 分钟，热油一泼就好看又吉利。" },
+    { type: "h2", text: "一上桌就光的手指食物" },
+    { type: "p", text: "叉烧和宫保鸡丁是聚会里最先空的菜。叉烧前一天做好冷藏切冷盘；宫保鸡丁临吃前一锅出。" },
+    { type: "note", text: "团圆火锅把家宴变成自取buffet——假期亲戚临时串门也接得住。" },
+    { type: "h2", text: "收个尾" },
+    { type: "p", text: "用冰镇杨枝甘露或一盘白灼虾收尾。连吃一周红烧后，桌上需要一点清口。" },
+  ],
+};
+
+export const blogPosts: BlogPost[] = [oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes, nationalDayFamilyFeast];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
