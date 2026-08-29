@@ -1257,7 +1257,1534 @@ const vinegarInChineseCooking: BlogPost = {
 
 
 
-export const blogPosts: BlogPost[] = [condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking];
+const oysterSauceGuide: BlogPost = {
+  "id": "oyster-sauce-guide",
+  "slug": "oyster-sauce-guide",
+  "titleEn": "Oyster Sauce: What It Is, How to Use It, and What to Substitute",
+  "titleZh": "蚝油是什么，怎么用，没有了怎么办",
+  "excerptEn": "It doesn't taste fishy and it isn't only for stir-fries. Here's what oyster sauce actually does, when to add it, and the best substitute if your bottle is empty.",
+  "excerptZh": "蚝油不腥，也不只用于炒菜。这篇讲清蚝油到底起什么作用、什么时候放，以及瓶子空了用什么顶。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Oyster sauce doesn't taste fishy, and it isn't just for stir-fries. It's the bottle that gives Chinese takeout vegetables their glossy, savory coating — and once you understand what it actually does, it shows up in marinades, braises, and noodles too."
+    },
+    {
+      "type": "h2",
+      "text": "What it actually is"
+    },
+    {
+      "type": "p",
+      "text": "Despite the name, there is no oyster in the bottle in any form you'd recognize. Traditional versions simmer oysters in water until the liquid reduces into a dark, concentrated sauce, then thicken it with starch and season it with soy and sugar. Most supermarket brands use oyster extract instead, which is why they're cheap — and why quality varies a lot between brands."
+    },
+    {
+      "type": "h2",
+      "text": "Flavor profile"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Savory and slightly sweet, with a rounder umami than plain soy sauce",
+        "Thick enough to coat a spoon, so it clings to food instead of pooling at the bottom",
+        "Dark brown and glossy, closer to syrup than to a thin seasoning"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to use it"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Stir-fries: add it near the end, so it coats without scorching",
+        "Marinades: a spoonful adds salt, sweetness, and better browning",
+        "Braises: gives body and sheen to a thin sauce",
+        "Noodles: toss it through for instant savory gloss"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "What to use instead"
+    },
+    {
+      "type": "p",
+      "text": "If the bottle is empty, or you're cooking vegetarian, the goal is to replace savory-sweet thickness — not the oyster flavor itself, which is barely there anyway."
+    },
+    {
+      "type": "note",
+      "text": "Best all-round substitute: 1 tablespoon soy sauce + 1 teaspoon sugar + a few drops of sesame oil, thickened with a little cornstarch slurry. For a plant-based version, buy vegetarian mushroom sauce (素蚝油) — it's widely stocked and tastes close."
+    },
+    {
+      "type": "h2",
+      "text": "How to store it"
+    },
+    {
+      "type": "p",
+      "text": "Refrigerate after opening, always. It's salty enough to keep for months, but the flavor dulls and the color keeps darkening. If it smells sharp or the cap has crusted over, it's time for a new bottle."
+    },
+    {
+      "type": "note",
+      "text": "Want to see it work? Oyster sauce lettuce takes about five minutes, and beef and broccoli is the classic weeknight test of whether you're using it right."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "蚝油不腥，也不只用于炒菜。中餐外卖蔬菜那层油亮咸鲜的芡汁就是它给的——搞懂它到底起什么作用后，腌料、红烧、拌面你都会想加一勺。"
+    },
+    {
+      "type": "h2",
+      "text": "蚝油到底是什么"
+    },
+    {
+      "type": "p",
+      "text": "名字叫蚝油，但瓶子里没有你能认出来的蚝。传统做法是拿蚝水煮到浓缩成深色稠汁，再勾淀粉、加酱油和糖调味。多数超市品牌改用蚝提取物，所以便宜——也导致不同牌子差距很大。"
+    },
+    {
+      "type": "h2",
+      "text": "味道特征"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "咸鲜带甜，鲜味比生抽更圆润柔和",
+        "稠到能挂勺，所以是裹在菜上而不是沉在盘底",
+        "深褐油亮，更像糖浆而不是稀薄的调味汁"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "怎么用"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "炒菜：最后放，裹匀又不会炒糊",
+        "腌料：一勺同时补咸、补甜、帮助上色",
+        "红烧：给偏稀的汤汁增加厚度和光泽",
+        "拌面：直接拌开就有咸鲜亮泽"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "没有了用什么替代"
+    },
+    {
+      "type": "p",
+      "text": "瓶子空了，或者做素食时，要替代的是「咸鲜带稠度」这个作用，而不是蚝味本身——那点蚝味本来就不明显。"
+    },
+    {
+      "type": "note",
+      "text": "最通用的替代：1 勺生抽 + 1 小勺糖 + 几滴香油，再用水淀粉勾一点稠。素食者直接买素蚝油（素食蚝油），超市很常见，味道接近。"
+    },
+    {
+      "type": "h2",
+      "text": "怎么保存"
+    },
+    {
+      "type": "p",
+      "text": "开封后必须冷藏，没有例外。它咸度够，放几个月不会坏，但鲜味会钝、颜色会继续变深。闻到刺鼻味或瓶口结了一层硬壳，就该换新的了。"
+    },
+    {
+      "type": "note",
+      "text": "想看它发挥？蚝油生菜五分钟搞定，蚝油牛肉是检验你用得对不对的经典家常测试。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "oyster sauce",
+    "chinese pantry",
+    "substitutions",
+    "umami"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-22",
+  "coverImage": "/images/blog/oyster-sauce-guide.webp",
+  "relatedRecipeSlugs": [
+    "oyster-sauce-lettuce",
+    "beef-and-broccoli",
+    "garlic-romaine"
+  ],
+  "faq": [
+    {
+      "qEn": "Does oyster sauce taste like oysters?",
+      "qZh": "蚝油吃起来有蚝味吗？",
+      "aEn": "Barely. It's savory and slightly sweet rather than fishy, which is why plenty of people who avoid seafood still like it.",
+      "aZh": "几乎没有。它是咸鲜微甜而不是腥，所以不少不吃海鲜的人也照样喜欢蚝油。"
+    },
+    {
+      "qEn": "Is oyster sauce vegetarian?",
+      "qZh": "蚝油是素的吗？",
+      "aEn": "No — it's made from oysters. If you need a plant-based version, look for vegetarian mushroom sauce (素蚝油), which is sold in most Asian groceries.",
+      "aZh": "不是，蚝油用蚝制成。需要素食版本就找素蚝油（素食蚝油），多数亚超都有卖。"
+    },
+    {
+      "qEn": "Do I have to refrigerate it?",
+      "qZh": "蚝油一定要放冰箱吗？",
+      "aEn": "Once opened, yes. Unopened bottles are shelf-stable, but after opening the flavor degrades quickly at room temperature.",
+      "aZh": "开封后必须冷藏。没开封可以常温存放，但开封后在室温下鲜味掉得很快。"
+    }
+  ]
+};
+
+const hoisinVsSweetBeanSauce: BlogPost = {
+  "id": "hoisin-vs-sweet-bean-sauce",
+  "slug": "hoisin-vs-sweet-bean-sauce",
+  "titleEn": "Hoisin vs Sweet Bean Sauce: They Are Not the Same Thing",
+  "titleZh": "海鲜酱和甜面酱不是一回事",
+  "excerptEn": "Both are dark, thick, and sweetish, so they get swapped constantly. Here's what each one is actually for — and what happens when you mix them up.",
+  "excerptZh": "两样都是深色浓稠带甜，所以经常被混用。这篇讲清各自真正的用途，以及搞混了会怎样。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Hoisin sauce and sweet bean sauce look like siblings in the jar — dark, thick, faintly sweet — and recipes sometimes treat them as interchangeable. They aren't. Using the wrong one doesn't ruin a dish, but it does move it in a direction you probably didn't intend."
+    },
+    {
+      "type": "h2",
+      "text": "Sweet bean sauce (甜面酱)"
+    },
+    {
+      "type": "p",
+      "text": "Sweet bean sauce is made from fermented wheat flour, salt, and a little sugar. It's savory first: salty, mellow, with a wheaty depth and only mild sweetness. Northern Chinese cooking leans on it hard — it's the base of jing jiang pork and the sauce you brush on Peking duck pancakes."
+    },
+    {
+      "type": "h2",
+      "text": "Hoisin sauce (海鲜酱)"
+    },
+    {
+      "type": "p",
+      "text": "Hoisin is sweeter and more complex, usually built from soybeans, garlic, chili, vinegar, sugar, and five-spice. Despite the name, it contains no seafood. It reads as a finished, almost barbecue-like sauce — which is why it works as a dipping sauce straight from the jar."
+    },
+    {
+      "type": "h2",
+      "text": "The practical difference"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sweet bean sauce is an ingredient: you cook it, usually with a little oil or wine first",
+        "Hoisin is closer to a condiment: it can go on the table as-is",
+        "Sweet bean is saltier and less sweet; hoisin is sweeter and more aromatic"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Can you substitute one for the other?"
+    },
+    {
+      "type": "p",
+      "text": "In a pinch, yes, with an adjustment. They're close enough that the dish will still be edible — you just need to correct the seasoning."
+    },
+    {
+      "type": "note",
+      "text": "Using hoisin in place of sweet bean sauce? Add a splash of soy sauce for salt and cut any sugar the recipe calls for. Going the other way, add a little sugar and a drop of sesame oil to round hoisin out."
+    },
+    {
+      "type": "h2",
+      "text": "Storage"
+    },
+    {
+      "type": "p",
+      "text": "Both keep well. Refrigerate after opening and they'll last months. Sweet bean sauce in particular tends to darken and thicken over time without actually spoiling — thin it with a little water if it gets stiff."
+    },
+    {
+      "type": "note",
+      "text": "Both show up in northern-style dishes. Moo shu pork and twice-cooked pork are good places to taste what sweet bean sauce actually does."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "海鲜酱和甜面酱在罐子里像亲兄弟——深色、浓稠、微甜——菜谱里有时当成一个东西用。其实不是。用错了不至于毁掉一道菜，但会把味道带往你没打算去的方向。"
+    },
+    {
+      "type": "h2",
+      "text": "甜面酱"
+    },
+    {
+      "type": "p",
+      "text": "甜面酱用发酵面粉、盐和少量糖制成，本质是咸鲜的：咸、醇厚、带小麦发酵的底蕴，甜度很轻。北方菜重度依赖它——京酱肉丝的底味就是它，北京烤鸭的荷叶饼也是刷它。"
+    },
+    {
+      "type": "h2",
+      "text": "海鲜酱"
+    },
+    {
+      "type": "p",
+      "text": "海鲜酱更甜、层次更复杂，通常用黄豆、蒜、辣椒、醋、糖和五香粉调配。名字带「海鲜」，其实没有海鲜成分。它更接近一支可以直接用的成品酱，类似照烧或烤肉酱——所以能直接上桌当蘸酱。"
+    },
+    {
+      "type": "h2",
+      "text": "实际区别在哪"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "甜面酱是原料：要先下锅，通常用油或料酒炒一下",
+        "海鲜酱更像调料：可以直接上桌蘸着吃",
+        "甜面酱更咸更不甜；海鲜酱更甜更香"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "能互相替代吗"
+    },
+    {
+      "type": "p",
+      "text": "应急可以，但要调整。两者差距没大到菜会难以下咽，只是需要把调味补回来。"
+    },
+    {
+      "type": "note",
+      "text": "用海鲜酱替代甜面酱？补一点生抽增加咸度，同时减掉菜谱里的糖。反过来用，则加一点糖和几滴香油把甜面酱的圆润度补上。"
+    },
+    {
+      "type": "h2",
+      "text": "保存"
+    },
+    {
+      "type": "p",
+      "text": "两者都耐放。开封后冷藏能存好几个月。甜面酱尤其会随着时间变深变稠，但并不是坏了——太硬就加点水调开。"
+    },
+    {
+      "type": "note",
+      "text": "两样都常出现在北方菜里。木须肉和回锅肉是体会甜面酱作用的好例子。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "hoisin sauce",
+    "sweet bean sauce",
+    "chinese pantry",
+    "substitutions"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-23",
+  "coverImage": "/images/blog/hoisin-vs-sweet-bean-sauce.webp",
+  "relatedRecipeSlugs": [
+    "moo-shu-pork",
+    "twice-cooked-pork",
+    "jing-jiang-pork"
+  ],
+  "faq": [
+    {
+      "qEn": "Does hoisin sauce contain seafood?",
+      "qZh": "海鲜酱里有海鲜吗？",
+      "aEn": "No. The name is misleading — standard hoisin is made from soybeans, garlic, vinegar, sugar, and spices. Always check the label if you have an allergy, though.",
+      "aZh": "没有。名字有误导性，普通海鲜酱是黄豆、蒜、醋、糖和香料做的。但如果有过敏，还是要看配料表。"
+    },
+    {
+      "qEn": "Which one do I need for Peking duck?",
+      "qZh": "北京烤鸭用哪个？",
+      "aEn": "Sweet bean sauce (甜面酱) is traditional for the pancakes. Hoisin is a common substitute outside China and works fine, but it's noticeably sweeter.",
+      "aZh": "传统上荷叶饼刷甜面酱。海外常用海鲜酱代替也没问题，只是明显更甜。"
+    },
+    {
+      "qEn": "Can I use them as dipping sauces?",
+      "qZh": "能直接当蘸酱吗？",
+      "aEn": "Hoisin, yes, straight from the jar. Sweet bean sauce is better cooked briefly with a little oil first — raw it tastes flat and overly salty.",
+      "aZh": "海鲜酱可以直接蘸。甜面酱最好先用油炒一下——生的味道发死、偏咸。"
+    }
+  ]
+};
+
+const homemadeChiliOil: BlogPost = {
+  "id": "homemade-chili-oil",
+  "slug": "homemade-chili-oil",
+  "titleEn": "Homemade Chili Oil: The 20-Minute Version That Beats Store-Bought",
+  "titleZh": "自制辣椒油：20 分钟版本，比买的香",
+  "excerptEn": "Chili oil is the fastest way to make Chinese food taste like it came from a restaurant. Here's a simple method, the mistakes that make it bitter, and how long it keeps.",
+  "excerptZh": "辣椒油是让中餐一秒变「馆子味」的最快办法。这篇给你一个简单做法、会让它发苦的几个坑，以及能放多久。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Homemade chili oil is the highest return on effort of anything in a Chinese pantry. Twenty minutes, one jar, and every noodle bowl, dumpling plate, and cold dish you make for the next month gets better. The one thing that goes wrong is bitterness — and that's entirely avoidable."
+    },
+    {
+      "type": "h2",
+      "text": "What you need"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Coarse chili flakes (not fine powder — it burns and turns bitter)",
+        "A neutral oil: canola, grapeseed, or peanut",
+        "Aromatics: sliced ginger, a few scallion whites, star anise, bay leaf",
+        "Salt, and optionally a spoonful of toasted sesame seeds"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "The method"
+    },
+    {
+      "type": "p",
+      "text": "Put the chili flakes, salt, and sesame seeds in a heatproof bowl. Heat the oil with the aromatics over medium heat until the scallions are slowly sizzling and fragrant, about 8 to 10 minutes — you want the oil flavored, not smoking. Fish out the aromatics, then pour the hot oil over the flakes in two or three stages, stirring between each."
+    },
+    {
+      "type": "h2",
+      "text": "Why it turns bitter"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Oil too hot: if it's smoking, the flakes scorch on contact",
+        "Powder instead of flakes: fine chili powder has more surface area and burns instantly",
+        "Pouring it all at once: the first splash superheats the top layer"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to use it"
+    },
+    {
+      "type": "p",
+      "text": "It's a finishing oil more than a cooking oil. Spoon it over dumplings, noodles, cold chicken, or plain rice. It also works as the red layer at the bottom of a mapo tofu bowl."
+    },
+    {
+      "type": "note",
+      "text": "The flakes settle, so stir before each use. The oil on top is fragrant; the sludge at the bottom carries most of the heat and texture."
+    },
+    {
+      "type": "h2",
+      "text": "How long it keeps"
+    },
+    {
+      "type": "p",
+      "text": "Stored in a clean, dry jar in the fridge, it holds for a month or two with the flavor intact. At room temperature it's fine for a week or two. If it smells rancid or the flakes have gone dull brown, throw it out."
+    },
+    {
+      "type": "note",
+      "text": "Once you have a jar, mapo tofu, mouthwatering chicken, and laziji all get noticeably closer to restaurant versions."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "自制辣椒油是中餐厨房里投入产出比最高的一件事。二十分钟、一个罐子，接下来一个月的拌面、饺子、凉菜全都升级。唯一会出的问题是发苦——而这个问题完全可以避免。"
+    },
+    {
+      "type": "h2",
+      "text": "需要什么"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "粗辣椒面（不要用细粉，细粉会糊会苦）",
+        "中性油：菜籽油、葡萄籽油或花生油",
+        "香料：姜片、几段葱白、八角、香叶",
+        "盐，可选一勺熟芝麻"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "做法"
+    },
+    {
+      "type": "p",
+      "text": "辣椒面、盐、芝麻放进耐热碗。油加香料中火加热，到葱白慢慢冒小泡、出香味，大约 8 到 10 分钟——要的是把油煨出香味，而不是冒烟。捞出香料，把热油分两三次泼进辣椒面，每次都搅一下。"
+    },
+    {
+      "type": "h2",
+      "text": "为什么会发苦"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "油温过高：油一冒烟，辣椒面接触瞬间就焦",
+        "用了细粉而不是粗面：细粉接触面积大，一碰就糊",
+        "一次全倒：第一下会把表层瞬间冲过热"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "怎么用"
+    },
+    {
+      "type": "p",
+      "text": "它更像是「淋油」而不是「炒菜的油」。浇在饺子、面条、口水鸡、白米饭上都行，也可以做麻婆豆腐碗底那层红油。"
+    },
+    {
+      "type": "note",
+      "text": "辣椒面会沉底，每次用前搅一下。上层的油是香的，底下的辣渣才是辣味和口感的来源。"
+    },
+    {
+      "type": "h2",
+      "text": "能放多久"
+    },
+    {
+      "type": "p",
+      "text": "装在干净无水无油的罐子里冷藏，风味能保持一两个月。室温放一两周没问题。闻到哈喇味或辣椒面变成暗褐色就该扔了。"
+    },
+    {
+      "type": "note",
+      "text": "有了一罐辣椒油，麻婆豆腐、口水鸡、辣子鸡都会明显更接近馆子的版本。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "chili oil",
+    "sichuan",
+    "condiments",
+    "homemade"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-24",
+  "coverImage": "/images/blog/homemade-chili-oil.webp",
+  "relatedRecipeSlugs": [
+    "mapo-tofu",
+    "kou-shui-chicken",
+    "lazi-diced-chicken"
+  ],
+  "faq": [
+    {
+      "qEn": "Can I reuse the oil from store-bought chili oil?",
+      "qZh": "买的辣椒油能重复利用吗？",
+      "aEn": "You can fortify it by heating it gently with fresh aromatics, but don't build a new batch on old oil — it's already oxidized and will turn quickly.",
+      "aZh": "可以加点新香料小火再煨一下增香，但不要用旧油做新一批——旧油已经氧化，很快会变质。"
+    },
+    {
+      "qEn": "What if I only have fine chili powder?",
+      "qZh": "只有细辣椒粉怎么办？",
+      "aEn": "Lower the oil temperature: let it cool for a minute or two off the heat before pouring, and pour in smaller stages. It'll be less textured but still usable.",
+      "aZh": "把油温降下来：离火放一两分钟再泼，并且分更小的量多次泼。口感会差一些，但能用。"
+    },
+    {
+      "qEn": "How spicy is it?",
+      "qZh": "会有多辣？",
+      "aEn": "That depends entirely on your flakes. Korean gochugaru gives mild, fruity heat; Sichuan chili flakes are more aromatic than hot. Mix them if you want both.",
+      "aZh": "完全取决于你用什么辣椒面。韩式辣椒面是温和带果香的辣，四川辣椒面香大于辣。想要两者兼得就混着用。"
+    }
+  ]
+};
+
+const blackVinegarZhenjiangVsShanxi: BlogPost = {
+  "id": "black-vinegar-zhenjiang-vs-shanxi",
+  "slug": "black-vinegar-zhenjiang-vs-shanxi",
+  "titleEn": "Chinese Black Vinegar: Zhenjiang vs Shanxi, and When Each Matters",
+  "titleZh": "中国香醋：镇江 vs 山西，什么时候该用哪个",
+  "excerptEn": "Chinese black vinegar isn't one thing. Zhenjiang is malty and rounded, Shanxi is sharper and smokier — and picking the right one changes the dish.",
+  "excerptZh": "中国的黑醋不是一种东西。镇江香醋麦芽香、圆润，山西老陈醋酸冽带烟熏味——选对了菜会不一样。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "\"Chinese black vinegar\" covers two products that behave very differently in the pan. If a recipe just says black vinegar, it almost always means Zhenjiang — but knowing what Shanxi brings lets you choose on purpose instead of by default."
+    },
+    {
+      "type": "h2",
+      "text": "Zhenjiang vinegar (镇江香醋)"
+    },
+    {
+      "type": "p",
+      "text": "Brewed from rice in southern China, Zhenjiang vinegar is dark, malty, and slightly sweet with a rounded finish. It's the all-purpose one: the dipping sauce for dumplings, the splash at the end of a stir-fry, the backbone of sweet-and-sour dishes."
+    },
+    {
+      "type": "h2",
+      "text": "Shanxi aged vinegar (山西老陈醋)"
+    },
+    {
+      "type": "p",
+      "text": "Made from sorghum and aged for years in northern China, Shanxi vinegar is sharper, more acidic, and carries a faint smoky depth. It's more assertive — great when you want the sourness to cut through richness, overwhelming when a dish only needs a light touch."
+    },
+    {
+      "type": "h2",
+      "text": "Which one for what"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Dumpling dipping sauce: Zhenjiang, with a little soy and chili oil",
+        "Sweet and sour ribs or fish: Zhenjiang — its sweetness supports the sugar",
+        "Cold dressed dishes with lots of chili oil: Shanxi, to cut the fat",
+        "Finishing a braise: Zhenjiang; Shanxi would dominate"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Can I substitute regular vinegar?"
+    },
+    {
+      "type": "p",
+      "text": "You can, but the result will be flatter and harsher. Black vinegar has a fermented depth that plain distilled vinegar doesn't have."
+    },
+    {
+      "type": "note",
+      "text": "Closest substitute: balsamic vinegar for Zhenjiang (similar malty sweetness, use a little less), or rice vinegar with a dash of Worcestershire for Shanxi. Neither is exact, but both are better than distilled white vinegar."
+    },
+    {
+      "type": "h2",
+      "text": "Storage"
+    },
+    {
+      "type": "p",
+      "text": "Vinegar is self-preserving — it keeps for years at room temperature, out of direct sunlight. The sediment some bottles develop is harmless; shake it in or leave it behind, it doesn't matter much."
+    },
+    {
+      "type": "note",
+      "text": "Vinegar-forward dishes are the fastest way to taste the difference. Try vinegar cabbage with Shanxi, then sweet and sour ribs with Zhenjiang."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "「中国黑醋」其实涵盖两种在锅里表现很不一样的产品。菜谱里只写「香醋」时，几乎都指镇江醋——但知道山西醋能带来什么，你就可以主动选择，而不是默认。"
+    },
+    {
+      "type": "h2",
+      "text": "镇江香醋"
+    },
+    {
+      "type": "p",
+      "text": "南方用大米酿造，色深、带麦芽香、微甜，收口圆润。它是全能选手：饺子的蘸料、出锅前那一勺、糖醋菜的底味骨架。"
+    },
+    {
+      "type": "h2",
+      "text": "山西老陈醋"
+    },
+    {
+      "type": "p",
+      "text": "北方用高粱酿造并陈放数年，酸度更冲、更尖锐，带一丝烟熏底蕴。它存在感强——需要酸味切开油腻时很出色，但只需要轻轻一点时就会喧宾夺主。"
+    },
+    {
+      "type": "h2",
+      "text": "各自该用在哪"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "饺子蘸料：镇江醋，配一点生抽和辣椒油",
+        "糖醋排骨、糖醋鱼：镇江醋——它的甜味能托住糖",
+        "重油凉拌菜：山西醋，用来解腻",
+        "红烧出锅：镇江醋；山西醋会盖过整锅"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "能用普通醋替代吗"
+    },
+    {
+      "type": "p",
+      "text": "能，但成品会更扁、更冲。黑醋有发酵带来的厚度，普通蒸馏醋没有。"
+    },
+    {
+      "type": "note",
+      "text": "最接近的替代：镇江醋用意大利香醋（同样麦芽甜香，用量略减）；山西醋用米醋加几滴伍斯特酱。都不算完全一样，但都比白醋强。"
+    },
+    {
+      "type": "h2",
+      "text": "保存"
+    },
+    {
+      "type": "p",
+      "text": "醋自带防腐能力，避光阴凉处常温能放好几年。有些瓶子会出现沉淀，无害——摇匀或留着不管都行。"
+    },
+    {
+      "type": "note",
+      "text": "重醋的菜最能喝出差别。试试用山西醋做醋溜白菜，再用镇江醋做糖醋排骨。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "black vinegar",
+    "chinese pantry",
+    "ingredients",
+    "substitutions"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-25",
+  "coverImage": "/images/blog/black-vinegar-zhenjiang-vs-shanxi.webp",
+  "relatedRecipeSlugs": [
+    "vinegar-cabbage",
+    "sweet-sour-ribs",
+    "smashed-cucumber"
+  ],
+  "faq": [
+    {
+      "qEn": "Is black vinegar the same as balsamic?",
+      "qZh": "黑醋等于意大利香醋吗？",
+      "aEn": "No, but balsamic is the best Western substitute for Zhenjiang — both are dark, malty, and slightly sweet. Use a little less than the recipe calls for.",
+      "aZh": "不等于，但香醋是镇江醋最好的西式替代品——两者都色深、麦芽香、微甜。用量比菜谱略减。"
+    },
+    {
+      "qEn": "Which vinegar for dumpling sauce?",
+      "qZh": "饺子蘸料用哪种醋？",
+      "aEn": "Zhenjiang. It's milder and slightly sweet, so it balances soy sauce and chili oil instead of fighting them.",
+      "aZh": "镇江醋。它更柔和微甜，能和生抽、辣椒油互相平衡而不是互相打架。"
+    },
+    {
+      "qEn": "Does it need refrigeration?",
+      "qZh": "需要冷藏吗？",
+      "aEn": "No. Vinegar keeps at room temperature essentially indefinitely. Just keep it out of direct sun and capped.",
+      "aZh": "不需要。醋在常温下基本可以永久保存，只要避免阳光直射、盖好盖子。"
+    }
+  ]
+};
+
+const shaoxingWineBuyingGuide: BlogPost = {
+  "id": "shaoxing-wine-buying-guide",
+  "slug": "shaoxing-wine-buying-guide",
+  "titleEn": "Shaoxing Wine: What to Buy, and Whether Cooking Wine Is a Scam",
+  "titleZh": "绍兴酒怎么买？「料酒」是不是智商税",
+  "excerptEn": "Most Shaoxing wine on Western shelves is salted and undrinkable, but it still works. Here's how to read the label, what to buy, and what to use if you'd rather skip alcohol.",
+  "excerptZh": "西方货架上多数绍兴酒都加了盐、不能喝，但做菜依然好用。这篇教你看标签、怎么挑，以及不想用酒时用什么替代。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Shaoxing wine is the bottle most Chinese home cooks reach for without thinking, and the one most Western shoppers buy wrong. The problem isn't quality — it's that two very different products sit side by side on the shelf, and the cheaper one isn't always the wrong choice."
+    },
+    {
+      "type": "h2",
+      "text": "What it does in a dish"
+    },
+    {
+      "type": "p",
+      "text": "Shaoxing wine isn't there for flavor in the way soy sauce is. It removes the raw, gamey edge from meat and fish, and it carries aroma — the smell that hits you when it hits a hot wok. That's the whole job."
+    },
+    {
+      "type": "h2",
+      "text": "Reading the label"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Shaoxing cooking wine (料酒): salted, cheap, sold in most supermarkets. Salted to avoid liquor tax, which is why it can't be drunk — but it seasons the dish at the same time",
+        "Drinking-grade Shaoxing (花雕 / 加饭): unsalted, in liquor stores or Asian groceries. Better aroma, and you can drink it",
+        "Avoid anything labeled \"rice wine\" that's actually mirin — that's sweetened Japanese cooking wine and behaves differently"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Which should you buy"
+    },
+    {
+      "type": "p",
+      "text": "If you cook Chinese food once or twice a month, salted cooking wine is genuinely fine — just remember it's salty, so ease off the soy sauce. If you cook it weekly, buy a bottle of huadiao. The aroma difference is real, especially in braises and steamed fish."
+    },
+    {
+      "type": "h2",
+      "text": "Substitutions"
+    },
+    {
+      "type": "note",
+      "text": "Best non-alcoholic substitute: dry sherry, which is close in profile, or chicken stock with a few drops of rice vinegar for dishes where you just need liquid and a little acidity. Avoid cooking wine from the supermarket's international aisle that lists salt as the second ingredient — it's mostly brine."
+    },
+    {
+      "type": "h2",
+      "text": "Storage"
+    },
+    {
+      "type": "p",
+      "text": "Cooking wine is salted and keeps for a year or more in the cupboard. Drinking-grade huadiao is wine: once opened it slowly oxidizes, so it's better in the fridge and best used within a few months."
+    },
+    {
+      "type": "note",
+      "text": "Red-braised pork and steamed fish are the two dishes where a better bottle of wine is most obvious — the aroma has nowhere to hide."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "绍兴酒是中国家庭厨师不假思索就拿起的瓶子，也恰恰是西方消费者最容易买错的一样。问题不在品质，而在于货架上并排放着两种完全不同的产品，而便宜的那个不一定是错的。"
+    },
+    {
+      "type": "h2",
+      "text": "它在菜里起什么作用"
+    },
+    {
+      "type": "p",
+      "text": "绍兴酒不像生抽那样提供味道。它的作用是去掉肉和鱼的腥膻，同时带香——就是它下热锅时冲上来的那股香气。这就是它的全部工作。"
+    },
+    {
+      "type": "h2",
+      "text": "怎么看标签"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "绍兴料酒：加盐、便宜，多数超市有卖。加盐是为了规避酒税，所以不能喝——但同时也给菜补了咸味",
+        "饮用级绍兴酒（花雕 / 加饭）：不加盐，在酒类店或亚超。香气更好，也能喝",
+        "避开标着「rice wine」其实是味醂的产品——那是加了甜的日本料酒，表现完全不同"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "该买哪个"
+    },
+    {
+      "type": "p",
+      "text": "一个月做一两次中餐，加盐料酒其实完全够用——只要记住它带咸，生抽要相应少放。如果每周都做，买一瓶花雕。香气差距是真的，红烧和清蒸鱼尤其明显。"
+    },
+    {
+      "type": "h2",
+      "text": "替代方案"
+    },
+    {
+      "type": "note",
+      "text": "最好的无酒精替代：干雪莉酒（风味接近），或者用鸡高汤加几滴米醋（适合只需要液体和一点酸度的菜）。避开超市国际货架上配料表第二位就是盐的那种「cooking wine」——那基本是盐水。"
+    },
+    {
+      "type": "h2",
+      "text": "保存"
+    },
+    {
+      "type": "p",
+      "text": "料酒含盐，橱柜里放一年以上没问题。饮用级花雕是酒，开瓶后会慢慢氧化，最好冷藏并在几个月内用完。"
+    },
+    {
+      "type": "note",
+      "text": "红烧肉和清蒸鱼是最能体现酒质差距的两道菜——香气无处可藏。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "shaoxing wine",
+    "chinese pantry",
+    "substitutions",
+    "ingredients"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-26",
+  "coverImage": "/images/blog/shaoxing-wine-buying-guide.webp",
+  "relatedRecipeSlugs": [
+    "hongshao-pork",
+    "huangmen-chicken",
+    "steamed-bass"
+  ],
+  "faq": [
+    {
+      "qEn": "Is salted Shaoxing cooking wine bad?",
+      "qZh": "加盐的料酒是不是不好？",
+      "aEn": "No. It's salted to avoid liquor tax, not because it's low quality. It works fine — just reduce the soy sauce slightly to account for the salt.",
+      "aZh": "不是。加盐是为了规避酒税，不是因为品质差。它很好用，只要相应少放一点生抽来平衡咸度。"
+    },
+    {
+      "qEn": "Can I use dry sherry instead?",
+      "qZh": "能用干雪莉酒替代吗？",
+      "aEn": "Yes, it's the closest common substitute and behaves almost identically in cooking. Japanese mirin is too sweet to swap in directly.",
+      "aZh": "可以，它是最接近的常用替代品，在烹饪中表现几乎一致。日本味醂太甜，不能直接替换。"
+    },
+    {
+      "qEn": "Does the alcohol cook off?",
+      "qZh": "酒精会挥发掉吗？",
+      "aEn": "Mostly, but not entirely — a small percentage remains even after simmering. If you need to avoid alcohol completely, use stock or water with a splash of vinegar.",
+      "aZh": "大部分会，但不是全部——即使炖煮后仍有少量残留。如果必须完全无酒精，用高汤或水加一点醋代替。"
+    }
+  ]
+};
+
+const firmVsSoftTofu: BlogPost = {
+  "id": "firm-vs-soft-tofu",
+  "slug": "firm-vs-soft-tofu",
+  "titleEn": "Firm vs Soft Tofu: Which One Your Recipe Actually Means",
+  "titleZh": "老豆腐还是嫩豆腐？菜谱到底指的是哪个",
+  "excerptEn": "Grab the wrong tofu and even a good recipe falls apart — literally. Here's the difference, what each is for, and how to keep soft tofu from breaking up in the pan.",
+  "excerptZh": "豆腐拿错，再好的菜谱也会散掉——字面意义上的散。这篇讲清区别、各自用途，以及怎么让嫩豆腐下锅不碎。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Tofu type is one of the few choices that can quietly sink a Chinese recipe. Mapo tofu made with firm tofu is a different dish from mapo tofu made with silken — and if a recipe doesn't specify, it's usually assuming one in particular."
+    },
+    {
+      "type": "h2",
+      "text": "The range, firmest to softest"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Extra firm / pressed: dense, holds its shape, good for pan-frying and grilling",
+        "Firm (老豆腐): the everyday Chinese block, holds cubes in stir-fries and braises",
+        "Soft (嫩豆腐): delicate, breaks easily, used in soups and steamed dishes",
+        "Silken (内酯豆腐): custard-like, barely holds shape, for cold dishes and mapo tofu"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Which one recipes mean"
+    },
+    {
+      "type": "p",
+      "text": "When a Chinese recipe just says \"tofu,\" it usually means firm (老豆腐) for anything cooked in a pan or wok. The exceptions are worth memorizing: mapo tofu traditionally uses silken, and most soups use soft."
+    },
+    {
+      "type": "h2",
+      "text": "Keeping soft tofu from falling apart"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cut it in larger pieces than feels right — small cubes break",
+        "Slide it into the pan rather than dropping it",
+        "Move the pan, not the tofu: swirl the sauce instead of stirring",
+        "Salt the water gently when blanching; it firms the surface slightly"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Pressing: when it matters"
+    },
+    {
+      "type": "p",
+      "text": "Press firm tofu for 20 to 30 minutes if you want it to brown. Water on the surface has to evaporate before browning can start, and unpressed tofu mostly steams in the pan. For braises, skip it — the tofu will absorb sauce instead, which is the point."
+    },
+    {
+      "type": "note",
+      "text": "Silken tofu needs no pressing and shouldn't be pressed — it would collapse. If a recipe calls for silken, handle it as little as possible."
+    },
+    {
+      "type": "h2",
+      "text": "Storage"
+    },
+    {
+      "type": "p",
+      "text": "Keep tofu submerged in clean water in the fridge and change the water daily; it lasts about a week that way. Once the water turns cloudy or smells sour, it's done. Tofu also freezes well — thawed and squeezed, it turns spongy and soaks up sauce, which is a genuinely useful texture for braises."
+    },
+    {
+      "type": "note",
+      "text": "Mapo tofu is where the silken-versus-firm argument is loudest, and home-style tofu is the forgiving one if you're still learning the difference."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "豆腐种类是少数能悄悄毁掉一道中餐的选择。用老豆腐做的麻婆豆腐和用内酯豆腐做的，根本是两道菜——而菜谱没写清楚时，它通常默认的是某一种。"
+    },
+    {
+      "type": "h2",
+      "text": "从最硬到最软"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "特硬 / 压干型：密实、定得住型，适合煎和烤",
+        "老豆腐（firm）：中式日常块豆腐，炒和红烧都能保持块状",
+        "嫩豆腐（soft）：细嫩易碎，用于汤和蒸菜",
+        "内酯豆腐（silken）：像炖蛋一样嫩，几乎定不住型，用于凉菜和麻婆豆腐"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "菜谱指的是哪种"
+    },
+    {
+      "type": "p",
+      "text": "中餐菜谱只写「豆腐」时，凡是下锅或下炒锅的，通常都指老豆腐。例外值得记住：麻婆豆腐传统用内酯豆腐，多数汤用嫩豆腐。"
+    },
+    {
+      "type": "h2",
+      "text": "嫩豆腐下锅不碎的技巧"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "切得比你以为的更大块——小块必碎",
+        "滑进锅里，而不是扔进去",
+        "动锅不动豆腐：晃锅让汁裹上，而不是去搅",
+        "焯水时水里加一点盐，表面会稍微收紧"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "什么时候需要压水"
+    },
+    {
+      "type": "p",
+      "text": "想让老豆腐煎上色，就压 20 到 30 分钟。表面的水必须先蒸发掉才可能上色，不压的话豆腐在锅里基本是「蒸」。红烧则不用压——豆腐反而要吸汁，那正是目的。"
+    },
+    {
+      "type": "note",
+      "text": "内酯豆腐不需要压，也不能压——一压就塌。菜谱说用内酯豆腐时，尽量少动它。"
+    },
+    {
+      "type": "h2",
+      "text": "保存"
+    },
+    {
+      "type": "p",
+      "text": "豆腐泡在干净水里放冰箱，每天换水，这样能放约一周。水变浑或有酸味就不能吃了。豆腐也很适合冷冻——解冻挤干后会变成海绵质，特别吸汁，红烧时是种很好用的口感。"
+    },
+    {
+      "type": "note",
+      "text": "麻婆豆腐是「内酯还是老豆腐」争论最凶的一道，而家常豆腐对你还在摸索差别时最宽容。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "tofu",
+    "ingredients",
+    "technique",
+    "chinese pantry"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-27",
+  "coverImage": "/images/blog/firm-vs-soft-tofu.webp",
+  "relatedRecipeSlugs": [
+    "mapo-tofu",
+    "braised-tofu",
+    "home-style-tofu"
+  ],
+  "faq": [
+    {
+      "qEn": "Can I use firm tofu in mapo tofu?",
+      "qZh": "麻婆豆腐能用老豆腐吗？",
+      "aEn": "You can, and plenty of home cooks do. It holds its shape better but absorbs less sauce — traditional versions use silken for the custard-against-spice contrast.",
+      "aZh": "可以，很多家庭就这么做。它更定得住型，但吸汁少——传统做法用内酯豆腐，要的是嫩滑配麻辣的对比感。"
+    },
+    {
+      "qEn": "How long does tofu last in the fridge?",
+      "qZh": "豆腐冷藏能放多久？",
+      "aEn": "About a week, submerged in clean water changed daily. Once opened, avoid storing it in the original tub's liquid for more than a day or two.",
+      "aZh": "泡干净水、每天换水，约一周。开封后不要在原盒的水里泡超过一两天。"
+    },
+    {
+      "qEn": "Why does my tofu stick to the pan?",
+      "qZh": "为什么我的豆腐粘锅？",
+      "aEn": "Usually too little oil, an insufficiently hot pan, or tofu that wasn't pressed. Give it time to release before you try to move it.",
+      "aZh": "通常是油太少、锅不够热，或者豆腐没压水。下锅后给它时间自然脱底，别急着翻动。"
+    }
+  ]
+};
+
+const fermentedBeanCurdFuru: BlogPost = {
+  "id": "fermented-bean-curd-furu",
+  "slug": "fermented-bean-curd-furu",
+  "titleEn": "Fermented Bean Curd (Furu): The Small Jar That Fixes Braises",
+  "titleZh": "腐乳：一小罐让红烧脱胎换骨的东西",
+  "excerptEn": "Furu is salty, funky, and used in tiny amounts — one cube does the work of several seasonings. Here's how to buy it, use it, and stop being afraid of it.",
+  "excerptZh": "腐乳咸、带发酵味，用量极小——一块能顶好几种调料。这篇讲怎么买、怎么用，以及别再怕它。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Fermented bean curd — 腐乳, or furu — is tofu that's been salted and aged in a brine until it turns creamy, salty, and deeply savory. Western cooks tend to buy a jar, use it once, and then leave it in the fridge for a year. That's a waste: one cube does the work of salt, soy sauce, and a good chunk of the aromatics."
+    },
+    {
+      "type": "h2",
+      "text": "The types you'll see"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Red furu (红腐乳): aged with red yeast rice, deeper and slightly sweet — the standard for braises",
+        "White furu (白腐乳): milder, saltier, good for vegetable dishes and congee",
+        "Spicy furu (辣腐乳): red furu with chili, nice as a condiment on rice"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to use it"
+    },
+    {
+      "type": "p",
+      "text": "Mash one or two cubes into the cooking liquid with the back of a spoon before anything else goes in. It dissolves and disappears into the sauce, leaving body rather than an identifiable flavor. It's also the traditional seasoning for stir-fried water spinach and a common addition to hot pot dipping sauce."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Braises: one cube of red furu per 500g of meat, plus the sauce it came in",
+        "Stir-fried greens: half a cube, added with the garlic",
+        "Marinades: mash into the marinade for pork or tofu",
+        "On the table: a cube alongside congee or plain rice"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How much is too much"
+    },
+    {
+      "type": "p",
+      "text": "Furu is very salty, and this is where people go wrong. Start with one cube for a dish serving three or four, taste, then add more if needed. A whole jar in one pot will make the dish inedibly salty, and you can't fix it by adding water."
+    },
+    {
+      "type": "h2",
+      "text": "Substitutions"
+    },
+    {
+      "type": "note",
+      "text": "There's no great substitute — miso is the closest in function (salty, fermented, savory) but tastes different. Use a small spoonful of white miso plus a pinch of salt, and accept that the dish won't taste quite the same."
+    },
+    {
+      "type": "h2",
+      "text": "Storage"
+    },
+    {
+      "type": "p",
+      "text": "It's a preserved product and keeps for months, even a year, in the fridge after opening. Keep the cubes submerged in their brine and always use a clean spoon — introducing moisture or other food is what spoils it."
+    },
+    {
+      "type": "note",
+      "text": "Red-braised pork is the classic place to try it, and braised tofu shows how well it works without any meat involved."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "腐乳是豆腐加盐在卤水里腌熟的产物，腌到质地变奶油状、咸而极鲜。西方厨子常买了用一次，然后在冰箱里放一年。太浪费了——一块腐乳能同时顶掉盐、生抽，还有大半的香料。"
+    },
+    {
+      "type": "h2",
+      "text": "你会见到的种类"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "红腐乳：加红曲米腌，味道更深、微甜——红烧的标准选择",
+        "白腐乳：更温和、更咸，适合炒菜和配粥",
+        "辣腐乳：红腐乳加辣椒，配白饭当小菜很合适"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "怎么用"
+    },
+    {
+      "type": "p",
+      "text": "在下任何其他东西之前，用勺背把一两块腐乳在汤汁里压散。它会化进汤里、消失不见，留下的是厚度而不是某种能分辨的味道。它也是炒空心菜的传统调味，还常加进火锅蘸料。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "红烧：每 500 克肉一块红腐乳，连卤汁一起用",
+        "炒青菜：半块，跟蒜一起下",
+        "腌料：压散拌进肉或豆腐的腌料里",
+        "直接上桌：配粥或白饭来一块"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "多少算多"
+    },
+    {
+      "type": "p",
+      "text": "腐乳非常咸，这也是人们最容易翻车的地方。三人份的菜先放一块，尝过再决定要不要加。一整罐倒进锅里会让菜咸到没法吃，而且加水也救不回来。"
+    },
+    {
+      "type": "h2",
+      "text": "替代方案"
+    },
+    {
+      "type": "note",
+      "text": "没有特别好的替代——味噌在功能上最接近（咸、发酵、鲜），但味道不同。用一小勺白味噌加一点盐，并且接受成品味道不会完全一样。"
+    },
+    {
+      "type": "h2",
+      "text": "保存"
+    },
+    {
+      "type": "p",
+      "text": "它是腌制品，开封后冷藏能放几个月甚至一年。保持腐乳块泡在卤汁里，并且一定用干净的勺子——带进水或其他食物才是让它变质的原因。"
+    },
+    {
+      "type": "note",
+      "text": "红烧肉是试腐乳最经典的地方，而红烧豆腐能让你看到它不放肉时同样出色。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "fermented bean curd",
+    "furu",
+    "chinese pantry",
+    "braising"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-29",
+  "coverImage": "/images/blog/fermented-bean-curd-furu.webp",
+  "relatedRecipeSlugs": [
+    "hongshao-pork",
+    "braised-tofu",
+    "home-style-pork"
+  ],
+  "faq": [
+    {
+      "qEn": "Is fermented bean curd the same as stinky tofu?",
+      "qZh": "腐乳等于臭豆腐吗？",
+      "aEn": "No. Stinky tofu is soaked in a different, much more pungent brine and then usually fried. Furu is creamy, salty, and far milder.",
+      "aZh": "不等于。臭豆腐泡的是另一种气味更冲的卤水，通常还要下锅炸。腐乳是奶油质地、咸，气味温和得多。"
+    },
+    {
+      "qEn": "Do I need to cook it, or can I eat it straight?",
+      "qZh": "腐乳要煮过吗？可以直接吃吗？",
+      "aEn": "It's already fermented and ready to eat — a cube with congee or rice is completely normal. Cooking just lets it melt into a sauce.",
+      "aZh": "它已经发酵好了，可以直接吃——配粥或白饭来一块很正常。下锅煮只是为了让它化进汤汁里。"
+    },
+    {
+      "qEn": "How salty is it compared to soy sauce?",
+      "qZh": "它比生抽咸多少？",
+      "aEn": "Significantly saltier by volume. Treat one cube as roughly a tablespoon of soy sauce, and cut the recipe's salt accordingly.",
+      "aZh": "按体积算咸得多。一块大约相当于一勺生抽，菜谱里的盐要相应减少。"
+    }
+  ]
+};
+
+const woodEarFungusGuide: BlogPost = {
+  "id": "wood-ear-fungus-guide",
+  "slug": "wood-ear-fungus-guide",
+  "titleEn": "Wood Ear Fungus: How to Soak It Safely and What to Cook With It",
+  "titleZh": "木耳：怎么安全泡发，以及拿它做什么菜",
+  "excerptEn": "Wood ear has almost no flavor and a great texture, which is exactly the point. Here's how long to soak it, the safety rule that matters, and where it's worth using.",
+  "excerptZh": "木耳几乎没味道，胜在口感——这正是它存在的意义。这篇讲泡多久、必须注意的安全规则，以及值得用它的地方。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Wood ear fungus — 木耳, sometimes sold as black fungus or cloud ear — is dried, shelf-stable, and costs almost nothing. It has nearly no flavor of its own. What it brings is a snappy, slightly rubbery crunch that survives stir-frying and vinegar, which is why it shows up in cold dishes, hot and sour soup, and moo shu pork."
+    },
+    {
+      "type": "h2",
+      "text": "Soaking: the rule that actually matters"
+    },
+    {
+      "type": "p",
+      "text": "Soak dried wood ear in cold water for 1 to 2 hours, or in warm water for about 30 minutes. It expands to several times its dried size, so use far more water and a much bigger bowl than feels necessary."
+    },
+    {
+      "type": "note",
+      "text": "Do not soak it overnight or for many hours at room temperature. Long soaks at warm temperatures let bacteria grow, and there are documented cases of serious food poisoning from fungus soaked too long. If you need to prepare it ahead, soak it in the fridge, and if it smells sour or feels slimy, throw it out."
+    },
+    {
+      "type": "h2",
+      "text": "Cleaning and trimming"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Rinse the rehydrated pieces under running water, rubbing gently to loosen grit trapped in the folds",
+        "Trim off the hard, knobbly bit where it attached to the wood — it stays tough no matter how long you cook it",
+        "Tear larger pieces into bite-sized ones rather than cutting, so the edges stay irregular and catch sauce"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Cooking it"
+    },
+    {
+      "type": "p",
+      "text": "Wood ear needs brief cooking, not long simmering. Add it to stir-fries near the end, or blanch it for a minute before tossing into cold dressed dishes. Cooked too long it loses the crunch that makes it worth using at all."
+    },
+    {
+      "type": "h2",
+      "text": "Where it earns its place"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cold dressed wood ear with vinegar, chili oil, and garlic — the classic",
+        "Hot and sour soup, where it's the texture against the soft tofu",
+        "Moo shu pork, where it echoes the crunch of the other vegetables"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Buying and storage"
+    },
+    {
+      "type": "p",
+      "text": "Dried wood ear keeps for a year or more in a sealed container in a dark cupboard. Buy it whole rather than pre-shredded if you can — the pieces are cleaner and keep their texture better. Rehydrated wood ear should be used within a day or two and kept in the fridge."
+    },
+    {
+      "type": "note",
+      "text": "Cold dressed wood ear is the fastest way to understand what this ingredient is actually for — the texture does all the work."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "木耳（也叫黑木耳、云耳）是干货，常温耐放，几乎不要钱。它本身基本没味道，带来的是一种爽脆带弹的口感，而且经得起爆炒和醋泡——所以它出现在凉拌菜、酸辣汤和木须肉里。"
+    },
+    {
+      "type": "h2",
+      "text": "泡发：真正要紧的一条规则"
+    },
+    {
+      "type": "p",
+      "text": "干木耳用冷水泡 1 到 2 小时，或温水泡约 30 分钟。泡开后体积会变成干货的好几倍，所以水要多放、碗要比你以为的大得多。"
+    },
+    {
+      "type": "note",
+      "text": "不要泡过夜，也不要在室温下泡好几个小时。长时间在温暖环境里泡发会让细菌繁殖，木耳泡太久导致严重食物中毒是有公开记录的案例。需要提前准备就放冰箱泡；闻到酸味或摸起来发黏，直接扔掉。"
+    },
+    {
+      "type": "h2",
+      "text": "清洗和去根"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "泡开后在流动水下冲洗，轻轻搓掉藏在褶皱里的沙",
+        "剪掉长在木头上的那块硬蒂——无论煮多久它都是硬的",
+        "大朵用手撕成小朵而不是切，让边缘不规则、更容易挂汁"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "怎么烹调"
+    },
+    {
+      "type": "p",
+      "text": "木耳要快，不要久煮。炒菜时最后放，凉拌则先焯一分钟再拌。煮太久，它那点值得用的脆感就没了。"
+    },
+    {
+      "type": "h2",
+      "text": "哪些地方值得用它"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "凉拌木耳配醋、辣椒油、蒜——最经典的吃法",
+        "酸辣汤里，它的口感正好和软嫩的豆腐形成对比",
+        "木须肉里，它呼应其他配菜的脆感"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "购买和保存"
+    },
+    {
+      "type": "p",
+      "text": "干木耳密封避光放橱柜，能存一年以上。尽量买整朵而不是切好的丝——杂质更少，口感也更好。泡发后的木耳冷藏并在一两天内用完。"
+    },
+    {
+      "type": "note",
+      "text": "凉拌木耳是理解这个食材用途最快的方式——所有表现都由口感完成。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "wood ear",
+    "mushrooms",
+    "ingredients",
+    "food safety"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-30",
+  "coverImage": "/images/blog/wood-ear-fungus-guide.webp",
+  "relatedRecipeSlugs": [
+    "cold-wood-ear",
+    "moo-shu-pork",
+    "home-style-pork"
+  ],
+  "faq": [
+    {
+      "qEn": "Can I soak wood ear overnight?",
+      "qZh": "木耳能泡一整夜吗？",
+      "aEn": "Better not at room temperature. Long soaks in warm conditions allow bacteria to grow. If you need to prep ahead, soak it in the fridge and use it within a day.",
+      "aZh": "室温下最好别这样。长时间在温暖环境泡发会让细菌繁殖。需要提前准备就放冰箱泡，并在一天内用完。"
+    },
+    {
+      "qEn": "How do I know if soaked wood ear has gone bad?",
+      "qZh": "怎么判断泡发的木耳坏了？",
+      "aEn": "Smell it and feel it. It should smell neutral or faintly earthy. If it smells sour or the surface feels slimy, discard it — don't try to cook it clean.",
+      "aZh": "闻一下、摸一下。正常的应该是无味或略带土腥。闻到酸味或表面发黏就扔掉——别指望煮一下就能杀菌。"
+    },
+    {
+      "qEn": "Is wood ear the same as cloud ear?",
+      "qZh": "木耳和云耳是一种东西吗？",
+      "aEn": "Nearly — cloud ear is a thinner, more delicate variety. You can use them interchangeably in most recipes; cloud ear is a bit more tender.",
+      "aZh": "基本是——云耳是更薄更嫩的一个品种。多数菜谱里可以互换，云耳口感更柔一些。"
+    }
+  ]
+};
+
+const sesamePasteGuide: BlogPost = {
+  "id": "sesame-paste-guide",
+  "slug": "sesame-paste-guide",
+  "titleEn": "Sesame Paste (Zhi Ma Jiang): How to Fix It When It Seizes",
+  "titleZh": "芝麻酱：结块了怎么救回来",
+  "excerptEn": "Sesame paste turns into a stubborn lump the moment you add water — until you know the trick. Here's how to thin it properly, and how it differs from tahini.",
+  "excerptZh": "芝麻酱一加水就变成搅不开的硬块——直到你知道那个窍门。这篇讲怎么正确调稀，以及它和中东芝麻酱有什么不同。",
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Chinese sesame paste — 芝麻酱 — is made from toasted sesame seeds, which gives it a deeper, nuttier, slightly bitter edge than the raw-seed tahini most Western kitchens already have. It's the base of cold noodles, and the reason those noodles taste like something you'd order rather than something you threw together."
+    },
+    {
+      "type": "h2",
+      "text": "Why it seizes, and the fix"
+    },
+    {
+      "type": "p",
+      "text": "Add water to sesame paste and it stiffens into a stubborn lump that won't mix. This isn't a mistake on your part — it's how the emulsion behaves. The fix is counterintuitive: keep going."
+    },
+    {
+      "type": "note",
+      "text": "Add liquid a small splash at a time and stir hard in one direction. It will seize, then look worse, then suddenly turn smooth and pourable. The whole thing takes about two minutes. Trying to fix it by adding a lot of water at once just gives you lumps floating in water."
+    },
+    {
+      "type": "h2",
+      "text": "What to thin it with"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Warm water: neutral, lets the sesame flavor lead",
+        "Sesame oil: richer, better for cold noodle sauces",
+        "Light soy sauce: seasons and thins at once"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Sesame paste vs tahini"
+    },
+    {
+      "type": "p",
+      "text": "Both are ground sesame, but Chinese sesame paste uses toasted seeds and tahini usually uses raw. That makes sesame paste darker, stronger, and a little bitter. In a cold noodle sauce, tahini tastes flat by comparison."
+    },
+    {
+      "type": "note",
+      "text": "Using tahini in a pinch? Toast it lightly in a dry pan first and let it cool, or add a few drops of toasted sesame oil to push it in the right direction."
+    },
+    {
+      "type": "h2",
+      "text": "Where to use it"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cold sesame noodles — the classic, and the whole reason to own a jar",
+        "Cold dressed dishes, thinned into the dressing",
+        "Hot pot dipping sauce, mixed with furu and chili oil"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Storage"
+    },
+    {
+      "type": "p",
+      "text": "Store it in the fridge once opened; the oil separates and rises, which is normal. Stir it back in thoroughly before each use. If it separates and you never stir it, the bottom layer goes hard and dry. Kept stirred and cold, it lasts several months."
+    },
+    {
+      "type": "note",
+      "text": "Scallion noodles are the fastest test of whether you thinned it correctly — the sauce should coat the noodles, not pool at the bottom of the bowl."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "中式芝麻酱用熟芝麻磨制，所以比西方厨房常见的生芝麻磨的中东芝麻酱（tahini）更深、更坚果香，还带一点苦韵。它是凉面的基底，也是凉面吃起来像外卖而不是随便拌拌的原因。"
+    },
+    {
+      "type": "h2",
+      "text": "为什么会结块，怎么救"
+    },
+    {
+      "type": "p",
+      "text": "芝麻酱一加水就会变硬、搅不开。这不是你操作失误，而是它乳化的特性就是这样。救法有点反直觉：继续加。"
+    },
+    {
+      "type": "note",
+      "text": "液体少量多次地加，同时朝一个方向用力搅。它会先结块，然后看起来更糟，接着突然变顺滑、可以流动。整个过程大约两分钟。想一次加很多水来补救，只会得到一盆漂着硬块的水。"
+    },
+    {
+      "type": "h2",
+      "text": "用什么调稀"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "温水：中性，让芝麻味主导",
+        "香油：更浓郁，适合凉面酱",
+        "生抽：调味和调稀一次完成"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "芝麻酱和中东芝麻酱的区别"
+    },
+    {
+      "type": "p",
+      "text": "两者都是磨芝麻，但中式芝麻酱用熟芝麻，tahini 多用生芝麻。这让芝麻酱颜色更深、味道更冲、略带苦。拌凉面时，tahini 相比之下会显得寡淡。"
+    },
+    {
+      "type": "note",
+      "text": "应急用 tahini？先在干锅里小火炒香、放凉再用，或者加几滴香油把方向掰回来。"
+    },
+    {
+      "type": "h2",
+      "text": "用在哪"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "芝麻凉面——最经典，也是值得常备一罐的理由",
+        "凉拌菜里调进料汁",
+        "火锅蘸料，配腐乳和辣椒油"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "保存"
+    },
+    {
+      "type": "p",
+      "text": "开封后冷藏，油会分离浮到上层，这是正常的。每次用前充分搅匀。如果一直不搅，下层会变干变硬。搅匀冷藏，能放好几个月。"
+    },
+    {
+      "type": "note",
+      "text": "葱油拌面是检验你调稀是否到位最快的方式——酱应该裹在面上，而不是积在碗底。"
+    }
+  ],
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "sesame paste",
+    "zhi ma jiang",
+    "ingredients",
+    "cold dishes"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-08-31",
+  "coverImage": "/images/blog/sesame-paste-guide.webp",
+  "relatedRecipeSlugs": [
+    "scallion-noodles",
+    "smashed-cucumber",
+    "cold-wood-ear"
+  ],
+  "faq": [
+    {
+      "qEn": "Why does my sesame paste get hard when I add water?",
+      "qZh": "为什么芝麻酱加水会变硬？",
+      "aEn": "It's the emulsion forming. Keep adding liquid a splash at a time and stirring in one direction — it goes lumpy, then suddenly smooth.",
+      "aZh": "那是正在形成乳化。继续少量多次加水、朝一个方向搅——它会先结块，然后突然变顺滑。"
+    },
+    {
+      "qEn": "Can I use tahini instead of Chinese sesame paste?",
+      "qZh": "能用中东芝麻酱代替吗？",
+      "aEn": "In a pinch, yes, but tahini is made from raw sesame and tastes milder. Toast it lightly in a dry pan first, or add a little toasted sesame oil.",
+      "aZh": "应急可以，但 tahini 是生芝麻做的，味道更淡。先在干锅小火炒香，或者加一点香油。"
+    },
+    {
+      "qEn": "Should sesame paste be refrigerated?",
+      "qZh": "芝麻酱要冷藏吗？",
+      "aEn": "Yes, after opening. The oil will separate and rise — that's normal. Stir it back in each time and it keeps for months.",
+      "aZh": "开封后要冷藏。油会分离上浮，这是正常的。每次搅回去，能放好几个月。"
+    }
+  ]
+};
+
+export const blogPosts: BlogPost[] = [oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
