@@ -35,7 +35,7 @@ const FROM_SITEMAP = getArg("from-sitemap");
 const PATTERN = getArg("url-pattern");
 
 if (!HOST || !KEY) {
-  console.error("用法: node scripts/indexnow-submit.mjs --host X --key Y [--urls "u1 u2" | --from-sitemap path]");
+  console.error("用法: node scripts/indexnow-submit.mjs --host X --key Y [--urls 'u1 u2' | --from-sitemap path]");
   process.exit(1);
 }
 
