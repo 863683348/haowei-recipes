@@ -288,6 +288,13 @@ import { yunnan_qi_guo_ji } from "./yunnan-qi-guo-ji";
 import { man_han_family_feast_combo } from "./man-han-family-feast-combo";
 import { whole_family_blessing_casserole } from "./whole-family-blessing-casserole";
 import { reunion_hot_pot } from "./reunion-hot-pot";
+import { onion_scrambled_eggs } from "./onion-scrambled-eggs";
+import { green_pepper_scrambled_eggs } from "./green-pepper-scrambled-eggs";
+import { okra_scrambled_eggs } from "./okra-scrambled-eggs";
+import { zucchini_scrambled_eggs } from "./zucchini-scrambled-eggs";
+import { shrimp_scrambled_eggs } from "./shrimp-scrambled-eggs";
+import { preserved_egg_tofu } from "./preserved-egg-tofu";
+import { egg_imitation_crab } from "./egg-imitation-crab";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -581,6 +588,13 @@ export const recipes: Recipe[] = [
   man_han_family_feast_combo,
   whole_family_blessing_casserole,
   reunion_hot_pot,
+  onion_scrambled_eggs,
+  green_pepper_scrambled_eggs,
+  okra_scrambled_eggs,
+  zucchini_scrambled_eggs,
+  shrimp_scrambled_eggs,
+  preserved_egg_tofu,
+  egg_imitation_crab,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

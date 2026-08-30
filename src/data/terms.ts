@@ -672,6 +672,63 @@ export const terms: Term[] = [
     substituteHint: "White sugar works 1:1 by weight in a pinch.",
     substituteHintZh: "急用可用白糖等重替代。",
   },
+  /* ========== 新增 Day 83 术语 ========== */
+  {
+    id: "onion",
+    zh: "洋葱",
+    pinyin: "yáng cōng",
+    en: "Onion (yellow / sweet)",
+    category: "ingredient",
+    definition:
+      "A pungent allium that caramelizes beautifully when cooked slowly. Yellow or sweet onions are ideal for Chinese home cooking — they turn naturally sweet without added sugar.",
+    definitionZh: "辛辣的葱属蔬菜，慢火烹调会自然焦糖化。黄洋葱最适合中式家常烹饪——无需加糖即可自然变甜。",
+    quantEquivalent: "1 medium ≈ 150 g",
+    substituteHint:
+      "White or red onion works but is sharper. Use less and rinse if too pungent.",
+    substituteHintZh: "白洋葱或红洋葱可用但更辛辣。用量减半，过辣可冲洗。",
+  },
+  {
+    id: "okra",
+    zh: "秋葵",
+    pinyin: "qiū kuí",
+    en: "Okra (lady's finger)",
+    category: "ingredient",
+    definition:
+      "A tropical vegetable with a distinctive mucilaginous texture and nutty flavor. In Chinese cooking, it is quickly stir-fried to retain crunch while the natural slime adds body to sauces.",
+    definitionZh: "一种热带蔬菜，有独特的黏液质地和坚果风味。中餐快炒以保持脆感，天然黏液可增稠酱汁。",
+    quantEquivalent: "200 g ≈ 12-15 pods",
+    substituteHint:
+      "Green beans or asparagus tips provide similar crunch (fidelity ~70%).",
+    substituteHintZh: "四季豆或芦笋尖可提供类似脆感（还原度约70%）。",
+  },
+  {
+    id: "zucchini",
+    zh: "西葫芦",
+    pinyin: "xī hú lu",
+    en: "Chinese zucchini (summer squash)",
+    category: "ingredient",
+    definition:
+      "A mild, juicy summer squash with thin green skin and soft seeds. Unlike Western courgette, Chinese zucchini is milder and releases more water during cooking — remove seeds for best texture.",
+    definitionZh: "清淡多汁的夏季南瓜，皮薄绿嫩，籽软。与西方courgette不同，西葫芦味道更淡、出水更多——去籽口感更佳。",
+    quantEquivalent: "1 large ≈ 300 g",
+    substituteHint:
+      "Western courgette works but is firmer and less watery. Reduce cooking time slightly.",
+    substituteHintZh: "西方courgette可用但质地更硬、水分更少。烹饪时间略减。",
+  },
+  {
+    id: "preserved-egg",
+    zh: "皮蛋 / 松花蛋",
+    pinyin: "pí dàn / sōng huā dàn",
+    en: "Preserved egg (century egg / thousand-year egg)",
+    category: "ingredient",
+    definition:
+      " Duck or quail eggs preserved in a mixture of clay, ash, salt, quicklime, and rice hulls for several weeks to months. The white becomes amber jelly-like with a strong ammonia scent; the yolk turns dark green-gray and creamy. A staple in cold dishes and congee.",
+    definitionZh: "鸭蛋或鹌鹑蛋用黏土、Ash、盐、石灰和稻壳腌制数周至数月。蛋白呈琥珀色果冻状，带氨香；蛋黄墨绿乳酪状。凉拌菜和粥的必备。",
+    quantEquivalent: "1 large ≈ 60 g",
+    substituteHint:
+      "No true substitute — the flavor is unique. For approximation: soft-boiled egg with a pinch of baking soda (fidelity ~40%).",
+    substituteHintZh: "无可替代——风味独特。近似替代：加一小撮小苏打的软煮蛋（还原度约40%）。",
+  }
 ];
 
 /** 术语查询工具 */
