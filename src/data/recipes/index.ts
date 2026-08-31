@@ -295,6 +295,16 @@ import { zucchini_scrambled_eggs } from "./zucchini-scrambled-eggs";
 import { shrimp_scrambled_eggs } from "./shrimp-scrambled-eggs";
 import { preserved_egg_tofu } from "./preserved-egg-tofu";
 import { egg_imitation_crab } from "./egg-imitation-crab";
+import { sesame_flatbread } from "./sesame-flatbread";
+import { red_sugar_flatbread } from "./red-sugar-flatbread";
+import { flaky_layer_flatbread } from "./flaky-layer-flatbread";
+import { scallion_flatbread } from "./scallion-flatbread";
+import { you_su_huoshao } from "./you-su-huoshao";
+import { wife_cake } from "./wife-cake";
+import { egg_yolk_pastry } from "./egg-yolk-pastry";
+import { peach_cake } from "./peach-cake";
+import { kai_kou_xiao } from "./kai-kou-xiao";
+import { ma_tuan } from "./ma-tuan";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -595,6 +605,16 @@ export const recipes: Recipe[] = [
   shrimp_scrambled_eggs,
   preserved_egg_tofu,
   egg_imitation_crab,
+  sesame_flatbread,
+  red_sugar_flatbread,
+  flaky_layer_flatbread,
+  scallion_flatbread,
+  you_su_huoshao,
+  wife_cake,
+  egg_yolk_pastry,
+  peach_cake,
+  kai_kou_xiao,
+  ma_tuan,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
