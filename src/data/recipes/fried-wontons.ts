@@ -90,7 +90,7 @@ export const fried_wontons: Recipe = {
     },
     {
       "id": "fw-07",
-      "nameEn": "neutral oil (for frying)"
+      "nameEn": "neutral oil (for frying)",
       "amountMetric": "500 ml",
       "amountUS": "2 cups",
       "category": "western-pantry",
