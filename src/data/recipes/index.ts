@@ -305,6 +305,16 @@ import { egg_yolk_pastry } from "./egg-yolk-pastry";
 import { peach_cake } from "./peach-cake";
 import { kai_kou_xiao } from "./kai-kou-xiao";
 import { ma_tuan } from "./ma-tuan";
+import { chun_juan } from "./chun-juan";
+import { fried_wontons } from "./fried-wontons";
+import { fried_eggplant_box } from "./fried-eggplant-box";
+import { fried_lotus_root_box } from "./fried-lotus-root-box";
+import { fried_oyster_mushrooms } from "./fried-oyster-mushrooms";
+import { fried_milk } from "./fried-milk";
+import { soft_fried_pork } from "./soft-fried-pork";
+import { chinese_fries } from "./chinese-fries";
+import { crispy_chicken_chunks } from "./crispy-chicken-chunks";
+import { fried_tangyuan } from "./fried-tangyuan";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -615,6 +625,16 @@ export const recipes: Recipe[] = [
   peach_cake,
   kai_kou_xiao,
   ma_tuan,
+  chun_juan,
+  fried_wontons,
+  fried_eggplant_box,
+  fried_lotus_root_box,
+  fried_oyster_mushrooms,
+  fried_milk,
+  soft_fried_pork,
+  chinese_fries,
+  crispy_chicken_chunks,
+  fried_tangyuan,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
