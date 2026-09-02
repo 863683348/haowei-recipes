@@ -47,9 +47,9 @@ jobs:
 
       - name: Fetch live sitemap + submit to IndexNow
         run: |
-          curl -s "https://${SITE_HOST}/sitemap.xml" -o /tmp/sm.xml
-          echo "📊 线上 sitemap URL 总数: $(grep -c '<loc>' /tmp/sm.xml)"
+          curl -s "https://${SITE_HOST}/sitemap.xml" -o live-sitemap.xml
+          echo "📊 线上 sitemap URL 总数: $(grep -c '<loc>' live-sitemap.xml)"
           node scripts/indexnow-submit.mjs \
             --host "$SITE_HOST" \
             --key "$INDEXNOW_KEY" \
-            --from-sitemap /tmp/sm.xml
+            --from-sitemap live-sitemap.xml

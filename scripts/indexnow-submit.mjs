@@ -48,7 +48,9 @@ if (!HOST || !KEY) {
 }
 
 async function loadUrlsFromSitemap() {
-  const file = path.join(ROOT, FROM_SITEMAP);
+  const file = path.isAbsolute(FROM_SITEMAP)
+    ? FROM_SITEMAP
+    : path.join(ROOT, FROM_SITEMAP);
   const xml = await fs.readFile(file, "utf8");
   const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   if (PATTERN) return urls.filter((u) => u.includes(PATTERN));
