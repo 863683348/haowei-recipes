@@ -208,8 +208,20 @@ const marinatingMeat: BlogPost = {
   authorEn: "HǎoWèi Kitchen",
   authorZh: "好味厨房",
   publishDate: "2026-08-17",
+  updatedDate: "2026-09-02",
   coverImage: "/images/blog/marinating-meat-chinese-way.png",
-  relatedRecipeSlugs: ["kung-pao-chicken", "beef-and-broccoli", "dry-fried-green-beans"],
+  relatedRecipeSlugs: [
+    "kung-pao-chicken",
+    "beef-and-broccoli",
+    "dry-fried-green-beans",
+    "twice-cooked-pork",
+    "yu-xiang-pork",
+    "cashew-shrimp",
+    "kung-pao-shrimp",
+    "shanghai-style-sauce-duck",
+    "pan-seared-chicken-breast",
+    "salt-fried-pork",
+  ],
   bodyEn: [
     { type: "p", text: "If you've ever marinated meat at home and it came out dry or bland, the problem is rarely the recipe. It's usually the order, the timing, or the missing ingredient that most home cooks overlook." },
     { type: "h2", text: "The four-step order (and why it matters)" },
@@ -285,6 +297,18 @@ const marinatingMeat: BlogPost = {
       aEn: "Cornstarch creates a protective gel layer during stir-frying. It seals in moisture and gives meat a silky, restaurant-quality texture that home cooking rarely achieves without it.",
       aZh: "淀粉在爆炒时形成凝胶保护膜，锁住水分，带来顺滑口感。这是家常菜做不出餐厅嫩滑感的关键原因。",
     },
+    {
+      qEn: "What is the underlying logic behind marinating meat so it actually absorbs flavor?",
+      qZh: "腌肉入味的底层逻辑到底是什么？",
+      aEn: "It comes down to three things working in order: salt first draws out moisture and starts breaking down proteins so the meat relaxes; then soy sauce and seasoning penetrate while the meat is relaxed; oil goes last to form a fat barrier that locks everything in. Water-based and fat-based ingredients don't mix, so the sequence is what lets flavor travel from the surface into the meat instead of sitting on top.",
+      aZh: "核心是三点按序发生：盐先下，析出水分、启动蛋白质分解，让肉松弛；接着酱油和调料在肉松弛时渗入；油最后封，形成脂层把味道锁住。水基和脂基不互溶，所以顺序才是味道从表面进到肉里的关键，而不是浮在表层。",
+    },
+    {
+      qEn: "Why does my marinated meat still come out tough?",
+      qZh: "为什么我腌过的肉还是柴？",
+      aEn: "Most often it's one of three mistakes: oil was added before the soy sauce (fat blocks penetration), the meat was over-marinated in an acidic mix (vinegar or wine breaks protein down too far, making it mushy yet stringy), or the starch coating was skipped so moisture escaped during high-heat stir-fry. Fix the order, watch the time, and add the cornstarch step.",
+      aZh: "多半是三个错之一：先放油后放酱油（脂肪挡住渗入）、酸性腌料腌太久（醋或料酒把蛋白质过度分解，又粉又柴）、或者省略了淀粉那一步导致水分在高温下跑光。把顺序调对、控好时间、加上淀粉，就能解决。",
+    },
   ],
 };
 
@@ -304,6 +328,7 @@ const doubanjiang101: BlogPost = {
   authorEn: "HǎoWèi Kitchen",
   authorZh: "好味厨房",
   publishDate: "2026-08-19",
+  updatedDate: "2026-09-02",
   coverImage: "/images/blog/doubanjiang-101.webp",
   relatedRecipeSlugs: [
     "mapo-tofu",
@@ -312,6 +337,14 @@ const doubanjiang101: BlogPost = {
     "twice-cooked-pork",
     "yu-xiang-pork",
     "scallion-pancakes",
+    "yu-xiang-eggplant",
+    "dan-dan-noodles-chengdu",
+    "chengdu-maocai",
+    "shui-zhu-beef",
+    "shui-zhu-fish",
+    "ge-le-shan-lazi-chicken",
+    "la-zi-diced-chicken",
+    "fish-fragrant-shredded-pork",
   ],
   bodyEn: [
     { type: "p", text: "If you cook one Sichuan dish and it tastes flat, the missing piece is almost always doubanjiang. This fermented chili bean paste is the backbone of the region's flavor, the thing that gives mapo tofu its deep red character and kung pao its savory edge. Get to know this one ingredient and a whole shelf of Chinese cooking opens up." },
@@ -408,6 +441,18 @@ const doubanjiang101: BlogPost = {
       qZh: "豆瓣酱放多少合适？",
       aEn: "One tablespoon per two servings is a solid baseline, then adjust to taste. A good doubanjiang is salty enough that you often skip extra salt later, so season at the end rather than up front.",
       aZh: "两人份一汤匙是稳妥起点，之后按口味调整。好豆瓣酱本身够咸，后面常常不用再放盐，所以最后尝味再定，不要一开始就加盐。",
+    },
+    {
+      qEn: "What dishes should I use doubanjiang in?",
+      qZh: "豆瓣酱适合做哪些菜？",
+      aEn: "Anything from the Sichuan pantry: mapo tofu, twice-cooked pork, fish-fragrant eggplant and pork, dan dan noodles, maocai, shui zhu (poached) beef or fish, and la zi chicken. The rule of thumb: if a recipe is red, savory, and a little funky, doubanjiang is almost certainly the base. Each HǎoWèi recipe that calls for it lists the exact amount.",
+      aZh: "川菜货架上那一串都靠它：麻婆豆腐、回锅肉、鱼香茄子和鱼香肉丝、担担面、冒菜、水煮牛肉/鱼、歌乐山辣子鸡。一个判断标准：凡是红亮、咸鲜、带点臭香的家常川菜，基底八成是豆瓣酱。好味每篇用到它的菜谱都标了精确用量。",
+    },
+    {
+      qEn: "When in the cooking process do I add doubanjiang?",
+      qZh: "做菜时豆瓣酱什么阶段下锅？",
+      aEn: "Almost always at the very start, right after the oil is hot and before the garlic and ginger. Frying it in oil for 30–60 seconds is what releases its red color and toasty aroma into the whole dish. Add it late and you get a raw, harsh fermented taste instead of a rounded one.",
+      aZh: "几乎都在最开头——油热之后、蒜姜之前。用油炒 30–60 秒，红亮的颜色和焦香才会铺满整道菜。下晚了会留下生涩的发酵味，而不是圆润的厚味。",
     },
   ],
 };

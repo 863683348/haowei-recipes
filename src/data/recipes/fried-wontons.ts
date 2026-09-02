@@ -91,6 +91,7 @@ export const fried_wontons: Recipe = {
     {
       "id": "fw-07",
       "nameEn": "neutral oil (for frying)",
+      "nameZh": "中性油（炸用）",
       "amountMetric": "500 ml",
       "amountUS": "2 cups",
       "category": "western-pantry",
