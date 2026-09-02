@@ -2829,6 +2829,7 @@ const sesamePasteGuide: BlogPost = {
   ]
 };
 
+
 const midAutumnFestivalDishes: BlogPost = {
   id: "mid-autumn-festival-dishes",
   slug: "mid-autumn-festival-dishes",
@@ -2950,7 +2951,109 @@ const nationalDayFamilyFeast: BlogPost = {
   ],
 };
 
-export const blogPosts: BlogPost[] = [oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes, nationalDayFamilyFeast];
+
+const miseEnPlaceBatchPrep: BlogPost = {
+  id: "mise-en-place-batch-prep-chinese-style",
+  slug: "mise-en-place-batch-prep-chinese-style",
+  titleEn: "Mise en Place: Batch-Prep Chinese Style",
+  titleZh: "备菜（mise），下锅前都切好",
+  excerptEn: "Mise en place is the habit that makes Chinese home cooking fast: prep everything before the wok gets hot. Here's how to batch-prep a week of dinners the Chinese way.",
+  excerptZh: "备菜（mise）是让中式家常菜变快的习惯：锅热之前把所有料切好配好。这篇讲怎么用中式方法批量备好一周的晚饭。",
+  bodyEn: [
+    { type: "p", text: "The French call it mise en place; Chinese home cooks just call it 备菜. Before the wok is hot, every vegetable is sliced, every sauce is mixed, and every plate is within arm's reach. If you want to make chinese meal prep actually stick, the trick isn't a gadget, it's a sequence: do the dull knife work once, then the fast part becomes easy." },
+    { type: "h2", text: "What mise en place buys you" },
+    { type: "p", text: "Stir-frying moves fast. Once the oil is shimmering you have seconds, not minutes, to add aromatics. A proper chinese meal prep session means the garlic is minced, the ginger is julienned, and the sauce is already in a bowl. You stop scrambling and start cooking." },
+    { type: "h2", text: "The Chinese prep list" },
+    { type: "ul", items: [
+      "Aromatics first: scallion, ginger, garlic, sliced and stored separately",
+      "Sauces pre-mixed: soy, vinegar, wine, and cornstarch slurry in small bowls",
+      "Proteins velveted and marinated ahead of time",
+      "Hard vegetables blanched so they finish with the quick ones",
+    ] },
+    { type: "h2", text: "Batch-prep a week of dinners" },
+    { type: "p", text: "Pick three sauces you rotate: a ginger-scallion base, a red-cooking base, and a hot-garlic base. Prep the aromatics for all three in one session, then each weeknight is a ten-minute cook. This is the chinese meal prep loop that keeps the wok in heavy rotation without repeating a dish." },
+    { type: "note", text: "Prep aromatics on Sunday, but velvet proteins the night you cook, not three days before, or the texture slips." },
+    { type: "h2", text: "Tools that earn their counter space" },
+    { type: "ul", items: [
+      "A heavy cleaver for slice, shred, and smash",
+      "Stackable prep bowls so nothing touches until it hits the wok",
+      "A small sauce bowl set for pre-mixed seasonings",
+    ] },
+    { type: "h2", text: "About HǎoWèi" },
+    { type: "p", text: "HǎoWèi Kitchen publishes bilingual recipes and technique guides that fit this prep habit. Browse the full index at haoweirecipes.com, read more on the blog, or jump straight to a weeknight dish like mapo tofu, kung pao chicken, or scallion pancakes." },
+  ],
+  bodyZh: [
+    { type: "p", text: "法国人叫它 mise en place，中国家常厨师只叫它「备菜」。锅热之前，菜切好、酱调好、盘摆到手边。想让中式备餐真正坚持下去，秘诀不是某件工具，而是一套顺序：先把枯燥的刀工一次做完，后面的快炒就轻松了。" },
+    { type: "h2", text: "备菜给你带来什么" },
+    { type: "p", text: "炒菜节奏快。油一冒烟，你只有几秒而不是几分钟去下料。一次到位的中式备餐，意味着蒜剁好、姜切丝、酱已经在碗里。你不再手忙脚乱，而是从容开火。" },
+    { type: "h2", text: "中式备菜清单" },
+    { type: "ul", items: [
+      "先处理香辛料：葱、姜、蒜分别切好分装",
+      "酱汁提前调：生抽、醋、料酒、水淀粉分小碗备好",
+      "肉类提前上浆腌制",
+      "难熟的菜先焯，好和快熟的同步出锅",
+    ] },
+    { type: "h2", text: "批量备好一周晚饭" },
+    { type: "p", text: "准备三种轮换酱底：葱油底、红烧底、蒜辣底。一次把三者的香辛料备齐，每个工作日晚上就是十分钟出锅。这就是让炒锅高频使用又不重样的中式备餐循环。" },
+    { type: "note", text: "香辛料周日备，但肉类下锅当晚再上浆，别提前三天，否则口感会塌。" },
+    { type: "h2", text: "值得占台面的工具" },
+    { type: "ul", items: [
+      "一把厚实砍刀，切片、切丝、拍蒜都顺手",
+      "可叠放备菜碗，下锅前各料不串味",
+      "一小套酱料碗，调好的味料随取随用",
+    ] },
+    { type: "h2", text: "关于好味厨房" },
+    { type: "p", text: "好味厨房出品双语菜谱与技法指南，正好契合这种备菜习惯。完整索引请看 haoweirecipes.com，更多内容在博客，或直接跳到工作日晚餐：麻婆豆腐、宫保鸡丁、葱油饼。" },
+  ],
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["mise en place", "chinese meal prep", "备菜", "stir fry prep", "chinese cooking technique"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-02",
+  coverImage: "/images/blog/light-vs-dark-soy-sauce.png",
+  relatedRecipeSlugs: ["mapo-tofu", "kung-pao-chicken", "scallion-pancakes"],
+  faq: [
+    {
+      qEn: "Is mise en place necessary for Chinese cooking?",
+      qZh: "中式炒菜必须备菜吗？",
+      aEn: "Not for every dish, but for stir-fries it changes everything. Prepping ahead turns a stressful scramble into a calm ten-minute cook.",
+      aZh: "不是每道菜都要，但炒菜差别巨大。提前备好，手忙脚乱就变成从容的十分钟出锅。",
+    },
+    {
+      qEn: "How far ahead can I prep aromatics?",
+      qZh: "香辛料能提前备多久？",
+      aEn: "Minced scallion, ginger, and garlic keep well for two to three days in the fridge if stored separately and sealed.",
+      aZh: "葱、姜、蒜剁好后分装密封，冰箱里放两三天没问题。",
+    },
+  ],
+};
+
+export const blogPosts: BlogPost[] = [
+  miseEnPlaceBatchPrep,
+  {
+    "id": "hong-shao-rou-braised-pork",
+    "slug": "hong-shao-rou-braised-pork",
+    "titleEn": "How to Make Perfect Hong Shao Rou (Braised Pork)",
+    "titleZh": "如何做出完美的红烧肉",
+    "excerptEn": "A step-by-step guide to making authentic Chinese braised pork belly with caramelized sugar color.",
+    "excerptZh": "一步步教你制作正宗中式红烧肉，包括糖色炒制技巧。",
+    "bodyEn": [{"type": "h2", "text": "Introduction"}, {"type": "p", "text": "Hong Shao Rou is one of the most iconic dishes in Chinese cuisine. The key is mastering the caramelized sugar color (糖色) and slow-cooking technique."}],
+    "bodyZh": [{"type": "h2", "text": "简介"}, {"type": "p", "text": "红烧肉是中国最具代表性的菜肴之一。关键在于掌握糖色炒制和慢炖技巧。"}],
+    "categoryKey": "main-dish",
+    "categoryEn": "Main Dish",
+    "categoryZh": "主菜",
+    "tags": ["pork", "braised", "chinese-classic"],
+    "authorEn": "Chef Wei",
+    "authorZh": "魏厨师",
+    "publishDate": "2026-08-31",
+    "coverImage": "/images/recipes/hong-shao-rou.webp",
+    "relatedRecipeSlugs": [],
+    "faq": []
+  },
+  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes, nationalDayFamilyFeast];
+ (blog: add day30 mise-en-place-batch-prep-chinese-style)
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
