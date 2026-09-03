@@ -315,6 +315,16 @@ import { soft_fried_pork } from "./soft-fried-pork";
 import { chinese_fries } from "./chinese-fries";
 import { crispy_chicken_chunks } from "./crispy-chicken-chunks";
 import { fried_tangyuan } from "./fried-tangyuan";
+import { grilled_cold_noodles } from "./grilled-cold-noodles";
+import { fried_skewers } from "./fried-skewers";
+import { oden } from "./oden";
+import { takoyaki } from "./takoyaki";
+import { egg_puffs } from "./egg-puffs";
+import { tanghulu } from "./tanghulu";
+import { stinky_tofu } from "./stinky-tofu";
+import { jianbing } from "./jianbing";
+import { malatang } from "./malatang";
+import { crispy_chicken_strips } from "./crispy-chicken-strips";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -635,6 +645,16 @@ export const recipes: Recipe[] = [
   chinese_fries,
   crispy_chicken_chunks,
   fried_tangyuan,
+  grilled_cold_noodles,
+  fried_skewers,
+  oden,
+  takoyaki,
+  egg_puffs,
+  tanghulu,
+  stinky_tofu,
+  jianbing,
+  malatang,
+  crispy_chicken_strips,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
