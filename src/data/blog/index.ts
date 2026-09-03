@@ -3052,8 +3052,7 @@ export const blogPosts: BlogPost[] = [
     "relatedRecipeSlugs": [],
     "faq": []
   },
-  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes, nationalDayFamilyFeast];
- (blog: add day30 mise-en-place-batch-prep-chinese-style)
+  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
