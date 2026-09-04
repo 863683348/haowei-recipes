@@ -29,6 +29,9 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem("hw-theme");if(t==="dark"||(!t&&window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark");}}catch(e){}})();`,
           }}
         />
+        {/* 性能：GA 预连接，缩短桌面端脚本握手、减轻 LCP 抖动（P1-#4 CWV 加固） */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body className="min-h-screen antialiased">
         {children}

@@ -51,6 +51,31 @@ export default async function AboutPage({ params }: Props) {
             <p key={i}>{p.content}</p>
           )
         )}
+        {/* E-E-A-T 信号区（经验/专业/权威/可信） */}
+        <section className="mt-10 rounded-xl border border-[var(--hw-fg-muted)]/20 bg-[var(--hw-ginger)]/5 p-6">
+          <h2 className="font-serif text-xl font-semibold text-[var(--hw-fg)]">
+            {loc === "zh" ? "我们怎么保证菜谱靠谱" : "How we keep recipes trustworthy"}
+          </h2>
+          <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--hw-fg-muted)]">
+            <li>
+              <span className="font-semibold text-[var(--hw-fg)]">{loc === "zh" ? "经验（Experience）：" : "Experience: "}</span>
+              {loc === "zh" ? "每篇菜谱都在家庭厨房实测出锅，不是照搬书。" : "Every recipe is cooked and tasted in a home kitchen, not copied from a book."}
+            </li>
+            <li>
+              <span className="font-semibold text-[var(--hw-fg)]">{loc === "zh" ? "专业（Expertise）：" : "Expertise: "}</span>
+              {loc === "zh" ? "食材按本地超市与亚超双标注，附选法与替代方案。" : "Ingredients are tagged local vs Asian-market, with buying tips and swaps."}
+            </li>
+            <li>
+              <span className="font-semibold text-[var(--hw-fg)]">{loc === "zh" ? "权威（Authoritativeness）：" : "Authoritativeness: "}</span>
+              {loc === "zh" ? "技法文章引用传统做法（如郫县豆瓣、上浆原理）。" : "Technique guides cite traditional methods (pixian doubanjiang, velveting)."}
+            </li>
+            <li>
+              <span className="font-semibold text-[var(--hw-fg)]">{loc === "zh" ? "可信（Trust）：" : "Trust: "}</span>
+              {loc === "zh" ? "不确定处标注来源与置信度，欢迎纠错。" : "Where we're unsure, we say so and cite sources. Corrections welcome."}
+            </li>
+          </ul>
+        </section>
+
         <p className="text-[var(--hw-fg-muted)]">
           {t.aboutPage.getInTouch}{" "}
           <Link href={localizePath("/contact", loc)} className="text-[var(--hw-ginger)] underline">

@@ -242,6 +242,23 @@ export default async function BlogPostPage({ params }: Props) {
           </section>
         )}
 
+        {/* 作者 E-E-A-T 区块（经验 / 专业 / 可信信号） */}
+        <section className="mt-14 border-t border-[var(--hw-fg-muted)]/20 pt-6">
+          <div className="flex items-start gap-3">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--hw-ginger)]/15 font-serif text-lg font-bold text-[var(--hw-ginger)]">
+              {isZh ? "好" : "H"}
+            </div>
+            <div>
+              <p className="font-semibold text-[var(--hw-fg)]">{author}</p>
+              <p className="mt-1 text-sm leading-relaxed text-[var(--hw-fg-muted)]">
+                {isZh
+                  ? "好味厨房的每篇菜谱与文章都在真实家庭厨房反复实测。食材按「本地超市 / 亚超」双标注，附替代方案与分步状态提示，让你照着做不翻车；写错的、不确定的，我们会在文末标注来源与置信度。"
+                  : "Every HǎoWèi recipe and guide is tested in a real home kitchen before it publishes. Ingredients are tagged local-supermarket vs Asian-market, with substitutions and step-by-step state cues so you can cook along without guessing. Where we're unsure, we say so and cite the source."}
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 返回博客 */}
         <div className="mt-12">
           <Link
