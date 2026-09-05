@@ -276,6 +276,16 @@ import { sandpot_vermicelli_pot } from "./sandpot-vermicelli-pot";
 import { oyster_sauce_beef } from "./oyster-sauce-beef";
 import { garlic_shrimp_vermicelli } from "./garlic-shrimp-vermicelli";
 import { air_fryer_chicken_wings } from "./air-fryer-chicken-wings";
+import { air_fryer_chicken_bites } from "./air-fryer-chicken-bites";
+import { air_fryer_chicken_breast } from "./air-fryer-chicken-breast";
+import { air_fryer_chinese_fries } from "./air-fryer-chinese-fries";
+import { air_fryer_crispy_eggplant } from "./air-fryer-crispy-eggplant";
+import { air_fryer_pork_belly } from "./air-fryer-pork-belly";
+import { air_fryer_pork_ribs } from "./air-fryer-pork-ribs";
+import { air_fryer_shrimp } from "./air-fryer-shrimp";
+import { air_fryer_spring_rolls } from "./air-fryer-spring-rolls";
+import { air_fryer_sweet_potato_wedges } from "./air-fryer-sweet-potato-wedges";
+import { air_fryer_tofu } from "./air-fryer-tofu";
 import { squirrel_fish } from "./squirrel-fish";
 import { chrysanthemum_tofu } from "./chrysanthemum-tofu";
 import { caramel_apples } from "./caramel-apples";
@@ -606,6 +616,16 @@ export const recipes: Recipe[] = [
   oyster_sauce_beef,
   garlic_shrimp_vermicelli,
   air_fryer_chicken_wings,
+  air_fryer_chicken_bites,
+  air_fryer_chicken_breast,
+  air_fryer_chinese_fries,
+  air_fryer_crispy_eggplant,
+  air_fryer_pork_belly,
+  air_fryer_pork_ribs,
+  air_fryer_shrimp,
+  air_fryer_spring_rolls,
+  air_fryer_sweet_potato_wedges,
+  air_fryer_tofu,
   squirrel_fish,
   chrysanthemum_tofu,
   caramel_apples,
