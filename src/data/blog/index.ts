@@ -3224,7 +3224,88 @@ const thanksgivingChineseSides: BlogPost = {
   ],
 };
 
+const vermicelliFenSi: BlogPost = {
+  id: "vermicelli-fen-si-absorbent-noodle",
+  slug: "vermicelli-fen-si-absorbent-noodle",
+  titleEn: "Vermicelli (Fen Si): The Absorbent Noodle That Soaks Up Every Drop",
+  titleZh: "粉丝（粉丝）：最会吸汤的那根面",
+  excerptEn:
+    "Glass vermicelli recipes hinge on one trick: fen si drinks the broth instead of just sitting in it. Here's what it is, why it works, and three dishes that show it off.",
+  excerptZh:
+    "玻璃粉丝类菜谱的关键就一招：粉丝是把汤喝进去，而不是泡在里面。这篇讲清它是什么、为什么吸汤，再给三道拿手菜。",
+  bodyEn: [
+    { type: "p", text: "If you've only met vermicelli in a soup and thought \"thin noodles,\" you're missing the point. Glass vermicelli recipes work because fen si is built to absorb — it pulls broth, sauce, and steam into itself until the noodle tastes more like the dish than the starch it started as. That single habit is why it shows up in braises, clay pots, and seafood spreads across Chinese home cooking." },
+    { type: "h2", text: "What exactly is fen si?" },
+    { type: "p", text: "Fen si (粉丝) are made from mung bean or sweet potato starch, not wheat. They come dried, nearly transparent, and turn into slippery, springy strands once soaked. Because there's almost no gluten, they don't get doughy — they get infused. That's the difference between vermicelli and, say, wheat noodles: one carries flavor, the other mostly carries itself." },
+    { type: "h2", text: "Why it soaks up everything" },
+    { type: "ul", items: [
+      "Starch structure is porous once hydrated, so liquid moves in fast.",
+      "It has almost no taste of its own, so it takes on whatever it cooks with.",
+      "It holds heat and sauce, so the last bite is as flavorful as the first.",
+    ] },
+    { type: "h2", text: "Three dishes that show it off" },
+    { type: "p", text: "The classic is蚂蚁上树 (ant-climbing-tree) — tiny bits of pork clinging to vermicelli that have drunk a savory sauce. Then there's garlic shrimp vermicelli, where the noodles sit under the shrimp and catch every drop of garlic oil. And the clay-pot version braises bok choy and pork together so the strands finish silky and loaded. Each is on HǎoWèi with a full bilingual recipe." },
+    { type: "note", text: "Soak before you cook. Pour boiling water over the bundles and wait 5–8 minutes, then drain. Skip this and they either stay crunchy in the middle or turn to mush in the pot." },
+    { type: "h2", text: "How to soak without turning to mush" },
+    { type: "ul", items: [
+      "Use hot, not boiling-rolling, water for a gentler soak.",
+      "Cut the softened bundles with scissors so they're easy to eat.",
+      "Add them late in braises — they need minutes, not the whole cook.",
+    ] },
+    { type: "h2", text: "A quick buying note" },
+    { type: "p", text: "Mung-bean vermicelli stays firmer and clearer; sweet-potato versions are a touch chewier and a bit grey. Both work, but mung bean is the safer pick for soups where you don't want them to break apart." },
+    { type: "note", text: "Want more? Browse the ingredient guides on HǎoWèi (好味) under /en/recipes, or jump straight to the three dishes linked above — they're the fastest way to see fen si doing what it does best." },
+  ],
+  bodyZh: [
+    { type: "p", text: "如果你只在汤里见过粉丝，觉得\"就是细面条\"，那你就小看它了。玻璃粉丝类菜谱的精髓在于：粉丝是把汤喝进去，而不是泡在里面。它把高汤、酱汁和蒸汽全吸进自己身体，直到这根面比原本的淀粉更像那道菜。就凭这一招，它在红烧、砂锅和海鲜大菜里到处可见。" },
+    { type: "h2", text: "粉丝到底是什么" },
+    { type: "p", text: "粉丝（fen si）用绿豆或红薯淀粉做成，不是小麦。买来是干硬的、近乎透明，泡开后变成滑溜溜、有弹性的丝。因为没有面筋，它不会发黏发面，而是被浸透——这正是它和小麦面条的区别：一个负责入味，一个主要负责饱腹。" },
+    { type: "h2", text: "为什么这么会吸汤" },
+    { type: "ul", items: [
+      "泡开后淀粉结构疏松，液体很快渗进去。",
+      "本身几乎没有味道，所以沾谁像谁。",
+      "能兜住温度和酱汁，所以最后一口和第一口一样香。",
+    ] },
+    { type: "h2", text: "三道拿手菜" },
+    { type: "p", text: "最经典的是蚂蚁上树——肉末扒在吸饱酱汁的粉丝上。再来是蒜蓉粉丝虾，粉丝垫在虾下面，接住每一滴蒜油。砂锅版则把白菜和肉一起煨，出锅滑溜溜、满是味。三道在好味都有完整双语菜谱。" },
+    { type: "note", text: "下锅前先泡。滚水浇上去等 5–8 分钟，再沥干。跳过这步，要么中间还硬，要么在锅里化成一坨。" },
+    { type: "h2", text: "怎么泡不烂" },
+    { type: "ul", items: [
+      "用温水而不是翻滚的沸水，泡得更柔和。",
+      "泡软后用剪刀剪短，吃着方便。",
+      "红烧里晚点下，几分钟就好，别从头煮到尾。",
+    ] },
+    { type: "h2", text: "选购小提示" },
+    { type: "p", text: "绿豆粉丝更挺、更透亮；红薯粉丝更弹、略发灰。都能用，但做汤想不散，绿豆粉丝更稳。" },
+    { type: "note", text: "想看更多？到好味（HǎoWèi）/zh/recipes 翻食材指南，或直接点上面三道菜——那是看粉丝发挥本领最快的路子。" },
+  ],
+  categoryKey: "ingredients",
+  categoryEn: "Ingredients",
+  categoryZh: "食材",
+  tags: ["vermicelli", "glass noodles", "fen si", "chinese ingredients", "starch noodles"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-06",
+  coverImage: "/images/recipes/ant-climbing-tree.webp",
+  relatedRecipeSlugs: ["ant-climbing-tree", "garlic-shrimp-vermicelli", "sandpot-vermicelli-pot"],
+  faq: [
+    {
+      qEn: "Are glass vermicelli and rice vermicelli the same?",
+      qZh: "玻璃粉丝和米粉是一种东西吗？",
+      aEn: "No. Glass vermicelli is made from mung bean or sweet potato starch and turns translucent; rice vermicelli is rice-based and stays white and softer. They swap poorly in most recipes.",
+      aZh: "不是。玻璃粉丝用绿豆或红薯淀粉做，泡开透明；米粉用大米做，偏白偏软。多数菜里互相替不好。",
+    },
+    {
+      qEn: "Do I have to soak fen si before cooking?",
+      qZh: "粉丝下锅前一定要泡吗？",
+      aEn: "Yes, for braises and stir-fries. Soak in hot water 5–8 minutes, drain, then add near the end. Soups can take them dry, but they'll need longer and drink more broth.",
+      aZh: "要，尤其红烧和快炒。温水泡 5–8 分钟沥干，临尾再下。做汤可以直接放干粉丝，但更费时也更吸汤。",
+    },
+  ],
+};
+
 export const blogPosts: BlogPost[] = [
+  vermicelliFenSi,
   miseEnPlaceBatchPrep,
   {
     "id": "hong-shao-rou-braised-pork",
