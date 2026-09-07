@@ -335,6 +335,16 @@ import { stinky_tofu } from "./stinky-tofu";
 import { jianbing } from "./jianbing";
 import { malatang } from "./malatang";
 import { crispy_chicken_strips } from "./crispy-chicken-strips";
+import { garlic_sprout_shredded_pork } from "./garlic-sprout-shredded-pork";
+import { wild_rice_shoot_shredded_pork } from "./wild-rice-shoot-shredded-pork";
+import { chinese_leek_shredded_pork } from "./chinese-leek-shredded-pork";
+import { carrot_shredded_pork } from "./carrot-shredded-pork";
+import { wood_ear_mushroom_shredded_pork } from "./wood-ear-mushroom-shredded-pork";
+import { braised_pork_with_quail_eggs } from "./braised-pork-with-quail-eggs";
+import { fermented_tofu_braised_pork } from "./fermented-tofu-braised-pork";
+import { mao_style_braised_pork } from "./mao-style-braised-pork";
+import { dried_bamboo_braised_pork } from "./dried-bamboo-braised-pork";
+import { tofu_skin_knot_braised_pork } from "./tofu-skin-knot-braised-pork";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -675,6 +685,16 @@ export const recipes: Recipe[] = [
   jianbing,
   malatang,
   crispy_chicken_strips,
+  garlic_sprout_shredded_pork,
+  wild_rice_shoot_shredded_pork,
+  chinese_leek_shredded_pork,
+  carrot_shredded_pork,
+  wood_ear_mushroom_shredded_pork,
+  braised_pork_with_quail_eggs,
+  fermented_tofu_braised_pork,
+  mao_style_braised_pork,
+  dried_bamboo_braised_pork,
+  tofu_skin_knot_braised_pork,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
