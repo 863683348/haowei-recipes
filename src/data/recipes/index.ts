@@ -345,6 +345,16 @@ import { fermented_tofu_braised_pork } from "./fermented-tofu-braised-pork";
 import { mao_style_braised_pork } from "./mao-style-braised-pork";
 import { dried_bamboo_braised_pork } from "./dried-bamboo-braised-pork";
 import { tofu_skin_knot_braised_pork } from "./tofu-skin-knot-braised-pork";
+import { pumpkin_braised_pork } from "./pumpkin-braised-pork";
+import { chestnut_braised_pork } from "./chestnut-braised-pork";
+import { arrowhead_braised_pork } from "./arrowhead-braised-pork";
+import { red_braised_pork_ribs } from "./red-braised-pork-ribs";
+import { black_bean_pork_ribs } from "./black-bean-pork-ribs";
+import { garlic_pork_ribs } from "./garlic-pork-ribs";
+import { yam_pork_rib_soup } from "./yam-pork-rib-soup";
+import { potato_pork_rib_stew } from "./potato-pork-rib-stew";
+import { kelp_pork_rib_soup } from "./kelp-pork-rib-soup";
+import { black_pepper_chicken_dice } from "./black-pepper-chicken-dice";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -695,6 +705,16 @@ export const recipes: Recipe[] = [
   mao_style_braised_pork,
   dried_bamboo_braised_pork,
   tofu_skin_knot_braised_pork,
+  pumpkin_braised_pork,
+  chestnut_braised_pork,
+  arrowhead_braised_pork,
+  red_braised_pork_ribs,
+  black_bean_pork_ribs,
+  garlic_pork_ribs,
+  yam_pork_rib_soup,
+  potato_pork_rib_stew,
+  kelp_pork_rib_soup,
+  black_pepper_chicken_dice,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
