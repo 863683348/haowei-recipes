@@ -228,6 +228,30 @@ export default async function BlogPostPage({ params }: Props) {
           <BlogContent blocks={body} />
         </article>
 
+        {/* FAQ 可见区块（与 FAQPage JSON-LD 同源；Google 已把 FAQ 问题用作独立查询匹配，渲染为可见 H2/H3 放大捕获） */}
+        {post.faq && post.faq.length > 0 && (
+          <section className="mt-14">
+            <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+              {isZh ? "常见问题" : "Frequently Asked Questions"}
+            </h2>
+            <div className="mt-5 space-y-4">
+              {post.faq.map((f, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl border border-[var(--hw-fg-muted)]/20 bg-[var(--hw-bg-soft)]/40 p-5"
+                >
+                  <h3 className="font-semibold leading-snug text-[var(--hw-fg)]">
+                    {isZh ? f.qZh : f.qEn}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--hw-fg-muted)]">
+                    {isZh ? f.aZh : f.aEn}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* 相关菜谱（内链 → 权重传递） */}
         {related.length > 0 && (
           <section className="mt-14">

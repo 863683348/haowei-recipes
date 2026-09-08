@@ -57,3 +57,37 @@
 - 每篇客座正文自然嵌入 1 个 dofollow 目标页链接（不要堆 3+ 链接，像买卖链接）
 - 客座发布后 48h 内社交平台转发，加速收录
 - 严禁 PBN / 明显买卖链接（新站最易被 Google 惩罚）
+
+---
+
+## 推进状态跟踪（P1-#6，2026-09-08 更新，基于 GSC 09-08 数据）
+
+### 最新展示/排名（窗口 08-13→09-05）
+
+| 页面 | 展示 | 排名 | 变化 vs 09-04 | 状态 |
+|---|---|---|---|---|
+| /en/blog/doubanjiang-101 | 252 | 66.4 | ≈持平 | 已做深（FAQ 11 条 09-04 上线），**外链 A 组执行中** |
+| /en/recipes/hongshao-pork | 118 | 74.4 | 持平 | **本轮新增聚合页 FAQ（P1-4）**，待外链 |
+| /en/recipes/vegetarian | 142 | 70.7 | 持平 | **本轮新增聚合页 FAQ（P1-4）**，待外链 |
+| /en/recipes/tofu | 87 | 63.2 | — | 待外链 |
+| /en/recipes/egg | 66 | 65.0 | — | 待外链 |
+| /en/recipes/home-style-tofu | 61 | 61.7 | — | 待外链 |
+| /en/recipes/homemade-cheung-fun | 62 | 66.7 | — | 待外链 |
+| /en/recipes/yangzhou-fried-rice | — | — | — | 待外链 |
+
+### 周计划（2026-09-08 起，每周 2 篇）
+- **W1（09-08~09-14）**：hongshao-pork 客座（糖色主题稿已备）→ 发 1 个 DA30+ 中餐博客 + Reddit r/ChineseFood；doubanjiang-101 客座（替代主题稿已备）→ Serious Eats Hotline 问答 + 1 个发酵酱料博客。
+- **W2（09-15~09-21）**：vegetarian 客座（"10 Chinese vegetarian dishes"稿）→ 1 个 vegan 站；tofu 客座（豆腐种类对照稿）→ 1 个素食博客。
+- **W3**：egg / cheung-fun 客座各 1。
+- **W4**：home-style-tofu / yangzhou-fried-rice。
+- 每篇发布后 48h 内：Pinterest 图板 + X/Twitter 转发；记录发布 URL 到本表（追回访）。
+
+### 已验证有效的信号（GSC 09-08）
+- doubanjiang-101 英文 247→252 展示（排名 66），做深 FAQ 尚未拉动排名——**符合预期：权重问题只能靠外链+时间**，继续执行客座。
+- 移动端 22/27 点击、zh 页 6 个卡 4-10 名 —— 外链资源应**双线分配**：30% 给 zh 近胜利页（点击转化最快），70% 给英文流量池（长线权重）。
+
+### 待办/风险
+- [ ] 客座站名单（DA30+ 中餐博客 20 家）尚未整理成表 —— 下轮补
+- [ ] Reddit 发帖需预热账号（避免新账号秒删）
+- [ ] 所有外链必须 dofollow 且主题相关，严禁 PBN/付费链
+

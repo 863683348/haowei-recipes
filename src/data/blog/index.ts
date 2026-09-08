@@ -195,12 +195,12 @@ const westernPantry: BlogPost = {
 const marinatingMeat: BlogPost = {
   id: "marinating-meat-chinese-way",
   slug: "marinating-meat-chinese-way",
-  titleEn: "Marinating Meat the Chinese Way: Order, Time, and Why It Matters",
-  titleZh: "腌肉入味：顺序与时长，这才是中式腌肉的底层逻辑",
+  titleEn: "Marinating Meat the Chinese Way: The 4-Step Order, Timing & the Science of Flavor",
+  titleZh: "肉类腌制入味的底层逻辑：下料顺序、时长与四步公式",
   excerptEn:
-    "Chinese home cooks don't just dump soy sauce and call it a day. The order you add ingredients, the time you give them, and the chemistry behind each choice is what separates bland meat from restaurant-quality stir-fry.",
+    "Chinese home cooks don't just dump soy sauce and call it a day. The 4-step order you add ingredients, the time you give them, and the chemistry behind each choice is what separates bland meat from restaurant-quality stir-fry.",
   excerptZh:
-    "中式腌肉不是酱油一倒就完事。先放什么、后放什么、腌多久，每一步背后都有化学逻辑——这些细节决定了炒出来是柴还是嫩。",
+    "肉类腌制入味靠的是顺序与时长：先盐后酱再油封、四步下料公式、腌多久最合适——每步背后的化学逻辑决定了炒出来是柴还是嫩。",
   categoryKey: "technique",
   categoryEn: "Technique",
   categoryZh: "技法",
@@ -1502,10 +1502,10 @@ const oysterSauceGuide: BlogPost = {
 const hoisinVsSweetBeanSauce: BlogPost = {
   "id": "hoisin-vs-sweet-bean-sauce",
   "slug": "hoisin-vs-sweet-bean-sauce",
-  "titleEn": "Hoisin vs Sweet Bean Sauce: They Are Not the Same Thing",
-  "titleZh": "海鲜酱和甜面酱不是一回事",
-  "excerptEn": "Both are dark, thick, and sweetish, so they get swapped constantly. Here's what each one is actually for — and what happens when you mix them up.",
-  "excerptZh": "两样都是深色浓稠带甜，所以经常被混用。这篇讲清各自真正的用途，以及搞混了会怎样。",
+  "titleEn": "Hoisin vs Sweet Bean Sauce: 5 Differences, Substitutions & When to Use Each",
+  "titleZh": "海鲜酱和甜面酱的区别：用途、替代与京酱肉丝怎么选",
+  "excerptEn": "Both are dark, thick, and sweetish, so they get swapped constantly. Here are 5 differences, how to substitute one for the other, and which dish each one actually belongs to.",
+  "excerptZh": "海鲜酱和甜面酱看着像，用途完全不同：京酱肉丝、烤鸭、叉烧各该用哪个？这篇讲清 5 个区别、替代比例与搭配指南。",
   "bodyEn": [
     {
       "type": "p",
@@ -2158,8 +2158,8 @@ const shaoxingWineBuyingGuide: BlogPost = {
 const firmVsSoftTofu: BlogPost = {
   "id": "firm-vs-soft-tofu",
   "slug": "firm-vs-soft-tofu",
-  "titleEn": "Firm vs Soft Tofu: Which One Your Recipe Actually Means",
-  "titleZh": "老豆腐还是嫩豆腐？菜谱到底指的是哪个",
+  "titleEn": "Firm vs Soft Tofu: Which One Your Recipe Actually Means (7-Dish Guide)",
+  "titleZh": "老豆腐 vs 嫩豆腐：菜谱到底用哪个（附 7 道菜对照）",
   "excerptEn": "Grab the wrong tofu and even a good recipe falls apart — literally. Here's the difference, what each is for, and how to keep soft tofu from breaking up in the pan.",
   "excerptZh": "豆腐拿错，再好的菜谱也会散掉——字面意义上的散。这篇讲清区别、各自用途，以及怎么让嫩豆腐下锅不碎。",
   "bodyEn": [
@@ -2506,8 +2506,8 @@ const fermentedBeanCurdFuru: BlogPost = {
 const woodEarFungusGuide: BlogPost = {
   "id": "wood-ear-fungus-guide",
   "slug": "wood-ear-fungus-guide",
-  "titleEn": "Wood Ear Fungus: How to Soak It Safely and What to Cook With It",
-  "titleZh": "木耳：怎么安全泡发，以及拿它做什么菜",
+  "titleEn": "Wood Ear Fungus: How to Soak It in 30 Minutes + 5 Classic Dishes",
+  "titleZh": "木耳怎么泡发：30 分钟安全泡发 + 5 道经典吃法",
   "excerptEn": "Wood ear has almost no flavor and a great texture, which is exactly the point. Here's how long to soak it, the safety rule that matters, and where it's worth using.",
   "excerptZh": "木耳几乎没味道，胜在口感——这正是它存在的意义。这篇讲泡多久、必须注意的安全规则，以及值得用它的地方。",
   "bodyEn": [
@@ -2677,8 +2677,8 @@ const woodEarFungusGuide: BlogPost = {
 const sesamePasteGuide: BlogPost = {
   "id": "sesame-paste-guide",
   "slug": "sesame-paste-guide",
-  "titleEn": "Sesame Paste (Zhi Ma Jiang): How to Fix It When It Seizes",
-  "titleZh": "芝麻酱：结块了怎么救回来",
+  "titleEn": "Sesame Paste (Zhi Ma Jiang): How to Thin It When It Seizes",
+  "titleZh": "芝麻酱结块怎么救：温水调稀的正确比例与顺序",
   "excerptEn": "Sesame paste turns into a stubborn lump the moment you add water — until you know the trick. Here's how to thin it properly, and how it differs from tahini.",
   "excerptZh": "芝麻酱一加水就变成搅不开的硬块——直到你知道那个窍门。这篇讲怎么正确调稀，以及它和中东芝麻酱有什么不同。",
   "bodyEn": [
@@ -3057,12 +3057,12 @@ const miseEnPlaceBatchPrep: BlogPost = {
 const chineseColdDishes: BlogPost = {
   id: "chinese-cold-dishes-appetizers",
   slug: "chinese-cold-dishes-appetizers",
-  titleEn: "Chinese Cold Dishes (Liang Cai): The Appetizers That Open Every Real Chinese Meal",
-  titleZh: "凉拌菜：每顿正经中餐开场的那一口凉菜",
+  titleEn: "2026 Summer Banquet Cold Dish Menu: 15 Liang Cai That Wake Up the Palate",
+  titleZh: "2026 夏令宴会凉菜菜单：15 道清爽开胃的凉拌菜",
   excerptEn:
-    "Liang cai — cold, dressed dishes — are the unsung opener of the Chinese table. Here are the classic ones, why they work, and how to build a cold-dish plate that balances texture and punch.",
+    "A 15-dish liang cai cold-dish menu for summer banquets — the classics, why they work, and how to build a cold-dish plate that balances texture and punch. Make-ahead friendly.",
   excerptZh:
-    "凉菜是中方餐桌最被低估的开场。这篇讲清经典款有哪些、为什么灵，以及怎么拼一盘口感与味道都平衡的凉菜。",
+    "2026 夏令宴会凉菜菜单：15 道清爽开胃的凉拌菜怎么做、怎么拼一桌——拍黄瓜、凉拌木耳、凉拌面等经典款，提前备好，落座即上。",
   categoryKey: "recipes",
   categoryEn: "Recipes",
   categoryZh: "凉菜合集",
@@ -3071,7 +3071,7 @@ const chineseColdDishes: BlogPost = {
   authorZh: "好味厨房",
   publishDate: "2026-09-04",
   coverImage: "/images/blog/chinese-cold-dishes-appetizers.webp",
-  relatedRecipeSlugs: ["smashed-cucumber", "scallion-pancakes", "dan-dan-noodles-chengdu", "kung-pao-chicken"],
+  relatedRecipeSlugs: ["smashed-cucumber", "cold-wood-ear", "oyster-sauce-lettuce", "vinegar-cabbage", "scallion-pancakes", "dan-dan-noodles-chengdu", "kung-pao-chicken"],
   bodyEn: [
     { type: "p", text: "Walk into any Chinese family banquet and the first things on the table are never the hot dishes. They're the cold ones — liang cai (凉菜). Served at room temperature, dressed ahead, and ready the moment guests sit down, they set the tone: bright, sour, savory, with a texture that wakes up the palate." },
     { type: "h2", text: "Why cold dishes lead" },
@@ -3304,6 +3304,170 @@ const vermicelliFenSi: BlogPost = {
   ],
 };
 
+const charSiuSiuMeiGuide: BlogPost = {
+  id: "char-siu-siu-mei-cantonese-roast-guide",
+  slug: "char-siu-siu-mei-cantonese-roast-guide",
+  titleEn: "Cantonese Roast Meats (Siu Mei): Char Siu, Roast Pork & How to Make Them at Home",
+  titleZh: "港式烧味：叉烧、烧肉与烧鹅的家常做法",
+  excerptEn:
+    "Siu mei — char siu, crispy roast pork, roast goose — is Hong Kong's greatest food export. Here's what each is, the marinades that define them, and which cuts you can actually roast at home.",
+  excerptZh:
+    "烧味——叉烧、脆皮烧肉、烧鹅——是香港最让人惦记的招牌。这篇讲清每样的门道、决定风味的腌料，以及哪些部位在家就能烤出来。",
+  categoryKey: "culture",
+  categoryEn: "Cantonese",
+  categoryZh: "粤式",
+  tags: ["char siu", "siu mei", "cantonese", "roast pork", "hong kong", "bbq"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-08",
+  coverImage: "/images/blog/char-siu-siu-mei-cantonese-roast-guide.webp",
+  relatedRecipeSlugs: ["char-siu-pork", "braised-eggs-luwei", "chicken-broth-noodle-soup", "dan-dan-noodles-chengdu"],
+  bodyEn: [
+    { type: "p", text: "Walk past any dai pai dong or cha chan teng in Hong Kong at noon and the glass case is glowing: rows of glossy char siu, crackling roast pork, lacquered roast goose hanging by the neck. This is siu mei (烧味) — roasted meats — and for Cantonese families it's not a restaurant thing, it's the daily takeaway home-cooked style." },
+    { type: "h2", text: "The big three" },
+    { type: "ul", items: [
+      "Char siu (叉烧) — sweet, red-glazed pork shoulder or belly, the star of char siu fan and the closest to a home cook's reach.",
+      "Siu yuk / roast pork (烧肉) — skin crackling into shatter-crisp blisters, belly meat salty and juicy.",
+      "Roast goose (烧鹅) — the crown jewel, lacquered and rich; hardest to replicate at home without a proper oven setup.",
+    ] },
+    { type: "p", text: "If you're cooking at home, start with char siu. It tolerates a standard home oven, rewards patience with a 24-hour marinade, and the glaze — maltose or honey brushed on at the end — is what gives it that lacquer shine." },
+    { type: "h2", text: "What makes char siu taste like the shop" },
+    { type: "ol", items: [
+      "Marinate pork shoulder or belly 12–24 hours in hoisin, soy, honey, Chinese five-spice and a touch of red fermented bean curd (南乳) for that rosy hue.",
+      "Roast at 200°C (400°F) until caramelized, basting with the marinade every 10 minutes.",
+      "Finish under the broiler for 2-3 minutes — that's the caramel edge shops can't get any other way.",
+      "Rest 10 minutes, then slice against the grain; the juices stay in, not on the board.",
+    ] },
+    { type: "note", text: "The red color is traditional and comes from red fermented bean curd or a drop of red food coloring — both optional. The flavor is the hoisin-five-spice-honey trinity." },
+    { type: "h2", text: "What to serve it with" },
+    { type: "p", text: "Over rice with a fried egg (char siu fan), in wonton noodle soup, or sliced cold as part of a cold-dish spread. It also freezes beautifully — roast a big batch, slice, and portion." },
+  ],
+  bodyZh: [
+    { type: "p", text: "正午路过香港任何一间烧味铺，玻璃橱窗里都是发着光的叉烧、皮脆的烧肉、挂成一排的烧鹅——这就是烧味。对粤菜家庭来说，它不是馆子里才有的东西，而是几乎每天都端上桌的日常。" },
+    { type: "h2", text: "三巨头" },
+    { type: "ul", items: [
+      "叉烧——甜而红亮的猪肩肉或五花，是叉烧饭的灵魂，也是离家常最近的一款。",
+      "烧肉——皮炸成碎脆的芝麻泡，五花咸香多汁。",
+      "烧鹅——烧味之王，油亮厚重；没有合适的烤炉，在家最难复刻。",
+    ] },
+    { type: "p", text: "在家做，先从叉烧开始。它耐得住普通家用烤箱，腌 24 小时更入味，最后刷麦芽糖或蜂蜜烤出的亮泽，就是那层「漆光」的来源。" },
+    { type: "h2", text: "叉烧怎么做出店里的味道" },
+    { type: "ol", items: [
+      "猪肩肉或五花用海鲜酱、生抽、蜂蜜、五香粉和一点点南乳腌 12–24 小时——南乳就是那抹玫红色的来源。",
+      "200°C 烤到焦糖化，每隔 10 分钟刷一次腌料。",
+      "最后开上火烤 2–3 分钟——那层焦边是店铺独有的关键。",
+      "出炉静置 10 分钟再逆纹切，汁水留在肉里，不流到砧板上。",
+    ] },
+    { type: "note", text: "红色来自南乳或一滴食用色素，都可选。风味核心始终是海鲜酱-五香粉-蜂蜜三件套。" },
+    { type: "h2", text: "配什么吃" },
+    { type: "p", text: "盖饭加一个煎蛋是叉烧饭，配云吞面，或切冷片当凉菜拼盘。叉烧还很适合冷冻——一次烤一大块，切片分装，随取随用。" },
+  ],
+  faq: [
+    {
+      qEn: "What's the difference between char siu and roast pork (siu yuk)?",
+      qZh: "叉烧和烧肉有什么区别？",
+      aEn: "Char siu is sweet-glazed pork shoulder or belly roasted with a hoisin-honey marinade; siu yuk is skin-on belly roasted so the skin blisters into crackling. One is sweet and lacquered, the other salty and crackly.",
+      aZh: "叉烧是甜口，用海鲜酱蜂蜜腌料烤的猪肩肉或五花；烧肉是带皮五花，烤到皮起泡成脆皮。一个甜而油亮，一个咸而酥脆。",
+    },
+    {
+      qEn: "Can I make siu mei at home without a restaurant oven?",
+      qZh: "没有餐厅的炉子，在家能做烧味吗？",
+      aEn: "Char siu absolutely — a standard home oven plus a final broiler blast gets 90% of the way there. Roast pork is harder (needs very high heat for the crackling) and roast goose is best left to the shops.",
+      aZh: "叉烧完全没问题——普通家用烤箱加最后一道上火猛烤，能还原九成。烧肉难一些（脆皮需要极高的火力），烧鹅还是留给店里吧。",
+    },
+    {
+      qEn: "What cut of pork is best for char siu?",
+      qZh: "做叉烧用什么部位的肉？",
+      aEn: "Pork shoulder (butt) is the classic — well-marbled, juicy, forgiving. Pork belly works too and is richer, but shoulder stays moist through a long marinade and roast.",
+      aZh: "经典选猪肩肉（梅花肉）——油花均匀、多汁、不容易柴。五花也可以，更肥润，但肩肉在长时间腌渍和烘烤后依然多汁。",
+    },
+    {
+      qEn: "Is red fermented bean curd (nan ru) necessary for char siu?",
+      qZh: "做叉烧一定要南乳吗？",
+      aEn: "No — it contributes the signature rosy color and a subtle fermented depth, but hoisin + five-spice + honey carries the flavor. Skip it and you'll have a slightly paler, equally delicious char siu.",
+      aZh: "不是必需——它负责标志性的玫红色和一点点发酵的层次，但风味核心是海鲜酱加五香粉加蜂蜜。不放也能做出好吃但颜色略浅的叉烧。",
+    },
+  ],
+};
+
+const taiwaneseLuRouFanGuide: BlogPost = {
+  id: "taiwanese-lu-rou-fan-guide",
+  slug: "taiwanese-lu-rou-fan-guide",
+  titleEn: "Taiwanese Lu Rou Fan: The Braised Pork Rice Bowl, Done Right",
+  titleZh: "台式卤肉饭：一锅卤汁的家常做法",
+  excerptEn:
+    "Lu rou fan — braised, minced pork over rice with a soy-braised egg — is Taiwan's ultimate comfort bowl. Here's the marinade logic, the cut of pork to use, and the one step most home cooks skip.",
+  excerptZh:
+    "卤肉饭——卤肉末盖饭配卤蛋——是台湾最治愈的一碗。这篇讲清卤汁的逻辑、该用哪个部位的肉，以及大多数家常做法会漏掉的那一步。",
+  categoryKey: "recipes",
+  categoryEn: "Taiwanese",
+  categoryZh: "台式",
+  tags: ["lu rou fan", "braised pork rice", "taiwanese", "comfort food", "minced pork"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-08",
+  coverImage: "/images/blog/taiwanese-lu-rou-fan-guide.webp",
+  relatedRecipeSlugs: ["braised-pork-with-quail-eggs", "braised-eggs-luwei", "hongshao-pork", "egg-fried-rice"],
+  bodyEn: [
+    { type: "p", text: "Taiwan's lu rou fan (卤肉饭) looks humble — a bowl of rice, a ladle of dark braised pork, a soy egg — yet it's the dish Taiwanese people get homesick for. The magic isn't the ingredients, it's the technique: small diced (never ground) pork, slowly rendered, then braised until the fat melts into the sauce." },
+    { type: "h2", text: "The cut and the dice" },
+    { type: "p", text: "Use pork belly or a belly-shoulder mix, and dice it by hand into small cubes — not mince. Hand-diced pieces keep their shape, release fat slowly, and give each spoonful real texture. This is the single biggest difference between home and restaurant." },
+    { type: "h2", text: "The braise that makes it taste like Taiwan" },
+    { type: "ol", items: [
+      "Render the belly cubes in a dry pan until golden — this step home cooks skip, and it's where the flavor starts.",
+      "Add shallots (fried shallots are the classic) and garlic; stir until fragrant.",
+      "Add soy sauce, dark soy for color, sugar or rock sugar, five-spice, and water to cover.",
+      "Simmer low and slow for at least 60 minutes; the sauce should cling, not thin out.",
+      "Add peeled boiled eggs (or quail eggs) for the last 20 minutes — the soy egg is non-negotiable.",
+    ] },
+    { type: "note", text: "The shallots matter. Taiwanese lu rou fan uses deep-fried shallots (油葱酥) — that's the note Western versions with fresh onion miss." },
+    { type: "h2", text: "Serve it the right way" },
+    { type: "p", text: "Over steamed short-grain rice, with a soy egg, a few pickled mustard greens (酸菜), and a spoon of the sauce pooled at the bottom. It keeps for days and only gets better the next day." },
+  ],
+  bodyZh: [
+    { type: "p", text: "台湾的卤肉饭看着朴素——一碗米饭、一勺深色卤肉、一颗卤蛋——却是台湾人一想家就惦记的菜。秘密不在食材，而在手法：猪肉要切成小丁而不是绞成肉末，慢慢煸出油，再卤到脂肪化进酱汁里。" },
+    { type: "h2", text: "部位与切法" },
+    { type: "p", text: "用五花肉，或五花加肩肉，用手切成小丁，别用绞肉。手切的小丁能保持形状、慢慢出油，每一勺都有真实的口感——这是家常版和店里版最大的差别。" },
+    { type: "h2", text: "一锅卤出台湾味" },
+    { type: "ol", items: [
+      "干锅先把五花丁煸到金黄——这一步家常版常跳过，而风味正是从这里开始。",
+      "下红葱头（经典用油葱酥）和蒜，炒出香味。",
+      "加酱油、老抽上色、糖或冰糖、五香粉，加水没过。",
+      "小火慢卤至少 60 分钟，酱汁要挂得住，不能越卤越稀。",
+      "最后 20 分钟下剥壳的鸡蛋（或鹌鹑蛋）——卤蛋是这碗饭的灵魂。",
+    ] },
+    { type: "note", text: "红葱头是关键。台式卤肉饭用的是炸过的油葱酥——西式版本用新鲜洋葱，正是少了这一味。" },
+    { type: "h2", text: "正确吃法" },
+    { type: "p", text: "盖在蒸好的短粒米饭上，配卤蛋、一点酸菜，再浇一勺沉在锅底的卤汁。这锅卤能放好几天，而且第二天更入味。" },
+  ],
+  faq: [
+    {
+      qEn: "Is lu rou fan the same as hong shao rou?",
+      qZh: "卤肉饭和红烧肉是一回事吗？",
+      aEn: "No. Lu rou fan uses small hand-diced pork belly braised with shallots into a spoonable sauce for rice; hong shao rou is a red-braised whole-belly dish served as a main. Different texture, different role on the table.",
+      aZh: "不是。卤肉饭把五花肉切成小丁，配红葱头卤成可浇饭的酱汁；红烧肉是整块五花红烧做主菜。口感不同，在餐桌上的角色也不同。",
+    },
+    {
+      qEn: "What pork cut is best for lu rou fan?",
+      qZh: "卤肉饭用什么部位的肉？",
+      aEn: "Pork belly is the classic — the fat renders into the sauce. A belly-shoulder blend gives leaner texture with less grease. Skip pure-lean cuts; they turn dry in a long braise.",
+      aZh: "经典是五花肉——肥肉化进卤汁里。五花加肩肉各半更清爽不腻。别用全瘦的部位，久卤会干柴。",
+    },
+    {
+      qEn: "Why do my braised eggs turn rubbery?",
+      qZh: "卤蛋为什么会卤得发硬？",
+      aEn: "Over-boiling before peeling, or braising at a hard boil. Soft-boil eggs 7-8 minutes, peel gently, then add to the braise on a gentle simmer for 20 minutes max — they soak up flavor without turning rubbery.",
+      aZh: "要么是剥壳前煮太久，要么是卤的时候大火滚。水煮 7–8 分钟到溏心，小心剥壳，再小火卤最多 20 分钟——入味又不会硬。",
+    },
+    {
+      qEn: "Can I make lu rou fan vegetarian?",
+      qZh: "卤肉饭能做素食版吗？",
+      aEn: "Yes — swap the pork for diced firm tofu or king oyster mushrooms, keeping the same shallot-soy braise. Use mushroom soaking water instead of any stock. Not identical, but genuinely good.",
+      aZh: "可以——猪肉换成老豆腐丁或杏鲍菇丁，卤汁的配方不变（红葱头加酱油）。用泡香菇的水代替高汤。做不到一模一样，但真的好吃。",
+    },
+  ],
+};
+
 export const blogPosts: BlogPost[] = [
   vermicelliFenSi,
   miseEnPlaceBatchPrep,
@@ -3327,7 +3491,7 @@ export const blogPosts: BlogPost[] = [
     "relatedRecipeSlugs": [],
     "faq": []
   },
-  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast];
+  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast, charSiuSiuMeiGuide, taiwaneseLuRouFanGuide];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
