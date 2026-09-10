@@ -6,6 +6,8 @@ export const suan_luo_bo_lao_ya_tang_pickled_radish_duck_soup: Recipe = {
   "slug": "suan-luo-bo-lao-ya-tang-pickled-radish-duck-soup",
   "titleEn": "Suan Luo Bo Lao Ya Tang (Pickled Radish & Aged Duck Soup)",
   "titleZh": "酸萝卜老鸭汤",
+  "seoTitleEn": "Suan Luo Bo (Pickled Radish Duck Soup): Sour Sichuan Soup Recipe",
+  "seoTitleZh": "酸萝卜老鸭汤：酸香开胃的川渝老火汤做法",
   "pinyin": "suān luó bo lǎo yā tāng",
   "cuisine": "川菜",
   "cuisineEn": "Sichuan",

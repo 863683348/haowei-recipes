@@ -6,6 +6,8 @@ export const garlic_stir_fry_water_spinach: Recipe = {
   "slug": "garlic-stir-fry-water-spinach",
   "titleEn": "Garlic Stir-Fried Water Spinach",
   "titleZh": "蒜蓉炒通菜",
+  "seoTitleEn": "Garlic Stir-Fried Water Spinach: 15-Minute Cantonese Green",
+  "seoTitleZh": "蒜蓉炒通菜：15 分钟广东家常做法",
   "pinyin": "suàn róng chǎo tōng cài",
   "cuisine": "家常",
   "cuisineEn": "Home-style",

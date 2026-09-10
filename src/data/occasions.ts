@@ -6,6 +6,12 @@ export interface OccasionDef {
   slug: string;
   zh: string;
   en: string;
+  /** 可选：SERP 专用 title（含搜索意图+年份+数字），覆盖默认「{zh}菜单」；页面 H1 仍用 zh/en */
+  seoTitleZh?: string;
+  seoTitleEn?: string;
+  /** 可选：SERP 专用 description，覆盖 intro */
+  seoDescZh?: string;
+  seoDescEn?: string;
   /** 编辑导语（双语，页面 H1 下方展示 + metadata description 素材） */
   introEn: string;
   introZh: string;
@@ -143,6 +149,13 @@ export const OCCASION_LIST: OccasionDef[] = [
     slug: "summer",
     zh: "夏日清爽",
     en: "Summer Refreshing",
+    // P0-1：收割「夏季宴会凉菜菜单」查询（GSC 09-10 报 2.46 名/63 展/0 点击），title 从「夏日清爽菜单」改为命中凉菜菜单意图
+    seoTitleZh: "2026 夏日凉菜菜单：15 道清爽开胃的凉拌菜",
+    seoTitleEn: "2026 Summer Cold Dish Menu: 15 Refreshing Chinese Liang Cai",
+    seoDescZh:
+      "2026 夏日一桌凉菜怎么拼：拍黄瓜、凉拌木耳、白灼虾、杨枝甘露等 15 道清爽开胃菜谱——提前备好、落座即上，少开火不遭罪。",
+    seoDescEn:
+      "A 15-dish summer cold dish (liang cai) menu: smashed cucumber, wood-ear salad, poached shrimp, mango pomelo sago and more — make-ahead, minimal stove time.",
     introEn:
       "Light and cooling dishes for hot days: smashed cucumber, cold dressing salads, poached shrimp and no-cook sweets — minimal time at the stove.",
     introZh:

@@ -41,6 +41,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!recipe) return {};
   const t = getDictionary(loc);
   const isZh = loc === "zh";
+  // P0-2：SERP 专用 title 优先（近胜利页收割），无 seoTitle 时回退默认名；H1/desc 仍用 titleZh/titleEn 保持页面一致
+  const seoTitle = isZh
+    ? (recipe.seoTitleZh ?? recipe.titleZh)
+    : (recipe.seoTitleEn ?? recipe.titleEn);
   const title = isZh ? recipe.titleZh : recipe.titleEn;
   const cuisine = isZh ? recipe.cuisine : recipe.cuisineEn ?? recipe.cuisine;
   // 修复描述 bug：titleEn 已含中文括号，去掉拼接 `(titleZh)` 避免重复；
@@ -50,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${recipe.titleEn} — an authentic ${cuisine} home recipe in ${recipe.timeMin} minutes. Bilingual ingredients, substitutions, and step-by-step state photos.`;
   const pageUrl = absoluteUrl(localizePath(`/recipes/${recipe.slug}`, loc));
   const imageUrl = absoluteUrl(recipe.image);
-  const fullTitle = t.metadata.recipeTitle.replace("{title}", title);
+  const fullTitle = t.metadata.recipeTitle.replace("{title}", seoTitle);
 
   return {
     title: fullTitle,

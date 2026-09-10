@@ -39,8 +39,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!def) return {};
   const isZh = loc === "zh";
   const count = getRecipesByOccasionSlug(occasion).length;
-  const title = isZh ? `${def.zh}菜单` : `${def.en} Menu — Chinese Recipes`;
-  const desc = isZh ? def.introZh : def.introEn;
+  // P0-1：SERP 专用 title/desc 优先（如 summer 命中「凉菜菜单」意图），无 seo 字段时回退默认「{zh}菜单」
+  const title = isZh
+    ? (def.seoTitleZh ?? `${def.zh}菜单`)
+    : (def.seoTitleEn ?? `${def.en} Menu — Chinese Recipes`);
+  const desc = isZh ? (def.seoDescZh ?? def.introZh) : (def.seoDescEn ?? def.introEn);
   const pageUrl = absoluteUrl(localizePath(`/occasion/${def.slug}`, loc));
   const imageUrl = absoluteUrl("/images/og-default.webp");
   return {
@@ -152,6 +155,20 @@ export default async function OccasionPage({ params }: Props) {
           {isZh ? def.zh : def.en} <span className="text-[var(--hw-fg-muted)]">{isZh ? def.en : def.zh}</span>
         </h1>
         <p className="mt-2 max-w-3xl text-[var(--hw-fg-muted)]">{isZh ? def.introZh : def.introEn}</p>
+        {/* P0-1：zh summer 收割「凉菜菜单」意图——可见导语 + 内链到凉菜博客，把排名 2.46 的零点击查询接住 */}
+        {isZh && def.slug === "summer" && (
+          <p className="mt-3 max-w-3xl rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-4 text-sm text-[var(--hw-fg)]">
+            2026 夏日凉菜菜单：本页 15 道清爽开胃菜——拍黄瓜、凉拌木耳、白灼虾、杨枝甘露等，提前备好、落座即上。
+            想系统学凉菜怎么拼一桌，看
+            <Link
+              href={localizePath("/blog/chinese-cold-dishes-appetizers", loc)}
+              className="mx-1 font-medium text-[var(--hw-ginger)] underline underline-offset-2 hover:text-[var(--hw-ginger-dark)]"
+            >
+              《2026 夏令宴会凉菜菜单：15 道清爽开胃的凉拌菜》
+            </Link>
+            。
+          </p>
+        )}
         <p className="mt-1 text-sm text-[var(--hw-fg-muted)]">
           {isZh ? `共 ${count} 道` : `${count} recipes`}
         </p>

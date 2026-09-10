@@ -6,6 +6,8 @@ export const brown_sugar_mantou: Recipe = {
   "slug": "brown-sugar-mantou",
   "titleEn": "Brown Sugar Mantou (Hóng Táng Mántou)",
   "titleZh": "红糖馒头",
+  "seoTitleEn": "Brown Sugar Mantou (Steamed Buns): Fluffy Hong Tang Mantou Recipe",
+  "seoTitleZh": "红糖馒头：松软家常做法（含红糖选择秘诀）",
   "pinyin": "hóng táng mántou",
   "cuisine": "面点小吃",
   "cuisineEn": "Chinese Steamed Buns",

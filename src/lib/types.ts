@@ -59,6 +59,10 @@ export interface Recipe {
   slug: string;
   titleEn: string;
   titleZh: string;
+  /** 可选：SERP 专用 title（含搜索意图+数字+卖点），覆盖 titleEn 用于 <title>；页面 H1 仍用 titleEn */
+  seoTitleEn?: string;
+  /** 可选：SERP 专用 title（中文版） */
+  seoTitleZh?: string;
   pinyin: string;
   cuisine: string; // 川菜 / 粤菜 / 家常 ...（中文）
   cuisineEn?: string; // 菜系（英文，可选）

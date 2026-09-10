@@ -9,6 +9,8 @@ export const garlicRomaine: Recipe = {
   slug: "garlic-romaine",
   titleEn: "Garlic Romaine (蒜蓉油麦菜)",
   titleZh: "蒜蓉油麦菜",
+  seoTitleEn: "Garlic Romaine: 12-Minute Chinese Garlic Lettuce Stir-Fry",
+  seoTitleZh: "蒜蓉油麦菜：12 分钟大火快炒的家常做法",
   pinyin: "suàn róng yóu mài cài",
   cuisine: "家常菜",
   cuisineEn: "Home-style",
