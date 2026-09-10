@@ -355,6 +355,16 @@ import { yam_pork_rib_soup } from "./yam-pork-rib-soup";
 import { potato_pork_rib_stew } from "./potato-pork-rib-stew";
 import { kelp_pork_rib_soup } from "./kelp-pork-rib-soup";
 import { black_pepper_chicken_dice } from "./black-pepper-chicken-dice";
+import { cucumber_stir_fried_chicken_dice } from "./cucumber-stir-fried-chicken-dice";
+import { potato_stewed_chicken_wings } from "./potato-stewed-chicken-wings";
+import { green_pepper_stir_fried_chicken_dice } from "./green-pepper-stir-fried-chicken-dice";
+import { mushroom_stir_fried_chicken_slices } from "./mushroom-stir-fried-chicken-slices";
+import { broccoli_stir_fried_chicken_slices } from "./broccoli-stir-fried-chicken-slices";
+import { asparagus_stir_fried_chicken_slices } from "./asparagus-stir-fried-chicken-slices";
+import { black_pepper_chicken_strips } from "./black-pepper-chicken-strips";
+import { red_braised_chicken_wings } from "./red-braised-chicken-wings";
+import { garlic_fried_chicken_wings } from "./garlic-fried-chicken-wings";
+import { salt_baked_chicken_wings } from "./salt-baked-chicken-wings";
 import { yuXiangPork } from "./yu-xiang-pork";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -715,6 +725,16 @@ export const recipes: Recipe[] = [
   potato_pork_rib_stew,
   kelp_pork_rib_soup,
   black_pepper_chicken_dice,
+  cucumber_stir_fried_chicken_dice,
+  potato_stewed_chicken_wings,
+  green_pepper_stir_fried_chicken_dice,
+  mushroom_stir_fried_chicken_slices,
+  broccoli_stir_fried_chicken_slices,
+  asparagus_stir_fried_chicken_slices,
+  black_pepper_chicken_strips,
+  red_braised_chicken_wings,
+  garlic_fried_chicken_wings,
+  salt_baked_chicken_wings,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
