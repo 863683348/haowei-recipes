@@ -6,7 +6,7 @@ export const hong_shao_eggplant: Recipe = {
   "slug": "hong-shao-eggplant",
   "titleEn": "Hong Shao Eggplant (Braised Eggplant in Soy Sauce)",
   "titleZh": "红烧茄子",
-  "seoTitleEn": "Hong Shao Eggplant (Braised in Soy Sauce): 28-Minute No-Fry Recipe",
+  "seoTitleEn": "Hong Shao Eggplant (Braised in Soy Sauce): 28-Minute No-Fry",
   "seoTitleZh": "红烧茄子：28 分钟免油炸的先蒸后烧做法",
   "pinyin": "hóng shāo qié zi",
   "cuisine": "家常",
