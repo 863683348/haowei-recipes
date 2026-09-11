@@ -3632,7 +3632,254 @@ const driedShrimpXiaMi: BlogPost = {
   ],
 };
 
+const seaweedNoriKelpGuide: BlogPost = {
+  id: "seaweed-nori-kelp-guide",
+  slug: "seaweed-nori-kelp-guide",
+  titleEn: "Seaweed in Chinese Cooking: Nori, Kelp, and More",
+  titleZh: "紫菜海带怎么吃：中餐里的海藻一次讲清",
+  excerptEn:
+    "Nori, kelp, wakame and agar are four different ingredients doing four different jobs. Here is what each one is, how to rehydrate it, and which dishes it belongs in.",
+  excerptZh:
+    "紫菜、海带、裙带菜和琼脂是四种不同的东西，各有各的用法。这篇讲清每种是什么、怎么泡发、该放进哪道菜。",
+  categoryKey: "ingredients",
+  categoryEn: "Ingredients",
+  categoryZh: "食材",
+  tags: ["seaweed", "nori", "kelp", "wakame", "chinese pantry", "ingredients"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-12",
+  coverImage: "/images/recipes/egg-drop-soup.webp",
+  relatedRecipeSlugs: ["kelp-pork-rib-soup", "egg-drop-soup", "winter-melon-soup"],
+  faq: [
+    {
+      qEn: "Can I use kelp instead of nori in soup?",
+      qZh: "煮汤能用海带代替紫菜吗？",
+      aEn: "You can, but expect a chewier result and a stronger broth. Cut the kelp thin and cook it separately before it goes in the bowl.",
+      aZh: "可以，但口感会更韧，汤味也更重。把海带切细，先单独煮过再入碗。",
+    },
+    {
+      qEn: "Why does my kelp turn slimy?",
+      qZh: "海带为什么会变得黏滑？",
+      aEn: "Because it hit a hard boil. Add kelp to cold water and keep the pot below a rolling boil, then lift it out before serving.",
+      aZh: "因为被大火滚煮了。海带要冷水下锅，保持不沸腾，出锅前先捞出来。",
+    },
+    {
+      qEn: "Is seaweed safe to eat every day?",
+      qZh: "海藻可以天天吃吗？",
+      aEn: "For most people, yes, in normal cooking amounts. Kelp is high in iodine, so treat it as a regular ingredient rather than a daily staple.",
+      aZh: "对大多数人来说，日常做菜的量没问题。海带的碘含量高，当成常规食材就好，不必天天吃。",
+    },
+  ],
+  bodyEn: [
+      {
+          "type": "p",
+          "text": "Seaweed Chinese cooking usually gets reduced to two names, nori and kelp, and that leaves out most of what actually sits in a Chinese cupboard. Walk into a home kitchen in Fujian or Shandong and you will find three or four kinds of dried seaweed stacked next to the soy sauce, each one kept for a different job. Nori goes into soup in the last minute. Kelp simmers with pork ribs for an hour. Wakame gets dressed cold. The rules are simple once you know which is which, and this guide covers all of it the same practical way you will find across haoweirecipes.com."
+      },
+      {
+          "type": "h2",
+          "text": "The seaweeds a Chinese kitchen actually keeps"
+      },
+      {
+          "type": "p",
+          "text": "Four kinds cover almost every recipe you will meet."
+      },
+      {
+          "type": "ul",
+          "items": [
+              "**Nori (紫菜, zǐ cài)**. Thin purple-black sheets, sold flat or crinkled. This is the one that goes into soup and rice seasoning.",
+              "**Kelp (海带, hǎi dài)**. Thick, dark green-brown ribbons or knots. It has a real chew and it holds up to long simmering.",
+              "**Wakame (裙带菜, qún dài cài)**. Softer than kelp, with a tender stem. It rehydrates in minutes and is usually eaten cold.",
+              "**Agar (琼脂, qióng zhī)**. A neutral setting agent made from red algae. It brings no flavour of its own, which is why it works in desserts."
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "Nori and kelp are not the same thing"
+      },
+      {
+          "type": "p",
+          "text": "People swap them because both are dark and both come from the sea. The difference shows up the moment heat is involved. Nori is thin and delicate, so it cooks in seconds and turns bitter if you boil it. Kelp is dense and fibrous, which is exactly why it can spend an hour in a pot and still taste of itself."
+      },
+      {
+          "type": "note",
+          "text": "Substitute nori for kelp in a braise and it dissolves into slime. Substitute kelp for nori in a soup and it stays tough and takes over the broth."
+      },
+      {
+          "type": "h2",
+          "text": "How to cook kelp without it turning slimy"
+      },
+      {
+          "type": "p",
+          "text": "Kelp releases a natural gum when it heats, and that gum is the whole problem. Four habits keep it under control."
+      },
+      {
+          "type": "ol",
+          "items": [
+              "Rinse the surface salt off under cold water. Leave the white powder alone if you can, because that powder is where much of the umami sits.",
+              "Soak dried kelp in cold water for 20 to 30 minutes. If you are making soup, that soaking water is the start of your stock.",
+              "Add kelp to cold liquid rather than boiling liquid, and lift it out before a hard boil. A rolling boil is what turns the texture slippery.",
+              "For cold dishes, blanch for 60 to 90 seconds, then shock it in ice water. This sets the crunch."
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "Rehydrating dried seaweed"
+      },
+      {
+          "type": "p",
+          "text": "Timing matters more than technique here. Over-soaking costs texture and, in the case of kelp, flavour."
+      },
+      {
+          "type": "ul",
+          "items": [
+              "Nori sheets: no soaking at all. Tear them and add at the end of cooking.",
+              "Kelp: 20 to 30 minutes in cold water. Longer is not better.",
+              "Wakame: about 5 minutes in cold water, then squeeze it dry.",
+              "Agar: does not rehydrate in the usual sense. It is boiled to dissolve, then sets as it cools."
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "Where each seaweed goes, and how to store it"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "Nori egg drop soup: the fastest use of a nori sheet, and the one most cooks learn first.",
+              "Kelp and pork rib soup: kelp, ribs, ginger, a long simmer, and nothing else.",
+              "Cold wakame with vinegar and sesame: a side dish that keeps two days in the fridge.",
+              "Fried rice with shredded nori on top: a finishing move rather than an ingredient."
+          ]
+      },
+      {
+          "type": "p",
+          "text": "Buy dried seaweed in thin, translucent sheets rather than thick, dull ones, because thickness usually means age. Kelp should be firm and springy, not brittle. Store everything in an airtight jar away from light. Nori keeps for about six months before the aroma fades; kelp keeps longer, though the flavour flattens after a year."
+      },
+      {
+          "type": "h2",
+          "text": "FAQ"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "Can I use kelp instead of nori in soup? Yes, with a chewier result and a stronger broth. Cut it thin and cook it separately first.",
+              "Why does my kelp feel slimy? It was boiled hard. Add it to cold water and keep the pot below a rolling boil.",
+              "Is seaweed safe to eat every day? In normal cooking amounts, yes. Kelp is high in iodine, so treat it as a regular ingredient rather than a daily habit.",
+              "Do I need to rinse the white powder off kelp? No. That powder is natural and it carries flavour. Rinse away only the surface salt and grit."
+          ]
+      },
+      {
+          "type": "p",
+          "text": "Start with one sheet of nori and one pot of soup. Once you have cooked kelp properly a single time, the rest of the category opens up, and you can find more pantry guides at haoweirecipes.com. If you want a dish to pair it with, try /recipes/kelp-pork-rib-soup first, then move on to /recipes/egg-drop-soup, and read /blog/dried-shrimp-xia-mi-umami for another umami booster that works in the same soups."
+      }
+  ],
+  bodyZh: [
+      {
+          "type": "p",
+          "text": "说到中餐里的海藻，多数人只会想到紫菜和海带，可柜子里装着的远不止这两样。走进福建或山东的普通人家，你会发现三四种干海藻和酱油摆在一起，各有各的用途。紫菜最后下锅。海带和排骨一起炖一小时。裙带菜凉拌。搞清楚谁是谁，规则其实很简单。这篇就按好味厨房一贯的实用路子，把整类讲透。"
+      },
+      {
+          "type": "h2",
+          "text": "中餐厨房真正会备的几种海藻"
+      },
+      {
+          "type": "p",
+          "text": "四种就能覆盖你几乎会遇到的每一道菜。"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "**紫菜（zǐ cài）**。薄薄的紫黑色片状，有整张的也有碎的。煮汤和做拌饭用的就是它。",
+              "**海带（hǎi dài）**。厚实的深绿褐色长条或海带结。有嚼劲，经得起久炖。",
+              "**裙带菜（qún dài cài）**。比海带软，带一根嫩梗。几分钟就能泡开，通常凉吃。",
+              "**琼脂（qióng zhī）**。从红藻里提取的中性凝固剂。本身没有味道，所以能用来做甜品。"
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "紫菜和海带不是一回事"
+      },
+      {
+          "type": "p",
+          "text": "大家会互相替换，是因为两者都黑、都来自海里。可一遇热，区别立刻出来。紫菜薄而脆，几秒就熟，一煮就发苦。海带厚而多纤维，也正是因为这个，它能在锅里待上一个小时还保持自己的味道。"
+      },
+      {
+          "type": "note",
+          "text": "炖菜里拿紫菜替海带，它会化成黏糊；汤里拿海带替紫菜，它又硬又抢味。"
+      },
+      {
+          "type": "h2",
+          "text": "海带怎么做才不黏滑"
+      },
+      {
+          "type": "p",
+          "text": "海带受热会析出天然的胶质，黏滑就是它造成的。四个习惯就能管住。"
+      },
+      {
+          "type": "ol",
+          "items": [
+              "先用冷水冲掉表面的盐。那层白霜尽量别搓掉，鲜味很大一部分就在那儿。",
+              "干海带用冷水泡 20 到 30 分钟。如果做汤，这盆泡海带的水就是汤底。",
+              "海带要冷水下锅，不要丢进滚水，并且在真正大滚之前捞出来。大滚才是让它变滑的原因。",
+              "做凉菜的话，焯 60 到 90 秒，然后过冰水，脆感就定住了。"
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "干海藻怎么泡发"
+      },
+      {
+          "type": "p",
+          "text": "这一步比的不是手法，而是时间。泡过头会损失口感，海带还会损失味道。"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "紫菜：完全不用泡。撕碎，出锅前放。",
+              "海带：冷水泡 20 到 30 分钟，泡更久并不会更好。",
+              "裙带菜：冷水约 5 分钟，然后挤干水。",
+              "琼脂：不按常规意义泡发。它要靠煮化开，冷却后才凝固。"
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "每种海藻都用在哪，以及怎么存"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "紫菜蛋花汤：把一张紫菜用完最快的办法，也是大多数人学会的第一道。",
+              "海带排骨汤：海带、排骨、姜，慢慢炖，别的都不用加。",
+              "裙带菜拌醋和芝麻：一道能冷藏放两天的小菜。",
+              "紫菜丝撒在炒饭上：这是收尾动作，不算食材。"
+          ]
+      },
+      {
+          "type": "p",
+          "text": "干海藻挑薄而透光的，别挑又厚又暗的，厚通常意味着放久了。海带要挺实有弹性，不能一掰就脆。全部装密封罐，避光保存。紫菜大约半年后香气就退了；海带能放更久，但一年后味道会变平。"
+      },
+      {
+          "type": "h2",
+          "text": "常见问题"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "煮汤能用海带代替紫菜吗？可以，口感更韧，汤味也更重。切细一点，先单独煮过。",
+              "海带为什么会黏滑？因为被大火滚煮了。要冷水下锅，保持不沸腾。",
+              "海藻能天天吃吗？日常做菜的量没问题。海带碘含量高，当成常规食材就好，不必天天吃。",
+              "海带上的白霜要洗掉吗？不用。那是天然的，也带鲜味。只冲掉表面的盐和杂质就行。"
+          ]
+      },
+      {
+          "type": "p",
+          "text": "从一张紫菜和一锅汤开始就够了。只要把海带正确地做过一次，这一整类食材就算打开了，更多干货指南都在 haoweirecipes.com。想找个菜配着做，先试 /recipes/kelp-pork-rib-soup，再做 /recipes/egg-drop-soup，也推荐读一读 /blog/dried-shrimp-xia-mi-umami，那是同一种汤里另一位提鲜能手。"
+      }
+  ],
+};
+
 export const blogPosts: BlogPost[] = [
+  seaweedNoriKelpGuide,
   driedShrimpXiaMi,
   vermicelliFenSi,
   miseEnPlaceBatchPrep,
