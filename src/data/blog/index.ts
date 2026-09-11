@@ -3468,7 +3468,172 @@ const taiwaneseLuRouFanGuide: BlogPost = {
   ],
 };
 
+const driedShrimpXiaMi: BlogPost = {
+  id: "dried-shrimp-xia-mi-umami",
+  slug: "dried-shrimp-xia-mi-umami",
+  titleEn: "Dried Shrimp (Xia Mi): The Smallest Umami Booster in the Pantry",
+  titleZh: "虾米：提鲜小兵，一小勺定一锅的味道",
+  excerptEn:
+    "A tablespoon of dried shrimp does more for a pot of soup than an hour of simmering. Here is what it is, why it works, and how to use it without over-salting.",
+  excerptZh:
+    "一小勺虾米，能让一锅汤比炖一小时还鲜。这篇讲清它是什么、为什么提鲜，以及怎么用才不会过咸。",
+  categoryKey: "ingredients",
+  categoryEn: "Ingredients",
+  categoryZh: "食材",
+  tags: ["dried shrimp", "xia mi", "umami", "chinese pantry", "ingredients"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-11",
+  coverImage: "/images/blog/dried-shrimp-xia-mi-umami.png",
+  relatedRecipeSlugs: ["winter-melon-soup", "steamed-egg-minced-pork", "yangzhou-fried-rice"],
+  bodyEn: [
+      {
+          "type": "p",
+          "text": "Dried shrimp — xia mi — is the smallest ingredient in the Chinese pantry and one of the most powerful. A tablespoon of it will do more for a pot of soup than an hour of simmering."
+      },
+      {
+          "type": "h2",
+          "text": "What dried shrimp actually is"
+      },
+      {
+          "type": "p",
+          "text": "It is tiny shrimp, salted and sun-dried until the moisture is gone and the flavour concentrates. That drying is the whole point: you are buying intensity, not texture. The shrimp will never be the star of a dish; it is the reason the dish tastes like something."
+      },
+      {
+          "type": "h2",
+          "text": "Why it works as an umami booster"
+      },
+      {
+          "type": "p",
+          "text": "Dried shrimp is high in inosinate, the same compound that gives bonito and dried anchovies their savoury depth. Inosinate multiplies the effect of glutamates from soy sauce, mushrooms or tomato — which is why a spoonful of dried shrimp can make a dish taste like it simmered for hours."
+      },
+      {
+          "type": "h2",
+          "text": "How to use it"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "**Rinse first**: dried shrimp are salted and dusty. A quick rinse, or a 10-minute soak in warm water, removes the grit.",
+              "**Bloom in oil**: fry them briefly with aromatics before adding liquid. This is where the flavour opens up.",
+              "**Soak water is stock**: if you soak them, keep the water. It is already umami.",
+              "**Grind for sauces**: for XO-style sauces, grind soaked shrimp with a little oil."
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "What to make with it"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "Winter melon soup — the classic pairing, and the clearest demonstration of what dried shrimp does",
+              "Steamed egg with minced pork — a spoonful turns a plain dish into a savoury one",
+              "Fried rice — fry with the aromatics at the start",
+              "Stir-fried greens — with garlic, for a fast weeknight side"
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "Buying and storing"
+      },
+      {
+          "type": "p",
+          "text": "Look for shrimp that are pale pink-orange, not grey. They should smell of the sea, not of ammonia. Store them in an airtight jar in the fridge; they keep for months, but the flavour fades after about six."
+      },
+      {
+          "type": "h2",
+          "text": "FAQ"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "Can I substitute fresh shrimp? No — fresh shrimp has water and a completely different flavour profile. Use fish sauce or a little oyster sauce instead.",
+              "Are dried shrimp very salty? Yes, so taste before adding salt.",
+              "Is it the same as shrimp paste? No. Shrimp paste is fermented and much stronger; dried shrimp is simply dried."
+          ]
+      },
+      {
+          "type": "p",
+          "text": "Once you keep a jar of dried shrimp in the fridge, a lot of dishes stop needing help."
+      }
+  ],
+  bodyZh: [
+      {
+          "type": "p",
+          "text": "虾米是中餐调味里体积最小的东西，也是威力最大的之一。一小勺，能让一锅汤比炖一小时还鲜。"
+      },
+      {
+          "type": "h2",
+          "text": "虾米到底是什么"
+      },
+      {
+          "type": "p",
+          "text": "就是小虾加盐晒干，把水分抽走、把味道浓缩。晒干是关键：你买的是浓度，不是口感。虾米永远不会成为一道菜的主角，它是那道菜有味道的原因。"
+      },
+      {
+          "type": "h2",
+          "text": "为什么它能提鲜"
+      },
+      {
+          "type": "p",
+          "text": "虾米的肌苷酸含量很高——和柴鱼、小鱼干里那种让人感到厚的鲜是同一类物质。肌苷酸会把酱油、菌菇、番茄里的谷氨酸效果放大，所以一小勺虾米能让一道菜像炖了几个小时。"
+      },
+      {
+          "type": "h2",
+          "text": "怎么用"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "**先冲洗**：虾米有盐也有灰。快速冲一下，或温水泡 10 分钟，去掉杂质。",
+              "**用油爆香**：下液体之前先和葱姜一起炒一下，香味在这一步打开。",
+              "**泡的水是汤底**：如果泡了，水别倒，那已经是一碗鲜汤。",
+              "**打碎做酱**：做 XO 酱这类，把泡软的虾米加一点油打碎。"
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "用来做什么"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "冬瓜汤——最经典的搭配，也最能说明虾米的作用",
+              "肉末蒸蛋——一勺就把普通菜变成有鲜味的菜",
+              "炒饭——一开始就和葱姜一起爆",
+              "炒青菜——配蒜，工作日快手配菜"
+          ]
+      },
+      {
+          "type": "h2",
+          "text": "怎么买怎么存"
+      },
+      {
+          "type": "p",
+          "text": "挑淡粉橙色的，不要发灰的。闻起来应该是海味，不是氨味。装密封罐放冰箱，能存几个月，但香味大约半年后就开始退。"
+      },
+      {
+          "type": "h2",
+          "text": "常见问题"
+      },
+      {
+          "type": "ul",
+          "items": [
+              "能用鲜虾替代吗？不能——鲜虾含水，风味完全不同。改用鱼露或少许蚝油。",
+              "虾米很咸吗？是，所以加盐前先尝。",
+              "和虾酱一样吗？不一样。虾酱是发酵的，味道重得多；虾米只是晒干。"
+          ]
+      },
+      {
+          "type": "p",
+          "text": "冰箱里备一罐虾米之后，很多菜就不再需要救场了。"
+      }
+  ],
+};
+
 export const blogPosts: BlogPost[] = [
+  driedShrimpXiaMi,
   vermicelliFenSi,
   miseEnPlaceBatchPrep,
   {
