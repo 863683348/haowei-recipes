@@ -366,6 +366,16 @@ import { red_braised_chicken_wings } from "./red-braised-chicken-wings";
 import { garlic_fried_chicken_wings } from "./garlic-fried-chicken-wings";
 import { salt_baked_chicken_wings } from "./salt-baked-chicken-wings";
 import { yuXiangPork } from "./yu-xiang-pork";
+import { red_braised_prawns } from "./red-braised-prawns";
+import { oil_braised_prawns } from "./oil-braised-prawns";
+import { garlic_steamed_prawns } from "./garlic-steamed-prawns";
+import { salt_and_pepper_prawn_tails } from "./salt-and-pepper-prawn-tails";
+import { curry_prawns } from "./curry-prawns";
+import { tomato_prawn_pot } from "./tomato-prawn-pot";
+import { clear_steamed_prawns } from "./clear-steamed-prawns";
+import { spicy_crayfish } from "./spicy-crayfish";
+import { shrimp_tofu_pot } from "./shrimp-tofu-pot";
+import { ketchup_prawns } from "./ketchup-prawns";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
 export const recipes: Recipe[] = [
@@ -735,6 +745,16 @@ export const recipes: Recipe[] = [
   red_braised_chicken_wings,
   garlic_fried_chicken_wings,
   salt_baked_chicken_wings,
+  red_braised_prawns,
+  oil_braised_prawns,
+  garlic_steamed_prawns,
+  salt_and_pepper_prawn_tails,
+  curry_prawns,
+  tomato_prawn_pot,
+  clear_steamed_prawns,
+  spicy_crayfish,
+  shrimp_tofu_pot,
+  ketchup_prawns,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

@@ -3070,7 +3070,7 @@ const chineseColdDishes: BlogPost = {
   authorEn: "HǎoWèi Kitchen",
   authorZh: "好味厨房",
   publishDate: "2026-09-04",
-  coverImage: "/images/blog/chinese-cold-dishes-appetizers.webp",
+  coverImage: "/images/recipes/smashed-cucumber.webp",
   relatedRecipeSlugs: ["smashed-cucumber", "cold-wood-ear", "oyster-sauce-lettuce", "vinegar-cabbage", "scallion-pancakes", "dan-dan-noodles-chengdu", "kung-pao-chicken"],
   bodyEn: [
     { type: "p", text: "Walk into any Chinese family banquet and the first things on the table are never the hot dishes. They're the cold ones — liang cai (凉菜). Served at room temperature, dressed ahead, and ready the moment guests sit down, they set the tone: bright, sour, savory, with a texture that wakes up the palate." },
@@ -4279,7 +4279,7 @@ export const blogPosts: BlogPost[] = [
     "relatedRecipeSlugs": [],
     "faq": []
   },
-  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast, charSiuSiuMeiGuide, taiwaneseLuRouFanGuide];
+  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast, charSiuSiuMeiGuide, taiwaneseLuRouFanGuide, chineseColdDishes];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
