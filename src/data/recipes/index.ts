@@ -375,6 +375,16 @@ import { tomato_prawn_pot } from "./tomato-prawn-pot";
 import { clear_steamed_prawns } from "./clear-steamed-prawns";
 import { spicy_crayfish } from "./spicy-crayfish";
 import { shrimp_tofu_pot } from "./shrimp-tofu-pot";
+import { spicy_clam_stir_fry } from "./spicy-clam-stir-fry";
+import { chopped_chili_steamed_chicken_legs } from "./chopped-chili-steamed-chicken-legs";
+import { mala_dry_pot } from "./mala-dry-pot";
+import { spicy_duck_tongue } from "./spicy-duck-tongue";
+import { spicy_stir_fried_edamame } from "./spicy-stir-fried-edamame";
+import { spicy_chicken_feet } from "./spicy-chicken-feet";
+import { chopped_chili_steamed_egg } from "./chopped-chili-steamed-egg";
+import { spicy_squid_stir_fry } from "./spicy-squid-stir-fry";
+import { spicy_beef_tendon } from "./spicy-beef-tendon";
+import { spicy_lotus_root_stir_fry } from "./spicy-lotus-root-stir-fry";
 import { ketchup_prawns } from "./ketchup-prawns";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -755,6 +765,16 @@ export const recipes: Recipe[] = [
   spicy_crayfish,
   shrimp_tofu_pot,
   ketchup_prawns,
+  spicy_clam_stir_fry,
+  chopped_chili_steamed_chicken_legs,
+  mala_dry_pot,
+  spicy_duck_tongue,
+  spicy_stir_fried_edamame,
+  spicy_chicken_feet,
+  chopped_chili_steamed_egg,
+  spicy_squid_stir_fry,
+  spicy_beef_tendon,
+  spicy_lotus_root_stir_fry,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

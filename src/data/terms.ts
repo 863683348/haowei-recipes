@@ -822,6 +822,62 @@ export function searchTerms(query: string): Term[] {
       "Shaoxing wine is the closest available everywhere; use 1:1. For non-alcoholic: skip and add extra ginger.",
     substituteHintZh: "绍兴酒是最接近的通用替代；1:1。无酒精：跳过，多加姜片。",
   },
+  {
+    id: "chopped-chili",
+    zh: "剁椒",
+    pinyin: "duò jiāo",
+    en: "Chopped chili peppers",
+    category: "ingredient",
+    definition:
+      "Finely chopped fresh red chilies, often fermented with salt. A staple of Hunan cuisine, delivering bright heat and tangy depth.",
+    definitionZh: "新鲜红辣椒切碎发酵而成，湘菜必备，辣中带酸鲜。",
+    quantEquivalent: "1 tbsp ≈ 15g",
+    substituteHint:
+      "Sriracha or gochujang in a pinch, though flavor profile differs.",
+    substituteHintZh: "紧急可用辣酱或韩式辣酱替代，风味略有不同。",
+  },
+  {
+    id: "duck-blood",
+    zh: "鸭血",
+    pinyin: "yā xuè",
+    en: "Duck blood (custard-like)",
+    category: "ingredient",
+    definition:
+      "Coagulated duck blood, silky and custard-like in texture. Common in Sichuan hot pot and mala xiang guo. Rich in iron.",
+    definitionZh: "凝固鸭血，口感如布丁般嫩滑。常用于川式火锅和麻辣香锅，富含铁质。",
+    quantEquivalent: "200g block ≈ 1 serving",
+    substituteHint:
+      "Tofu (silken or soft) is the closest vegetarian alternative.",
+    substituteHintZh: "嫩豆腐是最接近的素食替代。",
+  },
+  {
+    id: "cinnamon",
+    zh: "桂皮",
+    pinyin: "guì pí",
+    en: "Cinnamon stick (Chinese cassia)",
+    category: "spice",
+    definition:
+      "Aromatic bark from Cinnamomum trees, used whole in braises and five-spice blends. Sweeter and warmer than Western cinnamon.",
+    definitionZh: " aromatic 桂皮，红烧和五香粉必备，比西餐肉桂更甜更温润。",
+    quantEquivalent: "1 stick ≈ 5g",
+    substituteHint:
+      "Cassia bark or regular cinnamon stick; use less as Western cinnamon is more pungent.",
+    substituteHintZh: "可用肉桂棒替代，用量减半。",
+  },
+  {
+    id: "cooking-wine",
+    zh: "料酒",
+    pinyin: "liào jiǔ",
+    en: "Cooking wine (liaojiu)",
+    category: "sauce",
+    definition:
+      "Seasoned rice wine with salt, used in Chinese cooking to remove gamey odors from meat and seafood. Different from Shaoxing wine (unseasoned).",
+    definitionZh: "调味料酒，用于肉类海鲜去腥。与绍兴酒不同——料酒含盐。",
+    quantEquivalent: "1 tbsp ≈ 15 ml",
+    substituteHint:
+      "Dry sherry or extra Shaoxing wine plus a pinch of salt.",
+    substituteHintZh: "干雪利酒或少量绍兴酒加盐替代。",
+  },
 ];
   return terms.filter(
     (t) =>
