@@ -385,6 +385,16 @@ import { chopped_chili_steamed_egg } from "./chopped-chili-steamed-egg";
 import { spicy_squid_stir_fry } from "./spicy-squid-stir-fry";
 import { spicy_beef_tendon } from "./spicy-beef-tendon";
 import { spicy_lotus_root_stir_fry } from "./spicy-lotus-root-stir-fry";
+import { garlic_vermicelli_steamed_scallops } from "./garlic-vermicelli-steamed-scallops";
+import { scallion_oil_steamed_sea_bass } from "./scallion-oil-steamed-sea-bass";
+import { ginger_scallion_steamed_grouper } from "./ginger-scallion-steamed-grouper";
+import { garlic_vermicelli_steamed_oysters } from "./garlic-vermicelli-steamed-oysters";
+import { steamed_clams_with_garlic } from "./steamed-clams-with-garlic";
+import { steamed_ribbonfish_with_black_beans } from "./steamed-ribbonfish-with-black-beans";
+import { steamed_crab_with_ginger } from "./steamed-crab-with-ginger";
+import { vermicelli_steamed_shrimp } from "./vermicelli-steamed-shrimp";
+import { garlic_steamed_scallops_simple } from "./garlic-steamed-scallops-simple";
+import { ginger_steamed_sea_bass } from "./ginger-steamed-sea-bass";
 import { ketchup_prawns } from "./ketchup-prawns";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -775,6 +785,16 @@ export const recipes: Recipe[] = [
   spicy_squid_stir_fry,
   spicy_beef_tendon,
   spicy_lotus_root_stir_fry,
+  garlic_vermicelli_steamed_scallops,
+  scallion_oil_steamed_sea_bass,
+  ginger_scallion_steamed_grouper,
+  garlic_vermicelli_steamed_oysters,
+  steamed_clams_with_garlic,
+  steamed_ribbonfish_with_black_beans,
+  steamed_crab_with_ginger,
+  vermicelli_steamed_shrimp,
+  garlic_steamed_scallops_simple,
+  ginger_steamed_sea_bass,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
