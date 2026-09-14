@@ -4467,7 +4467,281 @@ const bambooShootsFreshVsCanned: BlogPost = {
   ]
 };
 
+const sichuanPeppercornNumbing: BlogPost = {
+  "id": "sichuan-peppercorn-numbing",
+  "slug": "sichuan-peppercorn-numbing",
+  "titleEn": "Sichuan Peppercorn: The Numbing Tingle",
+  "titleZh": "花椒的麻，怎么用不苦",
+  "excerptEn": "Sichuan peppercorn is a citrus cousin, not a chilli, and its tingle comes from sanshool, not capsaicin. Here is how to bloom it, keep it aromatic, and stop it turning bitter.",
+  "excerptZh": "花椒不是辣椒，它的麻来自 sanshool 而非辣椒素。这里说说怎么把它炒香、留住香气，又不让它发苦。",
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "sichuan peppercorn",
+    "chinese pantry",
+    "seasoning",
+    "sichuan cooking"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-13",
+  "coverImage": "/images/blog/sichuan-peppercorn-numbing.webp",
+  "relatedRecipeSlugs": [
+    "mapo-tofu",
+    "kung-pao-chicken",
+    "beef-and-broccoli"
+  ],
+  "faq": [
+    {
+      "qEn": "Is Sichuan peppercorn the same as black pepper?",
+      "qZh": "花椒和黑胡椒是一种东西吗？",
+      "aEn": "No. It comes from the Zanthoxylum family, a citrus relative, while black pepper is Piper nigrum. The numbing tingle is from sanshool, not from heat.",
+      "aZh": "不是。花椒来自芸香科的 Zanthoxylum，是柑橘的亲戚；黑胡椒是 Piper nigrum。那种麻来自 sanshool，不是辣。"
+    },
+    {
+      "qEn": "Why does my peppercorn taste bitter?",
+      "qZh": "我的花椒为什么发苦？",
+      "aEn": "Usually from overheating, burnt oil, stale pre-ground powder, or adding it to a dry hot pan. Bloom it in cold oil on low heat and add ground powder late.",
+      "aZh": "通常是火太大、油冒烟、陈年的现成粉，或先下到干热锅里。用冷油小火煸香，粉要后放。"
+    },
+    {
+      "qEn": "Can I use pre-ground peppercorn?",
+      "qZh": "可以用现成的花椒粉吗？",
+      "aEn": "You can, but it loses scent fast and turns stale. Toast whole berries for thirty seconds and grind fresh when you want the best aroma.",
+      "aZh": "可以，但它很快就跑香、变陈。想要最好香气时，把整粒花椒干锅煸三十秒再现磨。"
+    }
+  ],
+  "bodyEn": [
+    {
+      "type": "h2",
+      "text": "What the tingle actually is"
+    },
+    {
+      "type": "p",
+      "text": "Sichuan peppercorn is not a pepper and not a chilli. It comes from a plant in the Zanthoxylum family, which makes it a cousin of citrus, not a relative of black pepper. The numbing tingle you feel is chemical, not heat. The compounds responsible are called sanshool, more precisely the hydroxy-alpha-sanshool family, and they act on the touch receptors in your lips and tongue."
+    },
+    {
+      "type": "p",
+      "text": "Instead of burning like capsaicin from chilli, sanshool produces a faint vibration-like buzzing, often described around 50 Hz, that sits on top of whatever you are tasting. That is why the feeling fades and returns rather than building into a steady burn. It is a sensation, not pain, and it is the whole point of the spice."
+    },
+    {
+      "type": "h2",
+      "text": "Two grades: red and green"
+    },
+    {
+      "type": "p",
+      "text": "You will meet two main forms. Red Sichuan peppercorn, hong hua jiao, is the familiar one with its warm, tingly bite that anchors ma la, the numbing-and-hot pairing with chilli. Green Sichuan peppercorn, qing hua jiao, is brighter and more aromatic, leaning toward ma xiang, a numbing fragrance used in things like fish and cold dishes where you want scent more than fire."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Red (hong hua jiao): warm tingle, the base of ma la with chilli.",
+        "Green (qing hua jiao): greener, more fragrant, leans toward ma xiang.",
+        "Both are the same family; the colour is the ripeness and the region.",
+        "Buy whole berries when you can, not pre-ground dust."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Why it turns bitter or soapy"
+    },
+    {
+      "type": "p",
+      "text": "The spice is delicate. Most complaints about soapy or bitter peppercorn come from handling, not from the berry itself. The usual mistakes are heating it too hard, letting the oil smoke, using a stale pre-ground powder that has already gone flat, or tossing it into a dry pan before any oil is present so it scorches."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Toasting at high heat until it darkens, which burns the oils.",
+        "Adding it to oil that is already smoking, not just warm.",
+        "Using old pre-ground powder that has lost its scent and gained a stale edge.",
+        "Throwing it into a dry, hot pan where it scorches in seconds."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to bloom it correctly"
+    },
+    {
+      "type": "p",
+      "text": "The safe method is gentle. Start with cold oil, add the whole berries, and warm over low heat for thirty to sixty seconds while you stir. Pull the pan off the heat the moment the kitchen smells citrus-floral and before anything darkens. If you prefer to grind your own, toast the whole berries in a dry pan for about thirty seconds, then grind them fresh."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Put the berries in cold oil, not hot.",
+        "Warm on low heat for 30 to 60 seconds, stirring.",
+        "Stop the moment it smells fragrant, before it browns.",
+        "Grind fresh if you want powder, toast dry for 30 seconds first."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Classic techniques that keep it aromatic"
+    },
+    {
+      "type": "p",
+      "text": "Sichuan cooking has a few habits that protect the tingle. None of them treat the peppercorn as a background dusting; it is usually added with intent at a specific moment."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Peppercorn oil: infuse cold oil low and slow, then use the oil.",
+        "Whole berries in red-braised dishes, added briefly, then lifted out.",
+        "Good cooks often add them twice, or remove the berries before serving.",
+        "Ground added late, off the heat, to keep the aroma.",
+        "A final dust of fresh powder as a finishing touch, not a simmer spice."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Buying, storing, and fixing the bitter"
+    },
+    {
+      "type": "p",
+      "text": "Smell before you buy. Fresh berries should be citrus-floral and almost sharp; if they smell flat or dusty, skip them. Avoid the pre-ground supermarket jars that have sat on a shelf for a year. At home, keep them whole, in a sealed jar, away from light and heat. If a dish has already gone bitter, the fix is usually to balance, not to push further."
+    },
+    {
+      "type": "note",
+      "text": "If your dish tastes bitter: do not add more peppercorn. Add a little stock or a touch of sugar to round it, strain out the spent berries, and next time bloom it gentler and later. Bitterness rarely comes from too little spice."
+    },
+    {
+      "type": "h2",
+      "text": "Dishes where it does the work"
+    },
+    {
+      "type": "p",
+      "text": "Once you handle it right, the peppercorn anchors a short list of classics. Mapo tofu depends on it for the ma la mouthfeel, and our /en/recipes/mapo-tofu recipe shows the late-add technique. Kung pao chicken uses it for lift rather than fire, see /en/recipes/kung-pao-chicken. Beyond those, ma la hotpot and Sichuan cold noodles both lean on it heavily, and it pairs naturally with doubanjiang, which we cover in /en/blog/doubanjiang-101. For more, see /en/blog."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mapo tofu, for the ma la tingle.",
+        "Kung pao chicken, for aroma and lift.",
+        "Ma la hotpot, where it sets the whole pot.",
+        "Sichuan cold noodles, dressed with peppercorn oil.",
+        "Red-braised dishes, with berries added briefly and removed."
+      ]
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "h2",
+      "text": "麻到底是什么"
+    },
+    {
+      "type": "p",
+      "text": "花椒既不是胡椒，也不是辣椒。它来自芸香科的 Zanthoxylum，是柑橘的亲戚，而非黑胡椒的亲戚。你感到的麻是化学作用，不是辣。负责这种感觉的化合物叫 sanshool，更精确地说叫羟基-alpha-sanshool 这一族，作用于嘴唇和舌头上的触觉受体。"
+    },
+    {
+      "type": "p",
+      "text": "和辣椒素不同，sanshool 带来微弱、像震动般的麻刺感，约 50 Hz，浮在你尝到的味道之上。它时强时弱、会褪去又会回来，不是越烧越旺。这是一种知觉，不是痛。"
+    },
+    {
+      "type": "h2",
+      "text": "两种花椒：红与绿"
+    },
+    {
+      "type": "p",
+      "text": "你会遇到两种主要形态。红花椒，也就是 hong hua jiao，是我们最熟悉的那一种，带着温润的麻，撑起 ma la，即和辣椒搭配的麻辣。青花椒，qing hua jiao，更清新、更香，偏向 ma xiang，一种麻香，常用于鱼和凉菜这类你想要香气多于火力的时候。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "红花椒（hong hua jiao）：温润的麻，是 ma la 配辣椒的底。",
+        "青花椒（qing hua jiao）：更绿更香，偏 ma xiang。",
+        "两者同属一家，颜色来自成熟度与产地。",
+        "能买整粒就买整粒，别买现成的粉。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "为什么它会发苦或发皂"
+    },
+    {
+      "type": "p",
+      "text": "这种香料很娇气。大多数发皂或发苦的抱怨来自处理不当，而非花椒本身。常见错误：火太猛烤焦、油冒了烟、用了跑味儿的陈年粉，或没放油就丢进干热锅，几秒就糊。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "高温炒到发黑，把油都烤坏了。",
+        "下到已经冒烟、而不只是温热的油里。",
+        "用了失去香气、带上陈味的旧粉。",
+        "丢进干热锅，几秒就焦。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "怎样正确地把它煸香"
+    },
+    {
+      "type": "p",
+      "text": "稳妥的方法要温柔。冷油下整粒花椒，小火温三十到六十秒，边温边搅。等到厨房里飘出柑橘般的香气、但还没任何发黑之前，就把锅端离火。若想自己磨粉，先把整粒在干锅里煸约三十秒，再现磨。"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "冷油下花椒，不要热油。",
+        "小火温三十到六十秒，边搅。",
+        "一闻到香就停，别等它上色。",
+        "想用粉就现磨，先干锅煸三十秒。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "留住香气的经典手法"
+    },
+    {
+      "type": "p",
+      "text": "川菜里有几个习惯是在保护那股麻。它们都不把花椒当成背景里的点缀，而是在某个具体时刻、带着用意地放下去。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "花椒油：冷油小火慢浸，再使用那油。",
+        "红烧菜里放整粒，短时略煮，然后捞走。",
+        "好厨师常常放两次，或在上桌前把花椒粒挑掉。",
+        "粉要后放、离火放，保住香气。",
+        "最后撒一层鲜粉收尾，而不是当炖煮的香料。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "怎么买、怎么存，以及已经发苦怎么办"
+    },
+    {
+      "type": "p",
+      "text": "买之前先闻。新鲜花椒该有柑橘般的清香，甚至有点冲；若闻着发闷发灰，就别拿。避开货架上一年的超市现成粉。在家整粒密封、避光避热存放。菜已发苦时，通常去平衡，而不是再加料。"
+    },
+    {
+      "type": "note",
+      "text": "菜若发苦：别再加花椒。加一点高汤或少许糖来圆味道，把用过的花椒粒滤掉，下次更温柔、更晚地煸香。苦很少是因为花椒放少了。"
+    },
+    {
+      "type": "h2",
+      "text": "它撑起哪些菜"
+    },
+    {
+      "type": "p",
+      "text": "处理得当之后，花椒撑起一小串经典菜。麻婆豆腐靠它出 ma la 的口感，我们的 /zh/recipes/mapo-tofu 菜谱演示了后放的技巧。宫保鸡丁用它提香而非提辣，见 /zh/recipes/kung-pao-chicken。除此之外，麻辣火锅和四川凉面都重度依赖它，也与豆瓣酱天然相配，我们在 /zh/blog/doubanjiang-101 里讲过。更多请看 /zh/blog。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "麻婆豆腐，吃那股 ma la。",
+        "宫保鸡丁，吃香与提味。",
+        "麻辣火锅，整锅的底色。",
+        "四川凉面，拌上花椒油。",
+        "红烧菜，整粒略放后挑走。"
+      ]
+    }
+  ]
+};
+
 export const blogPosts: BlogPost[] = [
+  sichuanPeppercornNumbing,
   bambooShootsFreshVsCanned,
   seaweedNoriKelpGuide,
   driedShrimpXiaMi,
