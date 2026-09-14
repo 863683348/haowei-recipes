@@ -4252,7 +4252,223 @@ const lapCheongChineseSausagePrimer: BlogPost = {
   ],
 };
 
+const bambooShootsFreshVsCanned: BlogPost = {
+  "id": "bamboo-shoots-fresh-vs-canned",
+  "slug": "bamboo-shoots-fresh-vs-canned",
+  "titleEn": "Bamboo Shoots: Fresh vs Canned, and How to Cook Each",
+  "titleZh": "笋：鲜笋和罐头笋，怎么选、怎么做",
+  "excerptEn": "Bamboo shoots come fresh or canned and behave nothing alike in the wok. Learn to boil fresh shoots safely, rescue canned ones from their tinny taste, and pick the right type.",
+  "excerptZh": "笋分鲜笋和罐头笋，下锅表现天差地别。本文教你安全煮透鲜笋、把罐头笋从金属味里救回来，并帮你在红烧、快炒、煲汤时选对那一种。",
+  "categoryKey": "ingredients",
+  "categoryEn": "Ingredients",
+  "categoryZh": "食材",
+  "tags": [
+    "bamboo shoots",
+    "chinese vegetables",
+    "ingredients",
+    "stir fry"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-09-14",
+  "coverImage": "/images/blog/bamboo-shoots-fresh-vs-canned.webp",
+  "relatedRecipeSlugs": [
+    "hong-shao-rou-braised-pork",
+    "mapo-tofu",
+    "beef-and-broccoli"
+  ],
+  "faq": [
+    {
+      "qEn": "Do I really need to boil fresh bamboo shoots?",
+      "qZh": "鲜笋真的必须煮吗？",
+      "aEn": "Yes. Fresh shoots contain cyanogenic glycosides that must be broken down by heat. Boil them for 15 to 30 minutes, or use a rice-water blanch, until a skewer slides through cleanly. Skipping this step leaves both a safety risk and a bitter, tart taste that no amount of sauce hides.",
+      "aZh": "必须。鲜笋含氰苷，只能靠加热破坏。煮 15 到 30 分钟，或用淘米水焯到筷子轻松穿透。省略这一步既有安全隐患，又留涩味，再多的酱也盖不住。"
+    },
+    {
+      "qEn": "Why do canned bamboo shoots taste so bland and tinny?",
+      "qZh": "罐头笋为什么又寡淡又有金属味？",
+      "aEn": "Canned shoots are pre-boiled at the factory, which cooks out the fresh sweetness and leaves a flat, metallic note from the brine. A cold rinse, a two minute blanch with a pinch of sugar, and a hard sear in the wok bring them back to something worth eating.",
+      "aZh": "罐头笋出厂前已煮过，鲜甜煮没了，只剩盐水带来的金属味。冷水冲、加糖焯两分钟、下锅猛煎，这几步能救回来。"
+    },
+    {
+      "qEn": "Can I use frozen bamboo shoots instead of fresh?",
+      "qZh": "没有鲜笋，能用冻笋代替吗？",
+      "aEn": "Frozen shoots are usually pre-boiled and a good stand-in for braises and soups when fresh is out of season. They keep more texture than canned and save you the peeling and trimming. Treat them like fresh once thawed, and dry them well before searing.",
+      "aZh": "冻笋通常已预煮，鲜笋过季时是红烧煲汤的好替身。比罐头笋更有口感，也省了削皮修根。解冻后当鲜笋用，下锅前吸干水分。"
+    }
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Bamboo shoots are one of the quiet workhorses of the Chinese kitchen, and if you cook Chinese food at home you have probably met them in two very different forms: pale, snappy fresh shoots and soft, uniform canned ones. This guide walks through fresh vs canned bamboo shoots, how to cook bamboo shoots so they actually taste like something, and a dependable bamboo shoots recipe so the lonely can in your pantry stops gathering dust."
+    },
+    {
+      "type": "h2",
+      "text": "What kind of bamboo shoot are you actually buying?"
+    },
+    {
+      "type": "p",
+      "text": "Most 'bamboo shoots' sold in the West come from a handful of sources. The small, ivory winter shoots (dong sun) appear in autumn and winter and are prized for their tender, almost sweet crunch. The fatter spring shoots (chun sun) show up in spring, larger and a touch more fibrous. The big vacuum-packed 'winter bamboo' (mao zhu sun, from the Moso bamboo) is the one you find at Chinese grocers year round. What they share is that they are the young, still-underground sprout of the bamboo plant, pulled before they harden into woody fibre. Fresh shoots contain cyanogenic glycosides, natural compounds that break down into cyanide if eaten raw. That single fact is why fresh shoots must be boiled before they go anywhere near your wok."
+    },
+    {
+      "type": "h2",
+      "text": "Fresh vs canned: the real trade-off"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Texture: fresh shoots snap when you bite and carry a clean, grassy sweetness; canned shoots are uniformly soft with almost no bite.",
+        "Prep time: fresh needs peeling, trimming and a 15 to 30 minute boil; canned is technically ready but tastes flat straight from the can.",
+        "Price and availability: fresh and frozen are seasonal and cost more; canned is cheap and on every shelf.",
+        "Bitterness: fresh can taste tart or bitter from tyrosine crystals that form as the shoot ages, not only from the glycosides; canned has been boiled flat and loses most of that character.",
+        "In the wok: fresh shoots release water as they cook and want a hot, dry pan; canned shoots arrive waterlogged and need a hard sear to dry out before they take on any flavour."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to prep fresh bamboo shoots"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Peel away the tough outer leaves with a paring knife until you reach the pale, yellow-white core.",
+        "Trim the base: slice off the bottom until a knife slides in with no resistance, then cut away any woody ring.",
+        "Slice against the fibre, on the bias, into pieces about a quarter inch thick so they cook evenly.",
+        "Boil in unsalted water for 15 to 30 minutes, or use the traditional rice-water blanch, until a skewer goes through cleanly.",
+        "Cool and use, or freeze the boiled shoots for up to three months and skip the prep next time."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Do not skip the boil. Even shoots that look tender still carry glycosides, and the bitterness that lingers after a short cook is your cue that they needed longer. If a fresh shoot tastes sharply tart or metallic, it is older than you would like but still usable once boiled well. The faint sourness some cooks chase in a braise actually comes from those tyrosine crystals, so a little age is not always a loss."
+    },
+    {
+      "type": "h2",
+      "text": "How to rescue canned bamboo shoots"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Rinse under cold running water for a full minute to wash off the tinny brine.",
+        "Blanch in fresh water with a pinch of sugar for 2 minutes to round off the canned taste.",
+        "Lift out and dry thoroughly on a kitchen towel; wet shoots will never sear.",
+        "Sear in a hot wok with a little oil until the edges colour before you add sauce or other ingredients."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "That extra five minutes is the difference between canned shoots that taste of metal and ones that carry the dish. Treat them like a sponge: they take on whatever you give them, so give them a good sear and a real sauce. A spoon of fermented bean paste adds depth; our doubanjiang primer at /en/blog/doubanjiang-101 covers which to reach for, and /en/blog/chinese-condiment-substitutions has swaps if your shelf is bare. Start at /en/blog for the pantry."
+    },
+    {
+      "type": "h2",
+      "text": "What they are good in"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Red-braised dishes, where shoots soak up the sauce; try them in hong shao rou (braised pork) at /en/recipes/hong-shao-rou-braised-pork.",
+        "Dry-fried style stir fries, the way green beans get that blistered, savoury coat.",
+        "Soups, with the fresh-shoot classic yancudun (cured pork and fresh bamboo soup) as the benchmark.",
+        "Cold dishes, sliced thin and dressed with soy, vinegar and chilli oil."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Which should you buy"
+    },
+    {
+      "type": "note",
+      "text": "If you are braising or making soup, buy fresh or frozen shoots and do the boil; the texture and sauce-holding are worth it. For a 20-minute weeknight stir fry, canned is fine as long as you rescue it with a rinse, a quick blanch and a hard sear. Keep a can in the cupboard and a bag of frozen shoots in the freezer, and you will never be stuck."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "笋是中国厨房里低调又不可或缺的食材。如果你在家做中餐，大概见过它的两种样子：脆嫩的鲜笋，和软糯的罐头笋。本文聊聊两者的区别和笋怎么做好吃，顺手消耗掉橱柜里那罐笋。"
+    },
+    {
+      "type": "h2",
+      "text": "你买到的到底是哪一种笋"
+    },
+    {
+      "type": "p",
+      "text": "市面上的『笋』主要有几种。秋冬的小个象牙色冬笋脆嫩微甜；春天的大个春笋纤维略多；华人超市四季都有的真空包装『冬笋』其实是毛竹笋。它们都是竹子的幼嫩笋芽，木质化前采收。鲜笋含氰苷，生吃会在体内分解出氰化物，所以必须先煮透。"
+    },
+    {
+      "type": "h2",
+      "text": "鲜笋和罐头笋：真实的取舍"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "口感：鲜笋脆生带草木甜；罐头笋软而均匀，没嚼头。",
+        "处理：鲜笋要削皮、修根、煮 15 到 30 分钟；罐头笋开罐即食但寡淡。",
+        "价格：鲜笋和冻笋随季节偏贵；罐头笋便宜，常年有。",
+        "苦味：鲜笋放久生酪氨酸结晶，发涩发苦；罐头笋已煮平，这层味消失。",
+        "下锅：鲜笋受热出水，适合热干锅；罐头笋带水汽，要大火逼干猛煎才入味。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "鲜笋怎么处理"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "削掉外层硬壳，直到露出淡黄白色的笋芯。",
+        "切去底部硬节，直到刀能无阻插进，再去掉木质化的环。",
+        "逆纤维斜刀切片，厚约 0.6 厘米，受热才匀。",
+        "无盐清水煮 15 到 30 分钟，或用淘米水焯，筷子能穿透即可。",
+        "放凉即用，或把煮好的笋冻三个月，省去下次处理。"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "煮这一步别省。再嫩的笋也带氰苷，煮短了留涩味就是在提醒你火候不够。鲜笋若发酸发苦，说明偏老，煮透仍能用。有些红烧菜追的那点酸香，正来自酪氨酸结晶，所以稍老未必是坏事。"
+    },
+    {
+      "type": "h2",
+      "text": "罐头笋怎么救"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "冷水冲一分钟，洗掉罐头咸水味。",
+        "换清水加一小撮糖，焯两分钟压掉罐头味。",
+        "捞起在厨房纸上彻底吸干，带水的笋煎不出焦边。",
+        "热锅热油大火煎到上色，再下酱和其他配料。"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "这五分钟决定一罐笋是金属味还是成菜味。把它当海绵：给什么吸什么，先猛煎再给足酱汁。想增层次可加一勺豆瓣酱，详见 /zh/blog/doubanjiang-101；料不够参考 /zh/blog/chinese-condiment-substitutions；更多备料思路从 /zh/blog 开始。"
+    },
+    {
+      "type": "h2",
+      "text": "笋适合做什么菜"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "红烧类最吸汁，比如红烧肉，见 /zh/recipes/hong-shao-rou-braised-pork。",
+        "干煸式快炒，像干煸四季豆那样煸出焦香。",
+        "汤品以鲜笋名菜腌笃鲜为标杆。",
+        "凉菜切薄片，用酱油、醋和辣椒油拌。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "到底买哪种"
+    },
+    {
+      "type": "note",
+      "text": "红烧或煲汤，买鲜笋或冻笋，把煮的步骤做到位，口感和吸汁都值得。二十分钟快炒用罐头笋也行，前提是冲洗、快焯、猛煎三步救回来。橱柜常备一罐笋、冷冻层存一袋冻笋，就永远有得做。"
+    }
+  ]
+};
+
 export const blogPosts: BlogPost[] = [
+  bambooShootsFreshVsCanned,
   seaweedNoriKelpGuide,
   driedShrimpXiaMi,
   lapCheongChineseSausagePrimer,
