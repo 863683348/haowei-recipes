@@ -395,6 +395,16 @@ import { steamed_crab_with_ginger } from "./steamed-crab-with-ginger";
 import { vermicelli_steamed_shrimp } from "./vermicelli-steamed-shrimp";
 import { garlic_steamed_scallops_simple } from "./garlic-steamed-scallops-simple";
 import { ginger_steamed_sea_bass } from "./ginger-steamed-sea-bass";
+import { tomato_beef_claypot } from "./tomato-beef-claypot";
+import { mushroom_tofu_claypot } from "./mushroom-tofu-claypot";
+import { sauerkraut_pork_claypot } from "./sauerkraut-pork-claypot";
+import { seafood_tofu_claypot } from "./seafood-tofu-claypot";
+import { sour_soup_beef } from "./sour-soup-beef";
+import { radish_beef_offal_claypot } from "./radish-beef-offal-claypot";
+import { korean_tofu_claypot } from "./korean-tofu-claypot";
+import { pork_cabbage_claypot } from "./pork-cabbage-claypot";
+import { vermicelli_shrimp_claypot } from "./vermicelli-shrimp-claypot";
+import { lap_cheong_rib_claypot } from "./lap-cheong-rib-claypot";
 import { ketchup_prawns } from "./ketchup-prawns";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -795,6 +805,16 @@ export const recipes: Recipe[] = [
   vermicelli_steamed_shrimp,
   garlic_steamed_scallops_simple,
   ginger_steamed_sea_bass,
+  tomato_beef_claypot,
+  mushroom_tofu_claypot,
+  sauerkraut_pork_claypot,
+  seafood_tofu_claypot,
+  sour_soup_beef,
+  radish_beef_offal_claypot,
+  korean_tofu_claypot,
+  pork_cabbage_claypot,
+  vermicelli_shrimp_claypot,
+  lap_cheong_rib_claypot,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
