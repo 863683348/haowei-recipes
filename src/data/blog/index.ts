@@ -4740,7 +4740,76 @@ const sichuanPeppercornNumbing: BlogPost = {
   ]
 };
 
+const oysterSauceUmami: BlogPost = {
+  id: 'oyster-sauce-umami-in-bottle',
+  slug: 'oyster-sauce-umami-in-bottle',
+  titleEn: 'Oyster Sauce: Umami in a Bottle',
+  titleZh: '蚝油：瓶装鲜味怎么用',
+  excerptEn:
+    'Oyster sauce is the shortcut to depth in a stir-fry, but it burns, it does not substitute cleanly, and most bottles sit unused. Here is how to use one up.',
+  excerptZh:
+    '蚝油是快炒里最快的提鲜捷径，但它会糊、替代关系不干净、大多数瓶子最后都闲置。这篇讲清怎么把它用完。',
+  categoryKey: 'ingredients',
+  categoryEn: 'Ingredients',
+  categoryZh: '食材',
+  tags: ['oyster sauce', 'chinese pantry', 'umami', 'substitutions'],
+  authorEn: 'HǎoWèi Kitchen',
+  authorZh: '好味厨房',
+  publishDate: '2026-09-15',
+  coverImage: '/images/recipes/beef-and-broccoli.webp',
+  relatedRecipeSlugs: ['beef-and-broccoli', 'kung-pao-chicken', 'mapo-tofu'],
+  bodyEn: [
+    { type: "p", text: "Oyster sauce is the fastest way to add depth to a stir-fry, and also the condiment most likely to sit in the door of the fridge for two years. The reason is usually the same: people add it at the wrong moment, get a burnt bitterness once, and stop reaching for it." },
+    { type: "h2", text: "What it actually is" },
+    { type: "p", text: "Real oyster sauce is made by simmering oysters until the liquid reduces to a dark, savoury syrup. What most bottles contain is closer to a seasoned sauce built around oyster extract, thickened with starch and sweetened to balance the salt. That is not a defect. It is what makes the product stable and affordable." },
+    { type: "p", text: "The useful consequence: oyster sauce already contains sugar and starch. Any recipe you add it to needs less of both." },
+    { type: "h2", text: "Where it belongs in the cooking order" },
+    { type: "ul", items: ["Add it after the aromatics have released their flavour, not before.","Keep the heat moderate once it is in. Sugar and starch scorch quickly.","If the sauce starts to darken and smell sharp, the pan is too hot. Pull it off, add liquid, and continue.","Thin it with a splash of stock or water if the dish is drying out. It thickens as it reduces."] },
+    { type: "h2", text: "Substituting oyster sauce" },
+    { type: "p", text: "None of these are true equivalents. Vegetarian mushroom sauces are the closest in texture, and hoisin is the closest in flavour, but hoisin changes the dish more than people expect." },
+    { type: "h2", text: "Getting through a bottle" },
+    { type: "ul", items: ["Blanch green vegetables and toss with a spoon of oyster sauce and a little oil. Two minutes, no recipe needed.","Use it as the base for a quick braise instead of soy sauce. It brings body that soy alone does not.","Stir a small amount into fried rice at the end, off the heat.","Marinate sliced beef or chicken with it before a stir-fry. It tenderises slightly and seasons at the same time."] },
+    { type: "h2", text: "Storage" },
+    { type: "p", text: "Refrigerate after opening. A dark, thick sauce does not spoil quickly, but it does lose aroma over many months. If it has separated, stir it back together before using." },
+  ],
+  bodyZh: [
+    { type: "p", text: "蚝油是给快炒加厚味最快的一招，也是冰箱门里最容易被放到过期的一瓶。原因通常一样：加的时候不对，焦糊过一次，之后再不敢碰。" },
+    { type: "h2", text: "它到底是什么" },
+    { type: "p", text: "真正传统的蚝油是把蚝煮到汤汁收成深色浓稠的酱汁。多数瓶装蚝油更接近以蚝汁为基底调制的复合酱料，用淀粉增稠、加糖平衡咸度。这不是偷工减料，正是它稳定又便宜的原因。" },
+    { type: "p", text: "由此得到一个实用结论：蚝油本身已经含糖和淀粉，用到哪个菜里，那个菜的糖和勾芡就要相应减量。" },
+    { type: "h2", text: "它在流程里的位置" },
+    { type: "ul", items: ["等香料爆出香味之后再下，不要一开始就下。","下锅之后火不要太大。糖和淀粉糊得很快。","如果酱汁开始变深、味道发冲，说明锅太热。先离火，加液体再继续。","菜快干的时候兑一点高汤或清水。它收汁会变稠。"] },
+    { type: "h2", text: "蚝油的替代关系" },
+    { type: "p", text: "这些都不是严格等效。素食蘑菇酱在质地上最接近，海鲜酱在风味上最接近，但海鲜酱对整道菜的改动比多数人预想的大。" },
+    { type: "h2", text: "怎么把一瓶用完" },
+    { type: "ul", items: ["青菜焯水，拌一勺蚝油和一点油。两分钟，不需要菜谱。","代替生抽做快焖的底味。它能带出生抽带不出的厚度。","炒饭关火之后拌入少量。","炒之前用蚝油腌一下切好的牛肉或鸡肉。轻微嫩化，同时入味。"] },
+    { type: "h2", text: "保存" },
+    { type: "p", text: "开瓶后冷藏。深色浓稠的酱不会很快坏，但放几个月香气会流失。如果出现分层，用之前搅匀。" },
+  ],
+  faq: [
+    {
+      qEn: "Is oyster sauce supposed to taste fishy?",
+      qZh: "蚝油应该有腥味吗？",
+      aEn: "It should taste savoury and slightly sweet, not strongly of the sea. A harsh fishy note usually means a cheap bottle or a very old one.",
+      aZh: "应该是鲜咸微甜，不该有明显海腥味。冲鼻的腥味通常是便宜货或者放太久了。",
+    },
+    {
+      qEn: "Can I use it in a vegetarian dish?",
+      qZh: "素食菜能用吗？",
+      aEn: "Only the mushroom-based versions. Standard oyster sauce contains oysters, so check the label.",
+      aZh: "只能用蘑菇基底的版本。普通蚝油含蚝，先看标签。",
+    },
+    {
+      qEn: "Does oyster sauce need cooking?",
+      qZh: "蚝油需要煮吗？",
+      aEn: "It is safe to eat as is, but the flavour improves once it has been heated briefly with oil and other ingredients.",
+      aZh: "直接吃是安全的，但和油及其他食材短暂加热之后风味会明显更好。",
+    },
+  ],
+};
+
 export const blogPosts: BlogPost[] = [
+  oysterSauceUmami,
   sichuanPeppercornNumbing,
   bambooShootsFreshVsCanned,
   seaweedNoriKelpGuide,
