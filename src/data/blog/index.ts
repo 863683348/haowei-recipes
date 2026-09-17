@@ -8,6 +8,126 @@ import type { BlogPost } from "@/lib/types";
  * 后续由 haowei-blog-daily 流水线按日历自动扩充。
  */
 
+const sichuanPeppercornOil: BlogPost = {
+  id: "sichuan-peppercorn-oil",
+  slug: "sichuan-peppercorn-oil",
+  titleEn: "Sichuan Peppercorn Oil: The Secret Behind Mapo Tofu",
+  titleZh: "花椒油炼制：麻婆豆腐的秘密",
+  excerptEn:
+    "A small spoonful of properly made huajiao oil changes a whole dish. Here's how to infuse it at home — cold-steeped or flash-heated — and why mapo tofu isn't the same without it.",
+  excerptZh:
+    "一小勺做对的花椒油就能改变一整道菜。这篇教你两种在家炼制的方法——冷泡或热激——以及为什么麻婆豆腐少了它就不是那个味。",
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["sichuan peppercorn", "huajiao", "chili oil", "mapo tofu", "seasoning"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-17",
+  coverImage: "/images/blog/sichuan-peppercorn-oil.png",
+  relatedRecipeSlugs: ["mapo-tofu"],
+  bodyEn: [
+    { type: "p", text: "Sichuan peppercorn oil (花椒油, huājiāo yóu) is the quiet workhorse of Sichuan cooking. A dish can be spicy, salty, and fragrant and still feel incomplete if it doesn't end with that gentle tingle on the lips. That tingle is exactly what this oil provides." },
+    { type: "h2", text: "Why Sichuan peppercorns are not pepper" },
+    { type: "p", text: "Despite the name, Sichuan peppercorns are the dried husks of the prickly ash tree (Zanthoxylum), not a relative of black pepper. They contain hydroxy-alpha-sanshool, a compound that produces a buzzing, numbing sensation rather than heat. That numbness — the má in 麻婆豆腐 — is the backbone of Sichuan flavor, and oil is the best carrier for it." },
+    { type: "h2", text: "Choose the right peppercorns" },
+    { type: "ul", items: [
+      "Red Sichuan peppercorns (红花椒): the classic, with a strong citrusy aroma and pronounced numbing. Best for mapo tofu and braises.",
+      "Green Sichuan peppercorns (青花椒): fresher, grassier, slightly less numbing. Popular in fish and chicken dishes from the southwest.",
+      "Flower pepper / tengjiao (藤椒): young green husks with a delicate, floral punch. Used for quick infusions and cold dishes.",
+    ] },
+    { type: "p", text: "For your first batch, buy whole red peppercorns from a source you trust. Pre-ground powder loses aroma within weeks and cannot be strained into a clean oil." },
+    { type: "h2", text: "Method one: the cold steep" },
+    { type: "p", text: "Cold steeping is the safest way to get a clear, elegant oil. The aroma infuses slowly at room temperature and nothing burns." },
+    { type: "ol", items: [
+      "Gently toast 30 g of whole red Sichuan peppercorns in a dry pan over low heat for 60–90 seconds, just until they release their citrus smell. Do not let them smoke.",
+      "Let them cool completely, then crush them lightly with the side of a knife or a pestle. Leave some husks whole for texture in the oil.",
+      "Put the peppercorns in a clean, dry glass jar and pour in 250 ml of neutral oil (rapeseed or sunflower both work well).",
+      "Seal the jar and leave it at room temperature for 24–48 hours, shaking once or twice.",
+      "Strain through a fine sieve lined with muslin, then bottle. The oil stays clear and bright, with a clean, persistent tingle.",
+    ] },
+    { type: "h2", text: "Method two: the hot pour" },
+    { type: "p", text: "The hot pour is what most Sichuan restaurants do: heat the oil, pour it over the peppercorns, and let the sizzle do the work. It is faster and more aromatic, but easier to get wrong." },
+    { type: "ol", items: [
+      "Toast and lightly crush 30 g of peppercorns as above, and place them in a heatproof bowl.",
+      "Heat 250 ml of oil to 160–170 °C (a chopstick dipped in the oil should sizzle immediately).",
+      "Pour the hot oil over the peppercorns in two stages, letting the bubbles subside between pours.",
+      "Wait 10 minutes, then stir in a pinch of salt. Strain and bottle once fully cool.",
+    ] },
+    { type: "note", text: "Never let the oil smoke during the hot pour — high heat destroys the numbing compounds and turns the oil bitter. When in doubt, go with the cold steep." },
+    { type: "h2", text: "How mapo tofu uses it" },
+    { type: "p", text: "In mapo tofu, the peppercorn oil appears twice. A little goes into the sauce while it simmers, and a final spoonful is drizzled over the top just before serving so the numbness hits first. Home cooks can cheat the second step: keep a bottle of cold-steeped peppercorn oil in the pantry and finish any Sichuan-style stir-fry with a teaspoon of it." },
+    { type: "h2", text: "How to store it" },
+    { type: "ul", items: [
+      "Keep it in a cool, dark place, away from the stove.",
+      "Use a clean, dry spoon every time — moisture is what turns infused oils rancid.",
+      "Cold-steeped oil keeps for about a month; hot-poured oil is best within two to three weeks.",
+    ] },
+    { type: "h2", text: "The thirty-second test" },
+    { type: "p", text: "Dip a clean chopstick into your oil and touch it to the tip of your tongue. You should feel a gentle, spreading buzz that fades within a minute. If you feel only oil, the heat was too high or the peppercorns were old. If it burns, those were chilis, not Sichuan peppercorns." },
+  ],
+  bodyZh: [
+    { type: "p", text: "花椒油是川菜里安静的主力。一道菜可以又辣又咸又香，但少了舌尖那一阵细密的麻，总觉得没到位。那一阵麻，正是这瓶油给的。" },
+    { type: "h2", text: "为什么花椒不是「胡椒」" },
+    { type: "p", text: "虽然叫花椒，但它是芸香科花椒树的干果壳，和黑胡椒没有亲戚关系。它含羟基-α-山椒素，带来的是麻酥酥的震颤而不是辣。这股麻——也就是「麻婆豆腐」里那个「麻」——是川味的脊梁，而油是它最好的载体。" },
+    { type: "h2", text: "选对花椒" },
+    { type: "ul", items: [
+      "红花椒：经典款，柑橘香气强、麻感足，做麻婆豆腐和红烧菜首选。",
+      "青花椒：更清新、带草本气息，麻感稍弱，西南一带的鱼和鸡常用。",
+      "藤椒：嫩绿的花椒果，香气细腻带花香，适合快速浸油和凉菜。",
+    ] },
+    { type: "p", text: "第一次做建议买整粒红花椒，来源要靠谱。花椒粉放几周就没香味了，而且滤不出一瓶干净的油。" },
+    { type: "h2", text: "做法一：冷泡" },
+    { type: "p", text: "冷泡最稳，能在常温下慢慢把香味泡进油里，什么都不会糊，成品清澈优雅。" },
+    { type: "ol", items: [
+      "取 30 克整粒红花椒，干锅小火焙 60–90 秒，刚闻到柑橘香就停，千万别冒烟。",
+      "放凉后，用刀侧或杵轻轻压裂一部分，留一些整粒让油里有料。",
+      "放进干净干燥的玻璃罐，倒入 250 毫升中性油（菜籽油或葵花籽油都行）。",
+      "盖紧，室温静置 24–48 小时，中间摇一两次。",
+      "用垫了纱布的细筛过滤装瓶。油体清亮，麻感干净持久。",
+    ] },
+    { type: "h2", text: "做法二：热激" },
+    { type: "p", text: "热激是川菜馆的主流做法：油烧热，浇下去，让滋啦声干活。更快更香，但也更容易翻车。" },
+    { type: "ol", items: [
+      "花椒如上焙香、轻压裂，放进耐热碗里。",
+      "250 毫升油烧到 160–170 °C（筷子伸进去立刻冒细泡）。",
+      "分两次浇到花椒上，等泡沫消下去再浇第二遍。",
+      "等 10 分钟，撒一小撮盐搅匀，完全放凉后过滤装瓶。",
+    ] },
+    { type: "note", text: "热激时千万不能让油冒烟——高温会把麻味物质烧光，油还会发苦。拿不准就选冷泡。" },
+    { type: "h2", text: "麻婆豆腐里怎么用" },
+    { type: "p", text: "麻婆豆腐里花椒油出现两次：煮酱汁时放一点，起锅前再淋一勺，让麻味先到。家庭做法可以偷懒：厨房常备一瓶冷泡花椒油，任何川式小炒出锅前补一小勺就行。" },
+    { type: "h2", text: "怎么存放" },
+    { type: "ul", items: [
+      "放阴凉避光处，离灶台远一点。",
+      "每次用干净干燥的勺子——水汽是油变哈喇的头号原因。",
+      "冷泡油大约能放一个月，热激油最好两三周内用完。",
+    ] },
+    { type: "h2", text: "三十秒自测" },
+    { type: "p", text: "用干净筷子蘸一点油，碰一下舌尖。应该有扩散开的、细细的麻，一分钟内消退。只尝到油味，说明火大了或花椒陈了；如果发辣，那是辣椒，不是花椒。" },
+  ],
+  faq: [
+    {
+      qEn: "Can I use regular black pepper instead of Sichuan peppercorns?",
+      qZh: "能用黑胡椒代替花椒吗？",
+      aEn: "No. Black pepper adds heat and sharpness; Sichuan peppercorns add the numbing tingle. They are not interchangeable, and dishes like mapo tofu need the real thing.",
+      aZh: "不能。黑胡椒提供辣和冲，花椒提供麻。两者完全不能互换，麻婆豆腐这类菜必须用真花椒。",
+    },
+    {
+      qEn: "How long does homemade Sichuan peppercorn oil last?",
+      qZh: "自制花椒油能放多久？",
+      aEn: "Cold-steeped oil keeps about a month in a cool, dark place; hot-poured oil is best within two to three weeks. Always use a clean, dry spoon to avoid introducing moisture.",
+      aZh: "冷泡油在阴凉避光处大约能放一个月，热激油最好两三周内用完。每次都要用干净干燥的勺子，避免带入水汽。",
+    },
+    {
+      qEn: "Which Sichuan peppercorns are the most numbing?",
+      qZh: "哪种花椒最麻？",
+      aEn: "Red Sichuan peppercorns from Hanyuan or Maoxian in Sichuan are prized for their strong numbing and citrus aroma. Green peppercorns and tengjiao are more aromatic but milder.",
+      aZh: "四川汉源、茂县产的红花椒以麻感强、柑橘香浓著称。青花椒和藤椒香气更细，但麻感偏柔和。",
+    },
+  ],
+};
+
 const lightVsDarkSoy: BlogPost = {
   id: "light-vs-dark-soy-sauce",
   slug: "light-vs-dark-soy-sauce",
@@ -4809,6 +4929,7 @@ const oysterSauceUmami: BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  sichuanPeppercornOil,
   oysterSauceUmami,
   sichuanPeppercornNumbing,
   bambooShootsFreshVsCanned,
