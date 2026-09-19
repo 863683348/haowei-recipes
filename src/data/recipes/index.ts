@@ -405,6 +405,16 @@ import { korean_tofu_claypot } from "./korean-tofu-claypot";
 import { pork_cabbage_claypot } from "./pork-cabbage-claypot";
 import { vermicelli_shrimp_claypot } from "./vermicelli-shrimp-claypot";
 import { lap_cheong_rib_claypot } from "./lap-cheong-rib-claypot";
+import { hakka_stuffed_eggplant } from "./hakka-stuffed-eggplant";
+import { salted_fish_steamed_eggplant } from "./salted-fish-steamed-eggplant";
+import { preserved_vegetable_braised_eggplant } from "./preserved-vegetable-braised-eggplant";
+import { chopped_chili_steamed_eggplant } from "./chopped-chili-steamed-eggplant";
+import { yu_xiang_eggplant_claypot } from "./yu-xiang-eggplant-claypot";
+import { tiger_skin_pepper_stuffed_pork } from "./tiger-skin-pepper-stuffed-pork";
+import { garlic_oven_eggplant } from "./garlic-oven-eggplant";
+import { eggplant_stir_fried_green_beans } from "./eggplant-stir-fried-green-beans";
+import { eggplant_tofu_claypot } from "./eggplant-tofu-claypot";
+import { eggplant_minced_pork_congee } from "./eggplant-minced-pork-congee";
 import { ketchup_prawns } from "./ketchup-prawns";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -815,6 +825,16 @@ export const recipes: Recipe[] = [
   pork_cabbage_claypot,
   vermicelli_shrimp_claypot,
   lap_cheong_rib_claypot,
+  hakka_stuffed_eggplant,
+  salted_fish_steamed_eggplant,
+  preserved_vegetable_braised_eggplant,
+  chopped_chili_steamed_eggplant,
+  yu_xiang_eggplant_claypot,
+  tiger_skin_pepper_stuffed_pork,
+  garlic_oven_eggplant,
+  eggplant_stir_fried_green_beans,
+  eggplant_tofu_claypot,
+  eggplant_minced_pork_congee,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
