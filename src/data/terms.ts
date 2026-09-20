@@ -728,8 +728,56 @@ export const terms: Term[] = [
     substituteHint:
       "No true substitute — the flavor is unique. For approximation: soft-boiled egg with a pinch of baking soda (fidelity ~40%).",
     substituteHintZh: "无可替代——风味独特。近似替代：加一小撮小苏打的软煮蛋（还原度约40%）。",
-  }
-];
+  },
+  {
+    id: "salted-egg-yolk",
+    zh: "咸蛋黄",
+    pinyin: "xián dàn huáng",
+    en: "Salted duck egg yolk",
+    category: "ingredient",
+    definition: "Preserved duck egg yolk, salt-cured and fermented. Rich, sandy texture with intense umami.",
+    definitionZh: "腌制鸭蛋蛋黄，盐渍发酵。质地沙润，鲜味浓郁。",
+    quantEquivalent: "1 yolk ≈ 15 g",
+    substituteHint: "No salted egg yolk? Use 1 tbsp miso + 1 tbsp butter melted together.",
+    substituteHintZh: "没有咸蛋黄？用1汤匙味噌+1汤匙黄油融化。",
+  },
+  {
+    id: "seaweed",
+    zh: "紫菜",
+    pinyin: "zǐ cài",
+    en: "Dried seaweed (laver/nori)",
+    category: "ingredient",
+    definition: "Thin sheets of dried edible seaweed. Adds oceanic minerality and umami to soups and salads.",
+    definitionZh: "干燥食用海藻薄片。为汤和沙拉增添海洋矿物鲜味。",
+    quantEquivalent: "10g dried ≈ 100g rehydrated",
+    substituteHint: "Nori sheets can work in a pinch, but texture will differ.",
+    substituteHintZh: "紫菜片应急可用，但口感不同。",
+  },
+  {
+    id: "vermicelli",
+    zh: "粉丝",
+    pinyin: "fěn sī",
+    en: "Glass noodles (mung bean starch)",
+    category: "ingredient",
+    definition: "Translucent noodles made from mung bean starch. Absorbs flavors beautifully.",
+    definitionZh: "绿豆淀粉制成的透明粉丝。极吸味，口感 Q 弹。",
+    quantEquivalent: "50g dry ≈ 200g cooked",
+    substituteHint: "Rice noodles or cellophane noodles work as substitutes.",
+    substituteHintZh: "米粉或玻璃粉可替代。",
+  },
+  {
+    id: "tomato",
+    zh: "番茄",
+    pinyin: "fān qié",
+    en: "Tomato",
+    category: "ingredient",
+    definition: "Juicy, acidic fruit used as a vegetable. When cooked down, provides sweetness and umami depth.",
+    definitionZh: "多汁酸爽的水果，作蔬菜用。炖煮后提供甜味和鲜味深度。",
+    quantEquivalent: "1 medium ≈ 150g",
+    substituteHint: "Canned tomatoes work in a pinch; add a pinch of sugar to balance acidity.",
+    substituteHintZh: "罐头番茄应急可用；加一小撮糖平衡酸度。",
+  },
+  ]
 
 /** 术语查询工具 */
 export function getTermByKey(key: string): Term | undefined {

@@ -416,6 +416,16 @@ import { eggplant_stir_fried_green_beans } from "./eggplant-stir-fried-green-bea
 import { eggplant_tofu_claypot } from "./eggplant-tofu-claypot";
 import { eggplant_minced_pork_congee } from "./eggplant-minced-pork-congee";
 import { ketchup_prawns } from "./ketchup-prawns";
+import { scallion_steamed_clams } from "./scallion-steamed-clams";
+import { garlic_clam_with_chives } from "./garlic-clam-with-chives";
+import { white_wine_steamed_clams } from "./white-wine-steamed-clams";
+import { salted_egg_yolk_razor_clams } from "./salted-egg-yolk-razor-clams";
+import { seaweed_shrimp_soup } from "./seaweed-shrimp-soup";
+import { ginger_scallion_scallops } from "./ginger-scallion-scallops";
+import { salt_pepper_mantis_shrimp } from "./salt-pepper-mantis-shrimp";
+import { tomato_clam_soup } from "./tomato-clam-soup";
+import { scallion_razor_clams } from "./scallion-razor-clams";
+import { vermicelli_steamed_mussels } from "./vermicelli-steamed-mussels";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
 export const recipes: Recipe[] = [
@@ -835,6 +845,16 @@ export const recipes: Recipe[] = [
   eggplant_stir_fried_green_beans,
   eggplant_tofu_claypot,
   eggplant_minced_pork_congee,
+  scallion_steamed_clams,
+  garlic_clam_with_chives,
+  white_wine_steamed_clams,
+  salted_egg_yolk_razor_clams,
+  seaweed_shrimp_soup,
+  ginger_scallion_scallops,
+  salt_pepper_mantis_shrimp,
+  tomato_clam_soup,
+  scallion_razor_clams,
+  vermicelli_steamed_mussels,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
