@@ -4928,6 +4928,84 @@ const oysterSauceUmami: BlogPost = {
   ],
 };
 
+const glassNoodlesFenTiaoCookingGuide: BlogPost = {
+  id: "glass-noodles-fen-tiao-cooking-guide",
+  slug: "glass-noodles-fen-tiao-cooking-guide",
+  titleEn: "Glass Noodles and Fen Tiao: A Cook's Guide to Chinese Starch Noodles",
+  titleZh: "粉丝与粉条：中国淀粉面条完全指南",
+  excerptEn: "Fen tiao, fen si, and the translucent noodles in your hot pot are not interchangeable. Here is how each one is made, which dishes it belongs in, and how to cook it without turning it into paste.",
+  excerptZh: "粉条、粉丝、火锅里的透明粉，并不是同一种东西。本文讲清各自的原料、适用的菜品，以及如何下锅才不成糊。",
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["noodles", "ingredients", "technique", "chinese cooking"],
+  authorEn: "HaoWei Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-09-21",
+  coverImage: "/images/blog/glass-noodles-fen-tiao.jpg",
+  relatedRecipeSlugs: ["sweet-potato-vermicelli-hot-sour-soup", "ants-climbing-a-tree"],
+  bodyEn: [
+    { type: "p", text: "Walk into a Chinese supermarket and you will find shelves of translucent dried noodles that all look roughly alike. They behave nothing alike in the pan. Fen si, fen tiao, and the wide sweet potato starch sheets used in Sichuan cooking are made from different starches, and each starch gives a different chew, a different tolerance for liquid, and a different failure mode." },
+    { type: "h2", text: "The Three Families" },
+    { type: "p", text: "Nearly every Chinese starch noodle belongs to one of three families, named after the starch they are made from." },
+    { type: "ul", items: [
+      "Mung bean starch (lü dou fen): produces thin, delicate, very translucent noodles that soak up cold dressings beautifully and turn mushy fast when boiled. These are true fen si, the noodles in cold sesame salads.",
+      "Sweet potato starch (hong shu fen): produces fen tiao, thicker, opaque, with a distinct chewy resistance that survives long braises. This is the noodle in pork and pickled cabbage stews and most hot pot platters.",
+      "Potato or cassava starch: the cheapest input, common in mass-market products; the chew is flatter and the noodles soften without ever becoming gel-like.",
+    ]},
+    { type: "note", text: "Read the label, not the front of the bag — Packaging rarely distinguishes clearly between fen si and fen tiao. The ingredient list on the back almost always does: 绿豆淀粉 means mung bean, 红薯淀粉 means sweet potato, 马铃薯淀粉 means potato." },
+    { type: "h2", text: "Soaking vs Boiling" },
+    { type: "p", text: "The single most common mistake with these noodles is boiling them from dry. Almost all fen si and fen tiao benefit from a cold or warm soak first, which rehydrates them evenly and gives you control over the final texture." },
+    { type: "ol", items: [
+      "Soak thin mung bean fen si in hot water for 5-8 minutes until just pliable, then drain. Add them to the dish at the very end.",
+      "Soak sweet potato fen tiao in warm water for 30-60 minutes, or cold water for several hours, until they bend without snapping. They then braise without disintegrating.",
+      "Never soak noodles destined for deep frying. Dry noodles puff instantly in hot oil, and soaked ones will not.",
+    ]},
+    { type: "h2", text: "Matching the Noodle to the Dish" },
+    { type: "p", text: "Think about how much liquid and time a dish involves before you choose the starch. A cold sesame salad has no cooking time at all, so it wants the thin mung bean noodle that hydrates in five minutes. A two-hour braise has plenty of both, so it wants sweet potato fen tiao that will still have bite at the end." },
+    { type: "ul", items: [
+      "Cold dressed salads: thin mung bean fen si, soaked, never boiled.",
+      "Hot pot: sweet potato fen tiao, soaked, added two minutes before serving.",
+      "Braised stews, pork and pickled cabbage, chicken and mushroom: sweet potato fen tiao, added in the last fifteen minutes.",
+      "Stir-fried dishes such as ants climbing a tree: mung bean fen si, pre-soaked and drained, tossed quickly over high heat.",
+      "Soups with heavy broth, hot and sour soup: thin mung bean fen si, added off the heat.",
+    ]},
+    { type: "h2", text: "The Water Temperature Matters More Than the Time" },
+    { type: "p", text: "Starch noodles rarely go wrong because you soaked too long - they go wrong because you soaked in water that was too hot. Water at a rolling boil will gelatinise the outer layer while the core is still dry, and the result is a noodle that is simultaneously slimy outside and hard inside. Warm water and patience give you an even result every time." },
+    { type: "p", text: "If you have over-soaked a batch, do not throw it away. Rinse it in cold water to stop further hydration, drain thoroughly, toss it with a little oil, and give it a very fast pass through a hot wok. Recovered noodles work well in stir-fries even if they would no longer be right for a salad." },
+  ],
+  bodyZh: [
+    { type: "p", text: "走进任何一家华人超市，你都会看到一整排看着差不多的透明干粉条。它们下锅后的表现毫无相似之处。粉丝、粉条，以及川菜里那种宽的红薯粉皮，分别由不同淀粉制成，而不同淀粉带来的口感、耐汤能力和翻车方式各不相同。" },
+    { type: "h2", text: "三大门派" },
+    { type: "p", text: "几乎所有的中式淀粉面条都属于三大家族之一，按所用淀粉命名。" },
+    { type: "ul", items: [
+      "绿豆淀粉：做出细、脆、极其透亮的粉丝，非常适合凉拌吸味，但一煮就烂。这才是真正的粉丝，凉拌芝麻酱里的那种。",
+      "红薯淀粉：做出粉条，更粗、不透明，有明显的嚼劲，能扛住长时间炖煮。猪肉炖粉条、火锅拼盘里的就是它。",
+      "马铃薯或木薯淀粉：最便宜的原料，大量低价产品用它；嚼感更平，软化之后也始终达不到那种胶质弹性。",
+    ]},
+    { type: "note", text: "看配料表，别看包装正面 — 包装上很少清楚区分粉丝和粉条，但背面的配料表几乎总能告诉你答案：绿豆淀粉、红薯淀粉、马铃薯淀粉。" },
+    { type: "h2", text: "泡发还是直接煮" },
+    { type: "p", text: "这类面条最常见的错误，是直接下开水锅。几乎所有的粉丝和粉条都更适合先用冷水或温水浸泡，让它均匀复水，同时把最终口感的控制权拿回自己手里。" },
+    { type: "ol", items: [
+      "细绿豆粉丝用热水泡 5-8 分钟，软到微微能弯即可，捞出沥干，最后关头再下锅。",
+      "红薯粉条用温水泡 30-60 分钟，或用冷水泡数小时，泡到能弯不断。之后炖煮也不会散。",
+      "准备油炸的粉条千万不要泡。干粉条入热油会瞬间膨起，泡过的则不会。",
+    ]},
+    { type: "h2", text: "按菜选面" },
+    { type: "p", text: "在选淀粉之前，先想清楚这道菜有多少汤汁、需要多长烹饪时间。凉拌菜没有烹饪时间，所以要那种五分钟就泡开的细绿豆粉丝；两小时的炖菜两样都充裕，所以要那种到最后仍有嚼劲的红薯粉条。" },
+    { type: "ul", items: [
+      "凉拌菜：细绿豆粉丝，只泡不煮。",
+      "火锅：红薯粉条，泡软后，上桌前两分钟下锅。",
+      "炖菜，如猪肉炖粉条、小鸡炖蘑菇：红薯粉条，最后十五分钟加入。",
+      "蚂蚁上树这类炒菜：绿豆粉丝，先泡软沥干，大火快炒。",
+      "汤浓的汤品，如酸辣汤：细绿豆粉丝，关火后加入。",
+    ]},
+    { type: "h2", text: "水温比时间更关键" },
+    { type: "p", text: "淀粉面条很少是因为泡太久而失败——它们失败是因为水太热。滚水会让外层迅速糊化，而芯还是干的，结果就是外滑内硬。温水加耐心，才能每次都泡得均匀。" },
+    { type: "p", text: "如果一批泡过了头，别扔掉。用冷水冲洗终止继续吸水，彻底沥干，拌一点油，然后快速过一遍热锅。救回来的粉条做炒粉依然很好，虽然已经不适合凉拌了。" },
+  ],
+};
+
 export const blogPosts: BlogPost[] = [
   sichuanPeppercornOil,
   oysterSauceUmami,
@@ -4959,7 +5037,9 @@ export const blogPosts: BlogPost[] = [
     "relatedRecipeSlugs": [],
     "faq": []
   },
-  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast, charSiuSiuMeiGuide, taiwaneseLuRouFanGuide, chineseColdDishes];
+  oysterSauceGuide, hoisinVsSweetBeanSauce, homemadeChiliOil, blackVinegarZhenjiangVsShanxi, shaoxingWineBuyingGuide, firmVsSoftTofu, fermentedBeanCurdFuru, woodEarFungusGuide, sesamePasteGuide, condimentSubstitutions, doubanjiang101, marinatingMeat, tenSichuan, westernPantry, lightVsDarkSoy, makingCaramelSugarColor, driedChilies, tofuTypes, chineseNoodlesBuyersGuide, chineseRiceTypes, sesameOilUses, coldNoodleSauceRecipe, vinegarInChineseCooking, midAutumnFestivalDishes,   nationalDayFamilyFeast, charSiuSiuMeiGuide, taiwaneseLuRouFanGuide, chineseColdDishes,
+  glassNoodlesFenTiaoCookingGuide,
+];
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort(
     (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
