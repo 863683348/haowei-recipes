@@ -252,6 +252,41 @@ export default async function BlogPostPage({ params }: Props) {
           </section>
         )}
 
+        {/* P0-1：凉菜博客 ↔ 夏日节令 双向内链，消除 cannibalization 信号分散。
+            仅对凉菜合集文生效：把「怎么拼一桌」的读者导回「夏日凉菜菜单」聚合页。 */}
+        {post.slug === "chinese-cold-dishes-appetizers" && (
+          <section className="mt-14">
+            <h2 className="font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+              {isZh ? "夏天还想看更多凉菜？" : "More cold dishes for summer?"}
+            </h2>
+            <p className="mt-3 text-[var(--hw-fg-muted)]">
+              {isZh ? (
+                <>
+                  按节令整理的
+                  <Link
+                    href={localizePath("/occasion/summer", loc)}
+                    className="mx-1 font-medium text-[var(--hw-ginger)] underline underline-offset-2 hover:text-[var(--hw-ginger-dark)]"
+                  >
+                    夏日凉菜菜单
+                  </Link>
+                  收录了 15 道当季凉拌菜，按出场顺序排好，落座即上。
+                </>
+              ) : (
+                <>
+                  Browse our
+                  <Link
+                    href={localizePath("/occasion/summer", loc)}
+                    className="mx-1 font-medium text-[var(--hw-ginger)] underline underline-offset-2 hover:text-[var(--hw-ginger-dark)]"
+                  >
+                    summer cold-dish menu
+                  </Link>
+                  — 15 seasonal liang cai, sequenced for a banquet spread.
+                </>
+              )}
+            </p>
+          </section>
+        )}
+
         {/* 相关菜谱（内链 → 权重传递） */}
         {related.length > 0 && (
           <section className="mt-14">

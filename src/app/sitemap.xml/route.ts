@@ -3,7 +3,7 @@ import { blogPosts } from "@/data/blog";
 import { CUISINE_LIST } from "@/data/cuisines";
 import { TAG_LIST } from "@/data/tags";
 import { OCCASION_LIST } from "@/data/occasions";
-import { locales, SITE_URL } from "@/i18n/config";
+import { locales, defaultLocale, SITE_URL } from "@/i18n/config";
 
 /** sitemap.xml — 双语言 URL + hreflang alternates（route handler 手动缓存头） */
 export async function GET() {
@@ -58,21 +58,28 @@ export async function GET() {
     })),
   ];
 
+  // 每个 path × 每个 locale 各生成一条 <url>（<loc> 才是抓取入口）。
+  // ⚠️ xhtml:link 只是 hreflang 标注，不能替代 <loc>：
+  // 旧实现只输出 locales[0]（en）的 <loc>，导致 /zh/* 全部不进抓取队列。
   const urlset = paths
-    .map((u) => {
-      const alternates = locales
-        .map(
-          (loc) =>
-            `      <xhtml:link rel="alternate" hreflang="${loc}" href="${SITE_URL}/${loc}${u.path}" />`
-        )
-        .join("\n");
-      return `  <url>
-    <loc>${SITE_URL}/${locales[0]}${u.path}</loc>
+    .flatMap((u) =>
+      locales.map((self) => {
+        const alternates = [
+          ...locales.map(
+            (loc) =>
+              `    <xhtml:link rel="alternate" hreflang="${loc}" href="${SITE_URL}/${loc}${u.path}" />`
+          ),
+          `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/${defaultLocale}${u.path}" />`,
+        ].join("\n");
+        return `  <url>
+    <loc>${SITE_URL}/${self}${u.path}</loc>
     <lastmod>${u.lastmod}</lastmod>
     <changefreq>${u.freq}</changefreq>
+    <priority>${u.freq === "weekly" ? "0.8" : "0.6"}</priority>
 ${alternates}
   </url>`;
-    })
+      })
+    )
     .join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

@@ -80,6 +80,12 @@ export default async function OccasionPage({ params }: Props) {
   const list = getRecipesByOccasionSlug(occasion).map(toSearchItem);
   const count = list.length;
 
+  // P0-1：H1 与 SERP title 同源（剥掉「| HǎoWèi 好味」品牌后缀），使 h1/title 主题一致
+  const seoTitle = isZh ? def.seoTitleZh : def.seoTitleEn;
+  const h1Text = seoTitle
+    ? seoTitle.split("|")[0].trim()
+    : `${def.zh} ${def.en}`;
+
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -151,8 +157,14 @@ export default async function OccasionPage({ params }: Props) {
           </ol>
         </nav>
 
+        {/* P0-1：H1 必须与 SERP title 同源——h1 说「夏日清爽」而 title 说「凉菜菜单」时
+            主题信号冲突，是 11,348 曝光 / 排名 5.9 / 0 点击的直接成因。
+            有 seoTitle 时 h1 用 seoTitle（去掉品牌后缀「| HǎoWèi 好味」），否则回退「{zh} {en}」 */}
         <h1 className="font-serif text-3xl font-bold text-[var(--hw-fg)] sm:text-4xl">
-          {isZh ? def.zh : def.en} <span className="text-[var(--hw-fg-muted)]">{isZh ? def.en : def.zh}</span>
+          {h1Text}
+          <span className="mt-1 block text-base font-normal text-[var(--hw-fg-muted)]">
+            {isZh ? def.en : def.zh}
+          </span>
         </h1>
         <p className="mt-2 max-w-3xl text-[var(--hw-fg-muted)]">{isZh ? def.introZh : def.introEn}</p>
         {/* P0-1：zh summer 收割「凉菜菜单」意图——可见导语 + 内链到凉菜博客，把排名 2.46 的零点击查询接住 */}
@@ -164,7 +176,7 @@ export default async function OccasionPage({ params }: Props) {
               href={localizePath("/blog/chinese-cold-dishes-appetizers", loc)}
               className="mx-1 font-medium text-[var(--hw-ginger)] underline underline-offset-2 hover:text-[var(--hw-ginger-dark)]"
             >
-              《2026 夏令宴会凉菜菜单：15 道清爽开胃的凉拌菜》
+              《宴会凉菜怎么拼一桌：15 道凉拌菜的上桌顺序与搭配》
             </Link>
             。
           </p>

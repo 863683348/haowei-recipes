@@ -3177,12 +3177,12 @@ const miseEnPlaceBatchPrep: BlogPost = {
 const chineseColdDishes: BlogPost = {
   id: "chinese-cold-dishes-appetizers",
   slug: "chinese-cold-dishes-appetizers",
-  titleEn: "2026 Summer Banquet Cold Dish Menu: 15 Liang Cai That Wake Up the Palate",
-  titleZh: "2026 夏令宴会凉菜菜单：15 道清爽开胃的凉拌菜",
+  titleEn: "How to Build a Banquet Cold-Dish Spread: 15 Liang Cai, in Serving Order",
+  titleZh: "宴会凉菜怎么拼一桌：15 道凉拌菜的上桌顺序与搭配",
   excerptEn:
-    "A 15-dish liang cai cold-dish menu for summer banquets — the classics, why they work, and how to build a cold-dish plate that balances texture and punch. Make-ahead friendly.",
+    "How to build a banquet cold-dish spread — 15 liang cai sequenced by serving order and texture, with make-ahead timing so the plate lands the moment guests sit down.",
   excerptZh:
-    "2026 夏令宴会凉菜菜单：15 道清爽开胃的凉拌菜怎么做、怎么拼一桌——拍黄瓜、凉拌木耳、凉拌面等经典款，提前备好，落座即上。",
+    "宴会凉菜怎么拼一桌——15 道凉拌菜按上桌顺序与口感搭配排好，提前备好、落座即上，附拼盘思路与备菜节奏。",
   categoryKey: "recipes",
   categoryEn: "Recipes",
   categoryZh: "凉菜合集",
