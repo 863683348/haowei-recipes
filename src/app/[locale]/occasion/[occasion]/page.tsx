@@ -127,18 +127,24 @@ export default async function OccasionPage({ params }: Props) {
 
   // P0-2：正文扩充——每道菜一句话（菜系 / 用时 / 难度 / 主料全部由菜谱真实数据派生，不虚构），
   // 解决「聚合页排名高但正文薄」的错配（/zh/occasion/summer 曾仅 2,063 字符）
-  const dishLines = list.map((r) => ({
-    slug: r.slug,
-    name: isZh ? r.titleZh : r.titleEn,
-    line: isZh
-      ? `${r.timeMin} 分钟即可上桌，${
-          r.difficulty === "easy" ? "简单" : r.difficulty === "medium" ? "进阶" : "硬核"
-        }难度，主料：${r.ingredients.slice(0, 3).map((i) => i.nameZh).join("、")}。`
-      : `Ready in ${r.timeMin} min, ${r.difficulty} difficulty. Key ingredients: ${r.ingredients
-          .slice(0, 3)
-          .map((i) => i.nameEn)
-          .join(", ")}.`,
-  }));
+  const dishLines = list.map((r) => {
+    const extraZh = r.ingredients.slice(3, 6).map((i) => i.nameZh);
+    const extraEn = r.ingredients.slice(3, 6).map((i) => i.nameEn);
+    return {
+      slug: r.slug,
+      name: isZh ? r.titleZh : r.titleEn,
+      line: isZh
+        ? `${r.timeMin} 分钟即可上桌，${
+            r.difficulty === "easy" ? "简单" : r.difficulty === "medium" ? "进阶" : "硬核"
+          }难度，主料：${r.ingredients.slice(0, 3).map((i) => i.nameZh).join("、")}。属${r.cuisine
+            .split("/")[0]
+            .trim()}风味${extraZh.length ? `，其余用料：${extraZh.join("、")}` : ""}。`
+        : `Ready in ${r.timeMin} min, ${r.difficulty} difficulty. Key ingredients: ${r.ingredients
+            .slice(0, 3)
+            .map((i) => i.nameEn)
+            .join(", ")}.${extraEn.length ? ` Also calls for ${extraEn.join(", ")}.` : ""}`,
+    };
+  });
 
   const faqs = isZh
     ? [
@@ -154,6 +160,26 @@ export default async function OccasionPage({ params }: Props) {
           q: `一桌${name}配几道合适？`,
           a: "家常 4–6 道、宴客 8–12 道，按每人 1.5–2 道估算，再留一道冰甜的收尾就不会错。",
         },
+        {
+          q: "为什么我拌的凉菜容易出水？",
+          a: "两个原因：盐渍之后没有把水挤干，或者提前太久拌好、盐把食材里的水全逼了出来。记住「盐渍挤水、上桌前拌汁」八个字，出水量会明显减少。",
+        },
+        {
+          q: "没有芝麻酱、红油，可以用什么代替？",
+          a: "芝麻酱可以用花生酱加少量温水和香油澥开代替，香气略有不同但口感接近；红油可以直接用市售油泼辣子，或用干辣椒粉浇一勺热油自制。四种万能汁本来就是公式，手边有什么就用什么。",
+        },
+        {
+          q: "凉菜在室温下能放多久？",
+          a: "夏天室温超过 2 小时，风味和安全性都会打折扣，海鲜类尤其如此。宴席进行中建议分批上桌、大盘换小盘，吃不完的及时回冷藏，不要整盘放到散席。",
+        },
+        {
+          q: "吃不完的凉菜怎么处理？",
+          a: "叶菜和现拌瓜果类不建议隔夜，剩了就忍痛丢；卤味、泡发类密封冷藏可以再放一天，吃之前重新拌一次汁、补一点醋和香油，风味能找回来大半。",
+        },
+        {
+          q: "凉菜能凑成一整顿饭吗？",
+          a: "完全可以。两三道荤素凉菜配一个凉拌面或白粥，就是一顿清爽的夏日晚餐；怕不够饱再把其中一道换成卤味拼盘，蛋白质和主食就都齐了。",
+        },
       ]
     : [
         {
@@ -167,6 +193,26 @@ export default async function OccasionPage({ params }: Props) {
         {
           q: `How many dishes for a ${name.toLowerCase()} spread?`,
           a: "4–6 for a family dinner, 8–12 for guests — roughly 1.5–2 dishes per person, plus one icy-sweet finisher.",
+        },
+        {
+          q: "Why do my salads turn watery?",
+          a: "Two causes: not squeezing out the water after salting, or dressing too early so the salt pulls moisture out before serving. Salt, drain, then dress at the table — the pooling stops.",
+        },
+        {
+          q: "No sesame paste or chili oil on hand — substitutes?",
+          a: "Loosen peanut butter with warm water and a little sesame oil for a close-textured stand-in; use store-bought chili crisp, or bloom chili powder with a ladle of hot oil. The four dressings are formulas, not prescriptions.",
+        },
+        {
+          q: "How long can cold dishes sit at room temperature?",
+          a: "Past two hours in summer heat, both flavor and safety suffer — seafood especially. Serve in batches, swap large platters for smaller ones, and refrigerate leftovers promptly.",
+        },
+        {
+          q: "What about leftover cold dishes?",
+          a: "Leafy and freshly dressed salads are done — let them go. Braised and soaked items keep one more day sealed in the fridge; re-toss with a fresh splash of dressing and they bounce back.",
+        },
+        {
+          q: "Can cold dishes make a whole meal?",
+          a: "Absolutely. Two or three vegetable-and-meat cold dishes with a dressed noodle or plain congee is a clean summer dinner; swap one dish for a braised platter if you want more protein.",
         },
       ];
 
@@ -254,6 +300,11 @@ export default async function OccasionPage({ params }: Props) {
               ? `一桌凉菜的讲究不在「多」，而在顺序和口感层次：先用脆爽的菜打开胃口，中间安排一两道有分量的荤凉撑住场面，最后用冰凉清甜的收尾。这一桌 ${count} 道菜按「开胃 → 撑场 → 收尾」的思路自由组合即可，注意重口（蒜香、红油）与清淡（白灼、清拌）交错出现，互不抢味；每道菜之间最好再来点颜色上的呼应，绿配白、红配金，端上桌才有一桌菜的样子。人少挑 4–6 道，人多照单全收。`
               : `A good cold-dish spread is about sequencing, not quantity: crisp appetizers first, one or two substantial platters in the middle, an icy-sweet finisher at the end. Mix any ${count} dishes from this page following that arc, alternating bold flavors (garlic, chili oil) with clean ones (poached, lightly dressed) so nothing fights for attention — and echo the colors across the table, green against white, red against gold, so the spread looks composed rather than crowded. Pick 4–6 for a small table, take the whole list for a crowd.`}
           </p>
+          <p className="mt-3 leading-relaxed text-[var(--hw-fg-muted)]">
+            {isZh
+              ? `具体到排菜，三步就够：第一步从下面的菜名里挑 3–4 道脆爽素凉打头阵，一咬有声响的最开胃；第二步放有分量的荤凉和硬菜压场，数量控制在整桌三分之一左右，避免满桌皆肉；第三步用冰凉清甜的甜品或水果类收尾，把蒜味辣味从嘴里清干净。排完从头默走一遍，相邻两道不重味、不重色，这桌菜就成立了。份量按每人 1.5–2 道估算，宁少勿多——凉菜最大的底气是补得快，眼看要空再拌一盘来得及。`
+              : `To sequence concretely, three steps: first pick 3–4 crisp vegetable dishes to lead — the ones that crunch loudest open appetites best; next place the substantial meat platters, keeping them to about a third of the table so it never turns all-meat; finish with something icy and sweet to clear garlic and chili from the palate. Walk the table once in your head — as long as neighbors don't repeat flavor or color, it works. Estimate 1.5–2 dishes per person and err low: cold dishes can always be replenished fast.`}
+          </p>
 
           <h2 className="mt-10 font-serif text-2xl font-semibold text-[var(--hw-fg)]">
             {isZh ? "提前备菜时间表：最后一刻不用开火" : "Make-ahead timeline: no last-minute cooking"}
@@ -290,6 +341,81 @@ export default async function OccasionPage({ params }: Props) {
               ? "蒜泥汁（蒜 + 醋 + 糖 + 少量生抽）配瓜果类最提味；红油汁在蒜泥汁的基础上泼一勺热油激出香气，适合重口凉拌；麻酱汁（芝麻酱用温水澥开 + 蒜 + 醋）裹拌菜和面食都好使；捞汁（生抽 + 醋 + 糖 + 冰水 + 小米辣）最清爽，泡海鲜和素菜皆宜。备齐这四种汁，这一桌菜的底味就有了，临时加菜也不慌。"
               : "Garlic dressing (garlic, vinegar, sugar, a splash of soy) lifts anything with melon or leafy crunch; chili-oil dressing blooms that same garlic base with hot oil for bolder palates; sesame paste loosened with warm water, garlic, and vinegar coats salads and noodles alike; and lou shao — soy, vinegar, sugar, ice water, fresh chili — is the cleanest of the four, ideal for seafood and vegetables. With these four in the fridge, every dish on this page has its base flavor covered, and last-minute additions stop being a scramble."}
           </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {(isZh
+              ? [
+                  { n: "蒜泥汁", d: "蒜压成泥后清水泡 5 分钟再调味，冲味柔和、不发苦；配瓜果和叶菜，现调现用最香。" },
+                  { n: "红油汁", d: "在蒜泥汁上泼一勺约八成热的油激香，辣椒粉别焦；拌木耳、牛肉这类耐嚼的食材最压得住。" },
+                  { n: "麻酱汁", d: "芝麻酱分次加温水澥开到酸奶稠度，一次加多必结块；裹凉拌菜和凉面皆宜，最后补半勺醋解腻。" },
+                  { n: "捞汁", d: "生抽、醋、糖加冰水和小米辣，冰水占一半才够清爽；泡虾、泡素菜皆可，冷藏半小时风味最好。" },
+                ]
+              : [
+                  { n: "Garlic dressing", d: "Soak the minced garlic 5 minutes before seasoning to soften the bite; best on melons and leafy greens, and always mix fresh." },
+                  { n: "Chili-oil dressing", d: "Bloom the garlic base with oil at about 80% heat without scorching the flakes; stands up to chewy mushrooms and sliced beef." },
+                  { n: "Sesame dressing", d: "Whisk warm water into the paste a little at a time to a yogurt thickness — add too fast and it seizes; finish with half a spoon of vinegar." },
+                  { n: "Lou shao", d: "Soy, vinegar, sugar, ice water, fresh chili — ice water should be half the volume; poached shrimp and vegetables love it, best after 30 minutes chilled." },
+                ]
+            ).map((x) => (
+              <div key={x.n} className="rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-4">
+                <h3 className="font-semibold text-[var(--hw-fg)]">{x.n}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-[var(--hw-fg-muted)]">{x.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="mt-10 font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+            {isZh ? "常见翻车与补救：照着修就行" : "Common failures and quick fixes"}
+          </h2>
+          <ul className="mt-3 space-y-2 leading-relaxed text-[var(--hw-fg-muted)]">
+            {(isZh
+              ? [
+                  { t: "出水变塌", a: "盐渍过的瓜果类一定要挤干再拌；已经出水的倒掉汁水、补少许香油找回口感，下次记得酱汁上桌前再淋。" },
+                  { t: "太咸", a: "补一勺糖和醋把咸味压下去，或拌入焯过水的土豆片、黄瓜片吸盐，别直接加水——一加水就没法收拾了。" },
+                  { t: "不入味", a: "切薄切小增加接触面，拌好后静置 10 分钟再上桌；厚实的食材改「先腌后拌」两步走，入味就稳了。" },
+                  { t: "蒜味过冲", a: "蒜末先泡 5 分钟清水再进汁，生冲感立刻柔和；还要更温和就把蒜换成蒜片，香气在、刺激小。" },
+                  { t: "颜色发暗", a: "绿叶菜焯水后立刻过冰水，加几滴油保色；拌好的菜别久放，上桌前那一秒再淋汁，绿就是绿。" },
+                  { t: "辣度失控", a: "补糖补醋稀释辣感，或再加主料摊薄；油泼辣子只取红油不取辣椒渣，辣度直接降一档。" },
+                ]
+              : [
+                  { t: "Turns watery", a: "Always squeeze after salting; if it has already pooled, drain and re-toss with a little sesame oil, and dress at the table next time." },
+                  { t: "Too salty", a: "Balance with a spoon of sugar and vinegar, or fold in blanched potato and cucumber slices to absorb — never add water, it only spreads the damage." },
+                  { t: "Bland", a: "Cut thinner for more surface, rest 10 minutes after tossing, and marinate thick ingredients in two stages — season first, dress later." },
+                  { t: "Garlic too harsh", a: "Soak the minced garlic five minutes before it hits the dressing; for an even softer edge, use slices instead — aroma stays, bite goes." },
+                  { t: "Dull greens", a: "Shock blanched greens in ice water with a few drops of oil, and dress at the very last second so the green stays green." },
+                  { t: "Too spicy", a: "Add sugar and vinegar to round it out or bulk up the main ingredient; taking only the red oil and leaving the flakes drops the heat a level." },
+                ]
+            ).map((x) => (
+              <li key={x.t}>
+                <span className="font-medium text-[var(--hw-fg)]">{x.t}</span>
+                {isZh ? "：" : ": "}
+                {x.a}
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="mt-10 font-serif text-2xl font-semibold text-[var(--hw-fg)]">
+            {isZh ? "采购与备菜分组：一张购物清单怎么列" : "The shopping list, grouped the smart way"}
+          </h2>
+          <ul className="mt-3 space-y-2 leading-relaxed text-[var(--hw-fg-muted)]">
+            {(isZh
+              ? [
+                  { t: "当天买当天做", a: "叶菜、黄瓜、鲜虾这类水分足的食材隔夜口感掉最快，卡着开饭时间买最划算，买回流水冲净、冷藏待用。" },
+                  { t: "可提前 1–2 天", a: "莲藕、土豆等根茎类和菌菇耐放，提前处理干净密封冷藏；需要泡发的木耳、腐竹提前一晚泡上，当天直接调味。" },
+                  { t: "调料一次备齐", a: "香醋、生抽、芝麻香油、蒜、小米辣、芝麻酱、糖、辣椒油是这桌凉菜的基本盘，照上面四种万能汁的清单补齐，一整周的凉拌菜都不用再采购。" },
+                ]
+              : [
+                  { t: "Buy today, serve today", a: "Leafy greens, cucumbers, and fresh shrimp lose texture overnight — buy close to dinnertime, rinse, and hold in the fridge." },
+                  { t: "Keeps 1–2 days", a: "Root vegetables and mushrooms hold well; prep and seal ahead. Dried fungi and bean-curd skin soak the night before, ready to dress on the day." },
+                  { t: "Pantry once, all week", a: "Vinegar, soy, sesame oil, garlic, fresh chili, sesame paste, sugar, chili crisp cover every dressing on this page — stock them once and the whole week of cold dishes is covered." },
+                ]
+            ).map((x) => (
+              <li key={x.t}>
+                <span className="font-medium text-[var(--hw-fg)]">{x.t}</span>
+                {isZh ? "：" : ": "}
+                {x.a}
+              </li>
+            ))}
+          </ul>
 
           <h2 className="mt-10 font-serif text-2xl font-semibold text-[var(--hw-fg)]">
             {isZh ? "常见问题" : "FAQ"}
