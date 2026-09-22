@@ -426,6 +426,17 @@ import { salt_pepper_mantis_shrimp } from "./salt-pepper-mantis-shrimp";
 import { tomato_clam_soup } from "./tomato-clam-soup";
 import { scallion_razor_clams } from "./scallion-razor-clams";
 import { vermicelli_steamed_mussels } from "./vermicelli-steamed-mussels";
+import { pan_fried_tofu } from "./pan-fried-tofu";
+import { tofu_vegetable_stir_fry } from "./tofu-vegetable-stir-fry";
+import { mapo_frog_legs } from "./mapo-frog-legs";
+import { tofu_soup_with_egg } from "./tofu-soup-with-egg";
+import { tofu_pickle_stir_fry } from "./tofu-pickle-stir-fry";
+import { tofu_skewers_grilled } from "./tofu-skewers-grilled";
+import { tofu_mushroom_bowl } from "./tofu-mushroom-bowl";
+import { spicy_tofu_cubes } from "./spicy-tofu-cubes";
+import { tofu_broth_noodle } from "./tofu-broth-noodle";
+import { honey_soy_tofu } from "./honey-soy-tofu";
+import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
 export const recipes: Recipe[] = [
@@ -855,6 +866,17 @@ export const recipes: Recipe[] = [
   tomato_clam_soup,
   scallion_razor_clams,
   vermicelli_steamed_mussels,
+  pan_fried_tofu,
+  tofu_vegetable_stir_fry,
+  mapo_frog_legs,
+  tofu_soup_with_egg,
+  tofu_pickle_stir_fry,
+  tofu_skewers_grilled,
+  tofu_mushroom_bowl,
+  spicy_tofu_cubes,
+  tofu_broth_noodle,
+  honey_soy_tofu,
+  tofu_braised_eggplant,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
