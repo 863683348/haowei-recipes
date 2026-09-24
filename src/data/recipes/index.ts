@@ -436,6 +436,25 @@ import { tofu_mushroom_bowl } from "./tofu-mushroom-bowl";
 import { spicy_tofu_cubes } from "./spicy-tofu-cubes";
 import { tofu_broth_noodle } from "./tofu-broth-noodle";
 import { honey_soy_tofu } from "./honey-soy-tofu";
+import { beer_chicken_wings } from "./beer-chicken-wings";
+import { braised_chicken_wings_luwei } from "./braised-chicken-wings-luwei";
+import { teriyaki_chicken_thighs } from "./teriyaki-chicken-thighs";
+import { pan_fried_chicken_thighs } from "./pan-fried-chicken-thighs";
+import { cilantro_beef_stir_fry } from "./cilantro-beef-stir-fry";
+import { black_pepper_beef } from "./black-pepper-beef";
+import { beef_with_gai_lan } from "./beef-with-gai-lan";
+import { chinese_chive_beef } from "./chinese-chive-beef";
+import { celery_beef_stir_fry } from "./celery-beef-stir-fry";
+import { scrambled_egg_beef } from "./scrambled-egg-beef";
+import { chu_hou_sauce_beef } from "./chu-hou-sauce-beef";
+import { clear_broth_daikon_beef } from "./clear-broth-daikon-beef";
+import { curry_beef_brisket } from "./curry-beef-brisket";
+import { daikon_beef_brisket } from "./daikon-beef-brisket";
+import { red_wine_beef_brisket } from "./red-wine-beef-brisket";
+import { shacha_beef_brisket } from "./shacha-beef-brisket";
+import { tofu_skin_beef_casserole } from "./tofu-skin-beef-casserole";
+import { tomato_beef_brisket } from "./tomato-beef-brisket";
+import { tomato_beef_noodles } from "./tomato-beef-noodles";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -877,6 +896,25 @@ export const recipes: Recipe[] = [
   tofu_broth_noodle,
   honey_soy_tofu,
   tofu_braised_eggplant,
+  beer_chicken_wings,
+  braised_chicken_wings_luwei,
+  teriyaki_chicken_thighs,
+  pan_fried_chicken_thighs,
+  cilantro_beef_stir_fry,
+  black_pepper_beef,
+  beef_with_gai_lan,
+  chinese_chive_beef,
+  celery_beef_stir_fry,
+  scrambled_egg_beef,
+  chu_hou_sauce_beef,
+  clear_broth_daikon_beef,
+  curry_beef_brisket,
+  daikon_beef_brisket,
+  red_wine_beef_brisket,
+  shacha_beef_brisket,
+  tofu_skin_beef_casserole,
+  tomato_beef_brisket,
+  tomato_beef_noodles,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
