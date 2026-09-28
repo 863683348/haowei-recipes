@@ -146,7 +146,9 @@ export default async function OccasionPage({ params }: Props) {
     };
   });
 
-  const faqs = isZh
+  // P0/P1：FAQ 按节令区分——summer 用凉菜 FAQ，mid-autumn 用中秋专属 FAQ，
+  // 其余节令不展示（避免凉菜 FAQ 串到中秋等无关场景，保证 FAQ 与页面主题一致）
+  const coldDishFaqs = isZh
     ? [
         {
           q: "凉菜可以提前一晚做好吗？",
@@ -216,6 +218,90 @@ export default async function OccasionPage({ params }: Props) {
         },
       ];
 
+  // 中秋专属 FAQ（mid-autumn 页面用，与凉菜 FAQ 区分，主题一致）
+  const midAutumnFaqsZh = [
+    {
+      q: "中秋家宴一般几道菜合适？",
+      a: "家常 6–8 道、宴客 10–12 道，按每人 1~1.5 道估算；必有一道寓意团圆的（整鱼或汤圆），一道压场硬菜（大闸蟹或红烧），其余用清爽时蔬平衡油腻。",
+    },
+    {
+      q: "大闸蟹怎么挑、怎么蒸？",
+      a: "选蟹壳青亮、肚脐凸出、提起有坠手感的，公蟹蟹膏更满；冷水上锅、肚皮朝上蒸 12–15 分钟，配姜醋蘸食去寒提鲜。",
+    },
+    {
+      q: "中秋除了月饼还能吃什么甜点？",
+      a: "杨枝甘露、芝麻/花生汤圆、桂花糖藕都是应景又不齁的收尾选择，寓意团圆，比单吃月饼更清爽。",
+    },
+    {
+      q: "团圆火锅怎么安排才不乱？",
+      a: "清汤或菌汤打底，先涮肉、再下菜、最后主食；蘸料自助各取所需，锅边摆一盘凉拌菜开胃，老人小孩都照顾得到。",
+    },
+    {
+      q: "中秋家宴能提前做哪些菜？",
+      a: "卤味、莲藕排骨汤、凉拌菜可提前半天准备；大闸蟹、清蒸海鲜和绿叶菜现做现吃最鲜，别提前下锅。",
+    },
+    {
+      q: "月饼太甜配什么茶？",
+      a: "普洱或乌龙最解腻，绿茶清口；咸口月饼配红茶，流心奶黄配陈年普洱最佳，一口茶一口饼刚好。",
+    },
+    {
+      q: "中秋家宴剩菜怎么处理？",
+      a: "螃蟹隔夜不食、叶菜凉菜直接丢弃；汤菜煮沸放凉再存，硬菜回锅时加少许水防止干柴，海鲜类尽量当顿吃完。",
+    },
+  ];
+  const midAutumnFaqsEn = [
+    {
+      q: "How many dishes for a Mid-Autumn feast?",
+      a: "6–8 for family, 10–12 for guests — about 1–1.5 dishes per person. Always include one reunion-symbol dish (whole fish or tangyuan) and one showpiece (hairy crab or a braise), balanced by light vegetables.",
+    },
+    {
+      q: "How to choose and steam hairy crab?",
+      a: "Pick crabs with a bright shell and a raised belly button (males have fuller roe); steam belly-up in cold water 12–15 minutes and dip in ginger-vinegar to cut the cold and lift the sweetness.",
+    },
+    {
+      q: "What desserts beyond mooncakes?",
+      a: "Mango pomelo sago, sesame or peanut tangyuan, and osmanthus lotus root are all in-season, reunion-symbolic finishes that are lighter than another mooncake.",
+    },
+    {
+      q: "How to run a reunion hot pot without chaos?",
+      a: "A mild broth base; meat first, then vegetables, then starch; self-serve dipping sauces so everyone gets what they like; a cold dish on the side to open appetites.",
+    },
+    {
+      q: "What can be prepped ahead for the feast?",
+      a: "Braises, lotus-root pork-rib soup, and cold dishes can be done half a day ahead; crab, steamed seafood, and leafy greens are best cooked to order.",
+    },
+    {
+      q: "What tea with sweet mooncakes?",
+      a: "Aged pu-erh or oolong cuts the grease best, green tea refreshes; savory mooncakes pair with black tea and custard lava with aged pu-erh — a bite of tea, a bite of cake.",
+    },
+    {
+      q: "How to handle leftovers?",
+      a: "No crab overnight and toss leafy cold dishes; reboil soups before storing; revive braises with a splash of water so they don't dry out; finish seafood the same day.",
+    },
+  ];
+
+  const faqs =
+    def.slug === "summer"
+      ? coldDishFaqs
+      : def.slug === "mid-autumn"
+      ? isZh
+        ? midAutumnFaqsZh
+        : midAutumnFaqsEn
+      : [];
+
+  const faqJsonLd =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <>
       <script
@@ -226,6 +312,12 @@ export default async function OccasionPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <main className="mx-auto max-w-5xl px-4 py-10">
         {/* 可见面包屑 */}
         <nav aria-label="Breadcrumb" className="mb-4 text-xs text-[var(--hw-fg-muted)]">
@@ -261,7 +353,7 @@ export default async function OccasionPage({ params }: Props) {
         {/* P0-1：zh summer 收割「凉菜菜单」意图——可见导语 + 内链到凉菜博客，把排名 2.46 的零点击查询接住 */}
         {isZh && def.slug === "summer" && (
           <p className="mt-3 max-w-3xl rounded-xl border border-[var(--hw-border)] bg-[var(--hw-card)] p-4 text-sm text-[var(--hw-fg)]">
-            2026 夏日凉菜菜单：本页 15 道清爽开胃菜——拍黄瓜、凉拌木耳、白灼虾、杨枝甘露等，提前备好、落座即上。
+            2026 夏日凉菜菜单：本页 {count} 道清爽开胃菜——拍黄瓜、凉拌木耳、白灼虾、杨枝甘露等，提前备好、落座即上。
             想系统学凉菜怎么拼一桌，看
             <Link
               href={localizePath("/blog/chinese-cold-dishes-appetizers", loc)}

@@ -265,6 +265,32 @@ export const faqs: FAQ[] = [
     source: "HǎoWèi beginner path",
     confidence: "high",
   },
+  {
+    id: "faq-eggplant-prep",
+    category: "ingredient",
+    question: "How do I keep eggplant from soaking up all the oil?",
+    questionZh: "炒茄子怎么不吸油？",
+    keywords: ["eggplant", "braised eggplant", "stir-fried eggplant", "yu xiang eggplant", "hong shao eggplant", "茄子", "红烧茄子"],
+    answer:
+      "Two tricks: salt the cut eggplant and let it sit 10–15 minutes, then squeeze out the water — this collapses the spongy structure that drinks oil. Or microwave or steam it briefly first so it's half-cooked before it hits the pan. Either way it stays creamy inside with far less grease.",
+    answerZh:
+      "两招：切好的茄子撒盐腌 10–15 分钟，挤掉水分，破坏吸油的疏松结构；或者下锅前先微波或蒸到半熟。这样茄子内部软糯，用油量少一大半。",
+    source: "HǎoWèi vegetable guide",
+    confidence: "high",
+  },
+  {
+    id: "faq-vermicelli-sandpot",
+    category: "ingredient",
+    question: "How do you cook vermicelli (glass noodles) in a clay pot without it turning to mush?",
+    questionZh: "砂锅粉丝怎么煮不烂？",
+    keywords: ["vermicelli", "glass noodle", "sandpot", "claypot", "bean thread", "fen si", "粉丝", "砂锅"],
+    answer:
+      "Soak the dried vermicelli in warm water just until pliable (not fully soft) before adding — it finishes cooking in the broth. Add it last, give it only 2–3 minutes, and don't let it sit in liquid too long or it bloats and breaks. A clay pot holds heat well, so pull it off the flame the moment the noodles are tender.",
+    answerZh:
+      "干粉丝先用温水泡到刚软（别泡透），下锅后在汤里收尾；最后放，只煮 2–3 分钟，别久泡否则发胀断条。砂锅保温强，粉丝一软就离火。",
+    source: "HǎoWèi clay-pot guide",
+    confidence: "high",
+  },
 ];
 
 /** FAQ 匹配引擎（规则版 R-05）：关键词命中 + 简单评分 */

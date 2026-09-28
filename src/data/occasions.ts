@@ -50,6 +50,13 @@ export const OCCASION_LIST: OccasionDef[] = [
     slug: "mid-autumn",
     zh: "中秋家宴",
     en: "Mid-Autumn Festival",
+    // P1：中秋页标题升级——命中「中秋家宴菜单」高展示查询，带年份/道数/食材词（大闸蟹·月饼·汤圆）
+    seoTitleZh: "2026 中秋家宴菜单：23 道团圆菜（大闸蟹·月饼·汤圆）",
+    seoTitleEn: "2026 Mid-Autumn Family Feast Menu: 23 Reunion Dishes (Hairy Crab, Mooncake, Tangyuan)",
+    seoDescZh:
+      "2026 中秋家宴怎么安排：清蒸大闸蟹、莲藕排骨汤、团圆火锅、杨枝甘露等 23 道团圆菜——从凉菜到硬菜的上桌顺序、大闸蟹挑选与蒸法、月饼配茶全攻略。",
+    seoDescEn:
+      "Plan a 2026 Mid-Autumn family feast: steamed hairy crab, lotus-root pork-rib soup, reunion hot pot, mango pomelo sago and 23 reunion dishes — serving order, crab selection, and mooncake-tea pairings.",
     introEn:
       "A Mid-Autumn family table: steamed hairy crab, lotus-root pork-rib soup, steamed taro and a chilled pomelo sago — the classic pairings for the harvest moon, plus a bubbling reunion hot pot to gather everyone around.",
     introZh:
@@ -150,12 +157,13 @@ export const OCCASION_LIST: OccasionDef[] = [
     zh: "夏日清爽",
     en: "Summer Refreshing",
     // P0-1：收割「夏季宴会凉菜菜单」查询（GSC 09-10 报 2.46 名/63 展/0 点击），title 从「夏日清爽菜单」改为命中凉菜菜单意图
-    seoTitleZh: "2026 夏日凉菜菜单：15 道清爽开胃的凉拌菜",
-    seoTitleEn: "2026 Summer Cold Dish Menu: 15 Refreshing Chinese Liang Cai",
+    // P0：修正道数 15→16（与正文「共 N 道」一致）+ 补「宴客/聚餐/免开火」点击诱饵词，对齐高展示查询意图
+    seoTitleZh: "2026 夏日凉菜菜单：16 道清爽凉拌菜（宴客·聚餐·免开火）",
+    seoTitleEn: "2026 Summer Cold Dish Menu: 16 Refreshing Chinese Liang Cai (Party-Ready, No Stove)",
     seoDescZh:
-      "2026 夏日一桌凉菜怎么拼：拍黄瓜、凉拌木耳、白灼虾、杨枝甘露等 15 道清爽开胃菜谱——提前备好、落座即上，少开火不遭罪。",
+      "2026 夏日一桌凉菜怎么拼：拍黄瓜、口水鸡、凉拌木耳、白灼虾、杨枝甘露等 16 道清爽开胃凉拌菜——宴客聚餐提前备好、落座即上，30 分钟免开火上齐一桌，附上桌顺序与 4 种万能凉拌汁。",
     seoDescEn:
-      "A 15-dish summer cold dish (liang cai) menu: smashed cucumber, wood-ear salad, poached shrimp, mango pomelo sago and more — make-ahead, minimal stove time.",
+      "A 16-dish summer cold dish (liang cai) menu: smashed cucumber, poached shrimp, mango pomelo sago and more — party-ready, make-ahead, on the table in 30 minutes with the stove off. With serving order and 4 master dressings.",
     introEn:
       "Light and cooling dishes for hot days: smashed cucumber, cold dressing salads, poached shrimp and no-cook sweets — minimal time at the stove.",
     introZh:
