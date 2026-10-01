@@ -465,6 +465,16 @@ import { lamb_glass_noodle_pot } from "./lamb-glass-noodle-pot";
 import { lamb_pilaf } from "./lamb-pilaf";
 import { angelica_ginger_lamb_soup } from "./angelica-ginger-lamb-soup";
 import { sour_soup_lamb } from "./sour-soup-lamb";
+import { braised_fish_cubes } from "./braised-fish-cubes";
+import { sweet_sour_carp } from "./sweet-sour-carp";
+import { dry_braised_crucian } from "./dry-braised-crucian";
+import { sauce_braised_croaker } from "./sauce-braised-croaker";
+import { pan_fried_hairtail } from "./pan-fried-hairtail";
+import { scallion_oil_turbot } from "./scallion-oil-turbot";
+import { tomato_fish_slices } from "./tomato-fish-slices";
+import { salt_pepper_croaker } from "./salt-pepper-croaker";
+import { stir_fried_shrimp } from "./stir-fried-shrimp";
+import { broccoli_shrimp } from "./broccoli-shrimp";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -935,6 +945,16 @@ export const recipes: Recipe[] = [
   lamb_pilaf,
   angelica_ginger_lamb_soup,
   sour_soup_lamb,
+  braised_fish_cubes,
+  sweet_sour_carp,
+  dry_braised_crucian,
+  sauce_braised_croaker,
+  pan_fried_hairtail,
+  scallion_oil_turbot,
+  tomato_fish_slices,
+  salt_pepper_croaker,
+  stir_fried_shrimp,
+  broccoli_shrimp,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
