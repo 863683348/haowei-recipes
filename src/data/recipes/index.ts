@@ -475,6 +475,16 @@ import { tomato_fish_slices } from "./tomato-fish-slices";
 import { salt_pepper_croaker } from "./salt-pepper-croaker";
 import { stir_fried_shrimp } from "./stir-fried-shrimp";
 import { broccoli_shrimp } from "./broccoli-shrimp";
+import { shrimp_with_silky_eggs } from "./shrimp-with-silky-eggs";
+import { salt_pepper_whole_shrimp } from "./salt-pepper-whole-shrimp";
+import { cucumber_shrimp } from "./cucumber-shrimp";
+import { asparagus_shrimp } from "./asparagus-shrimp";
+import { guota_tofu } from "./guota-tofu";
+import { iron_plate_tofu } from "./iron-plate-tofu";
+import { hakka_stuffed_tofu } from "./hakka-stuffed-tofu";
+import { three_delicacy_tofu_soup } from "./three-delicacy-tofu-soup";
+import { tomato_tofu } from "./tomato-tofu";
+import { enoki_tofu_clay_pot } from "./enoki-tofu-clay-pot";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -955,6 +965,16 @@ export const recipes: Recipe[] = [
   salt_pepper_croaker,
   stir_fried_shrimp,
   broccoli_shrimp,
+  shrimp_with_silky_eggs,
+  salt_pepper_whole_shrimp,
+  cucumber_shrimp,
+  asparagus_shrimp,
+  guota_tofu,
+  iron_plate_tofu,
+  hakka_stuffed_tofu,
+  three_delicacy_tofu_soup,
+  tomato_tofu,
+  enoki_tofu_clay_pot,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
