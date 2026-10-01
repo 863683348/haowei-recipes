@@ -455,6 +455,16 @@ import { shacha_beef_brisket } from "./shacha-beef-brisket";
 import { tofu_skin_beef_casserole } from "./tofu-skin-beef-casserole";
 import { tomato_beef_brisket } from "./tomato-beef-brisket";
 import { tomato_beef_noodles } from "./tomato-beef-noodles";
+import { tea_braised_beef } from "./tea-braised-beef";
+import { roast_lamb_chops } from "./roast-lamb-chops";
+import { cumin_lamb } from "./cumin-lamb";
+import { red_braised_lamb } from "./red-braised-lamb";
+import { radish_lamb_stew } from "./radish-lamb-stew";
+import { hand_torn_lamb } from "./hand-torn-lamb";
+import { lamb_glass_noodle_pot } from "./lamb-glass-noodle-pot";
+import { lamb_pilaf } from "./lamb-pilaf";
+import { angelica_ginger_lamb_soup } from "./angelica-ginger-lamb-soup";
+import { sour_soup_lamb } from "./sour-soup-lamb";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -915,6 +925,16 @@ export const recipes: Recipe[] = [
   tofu_skin_beef_casserole,
   tomato_beef_brisket,
   tomato_beef_noodles,
+  tea_braised_beef,
+  roast_lamb_chops,
+  cumin_lamb,
+  red_braised_lamb,
+  radish_lamb_stew,
+  hand_torn_lamb,
+  lamb_glass_noodle_pot,
+  lamb_pilaf,
+  angelica_ginger_lamb_soup,
+  sour_soup_lamb,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

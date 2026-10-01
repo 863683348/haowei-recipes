@@ -777,6 +777,49 @@ export const terms: Term[] = [
     substituteHint: "Canned tomatoes work in a pinch; add a pinch of sugar to balance acidity.",
     substituteHintZh: "罐头番茄应急可用；加一小撮糖平衡酸度。",
   },
+  /* ---------- 新补（Day 93 羊肉/牛肉主题） ---------- */
+  {
+    id: "cumin",
+    zh: "孜然",
+    pinyin: "zī rán",
+    en: "Cumin (zi ran)",
+    category: "spice",
+    definition:
+      "Earthy, nutty seeds essential to Northwest Chinese (Xinjiang) lamb dishes. Toasted and coarsely ground, it defines the flavor of Chinese lamb skewers and cumin lamb.",
+    definitionZh: "西北（新疆）羊肉菜肴的灵魂香料，焙香粗磨，定义了中国羊肉串与孜然羊肉的风味。",
+    quantEquivalent: "1 tbsp ≈ 6 g",
+    substituteHint:
+      "No cumin? Use ground coriander plus a pinch of caraway; not identical but close in warmth.",
+    substituteHintZh: "无孜然可用香菜籽粉加少许葛缕子替代，香气近似。",
+  },
+  {
+    id: "black-tea",
+    zh: "红茶",
+    pinyin: "hóng chá",
+    en: "Black tea (for braising)",
+    category: "ingredient",
+    definition:
+      "Strong brewed black tea used as a braising liquid for tea-smoked or tea-braised meats. Adds tannic depth and a mahogany color without sweetness.",
+    definitionZh: "浓泡红茶用作茶香肉类的卤汁，带来单宁的醇厚与红褐色泽，不甜。",
+    quantEquivalent: "2 tbsp leaves ≈ 1 cup brewed",
+    substituteHint:
+      "Earl Grey or any robust black tea works; avoid green/white tea which is too delicate.",
+    substituteHintZh: "可用伯爵茶或任意浓红茶；勿用绿茶/白茶，过于清淡。",
+  },
+  {
+    id: "angelica-root",
+    zh: "当归",
+    pinyin: "dāng guī",
+    en: "Angelica root (dang gui)",
+    category: "ingredient",
+    definition:
+      "Aromatic medicinal root from Chinese herbal tradition, classically paired with ginger and lamb in warming winter soups (dang gui sheng jiang yang rou tang).",
+    definitionZh: "中药芳香根，经典搭配生姜与羊肉，用于温补冬令汤（当归生姜羊肉汤）。",
+    quantEquivalent: "10–15 g per soup",
+    substituteHint:
+      "Omit if unavailable — the soup still works with extra ginger; do not substitute with other herbs.",
+    substituteHintZh: "买不到可省略，多加生姜即可；勿用其他草药替代。",
+  },
   ]
 
 /** 术语查询工具 */
@@ -925,6 +968,49 @@ export function searchTerms(query: string): Term[] {
     substituteHint:
       "Dry sherry or extra Shaoxing wine plus a pinch of salt.",
     substituteHintZh: "干雪利酒或少量绍兴酒加盐替代。",
+  },
+  /* ---------- 新补（Day 93 羊肉/牛肉主题） ---------- */
+  {
+    id: "cumin",
+    zh: "孜然",
+    pinyin: "zī rán",
+    en: "Cumin (zi ran)",
+    category: "spice",
+    definition:
+      "Earthy, nutty seeds essential to Northwest Chinese (Xinjiang) lamb dishes. Toasted and coarsely ground, it defines the flavor of Chinese lamb skewers and cumin lamb.",
+    definitionZh: "西北（新疆）羊肉菜肴的灵魂香料，焙香粗磨，定义了中国羊肉串与孜然羊肉的风味。",
+    quantEquivalent: "1 tbsp ≈ 6 g",
+    substituteHint:
+      "No cumin? Use ground coriander plus a pinch of caraway; not identical but close in warmth.",
+    substituteHintZh: "无孜然可用香菜籽粉加少许葛缕子替代，香气近似。",
+  },
+  {
+    id: "black-tea",
+    zh: "红茶",
+    pinyin: "hóng chá",
+    en: "Black tea (for braising)",
+    category: "ingredient",
+    definition:
+      "Strong brewed black tea used as a braising liquid for tea-smoked or tea-braised meats. Adds tannic depth and a mahogany color without sweetness.",
+    definitionZh: "浓泡红茶用作茶香肉类的卤汁，带来单宁的醇厚与红褐色泽，不甜。",
+    quantEquivalent: "2 tbsp leaves ≈ 1 cup brewed",
+    substituteHint:
+      "Earl Grey or any robust black tea works; avoid green/white tea which is too delicate.",
+    substituteHintZh: "可用伯爵茶或任意浓红茶；勿用绿茶/白茶，过于清淡。",
+  },
+  {
+    id: "angelica-root",
+    zh: "当归",
+    pinyin: "dāng guī",
+    en: "Angelica root (dang gui)",
+    category: "ingredient",
+    definition:
+      "Aromatic medicinal root from Chinese herbal tradition, classically paired with ginger and lamb in warming winter soups (dang gui sheng jiang yang rou tang).",
+    definitionZh: "中药芳香根，经典搭配生姜与羊肉，用于温补冬令汤（当归生姜羊肉汤）。",
+    quantEquivalent: "10–15 g per soup",
+    substituteHint:
+      "Omit if unavailable — the soup still works with extra ginger; do not substitute with other herbs.",
+    substituteHintZh: "买不到可省略，多加生姜即可；勿用其他草药替代。",
   },
 ];
   return terms.filter(
