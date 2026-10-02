@@ -485,6 +485,16 @@ import { hakka_stuffed_tofu } from "./hakka-stuffed-tofu";
 import { three_delicacy_tofu_soup } from "./three-delicacy-tofu-soup";
 import { tomato_tofu } from "./tomato-tofu";
 import { enoki_tofu_clay_pot } from "./enoki-tofu-clay-pot";
+import { tomato_velvet_beef } from "./tomato-velvet-beef";
+import { moo_shu_tofu } from "./moo-shu-tofu";
+import { tomato_beef_soup } from "./tomato-beef-soup";
+import { tomato_fish_ball_soup } from "./tomato-fish-ball-soup";
+import { tomato_tofu_soup } from "./tomato-tofu-soup";
+import { chinese_tomato_pasta } from "./chinese-tomato-pasta";
+import { tomato_beef_roll_pot } from "./tomato-beef-roll-pot";
+import { tomato_cauliflower } from "./tomato-cauliflower";
+import { tomato_potato_shreds } from "./tomato-potato-shreds";
+import { tomato_basa_fillet } from "./tomato-basa-fillet";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -975,6 +985,16 @@ export const recipes: Recipe[] = [
   three_delicacy_tofu_soup,
   tomato_tofu,
   enoki_tofu_clay_pot,
+  tomato_velvet_beef,
+  moo_shu_tofu,
+  tomato_beef_soup,
+  tomato_fish_ball_soup,
+  tomato_tofu_soup,
+  chinese_tomato_pasta,
+  tomato_beef_roll_pot,
+  tomato_cauliflower,
+  tomato_potato_shreds,
+  tomato_basa_fillet,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
