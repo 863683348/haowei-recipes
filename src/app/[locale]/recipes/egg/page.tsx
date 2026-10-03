@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "鸡蛋食谱合集（番茄炒蛋、蒸蛋、蛋花汤等12道）| HǎoWèi 好味"
-      : "Chinese Egg Recipes: Tomato & Egg, Steamed Egg, Egg Drop Soup & More | HǎoWèi 好味",
+      ? "鸡蛋食谱合集（番茄炒蛋、蒸蛋、蛋花汤等12道）"
+      : "Chinese Egg Recipes: Tomato & Egg, Steamed Egg, Egg Drop Soup & More",
     description: isZh
       ? "12 道中式鸡蛋家常做法：番茄炒蛋、虾仁蒸蛋、紫菜蛋花汤、卤蛋、鸡蛋灌饼……炒、蒸、煮、烙全都有，附水蛋比例与分步状态图。"
       : "12 Chinese egg recipes: tomato & egg, shrimp steamed egg, seaweed egg drop soup, lu dan braised eggs, egg-stuffed pancake — stir-fried, steamed, simmered. With egg-to-water ratios and step-by-step visual states.",

@@ -6,6 +6,8 @@ export const seafood_geda_soup: Recipe = {
   "slug": "seafood-geda-soup",
   "titleEn": "Seafood Geda Tang (Light & Briny Home-Style Dumpling Soup)",
   "titleZh": "海鲜疙瘩汤",
+  "seoTitleEn": "Geda Tang (海鲜疙瘩汤): Seafood Dough Drop Soup",
+  "seoTitleZh": "海鲜疙瘩汤：35 分钟家常疙瘩汤做法",
   "pinyin": "hǎi xiān gē da tāng",
   "cuisine": "家常",
   "cuisineEn": "Home-style",

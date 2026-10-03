@@ -78,6 +78,14 @@ export const OCCASION_LIST: OccasionDef[] = [
     slug: "national-day",
     zh: "国庆家宴",
     en: "National Day Family Feast",
+    // P1：国庆页对齐 summer/mid-autumn 规格——年份 + 道数（{count} 由真实入选菜谱数派生）+ 意图词（红烧·清蒸·免守灶台）
+    seoTitleZh: "2026 国庆家宴菜单：{count} 道硬菜（红烧·清蒸·免守灶台）",
+    seoTitleEn:
+      "2026 National Day Family Feast Menu: {count} Make-Ahead Dishes (Braises, Steamed Fish, No Last-Minute Cooking)",
+    seoDescZh:
+      "2026 国庆家宴怎么安排：可提前一天炖好的红烧硬菜、寓意有余的清蒸整鱼、老少都爱的手指食物——红烧肉、糖醋排骨、清蒸鲈鱼、白灼虾、叉烧等，附上桌顺序与备菜时间表，七天假期喂饱全家还不用全天守灶台。",
+    seoDescEn:
+      "Plan a 2026 National Day family feast: make-ahead red-braised dishes, a whole steamed fish for luck, and crowd-pleasing finger food — hong shao rou, sweet-and-sour ribs, steamed bass, white-boiled shrimp and char siu, with serving order and a make-ahead timeline so nobody lives at the stove.",
     introEn:
       "A seven-day holiday spread for National Day: make-ahead red-cooked braises, a whole steamed fish for luck, and crowd-pleasing finger food — feed the whole family without living at the stove.",
     introZh:

@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "豆腐食谱合集（麻婆豆腐、红烧豆腐、家常豆腐等）| HǎoWèi 好味"
-      : "Chinese Tofu Recipes: Mapo, Braised, Home-Style & More | HǎoWèi 好味",
+      ? "豆腐食谱合集（麻婆豆腐、红烧豆腐、家常豆腐等）"
+      : "Chinese Tofu Recipes: Mapo, Braised, Home-Style & More",
     description: isZh
       ? "中式豆腐家常做法：麻婆豆腐、红烧豆腐、家常豆腐、茄子豆角煲。豆腐怎么选、怎么切、怎么烧不碎，附豆腐种类指南与分步状态图。"
       : "Chinese tofu home recipes: mapo tofu, braised tofu, home-style tofu, eggplant & green bean casserole. How to pick, cut and cook tofu without breaking it — with a tofu types guide and step-by-step visual states.",

@@ -6,6 +6,8 @@ export const mango_pomelo_yang_zhi_gan_lu: Recipe = {
   "slug": "mango-pomelo-yang-zhi-gan-lu",
   "titleEn": "Mango Pomelo Sago (Yang Zhi Gan Lu)",
   "titleZh": "杨枝甘露",
+  "seoTitleEn": "Yang Zhi Gan Lu (Mango Pomelo Sago): Hong Kong Chilled Dessert",
+  "seoTitleZh": "杨枝甘露：港式芒果西柚西米露做法（35 分钟）",
   "pinyin": "yáng zhī gān lù",
   "cuisine": "甜品饮品",
   "cuisineEn": "Dessert & Beverage",

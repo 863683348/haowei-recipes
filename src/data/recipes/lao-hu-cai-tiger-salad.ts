@@ -6,6 +6,8 @@ export const lao_hu_cai_tiger_salad: Recipe = {
   "slug": "lao-hu-cai-tiger-salad",
   "titleEn": "Tiger Salad",
   "titleZh": "老虎菜",
+  "seoTitleEn": "Lao Hu Cai (Tiger Salad): Shredded Chili & Cilantro Salad",
+  "seoTitleZh": "老虎菜：15 分钟凉拌尖椒香菜（东北开胃小菜）",
   "pinyin": "lǎo hǔ cài",
   "cuisine": "汤羹凉菜",
   "cuisineEn": "Cold Dishes & Soups",

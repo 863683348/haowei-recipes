@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "鸡肉食谱合集（宫保鸡丁、可乐鸡翅、辣子鸡等10道）| HǎoWèi 好味"
-      : "Chinese Chicken Recipes: Kung Pao, Wings, Lazi Ji & 7 More | HǎoWèi 好味",
+      ? "鸡肉食谱合集（宫保鸡丁、可乐鸡翅、辣子鸡等10道）"
+      : "Chinese Chicken Recipes: Kung Pao, Wings, Lazi Ji & 7 More",
     description: isZh
       ? "10 道中式鸡肉家常做法：宫保鸡丁、可乐鸡翅、红烧鸡腿、歌乐山辣子鸡、藤椒鸡……炒、炸、炖、凉拌全都有，附腌肉要点与分步状态图。"
       : "10 Chinese chicken recipes: kung pao, coke wings, braised legs, ge le shan la zi ji, tengjiao chicken — stir-fried, fried, braised and cold. With marinating tips and step-by-step visual states.",

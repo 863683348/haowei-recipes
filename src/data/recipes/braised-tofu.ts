@@ -258,7 +258,8 @@ export const braised_tofu: Recipe = {
   "relatedSlugs": [
     "mapo-tofu",
     "home-style-tofu",
-    "egg-fried-rice"
+    "egg-fried-rice",
+    "braised-dried-tofu"
   ],
   "image": "/images/recipes/braised-tofu.webp"
 };

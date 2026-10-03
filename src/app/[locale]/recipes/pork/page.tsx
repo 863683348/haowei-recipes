@@ -70,8 +70,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "猪肉食谱合集（红烧肉、回锅肉、糖醋里脊等12道）| HǎoWèi 好味"
-      : "Chinese Pork Recipes: Hong Shao Rou, Twice-Cooked Pork & 10 More | HǎoWèi 好味",
+      ? "猪肉食谱合集（红烧肉、回锅肉、糖醋里脊等12道）"
+      : "Chinese Pork Recipes: Hong Shao Rou, Twice-Cooked Pork & 10 More",
     description: isZh
       ? "12 道中式猪肉家常做法：红烧肉、回锅肉、糖醋里脊、鱼香肉丝、京酱肉丝、梅菜扣肉……炒、烧、炖、蒸全都有，附腌肉要点与分步状态图。"
       : "12 Chinese pork recipes: hong shao rou, twice-cooked pork, sweet-and-sour ribs, yu-xiang pork, jing jiang pork, mei cai kou rou — stir-fried, braised, steamed. With marinating tips and step-by-step visual states.",

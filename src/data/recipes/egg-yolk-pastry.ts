@@ -6,6 +6,8 @@ export const egg_yolk_pastry: Recipe = {
   "slug": "egg-yolk-pastry",
   "titleEn": "Salted Egg Yolk Pastry (蛋黄酥)",
   "titleZh": "蛋黄酥",
+  "seoTitleEn": "Salted Egg Yolk Pastry (蛋黄酥): Flaky Chinese Pastry with Salted Yolk",
+  "seoTitleZh": "蛋黄酥：酥皮咸蛋黄点心做法（含油酥层次技巧）",
   "pinyin": "dàn huáng sū",
   "cuisine": "江浙点心",
   "cuisineEn": "Jiangsu-Zhejiang Dim Sum",
@@ -187,7 +189,7 @@ export const egg_yolk_pastry: Recipe = {
   "relatedSlugs": [
     "wife-cake",
     "peach-cake",
-    "开口笑"
+    "kai-kou-xiao"
   ],
   "image": "/images/recipes/egg-yolk-pastry.webp"
 };

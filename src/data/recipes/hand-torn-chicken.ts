@@ -153,7 +153,8 @@ export const hand_torn_chicken: Recipe = {
   ],
   "relatedSlugs": [
     "white-cut-chicken",
-    "white-cut-chicken-2"
+    "white-cut-chicken-2",
+    "lao-hu-cai-tiger-salad"
   ],
   "image": "/images/recipes/hand-torn-chicken.webp"
 };

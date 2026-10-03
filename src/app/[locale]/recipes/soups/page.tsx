@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "中式汤品食谱合集（蛋花汤、番茄蛋花汤、冬瓜排骨汤等）| HǎoWèi 好味"
-      : "Chinese Soup Recipes: Egg Drop, Winter Melon Rib Soup & More | HǎoWèi 好味",
+      ? "中式汤品食谱合集（蛋花汤、番茄蛋花汤、冬瓜排骨汤等）"
+      : "Chinese Soup Recipes: Egg Drop, Winter Melon Rib Soup & More",
     description: isZh
       ? "一锅好汤暖全家：紫菜蛋花汤、番茄蛋花汤、冬瓜排骨汤等中式家常汤品做法，附分步状态与火候参考。"
       : "Comforting Chinese soups for home cooks: seaweed egg drop soup, tomato egg drop soup, winter melon pork rib soup — with step-by-step visual states and heat guidance.",

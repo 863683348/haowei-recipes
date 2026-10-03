@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "牛肉食谱合集（西兰花炒牛肉、土豆炖牛肉、洋葱炒牛肉等）| HǎoWèi 好味"
-      : "Chinese Beef Recipes: Broccoli Beef, Potato Stew & More | HǎoWèi 好味",
+      ? "牛肉食谱合集（西兰花炒牛肉、土豆炖牛肉、洋葱炒牛肉等）"
+      : "Chinese Beef Recipes: Broccoli Beef, Potato Stew & More",
     description: isZh
       ? "中式牛肉家常做法：西兰花炒牛肉、青椒牛柳、洋葱炒牛肉、土豆炖牛肉。滑嫩牛肉的腌肉与油温诀窍，附分步状态图。"
       : "Chinese beef home recipes: beef & broccoli, green pepper beef, onion beef stir-fry, potato beef stew. Learn the velveting and wok-heat tricks for tender beef, with step-by-step visual states.",

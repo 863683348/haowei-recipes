@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "中式面食食谱合集（葱油拌面、番茄鸡蛋面、阳春面、炒饭等）| HǎoWèi 好味"
-      : "Chinese Noodle Recipes: Scallion Oil, Tomato Egg & More | HǎoWèi 好味",
+      ? "中式面食食谱合集（葱油拌面、番茄鸡蛋面、阳春面、炒饭等）"
+      : "Chinese Noodle Recipes: Yangchun Noodles, Scallion Oil, Tomato Egg & More",
     description: isZh
       ? "中式面食与主食家常做法：葱油拌面、番茄鸡蛋面、阳春面、扬州炒饭、葱油饼。面条怎么选、炒饭怎么粒粒分明，附面条选购指南与分步状态图。"
       : "Chinese noodles and staples: scallion oil noodles, tomato egg noodles, yangchun noodles, yangzhou fried rice, scallion pancakes. How to pick noodles and get wok-hei fried rice — with a noodles buyer's guide and step-by-step visual states.",

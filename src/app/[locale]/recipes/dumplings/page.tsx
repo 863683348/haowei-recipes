@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "饺子食谱合集（韭菜鸡蛋饺、白菜猪肉饺、酸汤水饺）| HǎoWèi 好味"
-      : "Chinese Dumpling Recipes: Chive Egg, Pork Cabbage & More | HǎoWèi 好味",
+      ? "饺子食谱合集（韭菜鸡蛋饺、白菜猪肉饺、酸汤水饺）"
+      : "Chinese Dumpling Recipes: Chive Egg, Pork Cabbage & More",
     description: isZh
       ? "中式饺子家常做法：韭菜鸡蛋饺、白菜猪肉饺、酸汤水饺。馅料怎么调不出水、饺子怎么包不破皮，附分步状态图。"
       : "Chinese dumpling home recipes: chive and egg, pork and cabbage, sour soup dumplings. How to keep the filling dry and the wrappers intact — with step-by-step visual states.",

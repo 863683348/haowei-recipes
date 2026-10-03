@@ -6,6 +6,8 @@ export const northern_cornmeal_gruel: Recipe = {
   "slug": "northern-cornmeal-gruel",
   "titleEn": "Northern Cornmeal Gruel (Yu Mi Hu)",
   "titleZh": "玉米糊",
+  "seoTitleEn": "Northern Cornmeal Gruel (玉米糊): Chinese Breakfast Porridge",
+  "seoTitleZh": "玉米糊：20 分钟北方早餐粥做法",
   "pinyin": "yù mǐ hú",
   "cuisine": "家常",
   "cuisineEn": "Home-style",

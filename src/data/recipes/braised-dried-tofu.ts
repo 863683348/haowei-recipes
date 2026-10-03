@@ -6,6 +6,8 @@ export const braised_dried_tofu: Recipe = {
   "slug": "braised-dried-tofu",
   "titleEn": "Braised Dried Tofu (Lu Dou Gan)",
   "titleZh": "卤豆干",
+  "seoTitleEn": "Braised Dried Tofu (卤豆干): Chinese Lu Wei Snack",
+  "seoTitleZh": "卤豆干：55 分钟家常卤味做法（可冷藏保存）",
   "pinyin": "lu dou gan",
   "cuisine": "江浙菜",
   "cuisineEn": "Jiangsu-Zhejiang",

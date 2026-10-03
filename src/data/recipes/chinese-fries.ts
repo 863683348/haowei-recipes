@@ -6,6 +6,8 @@ export const chinese_fries: Recipe = {
   "slug": "chinese-fries",
   "titleEn": "Chinese-Style French Fries (中式炸薯条)",
   "titleZh": "中式炸薯条",
+  "seoTitleEn": "Chinese French Fries (炸薯条): Crispy Double-Fried Potato Sticks",
+  "seoTitleZh": "中式炸薯条：两次油炸的酥脆做法（25 分钟）",
   "pinyin": "zhōng shì zhà shǔ tiáo",
   "cuisine": "家常",
   "cuisineEn": "Home-style",

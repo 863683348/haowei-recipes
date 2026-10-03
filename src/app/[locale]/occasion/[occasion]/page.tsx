@@ -40,9 +40,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   const count = getRecipesByOccasionSlug(occasion).length;
   // P0-1：SERP 专用 title/desc 优先（如 summer 命中「凉菜菜单」意图），无 seo 字段时回退默认「{zh}菜单」
-  const title = isZh
+  const rawTitle = isZh
     ? (def.seoTitleZh ?? `${def.zh}菜单`)
     : (def.seoTitleEn ?? `${def.en} Menu — Chinese Recipes`);
+  // {count} 占位 → 真实入选菜谱数（避免标题写死道数与页面实际不符）
+  const title = rawTitle.replace("{count}", String(count));
   const desc = isZh ? (def.seoDescZh ?? def.introZh) : (def.seoDescEn ?? def.introEn);
   const pageUrl = absoluteUrl(localizePath(`/occasion/${def.slug}`, loc));
   const imageUrl = absoluteUrl("/images/og-default.webp");
@@ -82,9 +84,13 @@ export default async function OccasionPage({ params }: Props) {
 
   // P0-1：H1 与 SERP title 同源（剥掉「| HǎoWèi 好味」品牌后缀），使 h1/title 主题一致
   const seoTitle = isZh ? def.seoTitleZh : def.seoTitleEn;
-  const h1Text = seoTitle
-    ? seoTitle.split("|")[0].trim()
-    : `${def.zh} ${def.en}`;
+  // 有 seoTitle 时 H1 与 SERP title 同源（剥品牌后缀），{count} 替换为真实道数；
+  // 无 seoTitle 时只取本语言名——下方 <span> 会渲染对侧语言名，
+  // 旧写法 `${def.zh} ${def.en}` 会让 H1 出现两次英文名（ISSUE-3 H1 重复）。
+  const h1Text = (seoTitle ? seoTitle.split("|")[0].trim() : isZh ? def.zh : def.en).replace(
+    "{count}",
+    String(count)
+  );
 
   const itemListJsonLd = {
     "@context": "https://schema.org",
@@ -280,6 +286,60 @@ export default async function OccasionPage({ params }: Props) {
     },
   ];
 
+  // 国庆专属 FAQ（national-day 页面用，与凉菜/中秋 FAQ 区分，保证 FAQ 与页面主题一致；假期窗口 10-01~10-07）
+  const nationalDayFaqsZh = [
+    {
+      q: "国庆家宴安排几道菜合适？",
+      a: "家常 6–8 道、宴客 10–12 道，按每人 1.5 道估算。一桌里至少一条整鱼寓意年年有余，再配一道能提前炖好的红烧硬菜压场，其余用清爽时蔬平衡油腻。",
+    },
+    {
+      q: "哪些菜可以提前一天做好？",
+      a: "红烧肉、糖醋排骨、卤味这类越放越入味，提前一天炖好冷藏、上桌前回锅收汁即可；清蒸鱼、白灼虾和绿叶菜必须现做，提前做好会腥会塌。",
+    },
+    {
+      q: "七天假期怎么安排才不累？",
+      a: "把硬菜分两天做：前一天炖两道红烧，当天只蒸鱼、白灼一道虾、炒两个青菜，全程开火不到一小时；不够吃再补一道凉拌菜，十分钟上桌。",
+    },
+    {
+      q: "招待客人荤素怎么配？",
+      a: "荤素按 6:4 配，硬菜控制在整桌三分之一，其余留给时蔬和豆制品；再留一道微辣的提味菜、一道清口凉菜，老人小孩都有能吃的。",
+    },
+    {
+      q: "家宴剩菜怎么处理？",
+      a: "红烧、卤味密封冷藏可放两天，回锅时加少许水防止发柴；海鲜和叶菜当顿吃完不要隔夜；汤菜煮沸放凉后再冷藏。",
+    },
+    {
+      q: "主食和甜点怎么收尾？",
+      a: "米饭最稳妥，也可以配葱油拌面或饺子；想讨彩头就煮一锅汤圆当甜点收尾，甜咸都有，一桌菜才算圆。",
+    },
+  ];
+  const nationalDayFaqsEn = [
+    {
+      q: "How many dishes for a National Day feast?",
+      a: "6–8 for a family dinner, 10–12 for guests — about 1.5 dishes per person. Include at least one whole fish for abundance and one make-ahead braise as the centerpiece, balanced by light vegetables.",
+    },
+    {
+      q: "What can be made a day ahead?",
+      a: "Red-braised pork, sweet-and-sour ribs and braised platters only improve overnight — cook them the day before, chill, and reduce the sauce at serving time. Steamed fish, poached shrimp and leafy greens must be cooked to order.",
+    },
+    {
+      q: "How do I feed everyone for a seven-day holiday without burning out?",
+      a: "Split the heavy dishes across two days: braise two red-cooked dishes the day before, then on the day just steam a fish, poach shrimp and stir-fry two greens — under an hour of stove time. Add a cold dish if the table needs more.",
+    },
+    {
+      q: "How should I balance meat and vegetables for guests?",
+      a: "About 60:40 meat to vegetables, with the showpiece dishes kept to a third of the table; the rest goes to greens and tofu. Add one mildly spicy dish and one clean cold dish so every guest finds something.",
+    },
+    {
+      q: "What about leftovers?",
+      a: "Braises keep two days sealed in the fridge — revive with a splash of water so they don't dry out. Finish seafood and leafy greens the same day; reboil soups before storing.",
+    },
+    {
+      q: "How to finish the meal — staples and dessert?",
+      a: "Rice is the safe choice, or scallion-oil noodles and dumplings. For a festive close, simmer a pot of tangyuan and serve it sweet as dessert — a proper ending to the spread.",
+    },
+  ];
+
   const faqs =
     def.slug === "summer"
       ? coldDishFaqs
@@ -287,6 +347,10 @@ export default async function OccasionPage({ params }: Props) {
       ? isZh
         ? midAutumnFaqsZh
         : midAutumnFaqsEn
+      : def.slug === "national-day"
+      ? isZh
+        ? nationalDayFaqsZh
+        : nationalDayFaqsEn
       : [];
 
   const faqJsonLd =

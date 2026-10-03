@@ -6,6 +6,8 @@ export const suan_la_fen_hot_and_sour_noodles: Recipe = {
   "slug": "suan-la-fen-hot-and-sour-noodles",
   "titleEn": "Suan La Fen (Hot & Sour Noodles)",
   "titleZh": "酸辣粉",
+  "seoTitleEn": "Suan La Fen (Hot & Sour Noodles): Sweet Potato Noodle Soup",
+  "seoTitleZh": "酸辣粉：红薯粉酸辣汤底做法（35 分钟）",
   "pinyin": "suān là fěn",
   "cuisine": "川菜",
   "cuisineEn": "Sichuan",

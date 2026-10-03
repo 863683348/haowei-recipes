@@ -54,7 +54,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `${recipe.titleEn} — an authentic ${cuisine} home recipe in ${recipe.timeMin} minutes. Bilingual ingredients, substitutions, and step-by-step state photos.`;
   const pageUrl = absoluteUrl(localizePath(`/recipes/${recipe.slug}`, loc));
   const imageUrl = absoluteUrl(recipe.image);
-  const fullTitle = t.metadata.recipeTitle.replace("{title}", seoTitle);
+  // 幂等：seoTitle 已自带 "Recipe" / "菜谱" 结尾时不再套模板，
+  // 否则模板「{title} Recipe」会产出 "… Soup Recipe Recipe"（ISSUE-4）
+  const templatedTitle = t.metadata.recipeTitle.replace("{title}", seoTitle);
+  const seoTitleHasSuffix = isZh ? /菜谱\s*$/.test(seoTitle) : /recipes?\s*$/i.test(seoTitle);
+  const fullTitle = seoTitleHasSuffix ? seoTitle : templatedTitle;
 
   return {
     title: fullTitle,

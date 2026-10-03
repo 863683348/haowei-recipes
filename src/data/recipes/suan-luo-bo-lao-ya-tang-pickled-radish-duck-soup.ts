@@ -177,7 +177,8 @@ export const suan_luo_bo_lao_ya_tang_pickled_radish_duck_soup: Recipe = {
     "配米饭与一碟红油同食——油脂恰能中和酸冽。"
   ],
   "relatedSlugs": [
-    "suan-cai-yu-hot-sour-fish-stew"
+    "suan-cai-yu-hot-sour-fish-stew",
+    "hongshao-pork"
   ],
   "image": "/images/recipes/suan-luo-bo-lao-ya-tang-pickled-radish-duck-soup.webp"
 };

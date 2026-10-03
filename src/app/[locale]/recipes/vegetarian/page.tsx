@@ -88,8 +88,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isZh = loc === "zh";
   return {
     title: isZh
-      ? "素食食谱合集（麻婆豆腐、蛋炒饭、拍黄瓜等17道）| HǎoWèi 好味"
-      : "Vegetarian Chinese Recipes: Mapo Tofu, Fried Rice & 15 More | HǎoWèi 好味",
+      ? "素食食谱合集（麻婆豆腐、蛋炒饭、拍黄瓜等17道）"
+      : "Vegetarian Chinese Recipes: Mapo Tofu, Fried Rice & 15 More",
     description: isZh
       ? "17 道中式素食家常做法：麻婆豆腐、蛋炒饭、拍黄瓜、蒜蓉油麦菜、酸辣土豆丝……无肉也满足，附素食主义友好标识与分步状态图。"
       : "17 vegetarian Chinese recipes: mapo tofu, egg fried rice, smashed cucumber, garlic romaine, spicy potato shreds — meatless and satisfying. With diet labels and step-by-step visual states.",

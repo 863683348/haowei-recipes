@@ -6,6 +6,8 @@ export const yangchun_noodles: Recipe = {
   "slug": "yangchun-noodles",
   "titleEn": "Yangchun Noodles (阳春面)",
   "titleZh": "阳春面",
+  "seoTitleEn": "Yangchun Noodles (阳春面): Plain Chinese Scallion Noodle Soup",
+  "seoTitleZh": "阳春面：清汤葱油面 20 分钟做法（上海本帮面）",
   "pinyin": "yáng chūn miàn",
   "cuisine": "淮扬菜",
   "cuisineEn": "Huaiyang",
