@@ -495,6 +495,16 @@ import { tomato_beef_roll_pot } from "./tomato-beef-roll-pot";
 import { tomato_cauliflower } from "./tomato-cauliflower";
 import { tomato_potato_shreds } from "./tomato-potato-shreds";
 import { tomato_basa_fillet } from "./tomato-basa-fillet";
+import { minced_pork_eggplant } from "./minced-pork-eggplant";
+import { soy_paste_eggplant } from "./soy-paste-eggplant";
+import { cold_dressed_eggplant } from "./cold-dressed-eggplant";
+import { oil_braised_eggplant } from "./oil-braised-eggplant";
+import { cheese_baked_eggplant } from "./cheese-baked-eggplant";
+import { thai_sour_spicy_eggplant } from "./thai-sour-spicy-eggplant";
+import { green_pepper_potato_shreds } from "./green-pepper-potato-shreds";
+import { salt_and_pepper_potatoes } from "./salt-and-pepper-potatoes";
+import { potato_braised_chicken } from "./potato-braised-chicken";
+import { curry_potatoes } from "./curry-potatoes";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -995,6 +1005,16 @@ export const recipes: Recipe[] = [
   tomato_cauliflower,
   tomato_potato_shreds,
   tomato_basa_fillet,
+  minced_pork_eggplant,
+  soy_paste_eggplant,
+  cold_dressed_eggplant,
+  oil_braised_eggplant,
+  cheese_baked_eggplant,
+  thai_sour_spicy_eggplant,
+  green_pepper_potato_shreds,
+  salt_and_pepper_potatoes,
+  potato_braised_chicken,
+  curry_potatoes,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
