@@ -505,6 +505,16 @@ import { green_pepper_potato_shreds } from "./green-pepper-potato-shreds";
 import { salt_and_pepper_potatoes } from "./salt-and-pepper-potatoes";
 import { potato_braised_chicken } from "./potato-braised-chicken";
 import { curry_potatoes } from "./curry-potatoes";
+import { potato_pancakes } from "./potato-pancakes";
+import { cheesy_mashed_potato } from "./cheesy-mashed-potato";
+import { braised_potatoes } from "./braised-potatoes";
+import { green_pepper_dried_tofu } from "./green-pepper-dried-tofu";
+import { smashed_peppers_lei_la_jiao } from "./smashed-peppers-lei-la-jiao";
+import { green_pepper_tofu_skin } from "./green-pepper-tofu-skin";
+import { dry_fried_beef_shreds } from "./dry-fried-beef-shreds";
+import { garlic_steamed_eggplant } from "./garlic-steamed-eggplant";
+import { hot_and_sour_kelp_shreds } from "./hot-and-sour-kelp-shreds";
+import { tiger_skin_chili } from "./tiger-skin-chili";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1015,6 +1025,16 @@ export const recipes: Recipe[] = [
   salt_and_pepper_potatoes,
   potato_braised_chicken,
   curry_potatoes,
+  potato_pancakes,
+  cheesy_mashed_potato,
+  braised_potatoes,
+  green_pepper_dried_tofu,
+  smashed_peppers_lei_la_jiao,
+  green_pepper_tofu_skin,
+  dry_fried_beef_shreds,
+  garlic_steamed_eggplant,
+  hot_and_sour_kelp_shreds,
+  tiger_skin_chili,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
