@@ -515,6 +515,16 @@ import { dry_fried_beef_shreds } from "./dry-fried-beef-shreds";
 import { garlic_steamed_eggplant } from "./garlic-steamed-eggplant";
 import { hot_and_sour_kelp_shreds } from "./hot-and-sour-kelp-shreds";
 import { tiger_skin_chili } from "./tiger-skin-chili";
+import { pickled_chili_eggs } from "./pickled-chili-eggs";
+import { colorful_pepper_pork } from "./colorful-pepper-pork";
+import { garlic_broccoli } from "./garlic-broccoli";
+import { garlic_baby_cabbage } from "./garlic-baby-cabbage";
+import { garlic_okra } from "./garlic-okra";
+import { garlic_vermicelli_enoki } from "./garlic-vermicelli-enoki";
+import { garlic_loofah } from "./garlic-loofah";
+import { garlic_snow_peas } from "./garlic-snow-peas";
+import { blanched_choy_sum } from "./blanched-choy-sum";
+import { superior_broth_baby_cabbage } from "./superior-broth-baby-cabbage";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1035,6 +1045,16 @@ export const recipes: Recipe[] = [
   garlic_steamed_eggplant,
   hot_and_sour_kelp_shreds,
   tiger_skin_chili,
+  pickled_chili_eggs,
+  colorful_pepper_pork,
+  garlic_broccoli,
+  garlic_baby_cabbage,
+  garlic_okra,
+  garlic_vermicelli_enoki,
+  garlic_loofah,
+  garlic_snow_peas,
+  blanched_choy_sum,
+  superior_broth_baby_cabbage,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
