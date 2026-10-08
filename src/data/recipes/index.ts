@@ -525,6 +525,16 @@ import { garlic_loofah } from "./garlic-loofah";
 import { garlic_snow_peas } from "./garlic-snow-peas";
 import { blanched_choy_sum } from "./blanched-choy-sum";
 import { superior_broth_baby_cabbage } from "./superior-broth-baby-cabbage";
+import { cold_bean_sprout_salad } from "./cold-bean-sprout-salad";
+import { cold_glass_noodle_salad } from "./cold-glass-noodle-salad";
+import { scallion_tofu_salad } from "./scallion-tofu-salad";
+import { cold_shredded_potato_salad } from "./cold-shredded-potato-salad";
+import { cold_lotus_root_slices } from "./cold-lotus-root-slices";
+import { cold_pig_ear_salad } from "./cold-pig-ear-salad";
+import { spinach_egg_soup } from "./spinach-egg-soup";
+import { winter_melon_meatball_soup } from "./winter-melon-meatball-soup";
+import { mushroom_chicken_soup } from "./mushroom-chicken-soup";
+import { crucian_carp_tofu_soup } from "./crucian-carp-tofu-soup";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1055,6 +1065,16 @@ export const recipes: Recipe[] = [
   garlic_snow_peas,
   blanched_choy_sum,
   superior_broth_baby_cabbage,
+  cold_bean_sprout_salad,
+  cold_glass_noodle_salad,
+  scallion_tofu_salad,
+  cold_shredded_potato_salad,
+  cold_lotus_root_slices,
+  cold_pig_ear_salad,
+  spinach_egg_soup,
+  winter_melon_meatball_soup,
+  mushroom_chicken_soup,
+  crucian_carp_tofu_soup,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
