@@ -535,6 +535,16 @@ import { spinach_egg_soup } from "./spinach-egg-soup";
 import { winter_melon_meatball_soup } from "./winter-melon-meatball-soup";
 import { mushroom_chicken_soup } from "./mushroom-chicken-soup";
 import { crucian_carp_tofu_soup } from "./crucian-carp-tofu-soup";
+import { chinese_borscht_soup } from "./chinese-borscht-soup";
+import { sweet_corn_cream_soup } from "./sweet-corn-cream-soup";
+import { west_lake_beef_soup } from "./west-lake-beef-soup";
+import { hot_and_sour_soup } from "./hot-and-sour-soup";
+import { yam_lean_pork_congee } from "./yam-lean-pork-congee";
+import { greens_congee } from "./greens-congee";
+import { pumpkin_congee } from "./pumpkin-congee";
+import { red_bean_congee } from "./red-bean-congee";
+import { eight_treasure_congee } from "./eight-treasure-congee";
+import { chicken_congee } from "./chicken-congee";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1075,6 +1085,16 @@ export const recipes: Recipe[] = [
   winter_melon_meatball_soup,
   mushroom_chicken_soup,
   crucian_carp_tofu_soup,
+  chinese_borscht_soup,
+  sweet_corn_cream_soup,
+  west_lake_beef_soup,
+  hot_and_sour_soup,
+  yam_lean_pork_congee,
+  greens_congee,
+  pumpkin_congee,
+  red_bean_congee,
+  eight_treasure_congee,
+  chicken_congee,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
