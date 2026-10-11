@@ -545,6 +545,16 @@ import { pumpkin_congee } from "./pumpkin-congee";
 import { red_bean_congee } from "./red-bean-congee";
 import { eight_treasure_congee } from "./eight-treasure-congee";
 import { chicken_congee } from "./chicken-congee";
+import { fish_fillet_congee } from "./fish-fillet-congee";
+import { millet_congee } from "./millet-congee";
+import { yam_red_date_congee } from "./yam-red-date-congee";
+import { qishan_saozi_noodles } from "./qishan-saozi-noodles";
+import { zha_cai_pork_noodles } from "./zha-cai-pork-noodles";
+import { snow_vegetable_pork_noodles } from "./snow-vegetable-pork-noodles";
+import { shiitake_chicken_noodles } from "./shiitake-chicken-noodles";
+import { beef_broth_noodles } from "./beef-broth-noodles";
+import { suan_cai_pork_noodles } from "./suan-cai-pork-noodles";
+import { henan_stewed_noodles } from "./henan-stewed-noodles";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1095,6 +1105,16 @@ export const recipes: Recipe[] = [
   red_bean_congee,
   eight_treasure_congee,
   chicken_congee,
+  fish_fillet_congee,
+  millet_congee,
+  yam_red_date_congee,
+  qishan_saozi_noodles,
+  zha_cai_pork_noodles,
+  snow_vegetable_pork_noodles,
+  shiitake_chicken_noodles,
+  beef_broth_noodles,
+  suan_cai_pork_noodles,
+  henan_stewed_noodles,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
