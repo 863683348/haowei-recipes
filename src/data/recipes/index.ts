@@ -555,6 +555,16 @@ import { shiitake_chicken_noodles } from "./shiitake-chicken-noodles";
 import { beef_broth_noodles } from "./beef-broth-noodles";
 import { suan_cai_pork_noodles } from "./suan-cai-pork-noodles";
 import { henan_stewed_noodles } from "./henan-stewed-noodles";
+import { hot_soup_noodles } from "./hot-soup-noodles";
+import { shrimp_fried_rice } from "./shrimp-fried-rice";
+import { beef_fried_rice } from "./beef-fried-rice";
+import { vegetable_fried_rice } from "./vegetable-fried-rice";
+import { curry_fried_rice } from "./curry-fried-rice";
+import { salted_fish_chicken_fried_rice } from "./salted-fish-chicken-fried-rice";
+import { cured_meat_fried_rice } from "./cured-meat-fried-rice";
+import { olive_vegetable_fried_rice } from "./olive-vegetable-fried-rice";
+import { salted_egg_yolk_fried_rice } from "./salted-egg-yolk-fried-rice";
+import { spare_rib_claypot_rice } from "./spare-rib-claypot-rice";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1115,6 +1125,16 @@ export const recipes: Recipe[] = [
   beef_broth_noodles,
   suan_cai_pork_noodles,
   henan_stewed_noodles,
+  hot_soup_noodles,
+  shrimp_fried_rice,
+  beef_fried_rice,
+  vegetable_fried_rice,
+  curry_fried_rice,
+  salted_fish_chicken_fried_rice,
+  cured_meat_fried_rice,
+  olive_vegetable_fried_rice,
+  salted_egg_yolk_fried_rice,
+  spare_rib_claypot_rice,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
