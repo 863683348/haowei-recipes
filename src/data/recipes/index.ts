@@ -565,6 +565,16 @@ import { cured_meat_fried_rice } from "./cured-meat-fried-rice";
 import { olive_vegetable_fried_rice } from "./olive-vegetable-fried-rice";
 import { salted_egg_yolk_fried_rice } from "./salted-egg-yolk-fried-rice";
 import { spare_rib_claypot_rice } from "./spare-rib-claypot-rice";
+import { salted_egg_pork_patty_claypot_rice } from "./salted-egg-pork-patty-claypot-rice";
+import { shiitake_chicken_clay_pot } from "./shiitake-chicken-clay-pot";
+import { eel_claypot_rice } from "./eel-claypot-rice";
+import { salted_fish_claypot_rice } from "./salted-fish-claypot-rice";
+import { roast_duck_claypot_rice } from "./roast-duck-claypot-rice";
+import { combo_claypot_rice } from "./combo-claypot-rice";
+import { milk_mantou } from "./milk-mantou";
+import { cornmeal_mantou } from "./cornmeal-mantou";
+import { purple_sweet_potato_mantou } from "./purple-sweet-potato-mantou";
+import { scallion_flower_rolls } from "./scallion-flower-rolls";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1135,6 +1145,16 @@ export const recipes: Recipe[] = [
   olive_vegetable_fried_rice,
   salted_egg_yolk_fried_rice,
   spare_rib_claypot_rice,
+  salted_egg_pork_patty_claypot_rice,
+  shiitake_chicken_clay_pot,
+  eel_claypot_rice,
+  salted_fish_claypot_rice,
+  roast_duck_claypot_rice,
+  combo_claypot_rice,
+  milk_mantou,
+  cornmeal_mantou,
+  purple_sweet_potato_mantou,
+  scallion_flower_rolls,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
