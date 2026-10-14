@@ -1,5 +1,269 @@
 import type { BlogPost } from "@/lib/types";
 
+const tenDumplingFillingsToFreeze: BlogPost = {
+  "id": "10-dumpling-fillings-to-freeze",
+  "slug": "10-dumpling-fillings-to-freeze",
+  "titleEn": "10 Dumpling Fillings to Freeze: A Make-Ahead Guide",
+  "titleZh": "10 种适合冷冻的饺子馅：一次包好，随吃随煮",
+  "excerptEn": "Ten dumpling filling ideas that stay juicy after freezing, with a moisture-control formula, tray-freezing method, and cooking notes for make-ahead dumplings.",
+  "excerptZh": "十种冷冻后仍多汁的饺子馅，附控水公式、平盘速冻方法，以及提前备饺子的烹煮要点。",
+  "categoryKey": "recipes",
+  "categoryEn": "Recipes",
+  "categoryZh": "菜谱",
+  "tags": [
+    "dumpling filling ideas",
+    "freezer dumplings",
+    "make ahead dumplings",
+    "chinese dumpling fillings",
+    "how to freeze dumplings",
+    "chinese recipes"
+  ],
+  "authorEn": "HǎoWèi Kitchen",
+  "authorZh": "好味厨房",
+  "publishDate": "2026-10-15",
+  "coverImage": "/images/recipes/pork-cabbage-dumplings.webp",
+  "relatedRecipeSlugs": [
+    "pork-cabbage-dumplings",
+    "chive-egg-dumplings",
+    "fresh-pork-wonton",
+    "vegetable-pork-large-wonton",
+    "fried-wontons",
+    "sour-soup-dumplings"
+  ],
+  "bodyEn": [
+    {
+      "type": "p",
+      "text": "Dumpling filling ideas are easy to collect and surprisingly easy to freeze badly. A reliable freezer dumpling filling needs controlled moisture, enough fat to stay tender, and vegetables that will not leak as the dumplings thaw in the pot. These ten Chinese dumpling fillings are built for make-ahead dumplings: each has a clear texture, ingredients that hold up in the freezer, and a reason it belongs in a batch rather than just on a wish list."
+    },
+    {
+      "type": "h2",
+      "text": "The freezer dumpling filling formula"
+    },
+    {
+      "type": "p",
+      "text": "Most fillings work when the mixture has protein or a firm vegetarian base, chopped vegetables, aromatics, seasoning, and a small amount of binding liquid. The difficult part is water. Cabbage, mushrooms, chives, and zucchini can release enough liquid to split wrappers or create ice crystals."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Salt watery vegetables separately, rest them for ten minutes, then squeeze them dry before mixing.",
+        "Stir meat filling in one direction until it looks tacky. The proteins bind water and help the filling stay together.",
+        "Cool every cooked component completely. Warm filling softens wrappers before the tray reaches the freezer.",
+        "Keep the final mixture spoonable, not pourable. Liquid pooling at the bottom means it needs more draining."
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Make one test dumpling before wrapping the batch. Pan-fry or boil it, taste the seasoning, and check whether liquid escapes when you cut it open."
+    },
+    {
+      "type": "h2",
+      "text": "10 dumpling filling ideas that freeze well"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Pork and napa cabbage. The dependable freezer choice: fatty pork stays tender and squeezed cabbage keeps it light. Use the full method at /recipes/pork-cabbage-dumplings.",
+        "Pork and garlic chives. Strong enough to taste fresh after freezing. Chop the chives by hand and fold them in last so they do not turn watery.",
+        "Chive, egg, and glass noodle. Scrambled egg supplies richness, while soaked noodles catch extra moisture. Start from /recipes/chive-egg-dumplings.",
+        "Shrimp, pork, and bamboo shoot. Pork binds the mixture, shrimp gives bounce, and diced bamboo shoot keeps its crunch after freezing.",
+        "Chicken and shiitake. Use thigh meat rather than breast, and sauté fresh mushrooms until their pan is dry before adding them.",
+        "Beef and scallion. Add scallion oil rather than raw water for a fragrant filling that does not freeze into a hard block.",
+        "Lamb, carrot, and cumin. Finely grated carrot softens the lamb without releasing as much water as cabbage; cumin keeps the flavor clear.",
+        "Tofu, shiitake, and napa cabbage. Press firm tofu, brown it lightly, then mix with dry-cooked mushrooms and squeezed cabbage.",
+        "Pork, sweet corn, and carrot. Corn stays crisp, carrot adds sweetness, and both are low-risk vegetables for a first freezer batch.",
+        "White fish, ginger, and scallion. Chop the fish by hand rather than blending it smooth, then mix just until sticky so the filling stays springy."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Moisture control by filling type"
+    },
+    {
+      "type": "p",
+      "text": "Use this quick check before you begin wrapping. It catches most soggy-bottom and split-wrapper problems."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cabbage or zucchini: salt, rest, squeeze, then measure. Do not measure before squeezing.",
+        "Fresh mushrooms: sauté until no steam rises and the pan looks dry; cool before mixing.",
+        "Frozen vegetables: thaw and press them first. Freezing them twice without draining creates large ice crystals.",
+        "Shrimp or fish: blot dry, chop, and keep cold. A warm seafood filling loses its springy texture.",
+        "Cooked egg or tofu: cool fully and break into small, distinct pieces instead of a paste."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "How to freeze dumplings without sticking"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Line a metal tray with parchment and dust it lightly with flour or starch.",
+        "Set dumplings upright with space between them. If their sides touch now, they will freeze together.",
+        "Freeze uncovered until the wrappers are hard, usually two to three hours in a home freezer.",
+        "Transfer the frozen dumplings to a labelled bag, press out excess air, and return them to the freezer at once.",
+        "Write the filling and date on the bag. Different fillings look almost identical once frozen."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Freeze the dumplings raw. A cooked dumpling can be frozen, but the wrapper reheats softer and the filling is more likely to dry out. For the best texture, use raw tray-frozen dumplings within two months."
+    },
+    {
+      "type": "h2",
+      "text": "Cook freezer dumplings straight from frozen"
+    },
+    {
+      "type": "p",
+      "text": "Do not thaw them. Thawing wets the wrapper and encourages sticking. Add frozen dumplings directly to gently boiling water, a steamer, or a pan for potstickers, and allow a few extra minutes for the cold center."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Boil: stir once after the dumplings rise, then continue until the wrapper looks slightly translucent and the meat center is fully cooked.",
+        "Steam: line the basket, leave space for expansion, and start timing once steady steam reaches the basket.",
+        "Pan-fry: brown the bottoms in oil, add water, cover to steam, then uncover so the bases crisp again.",
+        "Soup: use a gentle simmer, not a violent boil, to keep delicate wrappers and fish fillings intact."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Start with /recipes/pork-cabbage-dumplings for the classic batch or /recipes/chive-egg-dumplings for a meat-free tray. HǎoWèi Recipes at haoweirecipes.com has the full measurements and cooking steps; browse more make-ahead ideas at /blog and the recipe index at /."
+    }
+  ],
+  "bodyZh": [
+    {
+      "type": "p",
+      "text": "饺子馅的点子不难找，难的是冷冻后还能保持好吃。一份可靠的冷冻饺子馅要控制水分、有足够油脂保持嫩度，还要避免蔬菜在饺子下锅解冻时大量出水。下面十种中式饺子馅都适合提前包好冷冻：每一种口感明确，食材经得住冷冻，也说明了它为什么适合成批准备。"
+    },
+    {
+      "type": "h2",
+      "text": "适合冷冻的饺子馅公式"
+    },
+    {
+      "type": "p",
+      "text": "大多数馅料都由肉类或结实的素食基底、切碎的蔬菜、香料、调味料和少量黏合液体组成。真正难处理的是水。白菜、菌菇、韭菜和西葫芦都可能渗出很多水，让饺子皮开裂或在馅里形成冰晶。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "含水多的蔬菜单独撒盐，静置十分钟，挤干后再拌馅。",
+        "肉馅朝同一方向搅到发黏，蛋白质会锁住水分，也能让馅抱团。",
+        "炒熟的食材必须彻底放凉，温热馅料会在进冷冻室前先把饺子皮泡软。",
+        "最终馅料应该能用勺舀起，而不是流动；盆底有积水就要继续控水。"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "正式包一整盘前先做一个测试饺。煎熟或煮熟后尝咸淡，再切开看看有没有汁水大量流出。"
+    },
+    {
+      "type": "h2",
+      "text": "10 种冷冻后口感稳定的饺子馅"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "猪肉白菜馅。最稳妥的冷冻选择：带点肥的猪肉保持嫩度，挤干的白菜让口感清爽。完整做法见 /recipes/pork-cabbage-dumplings。",
+        "猪肉韭菜馅。冷冻后香味仍然清楚。韭菜手切，最后再拌入，避免过早出水。",
+        "韭菜鸡蛋粉丝馅。炒鸡蛋提供油润感，泡软的粉丝吸收多余汁水，可从 /recipes/chive-egg-dumplings 开始。",
+        "虾仁猪肉冬笋馅。猪肉负责黏合，虾仁带来弹性，冬笋冷冻后仍有脆感。",
+        "鸡肉香菇馅。选鸡腿肉而不是鸡胸肉；鲜香菇先炒到锅底干爽，再放凉拌馅。",
+        "牛肉大葱馅。用葱油补香，不往馅里直接加生水，冷冻后不会结成硬块。",
+        "羊肉胡萝卜孜然馅。细擦的胡萝卜能柔化羊肉，出水又比白菜少；孜然让味道保持清晰。",
+        "豆腐香菇白菜馅。老豆腐压水后略煎，再和炒干的香菇、挤水白菜混合。",
+        "猪肉玉米胡萝卜馅。玉米冷冻后仍脆，胡萝卜补甜，两种蔬菜都适合第一次批量冷冻。",
+        "白肉鱼姜葱馅。鱼肉用刀切碎，不要打成泥，只搅到发黏，熟后才有弹性。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "不同馅料怎么控水"
+    },
+    {
+      "type": "p",
+      "text": "包之前按下面的办法快速检查，基本能避开底部湿软和饺子皮开裂。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "白菜或西葫芦：撒盐、静置、挤水，再称量；不要挤水前称。",
+        "鲜菌菇：炒到不再冒蒸汽、锅底干爽，放凉后再拌。",
+        "冷冻蔬菜：先解冻并压干；不控水就二次冷冻，会形成大冰晶。",
+        "虾仁或鱼肉：吸干表面水分、切碎并保持低温，温热的海鲜馅会失去弹性。",
+        "熟鸡蛋或豆腐：彻底放凉，保留小颗粒，不要碾成糊。"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "饺子怎么冷冻才不粘"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "金属盘铺烘焙纸，薄薄撒一层面粉或淀粉。",
+        "饺子立着摆，彼此留空；现在侧面贴在一起，冻好后就会粘成一块。",
+        "不加盖冷冻到饺子皮变硬，家用冷冻室通常需要两到三小时。",
+        "冻硬后装入带标签的密封袋，挤出多余空气，立即放回冷冻室。",
+        "袋上写清馅料和日期，不同馅冻硬后看起来几乎一样。"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "饺子最好生冻。熟饺子也能冻，但复热后皮更软，馅更容易发干。想保持理想口感，平盘冻硬的生饺子建议两个月内吃完。"
+    },
+    {
+      "type": "h2",
+      "text": "冷冻饺子不用解冻，直接下锅"
+    },
+    {
+      "type": "p",
+      "text": "不要提前化冻。解冻会让饺子皮变湿，更容易粘连。冷冻饺子可以直接放入微沸的水、蒸锅或煎锅，只需给冰冷的中心多留几分钟。"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "水煮：饺子浮起后轻推一次，继续煮到皮微微透亮、肉馅中心完全熟透。",
+        "蒸：蒸屉铺垫，饺子之间留膨胀空间，稳定上汽后开始计时。",
+        "煎：先用油把底部煎上色，加水盖盖子蒸熟，再开盖把底部重新收脆。",
+        "煮汤：保持轻微沸腾，别让水剧烈翻滚，以免薄皮和鱼馅饺子破掉。"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "第一次批量准备可从 /recipes/pork-cabbage-dumplings 的经典猪肉白菜馅开始，想做素馅则看 /recipes/chive-egg-dumplings。haoweirecipes.com 的每道菜都有完整用量与步骤；更多提前备餐思路在 /blog，全部菜谱索引在 /。"
+    }
+  ],
+  "faq": [
+    {
+      "qEn": "Should I cook dumpling filling before freezing?",
+      "qZh": "饺子馅冷冻前要炒熟吗？",
+      "aEn": "Usually no. Meat and seafood fillings freeze raw inside the wrapper and cook from frozen. Cook only ingredients that need moisture removed or texture set first, such as mushrooms, scrambled egg, and tofu, then cool them completely before mixing.",
+      "aZh": "通常不用。肉馅和海鲜馅包好后生冻，之后直接从冷冻状态煮熟。只有需要提前去水或定型的食材先炒，比如菌菇、鸡蛋和豆腐，而且拌馅前要完全放凉。"
+    },
+    {
+      "qEn": "How do I stop frozen dumplings from cracking?",
+      "qZh": "冷冻饺子怎么避免开裂？",
+      "aEn": "Keep the filling dry enough, seal the edge without trapped flour, tray-freeze the dumplings before bagging, and press excess air from the storage bag. Cracks usually come from wet filling or repeated temperature changes.",
+      "aZh": "馅料要控水，封口处不要夹干面粉，先平盘冻硬再装袋，并挤掉袋中多余空气。开裂通常来自湿馅，或储存期间反复升温降温。"
+    },
+    {
+      "qEn": "Do I thaw dumplings before cooking?",
+      "qZh": "冷冻饺子下锅前要解冻吗？",
+      "aEn": "No. Cook them straight from frozen. Thawing makes the wrappers wet and sticky, while the center remains cold. Add a little cooking time instead and keep the boil gentle.",
+      "aZh": "不用，直接从冷冻状态烹煮。解冻会让皮变湿发黏，中心却仍然冰冷。只需多煮一会儿，并保持水面轻微沸腾。"
+    },
+    {
+      "qEn": "Which vegetables freeze best in dumpling filling?",
+      "qZh": "哪些蔬菜最适合做冷冻饺子馅？",
+      "aEn": "Carrot, corn, bamboo shoot, garlic chives, and well-drained napa cabbage hold their texture well. Mushrooms also work after they are cooked dry and cooled. Avoid adding untreated watery vegetables directly to the filling.",
+      "aZh": "胡萝卜、玉米、冬笋、韭菜和挤干水分的白菜，冷冻后口感都比较稳定。菌菇炒干并放凉后也适合。不要把未经控水的高含水蔬菜直接拌进馅里。"
+    }
+  ]
+};
+
 const tenTofuDishesBeyondMapo: BlogPost = {
   id: "10-tofu-dishes-beyond-mapo",
   slug: "10-tofu-dishes-beyond-mapo",
@@ -6894,6 +7158,7 @@ const tenNoodleDishesFromFridgeStaples: BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  tenDumplingFillingsToFreeze,
   tenNoodleDishesFromFridgeStaples,
   tenEggDishesNotJustFried,
   tenTofuDishesBeyondMapo,
