@@ -575,6 +575,16 @@ import { milk_mantou } from "./milk-mantou";
 import { cornmeal_mantou } from "./cornmeal-mantou";
 import { purple_sweet_potato_mantou } from "./purple-sweet-potato-mantou";
 import { scallion_flower_rolls } from "./scallion-flower-rolls";
+import { sesame_sauce_flower_rolls } from "./sesame-sauce-flower-rolls";
+import { pumpkin_mantou } from "./pumpkin-mantou";
+import { spinach_mantou } from "./spinach-mantou";
+import { jujube_mantou } from "./jujube-mantou";
+import { two_tone_flower_rolls } from "./two-tone-flower-rolls";
+import { braised_pork_baozi } from "./braised-pork-baozi";
+import { shiitake_greens_baozi } from "./shiitake-greens-baozi";
+import { custard_baozi } from "./custard-baozi";
+import { garlic_chives_baozi } from "./garlic-chives-baozi";
+import { shredded_radish_baozi } from "./shredded-radish-baozi";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1155,6 +1165,16 @@ export const recipes: Recipe[] = [
   cornmeal_mantou,
   purple_sweet_potato_mantou,
   scallion_flower_rolls,
+  sesame_sauce_flower_rolls,
+  pumpkin_mantou,
+  spinach_mantou,
+  jujube_mantou,
+  two_tone_flower_rolls,
+  braised_pork_baozi,
+  shiitake_greens_baozi,
+  custard_baozi,
+  garlic_chives_baozi,
+  shredded_radish_baozi,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

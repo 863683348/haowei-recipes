@@ -1012,6 +1012,38 @@ export function searchTerms(query: string): Term[] {
       "Omit if unavailable — the soup still works with extra ginger; do not substitute with other herbs.",
     substituteHintZh: "买不到可省略，多加生姜即可；勿用其他草药替代。",
   },
+  {
+    id: "sesame-paste",
+    zh: "芝麻酱",
+    pinyin: "zhī má jiàng",
+    en: "Chinese sesame paste",
+    category: "sauce",
+    definition:
+      "Stone-ground paste of toasted sesame seeds, much darker and more intensely roasted than Middle Eastern tahini. Stiff straight from the jar, it must be loosened with sesame oil before it will spread.",
+    definitionZh:
+      "焙香芝麻石磨研磨成的酱，颜色比中东芝麻酱（tahini）更深、焙香更浓。从瓶中取出时非常稠，必须用香油澥开才好抹开。",
+    quantEquivalent: "1 tbsp ≈ 15 g",
+    substituteHint:
+      "Tahini works 1:1 in a pinch but is milder and paler; loosen either with oil, never water (water makes it seize and go grainy).",
+    substituteHintZh:
+      "应急可用 tahini 1:1 替代，但风味更淡、颜色更浅；两者都要用油澥开，绝不能用水（加水会返沙起颗粒）。",
+  },
+  {
+    id: "jujube",
+    zh: "红枣",
+    pinyin: "hóng zǎo",
+    en: "Red date (jujube)",
+    category: "ingredient",
+    definition:
+      "Dried fruit of the Chinese jujube tree, with a thin wrinkled red skin and a sweet, faintly caramel flesh. Used in both savoury braises and sweet buns, and simmered before use so it plumps instead of stealing moisture from the dough.",
+    definitionZh:
+      "中国枣树的干果，表皮薄而皱、呈红色，果肉甜中带焦糖香。咸甜两用，入菜前先煮软，否则会反过来吸走面团水分。",
+    quantEquivalent: "1 date ≈ 8 g dried",
+    substituteHint:
+      "Medjool dates work 1:1 for sweetness but are much wetter and darker; dried cranberries are sourer and need extra sugar.",
+    substituteHintZh:
+      "可用 Medjool 枣 1:1 替代甜度，但更湿更黑；蔓越莓干偏酸，需额外加糖。",
+  },
 ];
   return terms.filter(
     (t) =>
