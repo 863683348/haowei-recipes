@@ -585,6 +585,16 @@ import { shiitake_greens_baozi } from "./shiitake-greens-baozi";
 import { custard_baozi } from "./custard-baozi";
 import { garlic_chives_baozi } from "./garlic-chives-baozi";
 import { shredded_radish_baozi } from "./shredded-radish-baozi";
+import { mei_gan_cai_baozi } from "./mei-gan-cai-baozi";
+import { chicken_baozi } from "./chicken-baozi";
+import { celery_pork_dumplings } from "./celery-pork-dumplings";
+import { shrimp_dumplings } from "./shrimp-dumplings";
+import { three_delicacies_dumplings } from "./three-delicacies-dumplings";
+import { suan_cai_pork_dumplings } from "./suan-cai-pork-dumplings";
+import { corn_pork_dumplings } from "./corn-pork-dumplings";
+import { shepherds_purse_wonton } from "./shepherds-purse-wonton";
+import { beef_potstickers } from "./beef-potstickers";
+import { soup_dumplings_tangbao } from "./soup-dumplings-tangbao";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1175,6 +1185,16 @@ export const recipes: Recipe[] = [
   custard_baozi,
   garlic_chives_baozi,
   shredded_radish_baozi,
+  mei_gan_cai_baozi,
+  chicken_baozi,
+  celery_pork_dumplings,
+  shrimp_dumplings,
+  three_delicacies_dumplings,
+  suan_cai_pork_dumplings,
+  corn_pork_dumplings,
+  shepherds_purse_wonton,
+  beef_potstickers,
+  soup_dumplings_tangbao,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
