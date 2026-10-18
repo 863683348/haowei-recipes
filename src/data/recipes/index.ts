@@ -595,6 +595,16 @@ import { corn_pork_dumplings } from "./corn-pork-dumplings";
 import { shepherds_purse_wonton } from "./shepherds-purse-wonton";
 import { beef_potstickers } from "./beef-potstickers";
 import { soup_dumplings_tangbao } from "./soup-dumplings-tangbao";
+import { shou_zhua_bing } from "./shou-zhua-bing";
+import { chive_pockets } from "./chive-pockets";
+import { pan_fried_dumplings } from "./pan-fried-dumplings";
+import { zucchini_shred_pancakes } from "./zucchini-shred-pancakes";
+import { radish_shred_pancakes } from "./radish-shred-pancakes";
+import { chinese_beef_patties } from "./chinese-beef-patties";
+import { mao_xue_wang } from "./mao-xue-wang";
+import { chongqing_shao_ji_gong } from "./chongqing-shao-ji-gong";
+import { dry_pot_king_oyster_mushrooms } from "./dry-pot-king-oyster-mushrooms";
+import { dry_pot_spare_ribs } from "./dry-pot-spare-ribs";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1195,6 +1205,16 @@ export const recipes: Recipe[] = [
   shepherds_purse_wonton,
   beef_potstickers,
   soup_dumplings_tangbao,
+  shou_zhua_bing,
+  chive_pockets,
+  pan_fried_dumplings,
+  zucchini_shred_pancakes,
+  radish_shred_pancakes,
+  chinese_beef_patties,
+  mao_xue_wang,
+  chongqing_shao_ji_gong,
+  dry_pot_king_oyster_mushrooms,
+  dry_pot_spare_ribs,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
