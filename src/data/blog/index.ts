@@ -1,5 +1,127 @@
 import type { BlogPost } from "@/lib/types";
 
+const wokHeiBreathOfTheWok: BlogPost = {
+  id: "wok-hei-breath-of-the-wok",
+  slug: "wok-hei-breath-of-the-wok",
+  titleEn: "Wok Hei: How to Get the Breath of the Wok at Home",
+  titleZh: "镬气是什么？家庭灶炒出锅气的四个要点",
+  excerptEn:
+    "Wok hei is the smoky, slightly charred aroma that restaurant stir-fries have and home ones usually do not. What it actually is, the four conditions that produce it, and how to get close on a domestic burner.",
+  excerptZh:
+    "镬气是餐馆小炒有、家里炒却没有的那股焦香。它到底是什么、产生它需要哪四个条件，以及家用灶台上如何尽量接近。",
+  categoryKey: "technique",
+  categoryEn: "Technique",
+  categoryZh: "技法",
+  tags: ["wok hei stir fry", "how to get wok hei", "breath of the wok", "chinese stir fry technique", "wok cooking tips", "chinese recipes"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-10-21",
+  updatedDate: "2026-10-21",
+  coverImage: "/images/recipes/kung-pao-chicken.webp",
+  relatedRecipeSlugs: [
+    "kung-pao-chicken",
+    "dry-fried-green-beans",
+    "beef-fried-rice",
+    "twice-cooked-pork",
+    "mapo-tofu",
+    "blanched-choy-sum",
+  ],
+  bodyEn: [
+    { type: "p", text: "Wok hei stir fry aroma is the thing people mean when they say a restaurant stir-fry tastes better than the same dish at home, and it is not a seasoning. It is the smell of oil and moisture hitting metal that is hotter than your kitchen usually gets, plus a little char on the edges of whatever went in the pan. You cannot buy it in a bottle, but you can get most of the way there by fixing four conditions." },
+    { type: "h2", text: "What wok hei actually is" },
+    { type: "p", text: "Two things happen at once. Tiny droplets of oil and marinade flash into vapor when they touch a surface above roughly 200 °C, and sugars plus amino acids on the food surface brown fast. The vapor carries the aroma, the browning carries the flavor. Restaurant burners run 3 to 5 times hotter than a home hob, which is why the same recipe reads differently in the two kitchens." },
+    { type: "h2", text: "The four conditions that produce it" },
+    { type: "ol", items: [
+      "Heat the empty wok until it just starts to smoke, and only then add oil. Cold wok, cold oil is the single most common home mistake, because the food steams in its own liquid instead of searing.",
+      "Dry the food. Pat protein with paper towel, shake water off washed greens, and let marinated meat drain for two minutes. Surface water spends your heat budget on evaporation before any browning can start.",
+      "Cook in small batches. A home burner has maybe 2 kW to give; two portions of beef drops the pan below searing temperature and the meat poaches. Half portions, two rounds, better result.",
+      "Keep it moving, but not constantly. Tossing cools the food, resting burns it. A few seconds of contact, then toss, is the rhythm that builds color without turning the outside black.",
+    ] },
+    { type: "note", text: "Carbon steel beats nonstick for this. Nonstick coatings start to break down around the temperatures wok hei needs, and a thin carbon steel pan recovers its heat between tosses far faster than a heavy cast iron one." },
+    { type: "h2", text: "Why home stoves struggle" },
+    { type: "ul", items: [
+      "Output. A restaurant wok ring can put out 15 kW or more. A typical home hob manages 2 to 3.5 kW, and an induction hob that cycles on and off makes it worse.",
+      "Pan shape. A flat-bottomed pan on an electric coil only heats where it touches. A round-bottom wok on a gas ring wraps the flame around the sides.",
+      "Recovery. Every time food goes in, the pan temperature drops. Home pans take far longer to climb back, which is why batch size matters more at home than in a restaurant.",
+      "Extraction. Even if you nail the cooking, a domestic hood pulls the aroma out of the room in a minute. The flavor is still on the food; the smell is what you lose.",
+    ] },
+    { type: "h2", text: "A five-minute drill before you cook" },
+    { type: "ol", items: [
+      "Set the wok on the largest burner, empty, on full heat. Wait until a drop of water flicked in skitters and vanishes in under a second.",
+      "Add one tablespoon of a high smoke point oil, swirl it up the sides, and wait for the surface to shimmer.",
+      "Add aromatics first, and only for 15 to 20 seconds. Scallion, ginger and garlic should smell fragrant, not turn brown.",
+      "Add the protein in one layer, leave it alone for 30 seconds, then toss. Color beats constant stirring.",
+      "Deglaze with the sauce down the side of the wok, not into the middle, so it hits hot metal and reduces on contact.",
+    ] },
+    { type: "h2", text: "Dishes worth practicing on" },
+    { type: "ul", items: [
+      "Dry-fried green beans, because the blistered skin is the clearest visual signal you got the pan hot enough. Start from /recipes/dry-fried-green-beans.",
+      "Kung pao chicken, because the chicken gets its color in the first minute and the sauce reduces at the end. /recipes/kung-pao-chicken.",
+      "Fried rice, because day-old rice has the dry surface that browns well. /recipes/beef-fried-rice and /recipes/egg-fried-rice.",
+      "Twice cooked pork, where the pork slices need to curl and crisp at the edges. /recipes/twice-cooked-pork.",
+      "Blanched choy sum, which shows whether your finishing oil is hot enough to make the greens glossy. /recipes/blanched-choy-sum.",
+    ] },
+    { type: "p", text: "If you want more on the pan itself, the guide to choosing and seasoning a wok sits in the technique section of haoweirecipes.com. Browse the full recipe library at /recipes/ or the rest of the technique notes at /en/blog/." },
+  ],
+  bodyZh: [
+    { type: "p", text: "所谓镬气，就是人们说餐馆小炒比家里炒的好吃时指的那股焦香，它不是某种调料。它是油和水分撞上比家里厨房更烫的金属时产生的气味，加上食材边缘微微焦化带来的味道。这东西买不到瓶装的，但只要修好四个条件，你能在家用灶上做到八九分。" },
+    { type: "h2", text: "镬气到底是什么" },
+    { type: "p", text: "两件事同时发生：油和腌料的小液滴接触到约 200 °C 以上的表面时瞬间气化，食材表面的糖类和氨基酸快速褐变。气化带来香气，褐变带来味道。餐馆灶头的火力是家用灶的 3 到 5 倍，这就是同一个食谱在两个厨房里表现不同的原因。" },
+    { type: "h2", text: "产生镬气的四个条件" },
+    { type: "ol", items: [
+      "空锅烧到刚要冒烟，再下油。冷锅冷油是家里最常见的问题，因为食材会在自己渗出的水分里被蒸熟，而不是被煎香。",
+      "把食材弄干。肉用厨房纸吸干，洗过的青菜甩掉水，腌好的肉沥两分钟。表面的水会先把热量用在蒸发上，褐变根本来不及开始。",
+      "小分量炒。家用灶大概只有 2 千瓦可用；两份牛肉下锅会让锅温掉到煎香温度以下，肉就变成了煮。分成两份炒两轮，效果好得多。",
+      "翻动，但别一直翻。翻炒会降温，不动又会焦。接触几秒再翻一次，这个节奏能上色，又不会把外面炒黑。",
+    ] },
+    { type: "note", text: "做这件事，碳钢锅比不粘锅好。不粘涂层在镬气所需的温度下会开始分解，而薄壁碳钢锅在两次翻炒之间回温的速度，远快于厚重的铸铁锅。" },
+    { type: "h2", text: "家用灶为什么吃力" },
+    { type: "ul", items: [
+      "火力。餐馆的炒灶可以输出 15 千瓦以上，普通家用灶只有 2 到 3.5 千瓦，会间断启停的电磁炉更麻烦。",
+      "锅型。平底锅放在电陶炉上只有接触面受热，圆底炒锅架在燃气灶上，火焰是包着锅壁走的。",
+      "回温。每次下食材，锅温都会掉。家用锅爬回温度要久得多，所以在家里，分量大小比在餐馆更要紧。",
+      "排烟。就算你炒得对，家用油烟机也会在一分钟内把香气抽走。味道还在菜上，跑掉的是那股闻得到的香。",
+    ] },
+    { type: "h2", text: "开炒前的五分钟练习" },
+    { type: "ol", items: [
+      "把炒锅放到最大的灶头上，空锅，大火。等到甩进去的一滴水打滑并一秒内消失。",
+      "下一汤匙高烟点油，沿锅壁晃一圈，等到油面出现波纹。",
+      "先下葱姜蒜，只炒 15 到 20 秒。闻到香味就行，别让它变褐。",
+      "肉平铺一层下锅，静置 30 秒再翻。上色比不停翻炒重要。",
+      "酱汁沿着锅边淋，不要倒进锅心，让它碰到热金属，一接触就收汁。",
+    ] },
+    { type: "h2", text: "适合拿来练手的菜" },
+    { type: "ul", items: [
+      "干煸四季豆，因为豆皮起虎皮是「锅够热」最直观的信号。从 /recipes/dry-fried-green-beans 开始。",
+      "宫保鸡丁，因为鸡丁要在头一分钟上色，酱汁最后收干。/recipes/kung-pao-chicken。",
+      "炒饭，因为隔夜饭表面干燥，最容易炒香。/recipes/beef-fried-rice 与 /recipes/egg-fried-rice。",
+      "回锅肉，肉片要卷起来、边缘微焦才对。/recipes/twice-cooked-pork。",
+      "白灼菜心，可以看出你最后淋的那勺油够不够热，能不能让菜身发亮。/recipes/blanched-choy-sum。",
+    ] },
+    { type: "p", text: "想进一步了解锅具本身，haoweirecipes.com 的技法板块里有选锅和开锅的说明。完整菜谱库在 /recipes/，其余技法笔记在 /en/blog/。" },
+  ],
+  faq: [
+    {
+      qEn: "Can you get wok hei on an induction hob?",
+      qZh: "电磁炉能炒出镬气吗？",
+      aEn: "Partly. Induction heats fast but most units cycle on and off, and a flat-bottomed pan only heats where it touches. Use a flat carbon steel pan, preheat longer than you think you need, and cook smaller batches.",
+      aZh: "能做成一部分。电磁炉升温快，但多数机型会间断启停，而平底锅只有接触面受热。用平底碳钢锅，预热时间比你以为的更长，分量再小一些。",
+    },
+    {
+      qEn: "Is wok hei the same as burnt food?",
+      qZh: "镬气等于把菜炒焦吗？",
+      aEn: "No. Wok hei is aroma from vaporized oil and fast surface browning. Black, bitter specks mean the pan was too hot for too long, or sugar in the marinade scorched. You want light charring on the edges, not carbon.",
+      aZh: "不是。镬气来自油的气化和表面的快速褐变。发黑发苦的斑点说明锅太热或时间太长，也可能是腌料里的糖焦了。你要的是边缘轻微焦化，不是碳化。",
+    },
+    {
+      qEn: "Do I need a special wok?",
+      qZh: "需要专门的炒锅吗？",
+      aEn: "A thin carbon steel wok works best because it recovers heat quickly. Cast iron holds heat but responds slowly, and nonstick coatings degrade at the temperatures involved. Any of them will work; the pan just changes how much effort it takes.",
+      aZh: "薄壁碳钢炒锅最好用，因为它回温快。铸铁储热好但反应慢，不粘涂层在这个温度下会受损。三种都能用，只是费劲程度不同。",
+    },
+  ],
+};
+
 const tenCongeeToppings: BlogPost = {
   id: "10-congee-toppings",
   slug: "10-congee-toppings",
@@ -7300,6 +7422,7 @@ const tenNoodleDishesFromFridgeStaples: BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  wokHeiBreathOfTheWok,
   tenCongeeToppings,
   tenDumplingFillingsToFreeze,
   tenNoodleDishesFromFridgeStaples,
