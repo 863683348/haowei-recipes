@@ -605,6 +605,16 @@ import { mao_xue_wang } from "./mao-xue-wang";
 import { chongqing_shao_ji_gong } from "./chongqing-shao-ji-gong";
 import { dry_pot_king_oyster_mushrooms } from "./dry-pot-king-oyster-mushrooms";
 import { dry_pot_spare_ribs } from "./dry-pot-spare-ribs";
+import { bobo_chicken } from "./bobo-chicken";
+import { dongan_chicken } from "./dongan-chicken";
+import { smashed_pepper_kourou } from "./smashed-pepper-kourou";
+import { taro_steamed_spare_ribs } from "./taro-steamed-spare-ribs";
+import { steamed_pork_rice_flour } from "./steamed-pork-rice-flour";
+import { garlic_steamed_abalone } from "./garlic-steamed-abalone";
+import { minced_pork_steamed_tofu } from "./minced-pork-steamed-tofu";
+import { steamed_egg_custard } from "./steamed-egg-custard";
+import { salted_fish_pork_patty } from "./salted-fish-pork-patty";
+import { fermented_tofu_steamed_pork_belly } from "./fermented-tofu-steamed-pork-belly";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1215,6 +1225,16 @@ export const recipes: Recipe[] = [
   chongqing_shao_ji_gong,
   dry_pot_king_oyster_mushrooms,
   dry_pot_spare_ribs,
+  bobo_chicken,
+  dongan_chicken,
+  smashed_pepper_kourou,
+  taro_steamed_spare_ribs,
+  steamed_pork_rice_flour,
+  garlic_steamed_abalone,
+  minced_pork_steamed_tofu,
+  steamed_egg_custard,
+  salted_fish_pork_patty,
+  fermented_tofu_steamed_pork_belly,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
