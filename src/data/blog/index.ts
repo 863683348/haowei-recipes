@@ -1,5 +1,142 @@
 import type { BlogPost } from "@/lib/types";
 
+const eatingBy24SolarTerms: BlogPost = {
+  id: "eating-by-the-24-solar-terms",
+  slug: "eating-by-the-24-solar-terms",
+  titleEn: "Eating by the 24 Solar Terms: What Chinese Kitchens Cook Each Season",
+  titleZh: "二十四节气吃什么：一整年的中式时令餐桌",
+  excerptEn:
+    "Chinese solar terms food is a calendar before it is a set of recipes. The 24 solar terms cut the year into fifteen-day slices, and home cooks still use them to decide what goes in the pot: chive dumplings in early spring, cold noodles at the summer peak, crab and mooncakes in autumn, dumplings and hot pot when the year turns cold.",
+  excerptZh:
+    "二十四节气吃什么，与其说是一份菜谱，不如说是一张日历。它把一年切成二十四段，每段十五天，家里的灶台照着它走：早春韭菜盒子，盛夏凉面，秋天螃蟹和月饼，冬至饺子加一锅火锅。这篇按四季拆开讲，每一季都给出真正值得下厨的那几道。",
+  categoryKey: "culture",
+  categoryEn: "Culture",
+  categoryZh: "文化",
+  tags: ["chinese solar terms food", "24 solar terms", "jieqi seasonal eating", "what to eat each solar term", "chinese seasonal cooking", "seasonal chinese recipes"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-10-24",
+  updatedDate: "2026-10-24",
+  coverImage: "/images/recipes/chive-egg-dumplings.webp",
+  relatedRecipeSlugs: [
+    "chive-egg-dumplings",
+    "spring-pancake-vegetable-wrap",
+    "pork-cabbage-dumplings",
+    "reunion-hot-pot",
+  ],
+  bodyEn: [
+    { type: "p", text: "Chinese solar terms food is a calendar before it is a set of recipes. The 24 solar terms (二十四节气) cut the year into fifteen-day slices based on where the sun sits on the ecliptic, and home cooks have leaned on them for a long time to decide what goes into the pot. This guide goes season by season through what Chinese kitchens actually cook for the terms, names the handful of dishes worth making, and finishes with a version you can follow from a supermarket that stocks none of the traditional ingredients." },
+    { type: "h2", text: "What the solar terms actually track" },
+    { type: "p", text: "The system came out of the Yellow River basin and divides the sun's path along the ecliptic into 24 points of 15 degrees each. Four of them anchor the year: the two equinoxes (春分 and 秋分) and the two solstices (夏至 and 冬至). The rest mark temperature and precipitation shifts that mattered to planting, which is why the food rules sound agricultural. Eat what is being harvested within a few hundred kilometres, and stop eating it once the term passes." },
+    { type: "p", text: "A farming calendar turned into a kitchen calendar, and it survives because it is short enough to remember. Most people can name four or five terms and the dish that goes with each one, which is all the system needs to work." },
+    { type: "h2", text: "Spring: green, sharp and early" },
+    { type: "p", text: "立春 opens the year in early February, and the first thing up is chives. They come back before anything else, so [chive and egg dumplings](/recipes/chive-egg-dumplings) are the standard answer to the question of what to cook for the start of spring. Spring pancakes work the same way: a thin wrapper rolled around stir-fried shredded vegetables and a smear of sweet bean sauce, which is the point of [spring pancake vegetable wraps](/recipes/spring-pancake-vegetable-wrap)." },
+    { type: "ul", items: [
+      "立春 (around Feb 4): chive and egg dumplings, spring pancakes, anything made with the first green of the year.",
+      "雨水 and 惊蛰: bamboo shoots and wild greens. Blanch and dress them rather than stewing, since they are mild and lose their texture fast.",
+      "春分: the equinox. Dishes stop being about preserved vegetables and move to fresh herbs.",
+      "清明: qingtuan, the green rice balls made with mugwort or barley grass juice, plus cold dishes served at room temperature.",
+      "谷雨: the last tender tea leaves, and the first river shrimp of the season, usually stir-fried with a little salt and nothing else.",
+    ] },
+    { type: "h2", text: "Summer: cold, bitter and wet" },
+    { type: "p", text: "By summer the change is in the cooking rather than the shopping. 立夏 lands in early May and the stove gets used less. Cold noodles dressed with sesame paste and black vinegar show up from 立夏 through 夏至, and the logic is simple: nothing hot, nothing heavy, and as little time over a flame as possible." },
+    { type: "ul", items: [
+      "立夏: cold noodles, chilled mung bean starch jelly, and the first watermelon.",
+      "芒种 and 夏至: the longest day. Northern kitchens repeat the cold noodles; southern ones serve rice dumplings.",
+      "小暑 and 大暑: bitter melon with black bean sauce, mung bean soup, and winter melon. Bitter and watery are the two flavours the season asks for.",
+    ] },
+    { type: "h2", text: "Autumn: harvest, crab and the moon" },
+    { type: "p", text: "立秋 in early August is the signal to put weight back on, and red-braised pork is the usual excuse. From there the table follows the harvest: lotus root and taro at 白露, pears poached with rock sugar at 秋分, then persimmons, chestnuts and hairy crab once the water cools at 寒露 and 霜降. Mid-Autumn sits between 白露 and 秋分, and the menu is built around the moon rather than the temperature." },
+    { type: "h2", text: "Winter: dumplings, hot pot and congee" },
+    { type: "p", text: "冬至 is the one term still marked almost everywhere, and the split is geographic: dumplings in the north, glutinous rice balls in the south. [Pork and cabbage dumplings](/recipes/pork-cabbage-dumplings) are the default filling for a plain reason, since both keep through February and cost very little. 腊八 brings eight-treasure congee, made from whatever dried fruit and grain is left in the cupboard." },
+    { type: "ul", items: [
+      "立冬: a bowl of something hot and starchy. Congee counts, so does a bowl of noodles in broth.",
+      "冬至: dumplings in the north, tangyuan in the south. Freeze a tray a week ahead and the day takes care of itself.",
+      "小寒 and 大寒: a [reunion hot pot](/recipes/reunion-hot-pot), where the cooking happens at the table and nobody stands over a wok.",
+      "腊八: eight-treasure congee, the sweet version, cooked low and slow until the grains give up.",
+    ] },
+    { type: "h2", text: "Following the calendar from anywhere" },
+    { type: "p", text: "You can run this calendar from a supermarket that stocks none of the traditional ingredients, because the terms describe a kind of food rather than a specific one." },
+    { type: "ol", items: [
+      "Learn the four anchors first: the two equinoxes and the two solstices. They are the only four dates with a fixed feel to them.",
+      "Substitute by texture and temperature. Spring means the first tender green you can find; summer means food served cold; autumn means roast roots and orchard fruit; winter means one pot and a long simmer.",
+      "Ignore the terms that do not map to your climate. 大暑 assumes a humid July. If your July is dry, the dish still works, but the reason for it does not travel.",
+      "Pick one dish per season and repeat it every year. Four dishes remembered beats twenty-four looked up once.",
+    ] },
+    { type: "note", text: "The dates shift by a day either way depending on the year, so treat them as a fortnight rather than a deadline. Nobody ate dumplings on the wrong day and suffered for it." },
+    { type: "p", text: "Pick a term and cook for it this week. Every dish mentioned here has a full ingredient list and timing on haoweirecipes.com, the seasonal and holiday tables are collected at /blog, and the festival menus sit at /blog/mid-autumn-festival-dishes and /blog/national-day-family-feast." },
+  ],
+  bodyZh: [
+    { type: "p", text: "二十四节气吃什么，与其说是一份菜谱，不如说是一张日历。二十四节气按太阳在黄道上的位置，把一年切成二十四段、每段十五天；家里的灶台照着它走了很多年。这篇按四季拆开，讲中国厨房在节气里到底做了什么、哪几道值得下厨，最后给一套在你所在城市的超市里也跑得通的做法。" },
+    { type: "h2", text: "节气到底在记录什么" },
+    { type: "p", text: "这套体系出自黄河流域，把太阳在黄道上的路径等分为二十四个十五度的点。其中四个锚定整年：春分、秋分两个昼夜平分点，夏至、冬至两个至点。其余二十个标记的是温度和降水的变化，对种地有用。所以节气里的饮食规矩听着像农事：吃方圆几百公里内正在收的东西，节气一过就别吃了。" },
+    { type: "p", text: "一张农事历变成了厨房历，它能留下来，是因为短到记得住。多数人能说出四五个节气以及各自对应的一道菜，这套体系要运转，有这些就够了。" },
+    { type: "h2", text: "春：青、辛、早" },
+    { type: "p", text: "立春在二月初开年，最先冒出来的是韭菜。它比别的都早，所以[韭菜鸡蛋饺子](/recipes/chive-egg-dumplings)是「立春吃什么」的标准答案。春饼是同一个思路：一张薄饼卷上炒好的蔬菜丝，抹一层甜面酱，这就是[春饼卷菜](/recipes/spring-pancake-vegetable-wrap)的全部要义。" },
+    { type: "ul", items: [
+      "立春（2 月 4 日前后）：韭菜鸡蛋饺子、春饼，凡是当年第一口青绿都算。",
+      "雨水、惊蛰：春笋和野菜。焯水凉拌，别去炖，它们味淡、质地也掉得快。",
+      "春分：昼夜平分。桌上从腌菜转向新鲜香草。",
+      "清明：青团，用艾草或麦草汁做的绿色米团，外加一批常温上桌的凉菜。",
+      "谷雨：最后一批嫩茶，以及当季第一网河虾，通常只加一点盐清炒。",
+    ] },
+    { type: "h2", text: "夏：凉、苦、湿" },
+    { type: "p", text: "到了夏天，变化在做法上，不在采购上。立夏落在五月初，灶台的开火时间明显变短。从立夏到夏至，芝麻酱和陈醋拌的凉面反复出现，道理很简单：不烫、不厚重，尽量少在火前站着。" },
+    { type: "ul", items: [
+      "立夏：凉面、冰镇凉粉，以及当年的第一只西瓜。",
+      "芒种、夏至：白昼最长。北方继续凉面，南方吃粽子。",
+      "小暑、大暑：豆豉炒苦瓜、绿豆汤、冬瓜。这个节气要的就是苦和水分足这两种味道。",
+    ] },
+    { type: "h2", text: "秋：收获、蟹与月亮" },
+    { type: "p", text: "八月初的立秋是个贴秋膘的信号，红烧肉是最常见的借口。此后餐桌跟着收成走：白露吃莲藕和芋头，秋分是冰糖炖梨，等到寒露、霜降水凉下来，柿子、板栗和大闸蟹上桌。中秋落在白露和秋分之间，那一桌围绕的是月亮，不是气温。" },
+    { type: "h2", text: "冬：饺子、火锅与粥" },
+    { type: "p", text: "冬至是如今还几乎处处在过的那一个，南北分工明确：北方饺子，南方汤圆。[猪肉白菜饺子](/recipes/pork-cabbage-dumplings)成为默认馅，理由很朴素，两样都放得住，也都不贵。腊八是八宝粥，用柜子里剩下的果干和杂粮凑一锅。" },
+    { type: "ul", items: [
+      "立冬：一碗热的、带淀粉的东西。粥算，汤面也算。",
+      "冬至：北方饺子，南方汤圆。提前一周冻一盘，那天就不用忙了。",
+      "小寒、大寒：一锅[团圆火锅](/recipes/reunion-hot-pot)，烹饪发生在桌面上，没人需要守着炒锅。",
+      "腊八：八宝粥，甜口那版，小火慢熬到米粒开花。",
+    ] },
+    { type: "h2", text: "在任何一个地方照着这张日历做饭" },
+    { type: "p", text: "就算你所在的超市一样传统食材都没有，这张日历照样能跑，因为节气描述的是一类食物，不是某一样食物。" },
+    { type: "ol", items: [
+      "先记住四个锚点：春分、秋分、夏至、冬至。有确定的体感的只有这四个。",
+      "按质地和温度来替换。春=你能找到的第一口嫩绿；夏=凉着上桌；秋=烤根茎和果园水果；冬=一锅到底、久炖。",
+      "跟当地气候对不上的节气就跳过。大暑的前提是潮湿的七月；你那里七月干爽的话，菜照样好吃，理由不成立而已。",
+      "每个季节挑一道，年年重复。记住四道，胜过查一次二十四道。",
+    ] },
+    { type: "note", text: "节气的日期每年会前后差一天，把它当成半个月，别当成截止日。没人在错误的那天吃了饺子会有什么后果。" },
+    { type: "p", text: "挑一个节气，本周就为它做一道。上面提到的每道菜在 haoweirecipes.com 都有完整配料表和时间，节令与节日那一桌收在 /blog，中秋和国庆的家宴菜单分别在 /blog/mid-autumn-festival-dishes 和 /blog/national-day-family-feast。" },
+  ],
+  faq: [
+    {
+      qEn: "How many solar terms are there, and why 24?",
+      qZh: "节气一共有多少个，为什么是二十四？",
+      aEn: "Twenty-four, because the year is divided by 15-degree steps along the sun's apparent path. Each term runs about fifteen days, which is close to the length of a growth stage for field crops in the Yellow River basin.",
+      aZh: "二十四个，因为一年是按太阳视路径上每十五度一格切开的。每个节气大约十五天，接近黄河流域大田作物一个生长阶段的长度。",
+    },
+    {
+      qEn: "Do people really still cook by the solar terms?",
+      qZh: "现在还有人真的照节气吃饭吗？",
+      aEn: "Four of them, yes. 冬至, 立春, 清明 and 立秋 still change what people eat, and Mid-Autumn and the New Year ride on top of the same calendar. The other twenty are mostly remembered by home cooks and ignored by everyone else.",
+      aZh: "有四个是真的：冬至、立春、清明、立秋，到现在还在改变人们的餐桌，中秋和春节也叠在同一张日历上。剩下二十个主要是家里做饭的人记得，其他人基本不管。",
+    },
+    {
+      qEn: "What if I cannot find the seasonal ingredient?",
+      qZh: "买不到当季食材怎么办？",
+      aEn: "Match the texture and the temperature instead of the name. Spring wants the first tender green you can buy, summer wants food served cold, autumn wants roast roots and orchard fruit, winter wants one pot on a long simmer.",
+      aZh: "按质地和温度去配，别按名字配。春天要你能买到的第一口嫩绿，夏天要凉着上桌，秋天要烤根茎和果园水果，冬天要一锅久炖。",
+    },
+    {
+      qEn: "Which terms should I bother with if I only follow a few?",
+      qZh: "只打算跟几个节气，跟哪几个？",
+      aEn: "冬至 for dumplings, 立春 for chive dumplings or spring pancakes, and 立秋 for something braised. Three dates a year is enough to make the calendar feel like a habit rather than a project.",
+      aZh: "冬至吃饺子，立春吃韭菜盒子或春饼，立秋炖点东西。一年三个日子，足够让这张日历变成习惯而不是负担。",
+    },
+  ],
+};
+
+
 const howToVelvetChicken: BlogPost = {
   id: "how-to-velvet-chicken",
   slug: "how-to-velvet-chicken",
@@ -7554,6 +7691,7 @@ const tenNoodleDishesFromFridgeStaples: BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  eatingBy24SolarTerms,
   howToVelvetChicken,
   wokHeiBreathOfTheWok,
   tenCongeeToppings,
