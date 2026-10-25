@@ -1,4 +1,148 @@
 import type { BlogPost } from "@/lib/types";
+const northVsSouthRiceOrNoodles: BlogPost = {
+  id: "north-vs-south-rice-or-noodles",
+  slug: "north-vs-south-rice-or-noodles",
+  titleEn: "North vs South Chinese Food: Rice, Noodles and Where the Line Runs",
+  titleZh: "南米还是北面：中国南北方的主食分界线在哪",
+  excerptEn:
+    "North south chinese food gets flattened into one sentence: the north eats noodles, the south eats rice. The sentence holds up, but the reason behind it is rainfall rather than preference. Here is where the line runs, why northern china eats noodles, and where the rule breaks.",
+  excerptZh:
+    "北方吃面、南方吃米，这句话大致没错，但它背后是降雨量而不是口味偏好。这篇讲清楚分界线画在哪、北方为什么吃面、南方为什么围着米转，以及哪些情况下这条线不作数。",
+  categoryKey: "culture",
+  categoryEn: "Culture",
+  categoryZh: "文化",
+  tags: ["north south chinese food", "rice vs noodles in china", "why northern china eats noodles", "qinling huaihe line food", "chinese staple food"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-10-26",
+  updatedDate: "2026-10-26",
+  coverImage: "/images/recipes/lanzhou-lamian.webp",
+  relatedRecipeSlugs: [
+    "lanzhou-lamian",
+    "egg-fried-rice",
+    "scallion-noodles",
+    "clay-pot-rice",
+  ],
+  bodyEn: [
+    { type: "p", text: "North south chinese food gets flattened into one sentence: the north eats noodles, the south eats rice. The sentence holds up, and the reason behind it is farming rather than taste. Wheat survives a dry northern winter, rice needs flooded fields, and a few thousand years of that difference settled into breakfast, into what counts as a proper meal, and into what people mean when they say they have eaten. This guide puts the line on a map, explains why northern china eats noodles while the south builds the plate around rice, and covers the places where rice vs noodles in china stops being a north and south question at all." },
+    { type: "h2", text: "Where the rice and noodle line runs" },
+    { type: "p", text: "The boundary follows the Qinling mountains and the Huai River, and it sits close to the 800 mm annual rainfall line that Chinese geography already uses to split the country in two. North of it the land is dry enough for wheat. South of it there is water to flood a paddy." },
+    { type: "ul", items: [
+      "The Qinling-Huaihe line tracks the 800 mm rainfall line, which is why a food map and a weather map look the same.",
+      "Winter heating policy used to stop at the same line, which tells you how seriously the country takes the split.",
+      "It is a gradient, not a wall. Shanxi, Shaanxi and northern Jiangsu sit in the transition band and cook both.",
+      "Above the line, wheat. Below the line, rice. Almost everything else in this article follows from that one fact.",
+    ] },
+    { type: "h2", text: "Why northern China eats noodles" },
+    { type: "p", text: "Wheat handles cold and needs no standing water, so it became the northern staple, and a whole vocabulary of dough came with it. Noodles are only the most visible part." },
+    { type: "ul", items: [
+      "Northern noodles run thick and chewy: hand-pulled lamian, hand-cut dao xiao mian, or wide belt noodles tossed in sauce.",
+      "Wheat also becomes mantou, bing and dumpling wrappers. A northern meal can be steamed buns plus a stir-fry with no rice anywhere on the table.",
+      "Portions are built for one person. A single bowl of Lanzhou lamian is dinner, not a course.",
+      "Wheat keeps through winter without much fuss, which mattered far more before refrigeration than it does now.",
+    ] },
+    { type: "h2", text: "What the south builds around rice" },
+    { type: "p", text: "In the south rice is the centre of the plate and everything else is arranged to move it along. A meal without rice reads as a snack, which is why the everyday word for eating a meal is literally eating rice." },
+    { type: "ul", items: [
+      "吃饭 means eat rice, and it is the ordinary way to say have a meal across most of the south.",
+      "Rice is plain and separate, so the dishes around it carry the salt and the sauce. Their job is to get the rice down.",
+      "Two harvests a year in the deep south shaped the calendar as well as the plate, and festival food still follows the harvest.",
+      "Rice turns into noodles, cakes, congee and rice wine too, so the south has a large wheat-free noodle tradition of its own.",
+    ] },
+    { type: "h2", text: "Where rice vs noodles in China stops being regional" },
+    { type: "p", text: "The largest exceptions are situational rather than geographic. Breakfast, travel and occasion all override the map, and they do it every day." },
+    { type: "ul", items: [
+      "Rice noodles such as mifen and hefen are the southern breakfast in Guangxi, Yunnan and Guangdong. They are noodles made of rice.",
+      "Wuhan sits south of the line and eats hot dry noodles before eight in the morning.",
+      "A formal northern banquet still finishes with rice or a wheat staple, because a banquet is expected to close on one.",
+      "Migration mixes it further. Shenzhen and Shanghai kitchens cook both, and younger households choose by convenience instead of by geography.",
+    ] },
+    { type: "h2", text: "How to cook across the line at home" },
+    { type: "p", text: "You do not have to pick a side. Pick by what the dish needs, and the north-south question mostly answers itself." },
+    { type: "ol", items: [
+      "Match the staple to the sauce. Thick and salty dishes want plain rice. Clear broths and dry stir-fries want noodles.",
+      "Use wheat where the chew matters. Hand-pulled noodles and dumpling wrappers need wheat gluten, and rice noodles will not behave the same way.",
+      "Cook rice in a pot with a tight lid, then let it sit off the heat for ten minutes before you lift the lid.",
+      "Boil fresh noodles in plenty of water, and only rinse them if you are serving cold or stir-frying afterwards.",
+      "For four people, plan one rice dish, one noodle dish and three shared plates. Nobody has to argue about it.",
+    ] },
+    { type: "note", text: "When a northern recipe says 面 and a southern one says 米, they are not disagreeing about flavour. Each one is describing what grows near it." },
+    { type: "p", text: "Both sides of that line are on haoweirecipes.com. Try [Lanzhou lamian](/recipes/lanzhou-lamian) for the northern bowl and [egg fried rice](/recipes/egg-fried-rice) for the southern answer, or start from the full index at /recipes. More on how region shapes the table is in /blog, including [二十四节气吃什么](/blog/eating-by-the-24-solar-terms), and the front door is /." },
+  ],
+  bodyZh: [
+    { type: "p", text: "南米北面这句话大致成立：北方吃面，南方吃米。但它背后是农业条件而不是口味偏好。小麦扛得住北方干冷的冬天，水稻要泡在水田里，几千年下来，这个差别渗进了早餐、渗进了「怎样才算一顿饭」，也渗进了人们说自己「吃过了」时指的是什么。这篇把分界线画在地图上，讲清楚北方为什么吃面、南方为什么围着米安排一桌菜，再说说哪些情况下南北之分根本不作数。" },
+    { type: "h2", text: "米面分界线画在哪" },
+    { type: "p", text: "这条线沿着秦岭和淮河走，和地理学上用来划分南北的 800 毫米年等降水量线几乎重合。线以北的土地够干，适合小麦；线以南有水，可以灌水田。" },
+    { type: "ul", items: [
+      "秦岭—淮河一线基本贴着 800 毫米等降水量线，所以食物地图和降水地图长得一样。",
+      "过去的集中供暖政策也停在这条线上，可以看出这个南北划分在国家层面有多当真。",
+      "它是渐变带而不是墙。山西、陕西和苏北都落在过渡区，两个都吃。",
+      "线北是麦，线南是稻。这篇后面讲的东西，基本都从这一个事实推出来的。",
+    ] },
+    { type: "h2", text: "北方为什么吃面" },
+    { type: "p", text: "小麦耐寒、不需要蓄水，于是成了北方的主食，随之而来的还有整套面食词汇。面条只是其中最显眼的那一类。" },
+    { type: "ul", items: [
+      "北方的面偏厚实筋道：手拉面、刀削面，或者拌酱的宽面。",
+      "小麦还会变成馒头、饼和饺子皮。北方一顿饭可以是馒头配一个炒菜，桌上完全没有米饭。",
+      "份量按一个人算。一碗兰州拉面就是晚饭，不是其中一道。",
+      "小麦过冬好存，在没有冰箱的年代，这一点的分量比现在重得多。",
+    ] },
+    { type: "h2", text: "南方围着米安排一桌菜" },
+    { type: "p", text: "在南方，米是盘子的中心，其他菜都围着它转。一顿没有米饭的饭只能算小吃，所以南方说「吃饭」时，字面意思就是吃米饭。" },
+    { type: "ul", items: [
+      "「吃饭」两个字就是吃米饭的意思，南方大部分地区都用这个词表示吃正餐。",
+      "米饭是淡的、单独上的，所以围在旁边的菜负责咸味和汤汁。它们的任务是把饭送下去。",
+      "南方深处一年两熟，改变的不仅是餐桌还有历法，节令食物到今天仍跟着收成走。",
+      "米也能变成米粉、米糕、粥和米酒，所以南方自己就有一整套不含小麦的面条传统。",
+    ] },
+    { type: "h2", text: "哪些时候南北之分不作数" },
+    { type: "p", text: "最大的例外不是地域性的，而是场景性的。早餐、出门在外和正式场合，每一天都在覆盖这张地图。" },
+    { type: "ul", items: [
+      "米粉、河粉是广西、云南、广东的早餐主角，它们是用米做的面。",
+      "武汉在分界线以南，早上八点前吃的是热干面。",
+      "北方正式宴席最后仍然要上米饭或一道主食，因为宴席的规矩是要用主食收尾。",
+      "人口流动把这条线搅得更乱。深圳和上海的厨房两个都做，年轻家庭按方便程度选，不按地理选。",
+    ] },
+    { type: "h2", text: "在家怎么做：跨过这条线" },
+    { type: "p", text: "不用选边站。按这道菜的需要来选主食，南北之争基本自己就有答案了。" },
+    { type: "ol", items: [
+      "主食跟着酱汁走。浓稠下饭的菜配白米饭；清汤和干香小炒配面。",
+      "需要筋道口感的地方用小麦。拉面和饺子皮要靠面筋，米粉做不到同样的口感。",
+      "米饭用盖子严实的锅煮，离火之后闷十分钟再开盖。",
+      "鲜面用宽水煮，只有做凉面或煮完还要回锅炒的时候才过水。",
+      "四个人吃饭，安排一道米饭、一道面和三个共享菜，谁都不用争。",
+    ] },
+    { type: "note", text: "北方的菜谱写着「面」、南方写着「米」，不是在争论哪个好吃。各自只是在描述自家附近长什么。" },
+    { type: "p", text: "这条线两边都能在 haoweirecipes.com 上找到。北方那碗看 [兰州拉面](/recipes/lanzhou-lamian)，南方的答案看 [蛋炒饭](/recipes/egg-fried-rice)，也可以从 /recipes 的完整索引开始。更多地域与餐桌的关系收在 /blog，比如 [二十四节气吃什么](/blog/eating-by-the-24-solar-terms)，首页在 /。" },
+  ],
+  faq: [
+    {
+      qEn: "Do people in northern China ever eat rice?",
+      qZh: "北方人完全不吃米饭吗？",
+      aEn: "They do, just not as the default. Rice shows up at banquets, in restaurants and in younger households, while wheat stays the everyday staple at home. Ordering rice in a northern restaurant is completely normal.",
+      aZh: "吃，只是不作为默认选项。米饭出现在宴席、餐馆和年轻家庭的餐桌上，家里的日常主食仍是面食。在北方餐馆点米饭完全正常。",
+    },
+    {
+      qEn: "Is the noodle and rice split really about rainfall?",
+      qZh: "米面之分真的和降雨量有关吗？",
+      aEn: "Mostly yes. The Qinling-Huaihe line tracks the 800 mm rainfall line, and wheat tolerates dry cold far better than rice does. Climate set what farmers could grow, and the kitchen followed the harvest.",
+      aZh: "大体是的。秦岭—淮河一线贴着 800 毫米等降水量线，而小麦比水稻更能扛干冷。气候决定了农民能种什么，厨房跟着收成走。",
+    },
+    {
+      qEn: "What is the difference between rice noodles and wheat noodles?",
+      qZh: "米粉和小麦面条有什么区别？",
+      aEn: "Rice noodles are made from rice flour and water, so they have no gluten and stay slippery and tender rather than chewy. Wheat noodles stretch and bounce because of gluten, which is why they suit hand-pulling and dumpling wrappers.",
+      aZh: "米粉用米粉和水做成，没有面筋，口感滑嫩而不是筋道。小麦面条因为面筋能拉能弹，所以适合手拉和做饺子皮。",
+    },
+    {
+      qEn: "Which staple should I cook for a mixed group?",
+      qZh: "南北口味混在一起的一桌，主食该做什么？",
+      aEn: "Serve both. One rice dish plus one noodle dish alongside three shared plates covers the table, and it sidesteps an argument that nobody can settle anyway.",
+      aZh: "两个都上。一道米饭加一道面，再配三个共享菜，一桌都照顾到了，也避开了一个本来就说不清的争论。",
+    },
+  ],
+};
+
 
 const chineseTableManners: BlogPost = {
   id: "chinese-table-manners",
@@ -7843,6 +7987,7 @@ const tenNoodleDishesFromFridgeStaples: BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  northVsSouthRiceOrNoodles,
   chineseTableManners,
   eatingBy24SolarTerms,
   howToVelvetChicken,
