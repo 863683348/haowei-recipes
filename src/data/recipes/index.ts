@@ -615,6 +615,16 @@ import { minced_pork_steamed_tofu } from "./minced-pork-steamed-tofu";
 import { steamed_egg_custard } from "./steamed-egg-custard";
 import { salted_fish_pork_patty } from "./salted-fish-pork-patty";
 import { fermented_tofu_steamed_pork_belly } from "./fermented-tofu-steamed-pork-belly";
+import { braised_fish_tail_huashui } from "./braised-fish-tail-huashui";
+import { flash_fried_shrimp_youbao } from "./flash-fried-shrimp-youbao";
+import { braised_pork_chop_shanghai } from "./braised-pork-chop-shanghai";
+import { scallion_braised_crucian_carp } from "./scallion-braised-crucian-carp";
+import { beggars_chicken } from "./beggars-chicken";
+import { crab_roe_lions_head } from "./crab-roe-lions-head";
+import { huai_an_soft_eel } from "./huai-an-soft-eel";
+import { crystal_pork_zhenjiang } from "./crystal-pork-zhenjiang";
+import { braised_fish_head_chaihui } from "./braised-fish-head-chaihui";
+import { three_layer_stuffed_duck } from "./three-layer-stuffed-duck";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1235,6 +1245,16 @@ export const recipes: Recipe[] = [
   steamed_egg_custard,
   salted_fish_pork_patty,
   fermented_tofu_steamed_pork_belly,
+  braised_fish_tail_huashui,
+  flash_fried_shrimp_youbao,
+  braised_pork_chop_shanghai,
+  scallion_braised_crucian_carp,
+  beggars_chicken,
+  crab_roe_lions_head,
+  huai_an_soft_eel,
+  crystal_pork_zhenjiang,
+  braised_fish_head_chaihui,
+  three_layer_stuffed_duck,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
