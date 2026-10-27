@@ -625,6 +625,16 @@ import { huai_an_soft_eel } from "./huai-an-soft-eel";
 import { crystal_pork_zhenjiang } from "./crystal-pork-zhenjiang";
 import { braised_fish_head_chaihui } from "./braised-fish-head-chaihui";
 import { three_layer_stuffed_duck } from "./three-layer-stuffed-duck";
+import { hand_torn_cabbage } from "./hand-torn-cabbage";
+import { sour_soup_fish } from "./sour-soup-fish";
+import { crab_roe_tofu } from "./crab-roe-tofu";
+import { pork_stewed_glass_noodles } from "./pork-stewed-glass-noodles";
+import { pork_ribs_green_bean_stew } from "./pork-ribs-green-bean-stew";
+import { asparagus_beef } from "./asparagus-beef";
+import { homemade_shacha_sauce } from "./homemade-shacha-sauce";
+import { chive_flower_sauce } from "./chive-flower-sauce";
+import { fermented_tofu_dipping_sauce } from "./fermented-tofu-dipping-sauce";
+import { seafood_dipping_sauce } from "./seafood-dipping-sauce";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1255,6 +1265,16 @@ export const recipes: Recipe[] = [
   crystal_pork_zhenjiang,
   braised_fish_head_chaihui,
   three_layer_stuffed_duck,
+  hand_torn_cabbage,
+  sour_soup_fish,
+  crab_roe_tofu,
+  pork_stewed_glass_noodles,
+  pork_ribs_green_bean_stew,
+  asparagus_beef,
+  homemade_shacha_sauce,
+  chive_flower_sauce,
+  fermented_tofu_dipping_sauce,
+  seafood_dipping_sauce,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
