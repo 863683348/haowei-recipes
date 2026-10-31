@@ -635,6 +635,16 @@ import { homemade_shacha_sauce } from "./homemade-shacha-sauce";
 import { chive_flower_sauce } from "./chive-flower-sauce";
 import { fermented_tofu_dipping_sauce } from "./fermented-tofu-dipping-sauce";
 import { seafood_dipping_sauce } from "./seafood-dipping-sauce";
+import { mala_spicy_dipping_sauce } from "./mala-spicy-dipping-sauce";
+import { peanut_crumble_dipping_sauce } from "./peanut-crumble-dipping-sauce";
+import { cilantro_garlic_dipping_sauce } from "./cilantro-garlic-dipping-sauce";
+import { grilled_mantou_slices } from "./grilled-mantou-slices";
+import { grilled_enoki_mushrooms } from "./grilled-enoki-mushrooms";
+import { grilled_seitan_skewers } from "./grilled-seitan-skewers";
+import { grilled_corn_on_the_cob } from "./grilled-corn-on-the-cob";
+import { grilled_pork_belly } from "./grilled-pork-belly";
+import { cumin_grilled_chicken_wings } from "./cumin-grilled-chicken-wings";
+import { tomato_rice_one_pot } from "./tomato-rice-one-pot";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1275,6 +1285,16 @@ export const recipes: Recipe[] = [
   chive_flower_sauce,
   fermented_tofu_dipping_sauce,
   seafood_dipping_sauce,
+  mala_spicy_dipping_sauce,
+  peanut_crumble_dipping_sauce,
+  cilantro_garlic_dipping_sauce,
+  grilled_mantou_slices,
+  grilled_enoki_mushrooms,
+  grilled_seitan_skewers,
+  grilled_corn_on_the_cob,
+  grilled_pork_belly,
+  cumin_grilled_chicken_wings,
+  tomato_rice_one_pot,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
