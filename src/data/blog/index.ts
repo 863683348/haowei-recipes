@@ -8873,7 +8873,138 @@ const dragonBoatFestivalZongzi: BlogPost = {
 };
 
 
+const chopsticksEtiquetteMyth: BlogPost = {
+  id: "chopsticks-etiquette-myth",
+  slug: "chopsticks-etiquette-myth",
+  titleEn: "Chopsticks: Etiquette & Myth",
+  titleZh: "筷子礼仪与禁忌",
+  excerptEn:
+    "Most chopstick mistakes at a Chinese table are not about technique. They are gestures that already mean something else: incense for the dead, a beggar at the door, a funeral rite. The taboos that get enforced, where each one comes from, how to hold the pair, and the beliefs that do not survive a second look.",
+  excerptZh:
+    "在中式餐桌上，多数用筷子的错误跟手法无关，而是那些已经另有所指的动作：给逝者的香、门口的乞丐、丧礼上的仪式。这篇讲真正会被计较的禁忌、每条禁忌的来处、正确的握法，以及几种经不起推敲的说法。",
+  categoryKey: "culture",
+  categoryEn: "Culture",
+  categoryZh: "文化",
+  tags: ["chopsticks etiquette", "chopstick taboos", "how to hold chopsticks", "chinese dining customs", "chinese table manners", "chinese recipes"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-11-02",
+  updatedDate: "2026-11-02",
+  coverImage: "/images/recipes/dan-dan-noodles-chengdu.webp",
+  relatedRecipeSlugs: [
+    "dan-dan-noodles-chengdu",
+    "lanzhou-lamian",
+    "pan-fried-dumplings",
+    "beef-potstickers",
+    "reunion-hot-pot",
+  ],
+  bodyEn: [
+    { type: "p", text: "Chopsticks are the first thing a visitor gets wrong at a Chinese table, and most of the mistakes are not about technique. They are gestures that already mean something else: incense for the dead, a beggar at the door, a funeral rite. Nobody hands you the list, and the rules are uneven, because some are observed in every household and some only in a few. Below is the set that actually gets enforced, where each one comes from, how to hold the pair correctly, and the beliefs about chopsticks that fall apart on a second look." },
+    { type: "h2", text: "Where the taboos come from" },
+    { type: "p", text: "Nearly every chopstick rule traces back to one of two places, a funeral ritual or a beggar. Once you know which, the rule stops looking arbitrary." },
+    { type: "ul", items: [
+      "Do not stand chopsticks upright in a bowl of rice. It copies the incense burned for the dead, and it is the one rule every Chinese table agrees on.",
+      "Do not tap the bowl with chopsticks. Beggars did that to draw attention, so tapping reads as an insult to whoever cooked the meal.",
+      "Do not pass food from your chopsticks to someone else's. That is how bones are handled at a funeral, so it is avoided at the table entirely.",
+      "Do not hold the pair at uneven lengths. The phrase for it, 三长两短, also describes a coffin, so it carries a reading about death.",
+      "Do not point, wave or gesture with chopsticks in hand, and do not use them to spear food or drag a bowl across the table.",
+      "Do not dig through a shared dish for the best piece. Take what sits nearest and lift it out.",
+    ] },
+    { type: "h2", text: "How to hold them" },
+    { type: "ol", items: [
+      "Rest the lower stick in the crook between thumb and index finger, braced against the ring finger. It does not move.",
+      "Hold the upper stick like a pencil, between thumb, index and middle finger. It does the work.",
+      "Pivot the upper stick only. If both sticks move, the gap never opens wide enough for anything but rice.",
+      "Keep the tips aligned. A mismatch of a few millimetres is the usual reason food slips.",
+    ] },
+    { type: "note", text: "First-timer check: if your fingers ache after one bowl, you are gripping too close to the middle and pinching with your whole hand. Move up the sticks, loosen the grip, and let the lower one stay still." },
+    { type: "h2", text: "Length, material, and why the Chinese pair looks different" },
+    { type: "ul", items: [
+      "Chinese chopsticks run roughly 25 to 27 cm, longer than the Japanese pair, because they are built for reaching across a shared table rather than into an individual tray.",
+      "The tips are blunt rather than pointed. A point is for lifting bones out of a whole fish, which is a Japanese habit more than a Chinese one.",
+      "Wood and bamboo are the everyday materials. They grip slippery food better than lacquer or metal, and they do not carry the heat of a hot pot up to your hand.",
+      "Korean chopsticks are flat and usually metal. The flat profile stops them rolling, and metal survives repeated sterilising.",
+    ] },
+    { type: "h2", text: "What the name is doing" },
+    { type: "p", text: "Chopsticks were called 箸 (zhu) for most of their history. The switch to 筷 (kuai) happened around the Ming period, and the usual explanation is a boatman's taboo: 箸 sounds like 住, to stop or to halt, which is the last word anyone wants attached to a boat. 筷 sounds like 快, fast. Whether or not that story is the whole truth, the newer name has been in use for roughly five hundred years." },
+    { type: "h2", text: "Myths that do not hold up" },
+    { type: "ul", items: [
+      "That chopsticks make you eat less. Bite size drops, but people tend to take more bites, and the research on it is thin.",
+      "That resting chopsticks across the bowl is rude. Across the bowl is normal in China. Upright in the rice is the one that lands badly.",
+      "That lifting the bowl to your mouth is bad manners. In Chinese dining the bowl comes up to meet the chopsticks, and eating rice that way is standard.",
+      "That silver chopsticks detect poison. Silver discolours next to sulphur compounds, which some poisons contain and plenty of ordinary foods contain too, so it tells you nothing reliable.",
+    ] },
+    { type: "p", text: "All of this happens at a shared table, which is where most of the recipes on haoweirecipes.com are headed. [Lanzhou lamian](/recipes/lanzhou-lamian) is the bowl that exposes bad chopstick technique fastest, [dan dan noodles](/recipes/dan-dan-noodles-chengdu) is the one worth practising on, [pan-fried dumplings](/recipes/pan-fried-dumplings) rewards a clean grip, and the full index is at /recipes. Seating, toasts and the bill are covered in [Chinese table manners](/blog/chinese-table-manners), and the rest of what we write is on /blog." },
+  ],
+  bodyZh: [
+    { type: "p", text: "在中式餐桌上，筷子是外来客人最容易出错的第一件事，而多数错误跟手法无关。它们都是一些已经另有所指的动作：给逝者上的香、门口的乞丐、丧礼上的仪式。没人会把这份清单交给你，规矩也不齐整，有些家家都守，有些只有少数家庭在意。下面列的是真正会被计较的那些，每条的来处、正确的握法，以及几种经不起再看一眼的说法。" },
+    { type: "h2", text: "禁忌从哪里来" },
+    { type: "p", text: "几乎每一条筷子规矩都能追到两个地方之一：丧礼仪式，或者乞丐。知道是哪一类之后，这条规矩就不再显得随意了。" },
+    { type: "ul", items: [
+      "不要把筷子竖插在饭碗里。这是模仿给逝者烧的香，也是所有中式餐桌公认的一条禁忌。",
+      "不要用筷子敲碗。乞丐靠敲碗吸引注意，所以敲碗等于对做饭的人不敬。",
+      "不要用筷子把食物递给别人。那是丧礼上处理骨殖的方式，所以餐桌上完全避开。",
+      "不要把一双筷子拿成一长一短。这个说法叫三长两短，同时也在形容棺材，所以带上了与死有关的读法。",
+      "不要拿着筷子指人、挥动或比划，也不要用筷子扎食物、把碗拖过来。",
+      "不要在共用的菜里翻找最好的那块。就近夹起，直接带走。",
+    ] },
+    { type: "h2", text: "怎么握" },
+    { type: "ol", items: [
+      "下面那根放在拇指与食指之间的虎口里，靠无名指托住。它不动。",
+      "上面那根像握铅笔一样，用拇指、食指和中指控制。它负责开合。",
+      "只动上面那根。两根都动的话，开口永远撑不到能夹起米饭之外的东西。",
+      "保持筷尖对齐。差出几毫米，就是食物打滑最常见的原因。",
+    ] },
+    { type: "note", text: "新手自检：如果一碗饭后手指发酸，多半是握得太靠中间、整个手都在使劲。手往上挪一点，放松力度，让下面那根保持不动。" },
+    { type: "h2", text: "长度、材质，以及中式筷子为什么长这样" },
+    { type: "ul", items: [
+      "中式筷子大约 25 到 27 厘米，比日式筷子长，因为它是为伸到共用菜盘里设计的，而不是从个人餐盘里夹。",
+      "筷头偏钝而不是尖。尖头是为了从整鱼里挑骨，这更像日本的习惯，不是中国的。",
+      "木头和竹子是日常材质。夹滑的东西比漆器或金属稳，也不会把火锅的热直接传到手上。",
+      "韩国筷子是扁的，多为金属。扁平的截面让它不会滚，金属也扛得住反复高温消毒。",
+    ] },
+    { type: "h2", text: "名字里藏着什么" },
+    { type: "p", text: "筷子在历史上大部分时间叫「箸」。改成「筷」大约发生在明代，通常的解释是船家的忌讳：箸听起来像住，也就是停、住下的意思，这是最不该用在船上的字。筷听起来像快。不论这个故事是不是全部真相，新名字已经用了大约五百年。" },
+    { type: "h2", text: "几种站不住脚的说法" },
+    { type: "ul", items: [
+      "说用筷子能让人吃得少。单口变小是真的，但人会多夹几次，这方面的研究本身也很薄。",
+      "说把筷子横放在碗上是失礼。横放在碗口在中国很常见，真正会惹人不快的是竖插在饭里。",
+      "说端起碗就着嘴吃是没教养。中式用餐里，碗本来就是抬起来迎向筷子的，这样吃米饭是标准做法。",
+      "说银筷子能试毒。银遇到含硫化合物会变色，部分毒物含硫，很多普通食物也含硫，所以它给不出任何可靠结论。",
+    ] },
+    { type: "p", text: "这些事都发生在共享的餐桌上，而 haoweirecipes.com 上多数菜谱也正是为这张桌子准备的。[兰州拉面](/recipes/lanzhou-lamian) 是让错误握法最快露馅的一碗，[成都担担面](/recipes/dan-dan-noodles-chengdu) 适合拿来练手，[煎饺](/recipes/pan-fried-dumplings) 会回报一个干净的握姿，完整索引在 /recipes。座次、敬酒和买单写在 [中式餐桌礼仪](/blog/chinese-table-manners)，其余文章都在 /blog。" },
+  ],
+  faq: [
+    {
+      qEn: "Is it really rude to stand chopsticks upright in a bowl of rice?",
+      qZh: "把筷子竖插在饭碗里真的很失礼吗？",
+      aEn: "Yes, and it is the one taboo that holds everywhere. It copies the incense burned for the dead, so it reads as a wish of death on the table. Lay the pair across the bowl or on a rest instead.",
+      aZh: "是的，而且这是各地都守的一条。它模仿给逝者烧的香，等于把死亡的意味带上了桌。把筷子横放在碗口或筷架上就好。",
+    },
+    {
+      qEn: "How do I hold chopsticks correctly?",
+      qZh: "筷子正确的握法是什么？",
+      aEn: "Rest the lower stick in the crook of your thumb, braced on the ring finger, and leave it still. Hold the upper stick like a pencil and pivot only that one. Keep the tips aligned, since a mismatched pair slips.",
+      aZh: "下面那根放在虎口、用无名指托住，保持不动；上面那根像铅笔一样握住，只动这一根。筷尖要对齐，不齐的一双最容易打滑。",
+    },
+    {
+      qEn: "Why are Chinese chopsticks longer than Japanese ones?",
+      qZh: "为什么中式筷子比日式筷子长？",
+      aEn: "They are built for a shared table. Chinese chopsticks run about 25 to 27 cm so you can reach dishes in the middle, and the tips stay blunt because taking bones out of a whole fish is not the job they were made for.",
+      aZh: "因为中式餐桌是共用的。中式筷子长约 25 到 27 厘米，方便伸到桌子中间的菜，筷头保持钝是因为它本来就不是为挑整鱼骨设计的。",
+    },
+    {
+      qEn: "Is lifting the bowl to my mouth bad manners?",
+      qZh: "端起碗就着嘴吃算不算没礼貌？",
+      aEn: "No. In Chinese dining the bowl comes up to meet the chopsticks, and eating rice that way is normal. The gesture to avoid is standing the chopsticks upright in the rice, which is a different thing entirely.",
+      aZh: "不算。中式用餐里碗本来就要抬起来迎向筷子，这样吃米饭是常态。要避开的是把筷子竖插在饭里，那是完全不同的另一件事。",
+    },
+  ],
+};
+
+
 export const blogPosts: BlogPost[] = [
+  chopsticksEtiquetteMyth,
   chineseCongeeCulture,
   dragonBoatFestivalZongzi,
   midAutumnMooncakesBeyond,
