@@ -645,6 +645,16 @@ import { grilled_corn_on_the_cob } from "./grilled-corn-on-the-cob";
 import { grilled_pork_belly } from "./grilled-pork-belly";
 import { cumin_grilled_chicken_wings } from "./cumin-grilled-chicken-wings";
 import { tomato_rice_one_pot } from "./tomato-rice-one-pot";
+import { lap_cheong_rice_cooker_rice } from "./lap-cheong-rice-cooker-rice";
+import { spare_rib_rice_cooker_rice } from "./spare-rib-rice-cooker-rice";
+import { assorted_clay_pot } from "./assorted-clay-pot";
+import { taiwanese_braised_pork_rice } from "./taiwanese-braised-pork-rice";
+import { rice_cooker_char_siu } from "./rice-cooker-char-siu";
+import { shanghai_salted_pork_greens_rice } from "./shanghai-salted-pork-greens-rice";
+import { fried_rice_ball } from "./fried-rice-ball";
+import { chinese_rice_ball } from "./chinese-rice-ball";
+import { brown_rice_fried_rice } from "./brown-rice-fried-rice";
+import { preserved_mustard_root_fried_rice } from "./preserved-mustard-root-fried-rice";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1295,6 +1305,16 @@ export const recipes: Recipe[] = [
   grilled_pork_belly,
   cumin_grilled_chicken_wings,
   tomato_rice_one_pot,
+  lap_cheong_rice_cooker_rice,
+  spare_rib_rice_cooker_rice,
+  assorted_clay_pot,
+  taiwanese_braised_pork_rice,
+  rice_cooker_char_siu,
+  shanghai_salted_pork_greens_rice,
+  fried_rice_ball,
+  chinese_rice_ball,
+  brown_rice_fried_rice,
+  preserved_mustard_root_fried_rice,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
