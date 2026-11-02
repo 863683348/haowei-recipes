@@ -1,5 +1,121 @@
 import type { BlogPost } from "@/lib/types";
 
+const reunionDinnerMatters: BlogPost = {
+  id: "chinese-family-dinner-tradition",
+  slug: "chinese-family-dinner-tradition",
+  titleEn: "Why the Reunion Dinner Matters",
+  titleZh: "团圆饭的意义",
+  excerptEn:
+    "A chinese family dinner is not really about the recipes. It is the one meal a household will rearrange travel plans and swap work shifts for, and the food is mostly there to keep everyone at the table longer than they would otherwise stay. Where the chinese reunion dinner came from, what a family dinner tradition asks of people, and how the menu carries it.",
+  excerptZh:
+    "一顿团圆饭，重点其实不在菜谱上。这是一家人愿意为它改行程、换班次的唯一一顿饭，菜的作用主要是把人在桌边多留一会儿。这篇讲这顿饭从哪儿来、一顿家宴到底要求了什么，以及菜单怎么把这些意思带出来。",
+  categoryKey: "culture",
+  categoryEn: "Culture",
+  categoryZh: "文化",
+  tags: ["chinese family dinner", "chinese reunion dinner", "family dinner tradition", "reunion dinner meaning", "chinese home cooking"],
+  authorEn: "HǎoWèi Kitchen",
+  authorZh: "好味厨房",
+  publishDate: "2026-11-03",
+  updatedDate: "2026-11-03",
+  coverImage: "/images/recipes/reunion-hot-pot.webp",
+  relatedRecipeSlugs: [
+    "whole-family-blessing-casserole",
+    "pork-cabbage-dumplings",
+    "sweet-sour-fish",
+    "reunion-hot-pot",
+  ],
+  bodyEn: [
+    { type: "p", text: "A chinese family dinner is not a recipe. It is the one meal where the point is who showed up, and households will rearrange travel plans and swap work shifts to make that happen. The food matters, but mostly as a way of keeping people in the same room for longer than they would otherwise stay. I did not get this until I spent a New Year's Eve abroad eating a very good meal by myself." },
+    { type: "h2", text: "What a chinese reunion dinner is actually for" },
+    { type: "p", text: "The chinese reunion dinner is built around a simple claim: a family is supposed to be in one place at least once a year. That is a big ask when adult children live in other cities, so the meal gets attached to the one holiday when travel is already happening. Everything else on the table follows from that, not the other way round." },
+    { type: "ul", items: [
+      "It is held on the eve, not the day. The holiday itself is for visiting other people's houses.",
+      "A spare place setting is normal. It is for whoever could not get back, and nobody treats it as a sad gesture.",
+      "The meal runs long on purpose. Clearing the table early reads as ending the evening before it has happened.",
+      "Someone usually cooks far too much. Leftovers going into the next day are the point, not a miscalculation.",
+    ] },
+    { type: "h2", text: "How it became a family dinner tradition" },
+    { type: "p", text: "A family dinner tradition like this one survives because it does not depend on anyone explaining it. You learn it by being told to sit down, by watching where the eldest person is placed, and by being handed a bowl to carry. I can list the rules now, but I learned all of them before I could name any." },
+    { type: "p", text: "It also bends without breaking. Families eat hot pot instead of a spread of eight dishes. They order part of it from a restaurant. An overseas household cooks it on the nearest Saturday because nobody gets the day off. The form changes and the meal still counts as the same one, which is why it has outlasted far more specific customs." },
+    { type: "h2", text: "The rules nobody writes down" },
+    { type: "p", text: "Most of the etiquette is about who gets considered first, and almost none of it is announced." },
+    { type: "ul", items: [
+      "The eldest sits first and lifts chopsticks first. Everyone else waits, usually without being told.",
+      "The best pieces move toward other people's bowls. Putting them in your own is noticed.",
+      "A whole fish arrives with head and tail on, and some of it stays on the plate overnight.",
+      "Nobody counts the dishes out loud. Eight is the old number, six is what most kitchens actually manage.",
+      "You stay at the table after you have finished eating. Leaving is the thing that ends the night.",
+    ] },
+    { type: "h2", text: "What the food is doing" },
+    { type: "p", text: "The menu is a set of small sentences, most of them puns. Once you hear them you cannot unhear them, and a plate of plain steamed fish stops being just fish." },
+    { type: "ol", items: [
+      "Fish, because 鱼 and 余 sound the same. The dish says may the year end with more than you needed.",
+      "Dumplings, folded to look like the old silver ingot. In much of the south this slot goes to nian gao instead.",
+      "A whole chicken or a large braise, so the table has one centrepiece rather than eight small plates.",
+      "Long noodles that nobody cuts, and round tangyuan at the end. Length and roundness are both about the family staying intact.",
+    ] },
+    { type: "note", text: "If you are cooking this in a small kitchen abroad, cut the number of dishes, not the size of them. One whole fish, one braise made a day ahead, one vegetable and a bowl of tangyuan reads as a proper reunion dinner for two. Half portions of eight dishes just give you eight lots of leftovers." },
+    { type: "h2", text: "Common questions" },
+    { type: "p", text: "Does it have to be on New Year's Eve? Strictly yes, though plenty of families now cook it on the nearest day everyone can make. Does every household need dumplings? No, that is a northern habit that spread outward, and southern tables often use nian gao or nothing in that slot. Is the meal about the food? It is about the people, with the food doing most of the work of getting them to stay." },
+    { type: "p", text: "Everything on this table is on haoweirecipes.com. [Whole family blessing casserole](/recipes/whole-family-blessing-casserole) is the one-pot version of the spread, [pork and cabbage dumplings](/recipes/pork-cabbage-dumplings) walks through the folding, and [reunion hot pot](/recipes/reunion-hot-pot) is what we make when nobody wants eight courses. The full recipe index is at /recipes. Dish-by-dish detail lives in [the reunion feast guide](/blog/chinese-new-year-reunion-feast), where people sit is in [Chinese table manners](/blog/chinese-table-manners), and the front door is [the home page](/)." },
+  ],
+  bodyZh: [
+    { type: "p", text: "一顿团圆饭，不是一份菜谱。这顿饭的重点在于谁到了，一家人会为它改行程、换班次，把人凑到同一张桌子上。菜当然要紧，但它的作用主要是让大家在桌边多待一会儿，比本来会待的更久。我在国外一个人吃过一顿很不错的年夜饭之后，才明白这件事。" },
+    { type: "h2", text: "一顿团圆饭到底是干什么用的" },
+    { type: "p", text: "团圆饭建立在一个很朴素的说法上：一家人一年里至少该有一次待在同一个地方。成年子女散在不同城市，这个要求就不轻，所以这顿饭被挂在了一个本来就要出行的节日上。桌上其它一切都是从这件事推出来的，不是反过来。" },
+    { type: "ul", items: [
+      "它在除夕，不在初一。初一那天是用来去别人家拜年的。",
+      "多摆一副碗筷很正常。那是给没能赶回来的人留的，没人觉得这有什么晦气。",
+      "这顿饭故意吃得久。早早收桌，等于晚上还没开始就把它结束了。",
+      "做菜的人总会做多。剩菜跨到第二天是本来就要的，不是算错了分量。",
+    ] },
+    { type: "h2", text: "一顿家宴是怎么变成传统的" },
+    { type: "p", text: "这样的家庭聚餐传统能留下来，靠的不是谁把它讲清楚。你是被叫着坐下、看着长辈坐在哪儿、被塞了一碗要端过去的东西，就这么学会的。现在我能把规矩一条条列出来，可我学会它们的时候，一条名字都叫不上来。" },
+    { type: "p", text: "它也弯得动，不会一弯就断。有人家改成吃火锅，不做八个菜。有人家从餐馆点一半。在海外的家庭挪到最近的周六，因为那天没人放假。形式一直在变，这顿饭还是同一顿，比许多更具体的老规矩都活得久。" },
+    { type: "h2", text: "没人写下来的那些规矩" },
+    { type: "p", text: "这些讲究大多是在说谁该被先照顾到，而且几乎没人会明说。" },
+    { type: "ul", items: [
+      "长辈先坐、先动筷。其他人等着，通常不用谁提醒。",
+      "好部位往别人碗里夹。夹进自己碗里，是会被看见的。",
+      "整条鱼连头带尾上桌，还要留一部分过夜。",
+      "没人当面数菜。老说法是八个，多数厨房真正做得出来的是六个。",
+      "吃饱了也别离桌，还坐在桌边。谁起身，这晚上才算散。",
+    ] },
+    { type: "h2", text: "菜在替这顿饭说话" },
+    { type: "p", text: "菜单是一串短句子，大半是谐音。一旦听出来就再也听不回去了，一盘清蒸鱼从此不再只是鱼。" },
+    { type: "ol", items: [
+      "鱼，因为「鱼」和「余」同音。这道菜说的是愿你年底比需要的多一点。",
+      "饺子，折成旧时银锭的样子。南方很多地方这个位置上年糕。",
+      "一只整鸡或者一个大荤，让桌上有个中心，而不是八个小盘子。",
+      "长面条谁都不切断，最后上圆的汤圆。长和圆，说的都是一家人还整着。",
+    ] },
+    { type: "note", text: "在海外的小厨房里做这顿，减菜的数量，别减菜的规模。一条整鱼、一个提前一天做好的红烧、一个青菜，再加一碗汤圆，两个人吃也是正经的团圆饭。把八个菜都做半份，只会得到八份剩菜。" },
+    { type: "h2", text: "常被问到的几件事" },
+    { type: "p", text: "非得除夕吗？严格说是，不过现在很多家庭挪到大家都能到场的最近一天。一定要吃饺子吗？不一定，那是北方习惯往外传的，南方的桌上常常上年糕，也可能这个位置什么都不放。这顿饭到底是不是在吃菜？重点是人在，菜承担了把人留住的大部分活儿。" },
+    { type: "p", text: "上面这些菜在 haoweirecipes.com 都能找到。[全家福砂锅](/recipes/whole-family-blessing-casserole) 是整桌菜的一锅版，[白菜猪肉饺子](/recipes/pork-cabbage-dumplings) 讲怎么包，[团圆火锅](/recipes/reunion-hot-pot) 是谁都不想做八个菜时的方案。完整索引在 /recipes。一道道拆开讲在 [年夜饭的讲究](/blog/chinese-new-year-reunion-feast)，座次在 [中式餐桌礼仪](/blog/chinese-table-manners)，[首页](/)在这儿。" },
+  ],
+  faq: [
+    {
+      qEn: "What is the difference between a chinese family dinner and a normal weeknight meal?",
+      qZh: "中式家庭晚餐和平常一顿晚饭，差别在哪儿？",
+      aEn: "The guest list. A weeknight meal feeds whoever is home; the reunion dinner is the one people travel back for, and the table is set for a few more than are coming. The cooking is heavier, but the difference people remember is who was in the room.",
+      aZh: "差别在人来没来齐。平常的晚饭是家里有谁就做给谁吃，团圆饭是要专门赶回来的那一顿，桌子还会按比到场人数多几位来摆。菜是重一些，但真正留得住的记忆是屋里都坐了谁。",
+    },
+    {
+      qEn: "Why is fish left uneaten at a chinese reunion dinner?",
+      qZh: "为什么团圆饭的鱼不能吃干净？",
+      aEn: "鱼 and 余 are homophones, and 余 means surplus. Leaving part of the fish overnight keeps that surplus from running out before the new year starts. It is served whole for the same reason, so the year has a head and a tail.",
+      aZh: "「鱼」和「余」同音，「余」是有剩余。留一部分过夜，是不让这份「余」在开年之前就见底。整条上桌也是同一个道理，让这一年有头有尾。",
+    },
+    {
+      qEn: "Can a family dinner tradition survive if nobody cooks the full spread?",
+      qZh: "不做满整桌菜，这个传统还算数吗？",
+      aEn: "Yes. Households have been trimming this meal for decades: hot pot instead of eight dishes, part of it ordered in, the date moved to a weekend. What holds is that everyone sits down together and the meal runs long, not the number of plates.",
+      aZh: "算。这顿饭被各家删删减减几十年了：改成火锅、从餐馆点一半、日子挪到周末。真正守住的是大家坐到一起来、这顿饭吃得久，而不是盘子的数量。",
+    },
+  ],
+};
+
 const chineseCongeeCulture: BlogPost = {
   id: "chinese-congee-culture",
   slug: "chinese-congee-culture",
@@ -9004,6 +9120,7 @@ const chopsticksEtiquetteMyth: BlogPost = {
 
 
 export const blogPosts: BlogPost[] = [
+  reunionDinnerMatters,
   chopsticksEtiquetteMyth,
   chineseCongeeCulture,
   dragonBoatFestivalZongzi,
