@@ -665,6 +665,16 @@ import { beijing_sesame_millet_tea } from "./beijing-sesame-millet-tea";
 import { mung_bean_sweet_soup } from "./mung-bean-sweet-soup";
 import { fermented_rice_wine_balls } from "./fermented-rice-wine-balls";
 import { almond_tofu_dessert } from "./almond-tofu-dessert";
+import { papaya_hasma_dessert_soup } from "./papaya-hasma-dessert-soup";
+import { luo_han_guo_tea } from "./luo-han-guo-tea";
+import { chrysanthemum_tea } from "./chrysanthemum-tea";
+import { goji_red_date_tea } from "./goji-red-date-tea";
+import { longan_tea } from "./longan-tea";
+import { ginger_brown_sugar_tea } from "./ginger-brown-sugar-tea";
+import { lemon_honey_water } from "./lemon-honey-water";
+import { sugarcane_water_chestnut_drink } from "./sugarcane-water-chestnut-drink";
+import { winter_melon_tea } from "./winter-melon-tea";
+import { aged_tangerine_peel_tea } from "./aged-tangerine-peel-tea";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1335,6 +1345,16 @@ export const recipes: Recipe[] = [
   mung_bean_sweet_soup,
   fermented_rice_wine_balls,
   almond_tofu_dessert,
+  papaya_hasma_dessert_soup,
+  luo_han_guo_tea,
+  chrysanthemum_tea,
+  goji_red_date_tea,
+  longan_tea,
+  ginger_brown_sugar_tea,
+  lemon_honey_water,
+  sugarcane_water_chestnut_drink,
+  winter_melon_tea,
+  aged_tangerine_peel_tea,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {

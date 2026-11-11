@@ -820,17 +820,7 @@ export const terms: Term[] = [
       "Omit if unavailable — the soup still works with extra ginger; do not substitute with other herbs.",
     substituteHintZh: "买不到可省略，多加生姜即可；勿用其他草药替代。",
   },
-  ]
-
-/** 术语查询工具 */
-export function getTermByKey(key: string): Term | undefined {
-  return terms.find((t) => t.id === key);
-}
-
-export function searchTerms(query: string): Term[] {
-  const q = query.toLowerCase().trim();
-  if (!q) return [
-  /* ========== 新增 Day 15 术语 ========== */
+  /* ========== 本次补录：此前被误放在 searchTerms 死数组中的术语 ========== */
   {
     id: "egg",
     zh: "鸡蛋",
@@ -969,49 +959,6 @@ export function searchTerms(query: string): Term[] {
       "Dry sherry or extra Shaoxing wine plus a pinch of salt.",
     substituteHintZh: "干雪利酒或少量绍兴酒加盐替代。",
   },
-  /* ---------- 新补（Day 93 羊肉/牛肉主题） ---------- */
-  {
-    id: "cumin",
-    zh: "孜然",
-    pinyin: "zī rán",
-    en: "Cumin (zi ran)",
-    category: "spice",
-    definition:
-      "Earthy, nutty seeds essential to Northwest Chinese (Xinjiang) lamb dishes. Toasted and coarsely ground, it defines the flavor of Chinese lamb skewers and cumin lamb.",
-    definitionZh: "西北（新疆）羊肉菜肴的灵魂香料，焙香粗磨，定义了中国羊肉串与孜然羊肉的风味。",
-    quantEquivalent: "1 tbsp ≈ 6 g",
-    substituteHint:
-      "No cumin? Use ground coriander plus a pinch of caraway; not identical but close in warmth.",
-    substituteHintZh: "无孜然可用香菜籽粉加少许葛缕子替代，香气近似。",
-  },
-  {
-    id: "black-tea",
-    zh: "红茶",
-    pinyin: "hóng chá",
-    en: "Black tea (for braising)",
-    category: "ingredient",
-    definition:
-      "Strong brewed black tea used as a braising liquid for tea-smoked or tea-braised meats. Adds tannic depth and a mahogany color without sweetness.",
-    definitionZh: "浓泡红茶用作茶香肉类的卤汁，带来单宁的醇厚与红褐色泽，不甜。",
-    quantEquivalent: "2 tbsp leaves ≈ 1 cup brewed",
-    substituteHint:
-      "Earl Grey or any robust black tea works; avoid green/white tea which is too delicate.",
-    substituteHintZh: "可用伯爵茶或任意浓红茶；勿用绿茶/白茶，过于清淡。",
-  },
-  {
-    id: "angelica-root",
-    zh: "当归",
-    pinyin: "dāng guī",
-    en: "Angelica root (dang gui)",
-    category: "ingredient",
-    definition:
-      "Aromatic medicinal root from Chinese herbal tradition, classically paired with ginger and lamb in warming winter soups (dang gui sheng jiang yang rou tang).",
-    definitionZh: "中药芳香根，经典搭配生姜与羊肉，用于温补冬令汤（当归生姜羊肉汤）。",
-    quantEquivalent: "10–15 g per soup",
-    substituteHint:
-      "Omit if unavailable — the soup still works with extra ginger; do not substitute with other herbs.",
-    substituteHintZh: "买不到可省略，多加生姜即可；勿用其他草药替代。",
-  },
   {
     id: "sesame-paste",
     zh: "芝麻酱",
@@ -1044,7 +991,224 @@ export function searchTerms(query: string): Term[] {
     substituteHintZh:
       "可用 Medjool 枣 1:1 替代甜度，但更湿更黑；蔓越莓干偏酸，需额外加糖。",
   },
+  {
+    id: "goji-berries",
+    zh: "枸杞",
+    pinyin: "gǒu qǐ",
+    en: "Goji berries (wolfberries)",
+    category: "ingredient",
+    definition:
+      "Small dried red-orange berries with a mild, raisin-like sweetness. They are almost always steeped or added at the very end of cooking, because long boiling makes them sour and turns the liquid an unpleasant orange.",
+    definitionZh:
+      "橘红色小干果，甜味温和近似葡萄干。几乎都是泡水或最后下锅——久煮会发酸，还会把汤水染成难看的橘色。",
+    quantEquivalent: "1 tbsp ≈ 10 g",
+    substituteHint:
+      "Dried cranberries or small raisins are the closest supermarket swap; both are sweeter, so cut any added sugar slightly.",
+    substituteHintZh:
+      "超市最接近的替代是蔓越莓干或小粒葡萄干；两者更甜，需略减糖量。",
+  },
+  {
+    id: "longan",
+    zh: "桂圆",
+    pinyin: "guì yuán",
+    en: "Dried longan",
+    category: "ingredient",
+    definition:
+      "Dried longan flesh sold as amber, slightly sticky kernels, or still in the shell. Sweeter and more honeyed than red dates, with a musky note that deepens the longer it simmers.",
+    definitionZh:
+      "龙眼干果肉，呈琥珀色微黏的果核状，也有带壳的。比红枣更甜、更蜜香，煮得越久，那点麝香气息越厚。",
+    quantEquivalent: "6 dried longan ≈ 15 g",
+    substituteHint:
+      "Golden raisins plus a teaspoon of honey mimic it closely; dried lychee is the same fruit family but tarter.",
+    substituteHintZh:
+      "金黄葡萄干加一茶匙蜂蜜最接近；荔枝干同属一类但更酸。",
+  },
+  {
+    id: "chrysanthemum",
+    zh: "菊花",
+    pinyin: "jú huā",
+    en: "Dried chrysanthemum flowers",
+    category: "ingredient",
+    definition:
+      "Small dried yellow or white chrysanthemum buds brewed as a cooling herbal tea. Steep briefly — past five minutes the petals turn bitter and the liquor soapy.",
+    definitionZh:
+      "晒干的小菊花蕾，黄白两色，用来泡清热的草本茶。浸泡要短——超过五分钟花瓣发苦，茶汤会有肥皂味。",
+    quantEquivalent: "8-10 dried buds ≈ 2 g",
+    substituteHint:
+      "Chamomile is the closest supermarket flower; it is sweeter and lacks the cooling bite but brews the same way.",
+    substituteHintZh:
+      "超市最接近的是洋甘菊，更甜、少了那点清凉感，但冲泡方式一样。",
+  },
+  {
+    id: "luo-han-guo",
+    zh: "罗汉果",
+    pinyin: "luó hàn guǒ",
+    en: "Monk fruit (luo han guo)",
+    category: "ingredient",
+    definition:
+      "A round, dark-brown dried gourd cracked open and simmered for a naturally sweet, almost throat-soothing tea. Its sweetness comes from mogrosides, so it needs no sugar at all.",
+    definitionZh:
+      "深褐色圆形干果，敲开后煮水，茶汤天然甘甜、润喉。甜味来自罗汉果苷，完全不用加糖。",
+    quantEquivalent: "1/4 fruit ≈ 5 g, enough for 1 litre",
+    substituteHint:
+      "If you cannot find it, use 2 tsp honey per cup — but the throat-coating quality is unique to monk fruit.",
+    substituteHintZh:
+      "买不到的话每杯用 2 茶匙蜂蜜代替，但那种润喉的包裹感是罗汉果独有的。",
+  },
+  {
+    id: "dried-tangerine-peel",
+    zh: "陈皮",
+    pinyin: "chén pí",
+    en: "Aged dried tangerine peel",
+    category: "ingredient",
+    definition:
+      "Sun-dried mandarin peel aged for at least three years until the oils turn from sharp citrus to warm, bitter-sweet resin. A fingernail-sized piece is enough to scent a whole pot.",
+    definitionZh:
+      "晒干后陈放三年以上的橘皮，油分从尖锐的柑橘味转成温润微苦的树脂香。指甲大一片就够给一整锅添味。",
+    quantEquivalent: "1 piece ≈ 3 g",
+    substituteHint:
+      "Fresh mandarin peel dried in a low oven for 20 minutes is sharper and more bitter; use half the amount.",
+    substituteHintZh:
+      "新鲜橘皮低温烘 20 分钟可代，但更冲更苦，用量减半。",
+  },
+  {
+    id: "rock-sugar-raw",
+    zh: "黄冰糖",
+    pinyin: "huáng bīng táng",
+    en: "Yellow rock sugar",
+    category: "ingredient",
+    definition:
+      "Unrefined cane sugar sold in amber lumps. It melts more slowly than white sugar and gives a rounder, less sharp sweetness plus a light caramel colour — the default sweetener for Chinese sweet soups and braises.",
+    definitionZh:
+      "未精炼的甘蔗糖块，琥珀色。比白糖化得慢，甜味更圆润不刺，还带一点焦糖色——中式甜汤与红烧的默认用糖。",
+    quantEquivalent: "1 lump ≈ 10 g",
+    substituteHint:
+      "White sugar works 1:1 but tastes thinner; add 1/4 tsp molasses to fake the colour and depth.",
+    substituteHintZh:
+      "白糖可 1:1 替代，但甜得单薄；加 1/4 茶匙糖蜜可补颜色与厚度。",
+  },
+  {
+    id: "brown-sugar",
+    zh: "红糖",
+    pinyin: "hóng táng",
+    en: "Chinese brown sugar",
+    category: "ingredient",
+    definition:
+      "Dark, moist cane sugar with a strong molasses bitterness. Used for ginger tea and women's post-partum drinks, where the mineral edge is considered part of the medicine.",
+    definitionZh:
+      "深色湿润的蔗糖，带明显的糖蜜苦香。多用于姜茶与产后调养饮，那点矿物感被认为是「药性」的一部分。",
+    quantEquivalent: "1 tbsp ≈ 12 g",
+    substituteHint:
+      "Dark muscovado or light molasses sugar is closest; ordinary brown sugar is milder and needs a little more.",
+    substituteHintZh:
+      "黑糖或糖蜜糖最接近；普通红糖味道更淡，用量要略增。",
+  },
+  {
+    id: "papaya",
+    zh: "木瓜",
+    pinyin: "mù guā",
+    en: "Papaya",
+    category: "ingredient",
+    definition:
+      "In Chinese sweet soups the fruit is used barely ripe — firm enough to hold its shape in a double boiler, sweet enough to perfume the liquid. Fully ripe fruit collapses into mush.",
+    definitionZh:
+      "中式甜汤用的木瓜只到八分熟——质地够硬，隔水炖后仍成形，甜度又足以给汤汁添香。全熟的一炖就烂。",
+    quantEquivalent: "1/2 medium papaya ≈ 400 g",
+    substituteHint:
+      "Cantaloupe or honeydew melon behaves the same way in double-boiled desserts; mango is too soft.",
+    substituteHintZh:
+      "哈密瓜或蜜瓜在炖盅里的表现一样；芒果太软不行。",
+  },
+  {
+    id: "hasma",
+    zh: "雪蛤",
+    pinyin: "xuě há",
+    en: "Hasma (snow frog oviduct)",
+    category: "ingredient",
+    definition:
+      "Dried snow-frog fallopian tubes, soaked overnight until they swell into translucent jelly. Prized in Cantonese dessert soups for texture rather than flavour — it tastes of almost nothing and carries whatever it is cooked in.",
+    definitionZh:
+      "雪蛤干品，泡一夜后胀成半透明胶质。粤式甜汤看中的是口感而非味道——本身几乎无味，只会吸附所配的汤汁。",
+    quantEquivalent: "3 g dried ≈ 1 small portion after soaking",
+    substituteHint:
+      "Snow fungus (yin er), soaked and chopped, gives nearly identical texture and is far easier to buy and to cook for a Western pantry.",
+    substituteHintZh:
+      "银耳泡发切碎后口感几乎一样，而且对欧美厨房来说好买、好做得多。",
+  },
+  {
+    id: "sugarcane",
+    zh: "竹蔗",
+    pinyin: "zhú zhè",
+    en: "Sugarcane segments",
+    category: "ingredient",
+    definition:
+      "Bamboo-thin green sugarcane sold in cut lengths. Simmered, it releases a clean, grassy sweetness that is never cloying — the backbone of Cantonese cooling drinks.",
+    definitionZh:
+      "青皮细竹蔗，切成段出售。煮后释出干净带青草气的甜味，绝不发腻——粤式清热饮的骨架。",
+    quantEquivalent: "2 sticks ≈ 300 g",
+    substituteHint:
+      "Skip it and use 1 tbsp rock sugar plus a strip of lemon zest; the drink loses the grassy note but stays clean.",
+    substituteHintZh:
+      "没有就改用 1 汤匙冰糖加一条柠檬皮；会失去青草香，但依然清爽。",
+  },
+  {
+    id: "water-chestnut",
+    zh: "马蹄",
+    pinyin: "mǎ tí",
+    en: "Water chestnuts",
+    category: "ingredient",
+    definition:
+      "Crisp, white corm with the texture of a firm apple and a faintly sweet, starchy juice. In drinks they are simmered whole or halved for their cooling, slightly cloudy sweetness.",
+    definitionZh:
+      "脆白的球茎，口感像硬苹果，汁水微甜带粉。煮饮时整颗或对半下锅，取其清凉、略带浑厚的甜。",
+    quantEquivalent: "8 fresh ≈ 150 g",
+    substituteHint:
+      "Canned water chestnuts work (rinse well); jicama is a decent raw substitute but turns soft when simmered.",
+    substituteHintZh:
+      "罐装马蹄可用（要冲洗干净）；沙葛生食尚可，一煮就软。",
+  },
+  {
+    id: "lemon",
+    zh: "柠檬",
+    pinyin: "níng méng",
+    en: "Lemon",
+    category: "ingredient",
+    definition:
+      "Used in Chinese drinks mostly for its peel oil and acidity, which cuts the flatness of honey and tea. Hot water above 60°C destroys the fresh aroma, so it goes in last.",
+    definitionZh:
+      "在中式饮品里主要用皮油与酸度，用来解开蜂蜜与茶的沉闷。60°C 以上的热水会毁掉那股鲜香，所以最后才放。",
+    quantEquivalent: "1 lemon ≈ 3 tbsp juice",
+    substituteHint:
+      "Lime is sharper and more floral; Meyer lemon is sweeter and needs less honey.",
+    substituteHintZh:
+      "青柠更尖更香；梅耶柠檬更甜，蜂蜜可减量。",
+  },
+  {
+    id: "honey",
+    zh: "蜂蜜",
+    pinyin: "fēng mì",
+    en: "Honey",
+    category: "ingredient",
+    definition:
+      "In Chinese drinks honey is treated as a finisher, not a sweetener: stirred in once the liquid is drinkable-warm so its aromatics survive. Boiling makes it taste of nothing but sugar.",
+    definitionZh:
+      "在中式饮品里蜂蜜是「收尾」而非「调味」：等液体降到能入口的温度再拌入，香气才留得住。煮沸过的蜂蜜只剩甜味。",
+    quantEquivalent: "1 tbsp ≈ 21 g",
+    substituteHint:
+      "Agave syrup is neutral and dissolves cold; maple syrup adds a woody note that fights citrus.",
+    substituteHintZh:
+      "龙舌兰糖浆味道中性、冷溶；枫糖会带木质香，和柑橘相冲。",
+  },
 ];
+
+/** 术语查询工具 */
+export function getTermByKey(key: string): Term | undefined {
+  return terms.find((t) => t.id === key);
+}
+
+export function searchTerms(query: string): Term[] {
+  const q = query.toLowerCase().trim();
+  if (!q) return terms;
   return terms.filter(
     (t) =>
       t.en.toLowerCase().includes(q) ||
