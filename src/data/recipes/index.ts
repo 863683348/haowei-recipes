@@ -655,6 +655,16 @@ import { fried_rice_ball } from "./fried-rice-ball";
 import { chinese_rice_ball } from "./chinese-rice-ball";
 import { brown_rice_fried_rice } from "./brown-rice-fried-rice";
 import { preserved_mustard_root_fried_rice } from "./preserved-mustard-root-fried-rice";
+import { seafood_fried_rice } from "./seafood-fried-rice";
+import { black_sesame_paste_soup } from "./black-sesame-paste-soup";
+import { sugar_glazed_fried_dough } from "./sugar-glazed-fried-dough";
+import { tofu_pudding_douhua } from "./tofu-pudding-douhua";
+import { black_rice_congee } from "./black-rice-congee";
+import { chinese_tea_eggs } from "./chinese-tea-eggs";
+import { beijing_sesame_millet_tea } from "./beijing-sesame-millet-tea";
+import { mung_bean_sweet_soup } from "./mung-bean-sweet-soup";
+import { fermented_rice_wine_balls } from "./fermented-rice-wine-balls";
+import { almond_tofu_dessert } from "./almond-tofu-dessert";
 import { tofu_braised_eggplant } from "./tofu-braised-eggplant";
 
 /** 全部菜谱（P0 首批，扩展至50道） */
@@ -1315,6 +1325,16 @@ export const recipes: Recipe[] = [
   chinese_rice_ball,
   brown_rice_fried_rice,
   preserved_mustard_root_fried_rice,
+  seafood_fried_rice,
+  black_sesame_paste_soup,
+  sugar_glazed_fried_dough,
+  tofu_pudding_douhua,
+  black_rice_congee,
+  chinese_tea_eggs,
+  beijing_sesame_millet_tea,
+  mung_bean_sweet_soup,
+  fermented_rice_wine_balls,
+  almond_tofu_dessert,
 ];
 
 export function getRecipeBySlug(slug: string): Recipe | undefined {
